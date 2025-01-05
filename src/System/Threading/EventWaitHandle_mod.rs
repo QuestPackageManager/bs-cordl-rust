@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventWaitHandle {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Threading::WaitHandle>,
+    __cordl_parent: crate::System::Threading::WaitHandle,
 }
 #[cfg(feature = "System+Threading+EventWaitHandle")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+EventWaitHandle")]
 impl std::ops::Deref for crate::System::Threading::EventWaitHandle {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Threading::WaitHandle>;
+    type Target = crate::System::Threading::WaitHandle;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,7 +24,7 @@ impl std::ops::DerefMut for crate::System::Threading::EventWaitHandle {
 }
 #[cfg(feature = "System+Threading+EventWaitHandle")]
 impl crate::System::Threading::EventWaitHandle {
-    pub fn New_Gc1(
+    pub fn New_Il2CppString1(
         initialState: bool,
         mode: crate::System::Threading::EventResetMode,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -59,7 +59,7 @@ impl crate::System::Threading::EventWaitHandle {
         let __cordl_ret: bool = __cordl_object.invoke("Set", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
         initialState: bool,
         mode: crate::System::Threading::EventResetMode,

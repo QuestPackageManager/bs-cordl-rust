@@ -2,22 +2,32 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MaterialReferenceManager {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_FontMaterialReferenceLookup: quest_hook::libil2cpp::Gc<
-        i32,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        >,
     >,
     pub m_FontAssetReferenceLookup: quest_hook::libil2cpp::Gc<
-        i32,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
+        >,
     >,
     pub m_SpriteAssetReferenceLookup: quest_hook::libil2cpp::Gc<
-        i32,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteAsset>,
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteAsset>,
+        >,
     >,
     pub m_ColorGradientReferenceLookup: quest_hook::libil2cpp::Gc<
-        i32,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextColorGradient>,
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::TextCore::Text::TextColorGradient,
+            >,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+MaterialReferenceManager")]
@@ -28,7 +38,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+TextCore+Text+MaterialReferenceManager")]
 impl std::ops::Deref for crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

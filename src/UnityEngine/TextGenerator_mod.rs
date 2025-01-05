@@ -2,15 +2,21 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextGenerator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Ptr: crate::System::IntPtr,
     pub m_LastString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_LastSettings: crate::UnityEngine::TextGenerationSettings,
     pub m_HasGenerated: bool,
     pub m_LastValid: crate::UnityEngine::TextGenerationError,
-    pub m_Verts: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>,
-    pub m_Characters: quest_hook::libil2cpp::Gc<crate::UnityEngine::UICharInfo>,
-    pub m_Lines: quest_hook::libil2cpp::Gc<crate::UnityEngine::UILineInfo>,
+    pub m_Verts: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::UIVertex>,
+    >,
+    pub m_Characters: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::UICharInfo>,
+    >,
+    pub m_Lines: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::UILineInfo>,
+    >,
     pub m_CachedVerts: bool,
     pub m_CachedCharacters: bool,
     pub m_CachedLines: bool,
@@ -22,7 +28,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+TextGenerator")]
 impl std::ops::Deref for crate::UnityEngine::TextGenerator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -47,7 +53,9 @@ impl crate::UnityEngine::TextGenerator {
     }
     pub fn GetCharacters(
         &mut self,
-        characters: quest_hook::libil2cpp::Gc<crate::UnityEngine::UICharInfo>,
+        characters: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::UICharInfo>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -69,7 +77,9 @@ impl crate::UnityEngine::TextGenerator {
     }
     pub fn GetLines(
         &mut self,
-        lines: quest_hook::libil2cpp::Gc<crate::UnityEngine::UILineInfo>,
+        lines: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::UILineInfo>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -115,7 +125,9 @@ impl crate::UnityEngine::TextGenerator {
     }
     pub fn GetVertices(
         &mut self,
-        vertices: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>,
+        vertices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::UIVertex>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -450,13 +462,16 @@ impl crate::UnityEngine::TextGenerator {
     pub fn get_characters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UICharInfo>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::UICharInfo>,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::UICharInfo> = __cordl_object
-            .invoke("get_characters", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::UICharInfo>,
+        > = __cordl_object.invoke("get_characters", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_lineCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -469,13 +484,16 @@ impl crate::UnityEngine::TextGenerator {
     pub fn get_lines(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UILineInfo>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::UILineInfo>,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::UILineInfo> = __cordl_object
-            .invoke("get_lines", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::UILineInfo>,
+        > = __cordl_object.invoke("get_lines", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_rectExtents(
@@ -502,13 +520,16 @@ impl crate::UnityEngine::TextGenerator {
     pub fn get_verts(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::UIVertex>,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex> = __cordl_object
-            .invoke("get_verts", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::UIVertex>,
+        > = __cordl_object.invoke("get_verts", ())?;
         Ok(__cordl_ret.into())
     }
 }
@@ -522,16 +543,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::TextGenerator {
     }
 }
 #[cfg(feature = "UnityEngine+TextGenerator")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::UnityEngine::TextGenerator {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsRef<crate::System::IDisposable> for crate::UnityEngine::TextGenerator {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+TextGenerator")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::UnityEngine::TextGenerator {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsMut<crate::System::IDisposable> for crate::UnityEngine::TextGenerator {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }

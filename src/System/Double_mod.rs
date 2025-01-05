@@ -27,7 +27,7 @@ impl crate::System::Double {
     pub const NegativeInfinity: f64 = std::f64::NEG_INFINITY;
     pub const NegativeZero: f64 = -0f64;
     pub const PositiveInfinity: f64 = std::f64::INFINITY;
-    pub fn CompareTo_Gc0(
+    pub fn CompareTo_Il2CppObject0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -46,7 +46,7 @@ impl crate::System::Double {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Gc0(
+    pub fn Equals_Il2CppObject0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -113,14 +113,7 @@ impl crate::System::Double {
             .invoke("IsPositiveInfinity", (d))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Parse_Gc0(
-        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Parse", (s))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Parse_Gc1(
+    pub fn Parse_IFormatProvider1(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<f64> {
@@ -128,7 +121,14 @@ impl crate::System::Double {
             .invoke("Parse", (s, provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Parse_NumberStyles_Gc2(
+    pub fn Parse_Il2CppString0(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (s))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse_NumberStyles_IFormatProvider2(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         style: crate::System::Globalization::NumberStyles,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
@@ -317,18 +317,7 @@ impl crate::System::Double {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Gc1(
-        &mut self,
-        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", (format))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ToString_Gc2(
+    pub fn ToString_IFormatProvider2(
         &mut self,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<
@@ -339,7 +328,18 @@ impl crate::System::Double {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", (provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Gc_Gc3(
+    pub fn ToString_Il2CppString1(
+        &mut self,
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", (format))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToString_Il2CppString_IFormatProvider3(
         &mut self,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
@@ -369,7 +369,7 @@ impl crate::System::Double {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn TryParse_Gc_ByRefMut0(
+    pub fn TryParse_Il2CppString_ByRefMut0(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         result: quest_hook::libil2cpp::ByRefMut<f64>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -377,7 +377,7 @@ impl crate::System::Double {
             .invoke("TryParse", (s, result))?;
         Ok(__cordl_ret.into())
     }
-    pub fn TryParse_Gc_NumberStyles_Gc_ByRefMut1(
+    pub fn TryParse_Il2CppString_NumberStyles_IFormatProvider_ByRefMut1(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         style: crate::System::Globalization::NumberStyles,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
@@ -387,7 +387,7 @@ impl crate::System::Double {
             .invoke("TryParse", (s, style, provider, result))?;
         Ok(__cordl_ret.into())
     }
-    pub fn TryParse_ReadOnlySpan_1_NumberStyles_Gc_ByRefMut2(
+    pub fn TryParse_ReadOnlySpan_1_NumberStyles_NumberFormatInfo_ByRefMut2(
         s: crate::System::ReadOnlySpan_1<char>,
         style: crate::System::Globalization::NumberStyles,
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
@@ -399,84 +399,74 @@ impl crate::System::Double {
     }
 }
 #[cfg(feature = "System+Double")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
-for crate::System::Double {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IComparable> {
+impl AsRef<crate::System::IComparable> for crate::System::Double {
+    fn as_ref(&self) -> &crate::System::IComparable {
         todo!()
     }
 }
 #[cfg(feature = "System+Double")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
-for crate::System::Double {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IComparable> {
+impl AsMut<crate::System::IComparable> for crate::System::Double {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable {
         todo!()
     }
 }
 #[cfg(feature = "System+Double")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IConvertible>>
-for crate::System::Double {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IConvertible> {
+impl AsRef<crate::System::IComparable_1<f64>> for crate::System::Double {
+    fn as_ref(&self) -> &crate::System::IComparable_1<f64> {
         todo!()
     }
 }
 #[cfg(feature = "System+Double")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IConvertible>>
-for crate::System::Double {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IConvertible> {
+impl AsMut<crate::System::IComparable_1<f64>> for crate::System::Double {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable_1<f64> {
         todo!()
     }
 }
 #[cfg(feature = "System+Double")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
-for crate::System::Double {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
+impl AsRef<crate::System::IConvertible> for crate::System::Double {
+    fn as_ref(&self) -> &crate::System::IConvertible {
         todo!()
     }
 }
 #[cfg(feature = "System+Double")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
-for crate::System::Double {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
+impl AsMut<crate::System::IConvertible> for crate::System::Double {
+    fn as_mut(&mut self) -> &mut crate::System::IConvertible {
         todo!()
     }
 }
 #[cfg(feature = "System+Double")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ISpanFormattable>>
-for crate::System::Double {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ISpanFormattable> {
+impl AsRef<crate::System::IEquatable_1<f64>> for crate::System::Double {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<f64> {
         todo!()
     }
 }
 #[cfg(feature = "System+Double")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ISpanFormattable>>
-for crate::System::Double {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::ISpanFormattable> {
+impl AsMut<crate::System::IEquatable_1<f64>> for crate::System::Double {
+    fn as_mut(&mut self) -> &mut crate::System::IEquatable_1<f64> {
         todo!()
     }
 }
 #[cfg(feature = "System+Double")]
-impl AsRef<quest_hook::libil2cpp::Gc<f64>> for crate::System::Double {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<f64> {
+impl AsRef<crate::System::IFormattable> for crate::System::Double {
+    fn as_ref(&self) -> &crate::System::IFormattable {
         todo!()
     }
 }
 #[cfg(feature = "System+Double")]
-impl AsMut<quest_hook::libil2cpp::Gc<f64>> for crate::System::Double {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<f64> {
+impl AsMut<crate::System::IFormattable> for crate::System::Double {
+    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
         todo!()
     }
 }
 #[cfg(feature = "System+Double")]
-impl AsRef<quest_hook::libil2cpp::Gc<f64>> for crate::System::Double {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<f64> {
+impl AsRef<crate::System::ISpanFormattable> for crate::System::Double {
+    fn as_ref(&self) -> &crate::System::ISpanFormattable {
         todo!()
     }
 }
 #[cfg(feature = "System+Double")]
-impl AsMut<quest_hook::libil2cpp::Gc<f64>> for crate::System::Double {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<f64> {
+impl AsMut<crate::System::ISpanFormattable> for crate::System::Double {
+    fn as_mut(&mut self) -> &mut crate::System::ISpanFormattable {
         todo!()
     }
 }

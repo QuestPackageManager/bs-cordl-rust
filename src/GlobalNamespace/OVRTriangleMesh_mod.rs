@@ -30,7 +30,7 @@ impl crate::GlobalNamespace::OVRTriangleMesh {
     pub type NegateXJob = crate::GlobalNamespace::OVRTriangleMesh_NegateXJob;
     #[cfg(feature = "OVRTriangleMesh+Triangle")]
     pub type Triangle = crate::GlobalNamespace::OVRTriangleMesh_Triangle;
-    pub fn Equals_Gc1(
+    pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -229,38 +229,48 @@ impl crate::GlobalNamespace::OVRTriangleMesh {
     }
 }
 #[cfg(feature = "OVRTriangleMesh")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRTriangleMesh>>
+impl AsRef<
+    crate::GlobalNamespace::IOVRAnchorComponent_1<
+        crate::GlobalNamespace::OVRTriangleMesh,
+    >,
+> for crate::GlobalNamespace::OVRTriangleMesh {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::IOVRAnchorComponent_1<
+        crate::GlobalNamespace::OVRTriangleMesh,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRTriangleMesh")]
+impl AsMut<
+    crate::GlobalNamespace::IOVRAnchorComponent_1<
+        crate::GlobalNamespace::OVRTriangleMesh,
+    >,
+> for crate::GlobalNamespace::OVRTriangleMesh {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::IOVRAnchorComponent_1<
+        crate::GlobalNamespace::OVRTriangleMesh,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRTriangleMesh")]
+impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::OVRTriangleMesh>>
 for crate::GlobalNamespace::OVRTriangleMesh {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRTriangleMesh> {
+    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::OVRTriangleMesh> {
         todo!()
     }
 }
 #[cfg(feature = "OVRTriangleMesh")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRTriangleMesh>>
+impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRTriangleMesh>>
 for crate::GlobalNamespace::OVRTriangleMesh {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRTriangleMesh> {
-        todo!()
-    }
-}
-#[cfg(feature = "OVRTriangleMesh")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRTriangleMesh>>
-for crate::GlobalNamespace::OVRTriangleMesh {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRTriangleMesh> {
-        todo!()
-    }
-}
-#[cfg(feature = "OVRTriangleMesh")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRTriangleMesh>>
-for crate::GlobalNamespace::OVRTriangleMesh {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRTriangleMesh> {
+    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::OVRTriangleMesh> {
         todo!()
     }
 }
@@ -304,18 +314,16 @@ impl crate::GlobalNamespace::OVRTriangleMesh_FlipTriangleWindingJob {
     }
 }
 #[cfg(feature = "OVRTriangleMesh+FlipTriangleWindingJob")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJobParallelFor>>
+impl AsRef<crate::Unity::Jobs::IJobParallelFor>
 for crate::GlobalNamespace::OVRTriangleMesh_FlipTriangleWindingJob {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJobParallelFor> {
+    fn as_ref(&self) -> &crate::Unity::Jobs::IJobParallelFor {
         todo!()
     }
 }
 #[cfg(feature = "OVRTriangleMesh+FlipTriangleWindingJob")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJobParallelFor>>
+impl AsMut<crate::Unity::Jobs::IJobParallelFor>
 for crate::GlobalNamespace::OVRTriangleMesh_FlipTriangleWindingJob {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJobParallelFor> {
+    fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJobParallelFor {
         todo!()
     }
 }
@@ -357,16 +365,16 @@ impl crate::GlobalNamespace::OVRTriangleMesh_GetMeshJob {
     }
 }
 #[cfg(feature = "OVRTriangleMesh+GetMeshJob")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob>>
+impl AsRef<crate::Unity::Jobs::IJob>
 for crate::GlobalNamespace::OVRTriangleMesh_GetMeshJob {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob> {
+    fn as_ref(&self) -> &crate::Unity::Jobs::IJob {
         todo!()
     }
 }
 #[cfg(feature = "OVRTriangleMesh+GetMeshJob")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob>>
+impl AsMut<crate::Unity::Jobs::IJob>
 for crate::GlobalNamespace::OVRTriangleMesh_GetMeshJob {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob> {
+    fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJob {
         todo!()
     }
 }
@@ -407,18 +415,16 @@ impl crate::GlobalNamespace::OVRTriangleMesh_NegateXJob {
     }
 }
 #[cfg(feature = "OVRTriangleMesh+NegateXJob")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJobParallelFor>>
+impl AsRef<crate::Unity::Jobs::IJobParallelFor>
 for crate::GlobalNamespace::OVRTriangleMesh_NegateXJob {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJobParallelFor> {
+    fn as_ref(&self) -> &crate::Unity::Jobs::IJobParallelFor {
         todo!()
     }
 }
 #[cfg(feature = "OVRTriangleMesh+NegateXJob")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJobParallelFor>>
+impl AsMut<crate::Unity::Jobs::IJobParallelFor>
 for crate::GlobalNamespace::OVRTriangleMesh_NegateXJob {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJobParallelFor> {
+    fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJobParallelFor {
         todo!()
     }
 }

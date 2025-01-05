@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GlvTypeAParameters {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_i: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     pub m_lambda: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     pub m_splitParams: quest_hook::libil2cpp::Gc<
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+GlvTypeAParameters")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::Endo::GlvTypeAParameters {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

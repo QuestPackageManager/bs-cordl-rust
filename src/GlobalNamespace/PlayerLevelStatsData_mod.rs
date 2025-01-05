@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerLevelStatsData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _highScore: i32,
     pub _maxCombo: i32,
     pub _fullCombo: bool,
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PlayerLevelStatsData")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerLevelStatsData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -64,7 +64,7 @@ impl crate::GlobalNamespace::PlayerLevelStatsData {
             .invoke_void(".ctor", (beatmapKey))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_BeatmapDifficulty_Gc1(
+    pub fn New_Il2CppString_BeatmapDifficulty_BeatmapCharacteristicSO1(
         levelID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         difficulty: crate::GlobalNamespace::BeatmapDifficulty,
         beatmapCharacteristic: quest_hook::libil2cpp::Gc<
@@ -77,7 +77,7 @@ impl crate::GlobalNamespace::PlayerLevelStatsData {
             .invoke_void(".ctor", (levelID, difficulty, beatmapCharacteristic))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_BeatmapDifficulty_Gc_i32_i32__cordl_bool_RankModel_Rank__cordl_bool_i32_2(
+    pub fn New_Il2CppString_BeatmapDifficulty_BeatmapCharacteristicSO_i32_i32__cordl_bool_RankModel_Rank__cordl_bool_i32_2(
         levelID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         difficulty: crate::GlobalNamespace::BeatmapDifficulty,
         beatmapCharacteristic: quest_hook::libil2cpp::Gc<
@@ -134,7 +134,7 @@ impl crate::GlobalNamespace::PlayerLevelStatsData {
             .invoke(".ctor", (beatmapKey))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_BeatmapDifficulty_Gc1(
+    pub fn _ctor_Il2CppString_BeatmapDifficulty_BeatmapCharacteristicSO1(
         &mut self,
         levelID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         difficulty: crate::GlobalNamespace::BeatmapDifficulty,
@@ -149,7 +149,7 @@ impl crate::GlobalNamespace::PlayerLevelStatsData {
             .invoke(".ctor", (levelID, difficulty, beatmapCharacteristic))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_BeatmapDifficulty_Gc_i32_i32__cordl_bool_RankModel_Rank__cordl_bool_i32_2(
+    pub fn _ctor_Il2CppString_BeatmapDifficulty_BeatmapCharacteristicSO_i32_i32__cordl_bool_RankModel_Rank__cordl_bool_i32_2(
         &mut self,
         levelID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         difficulty: crate::GlobalNamespace::BeatmapDifficulty,

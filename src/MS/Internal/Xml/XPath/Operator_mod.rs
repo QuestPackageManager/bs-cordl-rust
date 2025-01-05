@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Operator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
+    __cordl_parent: crate::MS::Internal::Xml::XPath::AstNode,
     pub _opType: crate::MS::Internal::Xml::XPath::Operator_Op,
     pub _opnd1: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
     pub _opnd2: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MS+Internal+Xml+XPath+Operator")]
 impl std::ops::Deref for crate::MS::Internal::Xml::XPath::Operator {
-    type Target = quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>;
+    type Target = crate::MS::Internal::Xml::XPath::AstNode;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,13 +2,15 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UxmlAsset {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_FullTypeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Id: i32,
     pub m_OrderInDocument: i32,
     pub m_ParentId: i32,
     pub m_Properties: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlAsset")]
@@ -18,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UxmlAsset")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UxmlAsset {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -114,22 +116,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::UxmlA
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlAsset")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IUxmlAttributes>>
+impl AsRef<crate::UnityEngine::UIElements::IUxmlAttributes>
 for crate::UnityEngine::UIElements::UxmlAsset {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IUxmlAttributes> {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IUxmlAttributes {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlAsset")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IUxmlAttributes>>
+impl AsMut<crate::UnityEngine::UIElements::IUxmlAttributes>
 for crate::UnityEngine::UIElements::UxmlAsset {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::IUxmlAttributes,
-    > {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IUxmlAttributes {
         unsafe { std::mem::transmute(self) }
     }
 }

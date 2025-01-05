@@ -4,9 +4,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiColumnHeaderColumnMoveLocationPreview {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::VisualElement,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
 }
 #[cfg(
     feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumnMoveLocationPreview"
@@ -21,9 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnMoveLocationPreview {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::VisualElement,
-    >;
+    type Target = crate::UnityEngine::UIElements::VisualElement;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

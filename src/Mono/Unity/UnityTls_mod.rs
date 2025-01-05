@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityTls {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Mono+Unity+UnityTls")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Unity+UnityTls")]
 impl std::ops::Deref for crate::Mono::Unity::UnityTls {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -166,7 +166,7 @@ impl crate::Mono::Unity::UnityTls_unitytls_errorstate {}
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityTls_unitytls_interface_struct {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub UNITYTLS_INVALID_HANDLE: u64,
     pub UNITYTLS_TLSCTX_PROTOCOLRANGE_DEFAULT: crate::Mono::Unity::UnityTls_unitytls_tlsctx_protocolrange,
     pub unitytls_errorstate_create: quest_hook::libil2cpp::Gc<
@@ -270,7 +270,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct")]
 impl std::ops::Deref for crate::Mono::Unity::UnityTls_unitytls_interface_struct {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -546,7 +546,7 @@ impl crate::Mono::Unity::UnityTls_unitytls_tlsctx_callbacks {}
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityTls_unitytls_tlsctx_certificate_callback {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_certificate_callback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -557,7 +557,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_certificate_callback")]
 impl std::ops::Deref
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_certificate_callback {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -656,7 +656,7 @@ impl crate::Mono::Unity::UnityTls_unitytls_tlsctx_protocolrange {}
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityTls_unitytls_tlsctx_read_callback {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_read_callback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -666,7 +666,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_read_callback")]
 impl std::ops::Deref for crate::Mono::Unity::UnityTls_unitytls_tlsctx_read_callback {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -730,7 +730,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_read_callback {
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityTls_unitytls_tlsctx_trace_callback {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_trace_callback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -740,7 +740,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_trace_callback")]
 impl std::ops::Deref for crate::Mono::Unity::UnityTls_unitytls_tlsctx_trace_callback {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -804,7 +804,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_trace_callback {
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityTls_unitytls_tlsctx_write_callback {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_write_callback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -814,7 +814,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_write_callback")]
 impl std::ops::Deref for crate::Mono::Unity::UnityTls_unitytls_tlsctx_write_callback {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -878,7 +878,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_write_callback {
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityTls_unitytls_tlsctx_x509verify_callback {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_x509verify_callback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -889,7 +889,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_x509verify_callback")]
 impl std::ops::Deref
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_x509verify_callback {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1047,7 +1047,7 @@ impl crate::Mono::Unity::UnityTls_unitytls_x509name {}
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityTls_unitytls_x509verify_callback {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509verify_callback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1057,7 +1057,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509verify_callback")]
 impl std::ops::Deref for crate::Mono::Unity::UnityTls_unitytls_x509verify_callback {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1152,7 +1152,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct unitytls_interface_struct_UnityTls_unitytls_errorstate_create_t {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_create_t"
@@ -1167,7 +1167,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_create_t {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1238,7 +1238,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_c
 #[repr(C)]
 #[derive(Debug)]
 pub struct unitytls_interface_struct_UnityTls_unitytls_errorstate_raise_error_t {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_raise_error_t"
@@ -1254,7 +1254,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_raise_error_t {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1323,7 +1323,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_r
 #[repr(C)]
 #[derive(Debug)]
 pub struct unitytls_interface_struct_UnityTls_unitytls_key_free_t {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_free_t")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1334,7 +1334,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_free_t")]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_free_t {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1396,7 +1396,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_free_t {
 #[repr(C)]
 #[derive(Debug)]
 pub struct unitytls_interface_struct_UnityTls_unitytls_key_get_ref_t {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_get_ref_t")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1407,7 +1407,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_get_ref_t")]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_get_ref_t {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1472,7 +1472,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_get_ref_
 #[repr(C)]
 #[derive(Debug)]
 pub struct unitytls_interface_struct_UnityTls_unitytls_key_parse_der_t {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_der_t"
@@ -1487,7 +1487,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_der_t {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1565,7 +1565,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_de
 #[repr(C)]
 #[derive(Debug)]
 pub struct unitytls_interface_struct_UnityTls_unitytls_key_parse_pem_t {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_pem_t"
@@ -1580,7 +1580,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_pem_t {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1658,7 +1658,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_pe
 #[repr(C)]
 #[derive(Debug)]
 pub struct unitytls_interface_struct_UnityTls_unitytls_random_generate_bytes_t {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_random_generate_bytes_t"
@@ -1673,7 +1673,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_random_generate_bytes_t {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1745,7 +1745,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_random_gener
 #[repr(C)]
 #[derive(Debug)]
 pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_create_client_t {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_client_t"
@@ -1760,7 +1760,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_create_client_t {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1838,7 +1838,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_creat
 #[repr(C)]
 #[derive(Debug)]
 pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_create_server_t {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_server_t"
@@ -1853,7 +1853,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_create_server_t {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1938,7 +1938,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_creat
 #[repr(C)]
 #[derive(Debug)]
 pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_free_t {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_free_t")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1949,7 +1949,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_free_t")]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_free_t {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2013,7 +2013,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_free_
 #[repr(C)]
 #[derive(Debug)]
 pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_ciphersuite_t {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_ciphersuite_t"
@@ -2029,7 +2029,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_ciphersuite_t {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2102,7 +2102,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_c
 #[repr(C)]
 #[derive(Debug)]
 pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_protocol_t {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_protocol_t"
@@ -2117,7 +2117,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_protocol_t {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2188,7 +2188,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_p
 #[repr(C)]
 #[derive(Debug)]
 pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_notify_close_t {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_notify_close_t"
@@ -2203,7 +2203,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_notify_close_t {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2274,7 +2274,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_notif
 #[repr(C)]
 #[derive(Debug)]
 pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_process_handshake_t {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_process_handshake_t"
@@ -2290,7 +2290,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_process_handshake_t {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2361,7 +2361,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_proce
 #[repr(C)]
 #[derive(Debug)]
 pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_read_t {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_read_t")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2372,7 +2372,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_read_t")]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_read_t {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2439,7 +2439,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_read_
 #[repr(C)]
 #[derive(Debug)]
 pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_server_require_client_authentication_t {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_server_require_client_authentication_t"
@@ -2455,7 +2455,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_server_require_client_authentication_t {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2527,7 +2527,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_serve
 #[repr(C)]
 #[derive(Debug)]
 pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_certificate_callback_t {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_certificate_callback_t"
@@ -2543,7 +2543,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_certificate_callback_t {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2618,7 +2618,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_c
 #[repr(C)]
 #[derive(Debug)]
 pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_supported_ciphersuites_t {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_supported_ciphersuites_t"
@@ -2634,7 +2634,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_supported_ciphersuites_t {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2712,7 +2712,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_s
 #[repr(C)]
 #[derive(Debug)]
 pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_trace_callback_t {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_trace_callback_t"
@@ -2728,7 +2728,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_trace_callback_t {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2803,7 +2803,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_t
 #[repr(C)]
 #[derive(Debug)]
 pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_x509verify_callback_t {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_x509verify_callback_t"
@@ -2819,7 +2819,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_x509verify_callback_t {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2892,7 +2892,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_x
 #[repr(C)]
 #[derive(Debug)]
 pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_write_t {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_write_t")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2903,7 +2903,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_write_t")]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_write_t {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2970,7 +2970,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_write
 #[repr(C)]
 #[derive(Debug)]
 pub struct unitytls_interface_struct_UnityTls_unitytls_x509_export_der_t {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509_export_der_t"
@@ -2985,7 +2985,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509_export_der_t {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3058,7 +3058,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509_export_
 #[repr(C)]
 #[derive(Debug)]
 pub struct unitytls_interface_struct_UnityTls_unitytls_x509list_append_der_t {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_der_t"
@@ -3073,7 +3073,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_append_der_t {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3146,7 +3146,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_app
 #[repr(C)]
 #[derive(Debug)]
 pub struct unitytls_interface_struct_UnityTls_unitytls_x509list_append_t {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_t"
@@ -3161,7 +3161,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_append_t {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3233,7 +3233,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_app
 #[repr(C)]
 #[derive(Debug)]
 pub struct unitytls_interface_struct_UnityTls_unitytls_x509list_create_t {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_create_t"
@@ -3248,7 +3248,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_create_t {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3321,7 +3321,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_cre
 #[repr(C)]
 #[derive(Debug)]
 pub struct unitytls_interface_struct_UnityTls_unitytls_x509list_free_t {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_free_t"
@@ -3336,7 +3336,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_free_t {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3406,7 +3406,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_fre
 #[repr(C)]
 #[derive(Debug)]
 pub struct unitytls_interface_struct_UnityTls_unitytls_x509list_get_ref_t {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_ref_t"
@@ -3421,7 +3421,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get_ref_t {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3494,7 +3494,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get
 #[repr(C)]
 #[derive(Debug)]
 pub struct unitytls_interface_struct_UnityTls_unitytls_x509list_get_x509_t {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_x509_t"
@@ -3509,7 +3509,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get_x509_t {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3581,7 +3581,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get
 #[repr(C)]
 #[derive(Debug)]
 pub struct unitytls_interface_struct_UnityTls_unitytls_x509verify_default_ca_t {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_default_ca_t"
@@ -3596,7 +3596,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_default_ca_t {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3675,7 +3675,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_d
 #[repr(C)]
 #[derive(Debug)]
 pub struct unitytls_interface_struct_UnityTls_unitytls_x509verify_explicit_ca_t {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
     feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_explicit_ca_t"
@@ -3691,7 +3691,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_explicit_ca_t {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

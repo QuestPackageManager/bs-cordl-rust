@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Ed25519Signer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub buffer: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Signers::Ed25519Signer_Buffer,
     >,
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Ed25519Signer")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Signers::Ed25519Signer {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -150,20 +150,16 @@ for crate::Org::BouncyCastle::Crypto::Signers::Ed25519Signer {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Ed25519Signer")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>>
+impl AsRef<crate::Org::BouncyCastle::Crypto::ISigner>
 for crate::Org::BouncyCastle::Crypto::Signers::Ed25519Signer {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner> {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::ISigner {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Ed25519Signer")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>>
+impl AsMut<crate::Org::BouncyCastle::Crypto::ISigner>
 for crate::Org::BouncyCastle::Crypto::Signers::Ed25519Signer {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner> {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::ISigner {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -171,7 +167,7 @@ for crate::Org::BouncyCastle::Crypto::Signers::Ed25519Signer {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Ed25519Signer_Buffer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>,
+    __cordl_parent: crate::System::IO::MemoryStream,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Ed25519Signer+Buffer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -182,7 +178,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Ed25519Signer+Buffer")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Signers::Ed25519Signer_Buffer {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>;
+    type Target = crate::System::IO::MemoryStream;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

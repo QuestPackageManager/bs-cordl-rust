@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EditableModifiersSelectionView {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::ModifiersSelectionView,
-    >,
+    __cordl_parent: crate::GlobalNamespace::ModifiersSelectionView,
     pub _editButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _clearButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _modifiersListCanvasGroup: quest_hook::libil2cpp::Gc<
@@ -20,9 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "EditableModifiersSelectionView")]
 impl std::ops::Deref for crate::GlobalNamespace::EditableModifiersSelectionView {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::ModifiersSelectionView,
-    >;
+    type Target = crate::GlobalNamespace::ModifiersSelectionView;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

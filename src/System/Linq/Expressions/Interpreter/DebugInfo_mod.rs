@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DebugInfo {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub StartLine: i32,
     pub EndLine: i32,
     pub Index: i32,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Linq+Expressions+Interpreter+DebugInfo")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Interpreter::DebugInfo {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,9 +35,7 @@ impl crate::System::Linq::Expressions::Interpreter::DebugInfo {
     pub fn GetMatchingDebugInfo(
         debugInfos: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Linq::Expressions::Interpreter::DebugInfo,
-                >,
+                *mut crate::System::Linq::Expressions::Interpreter::DebugInfo,
             >,
         >,
         index: i32,
@@ -97,7 +95,7 @@ for crate::System::Linq::Expressions::Interpreter::DebugInfo {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DebugInfo_DebugInfoComparer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+DebugInfo+DebugInfoComparer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -108,7 +106,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Interpreter+DebugInfo+DebugInfoComparer")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::DebugInfo_DebugInfoComparer {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -171,7 +169,7 @@ for crate::System::Linq::Expressions::Interpreter::DebugInfo_DebugInfoComparer {
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+DebugInfo+DebugInfoComparer")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IComparer_1<
         quest_hook::libil2cpp::Gc<
             crate::System::Linq::Expressions::Interpreter::DebugInfo,
         >,
@@ -179,7 +177,7 @@ impl AsRef<
 > for crate::System::Linq::Expressions::Interpreter::DebugInfo_DebugInfoComparer {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::Collections::Generic::IComparer_1<
         quest_hook::libil2cpp::Gc<
             crate::System::Linq::Expressions::Interpreter::DebugInfo,
         >,
@@ -189,7 +187,7 @@ impl AsRef<
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+DebugInfo+DebugInfoComparer")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IComparer_1<
         quest_hook::libil2cpp::Gc<
             crate::System::Linq::Expressions::Interpreter::DebugInfo,
         >,
@@ -197,7 +195,7 @@ impl AsMut<
 > for crate::System::Linq::Expressions::Interpreter::DebugInfo_DebugInfoComparer {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::Collections::Generic::IComparer_1<
         quest_hook::libil2cpp::Gc<
             crate::System::Linq::Expressions::Interpreter::DebugInfo,
         >,

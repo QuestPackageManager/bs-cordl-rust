@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SavedData_VRControllersRecorder_KeyframeSerializable {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _xPos1: f32,
     pub _yPos1: f32,
     pub _zPos1: f32,
@@ -35,7 +35,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "VRControllersRecorder+SavedData+KeyframeSerializable")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SavedData_VRControllersRecorder_KeyframeSerializable {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -81,7 +81,7 @@ for crate::GlobalNamespace::SavedData_VRControllersRecorder_KeyframeSerializable
 #[repr(C)]
 #[derive(Debug)]
 pub struct VRControllersRecorder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _recordingTextAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
     pub _recordingFileName: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
@@ -125,7 +125,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "VRControllersRecorder")]
 impl std::ops::Deref for crate::GlobalNamespace::VRControllersRecorder {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -184,8 +184,10 @@ impl crate::GlobalNamespace::VRControllersRecorder {
     }
     pub fn GetSavedData(
         keyframes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::VRControllersRecorder_Keyframe,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::VRControllersRecorder_Keyframe,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -252,20 +254,6 @@ impl crate::GlobalNamespace::VRControllersRecorder {
             .invoke("LoadStateWithDefaultOffset", (stream))?;
         Ok(__cordl_ret.into())
     }
-    pub fn LoadState_Gc0(
-        &mut self,
-        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRControllersRecorder_State>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::VRControllersRecorder_State,
-        > = __cordl_object.invoke("LoadState", (stream))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn LoadState_Pose_Pose1(
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         leftControllerOffset: crate::UnityEngine::Pose,
@@ -277,6 +265,20 @@ impl crate::GlobalNamespace::VRControllersRecorder {
             crate::GlobalNamespace::VRControllersRecorder_State,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("LoadState", (stream, leftControllerOffset, rightControllerOffset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadState_Stream0(
+        &mut self,
+        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRControllersRecorder_State>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::VRControllersRecorder_State,
+        > = __cordl_object.invoke("LoadState", (stream))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -559,7 +561,7 @@ for crate::GlobalNamespace::VRControllersRecorder {
 #[repr(C)]
 #[derive(Debug)]
 pub struct VRControllersRecorder_Keyframe {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub pos1: crate::UnityEngine::Vector3,
     pub pos2: crate::UnityEngine::Vector3,
     pub pos3: crate::UnityEngine::Vector3,
@@ -575,7 +577,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "VRControllersRecorder+Keyframe")]
 impl std::ops::Deref for crate::GlobalNamespace::VRControllersRecorder_Keyframe {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -588,7 +590,17 @@ impl std::ops::DerefMut for crate::GlobalNamespace::VRControllersRecorder_Keyfra
 }
 #[cfg(feature = "VRControllersRecorder+Keyframe")]
 impl crate::GlobalNamespace::VRControllersRecorder_Keyframe {
-    pub fn Equals_Gc0(
+    pub fn Equals_Il2CppObject1(
+        &mut self,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Equals_VRControllersRecorder_Keyframe0(
         &mut self,
         other: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::VRControllersRecorder_Keyframe,
@@ -598,16 +610,6 @@ impl crate::GlobalNamespace::VRControllersRecorder_Keyframe {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Equals_Gc1(
-        &mut self,
-        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
         Ok(__cordl_ret.into())
     }
     pub fn FromSerializable(
@@ -779,38 +781,28 @@ for crate::GlobalNamespace::VRControllersRecorder_Keyframe {
     }
 }
 #[cfg(feature = "VRControllersRecorder+Keyframe")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConstructorStringGenerator>,
-> for crate::GlobalNamespace::VRControllersRecorder_Keyframe {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IConstructorStringGenerator,
-    > {
+impl AsRef<crate::GlobalNamespace::IConstructorStringGenerator>
+for crate::GlobalNamespace::VRControllersRecorder_Keyframe {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IConstructorStringGenerator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "VRControllersRecorder+Keyframe")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConstructorStringGenerator>,
-> for crate::GlobalNamespace::VRControllersRecorder_Keyframe {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IConstructorStringGenerator,
-    > {
+impl AsMut<crate::GlobalNamespace::IConstructorStringGenerator>
+for crate::GlobalNamespace::VRControllersRecorder_Keyframe {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IConstructorStringGenerator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "VRControllersRecorder+Keyframe")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRControllersRecorder_Keyframe>,
     >,
 > for crate::GlobalNamespace::VRControllersRecorder_Keyframe {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRControllersRecorder_Keyframe>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -818,13 +810,13 @@ impl AsRef<
 }
 #[cfg(feature = "VRControllersRecorder+Keyframe")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRControllersRecorder_Keyframe>,
     >,
 > for crate::GlobalNamespace::VRControllersRecorder_Keyframe {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRControllersRecorder_Keyframe>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -848,12 +840,10 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct VRControllersRecorder_SavedData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _keyframes: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::SavedData_VRControllersRecorder_KeyframeSerializable,
-            >,
+            *mut crate::GlobalNamespace::SavedData_VRControllersRecorder_KeyframeSerializable,
         >,
     >,
 }
@@ -864,7 +854,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "VRControllersRecorder+SavedData")]
 impl std::ops::Deref for crate::GlobalNamespace::VRControllersRecorder_SavedData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -911,9 +901,13 @@ for crate::GlobalNamespace::VRControllersRecorder_SavedData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct VRControllersRecorder_State {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _keyframes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRControllersRecorder_Keyframe>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::VRControllersRecorder_Keyframe,
+            >,
+        >,
     >,
     pub leftControllerOffset: crate::UnityEngine::Pose,
     pub rightControllerOffset: crate::UnityEngine::Pose,
@@ -926,7 +920,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "VRControllersRecorder+State")]
 impl std::ops::Deref for crate::GlobalNamespace::VRControllersRecorder_State {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -977,10 +971,12 @@ impl crate::GlobalNamespace::VRControllersRecorder_State {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Pose_Pose0(
+    pub fn New_IEnumerable_1_Pose_Pose0(
         keyframes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::VRControllersRecorder_Keyframe,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::VRControllersRecorder_Keyframe,
+                >,
             >,
         >,
         leftControllerOffset: crate::UnityEngine::Pose,
@@ -995,10 +991,12 @@ impl crate::GlobalNamespace::VRControllersRecorder_State {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Pose_Pose1(
+    pub fn New_List_1_Pose_Pose1(
         keyframes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::VRControllersRecorder_Keyframe,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::VRControllersRecorder_Keyframe,
+                >,
             >,
         >,
         leftControllerOffset: crate::UnityEngine::Pose,
@@ -1013,10 +1011,12 @@ impl crate::GlobalNamespace::VRControllersRecorder_State {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Pose_Pose_u32_2(
+    pub fn New_List_1_Pose_Pose_u32_2(
         keyframes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::VRControllersRecorder_Keyframe,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::VRControllersRecorder_Keyframe,
+                >,
             >,
         >,
         leftControllerOffset: crate::UnityEngine::Pose,
@@ -1079,11 +1079,13 @@ impl crate::GlobalNamespace::VRControllersRecorder_State {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Pose_Pose0(
+    pub fn _ctor_IEnumerable_1_Pose_Pose0(
         &mut self,
         keyframes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::VRControllersRecorder_Keyframe,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::VRControllersRecorder_Keyframe,
+                >,
             >,
         >,
         leftControllerOffset: crate::UnityEngine::Pose,
@@ -1096,11 +1098,13 @@ impl crate::GlobalNamespace::VRControllersRecorder_State {
             .invoke(".ctor", (keyframes, leftControllerOffset, rightControllerOffset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Pose_Pose1(
+    pub fn _ctor_List_1_Pose_Pose1(
         &mut self,
         keyframes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::VRControllersRecorder_Keyframe,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::VRControllersRecorder_Keyframe,
+                >,
             >,
         >,
         leftControllerOffset: crate::UnityEngine::Pose,
@@ -1113,11 +1117,13 @@ impl crate::GlobalNamespace::VRControllersRecorder_State {
             .invoke(".ctor", (keyframes, leftControllerOffset, rightControllerOffset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Pose_Pose_u32_2(
+    pub fn _ctor_List_1_Pose_Pose_u32_2(
         &mut self,
         keyframes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::VRControllersRecorder_Keyframe,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::VRControllersRecorder_Keyframe,
+                >,
             >,
         >,
         leftControllerOffset: crate::UnityEngine::Pose,
@@ -1138,8 +1144,10 @@ impl crate::GlobalNamespace::VRControllersRecorder_State {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::VRControllersRecorder_Keyframe,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::VRControllersRecorder_Keyframe,
+                >,
             >,
         >,
     > {
@@ -1147,8 +1155,10 @@ impl crate::GlobalNamespace::VRControllersRecorder_State {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::VRControllersRecorder_Keyframe,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::VRControllersRecorder_Keyframe,
+                >,
             >,
         > = __cordl_object.invoke("get_keyframes", ())?;
         Ok(__cordl_ret.into())
@@ -1175,9 +1185,7 @@ for crate::GlobalNamespace::VRControllersRecorder_State {
 #[repr(C)]
 #[derive(Debug)]
 pub struct VRControllersRecorder_TypeSerializationBinder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::SerializationBinder,
-    >,
+    __cordl_parent: crate::System::Runtime::Serialization::SerializationBinder,
 }
 #[cfg(feature = "VRControllersRecorder+TypeSerializationBinder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1188,9 +1196,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "VRControllersRecorder+TypeSerializationBinder")]
 impl std::ops::Deref
 for crate::GlobalNamespace::VRControllersRecorder_TypeSerializationBinder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::SerializationBinder,
-    >;
+    type Target = crate::System::Runtime::Serialization::SerializationBinder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

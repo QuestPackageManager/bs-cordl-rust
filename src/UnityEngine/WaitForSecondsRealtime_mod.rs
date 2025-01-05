@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct WaitForSecondsRealtime {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::CustomYieldInstruction,
-    >,
+    __cordl_parent: crate::UnityEngine::CustomYieldInstruction,
     pub _waitTime_k__BackingField: f32,
     pub m_WaitUntilTime: f32,
 }
@@ -15,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+WaitForSecondsRealtime")]
 impl std::ops::Deref for crate::UnityEngine::WaitForSecondsRealtime {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::CustomYieldInstruction>;
+    type Target = crate::UnityEngine::CustomYieldInstruction;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

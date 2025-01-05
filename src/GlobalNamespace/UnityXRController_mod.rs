@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityXRController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub positionAction: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::InputAction,
     >,
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityXRController")]
 impl std::ops::Deref for crate::GlobalNamespace::UnityXRController {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -175,7 +175,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::UnityXRContro
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityXRController_Configuration {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _positionActionReference_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::InputActionReference,
     >,
@@ -193,7 +193,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityXRController+Configuration")]
 impl std::ops::Deref for crate::GlobalNamespace::UnityXRController_Configuration {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

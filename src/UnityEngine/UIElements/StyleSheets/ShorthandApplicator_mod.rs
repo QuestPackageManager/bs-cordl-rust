@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ShorthandApplicator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+ShorthandApplicator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+ShorthandApplicator")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -178,7 +178,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
             .invoke("CompileBorderRadius", (reader, top, right, bottom, left))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CompileBoxArea_Gc_ByRefMut_ByRefMut_ByRefMut_ByRefMut0(
+    pub fn CompileBoxArea_StylePropertyReader_ByRefMut_ByRefMut_ByRefMut_ByRefMut0(
         reader: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
         >,
@@ -191,7 +191,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
             .invoke("CompileBoxArea", (reader, top, right, bottom, left))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CompileBoxArea_Gc_ByRefMut_ByRefMut_ByRefMut_ByRefMut1(
+    pub fn CompileBoxArea_StylePropertyReader_ByRefMut_ByRefMut_ByRefMut_ByRefMut1(
         reader: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
         >,
@@ -204,7 +204,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
             .invoke("CompileBoxArea", (reader, top, right, bottom, left))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CompileBoxArea_Gc_ByRefMut_ByRefMut_ByRefMut_ByRefMut2(
+    pub fn CompileBoxArea_StylePropertyReader_ByRefMut_ByRefMut_ByRefMut_ByRefMut2(
         reader: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
         >,
@@ -245,16 +245,32 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
             crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
         >,
         outDelay: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TimeValue>,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::List_1<
+                    crate::UnityEngine::UIElements::TimeValue,
+                >,
+            >,
         >,
         outDuration: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TimeValue>,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::List_1<
+                    crate::UnityEngine::UIElements::TimeValue,
+                >,
+            >,
         >,
         outProperty: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StylePropertyName>,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::List_1<
+                    crate::UnityEngine::UIElements::StylePropertyName,
+                >,
+            >,
         >,
         outTimingFunction: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EasingFunction>,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::List_1<
+                    crate::UnityEngine::UIElements::EasingFunction,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()

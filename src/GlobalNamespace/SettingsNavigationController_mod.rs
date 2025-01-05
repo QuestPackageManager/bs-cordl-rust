@@ -2,12 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SettingsNavigationController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::NavigationController>,
+    __cordl_parent: crate::HMUI::NavigationController,
     pub _okButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _applyButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _cancelButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::SettingsNavigationController_FinishAction,
+        crate::System::Action_1<
+            crate::GlobalNamespace::SettingsNavigationController_FinishAction,
+        >,
     >,
 }
 #[cfg(feature = "SettingsNavigationController")]
@@ -17,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SettingsNavigationController")]
 impl std::ops::Deref for crate::GlobalNamespace::SettingsNavigationController {
-    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::NavigationController>;
+    type Target = crate::HMUI::NavigationController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -109,7 +111,9 @@ impl crate::GlobalNamespace::SettingsNavigationController {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::SettingsNavigationController_FinishAction,
+            crate::System::Action_1<
+                crate::GlobalNamespace::SettingsNavigationController_FinishAction,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -122,7 +126,9 @@ impl crate::GlobalNamespace::SettingsNavigationController {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::SettingsNavigationController_FinishAction,
+            crate::System::Action_1<
+                crate::GlobalNamespace::SettingsNavigationController_FinishAction,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

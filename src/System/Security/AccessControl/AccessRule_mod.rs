@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AccessRule {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Security::AccessControl::AuthorizationRule,
-    >,
+    __cordl_parent: crate::System::Security::AccessControl::AuthorizationRule,
     pub _cordl_type: crate::System::Security::AccessControl::AccessControlType,
 }
 #[cfg(feature = "System+Security+AccessControl+AccessRule")]
@@ -14,9 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+AccessControl+AccessRule")]
 impl std::ops::Deref for crate::System::Security::AccessControl::AccessRule {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Security::AccessControl::AuthorizationRule,
-    >;
+    type Target = crate::System::Security::AccessControl::AuthorizationRule;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

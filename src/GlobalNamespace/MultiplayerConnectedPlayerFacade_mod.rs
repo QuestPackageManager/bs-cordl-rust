@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerFacade {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _outroAnimator: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _bigAvatarAnimator: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MultiplayerBigAvatarAnimator,
@@ -33,7 +33,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplayerConnectedPlayerFacade")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerConnectedPlayerFacade {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -184,7 +184,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerFacade {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerFacade_Factory {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Zenject::PlaceholderFactory_3<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
         crate::GlobalNamespace::MultiplayerPlayerStartState,
         quest_hook::libil2cpp::Gc<
@@ -201,7 +201,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MultiplayerConnectedPlayerFacade+Factory")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerFacade_Factory {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Zenject::PlaceholderFactory_3<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
         crate::GlobalNamespace::MultiplayerPlayerStartState,
         quest_hook::libil2cpp::Gc<

@@ -6,8 +6,14 @@ pub struct KeyValueCollectionPropertyBag_3<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TDictionary>,
-    pub m_KeyValuePairProperty: quest_hook::libil2cpp::Gc<TDictionary, TKey, TValue>,
+    __cordl_parent: crate::Unity::Properties::PropertyBag_1<TDictionary>,
+    pub m_KeyValuePairProperty: quest_hook::libil2cpp::Gc<
+        crate::Unity::Properties::KeyValueCollectionPropertyBag_3_KeyValuePairProperty<
+            TDictionary,
+            TKey,
+            TValue,
+        >,
+    >,
     __cordl_phantom_TDictionary: std::marker::PhantomData<TDictionary>,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
@@ -29,7 +35,7 @@ for crate::Unity::Properties::KeyValueCollectionPropertyBag_3<
     TKey,
     TValue,
 > {
-    type Target = quest_hook::libil2cpp::Gc<TDictionary>;
+    type Target = crate::Unity::Properties::PropertyBag_1<TDictionary>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -118,13 +124,13 @@ impl<
     TDictionary: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<TDictionary>>
+> AsRef<crate::Unity::Properties::IPropertyBag>
 for crate::Unity::Properties::KeyValueCollectionPropertyBag_3<
     TDictionary,
     TKey,
     TValue,
 > {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TDictionary> {
+    fn as_ref(&self) -> &crate::Unity::Properties::IPropertyBag {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -133,13 +139,13 @@ impl<
     TDictionary: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<TDictionary>>
+> AsMut<crate::Unity::Properties::IPropertyBag>
 for crate::Unity::Properties::KeyValueCollectionPropertyBag_3<
     TDictionary,
     TKey,
     TValue,
 > {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TDictionary> {
+    fn as_mut(&mut self) -> &mut crate::Unity::Properties::IPropertyBag {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -148,15 +154,13 @@ impl<
     TDictionary: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::Unity::Properties::IPropertyBag>>
+> AsRef<crate::Unity::Properties::IPropertyBag_1<TDictionary>>
 for crate::Unity::Properties::KeyValueCollectionPropertyBag_3<
     TDictionary,
     TKey,
     TValue,
 > {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Unity::Properties::IPropertyBag> {
+    fn as_ref(&self) -> &crate::Unity::Properties::IPropertyBag_1<TDictionary> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -165,15 +169,13 @@ impl<
     TDictionary: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::Unity::Properties::IPropertyBag>>
+> AsMut<crate::Unity::Properties::IPropertyBag_1<TDictionary>>
 for crate::Unity::Properties::KeyValueCollectionPropertyBag_3<
     TDictionary,
     TKey,
     TValue,
 > {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Unity::Properties::IPropertyBag> {
+    fn as_mut(&mut self) -> &mut crate::Unity::Properties::IPropertyBag_1<TDictionary> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -185,7 +187,7 @@ pub struct KeyValueCollectionPropertyBag_3_KeyValuePairProperty<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Unity::Properties::Property_2<
         TDictionary,
         crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
     >,
@@ -212,7 +214,7 @@ for crate::Unity::Properties::KeyValueCollectionPropertyBag_3_KeyValuePairProper
     TKey,
     TValue,
 > {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Unity::Properties::Property_2<
         TDictionary,
         crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
     >;

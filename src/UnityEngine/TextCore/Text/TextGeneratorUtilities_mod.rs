@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextGeneratorUtilities {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextGeneratorUtilities")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+TextCore+Text+TextGeneratorUtilities")]
 impl std::ops::Deref for crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -50,7 +50,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             .invoke("ConvertToFloat", (chars, startIndex, length, lastIndex))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ConvertToFloat_Gc_i32_i32_0(
+    pub fn ConvertToFloat_Il2CppArray_i32_i32_0(
         chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         startIndex: i32,
         length: i32,
@@ -121,7 +121,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             .invoke("GetAttributeParameters", (chars, startIndex, length, parameters))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetMarkupTagHashCode_Gc1(
+    pub fn GetMarkupTagHashCode_Il2CppArray1(
         styleDefinition: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u32>,
         >,
@@ -175,7 +175,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             .invoke("GetStyleHashCode", (text, index, closeIndex))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetUTF16_Gc0(
+    pub fn GetUTF16_Il2CppArray0(
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         i: i32,
     ) -> quest_hook::libil2cpp::Result<u32> {
@@ -191,7 +191,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             .invoke("GetUTF16", (text, i))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetUTF32_Gc0(
+    pub fn GetUTF32_Il2CppArray0(
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         i: i32,
     ) -> quest_hook::libil2cpp::Result<u32> {
@@ -207,7 +207,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             .invoke("GetUTF32", (text, i))?;
         Ok(__cordl_ret.into())
     }
-    pub fn HexCharsToColor_Gc_i32_0(
+    pub fn HexCharsToColor_Il2CppArray_i32_0(
         hexChars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         tagCount: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {

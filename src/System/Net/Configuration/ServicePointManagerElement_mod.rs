@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ServicePointManagerElement {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Configuration::ConfigurationElement,
-    >,
+    __cordl_parent: crate::System::Configuration::ConfigurationElement,
 }
 #[cfg(feature = "System+Net+Configuration+ServicePointManagerElement")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -14,9 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Configuration+ServicePointManagerElement")]
 impl std::ops::Deref for crate::System::Net::Configuration::ServicePointManagerElement {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Configuration::ConfigurationElement,
-    >;
+    type Target = crate::System::Configuration::ConfigurationElement;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BindableElement {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::VisualElement,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
     pub _binding_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::IBinding,
     >,
@@ -19,9 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+BindableElement")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::BindableElement {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::VisualElement,
-    >;
+    type Target = crate::UnityEngine::UIElements::VisualElement;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -91,20 +87,16 @@ for crate::UnityEngine::UIElements::BindableElement {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BindableElement")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IBindable>>
+impl AsRef<crate::UnityEngine::UIElements::IBindable>
 for crate::UnityEngine::UIElements::BindableElement {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IBindable> {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IBindable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BindableElement")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IBindable>>
+impl AsMut<crate::UnityEngine::UIElements::IBindable>
 for crate::UnityEngine::UIElements::BindableElement {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IBindable> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IBindable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -112,7 +104,7 @@ for crate::UnityEngine::UIElements::BindableElement {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BindableElement_UxmlFactory {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BindableElement>,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
@@ -127,7 +119,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+BindableElement+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::BindableElement_UxmlFactory {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BindableElement>,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
@@ -177,9 +169,7 @@ for crate::UnityEngine::UIElements::BindableElement_UxmlFactory {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BindableElement_UxmlTraits {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
     pub m_PropertyPath: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
     >,
@@ -192,9 +182,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+BindableElement+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::BindableElement_UxmlTraits {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
-    >;
+    type Target = crate::UnityEngine::UIElements::VisualElement_UxmlTraits;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

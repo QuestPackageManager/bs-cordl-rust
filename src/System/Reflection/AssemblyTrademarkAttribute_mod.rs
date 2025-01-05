@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssemblyTrademarkAttribute {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+    __cordl_parent: crate::System::Attribute,
     pub _Trademark_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Reflection+AssemblyTrademarkAttribute")]
 impl std::ops::Deref for crate::System::Reflection::AssemblyTrademarkAttribute {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Attribute>;
+    type Target = crate::System::Attribute;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

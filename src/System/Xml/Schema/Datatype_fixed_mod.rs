@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Datatype_fixed {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::Datatype_decimal,
-    >,
+    __cordl_parent: crate::System::Xml::Schema::Datatype_decimal,
 }
 #[cfg(feature = "System+Xml+Schema+Datatype_fixed")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+Datatype_fixed")]
 impl std::ops::Deref for crate::System::Xml::Schema::Datatype_fixed {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::Datatype_decimal,
-    >;
+    type Target = crate::System::Xml::Schema::Datatype_decimal;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

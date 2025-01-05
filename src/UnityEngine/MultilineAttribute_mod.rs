@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultilineAttribute {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::PropertyAttribute>,
+    __cordl_parent: crate::UnityEngine::PropertyAttribute,
     pub lines: i32,
 }
 #[cfg(feature = "UnityEngine+MultilineAttribute")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+MultilineAttribute")]
 impl std::ops::Deref for crate::UnityEngine::MultilineAttribute {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::PropertyAttribute>;
+    type Target = crate::UnityEngine::PropertyAttribute;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

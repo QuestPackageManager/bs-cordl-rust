@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssemblyName {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub codebase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub major: i32,
@@ -29,7 +29,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Reflection+AssemblyName")]
 impl std::ops::Deref for crate::System::Reflection::AssemblyName {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -157,7 +157,7 @@ impl crate::System::Reflection::AssemblyName {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Il2CppString1(
         assemblyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -166,7 +166,7 @@ impl crate::System::Reflection::AssemblyName {
             .invoke_void(".ctor", (assemblyName))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_StreamingContext2(
+    pub fn New_SerializationInfo_StreamingContext2(
         si: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -225,7 +225,7 @@ impl crate::System::Reflection::AssemblyName {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
         assemblyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -236,7 +236,7 @@ impl crate::System::Reflection::AssemblyName {
             .invoke(".ctor", (assemblyName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_StreamingContext2(
+    pub fn _ctor_SerializationInfo_StreamingContext2(
         &mut self,
         si: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -349,92 +349,60 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Reflection::AssemblyNa
     }
 }
 #[cfg(feature = "System+Reflection+AssemblyName")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
+impl AsRef<crate::System::ICloneable> for crate::System::Reflection::AssemblyName {
+    fn as_ref(&self) -> &crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Reflection+AssemblyName")]
+impl AsMut<crate::System::ICloneable> for crate::System::Reflection::AssemblyName {
+    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Reflection+AssemblyName")]
+impl AsRef<crate::System::Runtime::InteropServices::_AssemblyName>
 for crate::System::Reflection::AssemblyName {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
+    fn as_ref(&self) -> &crate::System::Runtime::InteropServices::_AssemblyName {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Reflection+AssemblyName")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
+impl AsMut<crate::System::Runtime::InteropServices::_AssemblyName>
 for crate::System::Reflection::AssemblyName {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::InteropServices::_AssemblyName {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Reflection+AssemblyName")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::InteropServices::_AssemblyName>,
-> for crate::System::Reflection::AssemblyName {
+impl AsRef<crate::System::Runtime::Serialization::IDeserializationCallback>
+for crate::System::Reflection::AssemblyName {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::InteropServices::_AssemblyName,
-    > {
+    ) -> &crate::System::Runtime::Serialization::IDeserializationCallback {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Reflection+AssemblyName")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::InteropServices::_AssemblyName>,
-> for crate::System::Reflection::AssemblyName {
+impl AsMut<crate::System::Runtime::Serialization::IDeserializationCallback>
+for crate::System::Reflection::AssemblyName {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::InteropServices::_AssemblyName,
-    > {
+    ) -> &mut crate::System::Runtime::Serialization::IDeserializationCallback {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Reflection+AssemblyName")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IDeserializationCallback,
-    >,
-> for crate::System::Reflection::AssemblyName {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IDeserializationCallback,
-    > {
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Reflection::AssemblyName {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Reflection+AssemblyName")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IDeserializationCallback,
-    >,
-> for crate::System::Reflection::AssemblyName {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IDeserializationCallback,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Reflection+AssemblyName")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::Reflection::AssemblyName {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Reflection+AssemblyName")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::Reflection::AssemblyName {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Reflection::AssemblyName {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UIElementsRuntimeUtility {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIElementsRuntimeUtility")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UIElementsRuntimeUtility")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIElementsRuntimeUtility {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -77,11 +77,15 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtility {
     }
     pub fn GetSortedPlayerPanels() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Panel>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Panel>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Panel>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Panel>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetSortedPlayerPanels", ())?;
         Ok(__cordl_ret.into())
@@ -221,7 +225,11 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtility {
     }
     pub fn add_onCreatePanel(
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BaseRuntimePanel>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::BaseRuntimePanel,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -251,7 +259,11 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtility {
     }
     pub fn remove_onCreatePanel(
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BaseRuntimePanel>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::BaseRuntimePanel,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -282,7 +294,7 @@ for crate::UnityEngine::UIElements::UIElementsRuntimeUtility {
 #[repr(C)]
 #[derive(Debug)]
 pub struct UIElementsRuntimeUtility_CreateRuntimePanelDelegate {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
     feature = "UnityEngine+UIElements+UIElementsRuntimeUtility+CreateRuntimePanelDelegate"
@@ -297,7 +309,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::UIElementsRuntimeUtility_CreateRuntimePanelDelegate {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

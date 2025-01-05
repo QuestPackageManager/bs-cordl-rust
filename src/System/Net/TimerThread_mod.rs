@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimerThread {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Net+TimerThread")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -26,7 +26,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+TimerThread")]
 impl std::ops::Deref for crate::System::Net::TimerThread {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -123,7 +123,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::TimerThread {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimerThread_Callback {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "System+Net+TimerThread+Callback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -132,7 +132,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+TimerThread+Callback")]
 impl std::ops::Deref for crate::System::Net::TimerThread_Callback {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -194,7 +194,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::TimerThread_Callb
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimerThread_InfiniteTimer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Net::TimerThread_Timer>,
+    __cordl_parent: crate::System::Net::TimerThread_Timer,
     pub cancelled: i32,
 }
 #[cfg(feature = "System+Net+TimerThread+InfiniteTimer")]
@@ -204,7 +204,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+TimerThread+InfiniteTimer")]
 impl std::ops::Deref for crate::System::Net::TimerThread_InfiniteTimer {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Net::TimerThread_Timer>;
+    type Target = crate::System::Net::TimerThread_Timer;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -263,7 +263,7 @@ for crate::System::Net::TimerThread_InfiniteTimer {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimerThread_InfiniteTimerQueue {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Net::TimerThread_Queue>,
+    __cordl_parent: crate::System::Net::TimerThread_Queue,
 }
 #[cfg(feature = "System+Net+TimerThread+InfiniteTimerQueue")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -272,7 +272,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+TimerThread+InfiniteTimerQueue")]
 impl std::ops::Deref for crate::System::Net::TimerThread_InfiniteTimerQueue {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Net::TimerThread_Queue>;
+    type Target = crate::System::Net::TimerThread_Queue;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -332,7 +332,7 @@ for crate::System::Net::TimerThread_InfiniteTimerQueue {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimerThread_Queue {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_DurationMilliseconds: i32,
 }
 #[cfg(feature = "System+Net+TimerThread+Queue")]
@@ -342,7 +342,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+TimerThread+Queue")]
 impl std::ops::Deref for crate::System::Net::TimerThread_Queue {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -411,7 +411,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::TimerThread_Queue
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimerThread_Timer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_StartTimeMilliseconds: i32,
     pub m_DurationMilliseconds: i32,
 }
@@ -422,7 +422,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+TimerThread+Timer")]
 impl std::ops::Deref for crate::System::Net::TimerThread_Timer {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -504,16 +504,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::TimerThread_Timer
     }
 }
 #[cfg(feature = "System+Net+TimerThread+Timer")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::System::Net::TimerThread_Timer {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsRef<crate::System::IDisposable> for crate::System::Net::TimerThread_Timer {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Net+TimerThread+Timer")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::System::Net::TimerThread_Timer {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsMut<crate::System::IDisposable> for crate::System::Net::TimerThread_Timer {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -521,7 +519,7 @@ for crate::System::Net::TimerThread_Timer {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimerThread_TimerNode {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Net::TimerThread_Timer>,
+    __cordl_parent: crate::System::Net::TimerThread_Timer,
     pub m_TimerState: crate::System::Net::TimerNode_TimerThread_TimerState,
     pub m_Callback: quest_hook::libil2cpp::Gc<crate::System::Net::TimerThread_Callback>,
     pub m_Context: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -536,7 +534,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+TimerThread+TimerNode")]
 impl std::ops::Deref for crate::System::Net::TimerThread_TimerNode {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Net::TimerThread_Timer>;
+    type Target = crate::System::Net::TimerThread_Timer;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -572,7 +570,7 @@ impl crate::System::Net::TimerThread_TimerNode {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc_i32_Gc0(
+    pub fn New_TimerThread_Callback_Il2CppObject_i32_Il2CppObject0(
         callback: quest_hook::libil2cpp::Gc<crate::System::Net::TimerThread_Callback>,
         context: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         durationMilliseconds: i32,
@@ -594,7 +592,7 @@ impl crate::System::Net::TimerThread_TimerNode {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_i32_Gc0(
+    pub fn _ctor_TimerThread_Callback_Il2CppObject_i32_Il2CppObject0(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<crate::System::Net::TimerThread_Callback>,
         context: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -677,7 +675,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::TimerThread_Timer
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimerThread_TimerQueue {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Net::TimerThread_Queue>,
+    __cordl_parent: crate::System::Net::TimerThread_Queue,
     pub m_ThisHandle: crate::System::IntPtr,
     pub m_Timers: quest_hook::libil2cpp::Gc<crate::System::Net::TimerThread_TimerNode>,
 }
@@ -688,7 +686,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+TimerThread+TimerQueue")]
 impl std::ops::Deref for crate::System::Net::TimerThread_TimerQueue {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Net::TimerThread_Queue>;
+    type Target = crate::System::Net::TimerThread_Queue;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

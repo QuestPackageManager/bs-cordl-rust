@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonArrayContract {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Serialization::JsonContainerContract,
-    >,
+    __cordl_parent: crate::Newtonsoft::Json::Serialization::JsonContainerContract,
     pub _CollectionItemType_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::System::Type,
     >,
@@ -12,10 +10,14 @@ pub struct JsonArrayContract {
     pub _genericCollectionDefinitionType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _genericWrapperType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _genericWrapperCreator: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub _genericTemporaryCollectionCreator: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        crate::System::Func_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub _IsArray_k__BackingField: bool,
     pub _ShouldCreateWrapper_k__BackingField: bool,
@@ -24,10 +26,14 @@ pub struct JsonArrayContract {
         crate::System::Reflection::ConstructorInfo,
     >,
     pub _parameterizedCreator: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub _overrideCreator: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub _HasParameterizedCreator_k__BackingField: bool,
 }
@@ -39,9 +45,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonArrayContract")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Serialization::JsonArrayContract {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Serialization::JsonContainerContract,
-    >;
+    type Target = crate::Newtonsoft::Json::Serialization::JsonContainerContract;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -169,14 +173,18 @@ impl crate::Newtonsoft::Json::Serialization::JsonArrayContract {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         > = __cordl_object.invoke("get_OverrideCreator", ())?;
         Ok(__cordl_ret.into())
     }
@@ -184,14 +192,18 @@ impl crate::Newtonsoft::Json::Serialization::JsonArrayContract {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         > = __cordl_object.invoke("get_ParameterizedCreator", ())?;
         Ok(__cordl_ret.into())
     }
@@ -227,7 +239,9 @@ impl crate::Newtonsoft::Json::Serialization::JsonArrayContract {
     pub fn set_OverrideCreator(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

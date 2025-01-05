@@ -5,9 +5,13 @@ pub struct BidirectionalDictionary_2<
     TFirst: quest_hook::libil2cpp::Type,
     TSecond: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    pub _firstToSecond: quest_hook::libil2cpp::Gc<TFirst, TSecond>,
-    pub _secondToFirst: quest_hook::libil2cpp::Gc<TSecond, TFirst>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _firstToSecond: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IDictionary_2<TFirst, TSecond>,
+    >,
+    pub _secondToFirst: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IDictionary_2<TSecond, TFirst>,
+    >,
     pub _duplicateFirstErrorMessage: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
@@ -29,7 +33,7 @@ impl<
     TSecond: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::Newtonsoft::Json::Utilities::BidirectionalDictionary_2<TFirst, TSecond> {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -62,9 +66,13 @@ impl<
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc1(
-        firstEqualityComparer: quest_hook::libil2cpp::Gc<TFirst>,
-        secondEqualityComparer: quest_hook::libil2cpp::Gc<TSecond>,
+    pub fn New_IEqualityComparer_1_IEqualityComparer_1_1(
+        firstEqualityComparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TFirst>,
+        >,
+        secondEqualityComparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TSecond>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TFirst: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -78,9 +86,13 @@ impl<
             .invoke_void(".ctor", (firstEqualityComparer, secondEqualityComparer))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc_Gc_Gc2(
-        firstEqualityComparer: quest_hook::libil2cpp::Gc<TFirst>,
-        secondEqualityComparer: quest_hook::libil2cpp::Gc<TSecond>,
+    pub fn New_IEqualityComparer_1_IEqualityComparer_1_Il2CppString_Il2CppString2(
+        firstEqualityComparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TFirst>,
+        >,
+        secondEqualityComparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TSecond>,
+        >,
         duplicateFirstErrorMessage: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         >,
@@ -177,10 +189,14 @@ impl<
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc1(
+    pub fn _ctor_IEqualityComparer_1_IEqualityComparer_1_1(
         &mut self,
-        firstEqualityComparer: quest_hook::libil2cpp::Gc<TFirst>,
-        secondEqualityComparer: quest_hook::libil2cpp::Gc<TSecond>,
+        firstEqualityComparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TFirst>,
+        >,
+        secondEqualityComparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TSecond>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TFirst: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -195,10 +211,14 @@ impl<
             .invoke(".ctor", (firstEqualityComparer, secondEqualityComparer))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_Gc_Gc2(
+    pub fn _ctor_IEqualityComparer_1_IEqualityComparer_1_Il2CppString_Il2CppString2(
         &mut self,
-        firstEqualityComparer: quest_hook::libil2cpp::Gc<TFirst>,
-        secondEqualityComparer: quest_hook::libil2cpp::Gc<TSecond>,
+        firstEqualityComparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TFirst>,
+        >,
+        secondEqualityComparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TSecond>,
+        >,
         duplicateFirstErrorMessage: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         >,

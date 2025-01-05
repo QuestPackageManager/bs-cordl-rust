@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightmapSettings {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    __cordl_parent: crate::UnityEngine::Object,
 }
 #[cfg(feature = "UnityEngine+LightmapSettings")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+LightmapSettings")]
 impl std::ops::Deref for crate::UnityEngine::LightmapSettings {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>;
+    type Target = crate::UnityEngine::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -62,15 +62,11 @@ impl crate::UnityEngine::LightmapSettings {
     }
     pub fn get_lightmaps() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::LightmapData>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::LightmapData>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::LightmapData>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::LightmapData>,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_lightmaps", ())?;
         Ok(__cordl_ret.into())
     }
@@ -104,9 +100,7 @@ impl crate::UnityEngine::LightmapSettings {
     }
     pub fn set_lightmaps(
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::LightmapData>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::LightmapData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()

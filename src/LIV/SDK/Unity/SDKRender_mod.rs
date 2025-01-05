@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SDKRender {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _clipPlaneCommandBuffer: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Rendering::CommandBuffer,
     >,
@@ -68,7 +68,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LIV+SDK+Unity+SDKRender")]
 impl std::ops::Deref for crate::LIV::SDK::Unity::SDKRender {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -314,18 +314,6 @@ impl crate::LIV::SDK::Unity::SDKRender {
             .invoke("SendTextureToBridge", (texture, id))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetGroundPlane_Gc__cordl_bool2(
-        &mut self,
-        transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-        useLocalSpace: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetGroundPlane", (transform, useLocalSpace))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn SetGroundPlane_Plane__cordl_bool1(
         &mut self,
         plane: crate::UnityEngine::Plane,
@@ -336,6 +324,18 @@ impl crate::LIV::SDK::Unity::SDKRender {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetGroundPlane", (plane, useLocalSpace))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetGroundPlane_Transform__cordl_bool2(
+        &mut self,
+        transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+        useLocalSpace: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetGroundPlane", (transform, useLocalSpace))?;
         Ok(__cordl_ret.into())
     }
     pub fn SetGroundPlane_f32_Vector3__cordl_bool0(
@@ -608,16 +608,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::LIV::SDK::Unity::SDKRender {
     }
 }
 #[cfg(feature = "LIV+SDK+Unity+SDKRender")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::LIV::SDK::Unity::SDKRender {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsRef<crate::System::IDisposable> for crate::LIV::SDK::Unity::SDKRender {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LIV+SDK+Unity+SDKRender")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::LIV::SDK::Unity::SDKRender {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsMut<crate::System::IDisposable> for crate::LIV::SDK::Unity::SDKRender {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CmsSignedData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub signedContent: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Cms::CmsProcessable,
     >,
@@ -33,7 +33,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsSignedData")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::CmsSignedData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -101,7 +101,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedData {
         > = __cordl_object.invoke("GetEncoded", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetEncoded_Gc1(
+    pub fn GetEncoded_Il2CppString1(
         &mut self,
         encoding: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -128,25 +128,21 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedData {
         > = __cordl_object.invoke("GetSignerInfos", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
-        c: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsSignedData>,
+    pub fn New_CmsProcessable_ContentInfo6(
+        signedContent: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::CmsProcessable,
+        >,
+        sigData: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (c))?;
+            .invoke_void(".ctor", (signedContent, sigData))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
-        sigBlock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (sigBlock))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc2(
+    pub fn New_CmsProcessable_Il2CppArray2(
         signedContent: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cms::CmsProcessable,
         >,
@@ -158,17 +154,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedData {
             .invoke_void(".ctor", (signedContent, sigBlock))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc3(
-        hashes: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
-        sigBlock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (hashes, sigBlock))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc4(
+    pub fn New_CmsProcessable_Stream4(
         signedContent: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cms::CmsProcessable,
         >,
@@ -180,19 +166,16 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedData {
             .invoke_void(".ctor", (signedContent, sigData))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc5(
-        sigData: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    pub fn New_CmsSignedData0(
+        c: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsSignedData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (sigData))?;
+            .invoke_void(".ctor", (c))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc6(
-        signedContent: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Cms::CmsProcessable,
-        >,
+    pub fn New_ContentInfo8(
         sigData: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
         >,
@@ -200,10 +183,10 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedData {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (signedContent, sigData))?;
+            .invoke_void(".ctor", (sigData))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc7(
+    pub fn New_IDictionary_ContentInfo7(
         hashes: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
         sigData: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
@@ -215,10 +198,27 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedData {
             .invoke_void(".ctor", (hashes, sigData))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc8(
-        sigData: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
-        >,
+    pub fn New_IDictionary_Il2CppArray3(
+        hashes: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+        sigBlock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (hashes, sigBlock))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Il2CppArray1(
+        sigBlock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (sigBlock))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Stream5(
+        sigData: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -267,29 +267,23 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedData {
             .invoke("ReplaceSigners", (signedData, signerInformationStore))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_CmsProcessable_ContentInfo6(
         &mut self,
-        c: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsSignedData>,
+        signedContent: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::CmsProcessable,
+        >,
+        sigData: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (c))?;
+            .invoke(".ctor", (signedContent, sigData))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
-        &mut self,
-        sigBlock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (sigBlock))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_CmsProcessable_Il2CppArray2(
         &mut self,
         signedContent: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cms::CmsProcessable,
@@ -303,19 +297,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedData {
             .invoke(".ctor", (signedContent, sigBlock))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc3(
-        &mut self,
-        hashes: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
-        sigBlock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (hashes, sigBlock))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc4(
+    pub fn _ctor_CmsProcessable_Stream4(
         &mut self,
         signedContent: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cms::CmsProcessable,
@@ -329,22 +311,19 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedData {
             .invoke(".ctor", (signedContent, sigData))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc5(
+    pub fn _ctor_CmsSignedData0(
         &mut self,
-        sigData: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        c: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsSignedData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (sigData))?;
+            .invoke(".ctor", (c))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc6(
+    pub fn _ctor_ContentInfo8(
         &mut self,
-        signedContent: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Cms::CmsProcessable,
-        >,
         sigData: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
         >,
@@ -353,10 +332,10 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedData {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (signedContent, sigData))?;
+            .invoke(".ctor", (sigData))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc7(
+    pub fn _ctor_IDictionary_ContentInfo7(
         &mut self,
         hashes: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
         sigData: quest_hook::libil2cpp::Gc<
@@ -370,11 +349,32 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedData {
             .invoke(".ctor", (hashes, sigData))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc8(
+    pub fn _ctor_IDictionary_Il2CppArray3(
         &mut self,
-        sigData: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
-        >,
+        hashes: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+        sigBlock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (hashes, sigBlock))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppArray1(
+        &mut self,
+        sigBlock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (sigBlock))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Stream5(
+        &mut self,
+        sigData: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

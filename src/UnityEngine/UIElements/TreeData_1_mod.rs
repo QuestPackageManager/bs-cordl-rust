@@ -2,13 +2,24 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
 pub struct TreeData_1<T: quest_hook::libil2cpp::Type> {
-    pub m_RootItemIds: quest_hook::libil2cpp::Gc<i32>,
-    pub m_Tree: quest_hook::libil2cpp::Gc<
-        i32,
-        crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
+    pub m_RootItemIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IList_1<i32>,
     >,
-    pub m_ParentIds: quest_hook::libil2cpp::Gc<i32, i32>,
-    pub m_ChildrenIds: quest_hook::libil2cpp::Gc<i32, quest_hook::libil2cpp::Gc<i32>>,
+    pub m_Tree: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
+        >,
+    >,
+    pub m_ParentIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+    >,
+    pub m_ChildrenIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
+        >,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "UnityEngine+UIElements+TreeData_1")]
@@ -49,7 +60,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
     pub fn BuildTree(
         &mut self,
         items: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
+            >,
         >,
         isRoot: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -129,7 +142,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
     pub fn RefreshTree(
         &mut self,
         rootItems: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
+            crate::System::Collections::Generic::IList_1<
+                crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -177,7 +192,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
     pub fn _ctor(
         &mut self,
         rootItems: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
+            crate::System::Collections::Generic::IList_1<
+                crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -193,16 +210,18 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
     }
     pub fn get_rootItemIds(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_rootItemIds",
-            (),
-        )?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_rootItemIds", ())?;
         Ok(__cordl_ret.into())
     }
 }

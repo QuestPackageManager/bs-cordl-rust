@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LineRenderer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
+    __cordl_parent: crate::UnityEngine::Renderer,
 }
 #[cfg(feature = "UnityEngine+LineRenderer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+LineRenderer")]
 impl std::ops::Deref for crate::UnityEngine::LineRenderer {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>;
+    type Target = crate::UnityEngine::Renderer;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,7 +24,7 @@ impl std::ops::DerefMut for crate::UnityEngine::LineRenderer {
 }
 #[cfg(feature = "UnityEngine+LineRenderer")]
 impl crate::UnityEngine::LineRenderer {
-    pub fn BakeMesh_Gc__cordl_bool1(
+    pub fn BakeMesh_Camera__cordl_bool1(
         &mut self,
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -212,7 +212,7 @@ impl crate::UnityEngine::LineRenderer {
             .invoke("SetPositionsWithNativeContainer", (positions, count))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetPositions_Gc0(
+    pub fn SetPositions_Il2CppArray0(
         &mut self,
         positions: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,

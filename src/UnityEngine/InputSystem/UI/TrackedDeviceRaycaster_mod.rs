@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TrackedDeviceRaycaster {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::BaseRaycaster,
-    >,
+    __cordl_parent: crate::UnityEngine::EventSystems::BaseRaycaster,
     pub m_RaycastResultsCache: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData,
+        >,
     >,
     pub m_IgnoreReversedGraphics: bool,
     pub m_CheckFor2DOcclusion: bool,
@@ -23,9 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+UI+TrackedDeviceRaycaster")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::BaseRaycaster,
-    >;
+    type Target = crate::UnityEngine::EventSystems::BaseRaycaster;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -73,7 +71,9 @@ impl crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster {
             crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData,
         >,
         resultAppendList: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::RaycastResult,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::EventSystems::RaycastResult,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -102,7 +102,9 @@ impl crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster {
             crate::UnityEngine::EventSystems::PointerEventData,
         >,
         resultAppendList: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::RaycastResult,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::EventSystems::RaycastResult,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -117,7 +119,9 @@ impl crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster {
         canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
         ray: crate::UnityEngine::Ray,
         results: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

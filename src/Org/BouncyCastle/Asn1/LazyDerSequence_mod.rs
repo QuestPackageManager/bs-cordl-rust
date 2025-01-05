@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LazyDerSequence {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::DerSequence,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::DerSequence,
     pub encoded: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+LazyDerSequence")]
@@ -14,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+LazyDerSequence")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::LazyDerSequence {
-    type Target = quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerSequence>;
+    type Target = crate::Org::BouncyCastle::Asn1::DerSequence;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

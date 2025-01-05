@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DualShockGamepad {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Gamepad>,
+    __cordl_parent: crate::UnityEngine::InputSystem::Gamepad,
     pub _touchpadButton_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Controls::ButtonControl,
     >,
@@ -39,7 +39,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+DualShock+DualShockGamepad")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Gamepad>;
+    type Target = crate::UnityEngine::InputSystem::Gamepad;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -394,74 +394,48 @@ for crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+DualShock+DualShockGamepad")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::DualShock::IDualShockHaptics,
-    >,
-> for crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::DualShock::IDualShockHaptics,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+DualShock+DualShockGamepad")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::DualShock::IDualShockHaptics,
-    >,
-> for crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::DualShock::IDualShockHaptics,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+DualShock+DualShockGamepad")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Haptics::IDualMotorRumble>,
-> for crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Haptics::IDualMotorRumble,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+DualShock+DualShockGamepad")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Haptics::IDualMotorRumble>,
-> for crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Haptics::IDualMotorRumble,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+DualShock+DualShockGamepad")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Haptics::IHaptics>>
+impl AsRef<crate::UnityEngine::InputSystem::DualShock::IDualShockHaptics>
 for crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Haptics::IHaptics> {
+    fn as_ref(&self) -> &crate::UnityEngine::InputSystem::DualShock::IDualShockHaptics {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+DualShock+DualShockGamepad")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Haptics::IHaptics>>
+impl AsMut<crate::UnityEngine::InputSystem::DualShock::IDualShockHaptics>
 for crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Haptics::IHaptics,
-    > {
+    ) -> &mut crate::UnityEngine::InputSystem::DualShock::IDualShockHaptics {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+DualShock+DualShockGamepad")]
+impl AsRef<crate::UnityEngine::InputSystem::Haptics::IDualMotorRumble>
+for crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
+    fn as_ref(&self) -> &crate::UnityEngine::InputSystem::Haptics::IDualMotorRumble {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+DualShock+DualShockGamepad")]
+impl AsMut<crate::UnityEngine::InputSystem::Haptics::IDualMotorRumble>
+for crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::InputSystem::Haptics::IDualMotorRumble {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+DualShock+DualShockGamepad")]
+impl AsRef<crate::UnityEngine::InputSystem::Haptics::IHaptics>
+for crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
+    fn as_ref(&self) -> &crate::UnityEngine::InputSystem::Haptics::IHaptics {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+DualShock+DualShockGamepad")]
+impl AsMut<crate::UnityEngine::InputSystem::Haptics::IHaptics>
+for crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::InputSystem::Haptics::IHaptics {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JContainer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+    __cordl_parent: crate::Newtonsoft::Json::Linq::JToken,
     pub _listChanged: quest_hook::libil2cpp::Gc<
         crate::System::ComponentModel::ListChangedEventHandler,
     >,
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Linq::JContainer {
-    type Target = quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>;
+    type Target = crate::Newtonsoft::Json::Linq::JToken;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -146,14 +146,18 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            >,
         > = __cordl_object.invoke("CreateChildrenCollection", ())?;
         Ok(__cordl_ret.into())
     }
@@ -185,14 +189,18 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            >,
         > = __cordl_object.invoke("Descendants", ())?;
         Ok(__cordl_ret.into())
     }
@@ -200,14 +208,18 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            >,
         > = __cordl_object.invoke("DescendantsAndSelf", ())?;
         Ok(__cordl_ret.into())
     }
@@ -247,14 +259,18 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
         _cordl_self: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            >,
         > = __cordl_object.invoke("GetDescendants", (_cordl_self))?;
         Ok(__cordl_ret.into())
     }
@@ -339,7 +355,7 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
             .invoke("MergeItem", (content, settings))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Merge_Gc0(
+    pub fn Merge_Il2CppObject0(
         &mut self,
         content: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -350,7 +366,7 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
             .invoke("Merge", (content))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Merge_Gc1(
+    pub fn Merge_JsonMergeSettings1(
         &mut self,
         content: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         settings: quest_hook::libil2cpp::Gc<
@@ -371,7 +387,7 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc1(
+    pub fn New_JContainer_JsonCloneSettings1(
         other: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JContainer>,
         settings: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Linq::JsonCloneSettings,
@@ -611,7 +627,7 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
         &mut self,
         array: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+                *mut crate::Newtonsoft::Json::Linq::JToken,
             >,
         >,
         arrayIndex: i32,
@@ -1070,9 +1086,7 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
         &mut self,
         listAccessors: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::ComponentModel::PropertyDescriptor,
-                >,
+                *mut crate::System::ComponentModel::PropertyDescriptor,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -1096,9 +1110,7 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
         &mut self,
         listAccessors: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::ComponentModel::PropertyDescriptor,
-                >,
+                *mut crate::System::ComponentModel::PropertyDescriptor,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -1165,7 +1177,9 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
     }
     pub fn Values<T>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerable_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -1173,8 +1187,9 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = __cordl_object
-            .invoke("Values", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<T>,
+        > = __cordl_object.invoke("Values", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
@@ -1187,7 +1202,7 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc1(
+    pub fn _ctor_JContainer_JsonCloneSettings1(
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JContainer>,
         settings: quest_hook::libil2cpp::Gc<
@@ -1244,14 +1259,18 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            >,
         > = __cordl_object.invoke("get_ChildrenTokens", ())?;
         Ok(__cordl_ret.into())
     }
@@ -1345,130 +1364,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::Newtonsoft::Json::Linq::JConta
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
-for crate::Newtonsoft::Json::Linq::JContainer {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
-for crate::Newtonsoft::Json::Linq::JContainer {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
-for crate::Newtonsoft::Json::Linq::JContainer {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
-for crate::Newtonsoft::Json::Linq::JContainer {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IList>>
-for crate::Newtonsoft::Json::Linq::JContainer {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IList> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IList>>
-for crate::Newtonsoft::Json::Linq::JContainer {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IList> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Specialized::INotifyCollectionChanged,
-    >,
-> for crate::Newtonsoft::Json::Linq::JContainer {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Specialized::INotifyCollectionChanged,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Specialized::INotifyCollectionChanged,
-    >,
-> for crate::Newtonsoft::Json::Linq::JContainer {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Specialized::INotifyCollectionChanged,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ComponentModel::IBindingList>>
-for crate::Newtonsoft::Json::Linq::JContainer {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::ComponentModel::IBindingList> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ComponentModel::IBindingList>>
-for crate::Newtonsoft::Json::Linq::JContainer {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::ComponentModel::IBindingList> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ComponentModel::ITypedList>>
-for crate::Newtonsoft::Json::Linq::JContainer {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::ComponentModel::ITypedList> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ComponentModel::ITypedList>>
-for crate::Newtonsoft::Json::Linq::JContainer {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::ComponentModel::ITypedList> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::ICollection_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     >,
 > for crate::Newtonsoft::Json::Linq::JContainer {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::Collections::Generic::ICollection_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -1476,13 +1379,13 @@ impl AsRef<
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::ICollection_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     >,
 > for crate::Newtonsoft::Json::Linq::JContainer {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::Collections::Generic::ICollection_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -1490,13 +1393,13 @@ impl AsMut<
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IEnumerable_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     >,
 > for crate::Newtonsoft::Json::Linq::JContainer {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -1504,13 +1407,13 @@ impl AsRef<
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IEnumerable_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     >,
 > for crate::Newtonsoft::Json::Linq::JContainer {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -1518,13 +1421,13 @@ impl AsMut<
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IList_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     >,
 > for crate::Newtonsoft::Json::Linq::JContainer {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::Collections::Generic::IList_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -1532,15 +1435,103 @@ impl AsRef<
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IList_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     >,
 > for crate::Newtonsoft::Json::Linq::JContainer {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::Collections::Generic::IList_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
+impl AsRef<crate::System::Collections::ICollection>
+for crate::Newtonsoft::Json::Linq::JContainer {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
+impl AsMut<crate::System::Collections::ICollection>
+for crate::Newtonsoft::Json::Linq::JContainer {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::Newtonsoft::Json::Linq::JContainer {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::Newtonsoft::Json::Linq::JContainer {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
+impl AsRef<crate::System::Collections::IList>
+for crate::Newtonsoft::Json::Linq::JContainer {
+    fn as_ref(&self) -> &crate::System::Collections::IList {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
+impl AsMut<crate::System::Collections::IList>
+for crate::Newtonsoft::Json::Linq::JContainer {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IList {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
+impl AsRef<crate::System::Collections::Specialized::INotifyCollectionChanged>
+for crate::Newtonsoft::Json::Linq::JContainer {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Specialized::INotifyCollectionChanged {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
+impl AsMut<crate::System::Collections::Specialized::INotifyCollectionChanged>
+for crate::Newtonsoft::Json::Linq::JContainer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Specialized::INotifyCollectionChanged {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
+impl AsRef<crate::System::ComponentModel::IBindingList>
+for crate::Newtonsoft::Json::Linq::JContainer {
+    fn as_ref(&self) -> &crate::System::ComponentModel::IBindingList {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
+impl AsMut<crate::System::ComponentModel::IBindingList>
+for crate::Newtonsoft::Json::Linq::JContainer {
+    fn as_mut(&mut self) -> &mut crate::System::ComponentModel::IBindingList {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
+impl AsRef<crate::System::ComponentModel::ITypedList>
+for crate::Newtonsoft::Json::Linq::JContainer {
+    fn as_ref(&self) -> &crate::System::ComponentModel::ITypedList {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
+impl AsMut<crate::System::ComponentModel::ITypedList>
+for crate::Newtonsoft::Json::Linq::JContainer {
+    fn as_mut(&mut self) -> &mut crate::System::ComponentModel::ITypedList {
         unsafe { std::mem::transmute(self) }
     }
 }

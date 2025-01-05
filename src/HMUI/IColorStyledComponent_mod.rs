@@ -50,7 +50,7 @@ impl crate::HMUI::IColorStyledComponent {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn UpdateColorStyle_Gc0(
+    pub fn UpdateColorStyle_IReadOnlyColorStyle0(
         &mut self,
         colorStyle: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IReadOnlyColorStyle,

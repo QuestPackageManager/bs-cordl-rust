@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MacOsNetworkInterfaceAPI {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Net::NetworkInformation::UnixNetworkInterfaceAPI,
-    >,
+    __cordl_parent: crate::System::Net::NetworkInformation::UnixNetworkInterfaceAPI,
     pub AF_INET6: i32,
 }
 #[cfg(feature = "System+Net+NetworkInformation+MacOsNetworkInterfaceAPI")]
@@ -16,9 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Net+NetworkInformation+MacOsNetworkInterfaceAPI")]
 impl std::ops::Deref
 for crate::System::Net::NetworkInformation::MacOsNetworkInterfaceAPI {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Net::NetworkInformation::UnixNetworkInterfaceAPI,
-    >;
+    type Target = crate::System::Net::NetworkInformation::UnixNetworkInterfaceAPI;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,9 +33,7 @@ impl crate::System::Net::NetworkInformation::MacOsNetworkInterfaceAPI {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Net::NetworkInformation::NetworkInterface,
-                >,
+                *mut crate::System::Net::NetworkInformation::NetworkInterface,
             >,
         >,
     > {
@@ -48,9 +42,7 @@ impl crate::System::Net::NetworkInformation::MacOsNetworkInterfaceAPI {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Net::NetworkInformation::NetworkInterface,
-                >,
+                *mut crate::System::Net::NetworkInformation::NetworkInterface,
             >,
         > = __cordl_object.invoke("GetAllNetworkInterfaces", ())?;
         Ok(__cordl_ret.into())

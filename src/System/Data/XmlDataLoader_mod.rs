@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlDataLoader {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
     pub _nodeToSchemaMap: quest_hook::libil2cpp::Gc<
         crate::System::Data::XmlToDatasetMap,
@@ -40,7 +40,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+XmlDataLoader")]
 impl std::ops::Deref for crate::System::Data::XmlDataLoader {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -95,7 +95,7 @@ impl crate::System::Data::XmlDataLoader {
         let __cordl_ret: bool = __cordl_object.invoke("FExcludedNamespace", (ns))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FIgnoreNamespace_Gc0(
+    pub fn FIgnoreNamespace_XmlNode0(
         &mut self,
         node: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -105,7 +105,7 @@ impl crate::System::Data::XmlDataLoader {
         let __cordl_ret: bool = __cordl_object.invoke("FIgnoreNamespace", (node))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FIgnoreNamespace_Gc1(
+    pub fn FIgnoreNamespace_XmlReader1(
         &mut self,
         node: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -205,9 +205,7 @@ impl crate::System::Data::XmlDataLoader {
         &mut self,
         column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
         foundColumns: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -217,7 +215,7 @@ impl crate::System::Data::XmlDataLoader {
             .invoke("LoadColumn", (column, foundColumns))?;
         Ok(__cordl_ret.into())
     }
-    pub fn LoadData_Gc0(
+    pub fn LoadData_XmlDocument0(
         &mut self,
         xdoc: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDocument>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -228,7 +226,7 @@ impl crate::System::Data::XmlDataLoader {
             .invoke("LoadData", (xdoc))?;
         Ok(__cordl_ret.into())
     }
-    pub fn LoadData_Gc1(
+    pub fn LoadData_XmlReader1(
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -286,7 +284,7 @@ impl crate::System::Data::XmlDataLoader {
             .invoke("LoadTopMostTable", (table))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc__cordl_bool1(
+    pub fn New_DataSet_XmlElement__cordl_bool1(
         dataset: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
         IsXdr: bool,
         topNode: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
@@ -298,7 +296,18 @@ impl crate::System::Data::XmlDataLoader {
             .invoke_void(".ctor", (dataset, IsXdr, topNode, ignoreSchema))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc__cordl_bool3(
+    pub fn New_DataSet__cordl_bool0(
+        dataset: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
+        IsXdr: bool,
+        ignoreSchema: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (dataset, IsXdr, ignoreSchema))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_DataTable_XmlElement__cordl_bool3(
         datatable: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         IsXdr: bool,
         topNode: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
@@ -310,18 +319,7 @@ impl crate::System::Data::XmlDataLoader {
             .invoke_void(".ctor", (datatable, IsXdr, topNode, ignoreSchema))?;
         Ok(__cordl_object.into())
     }
-    pub fn New__cordl_bool0(
-        dataset: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
-        IsXdr: bool,
-        ignoreSchema: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (dataset, IsXdr, ignoreSchema))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New__cordl_bool2(
+    pub fn New_DataTable__cordl_bool2(
         datatable: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         IsXdr: bool,
         ignoreSchema: bool,
@@ -352,7 +350,7 @@ impl crate::System::Data::XmlDataLoader {
             .invoke("SetRowValueFromXmlText", (row, col, xmlText))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc__cordl_bool1(
+    pub fn _ctor_DataSet_XmlElement__cordl_bool1(
         &mut self,
         dataset: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
         IsXdr: bool,
@@ -366,7 +364,20 @@ impl crate::System::Data::XmlDataLoader {
             .invoke(".ctor", (dataset, IsXdr, topNode, ignoreSchema))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc__cordl_bool3(
+    pub fn _ctor_DataSet__cordl_bool0(
+        &mut self,
+        dataset: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
+        IsXdr: bool,
+        ignoreSchema: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (dataset, IsXdr, ignoreSchema))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_DataTable_XmlElement__cordl_bool3(
         &mut self,
         datatable: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         IsXdr: bool,
@@ -380,20 +391,7 @@ impl crate::System::Data::XmlDataLoader {
             .invoke(".ctor", (datatable, IsXdr, topNode, ignoreSchema))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor__cordl_bool0(
-        &mut self,
-        dataset: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
-        IsXdr: bool,
-        ignoreSchema: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (dataset, IsXdr, ignoreSchema))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor__cordl_bool2(
+    pub fn _ctor_DataTable__cordl_bool2(
         &mut self,
         datatable: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         IsXdr: bool,

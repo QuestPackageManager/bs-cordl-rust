@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SelectableCellSelectableStateController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::GlobalNamespace::SelectableStateController_1<
         quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
     >,
 }
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "SelectableCellSelectableStateController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SelectableCellSelectableStateController {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::GlobalNamespace::SelectableStateController_1<
         quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
     >;
     fn deref(&self) -> &Self::Target {

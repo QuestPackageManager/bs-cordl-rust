@@ -2,9 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct G_AdvancedData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_backgroundImages: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+        >,
     >,
     pub m_graphicsDeviceVersionText: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UI::Text,
@@ -30,9 +32,7 @@ pub struct G_AdvancedData {
     pub m_previousModuleState: crate::Tayx::Graphy::GraphyManager_ModuleState,
     pub m_currentModuleState: crate::Tayx::Graphy::GraphyManager_ModuleState,
     pub m_windowStrings: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "Tayx+Graphy+Advanced+G_AdvancedData")]
@@ -42,7 +42,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Tayx+Graphy+Advanced+G_AdvancedData")]
 impl std::ops::Deref for crate::Tayx::Graphy::Advanced::G_AdvancedData {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -167,36 +167,30 @@ for crate::Tayx::Graphy::Advanced::G_AdvancedData {
     }
 }
 #[cfg(feature = "Tayx+Graphy+Advanced+G_AdvancedData")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::UI::IModifiableState>>
+impl AsRef<crate::Tayx::Graphy::UI::IModifiableState>
 for crate::Tayx::Graphy::Advanced::G_AdvancedData {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::UI::IModifiableState> {
+    fn as_ref(&self) -> &crate::Tayx::Graphy::UI::IModifiableState {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Tayx+Graphy+Advanced+G_AdvancedData")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::UI::IModifiableState>>
+impl AsMut<crate::Tayx::Graphy::UI::IModifiableState>
 for crate::Tayx::Graphy::Advanced::G_AdvancedData {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::UI::IModifiableState> {
+    fn as_mut(&mut self) -> &mut crate::Tayx::Graphy::UI::IModifiableState {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Tayx+Graphy+Advanced+G_AdvancedData")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::UI::IMovable>>
+impl AsRef<crate::Tayx::Graphy::UI::IMovable>
 for crate::Tayx::Graphy::Advanced::G_AdvancedData {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::UI::IMovable> {
+    fn as_ref(&self) -> &crate::Tayx::Graphy::UI::IMovable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Tayx+Graphy+Advanced+G_AdvancedData")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::UI::IMovable>>
+impl AsMut<crate::Tayx::Graphy::UI::IMovable>
 for crate::Tayx::Graphy::Advanced::G_AdvancedData {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::UI::IMovable> {
+    fn as_mut(&mut self) -> &mut crate::Tayx::Graphy::UI::IMovable {
         unsafe { std::mem::transmute(self) }
     }
 }

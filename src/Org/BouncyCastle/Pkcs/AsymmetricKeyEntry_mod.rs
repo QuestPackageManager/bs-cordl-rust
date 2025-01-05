@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsymmetricKeyEntry {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Pkcs::Pkcs12Entry,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Pkcs::Pkcs12Entry,
     pub key: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
     >,
@@ -16,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Pkcs+AsymmetricKeyEntry")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Pkcs::AsymmetricKeyEntry {
-    type Target = quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Pkcs::Pkcs12Entry>;
+    type Target = crate::Org::BouncyCastle::Pkcs::Pkcs12Entry;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -46,7 +44,7 @@ impl crate::Org::BouncyCastle::Pkcs::AsymmetricKeyEntry {
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_AsymmetricKeyParameter0(
         key: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         >,
@@ -57,7 +55,7 @@ impl crate::Org::BouncyCastle::Pkcs::AsymmetricKeyEntry {
             .invoke_void(".ctor", (key))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Hashtable1(
         key: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         >,
@@ -69,7 +67,7 @@ impl crate::Org::BouncyCastle::Pkcs::AsymmetricKeyEntry {
             .invoke_void(".ctor", (key, attributes))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc2(
+    pub fn New_IDictionary2(
         key: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         >,
@@ -81,7 +79,7 @@ impl crate::Org::BouncyCastle::Pkcs::AsymmetricKeyEntry {
             .invoke_void(".ctor", (key, attributes))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_AsymmetricKeyParameter0(
         &mut self,
         key: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
@@ -94,7 +92,7 @@ impl crate::Org::BouncyCastle::Pkcs::AsymmetricKeyEntry {
             .invoke(".ctor", (key))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Hashtable1(
         &mut self,
         key: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
@@ -108,7 +106,7 @@ impl crate::Org::BouncyCastle::Pkcs::AsymmetricKeyEntry {
             .invoke(".ctor", (key, attributes))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_IDictionary2(
         &mut self,
         key: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,

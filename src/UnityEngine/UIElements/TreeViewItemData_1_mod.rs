@@ -5,7 +5,9 @@ pub struct TreeViewItemData_1<T: quest_hook::libil2cpp::Type> {
     pub _id_k__BackingField: i32,
     pub m_Data: T,
     pub m_Children: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
+        crate::System::Collections::Generic::IList_1<
+            crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
+        >,
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -90,14 +92,20 @@ impl<
     pub fn get_children(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TreeViewItemData_1<T>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
+            >,
+        >,
     >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
+            >,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_children", ())?;
         Ok(__cordl_ret.into())
     }

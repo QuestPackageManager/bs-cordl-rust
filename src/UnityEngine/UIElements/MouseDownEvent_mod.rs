@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MouseDownEvent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::MouseEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MouseDownEvent>,
     >,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+MouseDownEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::MouseDownEvent {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::MouseEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MouseDownEvent>,
     >;
     fn deref(&self) -> &Self::Target {
@@ -28,7 +28,7 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::MouseDownEvent {
 }
 #[cfg(feature = "UnityEngine+UIElements+MouseDownEvent")]
 impl crate::UnityEngine::UIElements::MouseDownEvent {
-    pub fn GetPooled_Gc0(
+    pub fn GetPooled_PointerDownEvent0(
         pointerEvent: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::PointerDownEvent,
         >,
@@ -41,7 +41,7 @@ impl crate::UnityEngine::UIElements::MouseDownEvent {
             .invoke("GetPooled", (pointerEvent))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetPooled_Gc1(
+    pub fn GetPooled_PointerMoveEvent1(
         pointerEvent: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::PointerMoveEvent,
         >,

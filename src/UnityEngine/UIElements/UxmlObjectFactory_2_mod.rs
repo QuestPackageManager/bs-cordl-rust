@@ -5,7 +5,10 @@ pub struct UxmlObjectFactory_2<
     TCreatedType: quest_hook::libil2cpp::Type,
     TTraits: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TCreatedType, TTraits>,
+    __cordl_parent: crate::UnityEngine::UIElements::BaseUxmlFactory_2<
+        TCreatedType,
+        TTraits,
+    >,
     __cordl_phantom_TCreatedType: std::marker::PhantomData<TCreatedType>,
     __cordl_phantom_TTraits: std::marker::PhantomData<TTraits>,
 }
@@ -21,7 +24,10 @@ impl<
     TTraits: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::UnityEngine::UIElements::UxmlObjectFactory_2<TCreatedType, TTraits> {
-    type Target = quest_hook::libil2cpp::Gc<TCreatedType, TTraits>;
+    type Target = crate::UnityEngine::UIElements::BaseUxmlFactory_2<
+        TCreatedType,
+        TTraits,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -104,9 +110,9 @@ for crate::UnityEngine::UIElements::UxmlObjectFactory_2<TCreatedType, TTraits> {
 impl<
     TCreatedType: quest_hook::libil2cpp::Type,
     TTraits: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<TCreatedType>>
+> AsRef<crate::UnityEngine::UIElements::IBaseUxmlFactory>
 for crate::UnityEngine::UIElements::UxmlObjectFactory_2<TCreatedType, TTraits> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TCreatedType> {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IBaseUxmlFactory {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -114,9 +120,9 @@ for crate::UnityEngine::UIElements::UxmlObjectFactory_2<TCreatedType, TTraits> {
 impl<
     TCreatedType: quest_hook::libil2cpp::Type,
     TTraits: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<TCreatedType>>
+> AsMut<crate::UnityEngine::UIElements::IBaseUxmlFactory>
 for crate::UnityEngine::UIElements::UxmlObjectFactory_2<TCreatedType, TTraits> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TCreatedType> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IBaseUxmlFactory {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -124,11 +130,31 @@ for crate::UnityEngine::UIElements::UxmlObjectFactory_2<TCreatedType, TTraits> {
 impl<
     TCreatedType: quest_hook::libil2cpp::Type,
     TTraits: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IBaseUxmlFactory>>
+> AsRef<crate::UnityEngine::UIElements::IBaseUxmlObjectFactory>
+for crate::UnityEngine::UIElements::UxmlObjectFactory_2<TCreatedType, TTraits> {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IBaseUxmlObjectFactory {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+UxmlObjectFactory_2")]
+impl<
+    TCreatedType: quest_hook::libil2cpp::Type,
+    TTraits: quest_hook::libil2cpp::Type,
+> AsMut<crate::UnityEngine::UIElements::IBaseUxmlObjectFactory>
+for crate::UnityEngine::UIElements::UxmlObjectFactory_2<TCreatedType, TTraits> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IBaseUxmlObjectFactory {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+UxmlObjectFactory_2")]
+impl<
+    TCreatedType: quest_hook::libil2cpp::Type,
+    TTraits: quest_hook::libil2cpp::Type,
+> AsRef<crate::UnityEngine::UIElements::IUxmlObjectFactory_1<TCreatedType>>
 for crate::UnityEngine::UIElements::UxmlObjectFactory_2<TCreatedType, TTraits> {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IBaseUxmlFactory> {
+    ) -> &crate::UnityEngine::UIElements::IUxmlObjectFactory_1<TCreatedType> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -136,43 +162,11 @@ for crate::UnityEngine::UIElements::UxmlObjectFactory_2<TCreatedType, TTraits> {
 impl<
     TCreatedType: quest_hook::libil2cpp::Type,
     TTraits: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IBaseUxmlFactory>>
+> AsMut<crate::UnityEngine::UIElements::IUxmlObjectFactory_1<TCreatedType>>
 for crate::UnityEngine::UIElements::UxmlObjectFactory_2<TCreatedType, TTraits> {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::IBaseUxmlFactory,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+UxmlObjectFactory_2")]
-impl<
-    TCreatedType: quest_hook::libil2cpp::Type,
-    TTraits: quest_hook::libil2cpp::Type,
-> AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IBaseUxmlObjectFactory>,
-> for crate::UnityEngine::UIElements::UxmlObjectFactory_2<TCreatedType, TTraits> {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::IBaseUxmlObjectFactory,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+UxmlObjectFactory_2")]
-impl<
-    TCreatedType: quest_hook::libil2cpp::Type,
-    TTraits: quest_hook::libil2cpp::Type,
-> AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IBaseUxmlObjectFactory>,
-> for crate::UnityEngine::UIElements::UxmlObjectFactory_2<TCreatedType, TTraits> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::IBaseUxmlObjectFactory,
-    > {
+    ) -> &mut crate::UnityEngine::UIElements::IUxmlObjectFactory_1<TCreatedType> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Transform {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+    __cordl_parent: crate::UnityEngine::Component,
 }
 #[cfg(feature = "UnityEngine+Transform")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Transform")]
 impl std::ops::Deref for crate::UnityEngine::Transform {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>;
+    type Target = crate::UnityEngine::Component;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -251,7 +251,7 @@ impl crate::UnityEngine::Transform {
             .invoke("InverseTransformDirection", (x, y, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn InverseTransformDirections_Gc_i32_Gc_i32_0(
+    pub fn InverseTransformDirections_Il2CppObject_i32_Il2CppObject_i32_0(
         &mut self,
         directions: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         count: i32,
@@ -329,7 +329,7 @@ impl crate::UnityEngine::Transform {
             .invoke("InverseTransformPoint", (x, y, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn InverseTransformPoints_Gc_i32_Gc_i32_0(
+    pub fn InverseTransformPoints_Il2CppObject_i32_Il2CppObject_i32_0(
         &mut self,
         positions: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         count: i32,
@@ -407,7 +407,7 @@ impl crate::UnityEngine::Transform {
             .invoke("InverseTransformVector", (x, y, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn InverseTransformVectors_Gc_i32_Gc_i32_0(
+    pub fn InverseTransformVectors_Il2CppObject_i32_Il2CppObject_i32_0(
         &mut self,
         vectors: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         count: i32,
@@ -476,7 +476,7 @@ impl crate::UnityEngine::Transform {
         let __cordl_ret: bool = __cordl_object.invoke("IsNonUniformScaleTransform", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn LookAt_Gc1(
+    pub fn LookAt_Transform1(
         &mut self,
         target: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -487,7 +487,7 @@ impl crate::UnityEngine::Transform {
             .invoke("LookAt", (target))?;
         Ok(__cordl_ret.into())
     }
-    pub fn LookAt_Gc_Vector3_0(
+    pub fn LookAt_Transform_Vector3_0(
         &mut self,
         target: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         worldUp: crate::UnityEngine::Vector3,
@@ -815,7 +815,7 @@ impl crate::UnityEngine::Transform {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetParent_Gc0(
+    pub fn SetParent_Transform0(
         &mut self,
         p: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -920,7 +920,7 @@ impl crate::UnityEngine::Transform {
             .invoke("TransformDirection", (x, y, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn TransformDirections_Gc_i32_Gc_i32_0(
+    pub fn TransformDirections_Il2CppObject_i32_Il2CppObject_i32_0(
         &mut self,
         directions: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         count: i32,
@@ -998,7 +998,7 @@ impl crate::UnityEngine::Transform {
             .invoke("TransformPoint", (x, y, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn TransformPoints_Gc_i32_Gc_i32_0(
+    pub fn TransformPoints_Il2CppObject_i32_Il2CppObject_i32_0(
         &mut self,
         positions: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         count: i32,
@@ -1076,7 +1076,7 @@ impl crate::UnityEngine::Transform {
             .invoke("TransformVector", (x, y, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn TransformVectors_Gc_i32_Gc_i32_0(
+    pub fn TransformVectors_Il2CppObject_i32_Il2CppObject_i32_0(
         &mut self,
         vectors: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         count: i32,
@@ -1129,10 +1129,10 @@ impl crate::UnityEngine::Transform {
             .invoke("Translate", (translation))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Translate_Vector3_Gc4(
+    pub fn Translate_Vector3_Space0(
         &mut self,
         translation: crate::UnityEngine::Vector3,
-        relativeTo: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+        relativeTo: crate::UnityEngine::Space,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1141,10 +1141,10 @@ impl crate::UnityEngine::Transform {
             .invoke("Translate", (translation, relativeTo))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Translate_Vector3_Space0(
+    pub fn Translate_Vector3_Transform4(
         &mut self,
         translation: crate::UnityEngine::Vector3,
-        relativeTo: crate::UnityEngine::Space,
+        relativeTo: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1166,12 +1166,12 @@ impl crate::UnityEngine::Transform {
             .invoke("Translate", (x, y, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Translate_f32_f32_f32_Gc5(
+    pub fn Translate_f32_f32_f32_Space2(
         &mut self,
         x: f32,
         y: f32,
         z: f32,
-        relativeTo: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+        relativeTo: crate::UnityEngine::Space,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1180,12 +1180,12 @@ impl crate::UnityEngine::Transform {
             .invoke("Translate", (x, y, z, relativeTo))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Translate_f32_f32_f32_Space2(
+    pub fn Translate_f32_f32_f32_Transform5(
         &mut self,
         x: f32,
         y: f32,
         z: f32,
-        relativeTo: crate::UnityEngine::Space,
+        relativeTo: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1776,20 +1776,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Transform {
     }
 }
 #[cfg(feature = "UnityEngine+Transform")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
-for crate::UnityEngine::Transform {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+impl AsRef<crate::System::Collections::IEnumerable> for crate::UnityEngine::Transform {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Transform")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
-for crate::UnityEngine::Transform {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+impl AsMut<crate::System::Collections::IEnumerable> for crate::UnityEngine::Transform {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -1797,7 +1791,7 @@ for crate::UnityEngine::Transform {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Transform_Enumerator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub outer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub currentIndex: i32,
 }
@@ -1808,7 +1802,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Transform+Enumerator")]
 impl std::ops::Deref for crate::UnityEngine::Transform_Enumerator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1882,20 +1876,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Transform_Enumera
     }
 }
 #[cfg(feature = "UnityEngine+Transform+Enumerator")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
+impl AsRef<crate::System::Collections::IEnumerator>
 for crate::UnityEngine::Transform_Enumerator {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Transform+Enumerator")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
+impl AsMut<crate::System::Collections::IEnumerator>
 for crate::UnityEngine::Transform_Enumerator {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }

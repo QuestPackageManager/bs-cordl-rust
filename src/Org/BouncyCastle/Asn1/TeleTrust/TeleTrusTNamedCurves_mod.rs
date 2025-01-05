@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TeleTrusTNamedCurves {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -163,7 +163,7 @@ impl crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetName", (oid))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetOid_Gc0(
+    pub fn GetOid_Il2CppString0(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerObjectIdentifier>,
@@ -227,9 +227,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TeleTrusTNamedCurves_BrainpoolP160r1Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(
     feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP160r1Holder"
@@ -244,9 +242,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP160r1Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -313,9 +309,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP16
 #[repr(C)]
 #[derive(Debug)]
 pub struct TeleTrusTNamedCurves_BrainpoolP160t1Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(
     feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP160t1Holder"
@@ -330,9 +324,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP160t1Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -399,9 +391,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP16
 #[repr(C)]
 #[derive(Debug)]
 pub struct TeleTrusTNamedCurves_BrainpoolP192r1Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(
     feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP192r1Holder"
@@ -416,9 +406,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP192r1Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -485,9 +473,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP19
 #[repr(C)]
 #[derive(Debug)]
 pub struct TeleTrusTNamedCurves_BrainpoolP192t1Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(
     feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP192t1Holder"
@@ -502,9 +488,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP192t1Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -571,9 +555,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP19
 #[repr(C)]
 #[derive(Debug)]
 pub struct TeleTrusTNamedCurves_BrainpoolP224r1Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(
     feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP224r1Holder"
@@ -588,9 +570,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP224r1Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -657,9 +637,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP22
 #[repr(C)]
 #[derive(Debug)]
 pub struct TeleTrusTNamedCurves_BrainpoolP224t1Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(
     feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP224t1Holder"
@@ -674,9 +652,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP224t1Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -743,9 +719,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP22
 #[repr(C)]
 #[derive(Debug)]
 pub struct TeleTrusTNamedCurves_BrainpoolP256r1Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(
     feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP256r1Holder"
@@ -760,9 +734,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP256r1Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -829,9 +801,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP25
 #[repr(C)]
 #[derive(Debug)]
 pub struct TeleTrusTNamedCurves_BrainpoolP256t1Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(
     feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP256t1Holder"
@@ -846,9 +816,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP256t1Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -915,9 +883,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP25
 #[repr(C)]
 #[derive(Debug)]
 pub struct TeleTrusTNamedCurves_BrainpoolP320r1Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(
     feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP320r1Holder"
@@ -932,9 +898,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP320r1Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1001,9 +965,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP32
 #[repr(C)]
 #[derive(Debug)]
 pub struct TeleTrusTNamedCurves_BrainpoolP320t1Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(
     feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP320t1Holder"
@@ -1018,9 +980,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP320t1Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1087,9 +1047,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP32
 #[repr(C)]
 #[derive(Debug)]
 pub struct TeleTrusTNamedCurves_BrainpoolP384r1Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(
     feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP384r1Holder"
@@ -1104,9 +1062,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP384r1Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1173,9 +1129,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP38
 #[repr(C)]
 #[derive(Debug)]
 pub struct TeleTrusTNamedCurves_BrainpoolP384t1Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(
     feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP384t1Holder"
@@ -1190,9 +1144,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP384t1Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1259,9 +1211,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP38
 #[repr(C)]
 #[derive(Debug)]
 pub struct TeleTrusTNamedCurves_BrainpoolP512r1Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(
     feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP512r1Holder"
@@ -1276,9 +1226,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP512r1Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1345,9 +1293,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP51
 #[repr(C)]
 #[derive(Debug)]
 pub struct TeleTrusTNamedCurves_BrainpoolP512t1Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(
     feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP512t1Holder"
@@ -1362,9 +1308,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP512t1Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

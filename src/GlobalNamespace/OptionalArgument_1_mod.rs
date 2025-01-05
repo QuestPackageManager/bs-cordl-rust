@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OptionalArgument_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ArgumentBase>,
+    __cordl_parent: crate::GlobalNamespace::ArgumentBase,
     pub _value: T,
     pub _hasValue: bool,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OptionalArgument_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::OptionalArgument_1<T> {
-    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ArgumentBase>;
+    type Target = crate::GlobalNamespace::ArgumentBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

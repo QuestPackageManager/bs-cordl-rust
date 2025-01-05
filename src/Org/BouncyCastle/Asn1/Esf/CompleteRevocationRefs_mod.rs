@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CompleteRevocationRefs {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub crlOcspRefs: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::Asn1Sequence,
     >,
@@ -17,9 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+Esf+CompleteRevocationRefs")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Esf::CompleteRevocationRefs {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,9 +33,7 @@ impl crate::Org::BouncyCastle::Asn1::Esf::CompleteRevocationRefs {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Asn1::Esf::CrlOcspRef,
-                >,
+                *mut crate::Org::BouncyCastle::Asn1::Esf::CrlOcspRef,
             >,
         >,
     > {
@@ -48,9 +42,7 @@ impl crate::Org::BouncyCastle::Asn1::Esf::CompleteRevocationRefs {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Asn1::Esf::CrlOcspRef,
-                >,
+                *mut crate::Org::BouncyCastle::Asn1::Esf::CrlOcspRef,
             >,
         > = __cordl_object.invoke("GetCrlOcspRefs", ())?;
         Ok(__cordl_ret.into())
@@ -67,7 +59,7 @@ impl crate::Org::BouncyCastle::Asn1::Esf::CompleteRevocationRefs {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_Asn1Sequence0(
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -76,14 +68,8 @@ impl crate::Org::BouncyCastle::Asn1::Esf::CompleteRevocationRefs {
             .invoke_void(".ctor", (seq))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
-        crlOcspRefs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Asn1::Esf::CrlOcspRef,
-                >,
-            >,
-        >,
+    pub fn New_IEnumerable2(
+        crlOcspRefs: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -91,8 +77,12 @@ impl crate::Org::BouncyCastle::Asn1::Esf::CompleteRevocationRefs {
             .invoke_void(".ctor", (crlOcspRefs))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc2(
-        crlOcspRefs: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
+    pub fn New_Il2CppArray1(
+        crlOcspRefs: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Asn1::Esf::CrlOcspRef,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -113,7 +103,7 @@ impl crate::Org::BouncyCastle::Asn1::Esf::CompleteRevocationRefs {
         > = __cordl_object.invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Asn1Sequence0(
         &mut self,
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -124,15 +114,9 @@ impl crate::Org::BouncyCastle::Asn1::Esf::CompleteRevocationRefs {
             .invoke(".ctor", (seq))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_IEnumerable2(
         &mut self,
-        crlOcspRefs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Asn1::Esf::CrlOcspRef,
-                >,
-            >,
-        >,
+        crlOcspRefs: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -141,9 +125,13 @@ impl crate::Org::BouncyCastle::Asn1::Esf::CompleteRevocationRefs {
             .invoke(".ctor", (crlOcspRefs))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_Il2CppArray1(
         &mut self,
-        crlOcspRefs: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
+        crlOcspRefs: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Asn1::Esf::CrlOcspRef,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataColumn {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::ComponentModel::MarshalByValueComponent,
-    >,
+    __cordl_parent: crate::System::ComponentModel::MarshalByValueComponent,
     pub _allowNull: bool,
     pub _caption: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _columnName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -29,7 +27,9 @@ pub struct DataColumn {
     pub _implementsIXMLSerializable: bool,
     pub _defaultValueIsNull: bool,
     pub _dependentColumns: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+        >,
     >,
     pub _extendedProperties: quest_hook::libil2cpp::Gc<
         crate::System::Data::PropertyCollection,
@@ -57,9 +57,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+DataColumn")]
 impl std::ops::Deref for crate::System::Data::DataColumn {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::ComponentModel::MarshalByValueComponent,
-    >;
+    type Target = crate::System::ComponentModel::MarshalByValueComponent;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -102,7 +100,7 @@ impl crate::System::Data::DataColumn {
         let __cordl_ret: bool = __cordl_object.invoke("CheckMaxLength", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn CheckMaxLength_Gc1(
+    pub fn CheckMaxLength_DataRow1(
         &mut self,
         dr: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -180,7 +178,7 @@ impl crate::System::Data::DataColumn {
             .invoke("CompareValueTo", (record1, value, checkType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CompareValueTo_i32_Gc1(
+    pub fn CompareValueTo_i32_Il2CppObject1(
         &mut self,
         record1: i32,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -192,7 +190,7 @@ impl crate::System::Data::DataColumn {
             .invoke("CompareValueTo", (record1, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ConvertObjectToXml_Gc0(
+    pub fn ConvertObjectToXml_Il2CppObject0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
@@ -206,7 +204,7 @@ impl crate::System::Data::DataColumn {
         > = __cordl_object.invoke("ConvertObjectToXml", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ConvertObjectToXml_Gc_Gc1(
+    pub fn ConvertObjectToXml_XmlWriter_XmlRootAttribute1(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         xmlWriter: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
@@ -235,7 +233,7 @@ impl crate::System::Data::DataColumn {
         > = __cordl_object.invoke("ConvertValue", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ConvertXmlToObject_Gc0(
+    pub fn ConvertXmlToObject_Il2CppString0(
         &mut self,
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -249,7 +247,7 @@ impl crate::System::Data::DataColumn {
         > = __cordl_object.invoke("ConvertXmlToObject", (s))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ConvertXmlToObject_Gc1(
+    pub fn ConvertXmlToObject_XmlReader_XmlRootAttribute1(
         &mut self,
         xmlReader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
         xmlAttrib: quest_hook::libil2cpp::Gc<
@@ -471,7 +469,7 @@ impl crate::System::Data::DataColumn {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc1(
+    pub fn New_Il2CppString_Type1(
         columnName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         dataType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -481,7 +479,7 @@ impl crate::System::Data::DataColumn {
             .invoke_void(".ctor", (columnName, dataType))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc_Gc_MappingType2(
+    pub fn New_Il2CppString_Type_Il2CppString_MappingType2(
         columnName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         dataType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         expr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -640,7 +638,7 @@ impl crate::System::Data::DataColumn {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc1(
+    pub fn _ctor_Il2CppString_Type1(
         &mut self,
         columnName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         dataType: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -652,7 +650,7 @@ impl crate::System::Data::DataColumn {
             .invoke(".ctor", (columnName, dataType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_Gc_MappingType2(
+    pub fn _ctor_Il2CppString_Type_Il2CppString_MappingType2(
         &mut self,
         columnName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         dataType: quest_hook::libil2cpp::Gc<crate::System::Type>,

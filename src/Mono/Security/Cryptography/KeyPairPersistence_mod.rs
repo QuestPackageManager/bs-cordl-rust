@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct KeyPairPersistence {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _params: quest_hook::libil2cpp::Gc<
         crate::System::Security::Cryptography::CspParameters,
     >,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Security+Cryptography+KeyPairPersistence")]
 impl std::ops::Deref for crate::Mono::Security::Cryptography::KeyPairPersistence {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -85,7 +85,7 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
         let __cordl_ret: bool = __cordl_object.invoke("Load", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_CspParameters0(
         parameters: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::CspParameters,
         >,
@@ -96,7 +96,7 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
             .invoke_void(".ctor", (parameters))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Il2CppString1(
         parameters: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::CspParameters,
         >,
@@ -190,7 +190,7 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
             .invoke("_ProtectUser", (path))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_CspParameters0(
         &mut self,
         parameters: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::CspParameters,
@@ -203,7 +203,7 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
             .invoke(".ctor", (parameters))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
         parameters: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::CspParameters,

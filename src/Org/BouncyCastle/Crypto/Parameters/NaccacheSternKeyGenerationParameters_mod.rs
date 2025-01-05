@@ -4,9 +4,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NaccacheSternKeyGenerationParameters {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::KeyGenerationParameters,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Crypto::KeyGenerationParameters,
     pub certainty: i32,
     pub countSmallPrimes: i32,
 }
@@ -23,9 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyGenerationParameters {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::KeyGenerationParameters,
-    >;
+    type Target = crate::Org::BouncyCastle::Crypto::KeyGenerationParameters;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -43,7 +39,7 @@ for crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyGenerationPara
     feature = "Org+BouncyCastle+Crypto+Parameters+NaccacheSternKeyGenerationParameters"
 )]
 impl crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyGenerationParameters {
-    pub fn New_Gc_i32_i32_i32_0(
+    pub fn New_SecureRandom_i32_i32_i32_0(
         random: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Security::SecureRandom,
         >,
@@ -75,7 +71,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyGenerationPar
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc_i32_i32_i32_0(
+    pub fn _ctor_SecureRandom_i32_i32_i32_0(
         &mut self,
         random: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Security::SecureRandom,

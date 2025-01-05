@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CursorManager {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _isCursorOverriden_k__BackingField: bool,
 }
 #[cfg(feature = "UnityEngine+UIElements+CursorManager")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+CursorManager")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::CursorManager {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -93,20 +93,16 @@ for crate::UnityEngine::UIElements::CursorManager {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+CursorManager")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ICursorManager>>
+impl AsRef<crate::UnityEngine::UIElements::ICursorManager>
 for crate::UnityEngine::UIElements::CursorManager {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ICursorManager> {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::ICursorManager {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+CursorManager")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ICursorManager>>
+impl AsMut<crate::UnityEngine::UIElements::ICursorManager>
 for crate::UnityEngine::UIElements::CursorManager {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ICursorManager> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::ICursorManager {
         unsafe { std::mem::transmute(self) }
     }
 }

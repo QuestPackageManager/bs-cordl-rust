@@ -121,7 +121,7 @@ impl crate::UnityEngine::InputSystem::InputBindingCompositeContext {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadValue_Gc_i32_4(
+    pub fn ReadValue_Il2CppObject_i32_4(
         &mut self,
         partNumber: i32,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -171,11 +171,15 @@ impl crate::UnityEngine::InputSystem::InputBindingCompositeContext {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputBindingCompositeContext_PartBinding,
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::InputSystem::InputBindingCompositeContext_PartBinding,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputBindingCompositeContext_PartBinding,
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::InputSystem::InputBindingCompositeContext_PartBinding,
+            >,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_controls", ())?;
         Ok(__cordl_ret.into())
     }
@@ -238,22 +242,28 @@ impl<
 #[cfg(
     feature = "UnityEngine+InputSystem+InputBindingCompositeContext+DefaultComparer_1"
 )]
-impl<TValue: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<TValue>>
+impl<
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IComparer_1<TValue>>
 for crate::UnityEngine::InputSystem::InputBindingCompositeContext_DefaultComparer_1<
     TValue,
 > {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TValue> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IComparer_1<TValue> {
         todo!()
     }
 }
 #[cfg(
     feature = "UnityEngine+InputSystem+InputBindingCompositeContext+DefaultComparer_1"
 )]
-impl<TValue: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<TValue>>
+impl<
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IComparer_1<TValue>>
 for crate::UnityEngine::InputSystem::InputBindingCompositeContext_DefaultComparer_1<
     TValue,
 > {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IComparer_1<TValue> {
         todo!()
     }
 }

@@ -2,18 +2,18 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StandardLevelScenesTransitionSetupDataSO {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LevelScenesTransitionSetupDataSO,
-    >,
+    __cordl_parent: crate::GlobalNamespace::LevelScenesTransitionSetupDataSO,
     pub _standardGameplaySceneInfo: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SceneInfo,
     >,
     pub _gameCoreSceneInfo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneInfo>,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
         >,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
     >,
     pub _gameMode_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
@@ -49,9 +49,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "StandardLevelScenesTransitionSetupDataSO")]
 impl std::ops::Deref
 for crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LevelScenesTransitionSetupDataSO,
-    >;
+    type Target = crate::GlobalNamespace::LevelScenesTransitionSetupDataSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -139,7 +137,7 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Init_ByRefMut_Gc__cordl_bool_Gc1(
+    pub fn Init_ByRefMut_BeatmapLevel_OverrideEnvironmentSettings_ColorScheme__cordl_bool_ColorScheme_GameplayModifiers_PlayerSpecificSettings_PracticeSettings_EnvironmentsListModel_AudioClipAsyncLoader_BeatmapDataLoader_Il2CppString_BeatmapLevelsModel_BeatmapLevelsEntitlementModel1(
         &mut self,
         gameMode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
@@ -219,7 +217,7 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Init_Gc_ByRefMut_Gc__cordl_bool0(
+    pub fn Init_IBeatmapLevelData_ByRefMut_BeatmapLevel_OverrideEnvironmentSettings_ColorScheme__cordl_bool_ColorScheme_GameplayModifiers_PlayerSpecificSettings_PracticeSettings_EnvironmentsListModel_AudioClipAsyncLoader_BeatmapDataLoader_BeatmapLevelsEntitlementModel_Il2CppString0(
         &mut self,
         gameMode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         beatmapLevelData: quest_hook::libil2cpp::Gc<
@@ -319,10 +317,12 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
             >,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -456,10 +456,12 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
             >,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

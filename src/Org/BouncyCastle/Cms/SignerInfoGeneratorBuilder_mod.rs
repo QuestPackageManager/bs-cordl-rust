@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignerInfoGeneratorBuilder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub directSignature: bool,
     pub signedGen: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Cms+SignerInfoGeneratorBuilder")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,26 +32,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBu
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+SignerInfoGeneratorBuilder")]
 impl crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder {
-    pub fn Build_Gc_Gc0(
-        &mut self,
-        contentSigner: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::ISignatureFactory,
-        >,
-        certificate: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::X509::X509Certificate,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::SignerInfoGenerator>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Cms::SignerInfoGenerator,
-        > = __cordl_object.invoke("Build", (contentSigner, certificate))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Build_Gc_Gc1(
+    pub fn Build_Il2CppArray1(
         &mut self,
         signerFactory: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::ISignatureFactory,
@@ -68,6 +49,25 @@ impl crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cms::SignerInfoGenerator,
         > = __cordl_object.invoke("Build", (signerFactory, subjectKeyIdentifier))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Build_X509Certificate0(
+        &mut self,
+        contentSigner: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::ISignatureFactory,
+        >,
+        certificate: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::X509Certificate,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::SignerInfoGenerator>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::SignerInfoGenerator,
+        > = __cordl_object.invoke("Build", (contentSigner, certificate))?;
         Ok(__cordl_ret.into())
     }
     pub fn CreateGenerator(

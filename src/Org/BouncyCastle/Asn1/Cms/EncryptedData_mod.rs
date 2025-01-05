@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EncryptedData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub version: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
     pub encryptedContentInfo: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::Cms::EncryptedContentInfo,
@@ -20,9 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+EncryptedData")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Cms::EncryptedData {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -45,7 +41,16 @@ impl crate::Org::BouncyCastle::Asn1::Cms::EncryptedData {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_Asn1Sequence2(
+        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (seq))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_EncryptedContentInfo0(
         encInfo: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cms::EncryptedContentInfo,
         >,
@@ -56,7 +61,7 @@ impl crate::Org::BouncyCastle::Asn1::Cms::EncryptedData {
             .invoke_void(".ctor", (encInfo))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_EncryptedContentInfo_Asn1Set1(
         encInfo: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cms::EncryptedContentInfo,
         >,
@@ -68,15 +73,6 @@ impl crate::Org::BouncyCastle::Asn1::Cms::EncryptedData {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (encInfo, unprotectedAttrs))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc2(
-        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seq))?;
         Ok(__cordl_object.into())
     }
     pub fn ToAsn1Object(
@@ -92,7 +88,18 @@ impl crate::Org::BouncyCastle::Asn1::Cms::EncryptedData {
         > = __cordl_object.invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Asn1Sequence2(
+        &mut self,
+        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (seq))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_EncryptedContentInfo0(
         &mut self,
         encInfo: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cms::EncryptedContentInfo,
@@ -105,7 +112,7 @@ impl crate::Org::BouncyCastle::Asn1::Cms::EncryptedData {
             .invoke(".ctor", (encInfo))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_EncryptedContentInfo_Asn1Set1(
         &mut self,
         encInfo: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cms::EncryptedContentInfo,
@@ -119,17 +126,6 @@ impl crate::Org::BouncyCastle::Asn1::Cms::EncryptedData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (encInfo, unprotectedAttrs))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc2(
-        &mut self,
-        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (seq))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_EncryptedContentInfo(

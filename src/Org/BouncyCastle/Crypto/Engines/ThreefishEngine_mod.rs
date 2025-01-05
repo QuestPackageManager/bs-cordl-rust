@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ThreefishEngine {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub blocksizeBytes: i32,
     pub blocksizeWords: i32,
     pub currentBlock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -73,20 +73,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine {
         let __cordl_ret: i32 = __cordl_object.invoke("GetBlockSize", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Init_Gc1(
-        &mut self,
-        forEncryption: bool,
-        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
-        tweak: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (forEncryption, key, tweak))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Init__cordl_bool_Gc0(
+    pub fn Init_ICipherParameters0(
         &mut self,
         forEncryption: bool,
         parameters: quest_hook::libil2cpp::Gc<
@@ -100,6 +87,19 @@ impl crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine {
             .invoke("Init", (forEncryption, parameters))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Init_Il2CppArray_Il2CppArray1(
+        &mut self,
+        forEncryption: bool,
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
+        tweak: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", (forEncryption, key, tweak))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         blocksizeBits: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -109,7 +109,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine {
             .invoke_void(".ctor", (blocksizeBits))?;
         Ok(__cordl_object.into())
     }
-    pub fn ProcessBlock_Gc1(
+    pub fn ProcessBlock_Il2CppArray1(
         &mut self,
         inWords: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
         outWords: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
@@ -121,7 +121,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine {
             .invoke("ProcessBlock", (inWords, outWords))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ProcessBlock_i32_Gc_i32_0(
+    pub fn ProcessBlock_i32_Il2CppArray_i32_0(
         &mut self,
         inBytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         inOff: i32,
@@ -237,20 +237,16 @@ for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockCipher>>
+impl AsRef<crate::Org::BouncyCastle::Crypto::IBlockCipher>
 for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockCipher> {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IBlockCipher {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockCipher>>
+impl AsMut<crate::Org::BouncyCastle::Crypto::IBlockCipher>
 for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockCipher> {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IBlockCipher {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -258,9 +254,7 @@ for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ThreefishEngine_Threefish1024Cipher {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+Threefish1024Cipher")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -271,9 +265,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+Threefish1024Cipher")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish1024Cipher {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher,
-    >;
+    type Target = crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -412,9 +404,7 @@ for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish1024Ciph
 #[repr(C)]
 #[derive(Debug)]
 pub struct ThreefishEngine_Threefish256Cipher {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+Threefish256Cipher")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -425,9 +415,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+Threefish256Cipher")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish256Cipher {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher,
-    >;
+    type Target = crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -518,9 +506,7 @@ for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish256Ciphe
 #[repr(C)]
 #[derive(Debug)]
 pub struct ThreefishEngine_Threefish512Cipher {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+Threefish512Cipher")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -531,9 +517,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+Threefish512Cipher")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish512Cipher {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher,
-    >;
+    type Target = crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -640,7 +624,7 @@ for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish512Ciphe
 #[repr(C)]
 #[derive(Debug)]
 pub struct ThreefishEngine_ThreefishCipher {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub t: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
     pub kw: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
 }
@@ -653,7 +637,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+ThreefishCipher")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

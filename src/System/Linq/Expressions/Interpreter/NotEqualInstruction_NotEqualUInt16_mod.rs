@@ -4,9 +4,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NotEqualInstruction_NotEqualUInt16 {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::NotEqualInstruction,
-    >,
+    __cordl_parent: crate::System::Linq::Expressions::Interpreter::NotEqualInstruction,
 }
 #[cfg(
     feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualUInt16"
@@ -20,9 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
     feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualUInt16"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::NotEqualInstruction_NotEqualUInt16 {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::NotEqualInstruction,
-    >;
+    type Target = crate::System::Linq::Expressions::Interpreter::NotEqualInstruction;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

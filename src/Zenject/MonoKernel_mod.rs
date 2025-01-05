@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MonoKernel {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _tickableManager: quest_hook::libil2cpp::Gc<crate::Zenject::TickableManager>,
     pub _initializableManager: quest_hook::libil2cpp::Gc<
         crate::Zenject::InitializableManager,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+MonoKernel")]
 impl std::ops::Deref for crate::Zenject::MonoKernel {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

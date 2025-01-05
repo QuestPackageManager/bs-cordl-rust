@@ -6,7 +6,7 @@ pub struct RemoteStateBuffer_3<
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TStateTable, TType, TState>,
+    __cordl_parent: crate::GlobalNamespace::StateBuffer_3<TStateTable, TType, TState>,
     pub _receivedStates: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
             crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
@@ -46,7 +46,7 @@ impl<
     TState: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::GlobalNamespace::RemoteStateBuffer_3<TStateTable, TType, TState> {
-    type Target = quest_hook::libil2cpp::Gc<TStateTable, TType, TState>;
+    type Target = crate::GlobalNamespace::StateBuffer_3<TStateTable, TType, TState>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -88,8 +88,20 @@ impl<
     }
     pub fn New(
         _cordl_size: i32,
-        interpolator: quest_hook::libil2cpp::Gc<TStateTable, TType, TState>,
-        smoother: quest_hook::libil2cpp::Gc<TStateTable, TType, TState>,
+        interpolator: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::StateBuffer_3_InterpolationDelegate<
+                TStateTable,
+                TType,
+                TState,
+            >,
+        >,
+        smoother: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<
+                TStateTable,
+                TType,
+                TState,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -168,8 +180,20 @@ impl<
     pub fn _ctor(
         &mut self,
         _cordl_size: i32,
-        interpolator: quest_hook::libil2cpp::Gc<TStateTable, TType, TState>,
-        smoother: quest_hook::libil2cpp::Gc<TStateTable, TType, TState>,
+        interpolator: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::StateBuffer_3_InterpolationDelegate<
+                TStateTable,
+                TType,
+                TState,
+            >,
+        >,
+        smoother: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<
+                TStateTable,
+                TType,
+                TState,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HealthWarningScenesTransitionSetupDataSO {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO,
-    >,
+    __cordl_parent: crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO,
 }
 #[cfg(feature = "HealthWarningScenesTransitionSetupDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "HealthWarningScenesTransitionSetupDataSO")]
 impl std::ops::Deref
 for crate::GlobalNamespace::HealthWarningScenesTransitionSetupDataSO {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO,
-    >;
+    type Target = crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

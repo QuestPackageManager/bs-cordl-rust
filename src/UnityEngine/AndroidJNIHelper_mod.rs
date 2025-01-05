@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AndroidJNIHelper {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+AndroidJNIHelper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+AndroidJNIHelper")]
 impl std::ops::Deref for crate::UnityEngine::AndroidJNIHelper {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -78,7 +78,7 @@ impl crate::UnityEngine::AndroidJNIHelper {
             .invoke("Box", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Box_jvalue_Gc_Gc0(
+    pub fn Box_jvalue_Il2CppString_Il2CppString0(
         val: crate::UnityEngine::jvalue,
         boxedClass: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -105,11 +105,9 @@ impl crate::UnityEngine::AndroidJNIHelper {
             .invoke("ConvertToJNIArray", (array))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateJNIArgArray_Gc0(
+    pub fn CreateJNIArgArray_Il2CppArray0(
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -124,9 +122,7 @@ impl crate::UnityEngine::AndroidJNIHelper {
     }
     pub fn CreateJNIArgArray_Span_1_1(
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
         jniArgs: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -148,11 +144,9 @@ impl crate::UnityEngine::AndroidJNIHelper {
             .invoke("CreateJavaRunnable", (jrunnable))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DeleteJNIArgArray_Gc0(
+    pub fn DeleteJNIArgArray_Il2CppArray0(
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
         jniArgs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
@@ -164,9 +158,7 @@ impl crate::UnityEngine::AndroidJNIHelper {
     }
     pub fn DeleteJNIArgArray_Span_1_1(
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
         jniArgs: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -174,24 +166,22 @@ impl crate::UnityEngine::AndroidJNIHelper {
             .invoke("DeleteJNIArgArray", (args, jniArgs))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetConstructorID_Gc1(
+    pub fn GetConstructorID_Il2CppArray2(
+        jclass: crate::System::IntPtr,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetConstructorID", (jclass, args))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetConstructorID_Il2CppString1(
         javaClass: crate::System::IntPtr,
         signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetConstructorID", (javaClass, signature))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetConstructorID_Gc2(
-        jclass: crate::System::IntPtr,
-        args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetConstructorID", (jclass, args))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetConstructorID_IntPtr0(
@@ -201,7 +191,7 @@ impl crate::UnityEngine::AndroidJNIHelper {
             .invoke("GetConstructorID", (javaClass))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetFieldID_Gc1(
+    pub fn GetFieldID_Il2CppString1(
         javaClass: crate::System::IntPtr,
         fieldName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -210,7 +200,7 @@ impl crate::UnityEngine::AndroidJNIHelper {
             .invoke("GetFieldID", (javaClass, fieldName, signature))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetFieldID_Gc__cordl_bool2(
+    pub fn GetFieldID_Il2CppString__cordl_bool2(
         javaClass: crate::System::IntPtr,
         fieldName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -220,7 +210,7 @@ impl crate::UnityEngine::AndroidJNIHelper {
             .invoke("GetFieldID", (javaClass, fieldName, signature, isStatic))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetFieldID_IntPtr_Gc0(
+    pub fn GetFieldID_IntPtr_Il2CppString0(
         javaClass: crate::System::IntPtr,
         fieldName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
@@ -241,32 +231,11 @@ impl crate::UnityEngine::AndroidJNIHelper {
             .invoke("GetFieldID", (jclass, fieldName, isStatic))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetMethodID_Gc1(
-        javaClass: crate::System::IntPtr,
-        methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetMethodID", (javaClass, methodName, signature))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetMethodID_Gc__cordl_bool2(
-        javaClass: crate::System::IntPtr,
-        methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        isStatic: bool,
-    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetMethodID", (javaClass, methodName, signature, isStatic))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetMethodID_Gc__cordl_bool3(
+    pub fn GetMethodID_Il2CppArray__cordl_bool3(
         jclass: crate::System::IntPtr,
         methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
         isStatic: bool,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
@@ -274,13 +243,11 @@ impl crate::UnityEngine::AndroidJNIHelper {
             .invoke("GetMethodID", (jclass, methodName, args, isStatic))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetMethodID_Gc__cordl_bool4<ReturnType>(
+    pub fn GetMethodID_Il2CppArray__cordl_bool4<ReturnType>(
         jclass: crate::System::IntPtr,
         methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
         isStatic: bool,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr>
@@ -292,7 +259,26 @@ impl crate::UnityEngine::AndroidJNIHelper {
             .invoke("GetMethodID", (jclass, methodName, args, isStatic))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetMethodID_IntPtr_Gc0(
+    pub fn GetMethodID_Il2CppString1(
+        javaClass: crate::System::IntPtr,
+        methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMethodID", (javaClass, methodName, signature))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMethodID_Il2CppString__cordl_bool2(
+        javaClass: crate::System::IntPtr,
+        methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        isStatic: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMethodID", (javaClass, methodName, signature, isStatic))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMethodID_IntPtr_Il2CppString0(
         javaClass: crate::System::IntPtr,
         methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
@@ -300,22 +286,9 @@ impl crate::UnityEngine::AndroidJNIHelper {
             .invoke("GetMethodID", (javaClass, methodName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetSignature_Gc0(
-        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetSignature", (obj))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetSignature_Gc1(
+    pub fn GetSignature_Il2CppArray1(
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -326,11 +299,9 @@ impl crate::UnityEngine::AndroidJNIHelper {
             .invoke("GetSignature", (args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetSignature_Gc2<ReturnType>(
+    pub fn GetSignature_Il2CppArray2<ReturnType>(
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -343,6 +314,17 @@ impl crate::UnityEngine::AndroidJNIHelper {
             quest_hook::libil2cpp::Il2CppString,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetSignature", (args))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSignature_Il2CppObject0(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSignature", (obj))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetUnboxMethod(

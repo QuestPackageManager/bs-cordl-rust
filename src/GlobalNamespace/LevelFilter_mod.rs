@@ -15,9 +15,7 @@ pub struct LevelFilter {
     pub sensitivity: crate::GlobalNamespace::PlayerSensitivityFlag,
     pub searchText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub limitIds: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "LevelFilter")]
@@ -48,63 +46,33 @@ impl crate::GlobalNamespace::LevelFilter {
     }
     pub fn FilterLevelByText(
         levels: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+            >,
         >,
         searchTerms: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("FilterLevelByText", (levels, searchTerms))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FilterLevelsAsync_Gc_LevelFilter_Gc_Gc_CancellationToken0(
-        packs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
-            >,
-        >,
-        filter: crate::GlobalNamespace::LevelFilter,
-        playerDataModel: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PlayerDataModel,
-        >,
-        levelsModel: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IEntitlementModel,
-        >,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Il2CppArray<
-                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
-                >,
-            >,
-        >,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Il2CppArray<
-                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
-                >,
-            >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "FilterLevelsAsync",
-                (packs, filter, playerDataModel, levelsModel, cancellationToken),
-            )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn FilterLevelsAsync_Gc_LevelFilter_Gc_Gc_CancellationToken1(
+    pub fn FilterLevelsAsync_IEnumerable_1_1(
         beatmapLevels: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+            >,
         >,
         filter: crate::GlobalNamespace::LevelFilter,
         playerDataModel: quest_hook::libil2cpp::Gc<
@@ -116,23 +84,67 @@ impl crate::GlobalNamespace::LevelFilter {
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Il2CppArray<
-                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        *mut crate::GlobalNamespace::BeatmapLevel,
+                    >,
                 >,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Il2CppArray<
-                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        *mut crate::GlobalNamespace::BeatmapLevel,
+                    >,
                 >,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
                 "FilterLevelsAsync",
                 (beatmapLevels, filter, playerDataModel, levelsModel, cancellationToken),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FilterLevelsAsync_Il2CppArray0(
+        packs: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::GlobalNamespace::BeatmapLevelPack,
+            >,
+        >,
+        filter: crate::GlobalNamespace::LevelFilter,
+        playerDataModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerDataModel,
+        >,
+        levelsModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IEntitlementModel,
+        >,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        *mut crate::GlobalNamespace::BeatmapLevel,
+                    >,
+                >,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        *mut crate::GlobalNamespace::BeatmapLevel,
+                    >,
+                >,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "FilterLevelsAsync",
+                (packs, filter, playerDataModel, levelsModel, cancellationToken),
             )?;
         Ok(__cordl_ret.into())
     }
@@ -147,9 +159,7 @@ impl crate::GlobalNamespace::LevelFilter {
     pub fn _FilterLevelByText_g__CalculateMatchScore_15_1(
         levelString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         searchTerms: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlatformInternal {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Oculus+Platform+PlatformInternal")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+PlatformInternal")]
 impl std::ops::Deref for crate::Oculus::Platform::PlatformInternal {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -42,14 +42,18 @@ impl crate::Oculus::Platform::PlatformInternal {
         accessToken: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::PlatformInitialize,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::PlatformInitialize,
+                >,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::PlatformInitialize,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::PlatformInitialize,
+                >,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("InitializeStandaloneAsync", (appID, accessToken))?;
@@ -79,7 +83,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::PlatformInte
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlatformInternal_HTTP {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Oculus+Platform+PlatformInternal+HTTP")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -88,7 +92,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+PlatformInternal+HTTP")]
 impl std::ops::Deref for crate::Oculus::Platform::PlatformInternal_HTTP {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -103,8 +107,10 @@ impl std::ops::DerefMut for crate::Oculus::Platform::PlatformInternal_HTTP {
 impl crate::Oculus::Platform::PlatformInternal_HTTP {
     pub fn SetHttpTransferUpdateCallback(
         callback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::HttpTransferUpdate,
+            crate::Oculus::Platform::Message_1_Callback<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::HttpTransferUpdate,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -203,7 +209,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlatformInternal_Users {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Oculus+Platform+PlatformInternal+Users")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -212,7 +218,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+PlatformInternal+Users")]
 impl std::ops::Deref for crate::Oculus::Platform::PlatformInternal_Users {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -231,11 +237,19 @@ impl crate::Oculus::Platform::PlatformInternal_Users {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::LinkedAccountList>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::LinkedAccountList,
+                >,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::LinkedAccountList>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::LinkedAccountList,
+                >,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetLinkedAccounts", (providers))?;
         Ok(__cordl_ret.into())

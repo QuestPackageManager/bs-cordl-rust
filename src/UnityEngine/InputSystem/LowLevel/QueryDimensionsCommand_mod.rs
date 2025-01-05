@@ -52,30 +52,20 @@ impl crate::UnityEngine::InputSystem::LowLevel::QueryDimensionsCommand {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+QueryDimensionsCommand")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo,
-    >,
-> for crate::UnityEngine::InputSystem::LowLevel::QueryDimensionsCommand {
+impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo>
+for crate::UnityEngine::InputSystem::LowLevel::QueryDimensionsCommand {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo,
-    > {
+    ) -> &crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+QueryDimensionsCommand")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo,
-    >,
-> for crate::UnityEngine::InputSystem::LowLevel::QueryDimensionsCommand {
+impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo>
+for crate::UnityEngine::InputSystem::LowLevel::QueryDimensionsCommand {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo,
-    > {
+    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo {
         todo!()
     }
 }

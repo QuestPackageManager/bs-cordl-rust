@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnableRendererWithLightId {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LightWithIdMonoBehaviour,
-    >,
+    __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
     pub _renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
     pub _hideAlphaRangeMin: f32,
     pub _hideAlphaRangeMax: f32,
@@ -16,9 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "EnableRendererWithLightId")]
 impl std::ops::Deref for crate::GlobalNamespace::EnableRendererWithLightId {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LightWithIdMonoBehaviour,
-    >;
+    type Target = crate::GlobalNamespace::LightWithIdMonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

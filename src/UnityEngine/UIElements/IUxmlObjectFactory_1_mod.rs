@@ -63,52 +63,36 @@ for crate::UnityEngine::UIElements::IUxmlObjectFactory_1<T> {
 #[cfg(feature = "UnityEngine+UIElements+IUxmlObjectFactory_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IBaseUxmlFactory>>
+> AsRef<crate::UnityEngine::UIElements::IBaseUxmlFactory>
 for crate::UnityEngine::UIElements::IUxmlObjectFactory_1<T> {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IBaseUxmlFactory> {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IBaseUxmlFactory {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IUxmlObjectFactory_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IBaseUxmlFactory>>
+> AsMut<crate::UnityEngine::UIElements::IBaseUxmlFactory>
 for crate::UnityEngine::UIElements::IUxmlObjectFactory_1<T> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::IBaseUxmlFactory,
-    > {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IBaseUxmlFactory {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IUxmlObjectFactory_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IBaseUxmlObjectFactory>,
-> for crate::UnityEngine::UIElements::IUxmlObjectFactory_1<T> {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::IBaseUxmlObjectFactory,
-    > {
+> AsRef<crate::UnityEngine::UIElements::IBaseUxmlObjectFactory>
+for crate::UnityEngine::UIElements::IUxmlObjectFactory_1<T> {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IBaseUxmlObjectFactory {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IUxmlObjectFactory_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IBaseUxmlObjectFactory>,
-> for crate::UnityEngine::UIElements::IUxmlObjectFactory_1<T> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::IBaseUxmlObjectFactory,
-    > {
+> AsMut<crate::UnityEngine::UIElements::IBaseUxmlObjectFactory>
+for crate::UnityEngine::UIElements::IUxmlObjectFactory_1<T> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IBaseUxmlObjectFactory {
         unsafe { std::mem::transmute(self) }
     }
 }

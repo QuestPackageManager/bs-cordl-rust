@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Locale {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Locale")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Locale")]
 impl std::ops::Deref for crate::GlobalNamespace::Locale {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -23,22 +23,10 @@ impl std::ops::DerefMut for crate::GlobalNamespace::Locale {
 }
 #[cfg(feature = "Locale")]
 impl crate::GlobalNamespace::Locale {
-    pub fn GetText_Gc0(
-        msg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetText", (msg))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetText_Gc1(
+    pub fn GetText_Il2CppArray1(
         fmt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -47,6 +35,16 @@ impl crate::GlobalNamespace::Locale {
             quest_hook::libil2cpp::Il2CppString,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetText", (fmt, args))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetText_Il2CppString0(
+        msg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetText", (msg))?;
         Ok(__cordl_ret.into())
     }
 }

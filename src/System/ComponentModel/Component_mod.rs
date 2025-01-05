@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Component {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>,
+    __cordl_parent: crate::System::MarshalByRefObject,
     pub site: quest_hook::libil2cpp::Gc<crate::System::ComponentModel::ISite>,
     pub events: quest_hook::libil2cpp::Gc<
         crate::System::ComponentModel::EventHandlerList,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+ComponentModel+Component")]
 impl std::ops::Deref for crate::System::ComponentModel::Component {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>;
+    type Target = crate::System::MarshalByRefObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -148,34 +148,28 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::ComponentModel::Compon
     }
 }
 #[cfg(feature = "System+ComponentModel+Component")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ComponentModel::IComponent>>
+impl AsRef<crate::System::ComponentModel::IComponent>
 for crate::System::ComponentModel::Component {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::ComponentModel::IComponent> {
+    fn as_ref(&self) -> &crate::System::ComponentModel::IComponent {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+ComponentModel+Component")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ComponentModel::IComponent>>
+impl AsMut<crate::System::ComponentModel::IComponent>
 for crate::System::ComponentModel::Component {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::ComponentModel::IComponent> {
+    fn as_mut(&mut self) -> &mut crate::System::ComponentModel::IComponent {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+ComponentModel+Component")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::System::ComponentModel::Component {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsRef<crate::System::IDisposable> for crate::System::ComponentModel::Component {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+ComponentModel+Component")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::System::ComponentModel::Component {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsMut<crate::System::IDisposable> for crate::System::ComponentModel::Component {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,16 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SortedList {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub keys: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
     pub values: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
     pub _size: i32,
     pub version: i32,
@@ -31,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+SortedList")]
 impl std::ops::Deref for crate::System::Collections::SortedList {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -257,7 +253,7 @@ impl crate::System::Collections::SortedList {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc2(
+    pub fn New_IComparer2(
         comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -331,7 +327,7 @@ impl crate::System::Collections::SortedList {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_IComparer2(
         &mut self,
         comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -468,70 +464,56 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Collections::SortedLis
     }
 }
 #[cfg(feature = "System+Collections+SortedList")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
+impl AsRef<crate::System::Collections::ICollection>
 for crate::System::Collections::SortedList {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+SortedList")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
+impl AsMut<crate::System::Collections::ICollection>
 for crate::System::Collections::SortedList {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+SortedList")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>>
+impl AsRef<crate::System::Collections::IDictionary>
 for crate::System::Collections::SortedList {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary> {
+    fn as_ref(&self) -> &crate::System::Collections::IDictionary {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+SortedList")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>>
+impl AsMut<crate::System::Collections::IDictionary>
 for crate::System::Collections::SortedList {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IDictionary {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+SortedList")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+impl AsRef<crate::System::Collections::IEnumerable>
 for crate::System::Collections::SortedList {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+SortedList")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+impl AsMut<crate::System::Collections::IEnumerable>
 for crate::System::Collections::SortedList {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+SortedList")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
-for crate::System::Collections::SortedList {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
+impl AsRef<crate::System::ICloneable> for crate::System::Collections::SortedList {
+    fn as_ref(&self) -> &crate::System::ICloneable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+SortedList")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
-for crate::System::Collections::SortedList {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
+impl AsMut<crate::System::ICloneable> for crate::System::Collections::SortedList {
+    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -539,7 +521,7 @@ for crate::System::Collections::SortedList {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SortedList_KeyList {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub sortedList: quest_hook::libil2cpp::Gc<crate::System::Collections::SortedList>,
 }
 #[cfg(feature = "System+Collections+SortedList+KeyList")]
@@ -549,7 +531,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+SortedList+KeyList")]
 impl std::ops::Deref for crate::System::Collections::SortedList_KeyList {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -760,54 +742,44 @@ for crate::System::Collections::SortedList_KeyList {
     }
 }
 #[cfg(feature = "System+Collections+SortedList+KeyList")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
+impl AsRef<crate::System::Collections::ICollection>
 for crate::System::Collections::SortedList_KeyList {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+SortedList+KeyList")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
+impl AsMut<crate::System::Collections::ICollection>
 for crate::System::Collections::SortedList_KeyList {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+SortedList+KeyList")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+impl AsRef<crate::System::Collections::IEnumerable>
 for crate::System::Collections::SortedList_KeyList {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+SortedList+KeyList")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+impl AsMut<crate::System::Collections::IEnumerable>
 for crate::System::Collections::SortedList_KeyList {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+SortedList+KeyList")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IList>>
+impl AsRef<crate::System::Collections::IList>
 for crate::System::Collections::SortedList_KeyList {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IList> {
+    fn as_ref(&self) -> &crate::System::Collections::IList {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+SortedList+KeyList")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IList>>
+impl AsMut<crate::System::Collections::IList>
 for crate::System::Collections::SortedList_KeyList {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IList> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IList {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -815,7 +787,7 @@ for crate::System::Collections::SortedList_KeyList {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SortedList_SortedListDebugView {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Collections+SortedList+SortedListDebugView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -825,7 +797,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+SortedList+SortedListDebugView")]
 impl std::ops::Deref for crate::System::Collections::SortedList_SortedListDebugView {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -852,7 +824,7 @@ for crate::System::Collections::SortedList_SortedListDebugView {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SortedList_SortedListEnumerator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _sortedList: quest_hook::libil2cpp::Gc<crate::System::Collections::SortedList>,
     pub _key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -871,7 +843,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+SortedList+SortedListEnumerator")]
 impl std::ops::Deref for crate::System::Collections::SortedList_SortedListEnumerator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1001,54 +973,44 @@ for crate::System::Collections::SortedList_SortedListEnumerator {
     }
 }
 #[cfg(feature = "System+Collections+SortedList+SortedListEnumerator")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionaryEnumerator>>
+impl AsRef<crate::System::Collections::IDictionaryEnumerator>
 for crate::System::Collections::SortedList_SortedListEnumerator {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionaryEnumerator> {
+    fn as_ref(&self) -> &crate::System::Collections::IDictionaryEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+SortedList+SortedListEnumerator")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionaryEnumerator>>
+impl AsMut<crate::System::Collections::IDictionaryEnumerator>
 for crate::System::Collections::SortedList_SortedListEnumerator {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Collections::IDictionaryEnumerator,
-    > {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IDictionaryEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+SortedList+SortedListEnumerator")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
+impl AsRef<crate::System::Collections::IEnumerator>
 for crate::System::Collections::SortedList_SortedListEnumerator {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+SortedList+SortedListEnumerator")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
+impl AsMut<crate::System::Collections::IEnumerator>
 for crate::System::Collections::SortedList_SortedListEnumerator {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+SortedList+SortedListEnumerator")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
+impl AsRef<crate::System::ICloneable>
 for crate::System::Collections::SortedList_SortedListEnumerator {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
+    fn as_ref(&self) -> &crate::System::ICloneable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+SortedList+SortedListEnumerator")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
+impl AsMut<crate::System::ICloneable>
 for crate::System::Collections::SortedList_SortedListEnumerator {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
+    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -1056,7 +1018,7 @@ for crate::System::Collections::SortedList_SortedListEnumerator {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SortedList_ValueList {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub sortedList: quest_hook::libil2cpp::Gc<crate::System::Collections::SortedList>,
 }
 #[cfg(feature = "System+Collections+SortedList+ValueList")]
@@ -1066,7 +1028,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+SortedList+ValueList")]
 impl std::ops::Deref for crate::System::Collections::SortedList_ValueList {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1277,54 +1239,44 @@ for crate::System::Collections::SortedList_ValueList {
     }
 }
 #[cfg(feature = "System+Collections+SortedList+ValueList")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
+impl AsRef<crate::System::Collections::ICollection>
 for crate::System::Collections::SortedList_ValueList {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+SortedList+ValueList")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
+impl AsMut<crate::System::Collections::ICollection>
 for crate::System::Collections::SortedList_ValueList {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+SortedList+ValueList")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+impl AsRef<crate::System::Collections::IEnumerable>
 for crate::System::Collections::SortedList_ValueList {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+SortedList+ValueList")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+impl AsMut<crate::System::Collections::IEnumerable>
 for crate::System::Collections::SortedList_ValueList {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+SortedList+ValueList")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IList>>
+impl AsRef<crate::System::Collections::IList>
 for crate::System::Collections::SortedList_ValueList {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IList> {
+    fn as_ref(&self) -> &crate::System::Collections::IList {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+SortedList+ValueList")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IList>>
+impl AsMut<crate::System::Collections::IList>
 for crate::System::Collections::SortedList_ValueList {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IList> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IList {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DoubleField {
-    __cordl_parent: quest_hook::libil2cpp::Gc<f64>,
+    __cordl_parent: crate::UnityEngine::UIElements::TextValueField_1<f64>,
 }
 #[cfg(feature = "UnityEngine+UIElements+DoubleField")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+DoubleField")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DoubleField {
-    type Target = quest_hook::libil2cpp::Gc<f64>;
+    type Target = crate::UnityEngine::UIElements::TextValueField_1<f64>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -60,7 +60,7 @@ impl crate::UnityEngine::UIElements::DoubleField {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_i32_1(
+    pub fn New_Il2CppString_i32_1(
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         maxLength: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -104,7 +104,7 @@ impl crate::UnityEngine::UIElements::DoubleField {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_i32_1(
+    pub fn _ctor_Il2CppString_i32_1(
         &mut self,
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         maxLength: i32,
@@ -145,7 +145,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Doubl
 #[repr(C)]
 #[derive(Debug)]
 pub struct DoubleField_DoubleInput {
-    __cordl_parent: quest_hook::libil2cpp::Gc<f64>,
+    __cordl_parent: crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<f64>,
 }
 #[cfg(feature = "UnityEngine+UIElements+DoubleField+DoubleInput")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -154,7 +154,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+DoubleField+DoubleInput")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DoubleField_DoubleInput {
-    type Target = quest_hook::libil2cpp::Gc<f64>;
+    type Target = crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<f64>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -262,7 +262,7 @@ for crate::UnityEngine::UIElements::DoubleField_DoubleInput {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DoubleField_UxmlFactory {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DoubleField>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DoubleField_UxmlTraits>,
     >,
@@ -274,7 +274,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+DoubleField+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DoubleField_UxmlFactory {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DoubleField>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DoubleField_UxmlTraits>,
     >;
@@ -322,7 +322,7 @@ for crate::UnityEngine::UIElements::DoubleField_UxmlFactory {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DoubleField_UxmlTraits {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::TextValueFieldTraits_2<
         f64,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::UxmlDoubleAttributeDescription,
@@ -336,7 +336,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+DoubleField+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DoubleField_UxmlTraits {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::TextValueFieldTraits_2<
         f64,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::UxmlDoubleAttributeDescription,

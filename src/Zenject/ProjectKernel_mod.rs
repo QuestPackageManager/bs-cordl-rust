@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProjectKernel {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::MonoKernel>,
+    __cordl_parent: crate::Zenject::MonoKernel,
     pub _settings: quest_hook::libil2cpp::Gc<crate::Zenject::ZenjectSettings>,
     pub _contextRegistry: quest_hook::libil2cpp::Gc<
         crate::Zenject::SceneContextRegistry,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+ProjectKernel")]
 impl std::ops::Deref for crate::Zenject::ProjectKernel {
-    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::MonoKernel>;
+    type Target = crate::Zenject::MonoKernel;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

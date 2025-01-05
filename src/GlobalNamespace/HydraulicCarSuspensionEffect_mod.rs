@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HydraulicCarSuspensionEffect {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _contractEvent: crate::GlobalNamespace::BasicBeatmapEventType,
     pub _contractEventValues: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<i32>,
@@ -18,8 +18,12 @@ pub struct HydraulicCarSuspensionEffect {
     pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapCallbacksController,
     >,
-    pub _contractEventValuesHashSet: quest_hook::libil2cpp::Gc<i32>,
-    pub _expandEventValuesHashSet: quest_hook::libil2cpp::Gc<i32>,
+    pub _contractEventValuesHashSet: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<i32>,
+    >,
+    pub _expandEventValuesHashSet: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<i32>,
+    >,
     pub _contractBeatmapDataCallbackWrapper: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapDataCallbackWrapper,
     >,
@@ -34,7 +38,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HydraulicCarSuspensionEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::HydraulicCarSuspensionEffect {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

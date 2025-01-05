@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Enum {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::ValueType>,
+    __cordl_parent: crate::System::ValueType,
 }
 #[cfg(feature = "System+Enum")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Enum")]
 impl std::ops::Deref for crate::System::Enum {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::ValueType>;
+    type Target = crate::System::ValueType;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -81,7 +81,7 @@ impl crate::System::Enum {
         names: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    *mut quest_hook::libil2cpp::Il2CppString,
                 >,
             >,
         >,
@@ -113,15 +113,11 @@ impl crate::System::Enum {
         enumType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetNames", (enumType))?;
         Ok(__cordl_ret.into())
@@ -232,15 +228,11 @@ impl crate::System::Enum {
         enumType: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("InternalGetNames", (enumType))?;
         Ok(__cordl_ret.into())
@@ -290,7 +282,7 @@ impl crate::System::Enum {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn Parse_Gc_Gc0(
+    pub fn Parse_Type_Il2CppString0(
         enumType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -485,7 +477,7 @@ impl crate::System::Enum {
             .invoke("System.IConvertible.ToUInt64", (provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToObject_Gc0(
+    pub fn ToObject_Il2CppObject0(
         enumType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
@@ -630,21 +622,7 @@ impl crate::System::Enum {
         > = __cordl_object.invoke("ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Gc2(
-        &mut self,
-        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = __cordl_object.invoke("ToString", (format))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ToString_Gc3(
+    pub fn ToString_IFormatProvider3(
         &mut self,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<
@@ -658,7 +636,21 @@ impl crate::System::Enum {
         > = __cordl_object.invoke("ToString", (provider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Gc_Gc1(
+    pub fn ToString_Il2CppString2(
+        &mut self,
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("ToString", (format))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToString_Il2CppString_IFormatProvider1(
         &mut self,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
@@ -690,19 +682,7 @@ impl crate::System::Enum {
             .invoke("TryParseEnum", (enumType, value, ignoreCase, parseResult))?;
         Ok(__cordl_ret.into())
     }
-    pub fn TryParse_Gc__cordl_bool_ByRefMut1(
-        enumType: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        ignoreCase: bool,
-        result: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryParse", (enumType, value, ignoreCase, result))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn TryParse__cordl_bool_ByRefMut0<TEnum>(
+    pub fn TryParse_Il2CppString__cordl_bool_ByRefMut0<TEnum>(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ignoreCase: bool,
         result: quest_hook::libil2cpp::ByRefMut<TEnum>,
@@ -713,6 +693,18 @@ impl crate::System::Enum {
     {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("TryParse", (value, ignoreCase, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParse_Type_Il2CppString__cordl_bool_ByRefMut1(
+        enumType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ignoreCase: bool,
+        result: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (enumType, value, ignoreCase, result))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -756,44 +748,38 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Enum {
     }
 }
 #[cfg(feature = "System+Enum")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
-for crate::System::Enum {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IComparable> {
+impl AsRef<crate::System::IComparable> for crate::System::Enum {
+    fn as_ref(&self) -> &crate::System::IComparable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Enum")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
-for crate::System::Enum {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IComparable> {
+impl AsMut<crate::System::IComparable> for crate::System::Enum {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Enum")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IConvertible>>
-for crate::System::Enum {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IConvertible> {
+impl AsRef<crate::System::IConvertible> for crate::System::Enum {
+    fn as_ref(&self) -> &crate::System::IConvertible {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Enum")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IConvertible>>
-for crate::System::Enum {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IConvertible> {
+impl AsMut<crate::System::IConvertible> for crate::System::Enum {
+    fn as_mut(&mut self) -> &mut crate::System::IConvertible {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Enum")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
-for crate::System::Enum {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
+impl AsRef<crate::System::IFormattable> for crate::System::Enum {
+    fn as_ref(&self) -> &crate::System::IFormattable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Enum")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
-for crate::System::Enum {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
+impl AsMut<crate::System::IFormattable> for crate::System::Enum {
+    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -855,7 +841,7 @@ impl crate::System::Enum_EnumResult {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetFailure_Enum_ParseFailureKind_Gc1(
+    pub fn SetFailure_Enum_ParseFailureKind_Il2CppString1(
         &mut self,
         failure: crate::GlobalNamespace::Enum_ParseFailureKind,
         failureParameter: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -867,7 +853,7 @@ impl crate::System::Enum_EnumResult {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetFailure_Enum_ParseFailureKind_Gc_Gc2(
+    pub fn SetFailure_Enum_ParseFailureKind_Il2CppString_Il2CppObject2(
         &mut self,
         failure: crate::GlobalNamespace::Enum_ParseFailureKind,
         failureMessageID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -882,7 +868,7 @@ impl crate::System::Enum_EnumResult {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetFailure_Gc0(
+    pub fn SetFailure_Exception0(
         &mut self,
         unhandledException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -898,12 +884,10 @@ impl crate::System::Enum_EnumResult {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Enum_ValuesAndNames {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
     pub Names: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "System+Enum+ValuesAndNames")]
@@ -913,7 +897,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Enum+ValuesAndNames")]
 impl std::ops::Deref for crate::System::Enum_ValuesAndNames {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -929,9 +913,7 @@ impl crate::System::Enum_ValuesAndNames {
     pub fn New(
         values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
         names: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -944,9 +926,7 @@ impl crate::System::Enum_ValuesAndNames {
         &mut self,
         values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
         names: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

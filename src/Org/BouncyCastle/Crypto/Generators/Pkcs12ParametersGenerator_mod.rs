@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Pkcs12ParametersGenerator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::PbeParametersGenerator,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Crypto::PbeParametersGenerator,
     pub digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     pub u: i32,
     pub v: i32,
@@ -18,9 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+Pkcs12ParametersGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Generators::Pkcs12ParametersGenerator {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::PbeParametersGenerator,
-    >;
+    type Target = crate::Org::BouncyCastle::Crypto::PbeParametersGenerator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -79,7 +75,7 @@ impl crate::Org::BouncyCastle::Crypto::Generators::Pkcs12ParametersGenerator {
         > = __cordl_object.invoke("GenerateDerivedMacParameters", (keySize))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GenerateDerivedParameters_Gc_i32_1(
+    pub fn GenerateDerivedParameters_Il2CppString_i32_1(
         &mut self,
         algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         keySize: i32,
@@ -94,7 +90,7 @@ impl crate::Org::BouncyCastle::Crypto::Generators::Pkcs12ParametersGenerator {
         > = __cordl_object.invoke("GenerateDerivedParameters", (algorithm, keySize))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GenerateDerivedParameters_Gc_i32_i32_3(
+    pub fn GenerateDerivedParameters_Il2CppString_i32_i32_3(
         &mut self,
         algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         keySize: i32,

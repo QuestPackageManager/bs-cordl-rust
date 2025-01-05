@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameObjectCreationParameters {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Name_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
@@ -13,8 +13,10 @@ pub struct GameObjectCreationParameters {
         crate::UnityEngine::Transform,
     >,
     pub _ParentTransformGetter_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+        crate::System::Func_2<
+            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+        >,
     >,
     pub _Position_k__BackingField: crate::System::Nullable_1<
         crate::UnityEngine::Vector3,
@@ -30,7 +32,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+GameObjectCreationParameters")]
 impl std::ops::Deref for crate::Zenject::GameObjectCreationParameters {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -43,17 +45,7 @@ impl std::ops::DerefMut for crate::Zenject::GameObjectCreationParameters {
 }
 #[cfg(feature = "Zenject+GameObjectCreationParameters")]
 impl crate::Zenject::GameObjectCreationParameters {
-    pub fn Equals_Gc0(
-        &mut self,
-        other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Equals_Gc1(
+    pub fn Equals_GameObjectCreationParameters1(
         &mut self,
         that: quest_hook::libil2cpp::Gc<crate::Zenject::GameObjectCreationParameters>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -61,6 +53,16 @@ impl crate::Zenject::GameObjectCreationParameters {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (that))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Equals_Il2CppObject0(
+        &mut self,
+        other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -129,16 +131,20 @@ impl crate::Zenject::GameObjectCreationParameters {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+            >,
         > = __cordl_object.invoke("get_ParentTransformGetter", ())?;
         Ok(__cordl_ret.into())
     }
@@ -218,8 +224,10 @@ impl crate::Zenject::GameObjectCreationParameters {
     pub fn set_ParentTransformGetter(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

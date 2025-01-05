@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct QueryExpression {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Operator: crate::Newtonsoft::Json::Linq::JsonPath::QueryOperator,
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+QueryExpression")]
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+QueryExpression")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -26,7 +26,18 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JsonPath::QueryExpres
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+QueryExpression")]
 impl crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression {
-    pub fn IsMatch_Gc1(
+    pub fn IsMatch_JToken_JToken0(
+        &mut self,
+        root: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+        t: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsMatch", (root, t))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsMatch_JsonSelectSettings1(
         &mut self,
         root: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         t: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
@@ -38,17 +49,6 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsMatch", (root, t, settings))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn IsMatch_Gc_Gc0(
-        &mut self,
-        root: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
-        t: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsMatch", (root, t))?;
         Ok(__cordl_ret.into())
     }
     pub fn New(

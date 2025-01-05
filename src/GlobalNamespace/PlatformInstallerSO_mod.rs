@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlatformInstallerSO {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>,
+    __cordl_parent: crate::Zenject::ScriptableObjectInstaller,
     pub _setupData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AppInitSetupData>,
     pub _ps4AchievementIdsModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SonyAchievementIdsModelSO,
@@ -24,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PlatformInstallerSO")]
 impl std::ops::Deref for crate::GlobalNamespace::PlatformInstallerSO {
-    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>;
+    type Target = crate::Zenject::ScriptableObjectInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

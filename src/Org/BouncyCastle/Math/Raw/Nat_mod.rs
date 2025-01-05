@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Nat {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+Raw+Nat")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Math+Raw+Nat")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::Raw::Nat {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -46,7 +46,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("Add33At", (len, x, z, zOff, zPos))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Add33At_i32_u32_Gc_i32_0(
+    pub fn Add33At_i32_u32_Il2CppArray_i32_0(
         len: i32,
         x: u32,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -66,7 +66,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("Add33To", (len, x, z, zOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Add33To_i32_u32_Gc0(
+    pub fn Add33To_i32_u32_Il2CppArray0(
         len: i32,
         x: u32,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -75,7 +75,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("Add33To", (len, x, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddBothTo_Gc0(
+    pub fn AddBothTo_Il2CppArray0(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -85,7 +85,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("AddBothTo", (len, x, y, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddBothTo_i32_i32_Gc_i32_1(
+    pub fn AddBothTo_i32_i32_Il2CppArray_i32_1(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         xOff: i32,
@@ -109,7 +109,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("AddDWordAt", (len, x, z, zOff, zPos))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddDWordAt_i32_u64_Gc_i32_0(
+    pub fn AddDWordAt_i32_u64_Il2CppArray_i32_0(
         len: i32,
         x: u64,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -129,7 +129,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("AddDWordTo", (len, x, z, zOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddDWordTo_i32_u64_Gc0(
+    pub fn AddDWordTo_i32_u64_Il2CppArray0(
         len: i32,
         x: u64,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -149,7 +149,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("AddToEachOther", (len, u, uOff, v, vOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddTo_Gc0(
+    pub fn AddTo_Il2CppArray0(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -158,7 +158,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("AddTo", (len, x, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddTo_i32_Gc_i32_1(
+    pub fn AddTo_i32_Il2CppArray_i32_1(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         xOff: i32,
@@ -169,7 +169,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("AddTo", (len, x, xOff, z, zOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddTo_i32_Gc_i32_u32_2(
+    pub fn AddTo_i32_Il2CppArray_i32_u32_2(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         xOff: i32,
@@ -192,7 +192,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("AddWordAt", (len, x, z, zOff, zPos))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddWordAt_i32_u32_Gc_i32_0(
+    pub fn AddWordAt_i32_u32_Il2CppArray_i32_0(
         len: i32,
         x: u32,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -212,7 +212,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("AddWordTo", (len, x, z, zOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddWordTo_i32_u32_Gc0(
+    pub fn AddWordTo_i32_u32_Il2CppArray0(
         len: i32,
         x: u32,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -232,7 +232,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("CAdd", (len, mask, x, y, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CMov_i32_i32_Gc_i32_Gc_i32_0(
+    pub fn CMov_i32_i32_Il2CppArray_i32_Il2CppArray_i32_0(
         len: i32,
         mask: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -244,7 +244,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("CMov", (len, mask, x, xOff, z, zOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CMov_i32_i32_Gc_i32_Gc_i32_1(
+    pub fn CMov_i32_i32_Il2CppArray_i32_Il2CppArray_i32_1(
         len: i32,
         mask: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -256,7 +256,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("CMov", (len, mask, x, xOff, z, zOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CSub_Gc0(
+    pub fn CSub_Il2CppArray0(
         len: i32,
         mask: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -267,7 +267,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("CSub", (len, mask, x, y, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CSub_i32_i32_Gc_i32_1(
+    pub fn CSub_i32_i32_Il2CppArray_i32_1(
         len: i32,
         mask: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -281,7 +281,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("CSub", (len, mask, x, xOff, y, yOff, z, zOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Compare_Gc0(
+    pub fn Compare_Il2CppArray0(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -290,7 +290,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("Compare", (len, x, y))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Compare_i32_Gc_i32_1(
+    pub fn Compare_i32_Il2CppArray_i32_1(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         xOff: i32,
@@ -301,7 +301,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("Compare", (len, x, xOff, y, yOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Copy64_Gc1(
+    pub fn Copy64_Il2CppArray1(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
@@ -310,7 +310,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("Copy64", (len, x, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Copy64_i32_Gc0(
+    pub fn Copy64_i32_Il2CppArray0(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
     ) -> quest_hook::libil2cpp::Result<
@@ -321,7 +321,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Copy64", (len, x))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Copy64_i32_Gc_i32_2(
+    pub fn Copy64_i32_Il2CppArray_i32_2(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
         xOff: i32,
@@ -332,7 +332,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("Copy64", (len, x, xOff, z, zOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Copy_Gc0(
+    pub fn Copy_Il2CppArray0(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -341,7 +341,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("Copy", (len, x, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Copy_i32_Gc1(
+    pub fn Copy_i32_Il2CppArray1(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     ) -> quest_hook::libil2cpp::Result<
@@ -352,7 +352,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Copy", (len, x))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Copy_i32_Gc_i32_2(
+    pub fn Copy_i32_Il2CppArray_i32_2(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         xOff: i32,
@@ -393,7 +393,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("DecAt", (len, z, zOff, zPos))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DecAt_i32_Gc_i32_0(
+    pub fn DecAt_i32_Il2CppArray_i32_0(
         len: i32,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         zPos: i32,
@@ -402,7 +402,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("DecAt", (len, z, zPos))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Dec_Gc1(
+    pub fn Dec_Il2CppArray1(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -411,7 +411,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("Dec", (len, x, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Dec_i32_Gc0(
+    pub fn Dec_i32_Il2CppArray0(
         len: i32,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -479,7 +479,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("IncAt", (len, z, zOff, zPos))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IncAt_i32_Gc_i32_0(
+    pub fn IncAt_i32_Il2CppArray_i32_0(
         len: i32,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         zPos: i32,
@@ -488,7 +488,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("IncAt", (len, z, zPos))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Inc_Gc1(
+    pub fn Inc_Il2CppArray1(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -497,7 +497,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("Inc", (len, x, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Inc_i32_Gc0(
+    pub fn Inc_i32_Il2CppArray0(
         len: i32,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     ) -> quest_hook::libil2cpp::Result<u32> {
@@ -521,7 +521,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("IsZero", (len, x))?;
         Ok(__cordl_ret.into())
     }
-    pub fn LessThan_Gc0(
+    pub fn LessThan_Il2CppArray0(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -530,7 +530,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("LessThan", (len, x, y))?;
         Ok(__cordl_ret.into())
     }
-    pub fn LessThan_i32_Gc_i32_1(
+    pub fn LessThan_i32_Il2CppArray_i32_1(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         xOff: i32,
@@ -554,7 +554,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("Mul31BothAdd", (len, a, x, b, y, z, zOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MulAddTo_Gc0(
+    pub fn MulAddTo_Il2CppArray0(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -564,7 +564,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("MulAddTo", (len, x, y, zz))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MulAddTo_i32_i32_Gc_i32_1(
+    pub fn MulAddTo_i32_i32_Il2CppArray_i32_1(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         xOff: i32,
@@ -600,7 +600,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("MulWordDwordAddAt", (len, x, y, z, zPos))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MulWord_Gc0(
+    pub fn MulWord_Il2CppArray0(
         len: i32,
         x: u32,
         y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -610,7 +610,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("MulWord", (len, x, y, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MulWord_i32_Gc_i32_1(
+    pub fn MulWord_i32_Il2CppArray_i32_1(
         len: i32,
         x: u32,
         y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -622,7 +622,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("MulWord", (len, x, y, yOff, z, zOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Mul_Gc_i32_i32_i32_i32_Gc_i32_2(
+    pub fn Mul_Il2CppArray_i32_i32_i32_i32_Il2CppArray_i32_2(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         xOff: i32,
         xLen: i32,
@@ -636,7 +636,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("Mul", (x, xOff, xLen, y, yOff, yLen, zz, zzOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Mul_i32_Gc_Gc0(
+    pub fn Mul_i32_Il2CppArray_Il2CppArray0(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -646,7 +646,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("Mul", (len, x, y, zz))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Mul_i32_Gc_i32_i32_Gc_i32_1(
+    pub fn Mul_i32_Il2CppArray_i32_i32_Il2CppArray_i32_1(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         xOff: i32,
@@ -676,7 +676,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("ShiftDownBit", (len, z, zOff, c))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ShiftDownBit_i32_u32_Gc_i32_3(
+    pub fn ShiftDownBit_i32_u32_Il2CppArray_i32_3(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         xOff: i32,
@@ -697,7 +697,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("ShiftDownBit", (len, z, c))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ShiftDownBit_u32_Gc2(
+    pub fn ShiftDownBit_u32_Il2CppArray2(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         c: u32,
@@ -718,7 +718,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("ShiftDownBits", (len, z, zOff, bits, c))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ShiftDownBits_i32_u32_Gc_i32_3(
+    pub fn ShiftDownBits_i32_u32_Il2CppArray_i32_3(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         xOff: i32,
@@ -741,7 +741,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("ShiftDownBits", (len, z, bits, c))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ShiftDownBits_u32_Gc2(
+    pub fn ShiftDownBits_u32_Il2CppArray2(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         bits: i32,
@@ -783,7 +783,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("ShiftUpBit", (len, z, zOff, c))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ShiftUpBit_i32_u32_Gc_i32_3(
+    pub fn ShiftUpBit_i32_u32_Il2CppArray_i32_3(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         xOff: i32,
@@ -804,7 +804,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("ShiftUpBit", (len, z, c))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ShiftUpBit_u32_Gc2(
+    pub fn ShiftUpBit_u32_Il2CppArray2(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         c: u32,
@@ -814,7 +814,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("ShiftUpBit", (len, x, c, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ShiftUpBits64_Gc_i32_1(
+    pub fn ShiftUpBits64_Il2CppArray_i32_1(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
         xOff: i32,
@@ -827,7 +827,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("ShiftUpBits64", (len, x, xOff, bits, c, z, zOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ShiftUpBits64_i32_Gc_i32_i32_u64_0(
+    pub fn ShiftUpBits64_i32_Il2CppArray_i32_i32_u64_0(
         len: i32,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
         zOff: i32,
@@ -849,7 +849,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("ShiftUpBits", (len, z, zOff, bits, c))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ShiftUpBits_i32_u32_Gc_i32_3(
+    pub fn ShiftUpBits_i32_u32_Il2CppArray_i32_3(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         xOff: i32,
@@ -872,7 +872,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("ShiftUpBits", (len, z, bits, c))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ShiftUpBits_u32_Gc2(
+    pub fn ShiftUpBits_u32_Il2CppArray2(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         bits: i32,
@@ -883,7 +883,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("ShiftUpBits", (len, x, bits, c, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SquareWordAddTo_Gc0(
+    pub fn SquareWordAddTo_Il2CppArray0(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         xPos: i32,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -892,7 +892,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("SquareWordAddTo", (x, xPos, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SquareWordAddTo_i32_Gc_i32_1(
+    pub fn SquareWordAddTo_i32_Il2CppArray_i32_1(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         xOff: i32,
         xPos: i32,
@@ -903,7 +903,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("SquareWordAddTo", (x, xOff, xPos, z, zOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SquareWordAdd_Gc0(
+    pub fn SquareWordAdd_Il2CppArray0(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         xPos: i32,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -912,7 +912,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("SquareWordAdd", (x, xPos, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SquareWordAdd_i32_Gc_i32_1(
+    pub fn SquareWordAdd_i32_Il2CppArray_i32_1(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         xOff: i32,
         xPos: i32,
@@ -923,7 +923,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("SquareWordAdd", (x, xOff, xPos, z, zOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Square_Gc0(
+    pub fn Square_Il2CppArray0(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         zz: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -932,7 +932,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("Square", (len, x, zz))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Square_i32_Gc_i32_1(
+    pub fn Square_i32_Il2CppArray_i32_1(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         xOff: i32,
@@ -954,7 +954,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("Sub33At", (len, x, z, zOff, zPos))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Sub33At_i32_u32_Gc_i32_0(
+    pub fn Sub33At_i32_u32_Il2CppArray_i32_0(
         len: i32,
         x: u32,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -974,7 +974,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("Sub33From", (len, x, z, zOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Sub33From_i32_u32_Gc0(
+    pub fn Sub33From_i32_u32_Il2CppArray0(
         len: i32,
         x: u32,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -983,7 +983,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("Sub33From", (len, x, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SubBothFrom_Gc0(
+    pub fn SubBothFrom_Il2CppArray0(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -993,7 +993,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("SubBothFrom", (len, x, y, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SubBothFrom_i32_i32_Gc_i32_1(
+    pub fn SubBothFrom_i32_i32_Il2CppArray_i32_1(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         xOff: i32,
@@ -1017,7 +1017,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("SubDWordAt", (len, x, z, zOff, zPos))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SubDWordAt_i32_u64_Gc_i32_0(
+    pub fn SubDWordAt_i32_u64_Il2CppArray_i32_0(
         len: i32,
         x: u64,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -1037,7 +1037,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("SubDWordFrom", (len, x, z, zOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SubDWordFrom_i32_u64_Gc0(
+    pub fn SubDWordFrom_i32_u64_Il2CppArray0(
         len: i32,
         x: u64,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -1046,7 +1046,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("SubDWordFrom", (len, x, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SubFrom_Gc0(
+    pub fn SubFrom_Il2CppArray0(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -1055,7 +1055,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("SubFrom", (len, x, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SubFrom_i32_Gc_i32_1(
+    pub fn SubFrom_i32_Il2CppArray_i32_1(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         xOff: i32,
@@ -1077,7 +1077,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("SubWordAt", (len, x, z, zOff, zPos))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SubWordAt_i32_u32_Gc_i32_0(
+    pub fn SubWordAt_i32_u32_Il2CppArray_i32_0(
         len: i32,
         x: u32,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -1097,7 +1097,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("SubWordFrom", (len, x, z, zOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SubWordFrom_i32_u32_Gc0(
+    pub fn SubWordFrom_i32_u32_Il2CppArray0(
         len: i32,
         x: u32,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -1106,7 +1106,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("SubWordFrom", (len, x, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Sub_Gc0(
+    pub fn Sub_Il2CppArray0(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -1116,7 +1116,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat {
             .invoke("Sub", (len, x, y, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Sub_i32_i32_Gc_i32_1(
+    pub fn Sub_i32_i32_Il2CppArray_i32_1(
         len: i32,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         xOff: i32,

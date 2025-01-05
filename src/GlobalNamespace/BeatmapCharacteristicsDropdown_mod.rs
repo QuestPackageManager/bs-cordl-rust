@@ -2,13 +2,15 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapCharacteristicsDropdown {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _simpleTextDropdown: quest_hook::libil2cpp::Gc<crate::HMUI::SimpleTextDropdown>,
     pub _beatmapCharacteristicCollection: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapCharacteristicCollection,
     >,
     pub didSelectCellWithIdxEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapCharacteristicsDropdown")]
@@ -18,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapCharacteristicsDropdown")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapCharacteristicsDropdown {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -78,7 +80,7 @@ impl crate::GlobalNamespace::BeatmapCharacteristicsDropdown {
             .invoke("OnDestroy", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn SelectCellWithBeatmapCharacteristic_Gc0(
+    pub fn SelectCellWithBeatmapCharacteristic_BeatmapCharacteristicSO0(
         &mut self,
         beatmapCharacteristic: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapCharacteristicSO,
@@ -91,7 +93,7 @@ impl crate::GlobalNamespace::BeatmapCharacteristicsDropdown {
             .invoke("SelectCellWithBeatmapCharacteristic", (beatmapCharacteristic))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SelectCellWithBeatmapCharacteristic_Gc1(
+    pub fn SelectCellWithBeatmapCharacteristic_Il2CppString1(
         &mut self,
         serializedName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -125,7 +127,11 @@ impl crate::GlobalNamespace::BeatmapCharacteristicsDropdown {
     pub fn add_didSelectCellWithIdxEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapCharacteristicSO,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -138,7 +144,11 @@ impl crate::GlobalNamespace::BeatmapCharacteristicsDropdown {
     pub fn remove_didSelectCellWithIdxEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapCharacteristicSO,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

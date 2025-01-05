@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeNames {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+TypeNames")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+TypeNames")]
 impl std::ops::Deref for crate::System::TypeNames {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -39,7 +39,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::TypeNames {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeNames_ATypeName {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+TypeNames+ATypeName")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -48,7 +48,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+TypeNames+ATypeName")]
 impl std::ops::Deref for crate::System::TypeNames_ATypeName {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -61,9 +61,9 @@ impl std::ops::DerefMut for crate::System::TypeNames_ATypeName {
 }
 #[cfg(feature = "System+TypeNames+ATypeName")]
 impl crate::System::TypeNames_ATypeName {
-    pub fn Equals_Gc0(
+    pub fn Equals_Il2CppObject1(
         &mut self,
-        other: quest_hook::libil2cpp::Gc<crate::System::TypeName>,
+        other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -71,9 +71,9 @@ impl crate::System::TypeNames_ATypeName {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Gc1(
+    pub fn Equals_TypeName0(
         &mut self,
-        other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        other: quest_hook::libil2cpp::Gc<crate::System::TypeName>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -129,36 +129,38 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::TypeNames_ATypeName {
     }
 }
 #[cfg(feature = "System+TypeNames+ATypeName")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::TypeName>>
-for crate::System::TypeNames_ATypeName {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::TypeName> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+TypeNames+ATypeName")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::TypeName>>
-for crate::System::TypeNames_ATypeName {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::TypeName> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+TypeNames+ATypeName")]
-impl AsRef<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::TypeName>>>
-for crate::System::TypeNames_ATypeName {
+impl AsRef<
+    crate::System::IEquatable_1<quest_hook::libil2cpp::Gc<crate::System::TypeName>>,
+> for crate::System::TypeNames_ATypeName {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::TypeName>> {
+    ) -> &crate::System::IEquatable_1<
+        quest_hook::libil2cpp::Gc<crate::System::TypeName>,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+TypeNames+ATypeName")]
-impl AsMut<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::TypeName>>>
-for crate::System::TypeNames_ATypeName {
+impl AsMut<
+    crate::System::IEquatable_1<quest_hook::libil2cpp::Gc<crate::System::TypeName>>,
+> for crate::System::TypeNames_ATypeName {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::System::TypeName>,
     > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+TypeNames+ATypeName")]
+impl AsRef<crate::System::TypeName> for crate::System::TypeNames_ATypeName {
+    fn as_ref(&self) -> &crate::System::TypeName {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+TypeNames+ATypeName")]
+impl AsMut<crate::System::TypeName> for crate::System::TypeNames_ATypeName {
+    fn as_mut(&mut self) -> &mut crate::System::TypeName {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsyncHandshakeRequest {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Mono::Net::Security::AsyncProtocolRequest,
-    >,
+    __cordl_parent: crate::Mono::Net::Security::AsyncProtocolRequest,
 }
 #[cfg(feature = "Mono+Net+Security+AsyncHandshakeRequest")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Net+Security+AsyncHandshakeRequest")]
 impl std::ops::Deref for crate::Mono::Net::Security::AsyncHandshakeRequest {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Mono::Net::Security::AsyncProtocolRequest,
-    >;
+    type Target = crate::Mono::Net::Security::AsyncProtocolRequest;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

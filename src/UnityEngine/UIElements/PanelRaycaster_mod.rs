@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PanelRaycaster {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::BaseRaycaster,
-    >,
+    __cordl_parent: crate::UnityEngine::EventSystems::BaseRaycaster,
     pub m_Panel: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::BaseRuntimePanel,
     >,
@@ -16,9 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+PanelRaycaster")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::PanelRaycaster {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::BaseRaycaster,
-    >;
+    type Target = crate::UnityEngine::EventSystems::BaseRaycaster;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -54,7 +50,9 @@ impl crate::UnityEngine::UIElements::PanelRaycaster {
             crate::UnityEngine::EventSystems::PointerEventData,
         >,
         resultAppendList: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::RaycastResult,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::EventSystems::RaycastResult,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -168,26 +166,16 @@ for crate::UnityEngine::UIElements::PanelRaycaster {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+PanelRaycaster")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IRuntimePanelComponent>,
-> for crate::UnityEngine::UIElements::PanelRaycaster {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::IRuntimePanelComponent,
-    > {
+impl AsRef<crate::UnityEngine::UIElements::IRuntimePanelComponent>
+for crate::UnityEngine::UIElements::PanelRaycaster {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IRuntimePanelComponent {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+PanelRaycaster")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IRuntimePanelComponent>,
-> for crate::UnityEngine::UIElements::PanelRaycaster {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::IRuntimePanelComponent,
-    > {
+impl AsMut<crate::UnityEngine::UIElements::IRuntimePanelComponent>
+for crate::UnityEngine::UIElements::PanelRaycaster {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IRuntimePanelComponent {
         unsafe { std::mem::transmute(self) }
     }
 }

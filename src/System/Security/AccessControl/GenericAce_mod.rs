@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GenericAce {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ace_flags: crate::System::Security::AccessControl::AceFlags,
     pub ace_type: crate::System::Security::AccessControl::AceType,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+AccessControl+GenericAce")]
 impl std::ops::Deref for crate::System::Security::AccessControl::GenericAce {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -84,7 +84,7 @@ impl crate::System::Security::AccessControl::GenericAce {
             .invoke_void(".ctor", (_cordl_type, flags))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_i32_1(
+    pub fn New_Il2CppArray_i32_1(
         binaryForm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -140,7 +140,7 @@ impl crate::System::Security::AccessControl::GenericAce {
             .invoke(".ctor", (_cordl_type, flags))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_i32_1(
+    pub fn _ctor_Il2CppArray_i32_1(
         &mut self,
         binaryForm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,

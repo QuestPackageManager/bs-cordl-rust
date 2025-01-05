@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_InputUtility {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputUtility")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputUtility")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_InputUtility {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,7 +32,11 @@ impl crate::HoudiniEngineUnity::HEU_InputUtility {
         connectMergeID: quest_hook::libil2cpp::ByRefMut<i32>,
         inputAssetInfos: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputHDAInfo>,
+                crate::System::Collections::Generic::List_1<
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_InputHDAInfo,
+                    >,
+                >,
             >,
         >,
         bKeepWorldTransform: bool,
@@ -58,11 +62,15 @@ impl crate::HoudiniEngineUnity::HEU_InputUtility {
         connectMergeID: quest_hook::libil2cpp::ByRefMut<i32>,
         inputObjects: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputObjectInfo>,
+                crate::System::Collections::Generic::List_1<
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_InputObjectInfo,
+                    >,
+                >,
             >,
         >,
         inputObjectsConnectedAssetIDs: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<i32>,
+            quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
         >,
         inputNode: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputNode>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -96,7 +104,7 @@ impl crate::HoudiniEngineUnity::HEU_InputUtility {
             .invoke("GetInputInterfaceByType", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetInputInterface_Gc0(
+    pub fn GetInputInterface_GameObject0(
         inputObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputInterface>,
@@ -107,7 +115,7 @@ impl crate::HoudiniEngineUnity::HEU_InputUtility {
             .invoke("GetInputInterface", (inputObject))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetInputInterface_Gc1(
+    pub fn GetInputInterface_HEU_InputObjectInfo1(
         inputObjectInfo: quest_hook::libil2cpp::Gc<
             crate::HoudiniEngineUnity::HEU_InputObjectInfo,
         >,

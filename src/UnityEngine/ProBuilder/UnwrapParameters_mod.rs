@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnwrapParameters {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_HardAngle: f32,
     pub m_PackMargin: f32,
     pub m_AngleError: f32,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+UnwrapParameters")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::UnwrapParameters {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -39,7 +39,7 @@ impl crate::UnityEngine::ProBuilder::UnwrapParameters {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_UnwrapParameters1(
         other: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::UnwrapParameters,
         >,
@@ -83,7 +83,7 @@ impl crate::UnityEngine::ProBuilder::UnwrapParameters {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_UnwrapParameters1(
         &mut self,
         other: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::UnwrapParameters,

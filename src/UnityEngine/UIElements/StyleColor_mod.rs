@@ -23,7 +23,7 @@ for crate::UnityEngine::UIElements::StyleColor {
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleColor")]
 impl crate::UnityEngine::UIElements::StyleColor {
-    pub fn Equals_Gc1(
+    pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -123,34 +123,38 @@ impl crate::UnityEngine::UIElements::StyleColor {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleColor")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>>
-for crate::UnityEngine::UIElements::StyleColor {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Color> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+StyleColor")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>>
-for crate::UnityEngine::UIElements::StyleColor {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Color> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+StyleColor")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleColor>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleColor>>
 for crate::UnityEngine::UIElements::StyleColor {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleColor> {
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleColor> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleColor")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleColor>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleColor>>
 for crate::UnityEngine::UIElements::StyleColor {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleColor> {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleColor> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleColor")]
+impl AsRef<crate::UnityEngine::UIElements::IStyleValue_1<crate::UnityEngine::Color>>
+for crate::UnityEngine::UIElements::StyleColor {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::UIElements::IStyleValue_1<crate::UnityEngine::Color> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleColor")]
+impl AsMut<crate::UnityEngine::UIElements::IStyleValue_1<crate::UnityEngine::Color>>
+for crate::UnityEngine::UIElements::StyleColor {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::UIElements::IStyleValue_1<crate::UnityEngine::Color> {
         todo!()
     }
 }

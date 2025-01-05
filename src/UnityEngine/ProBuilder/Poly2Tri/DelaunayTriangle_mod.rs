@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DelaunayTriangle {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Points: crate::UnityEngine::ProBuilder::Poly2Tri::FixedArray3_1<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DelaunayTriangle")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -211,7 +211,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
             .invoke("Legalize", (oPoint, nPoint))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MarkConstrainedEdge_Gc1(
+    pub fn MarkConstrainedEdge_DTSweepConstraint1(
         &mut self,
         edge: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint,
@@ -224,7 +224,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
             .invoke("MarkConstrainedEdge", (edge))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MarkConstrainedEdge_Gc_Gc2(
+    pub fn MarkConstrainedEdge_TriangulationPoint_TriangulationPoint2(
         &mut self,
         p: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
@@ -251,7 +251,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
             .invoke("MarkConstrainedEdge", (index))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MarkEdge_Gc0(
+    pub fn MarkEdge_DelaunayTriangle0(
         &mut self,
         triangle: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
@@ -264,11 +264,13 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
             .invoke("MarkEdge", (triangle))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MarkEdge_Gc1(
+    pub fn MarkEdge_List_1_1(
         &mut self,
         tList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -289,7 +291,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
             .invoke("MarkNeighborEdges", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn MarkNeighbor_Gc1(
+    pub fn MarkNeighbor_DelaunayTriangle1(
         &mut self,
         t: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
@@ -302,7 +304,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
             .invoke("MarkNeighbor", (t))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MarkNeighbor_Gc_Gc0(
+    pub fn MarkNeighbor_TriangulationPoint_TriangulationPoint_DelaunayTriangle0(
         &mut self,
         p1: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,

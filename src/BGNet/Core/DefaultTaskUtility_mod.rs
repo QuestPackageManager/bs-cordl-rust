@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultTaskUtility {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "BGNet+Core+DefaultTaskUtility")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BGNet+Core+DefaultTaskUtility")]
 impl std::ops::Deref for crate::BGNet::Core::DefaultTaskUtility {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,12 +37,16 @@ impl crate::BGNet::Core::DefaultTaskUtility {
     }
     pub fn ContinueWith<T1, T2>(
         &mut self,
-        task: quest_hook::libil2cpp::Gc<T1>,
+        task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T1>>,
         continuation: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<T1>,
-            quest_hook::libil2cpp::Gc<T2>,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T1>>,
+                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T2>>,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T2>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T2>>,
+    >
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -52,8 +56,9 @@ impl crate::BGNet::Core::DefaultTaskUtility {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T2> = __cordl_object
-            .invoke("ContinueWith", (task, continuation))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<T2>,
+        > = __cordl_object.invoke("ContinueWith", (task, continuation))?;
         Ok(__cordl_ret.into())
     }
     pub fn Delay(
@@ -78,7 +83,7 @@ impl crate::BGNet::Core::DefaultTaskUtility {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn Run_Gc_CancellationToken0(
+    pub fn Run_Action0(
         &mut self,
         action: quest_hook::libil2cpp::Gc<crate::System::Action>,
         cancellationToken: crate::System::Threading::CancellationToken,
@@ -93,10 +98,12 @@ impl crate::BGNet::Core::DefaultTaskUtility {
         > = __cordl_object.invoke("Run", (action, cancellationToken))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Run_Gc_CancellationToken1(
+    pub fn Run_Func_1_1(
         &mut self,
         func: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+            crate::System::Func_1<
+                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+            >,
         >,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
@@ -110,11 +117,13 @@ impl crate::BGNet::Core::DefaultTaskUtility {
         > = __cordl_object.invoke("Run", (func, cancellationToken))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Run_Gc_CancellationToken2<T>(
+    pub fn Run_Func_1_2<T>(
         &mut self,
-        func: quest_hook::libil2cpp::Gc<T>,
+        func: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -122,11 +131,12 @@ impl crate::BGNet::Core::DefaultTaskUtility {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = __cordl_object
-            .invoke("Run", (func, cancellationToken))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<T>,
+        > = __cordl_object.invoke("Run", (func, cancellationToken))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Wait_Gc0(
+    pub fn Wait_Task0(
         &mut self,
         task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -137,9 +147,9 @@ impl crate::BGNet::Core::DefaultTaskUtility {
             .invoke("Wait", (task))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Wait_Gc1<T>(
+    pub fn Wait_Task_1_1<T>(
         &mut self,
-        task: quest_hook::libil2cpp::Gc<T>,
+        task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T>>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -172,18 +182,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::BGNet::Core::DefaultTaskUtilit
     }
 }
 #[cfg(feature = "BGNet+Core+DefaultTaskUtility")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>>
-for crate::BGNet::Core::DefaultTaskUtility {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility> {
+impl AsRef<crate::BGNet::Core::ITaskUtility> for crate::BGNet::Core::DefaultTaskUtility {
+    fn as_ref(&self) -> &crate::BGNet::Core::ITaskUtility {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BGNet+Core+DefaultTaskUtility")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>>
-for crate::BGNet::Core::DefaultTaskUtility {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility> {
+impl AsMut<crate::BGNet::Core::ITaskUtility> for crate::BGNet::Core::DefaultTaskUtility {
+    fn as_mut(&mut self) -> &mut crate::BGNet::Core::ITaskUtility {
         unsafe { std::mem::transmute(self) }
     }
 }

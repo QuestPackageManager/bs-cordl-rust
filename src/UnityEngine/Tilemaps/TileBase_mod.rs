@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TileBase {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+    __cordl_parent: crate::UnityEngine::ScriptableObject,
 }
 #[cfg(feature = "UnityEngine+Tilemaps+TileBase")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Tilemaps+TileBase")]
 impl std::ops::Deref for crate::UnityEngine::Tilemaps::TileBase {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>;
+    type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

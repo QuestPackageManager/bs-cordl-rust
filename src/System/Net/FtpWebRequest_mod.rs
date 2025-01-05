@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FtpWebRequest {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Net::WebRequest>,
+    __cordl_parent: crate::System::Net::WebRequest,
     pub _syncObject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _authInfo: quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
     pub _uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
@@ -56,7 +56,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+FtpWebRequest")]
 impl std::ops::Deref for crate::System::Net::FtpWebRequest {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Net::WebRequest>;
+    type Target = crate::System::Net::WebRequest;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

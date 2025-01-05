@@ -2,12 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaException {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::SystemException>,
+    __cordl_parent: crate::System::SystemException,
     pub res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub args: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub sourceUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub lineNumber: i32,
@@ -24,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlSchemaException")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaException {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::SystemException>;
+    type Target = crate::System::SystemException;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,9 +38,7 @@ impl crate::System::Xml::Schema::XmlSchemaException {
     pub fn CreateMessage(
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -74,7 +70,7 @@ impl crate::System::Xml::Schema::XmlSchemaException {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc2(
+    pub fn New_Il2CppString2(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -83,17 +79,7 @@ impl crate::System::Xml::Schema::XmlSchemaException {
             .invoke_void(".ctor", (message))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc10(
-        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        source: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (res, source))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_Gc3(
+    pub fn New_Il2CppString_Exception3(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -103,12 +89,22 @@ impl crate::System::Xml::Schema::XmlSchemaException {
             .invoke_void(".ctor", (message, innerException))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc5(
+    pub fn New_Il2CppString_Exception_i32_i32_4(
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+        lineNumber: i32,
+        linePosition: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (message, innerException, lineNumber, linePosition))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Il2CppString_Il2CppArray5(
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -117,48 +113,10 @@ impl crate::System::Xml::Schema::XmlSchemaException {
             .invoke_void(".ctor", (res, args))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc6(
-        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        arg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (res, arg))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_Gc_Gc11(
-        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        arg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        source: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (res, arg, source))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_Gc_Gc12(
+    pub fn New_Il2CppString_Il2CppArray_Exception_Il2CppString_i32_i32_XmlSchemaObject13(
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
-        >,
-        source: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (res, args, source))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_Gc_Gc_Gc_i32_i32_Gc13(
-        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
         innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
         sourceUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -175,7 +133,45 @@ impl crate::System::Xml::Schema::XmlSchemaException {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc_Gc_i32_i32_7(
+    pub fn New_Il2CppString_Il2CppArray_Il2CppString_i32_i32_9(
+        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+        sourceUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        lineNumber: i32,
+        linePosition: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (res, args, sourceUri, lineNumber, linePosition))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Il2CppString_Il2CppArray_XmlSchemaObject12(
+        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+        source: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (res, args, source))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Il2CppString_Il2CppString6(
+        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        arg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (res, arg))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Il2CppString_Il2CppString_Il2CppString_i32_i32_7(
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         sourceUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -188,36 +184,18 @@ impl crate::System::Xml::Schema::XmlSchemaException {
             .invoke_void(".ctor", (res, arg, sourceUri, lineNumber, linePosition))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc_Gc_i32_i32_9(
+    pub fn New_Il2CppString_Il2CppString_XmlSchemaObject11(
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
-        >,
-        sourceUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        lineNumber: i32,
-        linePosition: i32,
+        arg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        source: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (res, args, sourceUri, lineNumber, linePosition))?;
+            .invoke_void(".ctor", (res, arg, source))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc_i32_i32_4(
-        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
-        lineNumber: i32,
-        linePosition: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (message, innerException, lineNumber, linePosition))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_Gc_i32_i32_8(
+    pub fn New_Il2CppString_Il2CppString_i32_i32_8(
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         sourceUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         lineNumber: i32,
@@ -229,7 +207,17 @@ impl crate::System::Xml::Schema::XmlSchemaException {
             .invoke_void(".ctor", (res, sourceUri, lineNumber, linePosition))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_StreamingContext0(
+    pub fn New_Il2CppString_XmlSchemaObject10(
+        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        source: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (res, source))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_SerializationInfo_StreamingContext0(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -252,18 +240,7 @@ impl crate::System::Xml::Schema::XmlSchemaException {
             .invoke("SetSchemaObject", (source))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetSource_Gc1(
-        &mut self,
-        source: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetSource", (source))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetSource_i32_i32_0(
+    pub fn SetSource_Il2CppString_i32_i32_0(
         &mut self,
         sourceUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         lineNumber: i32,
@@ -276,6 +253,17 @@ impl crate::System::Xml::Schema::XmlSchemaException {
             .invoke("SetSource", (sourceUri, lineNumber, linePosition))?;
         Ok(__cordl_ret.into())
     }
+    pub fn SetSource_XmlSchemaObject1(
+        &mut self,
+        source: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetSource", (source))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor_1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -286,7 +274,7 @@ impl crate::System::Xml::Schema::XmlSchemaException {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_Il2CppString2(
         &mut self,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -297,19 +285,7 @@ impl crate::System::Xml::Schema::XmlSchemaException {
             .invoke(".ctor", (message))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc10(
-        &mut self,
-        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        source: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (res, source))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_Gc3(
+    pub fn _ctor_Il2CppString_Exception3(
         &mut self,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
@@ -321,13 +297,25 @@ impl crate::System::Xml::Schema::XmlSchemaException {
             .invoke(".ctor", (message, innerException))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc5(
+    pub fn _ctor_Il2CppString_Exception_i32_i32_4(
+        &mut self,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+        lineNumber: i32,
+        linePosition: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (message, innerException, lineNumber, linePosition))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppString_Il2CppArray5(
         &mut self,
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -337,55 +325,11 @@ impl crate::System::Xml::Schema::XmlSchemaException {
             .invoke(".ctor", (res, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc6(
-        &mut self,
-        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        arg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (res, arg))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_Gc_Gc11(
-        &mut self,
-        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        arg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        source: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (res, arg, source))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_Gc_Gc12(
+    pub fn _ctor_Il2CppString_Il2CppArray_Exception_Il2CppString_i32_i32_XmlSchemaObject13(
         &mut self,
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
-        >,
-        source: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (res, args, source))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_Gc_Gc_Gc_i32_i32_Gc13(
-        &mut self,
-        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
         innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
         sourceUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -403,7 +347,51 @@ impl crate::System::Xml::Schema::XmlSchemaException {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_Gc_i32_i32_7(
+    pub fn _ctor_Il2CppString_Il2CppArray_Il2CppString_i32_i32_9(
+        &mut self,
+        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+        sourceUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        lineNumber: i32,
+        linePosition: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (res, args, sourceUri, lineNumber, linePosition))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppString_Il2CppArray_XmlSchemaObject12(
+        &mut self,
+        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+        source: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (res, args, source))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppString_Il2CppString6(
+        &mut self,
+        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        arg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (res, arg))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppString_Il2CppString_Il2CppString_i32_i32_7(
         &mut self,
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -418,40 +406,20 @@ impl crate::System::Xml::Schema::XmlSchemaException {
             .invoke(".ctor", (res, arg, sourceUri, lineNumber, linePosition))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_Gc_i32_i32_9(
+    pub fn _ctor_Il2CppString_Il2CppString_XmlSchemaObject11(
         &mut self,
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
-        >,
-        sourceUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        lineNumber: i32,
-        linePosition: i32,
+        arg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        source: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (res, args, sourceUri, lineNumber, linePosition))?;
+            .invoke(".ctor", (res, arg, source))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_i32_i32_4(
-        &mut self,
-        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
-        lineNumber: i32,
-        linePosition: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (message, innerException, lineNumber, linePosition))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_Gc_i32_i32_8(
+    pub fn _ctor_Il2CppString_Il2CppString_i32_i32_8(
         &mut self,
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         sourceUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -465,7 +433,19 @@ impl crate::System::Xml::Schema::XmlSchemaException {
             .invoke(".ctor", (res, sourceUri, lineNumber, linePosition))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_StreamingContext0(
+    pub fn _ctor_Il2CppString_XmlSchemaObject10(
+        &mut self,
+        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        source: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (res, source))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_SerializationInfo_StreamingContext0(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -483,18 +463,14 @@ impl crate::System::Xml::Schema::XmlSchemaException {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("get_Args", ())?;
         Ok(__cordl_ret.into())
     }

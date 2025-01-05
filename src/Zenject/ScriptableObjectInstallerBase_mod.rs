@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScriptableObjectInstallerBase {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+    __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
 }
 #[cfg(feature = "Zenject+ScriptableObjectInstallerBase")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+ScriptableObjectInstallerBase")]
 impl std::ops::Deref for crate::Zenject::ScriptableObjectInstallerBase {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>;
+    type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -54,9 +54,7 @@ impl crate::Zenject::ScriptableObjectInstallerBase {
     }
     pub fn __zenCreate(
         P_0: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -115,16 +113,16 @@ for crate::Zenject::ScriptableObjectInstallerBase {
     }
 }
 #[cfg(feature = "Zenject+ScriptableObjectInstallerBase")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::IInstaller>>
+impl AsRef<crate::Zenject::IInstaller>
 for crate::Zenject::ScriptableObjectInstallerBase {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::IInstaller> {
+    fn as_ref(&self) -> &crate::Zenject::IInstaller {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+ScriptableObjectInstallerBase")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::IInstaller>>
+impl AsMut<crate::Zenject::IInstaller>
 for crate::Zenject::ScriptableObjectInstallerBase {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::IInstaller> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IInstaller {
         unsafe { std::mem::transmute(self) }
     }
 }

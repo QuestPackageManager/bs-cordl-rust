@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightWithIdManager {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub didChangeSomeColorsThisFrameEvent: quest_hook::libil2cpp::Gc<
         crate::System::Action,
     >,
     pub _lights: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
+            *mut crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILightWithId>,
             >,
         >,
@@ -19,7 +19,9 @@ pub struct LightWithIdManager {
         >,
     >,
     pub _lightsToUnregister: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILightWithId>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILightWithId>,
+        >,
     >,
     pub _didChangeSomeColorsThisFrame: bool,
 }
@@ -30,7 +32,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LightWithIdManager")]
 impl std::ops::Deref for crate::GlobalNamespace::LightWithIdManager {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

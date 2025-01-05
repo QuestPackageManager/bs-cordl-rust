@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InternalMeshUtility {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+InternalMeshUtility")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+InternalMeshUtility")]
 impl std::ops::Deref
 for crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,7 +30,9 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility {
     pub fn AverageNormalWithIndexes(
         shared: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SharedVertex>,
         all: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
-        norm: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+        norm: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector3>,
+        >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
         let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("AverageNormalWithIndexes", (shared, all, norm))?;

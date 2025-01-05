@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointOnEdgeException {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::NotImplementedException>,
+    __cordl_parent: crate::System::NotImplementedException,
     pub A: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
     >,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+PointOnEdgeException")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::Poly2Tri::PointOnEdgeException {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::NotImplementedException>;
+    type Target = crate::System::NotImplementedException;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

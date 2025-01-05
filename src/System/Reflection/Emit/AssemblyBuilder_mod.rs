@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssemblyBuilder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+    __cordl_parent: crate::System::Reflection::Assembly,
 }
 #[cfg(feature = "System+Reflection+Emit+AssemblyBuilder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Reflection+Emit+AssemblyBuilder")]
 impl std::ops::Deref for crate::System::Reflection::Emit::AssemblyBuilder {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>;
+    type Target = crate::System::Reflection::Assembly;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BypassElementCollection {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Configuration::ConfigurationElementCollection,
-    >,
+    __cordl_parent: crate::System::Configuration::ConfigurationElementCollection,
 }
 #[cfg(feature = "System+Net+Configuration+BypassElementCollection")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -14,9 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Configuration+BypassElementCollection")]
 impl std::ops::Deref for crate::System::Net::Configuration::BypassElementCollection {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Configuration::ConfigurationElementCollection,
-    >;
+    type Target = crate::System::Configuration::ConfigurationElementCollection;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

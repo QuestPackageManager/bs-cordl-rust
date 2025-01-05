@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultTlsSrpGroupVerifier {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mGroups: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsSrpGroupVerifier")]
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsSrpGroupVerifier")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSrpGroupVerifier {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -73,7 +73,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSrpGroupVerifier {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_IList1(
         groups: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -92,7 +92,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSrpGroupVerifier {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_IList1(
         &mut self,
         groups: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -115,26 +115,18 @@ for crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSrpGroupVerifier {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsSrpGroupVerifier")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsSrpGroupVerifier>,
-> for crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSrpGroupVerifier {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::TlsSrpGroupVerifier,
-    > {
+impl AsRef<crate::Org::BouncyCastle::Crypto::Tls::TlsSrpGroupVerifier>
+for crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSrpGroupVerifier {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Tls::TlsSrpGroupVerifier {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsSrpGroupVerifier")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsSrpGroupVerifier>,
-> for crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSrpGroupVerifier {
+impl AsMut<crate::Org::BouncyCastle::Crypto::Tls::TlsSrpGroupVerifier>
+for crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSrpGroupVerifier {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::TlsSrpGroupVerifier,
-    > {
+    ) -> &mut crate::Org::BouncyCastle::Crypto::Tls::TlsSrpGroupVerifier {
         unsafe { std::mem::transmute(self) }
     }
 }

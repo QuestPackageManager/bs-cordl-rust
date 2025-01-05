@@ -2,12 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnableOnVisible {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
-    pub VisibilityChangedEvent: quest_hook::libil2cpp::Gc<bool>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    pub VisibilityChangedEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
     pub _components: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Behaviour>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Behaviour>,
     >,
 }
 #[cfg(feature = "EnableOnVisible")]
@@ -17,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "EnableOnVisible")]
 impl std::ops::Deref for crate::GlobalNamespace::EnableOnVisible {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -79,7 +77,7 @@ impl crate::GlobalNamespace::EnableOnVisible {
     }
     pub fn add_VisibilityChangedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<bool>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -90,7 +88,7 @@ impl crate::GlobalNamespace::EnableOnVisible {
     }
     pub fn remove_VisibilityChangedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<bool>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

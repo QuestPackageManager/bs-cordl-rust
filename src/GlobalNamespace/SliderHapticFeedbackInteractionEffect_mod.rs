@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SliderHapticFeedbackInteractionEffect {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::SliderInteractionEffect,
-    >,
+    __cordl_parent: crate::GlobalNamespace::SliderInteractionEffect,
     pub _hapticPreset: quest_hook::libil2cpp::Gc<
         crate::Libraries::HM::HMLib::VR::HapticPresetSO,
     >,
@@ -22,9 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SliderHapticFeedbackInteractionEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderHapticFeedbackInteractionEffect {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::SliderInteractionEffect,
-    >;
+    type Target = crate::GlobalNamespace::SliderInteractionEffect;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

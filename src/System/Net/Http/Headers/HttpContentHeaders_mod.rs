@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HttpContentHeaders {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Net::Http::Headers::HttpHeaders,
-    >,
+    __cordl_parent: crate::System::Net::Http::Headers::HttpHeaders,
     pub content: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpContent>,
 }
 #[cfg(feature = "System+Net+Http+Headers+HttpContentHeaders")]
@@ -14,9 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Http+Headers+HttpContentHeaders")]
 impl std::ops::Deref for crate::System::Net::Http::Headers::HttpContentHeaders {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Net::Http::Headers::HttpHeaders,
-    >;
+    type Target = crate::System::Net::Http::Headers::HttpHeaders;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

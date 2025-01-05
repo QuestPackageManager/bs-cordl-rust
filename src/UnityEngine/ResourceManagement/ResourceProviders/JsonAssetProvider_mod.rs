@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonAssetProvider {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider,
-    >,
+    __cordl_parent: crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+JsonAssetProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+JsonAssetProvider")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::JsonAssetProvider {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider,
-    >;
+    type Target = crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

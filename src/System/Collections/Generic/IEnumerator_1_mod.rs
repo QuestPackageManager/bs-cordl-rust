@@ -57,42 +57,30 @@ for crate::System::Collections::Generic::IEnumerator_1<T> {
     }
 }
 #[cfg(feature = "System+Collections+Generic+IEnumerator_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerator>
 for crate::System::Collections::Generic::IEnumerator_1<T> {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+Generic+IEnumerator_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerator>
 for crate::System::Collections::Generic::IEnumerator_1<T> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+Generic+IEnumerator_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
 for crate::System::Collections::Generic::IEnumerator_1<T> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+Generic+IEnumerator_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
 for crate::System::Collections::Generic::IEnumerator_1<T> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }

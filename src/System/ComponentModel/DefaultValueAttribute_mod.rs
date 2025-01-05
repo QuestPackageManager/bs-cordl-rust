@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultValueAttribute {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+    __cordl_parent: crate::System::Attribute,
     pub _value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+ComponentModel+DefaultValueAttribute")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+ComponentModel+DefaultValueAttribute")]
 impl std::ops::Deref for crate::System::ComponentModel::DefaultValueAttribute {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Attribute>;
+    type Target = crate::System::Attribute;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -42,8 +42,8 @@ impl crate::System::ComponentModel::DefaultValueAttribute {
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc3(
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub fn New_Il2CppObject4(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -51,8 +51,8 @@ impl crate::System::ComponentModel::DefaultValueAttribute {
             .invoke_void(".ctor", (value))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc4(
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub fn New_Il2CppString3(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -87,9 +87,9 @@ impl crate::System::ComponentModel::DefaultValueAttribute {
             .invoke_void(".ctor", (value))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc3(
+    pub fn _ctor_Il2CppObject4(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -98,9 +98,9 @@ impl crate::System::ComponentModel::DefaultValueAttribute {
             .invoke(".ctor", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc4(
+    pub fn _ctor_Il2CppString3(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

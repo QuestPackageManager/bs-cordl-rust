@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct IteratorStateMachineAttribute {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::CompilerServices::StateMachineAttribute,
-    >,
+    __cordl_parent: crate::System::Runtime::CompilerServices::StateMachineAttribute,
 }
 #[cfg(feature = "System+Runtime+CompilerServices+IteratorStateMachineAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+CompilerServices+IteratorStateMachineAttribute")]
 impl std::ops::Deref
 for crate::System::Runtime::CompilerServices::IteratorStateMachineAttribute {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::CompilerServices::StateMachineAttribute,
-    >;
+    type Target = crate::System::Runtime::CompilerServices::StateMachineAttribute;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

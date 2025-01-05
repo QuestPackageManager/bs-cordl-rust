@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CanvasGroup {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Behaviour>,
+    __cordl_parent: crate::UnityEngine::Behaviour,
 }
 #[cfg(feature = "UnityEngine+CanvasGroup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+CanvasGroup")]
 impl std::ops::Deref for crate::UnityEngine::CanvasGroup {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Behaviour>;
+    type Target = crate::UnityEngine::Behaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -136,20 +136,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::CanvasGroup {
     }
 }
 #[cfg(feature = "UnityEngine+CanvasGroup")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::ICanvasRaycastFilter>>
+impl AsRef<crate::UnityEngine::ICanvasRaycastFilter>
 for crate::UnityEngine::CanvasGroup {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::ICanvasRaycastFilter> {
+    fn as_ref(&self) -> &crate::UnityEngine::ICanvasRaycastFilter {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+CanvasGroup")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::ICanvasRaycastFilter>>
+impl AsMut<crate::UnityEngine::ICanvasRaycastFilter>
 for crate::UnityEngine::CanvasGroup {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::ICanvasRaycastFilter> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ICanvasRaycastFilter {
         unsafe { std::mem::transmute(self) }
     }
 }

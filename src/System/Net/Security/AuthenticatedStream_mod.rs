@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AuthenticatedStream {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    __cordl_parent: crate::System::IO::Stream,
     pub _InnerStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub _LeaveStreamOpen: bool,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Security+AuthenticatedStream")]
 impl std::ops::Deref for crate::System::Net::Security::AuthenticatedStream {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::IO::Stream>;
+    type Target = crate::System::IO::Stream;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

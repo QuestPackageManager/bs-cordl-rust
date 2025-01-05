@@ -5,13 +5,9 @@ pub struct UnityEvent_2<
     T0: quest_hook::libil2cpp::Type,
     T1: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Events::UnityEventBase,
-    >,
+    __cordl_parent: crate::UnityEngine::Events::UnityEventBase,
     pub m_InvokeArray: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
     __cordl_phantom_T0: std::marker::PhantomData<T0>,
     __cordl_phantom_T1: std::marker::PhantomData<T1>,
@@ -24,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+Events+UnityEvent_2")]
 impl<T0: quest_hook::libil2cpp::Type, T1: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::Events::UnityEvent_2<T0, T1> {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityEventBase>;
+    type Target = crate::UnityEngine::Events::UnityEventBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

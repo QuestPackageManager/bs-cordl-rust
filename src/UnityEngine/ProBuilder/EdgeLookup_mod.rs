@@ -34,7 +34,7 @@ impl crate::UnityEngine::ProBuilder::EdgeLookup {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Gc1(
+    pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -46,25 +46,49 @@ impl crate::UnityEngine::ProBuilder::EdgeLookup {
         Ok(__cordl_ret.into())
     }
     pub fn GetEdgeLookup(
-        edges: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
-        lookup: quest_hook::libil2cpp::Gc<i32, i32>,
+        edges: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::ProBuilder::Edge,
+            >,
+        >,
+        lookup: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::EdgeLookup>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::ProBuilder::EdgeLookup,
+            >,
+        >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::EdgeLookup,
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::ProBuilder::EdgeLookup,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetEdgeLookup", (edges, lookup))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetEdgeLookupHashSet(
-        edges: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
-        lookup: quest_hook::libil2cpp::Gc<i32, i32>,
+        edges: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::ProBuilder::Edge,
+            >,
+        >,
+        lookup: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::EdgeLookup>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<
+                crate::UnityEngine::ProBuilder::EdgeLookup,
+            >,
+        >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::EdgeLookup,
+            crate::System::Collections::Generic::HashSet_1<
+                crate::UnityEngine::ProBuilder::EdgeLookup,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetEdgeLookupHashSet", (edges, lookup))?;
         Ok(__cordl_ret.into())
@@ -173,20 +197,20 @@ impl crate::UnityEngine::ProBuilder::EdgeLookup {
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+EdgeLookup")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::EdgeLookup>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::EdgeLookup>>
 for crate::UnityEngine::ProBuilder::EdgeLookup {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::EdgeLookup> {
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::EdgeLookup> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+EdgeLookup")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::EdgeLookup>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::EdgeLookup>>
 for crate::UnityEngine::ProBuilder::EdgeLookup {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::EdgeLookup> {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::EdgeLookup> {
         todo!()
     }
 }

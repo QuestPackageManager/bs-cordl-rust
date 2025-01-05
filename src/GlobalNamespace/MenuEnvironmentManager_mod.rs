@@ -2,12 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuEnvironmentManager {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _data: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentObjects,
-            >,
+            *mut crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentObjects,
         >,
     >,
     pub _prevMenuEnvironmentType: crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentType,
@@ -19,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MenuEnvironmentManager")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuEnvironmentManager {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -89,7 +87,7 @@ for crate::GlobalNamespace::MenuEnvironmentManager {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuEnvironmentManager_MenuEnvironmentObjects {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _menuEnvironmentType: crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentType,
     pub _wrapper: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
 }
@@ -102,7 +100,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MenuEnvironmentManager+MenuEnvironmentObjects")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentObjects {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

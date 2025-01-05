@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CombinedHash {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mContext: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
     >,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+CombinedHash")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::CombinedHash {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -114,7 +114,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::CombinedHash {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_CombinedHash1(
         t: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::CombinedHash>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -219,7 +219,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::CombinedHash {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_CombinedHash1(
         &mut self,
         t: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::CombinedHash>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -255,44 +255,32 @@ for crate::Org::BouncyCastle::Crypto::Tls::CombinedHash {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+CombinedHash")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>>
+impl AsRef<crate::Org::BouncyCastle::Crypto::IDigest>
 for crate::Org::BouncyCastle::Crypto::Tls::CombinedHash {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest> {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IDigest {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+CombinedHash")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>>
+impl AsMut<crate::Org::BouncyCastle::Crypto::IDigest>
+for crate::Org::BouncyCastle::Crypto::Tls::CombinedHash {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IDigest {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+CombinedHash")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash>
+for crate::Org::BouncyCastle::Crypto::Tls::CombinedHash {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+CombinedHash")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash>
 for crate::Org::BouncyCastle::Crypto::Tls::CombinedHash {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+CombinedHash")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash>,
-> for crate::Org::BouncyCastle::Crypto::Tls::CombinedHash {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+CombinedHash")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash>,
-> for crate::Org::BouncyCastle::Crypto::Tls::CombinedHash {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash,
-    > {
+    ) -> &mut crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash {
         unsafe { std::mem::transmute(self) }
     }
 }

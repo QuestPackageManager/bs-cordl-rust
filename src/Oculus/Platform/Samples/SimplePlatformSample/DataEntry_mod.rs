@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataEntry {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub dataOutput: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
 }
 #[cfg(feature = "Oculus+Platform+Samples+SimplePlatformSample+DataEntry")]
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Oculus+Platform+Samples+SimplePlatformSample+DataEntry")]
 impl std::ops::Deref
 for crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -90,8 +90,10 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
     pub fn achievementDefinitionCallback(
         &mut self,
         msg: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::AchievementDefinitionList,
+            crate::Oculus::Platform::Message_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::AchievementDefinitionList,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -116,8 +118,10 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
     pub fn achievementProgressCallback(
         &mut self,
         msg: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::AchievementProgressList,
+            crate::Oculus::Platform::Message_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::AchievementProgressList,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -209,7 +213,9 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
     pub fn getFriendsCallback(
         &mut self,
         msg: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserList>,
+            crate::Oculus::Platform::Message_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserList>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -264,7 +270,9 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
     pub fn getUserCallback(
         &mut self,
         msg: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::User>,
+            crate::Oculus::Platform::Message_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::User>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -287,8 +295,10 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
     pub fn leaderboardGetCallback(
         &mut self,
         msg: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::LeaderboardEntryList,
+            crate::Oculus::Platform::Message_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::LeaderboardEntryList,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -346,7 +356,9 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
     pub fn userProofCallback(
         &mut self,
         msg: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserProof>,
+            crate::Oculus::Platform::Message_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserProof>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

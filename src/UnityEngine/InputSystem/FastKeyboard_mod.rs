@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FastKeyboard {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Keyboard>,
+    __cordl_parent: crate::UnityEngine::InputSystem::Keyboard,
 }
 #[cfg(feature = "UnityEngine+InputSystem+FastKeyboard")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+FastKeyboard")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::FastKeyboard {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Keyboard>;
+    type Target = crate::UnityEngine::InputSystem::Keyboard;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

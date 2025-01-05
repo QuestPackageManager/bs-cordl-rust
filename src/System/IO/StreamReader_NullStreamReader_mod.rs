@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StreamReader_NullStreamReader {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::IO::StreamReader>,
+    __cordl_parent: crate::System::IO::StreamReader,
 }
 #[cfg(feature = "System+IO+StreamReader+NullStreamReader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+IO+StreamReader+NullStreamReader")]
 impl std::ops::Deref for crate::GlobalNamespace::StreamReader_NullStreamReader {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::IO::StreamReader>;
+    type Target = crate::System::IO::StreamReader;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -89,7 +89,7 @@ impl crate::GlobalNamespace::StreamReader_NullStreamReader {
         let __cordl_ret: i32 = __cordl_object.invoke("Read", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Read_Gc_i32_i32_1(
+    pub fn Read_Il2CppArray_i32_i32_1(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         index: i32,

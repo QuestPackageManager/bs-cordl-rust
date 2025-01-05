@@ -2,12 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UIRStylePainter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Owner: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UIR::RenderChain,
     >,
     pub m_Entries: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry,
+        >,
     >,
     pub m_Atlas: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::AtlasBase>,
     pub m_VectorImageManager: quest_hook::libil2cpp::Gc<
@@ -19,15 +21,23 @@ pub struct UIRStylePainter {
     pub m_StencilRef: i32,
     pub m_ClipRectID: crate::UnityEngine::UIElements::UIR::BMPAlloc,
     pub m_SVGBackgroundEntryIndex: i32,
-    pub m_VertsPool: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Vertex>,
-    pub m_IndicesPool: quest_hook::libil2cpp::Gc<u16>,
+    pub m_VertsPool: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::TempAllocator_1<
+            crate::UnityEngine::UIElements::Vertex,
+        >,
+    >,
+    pub m_IndicesPool: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::TempAllocator_1<u16>,
+    >,
     pub m_MeshWriteDataPool: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MeshWriteData>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MeshWriteData>,
+        >,
     >,
     pub m_NextMeshWriteDataPoolItem: i32,
     pub m_RepeatRectUVList: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
+            *mut crate::System::Collections::Generic::List_1<
                 crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_RepeatRectUV,
             >,
         >,
@@ -59,7 +69,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -559,14 +569,18 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry,
+            >,
         > = __cordl_object.invoke("get_entries", ())?;
         Ok(__cordl_ret.into())
     }
@@ -655,20 +669,16 @@ for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IStylePainter>>
+impl AsRef<crate::UnityEngine::UIElements::IStylePainter>
 for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IStylePainter> {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IStylePainter {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IStylePainter>>
+impl AsMut<crate::UnityEngine::UIElements::IStylePainter>
 for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IStylePainter> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IStylePainter {
         unsafe { std::mem::transmute(self) }
     }
 }

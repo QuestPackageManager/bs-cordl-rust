@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DerGenerator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Generator,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Generator,
     pub _tagged: bool,
     pub _isExplicit: bool,
     pub _tagNo: i32,
@@ -16,9 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+DerGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::DerGenerator {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Generator,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::Asn1Generator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,7 +27,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::DerGenerator {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+DerGenerator")]
 impl crate::Org::BouncyCastle::Asn1::DerGenerator {
-    pub fn New_Gc0(
+    pub fn New_Stream0(
         outStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -51,7 +47,7 @@ impl crate::Org::BouncyCastle::Asn1::DerGenerator {
             .invoke_void(".ctor", (outStream, tagNo, isExplicit))?;
         Ok(__cordl_object.into())
     }
-    pub fn WriteDerEncoded_Gc_i32_Gc0(
+    pub fn WriteDerEncoded_Stream_i32_Il2CppArray0(
         outStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         tag: i32,
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -60,7 +56,7 @@ impl crate::Org::BouncyCastle::Asn1::DerGenerator {
             .invoke("WriteDerEncoded", (outStream, tag, bytes))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteDerEncoded_Gc_i32_Gc2(
+    pub fn WriteDerEncoded_Stream_i32_Stream2(
         outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         tag: i32,
         inStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -69,7 +65,7 @@ impl crate::Org::BouncyCastle::Asn1::DerGenerator {
             .invoke("WriteDerEncoded", (outStr, tag, inStr))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteDerEncoded_i32_Gc1(
+    pub fn WriteDerEncoded_i32_Il2CppArray1(
         &mut self,
         tag: i32,
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -89,7 +85,7 @@ impl crate::Org::BouncyCastle::Asn1::DerGenerator {
             .invoke("WriteLength", (outStr, length))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Stream0(
         &mut self,
         outStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

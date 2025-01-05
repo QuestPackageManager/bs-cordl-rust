@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SongProgressUIController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _slider: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Slider>,
     pub _progressImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
     pub _durationMinutesText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
@@ -39,7 +39,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SongProgressUIController")]
 impl std::ops::Deref for crate::GlobalNamespace::SongProgressUIController {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

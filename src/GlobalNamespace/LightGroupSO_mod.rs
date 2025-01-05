@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightGroupSO {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PersistentScriptableObject,
-    >,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _groupName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _groupDescription: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
@@ -22,9 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LightGroupSO")]
 impl std::ops::Deref for crate::GlobalNamespace::LightGroupSO {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PersistentScriptableObject,
-    >;
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -116,18 +112,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LightGroupSO 
     }
 }
 #[cfg(feature = "LightGroupSO")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILightGroup>>
+impl AsRef<crate::GlobalNamespace::ILightGroup>
 for crate::GlobalNamespace::LightGroupSO {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILightGroup> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ILightGroup {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LightGroupSO")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILightGroup>>
+impl AsMut<crate::GlobalNamespace::ILightGroup>
 for crate::GlobalNamespace::LightGroupSO {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILightGroup> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILightGroup {
         unsafe { std::mem::transmute(self) }
     }
 }

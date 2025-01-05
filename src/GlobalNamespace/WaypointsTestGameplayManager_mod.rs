@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct WaypointsTestGameplayManager {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _outerCapsuleStart: crate::UnityEngine::Vector3,
     pub _outerCapsuleEnd: crate::UnityEngine::Vector3,
     pub _outerCapsuleRadius: f32,
@@ -38,7 +38,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "WaypointsTestGameplayManager")]
 impl std::ops::Deref for crate::GlobalNamespace::WaypointsTestGameplayManager {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

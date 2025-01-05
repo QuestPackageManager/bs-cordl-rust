@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReportingCallbackSample {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub InVRConsole: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
     pub DestinationsConsole: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ReportingCallbackSample")]
 impl std::ops::Deref for crate::GlobalNamespace::ReportingCallbackSample {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -36,7 +36,9 @@ impl crate::GlobalNamespace::ReportingCallbackSample {
     pub fn OnReportButtonIntentNotif(
         &mut self,
         message: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::Oculus::Platform::Message_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -70,8 +72,10 @@ impl crate::GlobalNamespace::ReportingCallbackSample {
     pub fn _Start_b__2_0(
         &mut self,
         message: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::PlatformInitialize,
+            crate::Oculus::Platform::Message_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::PlatformInitialize,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

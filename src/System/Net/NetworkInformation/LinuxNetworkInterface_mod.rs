@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LinuxNetworkInterface {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Net::NetworkInformation::UnixNetworkInterface,
-    >,
+    __cordl_parent: crate::System::Net::NetworkInformation::UnixNetworkInterface,
     pub iface_path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub iface_operstate_path: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
@@ -19,9 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+NetworkInformation+LinuxNetworkInterface")]
 impl std::ops::Deref for crate::System::Net::NetworkInformation::LinuxNetworkInterface {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Net::NetworkInformation::UnixNetworkInterface,
-    >;
+    type Target = crate::System::Net::NetworkInformation::UnixNetworkInterface;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlAttributes {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub xmlAnyAttribute: quest_hook::libil2cpp::Gc<
         crate::System::Xml::Serialization::XmlAnyAttributeAttribute,
     >,
@@ -47,7 +47,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Serialization+XmlAttributes")]
 impl std::ops::Deref for crate::System::Xml::Serialization::XmlAttributes {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -78,7 +78,7 @@ impl crate::System::Xml::Serialization::XmlAttributes {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_ICustomAttributeProvider1(
         provider: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::ICustomAttributeProvider,
         >,
@@ -99,7 +99,7 @@ impl crate::System::Xml::Serialization::XmlAttributes {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_ICustomAttributeProvider1(
         &mut self,
         provider: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::ICustomAttributeProvider,

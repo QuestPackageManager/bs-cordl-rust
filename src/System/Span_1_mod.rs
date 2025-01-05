@@ -197,7 +197,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Span_1<T> {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Il2CppArray0(
         &mut self,
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -212,23 +212,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Span_1<T> {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_i32_2(
-        &mut self,
-        pointer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        length: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (pointer, length),
-        )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_i32_i32_1(
+    pub fn _ctor_Il2CppArray_i32_i32_1(
         &mut self,
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         start: i32,
@@ -242,6 +226,22 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Span_1<T> {
             self,
             ".ctor",
             (array, start, length),
+        )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppObject_i32_2(
+        &mut self,
+        pointer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (pointer, length),
         )?;
         Ok(__cordl_ret.into())
     }
@@ -272,7 +272,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Span_1<T> {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn op_Implicit_Gc1(
+    pub fn op_Implicit_Il2CppArray1(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Span_1<T>>
     where

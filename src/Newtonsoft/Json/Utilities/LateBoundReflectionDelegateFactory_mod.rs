@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LateBoundReflectionDelegateFactory {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory,
-    >,
+    __cordl_parent: crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory,
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+LateBoundReflectionDelegateFactory")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Newtonsoft+Json+Utilities+LateBoundReflectionDelegateFactory")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Utilities::LateBoundReflectionDelegateFactory {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory,
-    >;
+    type Target = crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,26 +30,8 @@ impl crate::Newtonsoft::Json::Utilities::LateBoundReflectionDelegateFactory {
     pub fn CreateDefaultConstructor<T>(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = __cordl_object
-            .invoke("CreateDefaultConstructor", (_cordl_type))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn CreateGet_Gc0<T>(
-        &mut self,
-        propertyInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            T,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
     >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -62,19 +40,19 @@ impl crate::Newtonsoft::Json::Utilities::LateBoundReflectionDelegateFactory {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            T,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        > = __cordl_object.invoke("CreateGet", (propertyInfo))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>> = __cordl_object
+            .invoke("CreateDefaultConstructor", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateGet_Gc1<T>(
+    pub fn CreateGet_FieldInfo1<T>(
         &mut self,
         fieldInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            T,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Func_2<
+                T,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     >
     where
@@ -85,9 +63,37 @@ impl crate::Newtonsoft::Json::Utilities::LateBoundReflectionDelegateFactory {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            T,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Func_2<
+                T,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         > = __cordl_object.invoke("CreateGet", (fieldInfo))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateGet_PropertyInfo0<T>(
+        &mut self,
+        propertyInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                T,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
+        >,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                T,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
+        > = __cordl_object.invoke("CreateGet", (propertyInfo))?;
         Ok(__cordl_ret.into())
     }
     pub fn CreateMethodCall<T>(
@@ -95,8 +101,10 @@ impl crate::Newtonsoft::Json::Utilities::LateBoundReflectionDelegateFactory {
         method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            T,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::Newtonsoft::Json::Utilities::MethodCall_2<
+                T,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     >
     where
@@ -107,8 +115,10 @@ impl crate::Newtonsoft::Json::Utilities::LateBoundReflectionDelegateFactory {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            T,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::Newtonsoft::Json::Utilities::MethodCall_2<
+                T,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         > = __cordl_object.invoke("CreateMethodCall", (method))?;
         Ok(__cordl_ret.into())
     }
@@ -117,24 +127,30 @@ impl crate::Newtonsoft::Json::Utilities::LateBoundReflectionDelegateFactory {
         method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         > = __cordl_object.invoke("CreateParameterizedConstructor", (method))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateSet_Gc0<T>(
+    pub fn CreateSet_FieldInfo0<T>(
         &mut self,
         fieldInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            T,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Action_2<
+                T,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     >
     where
@@ -145,18 +161,22 @@ impl crate::Newtonsoft::Json::Utilities::LateBoundReflectionDelegateFactory {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            T,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Action_2<
+                T,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         > = __cordl_object.invoke("CreateSet", (fieldInfo))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateSet_Gc1<T>(
+    pub fn CreateSet_PropertyInfo1<T>(
         &mut self,
         propertyInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            T,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Action_2<
+                T,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     >
     where
@@ -167,8 +187,10 @@ impl crate::Newtonsoft::Json::Utilities::LateBoundReflectionDelegateFactory {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            T,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Action_2<
+                T,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         > = __cordl_object.invoke("CreateSet", (propertyInfo))?;
         Ok(__cordl_ret.into())
     }

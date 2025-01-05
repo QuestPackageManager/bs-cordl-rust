@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameServerLobbyFlowCoordinator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::GameServerLobbyFlowCoordinatorBase,
-    >,
+    __cordl_parent: crate::GlobalNamespace::GameServerLobbyFlowCoordinatorBase,
     pub _screenMode: quest_hook::libil2cpp::Gc<crate::HMUI::ScreenModeSO>,
     pub _ambienceAudioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
     pub _serverPlayerListViewController: quest_hook::libil2cpp::Gc<
@@ -87,7 +85,9 @@ pub struct GameServerLobbyFlowCoordinator {
         crate::System::Text::StringBuilder,
     >,
     pub _playerIdsWithoutEntitlements: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _canStartGameCts: quest_hook::libil2cpp::Gc<
         crate::System::Threading::CancellationTokenSource,
@@ -106,9 +106,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "GameServerLobbyFlowCoordinator")]
 impl std::ops::Deref for crate::GlobalNamespace::GameServerLobbyFlowCoordinator {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::GameServerLobbyFlowCoordinatorBase,
-    >;
+    type Target = crate::GlobalNamespace::GameServerLobbyFlowCoordinatorBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetworkConfigSO {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PersistentScriptableObject,
-    >,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _maxPartySize: i32,
     pub _discoveryPort: i32,
     pub _partyPort: i32,
@@ -31,9 +29,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "NetworkConfigSO")]
 impl std::ops::Deref for crate::GlobalNamespace::NetworkConfigSO {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PersistentScriptableObject,
-    >;
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -197,20 +193,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NetworkConfig
     }
 }
 #[cfg(feature = "NetworkConfigSO")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkConfig>>
+impl AsRef<crate::GlobalNamespace::INetworkConfig>
 for crate::GlobalNamespace::NetworkConfigSO {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkConfig> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::INetworkConfig {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "NetworkConfigSO")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkConfig>>
+impl AsMut<crate::GlobalNamespace::INetworkConfig>
 for crate::GlobalNamespace::NetworkConfigSO {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkConfig> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::INetworkConfig {
         unsafe { std::mem::transmute(self) }
     }
 }

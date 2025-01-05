@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AnimationClip {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Motion>,
+    __cordl_parent: crate::UnityEngine::Motion,
 }
 #[cfg(feature = "UnityEngine+AnimationClip")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+AnimationClip")]
 impl std::ops::Deref for crate::UnityEngine::AnimationClip {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Motion>;
+    type Target = crate::UnityEngine::Motion;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -90,7 +90,7 @@ impl crate::UnityEngine::AnimationClip {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn SampleAnimation_Gc_f32_WrapMode1(
+    pub fn SampleAnimation_AnimationClip_f32_WrapMode1(
         go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
         inTime: f32,
@@ -158,18 +158,14 @@ impl crate::UnityEngine::AnimationClip {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationEvent>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::AnimationEvent>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationEvent>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::AnimationEvent>,
         > = __cordl_object.invoke("get_events", ())?;
         Ok(__cordl_ret.into())
     }
@@ -287,9 +283,7 @@ impl crate::UnityEngine::AnimationClip {
     pub fn set_events(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationEvent>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::AnimationEvent>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

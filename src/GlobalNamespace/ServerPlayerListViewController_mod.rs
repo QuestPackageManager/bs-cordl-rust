@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ServerPlayerListViewController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+    __cordl_parent: crate::HMUI::ViewController,
     pub _gameServerPlayersTableView: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::GameServerPlayersTableView,
     >,
@@ -24,13 +24,17 @@ pub struct ServerPlayerListViewController {
         crate::GlobalNamespace::ILobbyGameStateController,
     >,
     pub selectSuggestedBeatmapEvent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BeatmapKey,
+        crate::System::Action_1<crate::GlobalNamespace::BeatmapKey>,
     >,
     pub selectSuggestedGameplayModifiersEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
+        >,
     >,
     pub kickPlayerEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub didOpenInvitePanelEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
@@ -42,7 +46,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ServerPlayerListViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::ServerPlayerListViewController {
-    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>;
+    type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -211,7 +215,9 @@ impl crate::GlobalNamespace::ServerPlayerListViewController {
     pub fn add_kickPlayerEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -223,7 +229,9 @@ impl crate::GlobalNamespace::ServerPlayerListViewController {
     }
     pub fn add_selectSuggestedBeatmapEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapKey>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::GlobalNamespace::BeatmapKey>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -235,7 +243,9 @@ impl crate::GlobalNamespace::ServerPlayerListViewController {
     pub fn add_selectSuggestedGameplayModifiersEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -259,7 +269,9 @@ impl crate::GlobalNamespace::ServerPlayerListViewController {
     pub fn remove_kickPlayerEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -271,7 +283,9 @@ impl crate::GlobalNamespace::ServerPlayerListViewController {
     }
     pub fn remove_selectSuggestedBeatmapEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapKey>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::GlobalNamespace::BeatmapKey>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -283,7 +297,9 @@ impl crate::GlobalNamespace::ServerPlayerListViewController {
     pub fn remove_selectSuggestedGameplayModifiersEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

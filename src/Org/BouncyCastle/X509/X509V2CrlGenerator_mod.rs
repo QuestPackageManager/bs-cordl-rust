@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509V2CrlGenerator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub extGenerator: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::X509::X509ExtensionsGenerator,
     >,
@@ -26,7 +26,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+X509+X509V2CrlGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::X509::X509V2CrlGenerator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -50,7 +50,7 @@ impl crate::Org::BouncyCastle::X509::X509V2CrlGenerator {
             .invoke("AddCrl", (other))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddCrlEntry_Gc2(
+    pub fn AddCrlEntry_X509Extensions2(
         &mut self,
         userCertificate: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::BigInteger,
@@ -101,22 +101,7 @@ impl crate::Org::BouncyCastle::X509::X509V2CrlGenerator {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddExtension_Gc__cordl_bool_Gc0(
-        &mut self,
-        oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        critical: bool,
-        extensionValue: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddExtension", (oid, critical, extensionValue))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn AddExtension_Gc__cordl_bool_Gc1(
+    pub fn AddExtension_DerObjectIdentifier_Asn1Encodable1(
         &mut self,
         oid: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
@@ -133,9 +118,11 @@ impl crate::Org::BouncyCastle::X509::X509V2CrlGenerator {
             .invoke("AddExtension", (oid, critical, extensionValue))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddExtension_Gc__cordl_bool_Gc2(
+    pub fn AddExtension_DerObjectIdentifier_Il2CppArray3(
         &mut self,
-        oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        oid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
         critical: bool,
         extensionValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -146,11 +133,24 @@ impl crate::Org::BouncyCastle::X509::X509V2CrlGenerator {
             .invoke("AddExtension", (oid, critical, extensionValue))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddExtension_Gc__cordl_bool_Gc3(
+    pub fn AddExtension_Il2CppString_Asn1Encodable0(
         &mut self,
-        oid: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        critical: bool,
+        extensionValue: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Encodable,
         >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddExtension", (oid, critical, extensionValue))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddExtension_Il2CppString_Il2CppArray2(
+        &mut self,
+        oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         critical: bool,
         extensionValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -196,7 +196,7 @@ impl crate::Org::BouncyCastle::X509::X509V2CrlGenerator {
         > = __cordl_object.invoke("GenerateJcaObject", (tbsCrl, algId, signature))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Generate_Gc0(
+    pub fn Generate_AsymmetricKeyParameter0(
         &mut self,
         privateKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
@@ -212,7 +212,7 @@ impl crate::Org::BouncyCastle::X509::X509V2CrlGenerator {
         > = __cordl_object.invoke("Generate", (privateKey))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Generate_Gc1(
+    pub fn Generate_AsymmetricKeyParameter_SecureRandom1(
         &mut self,
         privateKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
@@ -231,7 +231,7 @@ impl crate::Org::BouncyCastle::X509::X509V2CrlGenerator {
         > = __cordl_object.invoke("Generate", (privateKey, random))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Generate_Gc2(
+    pub fn Generate_ISignatureFactory2(
         &mut self,
         signatureCalculatorFactory: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::ISignatureFactory,

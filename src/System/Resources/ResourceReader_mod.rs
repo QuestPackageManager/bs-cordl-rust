@@ -2,11 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResourceReader {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _store: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
     pub _resCache: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        crate::System::Resources::ResourceLocator,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Resources::ResourceLocator,
+        >,
     >,
     pub _nameSectionOffset: i64,
     pub _dataSectionOffset: i64,
@@ -19,9 +21,7 @@ pub struct ResourceReader {
         quest_hook::libil2cpp::Il2CppObject,
     >,
     pub _typeTable: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::RuntimeType>,
     >,
     pub _typeNamePositions: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<i32>,
@@ -40,7 +40,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Resources+ResourceReader")]
 impl std::ops::Deref for crate::System::Resources::ResourceReader {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -284,8 +284,10 @@ impl crate::System::Resources::ResourceReader {
     pub fn New(
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         resCache: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            crate::System::Resources::ResourceLocator,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                crate::System::Resources::ResourceLocator,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -379,8 +381,10 @@ impl crate::System::Resources::ResourceReader {
         &mut self,
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         resCache: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            crate::System::Resources::ResourceLocator,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                crate::System::Resources::ResourceLocator,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -401,52 +405,42 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Resources::ResourceRea
     }
 }
 #[cfg(feature = "System+Resources+ResourceReader")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+impl AsRef<crate::System::Collections::IEnumerable>
 for crate::System::Resources::ResourceReader {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Resources+ResourceReader")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+impl AsMut<crate::System::Collections::IEnumerable>
 for crate::System::Resources::ResourceReader {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Resources+ResourceReader")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::System::Resources::ResourceReader {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsRef<crate::System::IDisposable> for crate::System::Resources::ResourceReader {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Resources+ResourceReader")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::System::Resources::ResourceReader {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsMut<crate::System::IDisposable> for crate::System::Resources::ResourceReader {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Resources+ResourceReader")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Resources::IResourceReader>>
+impl AsRef<crate::System::Resources::IResourceReader>
 for crate::System::Resources::ResourceReader {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Resources::IResourceReader> {
+    fn as_ref(&self) -> &crate::System::Resources::IResourceReader {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Resources+ResourceReader")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Resources::IResourceReader>>
+impl AsMut<crate::System::Resources::IResourceReader>
 for crate::System::Resources::ResourceReader {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Resources::IResourceReader> {
+    fn as_mut(&mut self) -> &mut crate::System::Resources::IResourceReader {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -454,7 +448,7 @@ for crate::System::Resources::ResourceReader {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResourceReader_ResourceEnumerator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _reader: quest_hook::libil2cpp::Gc<crate::System::Resources::ResourceReader>,
     pub _currentIsValid: bool,
     pub _currentName: i32,
@@ -468,7 +462,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Resources+ResourceReader+ResourceEnumerator")]
 impl std::ops::Deref for crate::System::Resources::ResourceReader_ResourceEnumerator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -586,40 +580,30 @@ for crate::System::Resources::ResourceReader_ResourceEnumerator {
     }
 }
 #[cfg(feature = "System+Resources+ResourceReader+ResourceEnumerator")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionaryEnumerator>>
+impl AsRef<crate::System::Collections::IDictionaryEnumerator>
 for crate::System::Resources::ResourceReader_ResourceEnumerator {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionaryEnumerator> {
+    fn as_ref(&self) -> &crate::System::Collections::IDictionaryEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Resources+ResourceReader+ResourceEnumerator")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionaryEnumerator>>
+impl AsMut<crate::System::Collections::IDictionaryEnumerator>
 for crate::System::Resources::ResourceReader_ResourceEnumerator {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Collections::IDictionaryEnumerator,
-    > {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IDictionaryEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Resources+ResourceReader+ResourceEnumerator")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
+impl AsRef<crate::System::Collections::IEnumerator>
 for crate::System::Resources::ResourceReader_ResourceEnumerator {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Resources+ResourceReader+ResourceEnumerator")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
+impl AsMut<crate::System::Collections::IEnumerator>
 for crate::System::Resources::ResourceReader_ResourceEnumerator {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }

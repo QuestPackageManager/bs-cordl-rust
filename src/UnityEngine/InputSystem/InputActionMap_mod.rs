@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputActionMap {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Asset: quest_hook::libil2cpp::Gc<
@@ -10,7 +10,7 @@ pub struct InputActionMap {
     >,
     pub m_Actions: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+            *mut crate::UnityEngine::InputSystem::InputAction,
         >,
     >,
     pub m_Bindings: quest_hook::libil2cpp::Gc<
@@ -21,7 +21,7 @@ pub struct InputActionMap {
     >,
     pub m_ControlsForEachAction: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+            *mut crate::UnityEngine::InputSystem::InputControl,
         >,
     >,
     pub m_EnabledActionsCount: i32,
@@ -45,12 +45,16 @@ pub struct InputActionMap {
     pub m_Devices: crate::UnityEngine::InputSystem::InputActionMap_DeviceArray,
     pub m_ActionCallbacks: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            >,
         >,
     >,
     pub m_ActionIndexByNameOrId: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        i32,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            i32,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionMap")]
@@ -60,7 +64,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputActionMap")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputActionMap {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -169,16 +173,6 @@ impl crate::UnityEngine::InputSystem::InputActionMap {
             .invoke("Enable", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn FindActionIndex_Gc0(
-        &mut self,
-        nameOrId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("FindActionIndex", (nameOrId))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn FindActionIndex_Guid1(
         &mut self,
         id: crate::System::Guid,
@@ -189,19 +183,14 @@ impl crate::UnityEngine::InputSystem::InputActionMap {
         let __cordl_ret: i32 = __cordl_object.invoke("FindActionIndex", (id))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FindAction_Gc__cordl_bool0(
+    pub fn FindActionIndex_Il2CppString0(
         &mut self,
-        actionNameOrId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        throwIfNotFound: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
-    > {
+        nameOrId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputAction,
-        > = __cordl_object.invoke("FindAction", (actionNameOrId, throwIfNotFound))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("FindActionIndex", (nameOrId))?;
         Ok(__cordl_ret.into())
     }
     pub fn FindAction_Guid1(
@@ -216,6 +205,21 @@ impl crate::UnityEngine::InputSystem::InputActionMap {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputAction,
         > = __cordl_object.invoke("FindAction", (id))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindAction_Il2CppString__cordl_bool0(
+        &mut self,
+        actionNameOrId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        throwIfNotFound: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputAction,
+        > = __cordl_object.invoke("FindAction", (actionNameOrId, throwIfNotFound))?;
         Ok(__cordl_ret.into())
     }
     pub fn FindBinding(
@@ -247,17 +251,13 @@ impl crate::UnityEngine::InputSystem::InputActionMap {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::InputActionMap,
-                >,
+                *mut crate::UnityEngine::InputSystem::InputActionMap,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::InputActionMap,
-                >,
+                *mut crate::UnityEngine::InputSystem::InputActionMap,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("FromJson", (json))?;
         Ok(__cordl_ret.into())
@@ -308,14 +308,18 @@ impl crate::UnityEngine::InputSystem::InputActionMap {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+            crate::System::Collections::Generic::IEnumerator_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+            crate::System::Collections::Generic::IEnumerator_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+            >,
         > = __cordl_object.invoke("GetEnumerator", ())?;
         Ok(__cordl_ret.into())
     }
@@ -347,7 +351,7 @@ impl crate::UnityEngine::InputSystem::InputActionMap {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Il2CppString1(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -482,9 +486,13 @@ impl crate::UnityEngine::InputSystem::InputActionMap {
         > = __cordl_object.invoke("ToJson", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToJson_Gc0(
+    pub fn ToJson_IEnumerable_1_0(
         maps: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionMap>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionMap,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -510,13 +518,19 @@ impl crate::UnityEngine::InputSystem::InputActionMap {
     pub fn UnityEngine_InputSystem_IInputActionCollection2_get_bindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputBinding>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::InputSystem::InputBinding,
+            >,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputBinding,
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::InputSystem::InputBinding,
+            >,
         > = __cordl_object
             .invoke("UnityEngine.InputSystem.IInputActionCollection2.get_bindings", ())?;
         Ok(__cordl_ret.into())
@@ -531,7 +545,7 @@ impl crate::UnityEngine::InputSystem::InputActionMap {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -545,7 +559,9 @@ impl crate::UnityEngine::InputSystem::InputActionMap {
     pub fn add_actionTriggered(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -736,7 +752,9 @@ impl crate::UnityEngine::InputSystem::InputActionMap {
     pub fn remove_actionTriggered(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -828,128 +846,14 @@ for crate::UnityEngine::InputSystem::InputActionMap {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionMap")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
-for crate::UnityEngine::InputSystem::InputActionMap {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionMap")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
-for crate::UnityEngine::InputSystem::InputActionMap {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionMap")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
-for crate::UnityEngine::InputSystem::InputActionMap {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionMap")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
-for crate::UnityEngine::InputSystem::InputActionMap {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionMap")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::UnityEngine::InputSystem::InputActionMap {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionMap")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::UnityEngine::InputSystem::InputActionMap {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionMap")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver>>
-for crate::UnityEngine::InputSystem::InputActionMap {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionMap")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver>>
-for crate::UnityEngine::InputSystem::InputActionMap {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ISerializationCallbackReceiver,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionMap")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::IInputActionCollection2>,
-> for crate::UnityEngine::InputSystem::InputActionMap {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::IInputActionCollection2,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionMap")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::IInputActionCollection2>,
-> for crate::UnityEngine::InputSystem::InputActionMap {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::IInputActionCollection2,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionMap")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::IInputActionCollection>,
-> for crate::UnityEngine::InputSystem::InputActionMap {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::IInputActionCollection,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionMap")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::IInputActionCollection>,
-> for crate::UnityEngine::InputSystem::InputActionMap {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::IInputActionCollection,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionMap")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IEnumerable_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
     >,
 > for crate::UnityEngine::InputSystem::InputActionMap {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -957,15 +861,103 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionMap")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IEnumerable_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
     >,
 > for crate::UnityEngine::InputSystem::InputActionMap {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
     > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::UnityEngine::InputSystem::InputActionMap {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::UnityEngine::InputSystem::InputActionMap {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap")]
+impl AsRef<crate::System::ICloneable>
+for crate::UnityEngine::InputSystem::InputActionMap {
+    fn as_ref(&self) -> &crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap")]
+impl AsMut<crate::System::ICloneable>
+for crate::UnityEngine::InputSystem::InputActionMap {
+    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap")]
+impl AsRef<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::InputActionMap {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap")]
+impl AsMut<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::InputActionMap {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap")]
+impl AsRef<crate::UnityEngine::ISerializationCallbackReceiver>
+for crate::UnityEngine::InputSystem::InputActionMap {
+    fn as_ref(&self) -> &crate::UnityEngine::ISerializationCallbackReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap")]
+impl AsMut<crate::UnityEngine::ISerializationCallbackReceiver>
+for crate::UnityEngine::InputSystem::InputActionMap {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ISerializationCallbackReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap")]
+impl AsRef<crate::UnityEngine::InputSystem::IInputActionCollection>
+for crate::UnityEngine::InputSystem::InputActionMap {
+    fn as_ref(&self) -> &crate::UnityEngine::InputSystem::IInputActionCollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap")]
+impl AsMut<crate::UnityEngine::InputSystem::IInputActionCollection>
+for crate::UnityEngine::InputSystem::InputActionMap {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::InputSystem::IInputActionCollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap")]
+impl AsRef<crate::UnityEngine::InputSystem::IInputActionCollection2>
+for crate::UnityEngine::InputSystem::InputActionMap {
+    fn as_ref(&self) -> &crate::UnityEngine::InputSystem::IInputActionCollection2 {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap")]
+impl AsMut<crate::UnityEngine::InputSystem::IInputActionCollection2>
+for crate::UnityEngine::InputSystem::InputActionMap {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::InputSystem::IInputActionCollection2 {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -1053,7 +1045,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingOverrideJson")]
 impl crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson {
-    pub fn FromBinding_Gc0(
+    pub fn FromBinding_Il2CppString0(
         binding: crate::UnityEngine::InputSystem::InputBinding,
         actionName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -1085,7 +1077,9 @@ impl crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson {
 #[derive(Debug, Clone, Default)]
 pub struct InputActionMap_BindingOverrideListJson {
     pub bindings: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingOverrideListJson")]
@@ -1115,7 +1109,7 @@ pub struct InputActionMap_DeviceArray {
     pub m_DeviceCount: i32,
     pub m_DeviceArray: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+            *mut crate::UnityEngine::InputSystem::InputDevice,
         >,
     >,
 }
@@ -1300,17 +1294,13 @@ impl crate::UnityEngine::InputSystem::InputActionMap_ReadFileJson {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::InputActionMap,
-                >,
+                *mut crate::UnityEngine::InputSystem::InputActionMap,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::InputActionMap,
-                >,
+                *mut crate::UnityEngine::InputSystem::InputActionMap,
             >,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToMaps", ())?;
         Ok(__cordl_ret.into())
@@ -1435,7 +1425,11 @@ impl crate::UnityEngine::InputSystem::InputActionMap_WriteFileJson {
     }
     pub fn FromMaps(
         maps: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionMap>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionMap,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputActionMap_WriteFileJson,

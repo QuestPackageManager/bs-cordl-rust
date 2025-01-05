@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct WaypointItemConverter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BeatToTimeConverter,
-    >,
+    __cordl_parent: crate::GlobalNamespace::BeatToTimeConverter,
     pub _waypoints: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::BeatmapSaveDataVersion4::Waypoint>,
     >,
@@ -16,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapDataLoaderVersion4+WaypointItemConverter")]
 impl std::ops::Deref for crate::BeatmapDataLoaderVersion4::WaypointItemConverter {
-    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatToTimeConverter>;
+    type Target = crate::GlobalNamespace::BeatToTimeConverter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

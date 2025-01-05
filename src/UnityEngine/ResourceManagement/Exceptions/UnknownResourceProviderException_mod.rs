@@ -4,9 +4,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnknownResourceProviderException {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ResourceManagement::Exceptions::ResourceManagerException,
-    >,
+    __cordl_parent: crate::UnityEngine::ResourceManagement::Exceptions::ResourceManagerException,
     pub _Location_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
     >,
@@ -24,9 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::Exceptions::UnknownResourceProviderException {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ResourceManagement::Exceptions::ResourceManagerException,
-    >;
+    type Target = crate::UnityEngine::ResourceManagement::Exceptions::ResourceManagerException;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -51,7 +47,7 @@ impl crate::UnityEngine::ResourceManagement::Exceptions::UnknownResourceProvider
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc0(
+    pub fn New_IResourceLocation0(
         location: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
         >,
@@ -62,7 +58,7 @@ impl crate::UnityEngine::ResourceManagement::Exceptions::UnknownResourceProvider
             .invoke_void(".ctor", (location))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc2(
+    pub fn New_Il2CppString2(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -71,7 +67,7 @@ impl crate::UnityEngine::ResourceManagement::Exceptions::UnknownResourceProvider
             .invoke_void(".ctor", (message))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc3(
+    pub fn New_Il2CppString_Exception3(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -81,7 +77,7 @@ impl crate::UnityEngine::ResourceManagement::Exceptions::UnknownResourceProvider
             .invoke_void(".ctor", (message, innerException))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_StreamingContext4(
+    pub fn New_SerializationInfo_StreamingContext4(
         message: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -116,7 +112,7 @@ impl crate::UnityEngine::ResourceManagement::Exceptions::UnknownResourceProvider
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_IResourceLocation0(
         &mut self,
         location: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
@@ -129,7 +125,7 @@ impl crate::UnityEngine::ResourceManagement::Exceptions::UnknownResourceProvider
             .invoke(".ctor", (location))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_Il2CppString2(
         &mut self,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -140,7 +136,7 @@ impl crate::UnityEngine::ResourceManagement::Exceptions::UnknownResourceProvider
             .invoke(".ctor", (message))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc3(
+    pub fn _ctor_Il2CppString_Exception3(
         &mut self,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
@@ -152,7 +148,7 @@ impl crate::UnityEngine::ResourceManagement::Exceptions::UnknownResourceProvider
             .invoke(".ctor", (message, innerException))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_StreamingContext4(
+    pub fn _ctor_SerializationInfo_StreamingContext4(
         &mut self,
         message: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,

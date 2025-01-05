@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RIPEMD160Managed {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Security::Cryptography::RIPEMD160,
-    >,
+    __cordl_parent: crate::System::Security::Cryptography::RIPEMD160,
     pub _buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _count: i64,
     pub _stateMD160: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -17,9 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+Cryptography+RIPEMD160Managed")]
 impl std::ops::Deref for crate::System::Security::Cryptography::RIPEMD160Managed {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Security::Cryptography::RIPEMD160,
-    >;
+    type Target = crate::System::Security::Cryptography::RIPEMD160;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

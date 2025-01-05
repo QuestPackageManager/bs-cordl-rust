@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OnWillRenderObjectTrigger {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _overrideShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     pub _renderQueue: i32,
     pub _material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OnWillRenderObjectTrigger")]
 impl std::ops::Deref for crate::GlobalNamespace::OnWillRenderObjectTrigger {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

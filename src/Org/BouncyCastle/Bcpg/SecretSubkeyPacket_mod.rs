@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SecretSubkeyPacket {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Bcpg::SecretKeyPacket,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Bcpg::SecretKeyPacket,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+SecretSubkeyPacket")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Bcpg+SecretSubkeyPacket")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::SecretSubkeyPacket {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Bcpg::SecretKeyPacket,
-    >;
+    type Target = crate::Org::BouncyCastle::Bcpg::SecretKeyPacket;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -41,7 +37,7 @@ impl crate::Org::BouncyCastle::Bcpg::SecretSubkeyPacket {
             .invoke("Encode", (bcpgOut))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_BcpgInputStream0(
         bcpgIn: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
         >,
@@ -52,7 +48,7 @@ impl crate::Org::BouncyCastle::Bcpg::SecretSubkeyPacket {
             .invoke_void(".ctor", (bcpgIn))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_SymmetricKeyAlgorithmTag_Gc_Gc_Gc1(
+    pub fn New_PublicKeyPacket_SymmetricKeyAlgorithmTag_S2k_Il2CppArray_Il2CppArray1(
         pubKeyPacket: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::PublicKeyPacket,
         >,
@@ -67,7 +63,7 @@ impl crate::Org::BouncyCastle::Bcpg::SecretSubkeyPacket {
             .invoke_void(".ctor", (pubKeyPacket, encAlgorithm, s2k, iv, secKeyData))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_SymmetricKeyAlgorithmTag_i32_Gc_Gc_Gc2(
+    pub fn New_PublicKeyPacket_SymmetricKeyAlgorithmTag_i32_S2k_Il2CppArray_Il2CppArray2(
         pubKeyPacket: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::PublicKeyPacket,
         >,
@@ -86,7 +82,7 @@ impl crate::Org::BouncyCastle::Bcpg::SecretSubkeyPacket {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_BcpgInputStream0(
         &mut self,
         bcpgIn: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
@@ -99,7 +95,7 @@ impl crate::Org::BouncyCastle::Bcpg::SecretSubkeyPacket {
             .invoke(".ctor", (bcpgIn))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_SymmetricKeyAlgorithmTag_Gc_Gc_Gc1(
+    pub fn _ctor_PublicKeyPacket_SymmetricKeyAlgorithmTag_S2k_Il2CppArray_Il2CppArray1(
         &mut self,
         pubKeyPacket: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::PublicKeyPacket,
@@ -116,7 +112,7 @@ impl crate::Org::BouncyCastle::Bcpg::SecretSubkeyPacket {
             .invoke(".ctor", (pubKeyPacket, encAlgorithm, s2k, iv, secKeyData))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_SymmetricKeyAlgorithmTag_i32_Gc_Gc_Gc2(
+    pub fn _ctor_PublicKeyPacket_SymmetricKeyAlgorithmTag_i32_S2k_Il2CppArray_Il2CppArray2(
         &mut self,
         pubKeyPacket: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::PublicKeyPacket,

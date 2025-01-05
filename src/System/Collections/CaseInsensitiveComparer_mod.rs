@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CaseInsensitiveComparer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _compareInfo: quest_hook::libil2cpp::Gc<
         crate::System::Globalization::CompareInfo,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+CaseInsensitiveComparer")]
 impl std::ops::Deref for crate::System::Collections::CaseInsensitiveComparer {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -45,7 +45,7 @@ impl crate::System::Collections::CaseInsensitiveComparer {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_CultureInfo1(
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -64,7 +64,7 @@ impl crate::System::Collections::CaseInsensitiveComparer {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_CultureInfo1(
         &mut self,
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -87,20 +87,16 @@ for crate::System::Collections::CaseInsensitiveComparer {
     }
 }
 #[cfg(feature = "System+Collections+CaseInsensitiveComparer")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>>
+impl AsRef<crate::System::Collections::IComparer>
 for crate::System::Collections::CaseInsensitiveComparer {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer> {
+    fn as_ref(&self) -> &crate::System::Collections::IComparer {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+CaseInsensitiveComparer")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>>
+impl AsMut<crate::System::Collections::IComparer>
 for crate::System::Collections::CaseInsensitiveComparer {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IComparer {
         unsafe { std::mem::transmute(self) }
     }
 }

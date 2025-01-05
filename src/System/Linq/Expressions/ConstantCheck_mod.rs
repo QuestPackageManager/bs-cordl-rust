@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConstantCheck {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+ConstantCheck")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Linq+Expressions+ConstantCheck")]
 impl std::ops::Deref for crate::System::Linq::Expressions::ConstantCheck {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,7 +24,17 @@ impl std::ops::DerefMut for crate::System::Linq::Expressions::ConstantCheck {
 }
 #[cfg(feature = "System+Linq+Expressions+ConstantCheck")]
 impl crate::System::Linq::Expressions::ConstantCheck {
-    pub fn AnalyzeTypeIs_Gc0(
+    pub fn AnalyzeTypeIs_Expression_Type1(
+        operand: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        testType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Linq::Expressions::AnalyzeTypeIsResult,
+    > {
+        let __cordl_ret: crate::System::Linq::Expressions::AnalyzeTypeIsResult = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AnalyzeTypeIs", (operand, testType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AnalyzeTypeIs_TypeBinaryExpression0(
         typeIs: quest_hook::libil2cpp::Gc<
             crate::System::Linq::Expressions::TypeBinaryExpression,
         >,
@@ -33,16 +43,6 @@ impl crate::System::Linq::Expressions::ConstantCheck {
     > {
         let __cordl_ret: crate::System::Linq::Expressions::AnalyzeTypeIsResult = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("AnalyzeTypeIs", (typeIs))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn AnalyzeTypeIs_Gc1(
-        operand: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-        testType: quest_hook::libil2cpp::Gc<crate::System::Type>,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Linq::Expressions::AnalyzeTypeIsResult,
-    > {
-        let __cordl_ret: crate::System::Linq::Expressions::AnalyzeTypeIsResult = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AnalyzeTypeIs", (operand, testType))?;
         Ok(__cordl_ret.into())
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LanguageExtensions {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "BGLib+Polyglot+LanguageExtensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BGLib+Polyglot+LanguageExtensions")]
 impl std::ops::Deref for crate::BGLib::Polyglot::LanguageExtensions {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,7 +35,7 @@ impl crate::BGLib::Polyglot::LanguageExtensions {
             .invoke("ToCultureInfoName", (lang))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToLanguage_Gc0(
+    pub fn ToLanguage_Il2CppString0(
         serializedName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::BGLib::Polyglot::Language> {
         let __cordl_ret: crate::BGLib::Polyglot::Language = <Self as quest_hook::libil2cpp::Type>::class()

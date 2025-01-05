@@ -81,30 +81,18 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSt
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo,
-    >,
-> for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo,
-    > {
+impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo>
+for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState {
+    fn as_ref(&self) -> &crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo,
-    >,
-> for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState {
+impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo>
+for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo,
-    > {
+    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo {
         todo!()
     }
 }
@@ -114,7 +102,7 @@ impl AsMut<
 #[repr(C)]
 #[derive(Debug)]
 pub struct AndroidGameControllerState_Variants {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(
     feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+Variants"
@@ -129,7 +117,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState_Variants {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

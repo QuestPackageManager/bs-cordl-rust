@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ZenUtilInternal {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Zenject+Internal+ZenUtilInternal")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+Internal+ZenUtilInternal")]
 impl std::ops::Deref for crate::Zenject::Internal::ZenUtilInternal {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -48,11 +48,15 @@ impl crate::Zenject::Internal::ZenUtilInternal {
     }
     pub fn GetAllSceneContexts() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetAllSceneContexts", ())?;
         Ok(__cordl_ret.into())
@@ -68,7 +72,9 @@ impl crate::Zenject::Internal::ZenUtilInternal {
     pub fn GetInjectableMonoBehavioursInScene(
         scene: crate::UnityEngine::SceneManagement::Scene,
         monoBehaviours: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -78,7 +84,9 @@ impl crate::Zenject::Internal::ZenUtilInternal {
     pub fn GetInjectableMonoBehavioursUnderGameObject(
         gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         injectableComponents: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -91,7 +99,9 @@ impl crate::Zenject::Internal::ZenUtilInternal {
     pub fn GetInjectableMonoBehavioursUnderGameObjectInternal(
         gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         injectableComponents: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -105,11 +115,15 @@ impl crate::Zenject::Internal::ZenUtilInternal {
         scene: crate::UnityEngine::SceneManagement::Scene,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetRootGameObjects", (scene))?;
         Ok(__cordl_ret.into())

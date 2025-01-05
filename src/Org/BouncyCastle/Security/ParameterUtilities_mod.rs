@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ParameterUtilities {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+Security+ParameterUtilities")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Security+ParameterUtilities")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Security::ParameterUtilities {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -27,9 +27,7 @@ impl crate::Org::BouncyCastle::Security::ParameterUtilities {
     pub fn AddAlgorithm(
         canonicalName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         aliases: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -39,9 +37,7 @@ impl crate::Org::BouncyCastle::Security::ParameterUtilities {
     pub fn AddBasicIVSizeEntries(
         _cordl_size: i32,
         algorithms: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -76,7 +72,7 @@ impl crate::Org::BouncyCastle::Security::ParameterUtilities {
             .invoke("CreateIVOctetString", (random, ivLength))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateKeyParameter_Gc_Gc0(
+    pub fn CreateKeyParameter_DerObjectIdentifier0(
         algOid: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
@@ -92,21 +88,7 @@ impl crate::Org::BouncyCastle::Security::ParameterUtilities {
             .invoke("CreateKeyParameter", (algOid, keyBytes))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateKeyParameter_Gc_Gc1(
-        algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        keyBytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
-        >,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateKeyParameter", (algorithm, keyBytes))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn CreateKeyParameter_i32_i32_2(
+    pub fn CreateKeyParameter_DerObjectIdentifier_i32_i32_2(
         algOid: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
@@ -124,7 +106,21 @@ impl crate::Org::BouncyCastle::Security::ParameterUtilities {
             .invoke("CreateKeyParameter", (algOid, keyBytes, offset, length))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateKeyParameter_i32_i32_3(
+    pub fn CreateKeyParameter_Il2CppString1(
+        algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        keyBytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateKeyParameter", (algorithm, keyBytes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateKeyParameter_Il2CppString_i32_i32_3(
         algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         keyBytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
@@ -147,7 +143,7 @@ impl crate::Org::BouncyCastle::Security::ParameterUtilities {
             .invoke("FindBasicIVSize", (canonicalName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GenerateParameters_Gc_Gc0(
+    pub fn GenerateParameters_DerObjectIdentifier0(
         algID: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
@@ -163,7 +159,7 @@ impl crate::Org::BouncyCastle::Security::ParameterUtilities {
             .invoke("GenerateParameters", (algID, random))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GenerateParameters_Gc_Gc1(
+    pub fn GenerateParameters_Il2CppString1(
         algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         random: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Security::SecureRandom,
@@ -188,7 +184,7 @@ impl crate::Org::BouncyCastle::Security::ParameterUtilities {
             .invoke("GetCanonicalAlgorithmName", (algorithm))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetCipherParameters_Gc_Gc_Gc0(
+    pub fn GetCipherParameters_DerObjectIdentifier0(
         algOid: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
@@ -205,7 +201,7 @@ impl crate::Org::BouncyCastle::Security::ParameterUtilities {
             .invoke("GetCipherParameters", (algOid, key, asn1Params))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetCipherParameters_Gc_Gc_Gc1(
+    pub fn GetCipherParameters_Il2CppString1(
         algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         key: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::ICipherParameters,

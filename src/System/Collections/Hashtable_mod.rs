@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Hashtable {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _buckets: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::System::Collections::Hashtable_bucket>,
     >,
@@ -26,7 +26,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+Hashtable")]
 impl std::ops::Deref for crate::System::Collections::Hashtable {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -246,18 +246,7 @@ impl crate::System::Collections::Hashtable {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc5(
-        equalityComparer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::IEqualityComparer,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (equalityComparer))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc7(
+    pub fn New_IDictionary7(
         d: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -266,19 +255,7 @@ impl crate::System::Collections::Hashtable {
             .invoke_void(".ctor", (d))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_StreamingContext10(
-        info: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::Serialization::SerializationInfo,
-        >,
-        context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (info, context))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_f32_8(
+    pub fn New_IDictionary_f32_8(
         d: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
         loadFactor: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -288,7 +265,7 @@ impl crate::System::Collections::Hashtable {
             .invoke_void(".ctor", (d, loadFactor))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_f32_Gc9(
+    pub fn New_IDictionary_f32_IEqualityComparer9(
         d: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
         loadFactor: f32,
         equalityComparer: quest_hook::libil2cpp::Gc<
@@ -299,6 +276,29 @@ impl crate::System::Collections::Hashtable {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (d, loadFactor, equalityComparer))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_IEqualityComparer5(
+        equalityComparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEqualityComparer,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (equalityComparer))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_SerializationInfo_StreamingContext10(
+        info: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
+        context: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (info, context))?;
         Ok(__cordl_object.into())
     }
     pub fn New__cordl_bool0(
@@ -319,7 +319,7 @@ impl crate::System::Collections::Hashtable {
             .invoke_void(".ctor", (capacity))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_Gc6(
+    pub fn New_i32_IEqualityComparer6(
         capacity: i32,
         equalityComparer: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IEqualityComparer,
@@ -341,7 +341,7 @@ impl crate::System::Collections::Hashtable {
             .invoke_void(".ctor", (capacity, loadFactor))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_f32_Gc4(
+    pub fn New_i32_f32_IEqualityComparer4(
         capacity: i32,
         loadFactor: f32,
         equalityComparer: quest_hook::libil2cpp::Gc<
@@ -420,20 +420,7 @@ impl crate::System::Collections::Hashtable {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc5(
-        &mut self,
-        equalityComparer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::IEqualityComparer,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (equalityComparer))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc7(
+    pub fn _ctor_IDictionary7(
         &mut self,
         d: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -444,21 +431,7 @@ impl crate::System::Collections::Hashtable {
             .invoke(".ctor", (d))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_StreamingContext10(
-        &mut self,
-        info: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::Serialization::SerializationInfo,
-        >,
-        context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (info, context))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_f32_8(
+    pub fn _ctor_IDictionary_f32_8(
         &mut self,
         d: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
         loadFactor: f32,
@@ -470,7 +443,7 @@ impl crate::System::Collections::Hashtable {
             .invoke(".ctor", (d, loadFactor))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_f32_Gc9(
+    pub fn _ctor_IDictionary_f32_IEqualityComparer9(
         &mut self,
         d: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
         loadFactor: f32,
@@ -483,6 +456,33 @@ impl crate::System::Collections::Hashtable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (d, loadFactor, equalityComparer))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_IEqualityComparer5(
+        &mut self,
+        equalityComparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEqualityComparer,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (equalityComparer))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_SerializationInfo_StreamingContext10(
+        &mut self,
+        info: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
+        context: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (info, context))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor__cordl_bool0(
@@ -507,7 +507,7 @@ impl crate::System::Collections::Hashtable {
             .invoke(".ctor", (capacity))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_Gc6(
+    pub fn _ctor_i32_IEqualityComparer6(
         &mut self,
         capacity: i32,
         equalityComparer: quest_hook::libil2cpp::Gc<
@@ -533,7 +533,7 @@ impl crate::System::Collections::Hashtable {
             .invoke(".ctor", (capacity, loadFactor))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_f32_Gc4(
+    pub fn _ctor_i32_f32_IEqualityComparer4(
         &mut self,
         capacity: i32,
         loadFactor: f32,
@@ -615,16 +615,20 @@ impl crate::System::Collections::Hashtable {
     }
     pub fn get_SerializationInfoTable() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            quest_hook::libil2cpp::Gc<
-                crate::System::Runtime::Serialization::SerializationInfo,
+            crate::System::Runtime::CompilerServices::ConditionalWeakTable_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::Serialization::SerializationInfo,
+                >,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            quest_hook::libil2cpp::Gc<
-                crate::System::Runtime::Serialization::SerializationInfo,
+            crate::System::Runtime::CompilerServices::ConditionalWeakTable_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::Serialization::SerializationInfo,
+                >,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("get_SerializationInfoTable", ())?;
@@ -718,122 +722,88 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Collections::Hashtable
     }
 }
 #[cfg(feature = "System+Collections+Hashtable")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
+impl AsRef<crate::System::Collections::ICollection>
+for crate::System::Collections::Hashtable {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Hashtable")]
+impl AsMut<crate::System::Collections::ICollection>
+for crate::System::Collections::Hashtable {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Hashtable")]
+impl AsRef<crate::System::Collections::IDictionary>
+for crate::System::Collections::Hashtable {
+    fn as_ref(&self) -> &crate::System::Collections::IDictionary {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Hashtable")]
+impl AsMut<crate::System::Collections::IDictionary>
+for crate::System::Collections::Hashtable {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IDictionary {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Hashtable")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::System::Collections::Hashtable {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Hashtable")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::System::Collections::Hashtable {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Hashtable")]
+impl AsRef<crate::System::ICloneable> for crate::System::Collections::Hashtable {
+    fn as_ref(&self) -> &crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Hashtable")]
+impl AsMut<crate::System::ICloneable> for crate::System::Collections::Hashtable {
+    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Hashtable")]
+impl AsRef<crate::System::Runtime::Serialization::IDeserializationCallback>
 for crate::System::Collections::Hashtable {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
+    ) -> &crate::System::Runtime::Serialization::IDeserializationCallback {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+Hashtable")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
+impl AsMut<crate::System::Runtime::Serialization::IDeserializationCallback>
 for crate::System::Collections::Hashtable {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
+    ) -> &mut crate::System::Runtime::Serialization::IDeserializationCallback {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+Hashtable")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>>
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
 for crate::System::Collections::Hashtable {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary> {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+Hashtable")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>>
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
 for crate::System::Collections::Hashtable {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Hashtable")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
-for crate::System::Collections::Hashtable {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Hashtable")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
-for crate::System::Collections::Hashtable {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Hashtable")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
-for crate::System::Collections::Hashtable {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Hashtable")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
-for crate::System::Collections::Hashtable {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Hashtable")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IDeserializationCallback,
-    >,
-> for crate::System::Collections::Hashtable {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IDeserializationCallback,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Hashtable")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IDeserializationCallback,
-    >,
-> for crate::System::Collections::Hashtable {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IDeserializationCallback,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Hashtable")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::Collections::Hashtable {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Hashtable")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::Collections::Hashtable {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -841,7 +811,7 @@ impl AsMut<
 #[repr(C)]
 #[derive(Debug)]
 pub struct Hashtable_HashtableDebugView {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Collections+Hashtable+HashtableDebugView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -851,7 +821,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+Hashtable+HashtableDebugView")]
 impl std::ops::Deref for crate::System::Collections::Hashtable_HashtableDebugView {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -878,7 +848,7 @@ for crate::System::Collections::Hashtable_HashtableDebugView {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Hashtable_HashtableEnumerator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _hashtable: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub _bucket: i32,
     pub _version: i32,
@@ -895,7 +865,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+Hashtable+HashtableEnumerator")]
 impl std::ops::Deref for crate::System::Collections::Hashtable_HashtableEnumerator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1021,54 +991,44 @@ for crate::System::Collections::Hashtable_HashtableEnumerator {
     }
 }
 #[cfg(feature = "System+Collections+Hashtable+HashtableEnumerator")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionaryEnumerator>>
+impl AsRef<crate::System::Collections::IDictionaryEnumerator>
 for crate::System::Collections::Hashtable_HashtableEnumerator {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionaryEnumerator> {
+    fn as_ref(&self) -> &crate::System::Collections::IDictionaryEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+Hashtable+HashtableEnumerator")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionaryEnumerator>>
+impl AsMut<crate::System::Collections::IDictionaryEnumerator>
 for crate::System::Collections::Hashtable_HashtableEnumerator {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Collections::IDictionaryEnumerator,
-    > {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IDictionaryEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+Hashtable+HashtableEnumerator")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
+impl AsRef<crate::System::Collections::IEnumerator>
 for crate::System::Collections::Hashtable_HashtableEnumerator {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+Hashtable+HashtableEnumerator")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
+impl AsMut<crate::System::Collections::IEnumerator>
 for crate::System::Collections::Hashtable_HashtableEnumerator {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+Hashtable+HashtableEnumerator")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
+impl AsRef<crate::System::ICloneable>
 for crate::System::Collections::Hashtable_HashtableEnumerator {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
+    fn as_ref(&self) -> &crate::System::ICloneable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+Hashtable+HashtableEnumerator")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
+impl AsMut<crate::System::ICloneable>
 for crate::System::Collections::Hashtable_HashtableEnumerator {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
+    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -1076,7 +1036,7 @@ for crate::System::Collections::Hashtable_HashtableEnumerator {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Hashtable_KeyCollection {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _hashtable: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
 }
 #[cfg(feature = "System+Collections+Hashtable+KeyCollection")]
@@ -1086,7 +1046,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+Hashtable+KeyCollection")]
 impl std::ops::Deref for crate::System::Collections::Hashtable_KeyCollection {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1183,38 +1143,30 @@ for crate::System::Collections::Hashtable_KeyCollection {
     }
 }
 #[cfg(feature = "System+Collections+Hashtable+KeyCollection")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
+impl AsRef<crate::System::Collections::ICollection>
 for crate::System::Collections::Hashtable_KeyCollection {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+Hashtable+KeyCollection")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
+impl AsMut<crate::System::Collections::ICollection>
 for crate::System::Collections::Hashtable_KeyCollection {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+Hashtable+KeyCollection")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+impl AsRef<crate::System::Collections::IEnumerable>
 for crate::System::Collections::Hashtable_KeyCollection {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+Hashtable+KeyCollection")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+impl AsMut<crate::System::Collections::IEnumerable>
 for crate::System::Collections::Hashtable_KeyCollection {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -1222,7 +1174,7 @@ for crate::System::Collections::Hashtable_KeyCollection {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Hashtable_ValueCollection {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _hashtable: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
 }
 #[cfg(feature = "System+Collections+Hashtable+ValueCollection")]
@@ -1232,7 +1184,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+Hashtable+ValueCollection")]
 impl std::ops::Deref for crate::System::Collections::Hashtable_ValueCollection {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1329,38 +1281,30 @@ for crate::System::Collections::Hashtable_ValueCollection {
     }
 }
 #[cfg(feature = "System+Collections+Hashtable+ValueCollection")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
+impl AsRef<crate::System::Collections::ICollection>
 for crate::System::Collections::Hashtable_ValueCollection {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+Hashtable+ValueCollection")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
+impl AsMut<crate::System::Collections::ICollection>
 for crate::System::Collections::Hashtable_ValueCollection {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+Hashtable+ValueCollection")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+impl AsRef<crate::System::Collections::IEnumerable>
 for crate::System::Collections::Hashtable_ValueCollection {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+Hashtable+ValueCollection")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+impl AsMut<crate::System::Collections::IEnumerable>
 for crate::System::Collections::Hashtable_ValueCollection {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }

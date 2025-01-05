@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Datatype_short {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::Datatype_int>,
+    __cordl_parent: crate::System::Xml::Schema::Datatype_int,
 }
 #[cfg(feature = "System+Xml+Schema+Datatype_short")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+Datatype_short")]
 impl std::ops::Deref for crate::System::Xml::Schema::Datatype_short {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::Datatype_int>;
+    type Target = crate::System::Xml::Schema::Datatype_int;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

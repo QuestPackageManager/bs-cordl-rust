@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StandardScoreSyncStateNetSerializable {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _state: crate::GlobalNamespace::StandardScoreSyncState,
     pub _id_k__BackingField: crate::GlobalNamespace::SyncStateId,
     pub _time_k__BackingField: i64,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "StandardScoreSyncStateNetSerializable")]
 impl std::ops::Deref for crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -90,14 +90,18 @@ impl crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
     }
     pub fn get_pool() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::StandardScoreSyncStateNetSerializable,
+            crate::GlobalNamespace::PacketPool_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::StandardScoreSyncStateNetSerializable,
+                >,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::StandardScoreSyncStateNetSerializable,
+            crate::GlobalNamespace::PacketPool_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::StandardScoreSyncStateNetSerializable,
+                >,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_pool", ())?;
         Ok(__cordl_ret.into())
@@ -164,56 +168,58 @@ for crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
     }
 }
 #[cfg(feature = "StandardScoreSyncStateNetSerializable")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPoolablePacket>>
+impl AsRef<crate::GlobalNamespace::IPoolablePacket>
 for crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPoolablePacket {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "StandardScoreSyncStateNetSerializable")]
+impl AsMut<crate::GlobalNamespace::IPoolablePacket>
+for crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPoolablePacket {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "StandardScoreSyncStateNetSerializable")]
+impl AsRef<
+    crate::GlobalNamespace::ISyncStateSerializable_1<
+        crate::GlobalNamespace::StandardScoreSyncState,
+    >,
+> for crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPoolablePacket> {
+    ) -> &crate::GlobalNamespace::ISyncStateSerializable_1<
+        crate::GlobalNamespace::StandardScoreSyncState,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "StandardScoreSyncStateNetSerializable")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPoolablePacket>>
-for crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
+impl AsMut<
+    crate::GlobalNamespace::ISyncStateSerializable_1<
+        crate::GlobalNamespace::StandardScoreSyncState,
+    >,
+> for crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPoolablePacket> {
+    ) -> &mut crate::GlobalNamespace::ISyncStateSerializable_1<
+        crate::GlobalNamespace::StandardScoreSyncState,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "StandardScoreSyncStateNetSerializable")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::StandardScoreSyncState>>
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
 for crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::StandardScoreSyncState> {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "StandardScoreSyncStateNetSerializable")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::StandardScoreSyncState>>
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
 for crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::StandardScoreSyncState> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "StandardScoreSyncStateNetSerializable")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable>>
-for crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "StandardScoreSyncStateNetSerializable")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable>>
-for crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable> {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
         unsafe { std::mem::transmute(self) }
     }
 }

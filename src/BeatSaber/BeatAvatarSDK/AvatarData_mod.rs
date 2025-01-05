@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AvatarData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _headTopId_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
@@ -43,7 +43,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarData")]
 impl std::ops::Deref for crate::BeatSaber::BeatAvatarSDK::AvatarData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -69,7 +69,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarData {
         > = __cordl_object.invoke("Clone", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Gc0(
+    pub fn Equals_AvatarData0(
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarData>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -79,7 +79,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarData {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Gc1(
+    pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -103,7 +103,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarData {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Color_Color_Gc_Color_Gc_Color_Gc_Color_Gc_Color_Color_Color_Gc_Gc_Gc1(
+    pub fn New_Il2CppString_Color_Color_Il2CppString_Color_Il2CppString_Color_Il2CppString_Color_Il2CppString_Color_Color_Color_Il2CppString_Il2CppString_Il2CppString1(
         headTopId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         headTopPrimaryColor: crate::UnityEngine::Color,
         headTopSecondaryColor: crate::UnityEngine::Color,
@@ -157,7 +157,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarData {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Color_Color_Gc_Color_Gc_Color_Gc_Color_Gc_Color_Color_Color_Gc_Gc_Gc1(
+    pub fn _ctor_Il2CppString_Color_Color_Il2CppString_Color_Il2CppString_Color_Il2CppString_Color_Il2CppString_Color_Color_Color_Il2CppString_Il2CppString_Il2CppString1(
         &mut self,
         headTopId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         headTopPrimaryColor: crate::UnityEngine::Color,
@@ -575,13 +575,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::BeatSaber::BeatAvatarSDK::Avat
 }
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarData")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarData>,
     >,
 > for crate::BeatSaber::BeatAvatarSDK::AvatarData {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarData>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -589,13 +589,13 @@ impl AsRef<
 }
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarData")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarData>,
     >,
 > for crate::BeatSaber::BeatAvatarSDK::AvatarData {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarData>,
     > {
         unsafe { std::mem::transmute(self) }

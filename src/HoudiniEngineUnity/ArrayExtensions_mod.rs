@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArrayExtensions {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "HoudiniEngineUnity+ArrayExtensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+ArrayExtensions")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::ArrayExtensions {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -38,7 +38,7 @@ impl crate::HoudiniEngineUnity::ArrayExtensions {
             .invoke("CopyToWithResize", (srcArray, destArray))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Init_Gc_T0<T>(
+    pub fn Init_Il2CppArray0<T>(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         defaultValue: T,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -50,8 +50,8 @@ impl crate::HoudiniEngineUnity::ArrayExtensions {
             .invoke("Init", (array, defaultValue))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Init_Gc_T1<T>(
-        array: quest_hook::libil2cpp::Gc<T>,
+    pub fn Init_List_1_1<T>(
+        array: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
         defaultValue: T,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where

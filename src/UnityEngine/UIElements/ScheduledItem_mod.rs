@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScheduledItem {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    pub timerUpdateStopCondition: quest_hook::libil2cpp::Gc<bool>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub timerUpdateStopCondition: quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,
     pub _startMs_k__BackingField: i64,
     pub _delayMs_k__BackingField: i64,
     pub _intervalMs_k__BackingField: i64,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+ScheduledItem")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ScheduledItem {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

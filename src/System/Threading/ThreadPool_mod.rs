@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ThreadPool {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Threading+ThreadPool")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+ThreadPool")]
 impl std::ops::Deref for crate::System::Threading::ThreadPool {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -80,23 +80,8 @@ impl crate::System::Threading::ThreadPool {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn QueueUserWorkItem_Gc0(
-        callBack: quest_hook::libil2cpp::Gc<crate::System::Threading::WaitCallback>,
-        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("QueueUserWorkItem", (callBack, state))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn QueueUserWorkItem_Gc1(
-        callBack: quest_hook::libil2cpp::Gc<crate::System::Threading::WaitCallback>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("QueueUserWorkItem", (callBack))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn QueueUserWorkItem_TState__cordl_bool2<TState>(
-        callBack: quest_hook::libil2cpp::Gc<TState>,
+    pub fn QueueUserWorkItem_Action_1_TState__cordl_bool2<TState>(
+        callBack: quest_hook::libil2cpp::Gc<crate::System::Action_1<TState>>,
         state: TState,
         preferLocal: bool,
     ) -> quest_hook::libil2cpp::Result<bool>
@@ -106,6 +91,21 @@ impl crate::System::Threading::ThreadPool {
     {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("QueueUserWorkItem", (callBack, state, preferLocal))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn QueueUserWorkItem_WaitCallback1(
+        callBack: quest_hook::libil2cpp::Gc<crate::System::Threading::WaitCallback>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("QueueUserWorkItem", (callBack))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn QueueUserWorkItem_WaitCallback_Il2CppObject0(
+        callBack: quest_hook::libil2cpp::Gc<crate::System::Threading::WaitCallback>,
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("QueueUserWorkItem", (callBack, state))?;
         Ok(__cordl_ret.into())
     }
     pub fn RegisterWaitForSingleObject_TimeSpan2(

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct VRController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _node: crate::UnityEngine::XR::XRNode,
     pub _nodeIdx: i32,
     pub _viewAnchorTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -13,8 +13,10 @@ pub struct VRController {
         crate::GlobalNamespace::IVRPlatformHelper,
     >,
     pub anchorUpdateEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRController>,
-        crate::UnityEngine::Pose,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRController>,
+            crate::UnityEngine::Pose,
+        >,
     >,
     pub _lastTrackedPosition: crate::UnityEngine::Vector3,
     pub _lastTrackedRotation: crate::UnityEngine::Quaternion,
@@ -27,7 +29,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "VRController")]
 impl std::ops::Deref for crate::GlobalNamespace::VRController {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -116,7 +118,7 @@ impl crate::GlobalNamespace::VRController {
             .invoke("TryGetControllerOffset", (poseOffset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn TryGetControllerOffset_Gc_Gc_ByRefMut_ByRefMut1(
+    pub fn TryGetControllerOffset_IVRPlatformHelper_VRControllerTransformOffset_ByRefMut_ByRefMut1(
         vrPlatformHelper: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IVRPlatformHelper,
         >,
@@ -194,8 +196,10 @@ impl crate::GlobalNamespace::VRController {
     pub fn add_anchorUpdateEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRController>,
-            crate::UnityEngine::Pose,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRController>,
+                crate::UnityEngine::Pose,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -298,8 +302,10 @@ impl crate::GlobalNamespace::VRController {
     pub fn remove_anchorUpdateEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRController>,
-            crate::UnityEngine::Pose,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRController>,
+                crate::UnityEngine::Pose,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

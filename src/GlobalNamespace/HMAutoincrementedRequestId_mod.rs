@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HMAutoincrementedRequestId {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _requestId: u64,
 }
 #[cfg(feature = "HMAutoincrementedRequestId")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMAutoincrementedRequestId")]
 impl std::ops::Deref for crate::GlobalNamespace::HMAutoincrementedRequestId {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -25,7 +25,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::HMAutoincrementedRequestId {
 }
 #[cfg(feature = "HMAutoincrementedRequestId")]
 impl crate::GlobalNamespace::HMAutoincrementedRequestId {
-    pub fn Equals_Gc0(
+    pub fn Equals_HMAutoincrementedRequestId0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::HMAutoincrementedRequestId,
@@ -37,7 +37,7 @@ impl crate::GlobalNamespace::HMAutoincrementedRequestId {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Gc1(
+    pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -91,13 +91,13 @@ for crate::GlobalNamespace::HMAutoincrementedRequestId {
 }
 #[cfg(feature = "HMAutoincrementedRequestId")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HMAutoincrementedRequestId>,
     >,
 > for crate::GlobalNamespace::HMAutoincrementedRequestId {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HMAutoincrementedRequestId>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -105,13 +105,13 @@ impl AsRef<
 }
 #[cfg(feature = "HMAutoincrementedRequestId")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HMAutoincrementedRequestId>,
     >,
 > for crate::GlobalNamespace::HMAutoincrementedRequestId {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HMAutoincrementedRequestId>,
     > {
         unsafe { std::mem::transmute(self) }

@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AudioSaveData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub songChecksum: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub songSampleCount: i32,
     pub songFrequency: i32,
     pub bpmData: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::BeatmapLevelSaveDataVersion4::BpmData>,
+            *mut crate::BeatmapLevelSaveDataVersion4::BpmData,
         >,
     >,
     pub lufsData: quest_hook::libil2cpp::Gc<
@@ -23,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapLevelSaveDataVersion4+AudioSaveData")]
 impl std::ops::Deref for crate::BeatmapLevelSaveDataVersion4::AudioSaveData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

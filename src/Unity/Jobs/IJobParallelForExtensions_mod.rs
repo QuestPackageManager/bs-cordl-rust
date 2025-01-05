@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct IJobParallelForExtensions {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Unity+Jobs+IJobParallelForExtensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Jobs+IJobParallelForExtensions")]
 impl std::ops::Deref for crate::Unity::Jobs::IJobParallelForExtensions {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -135,7 +135,7 @@ impl<
 pub struct ParallelForJobStruct_1_IJobParallelForExtensions_ExecuteJobFunction<
     T: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(
@@ -154,7 +154,7 @@ impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Unity::Jobs::ParallelForJobStruct_1_IJobParallelForExtensions_ExecuteJobFunction<
     T,
 > {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExpressionVisitorUtils {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Dynamic+Utils+ExpressionVisitorUtils")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Dynamic+Utils+ExpressionVisitorUtils")]
 impl std::ops::Deref for crate::System::Dynamic::Utils::ExpressionVisitorUtils {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,13 +34,13 @@ impl crate::System::Dynamic::Utils::ExpressionVisitorUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+                *mut crate::System::Linq::Expressions::Expression,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+                *mut crate::System::Linq::Expressions::Expression,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("VisitArguments", (visitor, nodes))?;
@@ -56,13 +56,13 @@ impl crate::System::Dynamic::Utils::ExpressionVisitorUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+                *mut crate::System::Linq::Expressions::Expression,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+                *mut crate::System::Linq::Expressions::Expression,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("VisitBlockExpressions", (visitor, block))?;
@@ -79,17 +79,13 @@ impl crate::System::Dynamic::Utils::ExpressionVisitorUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Linq::Expressions::ParameterExpression,
-                >,
+                *mut crate::System::Linq::Expressions::ParameterExpression,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Linq::Expressions::ParameterExpression,
-                >,
+                *mut crate::System::Linq::Expressions::ParameterExpression,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("VisitParameters", (visitor, nodes, callerName))?;

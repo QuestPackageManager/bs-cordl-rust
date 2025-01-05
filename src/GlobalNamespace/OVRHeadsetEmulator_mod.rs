@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRHeadsetEmulator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub opMode: crate::GlobalNamespace::OVRHeadsetEmulator_OpMode,
     pub resetHmdPoseOnRelease: bool,
     pub resetHmdPoseByMiddleMouseButton: bool,
@@ -27,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRHeadsetEmulator")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRHeadsetEmulator {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

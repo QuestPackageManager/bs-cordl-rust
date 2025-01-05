@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Display {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub nativeDisplay: crate::System::IntPtr,
 }
 #[cfg(feature = "UnityEngine+Display")]
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Display")]
 impl std::ops::Deref for crate::UnityEngine::Display {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -163,7 +163,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Display {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Display_DisplaysUpdatedDelegate {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "UnityEngine+Display+DisplaysUpdatedDelegate")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -172,7 +172,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Display+DisplaysUpdatedDelegate")]
 impl std::ops::Deref for crate::UnityEngine::Display_DisplaysUpdatedDelegate {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

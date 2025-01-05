@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ButtonWithOneModifier {
-    __cordl_parent: quest_hook::libil2cpp::Gc<f32>,
+    __cordl_parent: crate::UnityEngine::InputSystem::InputBindingComposite_1<f32>,
     pub modifier: i32,
     pub button: i32,
     pub overrideModifiersNeedToBePressedFirst: bool,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+InputSystem+Composites+ButtonWithOneModifier")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Composites::ButtonWithOneModifier {
-    type Target = quest_hook::libil2cpp::Gc<f32>;
+    type Target = crate::UnityEngine::InputSystem::InputBindingComposite_1<f32>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -63,7 +63,9 @@ pub struct RenderChainVEData {
     pub compositeOpacity: f32,
     pub backgroundColor: crate::UnityEngine::Color,
     pub textures: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UIR::TextureEntry,
+        crate::UnityEngine::UIElements::UIR::BasicNode_1<
+            crate::UnityEngine::UIElements::UIR::TextureEntry,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+RenderChainVEData")]

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Keyboard {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::InputDevice,
-    >,
+    __cordl_parent: crate::UnityEngine::InputSystem::InputDevice,
     pub _anyKey_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Controls::AnyKeyControl,
     >,
@@ -21,21 +19,21 @@ pub struct Keyboard {
         crate::UnityEngine::InputSystem::Controls::ButtonControl,
     >,
     pub m_TextInputListeners: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
-        quest_hook::libil2cpp::Gc<char>,
+        quest_hook::libil2cpp::Gc<crate::System::Action_1<char>>,
     >,
     pub m_KeyboardLayoutName: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
     pub m_Keys: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::InputSystem::Controls::KeyControl,
-            >,
+            *mut crate::UnityEngine::InputSystem::Controls::KeyControl,
         >,
     >,
     pub m_ImeCompositionListeners: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::LowLevel::IMECompositionString,
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::LowLevel::IMECompositionString,
+            >,
         >,
     >,
 }
@@ -46,9 +44,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+Keyboard")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Keyboard {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::InputDevice,
-    >;
+    type Target = crate::UnityEngine::InputSystem::InputDevice;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -180,7 +176,9 @@ impl crate::UnityEngine::InputSystem::Keyboard {
     pub fn add_onIMECompositionChange(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::LowLevel::IMECompositionString,
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::LowLevel::IMECompositionString,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -192,7 +190,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
     }
     pub fn add_onTextInput(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<char>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<char>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -931,9 +929,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::KeyControl,
-                >,
+                *mut crate::UnityEngine::InputSystem::Controls::KeyControl,
             >,
         >,
     > {
@@ -942,9 +938,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::KeyControl,
-                >,
+                *mut crate::UnityEngine::InputSystem::Controls::KeyControl,
             >,
         > = __cordl_object.invoke("get_keys", ())?;
         Ok(__cordl_ret.into())
@@ -1864,7 +1858,9 @@ impl crate::UnityEngine::InputSystem::Keyboard {
     pub fn remove_onIMECompositionChange(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::LowLevel::IMECompositionString,
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::LowLevel::IMECompositionString,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1876,7 +1872,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
     }
     pub fn remove_onTextInput(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<char>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<char>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1959,9 +1955,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         &mut self,
         value: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::Controls::KeyControl,
-                >,
+                *mut crate::UnityEngine::InputSystem::Controls::KeyControl,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1996,30 +1990,18 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::Keyb
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Keyboard")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::ITextInputReceiver,
-    >,
-> for crate::UnityEngine::InputSystem::Keyboard {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::ITextInputReceiver,
-    > {
+impl AsRef<crate::UnityEngine::InputSystem::LowLevel::ITextInputReceiver>
+for crate::UnityEngine::InputSystem::Keyboard {
+    fn as_ref(&self) -> &crate::UnityEngine::InputSystem::LowLevel::ITextInputReceiver {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Keyboard")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::ITextInputReceiver,
-    >,
-> for crate::UnityEngine::InputSystem::Keyboard {
+impl AsMut<crate::UnityEngine::InputSystem::LowLevel::ITextInputReceiver>
+for crate::UnityEngine::InputSystem::Keyboard {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::ITextInputReceiver,
-    > {
+    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::ITextInputReceiver {
         unsafe { std::mem::transmute(self) }
     }
 }

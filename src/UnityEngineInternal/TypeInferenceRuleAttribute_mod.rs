@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeInferenceRuleAttribute {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+    __cordl_parent: crate::System::Attribute,
     pub _rule: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnityEngineInternal+TypeInferenceRuleAttribute")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngineInternal+TypeInferenceRuleAttribute")]
 impl std::ops::Deref for crate::UnityEngineInternal::TypeInferenceRuleAttribute {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Attribute>;
+    type Target = crate::System::Attribute;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -25,7 +25,7 @@ impl std::ops::DerefMut for crate::UnityEngineInternal::TypeInferenceRuleAttribu
 }
 #[cfg(feature = "UnityEngineInternal+TypeInferenceRuleAttribute")]
 impl crate::UnityEngineInternal::TypeInferenceRuleAttribute {
-    pub fn New_Gc1(
+    pub fn New_Il2CppString1(
         rule: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -56,7 +56,7 @@ impl crate::UnityEngineInternal::TypeInferenceRuleAttribute {
         > = __cordl_object.invoke("ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
         rule: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RuntimeElement {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _intervalBit_k__BackingField: i32,
 }
 #[cfg(feature = "UnityEngine+Timeline+RuntimeElement")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Timeline+RuntimeElement")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::RuntimeElement {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -121,20 +121,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Timeline::Runtime
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+RuntimeElement")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IInterval>>
+impl AsRef<crate::UnityEngine::Timeline::IInterval>
 for crate::UnityEngine::Timeline::RuntimeElement {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IInterval> {
+    fn as_ref(&self) -> &crate::UnityEngine::Timeline::IInterval {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+RuntimeElement")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IInterval>>
+impl AsMut<crate::UnityEngine::Timeline::IInterval>
 for crate::UnityEngine::Timeline::RuntimeElement {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IInterval> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Timeline::IInterval {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_ParameterModifier {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _parameterIndex: i32,
     pub _action: crate::HoudiniEngineUnity::HEU_ParameterModifier_ModifierAction,
     pub _instanceIndex: i32,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_ParameterModifier")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_ParameterModifier {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -91,13 +91,13 @@ for crate::HoudiniEngineUnity::HEU_ParameterModifier {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_ParameterModifier")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ParameterModifier>,
     >,
 > for crate::HoudiniEngineUnity::HEU_ParameterModifier {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ParameterModifier>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -105,13 +105,13 @@ impl AsRef<
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_ParameterModifier")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ParameterModifier>,
     >,
 > for crate::HoudiniEngineUnity::HEU_ParameterModifier {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ParameterModifier>,
     > {
         unsafe { std::mem::transmute(self) }

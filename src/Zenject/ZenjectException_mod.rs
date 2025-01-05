@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ZenjectException {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    __cordl_parent: crate::System::Exception,
 }
 #[cfg(feature = "Zenject+ZenjectException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+ZenjectException")]
 impl std::ops::Deref for crate::Zenject::ZenjectException {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Exception>;
+    type Target = crate::System::Exception;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,16 +24,7 @@ impl std::ops::DerefMut for crate::Zenject::ZenjectException {
 }
 #[cfg(feature = "Zenject+ZenjectException")]
 impl crate::Zenject::ZenjectException {
-    pub fn New_Gc0(
-        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (message))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc1(
+    pub fn New_Exception1(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -43,18 +34,16 @@ impl crate::Zenject::ZenjectException {
             .invoke_void(".ctor", (message, innerException))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc0(
-        &mut self,
+    pub fn New_Il2CppString0(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (message))?;
-        Ok(__cordl_ret.into())
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (message))?;
+        Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Exception1(
         &mut self,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
@@ -64,6 +53,17 @@ impl crate::Zenject::ZenjectException {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (message, innerException))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppString0(
+        &mut self,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (message))?;
         Ok(__cordl_ret.into())
     }
 }

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AndInstruction_AndByte {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::AndInstruction,
-    >,
+    __cordl_parent: crate::System::Linq::Expressions::Interpreter::AndInstruction,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+AndInstruction+AndByte")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Linq+Expressions+Interpreter+AndInstruction+AndByte")]
 impl std::ops::Deref for crate::GlobalNamespace::AndInstruction_AndByte {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::AndInstruction,
-    >;
+    type Target = crate::System::Linq::Expressions::Interpreter::AndInstruction;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

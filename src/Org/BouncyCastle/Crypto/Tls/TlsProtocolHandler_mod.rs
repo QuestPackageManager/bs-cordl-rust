@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TlsProtocolHandler {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::TlsClientProtocol,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::TlsClientProtocol,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsProtocolHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -14,9 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsProtocolHandler")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::TlsProtocolHandler {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::TlsClientProtocol,
-    >;
+    type Target = crate::Org::BouncyCastle::Crypto::Tls::TlsClientProtocol;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,7 +25,19 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::TlsProtocolHa
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsProtocolHandler")]
 impl crate::Org::BouncyCastle::Crypto::Tls::TlsProtocolHandler {
-    pub fn New_Gc1(
+    pub fn New_SecureRandom0(
+        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        secureRandom: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (stream, secureRandom))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Stream_SecureRandom1(
         input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         secureRandom: quest_hook::libil2cpp::Gc<
@@ -42,19 +50,21 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsProtocolHandler {
             .invoke_void(".ctor", (input, output, secureRandom))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc0(
+    pub fn _ctor_SecureRandom0(
+        &mut self,
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         secureRandom: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Security::SecureRandom,
         >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (stream, secureRandom))?;
-        Ok(__cordl_object.into())
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (stream, secureRandom))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Stream_SecureRandom1(
         &mut self,
         input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -67,20 +77,6 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsProtocolHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (input, output, secureRandom))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_Gc0(
-        &mut self,
-        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-        secureRandom: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Security::SecureRandom,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (stream, secureRandom))?;
         Ok(__cordl_ret.into())
     }
 }

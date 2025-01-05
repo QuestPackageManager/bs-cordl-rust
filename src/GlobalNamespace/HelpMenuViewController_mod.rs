@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HelpMenuViewController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+    __cordl_parent: crate::HMUI::ViewController,
     pub _helpMenuSegmentedControl: quest_hook::libil2cpp::Gc<
         crate::HMUI::TextSegmentedControl,
     >,
@@ -22,12 +22,14 @@ pub struct HelpMenuViewController {
         crate::GlobalNamespace::LicensesDisplayViewController,
     >,
     pub didSelectHelpSubMenuEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+        crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>>,
     >,
     pub _viewControllers: quest_hook::libil2cpp::Gc<
-        crate::System::ValueTuple_2<
-            quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::List_1<
+            crate::System::ValueTuple_2<
+                quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     >,
 }
@@ -38,7 +40,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HelpMenuViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::HelpMenuViewController {
-    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>;
+    type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -107,7 +109,9 @@ impl crate::GlobalNamespace::HelpMenuViewController {
     pub fn add_didSelectHelpSubMenuEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -120,7 +124,9 @@ impl crate::GlobalNamespace::HelpMenuViewController {
     pub fn remove_didSelectHelpSubMenuEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

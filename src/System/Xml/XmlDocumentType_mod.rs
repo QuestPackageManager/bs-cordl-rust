@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlDocumentType {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlLinkedNode>,
+    __cordl_parent: crate::System::Xml::XmlLinkedNode,
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub publicId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub systemId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlDocumentType")]
 impl std::ops::Deref for crate::System::Xml::XmlDocumentType {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::XmlLinkedNode>;
+    type Target = crate::System::Xml::XmlLinkedNode;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

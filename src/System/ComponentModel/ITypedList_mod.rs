@@ -28,9 +28,7 @@ impl crate::System::ComponentModel::ITypedList {
         &mut self,
         listAccessors: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::ComponentModel::PropertyDescriptor,
-                >,
+                *mut crate::System::ComponentModel::PropertyDescriptor,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -50,9 +48,7 @@ impl crate::System::ComponentModel::ITypedList {
         &mut self,
         listAccessors: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::ComponentModel::PropertyDescriptor,
-                >,
+                *mut crate::System::ComponentModel::PropertyDescriptor,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<

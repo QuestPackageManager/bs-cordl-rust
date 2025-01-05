@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BinHexEncoder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Xml+BinHexEncoder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+BinHexEncoder")]
 impl std::ops::Deref for crate::System::Xml::BinHexEncoder {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,17 +24,7 @@ impl std::ops::DerefMut for crate::System::Xml::BinHexEncoder {
 }
 #[cfg(feature = "System+Xml+BinHexEncoder")]
 impl crate::System::Xml::BinHexEncoder {
-    pub fn Encode_Gc0(
-        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-        index: i32,
-        count: i32,
-        writer: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Encode", (buffer, index, count, writer))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Encode_Gc2(
+    pub fn Encode_Il2CppArray2(
         inArray: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offsetIn: i32,
         count: i32,
@@ -44,7 +34,7 @@ impl crate::System::Xml::BinHexEncoder {
             .invoke("Encode", (inArray, offsetIn, count, outArray))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Encode_Gc_i32_i32_1(
+    pub fn Encode_Il2CppArray_i32_i32_1(
         inArray: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offsetIn: i32,
         count: i32,
@@ -55,6 +45,16 @@ impl crate::System::Xml::BinHexEncoder {
             quest_hook::libil2cpp::Il2CppString,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Encode", (inArray, offsetIn, count))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Encode_XmlWriter0(
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        index: i32,
+        count: i32,
+        writer: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Encode", (buffer, index, count, writer))?;
         Ok(__cordl_ret.into())
     }
 }

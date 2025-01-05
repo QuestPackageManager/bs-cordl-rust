@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomFogParamsBehaviour {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Playables::PlayableBehaviour,
-    >,
+    __cordl_parent: crate::UnityEngine::Playables::PlayableBehaviour,
     pub _bloomFogParams: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BloomFogEnvironmentParams,
     >,
@@ -19,9 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BloomFogParamsBehaviour")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomFogParamsBehaviour {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Playables::PlayableBehaviour,
-    >;
+    type Target = crate::UnityEngine::Playables::PlayableBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

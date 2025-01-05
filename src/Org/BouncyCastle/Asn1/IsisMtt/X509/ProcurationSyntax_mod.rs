@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProcurationSyntax {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub country: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub typeOfSubstitution: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
@@ -25,9 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+ProcurationSyntax")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::ProcurationSyntax {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -53,7 +49,7 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::ProcurationSyntax {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_Asn1Sequence0(
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -62,22 +58,7 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::ProcurationSyntax {
             .invoke_void(".ctor", (seq))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc1(
-        country: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        typeOfSubstitution: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
-        >,
-        certRef: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::IssuerSerial,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (country, typeOfSubstitution, certRef))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_Gc2(
+    pub fn New_Il2CppString_DirectoryString_GeneralName2(
         country: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         typeOfSubstitution: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
@@ -90,6 +71,21 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::ProcurationSyntax {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (country, typeOfSubstitution, thirdPerson))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Il2CppString_DirectoryString_IssuerSerial1(
+        country: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        typeOfSubstitution: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
+        >,
+        certRef: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::IssuerSerial,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (country, typeOfSubstitution, certRef))?;
         Ok(__cordl_object.into())
     }
     pub fn ToAsn1Object(
@@ -105,7 +101,7 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::ProcurationSyntax {
         > = __cordl_object.invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Asn1Sequence0(
         &mut self,
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -116,24 +112,7 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::ProcurationSyntax {
             .invoke(".ctor", (seq))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc1(
-        &mut self,
-        country: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        typeOfSubstitution: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
-        >,
-        certRef: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::IssuerSerial,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (country, typeOfSubstitution, certRef))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_Gc2(
+    pub fn _ctor_Il2CppString_DirectoryString_GeneralName2(
         &mut self,
         country: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         typeOfSubstitution: quest_hook::libil2cpp::Gc<
@@ -148,6 +127,23 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::ProcurationSyntax {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (country, typeOfSubstitution, thirdPerson))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppString_DirectoryString_IssuerSerial1(
+        &mut self,
+        country: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        typeOfSubstitution: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
+        >,
+        certRef: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::IssuerSerial,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (country, typeOfSubstitution, certRef))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_CertRef(

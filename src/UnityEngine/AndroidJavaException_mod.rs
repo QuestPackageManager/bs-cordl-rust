@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AndroidJavaException {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    __cordl_parent: crate::System::Exception,
     pub mJavaStackTrace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnityEngine+AndroidJavaException")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+AndroidJavaException")]
 impl std::ops::Deref for crate::UnityEngine::AndroidJavaException {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Exception>;
+    type Target = crate::System::Exception;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

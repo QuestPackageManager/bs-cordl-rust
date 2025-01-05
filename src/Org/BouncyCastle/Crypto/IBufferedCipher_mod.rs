@@ -37,7 +37,7 @@ impl crate::Org::BouncyCastle::Crypto::IBufferedCipher {
         > = __cordl_object.invoke("DoFinal", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn DoFinal_Gc1(
+    pub fn DoFinal_Il2CppArray1(
         &mut self,
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
@@ -51,7 +51,7 @@ impl crate::Org::BouncyCastle::Crypto::IBufferedCipher {
         > = __cordl_object.invoke("DoFinal", (input))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DoFinal_Gc_Gc_i32_4(
+    pub fn DoFinal_Il2CppArray_Il2CppArray_i32_4(
         &mut self,
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         output: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -64,7 +64,7 @@ impl crate::Org::BouncyCastle::Crypto::IBufferedCipher {
             .invoke("DoFinal", (input, output, outOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DoFinal_Gc_i32_3(
+    pub fn DoFinal_Il2CppArray_i32_3(
         &mut self,
         output: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         outOff: i32,
@@ -75,7 +75,7 @@ impl crate::Org::BouncyCastle::Crypto::IBufferedCipher {
         let __cordl_ret: i32 = __cordl_object.invoke("DoFinal", (output, outOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DoFinal_Gc_i32_i32_2(
+    pub fn DoFinal_Il2CppArray_i32_i32_2(
         &mut self,
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         inOff: i32,
@@ -91,7 +91,7 @@ impl crate::Org::BouncyCastle::Crypto::IBufferedCipher {
         > = __cordl_object.invoke("DoFinal", (input, inOff, length))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DoFinal_Gc_i32_i32_Gc_i32_5(
+    pub fn DoFinal_Il2CppArray_i32_i32_Il2CppArray_i32_5(
         &mut self,
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         inOff: i32,
@@ -147,7 +147,7 @@ impl crate::Org::BouncyCastle::Crypto::IBufferedCipher {
             .invoke("Init", (forEncryption, parameters))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ProcessByte_Gc_i32_1(
+    pub fn ProcessByte_Il2CppArray_i32_1(
         &mut self,
         input: u8,
         output: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -174,7 +174,7 @@ impl crate::Org::BouncyCastle::Crypto::IBufferedCipher {
         > = __cordl_object.invoke("ProcessByte", (input))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ProcessBytes_Gc0(
+    pub fn ProcessBytes_Il2CppArray0(
         &mut self,
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
@@ -188,7 +188,7 @@ impl crate::Org::BouncyCastle::Crypto::IBufferedCipher {
         > = __cordl_object.invoke("ProcessBytes", (input))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ProcessBytes_Gc_i32_2(
+    pub fn ProcessBytes_Il2CppArray_i32_2(
         &mut self,
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         output: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -217,7 +217,7 @@ impl crate::Org::BouncyCastle::Crypto::IBufferedCipher {
         > = __cordl_object.invoke("ProcessBytes", (input, inOff, length))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ProcessBytes_i32_i32_Gc_i32_3(
+    pub fn ProcessBytes_i32_i32_Il2CppArray_i32_3(
         &mut self,
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         inOff: i32,

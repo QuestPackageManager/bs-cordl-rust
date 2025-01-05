@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct WebOperation {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Request_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::System::Net::HttpWebRequest,
     >,
@@ -20,18 +20,26 @@ pub struct WebOperation {
         crate::System::Threading::CancellationTokenSource,
     >,
     pub requestTask: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Net::WebRequestStream>,
+        crate::System::Net::WebCompletionSource_1<
+            quest_hook::libil2cpp::Gc<crate::System::Net::WebRequestStream>,
+        >,
     >,
     pub requestWrittenTask: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Net::WebRequestStream>,
+        crate::System::Net::WebCompletionSource_1<
+            quest_hook::libil2cpp::Gc<crate::System::Net::WebRequestStream>,
+        >,
     >,
     pub responseTask: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Net::WebResponseStream>,
+        crate::System::Net::WebCompletionSource_1<
+            quest_hook::libil2cpp::Gc<crate::System::Net::WebResponseStream>,
+        >,
     >,
     pub finishedTask: quest_hook::libil2cpp::Gc<
-        crate::System::ValueTuple_2<
-            bool,
-            quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,
+        crate::System::Net::WebCompletionSource_1<
+            crate::System::ValueTuple_2<
+                bool,
+                quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,
+            >,
         >,
     >,
     pub writeStream: quest_hook::libil2cpp::Gc<crate::System::Net::WebRequestStream>,
@@ -53,7 +61,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+WebOperation")]
 impl std::ops::Deref for crate::System::Net::WebOperation {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -150,13 +158,19 @@ impl crate::System::Net::WebOperation {
     pub fn GetRequestStream(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::IO::Stream>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+            >,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+            >,
         > = __cordl_object.invoke("GetRequestStream", ())?;
         Ok(__cordl_ret.into())
     }
@@ -164,14 +178,18 @@ impl crate::System::Net::WebOperation {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Net::WebRequestStream>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::System::Net::WebRequestStream>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Net::WebRequestStream>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::System::Net::WebRequestStream>,
+            >,
         > = __cordl_object.invoke("GetRequestStreamInternal", ())?;
         Ok(__cordl_ret.into())
     }
@@ -179,14 +197,18 @@ impl crate::System::Net::WebOperation {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Net::WebResponseStream>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::System::Net::WebResponseStream>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Net::WebResponseStream>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::System::Net::WebResponseStream>,
+            >,
         > = __cordl_object.invoke("GetResponseStream", ())?;
         Ok(__cordl_ret.into())
     }
@@ -381,9 +403,11 @@ impl crate::System::Net::WebOperation {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::ValueTuple_2<
-                bool,
-                quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,
+            crate::System::Net::WebCompletionSource_1<
+                crate::System::ValueTuple_2<
+                    bool,
+                    quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,
+                >,
             >,
         >,
     > {
@@ -391,9 +415,11 @@ impl crate::System::Net::WebOperation {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::ValueTuple_2<
-                bool,
-                quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,
+            crate::System::Net::WebCompletionSource_1<
+                crate::System::ValueTuple_2<
+                    bool,
+                    quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,
+                >,
             >,
         > = __cordl_object.invoke("get_Finished", ())?;
         Ok(__cordl_ret.into())

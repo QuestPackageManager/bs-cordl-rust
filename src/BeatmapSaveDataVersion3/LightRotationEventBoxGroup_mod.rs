@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightRotationEventBoxGroup {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::BeatmapSaveDataVersion3::EventBoxGroup_1<
         quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::LightRotationEventBox>,
     >,
 }
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapSaveDataVersion3+LightRotationEventBoxGroup")]
 impl std::ops::Deref for crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::BeatmapSaveDataVersion3::EventBoxGroup_1<
         quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::LightRotationEventBox>,
     >;
     fn deref(&self) -> &Self::Target {
@@ -50,8 +50,10 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup {
         beat: f32,
         groupId: i32,
         eventBoxes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion3::LightRotationEventBox,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion3::LightRotationEventBox,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -66,8 +68,10 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup {
         beat: f32,
         groupId: i32,
         eventBoxes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion3::LightRotationEventBox,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion3::LightRotationEventBox,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

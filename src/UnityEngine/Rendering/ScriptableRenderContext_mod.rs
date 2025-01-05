@@ -22,7 +22,7 @@ for crate::UnityEngine::Rendering::ScriptableRenderContext {
 }
 #[cfg(feature = "UnityEngine+Rendering+ScriptableRenderContext")]
 impl crate::UnityEngine::Rendering::ScriptableRenderContext {
-    pub fn Equals_Gc1(
+    pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -47,7 +47,9 @@ impl crate::UnityEngine::Rendering::ScriptableRenderContext {
     pub fn GetCameras(
         &mut self,
         results: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -105,11 +107,11 @@ impl crate::UnityEngine::Rendering::ScriptableRenderContext {
 }
 #[cfg(feature = "UnityEngine+Rendering+ScriptableRenderContext")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::ScriptableRenderContext>,
+    crate::System::IEquatable_1<crate::UnityEngine::Rendering::ScriptableRenderContext>,
 > for crate::UnityEngine::Rendering::ScriptableRenderContext {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         crate::UnityEngine::Rendering::ScriptableRenderContext,
     > {
         todo!()
@@ -117,11 +119,11 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+Rendering+ScriptableRenderContext")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::ScriptableRenderContext>,
+    crate::System::IEquatable_1<crate::UnityEngine::Rendering::ScriptableRenderContext>,
 > for crate::UnityEngine::Rendering::ScriptableRenderContext {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         crate::UnityEngine::Rendering::ScriptableRenderContext,
     > {
         todo!()

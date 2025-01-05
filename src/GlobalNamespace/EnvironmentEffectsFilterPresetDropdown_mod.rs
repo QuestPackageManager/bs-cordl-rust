@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentEffectsFilterPresetDropdown {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::GlobalNamespace::ValueDropdownController_1<
         crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
     >,
 }
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "EnvironmentEffectsFilterPresetDropdown")]
 impl std::ops::Deref for crate::GlobalNamespace::EnvironmentEffectsFilterPresetDropdown {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::GlobalNamespace::ValueDropdownController_1<
         crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
     >;
     fn deref(&self) -> &Self::Target {
@@ -34,9 +34,13 @@ impl crate::GlobalNamespace::EnvironmentEffectsFilterPresetDropdown {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Tuple_2<
+                        crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                >,
             >,
         >,
     > {
@@ -44,9 +48,13 @@ impl crate::GlobalNamespace::EnvironmentEffectsFilterPresetDropdown {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Tuple_2<
+                        crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                >,
             >,
         > = __cordl_object.invoke("GetNamedValues", ())?;
         Ok(__cordl_ret.into())

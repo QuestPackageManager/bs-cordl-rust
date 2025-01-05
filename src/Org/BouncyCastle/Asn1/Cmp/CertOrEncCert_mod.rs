@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CertOrEncCert {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub certificate: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
     >,
@@ -19,9 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+CertOrEncCert")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Cmp::CertOrEncCert {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,7 +40,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::CertOrEncCert {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_Asn1TaggedObject0(
         tagged: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
         >,
@@ -55,7 +51,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::CertOrEncCert {
             .invoke_void(".ctor", (tagged))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_CmpCertificate1(
         certificate: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
         >,
@@ -66,7 +62,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::CertOrEncCert {
             .invoke_void(".ctor", (certificate))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc2(
+    pub fn New_EncryptedValue2(
         encryptedCert: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Crmf::EncryptedValue,
         >,
@@ -90,7 +86,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::CertOrEncCert {
         > = __cordl_object.invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Asn1TaggedObject0(
         &mut self,
         tagged: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
@@ -103,7 +99,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::CertOrEncCert {
             .invoke(".ctor", (tagged))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_CmpCertificate1(
         &mut self,
         certificate: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
@@ -116,7 +112,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::CertOrEncCert {
             .invoke(".ctor", (certificate))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_EncryptedValue2(
         &mut self,
         encryptedCert: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Crmf::EncryptedValue,
@@ -167,20 +163,16 @@ for crate::Org::BouncyCastle::Asn1::Cmp::CertOrEncCert {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+CertOrEncCert")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice>>
+impl AsRef<crate::Org::BouncyCastle::Asn1::IAsn1Choice>
 for crate::Org::BouncyCastle::Asn1::Cmp::CertOrEncCert {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice> {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Asn1::IAsn1Choice {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+CertOrEncCert")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice>>
+impl AsMut<crate::Org::BouncyCastle::Asn1::IAsn1Choice>
 for crate::Org::BouncyCastle::Asn1::Cmp::CertOrEncCert {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice> {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Asn1::IAsn1Choice {
         unsafe { std::mem::transmute(self) }
     }
 }

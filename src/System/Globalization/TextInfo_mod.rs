@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextInfo {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_listSeparator: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_isReadOnly: bool,
     pub m_cultureName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Globalization+TextInfo")]
 impl std::ops::Deref for crate::System::Globalization::TextInfo {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -140,7 +140,7 @@ impl crate::System::Globalization::TextInfo {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc0(
+    pub fn New_CultureData0(
         cultureData: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -222,7 +222,7 @@ impl crate::System::Globalization::TextInfo {
             .invoke("ToLowerAsciiInvariant", (c))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToLowerInternal_Gc0(
+    pub fn ToLowerInternal_Il2CppString0(
         &mut self,
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -246,7 +246,7 @@ impl crate::System::Globalization::TextInfo {
         let __cordl_ret: char = __cordl_object.invoke("ToLowerInternal", (c))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToLower_Gc1(
+    pub fn ToLower_Il2CppString1(
         &mut self,
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -316,7 +316,7 @@ impl crate::System::Globalization::TextInfo {
             .invoke("ToUpperAsciiInvariant", (c))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToUpperInternal_Gc0(
+    pub fn ToUpperInternal_Il2CppString0(
         &mut self,
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -340,7 +340,7 @@ impl crate::System::Globalization::TextInfo {
         let __cordl_ret: char = __cordl_object.invoke("ToUpperInternal", (c))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToUpper_Gc1(
+    pub fn ToUpper_Il2CppString1(
         &mut self,
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -374,7 +374,7 @@ impl crate::System::Globalization::TextInfo {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_CultureData0(
         &mut self,
         cultureData: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -427,44 +427,32 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::TextInf
     }
 }
 #[cfg(feature = "System+Globalization+TextInfo")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
-for crate::System::Globalization::TextInfo {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
+impl AsRef<crate::System::ICloneable> for crate::System::Globalization::TextInfo {
+    fn as_ref(&self) -> &crate::System::ICloneable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Globalization+TextInfo")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
-for crate::System::Globalization::TextInfo {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
+impl AsMut<crate::System::ICloneable> for crate::System::Globalization::TextInfo {
+    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Globalization+TextInfo")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IDeserializationCallback,
-    >,
-> for crate::System::Globalization::TextInfo {
+impl AsRef<crate::System::Runtime::Serialization::IDeserializationCallback>
+for crate::System::Globalization::TextInfo {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IDeserializationCallback,
-    > {
+    ) -> &crate::System::Runtime::Serialization::IDeserializationCallback {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Globalization+TextInfo")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IDeserializationCallback,
-    >,
-> for crate::System::Globalization::TextInfo {
+impl AsMut<crate::System::Runtime::Serialization::IDeserializationCallback>
+for crate::System::Globalization::TextInfo {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IDeserializationCallback,
-    > {
+    ) -> &mut crate::System::Runtime::Serialization::IDeserializationCallback {
         unsafe { std::mem::transmute(self) }
     }
 }

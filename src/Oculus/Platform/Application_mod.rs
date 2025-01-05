@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Application {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Oculus+Platform+Application")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+Application")]
 impl std::ops::Deref for crate::Oculus::Platform::Application {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -26,25 +26,37 @@ impl std::ops::DerefMut for crate::Oculus::Platform::Application {
 impl crate::Oculus::Platform::Application {
     pub fn CancelAppDownload() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AppDownloadResult>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::AppDownloadResult,
+                >,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AppDownloadResult>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::AppDownloadResult,
+                >,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("CancelAppDownload", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn CheckAppDownloadProgress() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::AppDownloadProgressResult,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::AppDownloadProgressResult,
+                >,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::AppDownloadProgressResult,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::AppDownloadProgressResult,
+                >,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("CheckAppDownloadProgress", ())?;
@@ -52,14 +64,18 @@ impl crate::Oculus::Platform::Application {
     }
     pub fn GetVersion() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::ApplicationVersion,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::ApplicationVersion,
+                >,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::ApplicationVersion,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::ApplicationVersion,
+                >,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetVersion", ())?;
         Ok(__cordl_ret.into())
@@ -70,11 +86,19 @@ impl crate::Oculus::Platform::Application {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AppDownloadResult>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::AppDownloadResult,
+                >,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AppDownloadResult>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::AppDownloadResult,
+                >,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("InstallAppUpdateAndRelaunch", (deeplink_options))?;
         Ok(__cordl_ret.into())
@@ -86,22 +110,34 @@ impl crate::Oculus::Platform::Application {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("LaunchOtherApp", (appID, deeplink_options))?;
         Ok(__cordl_ret.into())
     }
     pub fn StartAppDownload() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AppDownloadResult>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::AppDownloadResult,
+                >,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AppDownloadResult>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::AppDownloadResult,
+                >,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("StartAppDownload", ())?;
         Ok(__cordl_ret.into())

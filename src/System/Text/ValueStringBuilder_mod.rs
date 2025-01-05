@@ -48,18 +48,7 @@ impl crate::System::Text::ValueStringBuilder {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Append_Gc1(
-        &mut self,
-        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Append",
-            (s),
-        )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Append_Gc_i32_3(
+    pub fn Append_Il2CppObject_i32_3(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         length: i32,
@@ -68,6 +57,17 @@ impl crate::System::Text::ValueStringBuilder {
             self,
             "Append",
             (value, length),
+        )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Append_Il2CppString1(
+        &mut self,
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Append",
+            (s),
         )?;
         Ok(__cordl_ret.into())
     }

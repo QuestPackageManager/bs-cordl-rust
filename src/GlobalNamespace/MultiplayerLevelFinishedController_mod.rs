@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLevelFinishedController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _levelEndActionsPublisher: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher,
     >,
@@ -16,20 +16,26 @@ pub struct MultiplayerLevelFinishedController {
         crate::GlobalNamespace::BeatmapBasicData,
     >,
     pub allResultsCollectedEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerLevelCompletionResults,
-        >,
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Action_2<
             quest_hook::libil2cpp::Gc<
                 crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+            >,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::Dictionary_2<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+                    >,
+                >,
             >,
         >,
     >,
     pub _otherPlayersCompletionResults: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+            >,
         >,
     >,
     pub _localPlayerResults: quest_hook::libil2cpp::Gc<
@@ -46,7 +52,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplayerLevelFinishedController")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLevelFinishedController {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -156,13 +162,17 @@ impl crate::GlobalNamespace::MultiplayerLevelFinishedController {
     pub fn add_allResultsCollectedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerLevelCompletionResults,
-            >,
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Action_2<
                 quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+                >,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::Dictionary_2<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+                        >,
+                    >,
                 >,
             >,
         >,
@@ -200,9 +210,11 @@ impl crate::GlobalNamespace::MultiplayerLevelFinishedController {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+                >,
             >,
         >,
     > {
@@ -210,9 +222,11 @@ impl crate::GlobalNamespace::MultiplayerLevelFinishedController {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+                >,
             >,
         > = __cordl_object.invoke("get_otherPlayersCompletionResults", ())?;
         Ok(__cordl_ret.into())
@@ -220,13 +234,17 @@ impl crate::GlobalNamespace::MultiplayerLevelFinishedController {
     pub fn remove_allResultsCollectedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerLevelCompletionResults,
-            >,
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Action_2<
                 quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+                >,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::Dictionary_2<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+                        >,
+                    >,
                 >,
             >,
         >,

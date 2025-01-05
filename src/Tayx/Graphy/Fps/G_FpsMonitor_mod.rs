@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct G_FpsMonitor {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_fpsSamples: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i16>>,
     pub m_fpsSamplesSorted: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<i16>,
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Tayx+Graphy+Fps+G_FpsMonitor")]
 impl std::ops::Deref for crate::Tayx::Graphy::Fps::G_FpsMonitor {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

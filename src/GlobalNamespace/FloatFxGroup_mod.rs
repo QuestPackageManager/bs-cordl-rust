@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatFxGroup {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LightGroupSubsystem,
-    >,
+    __cordl_parent: crate::GlobalNamespace::LightGroupSubsystem,
     pub _isTriggerOnly: bool,
     pub _targets: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxGroupEffectTarget>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxGroupEffectTarget>,
+        >,
     >,
 }
 #[cfg(feature = "FloatFxGroup")]
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "FloatFxGroup")]
 impl std::ops::Deref for crate::GlobalNamespace::FloatFxGroup {
-    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSubsystem>;
+    type Target = crate::GlobalNamespace::LightGroupSubsystem;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -58,14 +58,22 @@ impl crate::GlobalNamespace::FloatFxGroup {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxGroupEffectTarget>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::FloatFxGroupEffectTarget,
+                >,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxGroupEffectTarget>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::FloatFxGroupEffectTarget,
+                >,
+            >,
         > = __cordl_object.invoke("get_targets", ())?;
         Ok(__cordl_ret.into())
     }

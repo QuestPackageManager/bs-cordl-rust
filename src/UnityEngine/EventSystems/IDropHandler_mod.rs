@@ -54,26 +54,16 @@ for crate::UnityEngine::EventSystems::IDropHandler {
     }
 }
 #[cfg(feature = "UnityEngine+EventSystems+IDropHandler")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
-> for crate::UnityEngine::EventSystems::IDropHandler {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IEventSystemHandler,
-    > {
+impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::UnityEngine::EventSystems::IDropHandler {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+EventSystems+IDropHandler")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
-> for crate::UnityEngine::EventSystems::IDropHandler {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IEventSystemHandler,
-    > {
+impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::UnityEngine::EventSystems::IDropHandler {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DecoderReplacementFallbackBuffer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Text::DecoderFallbackBuffer,
-    >,
+    __cordl_parent: crate::System::Text::DecoderFallbackBuffer,
     pub _strDefault: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _fallbackCount: i32,
     pub _fallbackIndex: i32,
@@ -16,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Text+DecoderReplacementFallbackBuffer")]
 impl std::ops::Deref for crate::System::Text::DecoderReplacementFallbackBuffer {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Text::DecoderFallbackBuffer>;
+    type Target = crate::System::Text::DecoderFallbackBuffer;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

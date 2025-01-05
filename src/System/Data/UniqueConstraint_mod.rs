@@ -2,15 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UniqueConstraint {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Data::Constraint>,
+    __cordl_parent: crate::System::Data::Constraint,
     pub _key: crate::System::Data::DataKey,
     pub _constraintIndex: quest_hook::libil2cpp::Gc<crate::System::Data::Index>,
     pub _bPrimaryKey: bool,
     pub _constraintName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _columnNames: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "System+Data+UniqueConstraint")]
@@ -20,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+UniqueConstraint")]
 impl std::ops::Deref for crate::System::Data::UniqueConstraint {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Data::Constraint>;
+    type Target = crate::System::Data::Constraint;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -87,7 +85,7 @@ impl crate::System::Data::UniqueConstraint {
             .invoke("CheckState", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Clone_Gc0(
+    pub fn Clone_DataSet0(
         &mut self,
         destination: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
     ) -> quest_hook::libil2cpp::Result<
@@ -100,21 +98,7 @@ impl crate::System::Data::UniqueConstraint {
             .invoke("Clone", (destination))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Clone_Gc2(
-        &mut self,
-        table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Data::UniqueConstraint>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Data::UniqueConstraint,
-        > = __cordl_object.invoke("Clone", (table))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Clone__cordl_bool1(
+    pub fn Clone_DataSet__cordl_bool1(
         &mut self,
         destination: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
         ignorNSforTableLookup: bool,
@@ -126,6 +110,20 @@ impl crate::System::Data::UniqueConstraint {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Data::Constraint> = __cordl_object
             .invoke("Clone", (destination, ignorNSforTableLookup))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Clone_DataTable2(
+        &mut self,
+        table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Data::UniqueConstraint>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Data::UniqueConstraint,
+        > = __cordl_object.invoke("Clone", (table))?;
         Ok(__cordl_ret.into())
     }
     pub fn ConstraintIndexClear(
@@ -162,9 +160,7 @@ impl crate::System::Data::UniqueConstraint {
         &mut self,
         constraintName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         columns: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -198,7 +194,7 @@ impl crate::System::Data::UniqueConstraint {
         let __cordl_ret: bool = __cordl_object.invoke("IsConstraintViolated", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_DataColumn0(
         column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -207,25 +203,9 @@ impl crate::System::Data::UniqueConstraint {
             .invoke_void(".ctor", (column))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
-        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub fn New_Il2CppArray2(
         columns: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (name, columns))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc2(
-        columns: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -234,12 +214,22 @@ impl crate::System::Data::UniqueConstraint {
             .invoke_void(".ctor", (columns))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc__cordl_bool3(
+    pub fn New_Il2CppString_Il2CppArray1(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        columns: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (name, columns))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Il2CppString_Il2CppArray__cordl_bool3(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         columnNames: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
         isPrimaryKey: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -249,12 +239,10 @@ impl crate::System::Data::UniqueConstraint {
             .invoke_void(".ctor", (name, columnNames, isPrimaryKey))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc__cordl_bool4(
+    pub fn New_Il2CppString_Il2CppArray__cordl_bool4(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         columns: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
         >,
         isPrimaryKey: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -274,7 +262,7 @@ impl crate::System::Data::UniqueConstraint {
             .invoke("NonVirtualCheckState", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_DataColumn0(
         &mut self,
         column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -285,28 +273,10 @@ impl crate::System::Data::UniqueConstraint {
             .invoke(".ctor", (column))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
-        &mut self,
-        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        columns: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (name, columns))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_Il2CppArray2(
         &mut self,
         columns: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -316,13 +286,25 @@ impl crate::System::Data::UniqueConstraint {
             .invoke(".ctor", (columns))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc__cordl_bool3(
+    pub fn _ctor_Il2CppString_Il2CppArray1(
+        &mut self,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        columns: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (name, columns))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppString_Il2CppArray__cordl_bool3(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         columnNames: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
         isPrimaryKey: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -333,13 +315,11 @@ impl crate::System::Data::UniqueConstraint {
             .invoke(".ctor", (name, columnNames, isPrimaryKey))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc__cordl_bool4(
+    pub fn _ctor_Il2CppString_Il2CppArray__cordl_bool4(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         columns: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
         >,
         isPrimaryKey: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -354,18 +334,14 @@ impl crate::System::Data::UniqueConstraint {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("get_ColumnNames", ())?;
         Ok(__cordl_ret.into())
     }
@@ -373,18 +349,14 @@ impl crate::System::Data::UniqueConstraint {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
         > = __cordl_object.invoke("get_Columns", ())?;
         Ok(__cordl_ret.into())
     }
@@ -392,18 +364,14 @@ impl crate::System::Data::UniqueConstraint {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
         > = __cordl_object.invoke("get_ColumnsReference", ())?;
         Ok(__cordl_ret.into())
     }

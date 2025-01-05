@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Texture2D {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+    __cordl_parent: crate::UnityEngine::Texture,
 }
 #[cfg(feature = "UnityEngine+Texture2D")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Texture2D")]
 impl std::ops::Deref for crate::UnityEngine::Texture2D {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>;
+    type Target = crate::UnityEngine::Texture;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -127,7 +127,9 @@ impl crate::UnityEngine::Texture2D {
         >,
         padding: i32,
         atlasSize: i32,
-        results: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rect>,
+        results: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Rect>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GenerateAtlas", (sizes, padding, atlasSize, results))?;
@@ -512,7 +514,7 @@ impl crate::UnityEngine::Texture2D {
             .invoke("LoadRawTextureDataImplArray", (data))?;
         Ok(__cordl_ret.into())
     }
-    pub fn LoadRawTextureData_Gc1(
+    pub fn LoadRawTextureData_Il2CppArray1(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -562,7 +564,7 @@ impl crate::UnityEngine::Texture2D {
             .invoke_void(".ctor", (width, height, format, flags))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_DefaultFormat_i32_Gc_TextureCreationFlags3(
+    pub fn New_DefaultFormat_i32_Il2CppString_TextureCreationFlags3(
         width: i32,
         height: i32,
         format: crate::UnityEngine::Experimental::Rendering::DefaultFormat,
@@ -606,7 +608,7 @@ impl crate::UnityEngine::Texture2D {
             .invoke_void(".ctor", (width, height, format, flags))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_GraphicsFormat_TextureCreationFlags_i32_IntPtr_Gc0(
+    pub fn New_GraphicsFormat_TextureCreationFlags_i32_IntPtr_Il2CppString0(
         width: i32,
         height: i32,
         format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
@@ -626,7 +628,7 @@ impl crate::UnityEngine::Texture2D {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_GraphicsFormat_i32_Gc_TextureCreationFlags6(
+    pub fn New_GraphicsFormat_i32_Il2CppString_TextureCreationFlags6(
         width: i32,
         height: i32,
         format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
@@ -713,7 +715,7 @@ impl crate::UnityEngine::Texture2D {
             .invoke_void(".ctor", (width, height, textureFormat, mipCount, linear))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_TextureFormat_i32__cordl_bool_IntPtr__cordl_bool__cordl_bool_Gc7(
+    pub fn New_TextureFormat_i32__cordl_bool_IntPtr__cordl_bool__cordl_bool_Il2CppString7(
         width: i32,
         height: i32,
         textureFormat: crate::UnityEngine::TextureFormat,
@@ -762,7 +764,7 @@ impl crate::UnityEngine::Texture2D {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_TextureFormat_i32__cordl_bool__cordl_bool__cordl_bool_Gc10(
+    pub fn New_TextureFormat_i32__cordl_bool__cordl_bool__cordl_bool_Il2CppString10(
         width: i32,
         height: i32,
         textureFormat: crate::UnityEngine::TextureFormat,
@@ -802,12 +804,10 @@ impl crate::UnityEngine::Texture2D {
             .invoke_void(".ctor", (width, height))?;
         Ok(__cordl_object.into())
     }
-    pub fn PackTextures_Gc_i32_2(
+    pub fn PackTextures_Il2CppArray_i32_2(
         &mut self,
         textures: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Texture2D>,
         >,
         padding: i32,
     ) -> quest_hook::libil2cpp::Result<
@@ -826,9 +826,7 @@ impl crate::UnityEngine::Texture2D {
     pub fn PackTextures_i32_1(
         &mut self,
         textures: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Texture2D>,
         >,
         padding: i32,
         maximumAtlasSize: i32,
@@ -849,9 +847,7 @@ impl crate::UnityEngine::Texture2D {
     pub fn PackTextures_i32__cordl_bool0(
         &mut self,
         textures: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Texture2D>,
         >,
         padding: i32,
         maximumAtlasSize: i32,
@@ -1123,7 +1119,7 @@ impl crate::UnityEngine::Texture2D {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetPixelData_Gc0<T>(
+    pub fn SetPixelData_Il2CppArray0<T>(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         mipLevel: i32,
@@ -1214,7 +1210,7 @@ impl crate::UnityEngine::Texture2D {
             .invoke("SetPixel", (x, y, color))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetPixels32_Gc1(
+    pub fn SetPixels32_Il2CppArray1(
         &mut self,
         colors: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
@@ -1227,7 +1223,7 @@ impl crate::UnityEngine::Texture2D {
             .invoke("SetPixels32", (colors))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetPixels32_Gc_i32_0(
+    pub fn SetPixels32_Il2CppArray_i32_0(
         &mut self,
         colors: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
@@ -1241,7 +1237,7 @@ impl crate::UnityEngine::Texture2D {
             .invoke("SetPixels32", (colors, miplevel))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetPixels32_i32_i32_i32_i32_Gc3(
+    pub fn SetPixels32_i32_i32_i32_i32_Il2CppArray3(
         &mut self,
         x: i32,
         y: i32,
@@ -1258,7 +1254,7 @@ impl crate::UnityEngine::Texture2D {
             .invoke("SetPixels32", (x, y, blockWidth, blockHeight, colors))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetPixels32_i32_i32_i32_i32_Gc_i32_2(
+    pub fn SetPixels32_i32_i32_i32_i32_Il2CppArray_i32_2(
         &mut self,
         x: i32,
         y: i32,
@@ -1295,7 +1291,7 @@ impl crate::UnityEngine::Texture2D {
             .invoke("SetPixelsImpl", (x, y, w, h, pixel, miplevel, frame))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetPixels_Gc3(
+    pub fn SetPixels_Il2CppArray3(
         &mut self,
         colors: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
@@ -1308,7 +1304,7 @@ impl crate::UnityEngine::Texture2D {
             .invoke("SetPixels", (colors))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetPixels_Gc_i32_2(
+    pub fn SetPixels_Il2CppArray_i32_2(
         &mut self,
         colors: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
@@ -1322,7 +1318,7 @@ impl crate::UnityEngine::Texture2D {
             .invoke("SetPixels", (colors, miplevel))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetPixels_i32_i32_i32_i32_Gc1(
+    pub fn SetPixels_i32_i32_i32_i32_Il2CppArray1(
         &mut self,
         x: i32,
         y: i32,
@@ -1339,7 +1335,7 @@ impl crate::UnityEngine::Texture2D {
             .invoke("SetPixels", (x, y, blockWidth, blockHeight, colors))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetPixels_i32_i32_i32_i32_Gc_i32_0(
+    pub fn SetPixels_i32_i32_i32_i32_Il2CppArray_i32_0(
         &mut self,
         x: i32,
         y: i32,
@@ -1408,7 +1404,7 @@ impl crate::UnityEngine::Texture2D {
             .invoke(".ctor", (width, height, format, flags))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_DefaultFormat_i32_Gc_TextureCreationFlags3(
+    pub fn _ctor_DefaultFormat_i32_Il2CppString_TextureCreationFlags3(
         &mut self,
         width: i32,
         height: i32,
@@ -1458,7 +1454,7 @@ impl crate::UnityEngine::Texture2D {
             .invoke(".ctor", (width, height, format, flags))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_GraphicsFormat_TextureCreationFlags_i32_IntPtr_Gc0(
+    pub fn _ctor_GraphicsFormat_TextureCreationFlags_i32_IntPtr_Il2CppString0(
         &mut self,
         width: i32,
         height: i32,
@@ -1480,7 +1476,7 @@ impl crate::UnityEngine::Texture2D {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_GraphicsFormat_i32_Gc_TextureCreationFlags6(
+    pub fn _ctor_GraphicsFormat_i32_Il2CppString_TextureCreationFlags6(
         &mut self,
         width: i32,
         height: i32,
@@ -1579,7 +1575,7 @@ impl crate::UnityEngine::Texture2D {
             .invoke(".ctor", (width, height, textureFormat, mipCount, linear))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_TextureFormat_i32__cordl_bool_IntPtr__cordl_bool__cordl_bool_Gc7(
+    pub fn _ctor_TextureFormat_i32__cordl_bool_IntPtr__cordl_bool__cordl_bool_Il2CppString7(
         &mut self,
         width: i32,
         height: i32,
@@ -1632,7 +1628,7 @@ impl crate::UnityEngine::Texture2D {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_TextureFormat_i32__cordl_bool__cordl_bool__cordl_bool_Gc10(
+    pub fn _ctor_TextureFormat_i32__cordl_bool__cordl_bool__cordl_bool_Il2CppString10(
         &mut self,
         width: i32,
         height: i32,

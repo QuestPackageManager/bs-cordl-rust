@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TrackedPoseDriverDataDescription {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriverDataDescription")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriverDataDescription")]
 impl std::ops::Deref
 for crate::UnityEngine::SpatialTracking::TrackedPoseDriverDataDescription {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -64,10 +64,14 @@ for crate::UnityEngine::SpatialTracking::TrackedPoseDriverDataDescription {
 #[derive(Debug, Clone, Default)]
 pub struct TrackedPoseDriverDataDescription_PoseData {
     pub PoseNames: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub Poses: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriverDataDescription+PoseData")]

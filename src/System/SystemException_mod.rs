@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SystemException {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    __cordl_parent: crate::System::Exception,
 }
 #[cfg(feature = "System+SystemException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+SystemException")]
 impl std::ops::Deref for crate::System::SystemException {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Exception>;
+    type Target = crate::System::Exception;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,7 +31,7 @@ impl crate::System::SystemException {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Il2CppString1(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -40,7 +40,7 @@ impl crate::System::SystemException {
             .invoke_void(".ctor", (message))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc2(
+    pub fn New_Il2CppString_Exception2(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -50,7 +50,7 @@ impl crate::System::SystemException {
             .invoke_void(".ctor", (message, innerException))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_StreamingContext3(
+    pub fn New_SerializationInfo_StreamingContext3(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -72,7 +72,7 @@ impl crate::System::SystemException {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -83,7 +83,7 @@ impl crate::System::SystemException {
             .invoke(".ctor", (message))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc2(
+    pub fn _ctor_Il2CppString_Exception2(
         &mut self,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
@@ -95,7 +95,7 @@ impl crate::System::SystemException {
             .invoke(".ctor", (message, innerException))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_StreamingContext3(
+    pub fn _ctor_SerializationInfo_StreamingContext3(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,

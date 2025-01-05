@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Pack {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Utilities+Pack")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Utilities+Pack")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Utilities::Pack {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,7 +24,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Utilities::Pack {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Utilities+Pack")]
 impl crate::Org::BouncyCastle::Crypto::Utilities::Pack {
-    pub fn BE_To_UInt16_Gc0(
+    pub fn BE_To_UInt16_Il2CppArray0(
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<u16> {
         let __cordl_ret: u16 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -39,7 +39,7 @@ impl crate::Org::BouncyCastle::Crypto::Utilities::Pack {
             .invoke("BE_To_UInt16", (bs, off))?;
         Ok(__cordl_ret.into())
     }
-    pub fn BE_To_UInt32_Gc0(
+    pub fn BE_To_UInt32_Il2CppArray0(
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -54,7 +54,7 @@ impl crate::Org::BouncyCastle::Crypto::Utilities::Pack {
             .invoke("BE_To_UInt32", (bs, off))?;
         Ok(__cordl_ret.into())
     }
-    pub fn BE_To_UInt32_i32_Gc2(
+    pub fn BE_To_UInt32_i32_Il2CppArray2(
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         off: i32,
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -63,7 +63,7 @@ impl crate::Org::BouncyCastle::Crypto::Utilities::Pack {
             .invoke("BE_To_UInt32", (bs, off, ns))?;
         Ok(__cordl_ret.into())
     }
-    pub fn BE_To_UInt32_i32_Gc_i32_i32_3(
+    pub fn BE_To_UInt32_i32_Il2CppArray_i32_i32_3(
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         bsOff: i32,
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -74,7 +74,7 @@ impl crate::Org::BouncyCastle::Crypto::Utilities::Pack {
             .invoke("BE_To_UInt32", (bs, bsOff, ns, nsOff, nsLen))?;
         Ok(__cordl_ret.into())
     }
-    pub fn BE_To_UInt64_Gc0(
+    pub fn BE_To_UInt64_Il2CppArray0(
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<u64> {
         let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -89,7 +89,7 @@ impl crate::Org::BouncyCastle::Crypto::Utilities::Pack {
             .invoke("BE_To_UInt64", (bs, off))?;
         Ok(__cordl_ret.into())
     }
-    pub fn BE_To_UInt64_i32_Gc2(
+    pub fn BE_To_UInt64_i32_Il2CppArray2(
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         off: i32,
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
@@ -98,7 +98,7 @@ impl crate::Org::BouncyCastle::Crypto::Utilities::Pack {
             .invoke("BE_To_UInt64", (bs, off, ns))?;
         Ok(__cordl_ret.into())
     }
-    pub fn BE_To_UInt64_i32_Gc_i32_i32_3(
+    pub fn BE_To_UInt64_i32_Il2CppArray_i32_i32_3(
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         bsOff: i32,
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
@@ -109,7 +109,7 @@ impl crate::Org::BouncyCastle::Crypto::Utilities::Pack {
             .invoke("BE_To_UInt64", (bs, bsOff, ns, nsOff, nsLen))?;
         Ok(__cordl_ret.into())
     }
-    pub fn LE_To_UInt16_Gc0(
+    pub fn LE_To_UInt16_Il2CppArray0(
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<u16> {
         let __cordl_ret: u16 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -124,7 +124,7 @@ impl crate::Org::BouncyCastle::Crypto::Utilities::Pack {
             .invoke("LE_To_UInt16", (bs, off))?;
         Ok(__cordl_ret.into())
     }
-    pub fn LE_To_UInt32_Gc0(
+    pub fn LE_To_UInt32_Il2CppArray0(
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -139,7 +139,7 @@ impl crate::Org::BouncyCastle::Crypto::Utilities::Pack {
             .invoke("LE_To_UInt32", (bs, off))?;
         Ok(__cordl_ret.into())
     }
-    pub fn LE_To_UInt32_i32_Gc2(
+    pub fn LE_To_UInt32_i32_Il2CppArray2(
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         off: i32,
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -148,7 +148,7 @@ impl crate::Org::BouncyCastle::Crypto::Utilities::Pack {
             .invoke("LE_To_UInt32", (bs, off, ns))?;
         Ok(__cordl_ret.into())
     }
-    pub fn LE_To_UInt32_i32_Gc_i32_i32_3(
+    pub fn LE_To_UInt32_i32_Il2CppArray_i32_i32_3(
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         bOff: i32,
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -172,7 +172,7 @@ impl crate::Org::BouncyCastle::Crypto::Utilities::Pack {
             .invoke("LE_To_UInt32", (bs, off, count))?;
         Ok(__cordl_ret.into())
     }
-    pub fn LE_To_UInt64_Gc0(
+    pub fn LE_To_UInt64_Il2CppArray0(
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<u64> {
         let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -187,7 +187,7 @@ impl crate::Org::BouncyCastle::Crypto::Utilities::Pack {
             .invoke("LE_To_UInt64", (bs, off))?;
         Ok(__cordl_ret.into())
     }
-    pub fn LE_To_UInt64_i32_Gc2(
+    pub fn LE_To_UInt64_i32_Il2CppArray2(
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         off: i32,
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
@@ -196,7 +196,7 @@ impl crate::Org::BouncyCastle::Crypto::Utilities::Pack {
             .invoke("LE_To_UInt64", (bs, off, ns))?;
         Ok(__cordl_ret.into())
     }
-    pub fn LE_To_UInt64_i32_Gc_i32_i32_3(
+    pub fn LE_To_UInt64_i32_Il2CppArray_i32_i32_3(
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         bsOff: i32,
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
@@ -223,7 +223,7 @@ impl crate::Org::BouncyCastle::Crypto::Utilities::Pack {
             .invoke("UInt16_To_BE", (n, bs, off))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UInt16_To_BE_u16_Gc0(
+    pub fn UInt16_To_BE_u16_Il2CppArray0(
         n: u16,
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -240,7 +240,7 @@ impl crate::Org::BouncyCastle::Crypto::Utilities::Pack {
             .invoke("UInt16_To_LE", (n, bs, off))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UInt16_To_LE_u16_Gc0(
+    pub fn UInt16_To_LE_u16_Il2CppArray0(
         n: u16,
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -248,7 +248,7 @@ impl crate::Org::BouncyCastle::Crypto::Utilities::Pack {
             .invoke("UInt16_To_LE", (n, bs))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UInt32_To_BE_Gc3(
+    pub fn UInt32_To_BE_Il2CppArray3(
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -258,7 +258,7 @@ impl crate::Org::BouncyCastle::Crypto::Utilities::Pack {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("UInt32_To_BE", (ns))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UInt32_To_BE_Gc_Gc_i32_4(
+    pub fn UInt32_To_BE_Il2CppArray_Il2CppArray_i32_4(
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         off: i32,
@@ -267,7 +267,7 @@ impl crate::Org::BouncyCastle::Crypto::Utilities::Pack {
             .invoke("UInt32_To_BE", (ns, bs, off))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UInt32_To_BE_Gc_i32_i32_Gc_i32_5(
+    pub fn UInt32_To_BE_Il2CppArray_i32_i32_Il2CppArray_i32_5(
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         nsOff: i32,
         nsLen: i32,
@@ -288,7 +288,7 @@ impl crate::Org::BouncyCastle::Crypto::Utilities::Pack {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("UInt32_To_BE", (n))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UInt32_To_BE_u32_Gc1(
+    pub fn UInt32_To_BE_u32_Il2CppArray1(
         n: u32,
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -296,7 +296,7 @@ impl crate::Org::BouncyCastle::Crypto::Utilities::Pack {
             .invoke("UInt32_To_BE", (n, bs))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UInt32_To_BE_u32_Gc_i32_2(
+    pub fn UInt32_To_BE_u32_Il2CppArray_i32_2(
         n: u32,
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         off: i32,
@@ -305,7 +305,7 @@ impl crate::Org::BouncyCastle::Crypto::Utilities::Pack {
             .invoke("UInt32_To_BE", (n, bs, off))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UInt32_To_LE_Gc3(
+    pub fn UInt32_To_LE_Il2CppArray3(
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -315,7 +315,7 @@ impl crate::Org::BouncyCastle::Crypto::Utilities::Pack {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("UInt32_To_LE", (ns))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UInt32_To_LE_Gc_Gc_i32_4(
+    pub fn UInt32_To_LE_Il2CppArray_Il2CppArray_i32_4(
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         off: i32,
@@ -334,7 +334,7 @@ impl crate::Org::BouncyCastle::Crypto::Utilities::Pack {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("UInt32_To_LE", (n))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UInt32_To_LE_u32_Gc1(
+    pub fn UInt32_To_LE_u32_Il2CppArray1(
         n: u32,
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -342,7 +342,7 @@ impl crate::Org::BouncyCastle::Crypto::Utilities::Pack {
             .invoke("UInt32_To_LE", (n, bs))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UInt32_To_LE_u32_Gc_i32_2(
+    pub fn UInt32_To_LE_u32_Il2CppArray_i32_2(
         n: u32,
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         off: i32,
@@ -351,7 +351,7 @@ impl crate::Org::BouncyCastle::Crypto::Utilities::Pack {
             .invoke("UInt32_To_LE", (n, bs, off))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UInt64_To_BE_Gc3(
+    pub fn UInt64_To_BE_Il2CppArray3(
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -361,7 +361,7 @@ impl crate::Org::BouncyCastle::Crypto::Utilities::Pack {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("UInt64_To_BE", (ns))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UInt64_To_BE_Gc_Gc_i32_4(
+    pub fn UInt64_To_BE_Il2CppArray_Il2CppArray_i32_4(
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         off: i32,
@@ -370,7 +370,7 @@ impl crate::Org::BouncyCastle::Crypto::Utilities::Pack {
             .invoke("UInt64_To_BE", (ns, bs, off))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UInt64_To_BE_Gc_i32_i32_Gc_i32_5(
+    pub fn UInt64_To_BE_Il2CppArray_i32_i32_Il2CppArray_i32_5(
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
         nsOff: i32,
         nsLen: i32,
@@ -391,7 +391,7 @@ impl crate::Org::BouncyCastle::Crypto::Utilities::Pack {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("UInt64_To_BE", (n))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UInt64_To_BE_u64_Gc1(
+    pub fn UInt64_To_BE_u64_Il2CppArray1(
         n: u64,
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -399,7 +399,7 @@ impl crate::Org::BouncyCastle::Crypto::Utilities::Pack {
             .invoke("UInt64_To_BE", (n, bs))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UInt64_To_BE_u64_Gc_i32_2(
+    pub fn UInt64_To_BE_u64_Il2CppArray_i32_2(
         n: u64,
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         off: i32,
@@ -408,7 +408,7 @@ impl crate::Org::BouncyCastle::Crypto::Utilities::Pack {
             .invoke("UInt64_To_BE", (n, bs, off))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UInt64_To_LE_Gc3(
+    pub fn UInt64_To_LE_Il2CppArray3(
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -418,7 +418,7 @@ impl crate::Org::BouncyCastle::Crypto::Utilities::Pack {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("UInt64_To_LE", (ns))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UInt64_To_LE_Gc_Gc_i32_4(
+    pub fn UInt64_To_LE_Il2CppArray_Il2CppArray_i32_4(
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         off: i32,
@@ -427,7 +427,7 @@ impl crate::Org::BouncyCastle::Crypto::Utilities::Pack {
             .invoke("UInt64_To_LE", (ns, bs, off))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UInt64_To_LE_Gc_i32_i32_Gc_i32_5(
+    pub fn UInt64_To_LE_Il2CppArray_i32_i32_Il2CppArray_i32_5(
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
         nsOff: i32,
         nsLen: i32,
@@ -448,7 +448,7 @@ impl crate::Org::BouncyCastle::Crypto::Utilities::Pack {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("UInt64_To_LE", (n))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UInt64_To_LE_u64_Gc1(
+    pub fn UInt64_To_LE_u64_Il2CppArray1(
         n: u64,
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -456,7 +456,7 @@ impl crate::Org::BouncyCastle::Crypto::Utilities::Pack {
             .invoke("UInt64_To_LE", (n, bs))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UInt64_To_LE_u64_Gc_i32_2(
+    pub fn UInt64_To_LE_u64_Il2CppArray_i32_2(
         n: u64,
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         off: i32,

@@ -2,11 +2,15 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ButtonBinder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _bindings: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Tuple_2<
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction>,
+                >,
+            >,
         >,
     >,
 }
@@ -16,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+ButtonBinder")]
 impl std::ops::Deref for crate::HMUI::ButtonBinder {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,9 +48,13 @@ impl crate::HMUI::ButtonBinder {
     pub fn AddBindings(
         &mut self,
         bindingData: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
-                quest_hook::libil2cpp::Gc<crate::System::Action>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Tuple_2<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+                        quest_hook::libil2cpp::Gc<crate::System::Action>,
+                    >,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -84,21 +92,7 @@ impl crate::HMUI::ButtonBinder {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc2(
-        bindingData: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
-                quest_hook::libil2cpp::Gc<crate::System::Action>,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (bindingData))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_Gc1(
+    pub fn New_Button_Action1(
         button: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
         action: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -106,6 +100,24 @@ impl crate::HMUI::ButtonBinder {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (button, action))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_List_1_2(
+        bindingData: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Tuple_2<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+                        quest_hook::libil2cpp::Gc<crate::System::Action>,
+                    >,
+                >,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (bindingData))?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor_0(
@@ -118,23 +130,7 @@ impl crate::HMUI::ButtonBinder {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
-        &mut self,
-        bindingData: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
-                quest_hook::libil2cpp::Gc<crate::System::Action>,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (bindingData))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_Gc1(
+    pub fn _ctor_Button_Action1(
         &mut self,
         button: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
         action: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -144,6 +140,26 @@ impl crate::HMUI::ButtonBinder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (button, action))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_List_1_2(
+        &mut self,
+        bindingData: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Tuple_2<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+                        quest_hook::libil2cpp::Gc<crate::System::Action>,
+                    >,
+                >,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (bindingData))?;
         Ok(__cordl_ret.into())
     }
 }

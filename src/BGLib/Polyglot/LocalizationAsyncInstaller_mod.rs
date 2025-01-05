@@ -2,14 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LocalizationAsyncInstaller {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
     >,
     pub _mainPolyglotAsset: quest_hook::libil2cpp::Gc<
         crate::BGLib::Polyglot::Localization,
     >,
     pub _inputFiles: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationAsset>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationAsset>,
+        >,
     >,
 }
 #[cfg(feature = "BGLib+Polyglot+LocalizationAsyncInstaller")]
@@ -19,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BGLib+Polyglot+LocalizationAsyncInstaller")]
 impl std::ops::Deref for crate::BGLib::Polyglot::LocalizationAsyncInstaller {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
     >;
     fn deref(&self) -> &Self::Target {
@@ -47,11 +49,15 @@ impl crate::BGLib::Polyglot::LocalizationAsyncInstaller {
     }
     pub fn LoadLocalizationAssetsSync() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationAsset>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationAsset>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationAsset>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationAsset>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("LoadLocalizationAssetsSync", ())?;
         Ok(__cordl_ret.into())
@@ -59,7 +65,9 @@ impl crate::BGLib::Polyglot::LocalizationAsyncInstaller {
     pub fn LoadResourcesBeforeInstall(
         &mut self,
         assets: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
+            >,
         >,
         registry: quest_hook::libil2cpp::Gc<
             crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry,
@@ -74,15 +82,21 @@ impl crate::BGLib::Polyglot::LocalizationAsyncInstaller {
     }
     pub fn LocalizationContentToAsset(
         content: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationAsset>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationAsset>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationAsset>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationAsset>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("LocalizationContentToAsset", (content))?;
         Ok(__cordl_ret.into())

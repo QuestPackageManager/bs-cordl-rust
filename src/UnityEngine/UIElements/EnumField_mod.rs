@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnumField {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::BaseField_1<
         quest_hook::libil2cpp::Gc<crate::System::Enum>,
     >,
     pub m_EnumType: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -15,7 +15,9 @@ pub struct EnumField {
     >,
     pub m_EnumData: crate::UnityEngine::EnumData,
     pub createMenuCallback: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGenericMenu>,
+        crate::System::Func_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGenericMenu>,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+EnumField")]
@@ -25,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+EnumField")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::EnumField {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::BaseField_1<
         quest_hook::libil2cpp::Gc<crate::System::Enum>,
     >;
     fn deref(&self) -> &Self::Target {
@@ -65,7 +67,7 @@ impl crate::UnityEngine::UIElements::EnumField {
         let __cordl_ret: bool = __cordl_object.invoke("ContainsPointer", (pointerId))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Init_Gc0(
+    pub fn Init_Enum0(
         &mut self,
         defaultValue: quest_hook::libil2cpp::Gc<crate::System::Enum>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -106,7 +108,7 @@ impl crate::UnityEngine::UIElements::EnumField {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc1(
+    pub fn New_Il2CppString_Enum1(
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         defaultValue: quest_hook::libil2cpp::Gc<crate::System::Enum>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -164,7 +166,9 @@ impl crate::UnityEngine::UIElements::EnumField {
     }
     pub fn ProcessPointerDown<T>(
         &mut self,
-        evt: quest_hook::libil2cpp::Gc<T>,
+        evt: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::PointerEventBase_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -240,7 +244,7 @@ impl crate::UnityEngine::UIElements::EnumField {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc1(
+    pub fn _ctor_Il2CppString_Enum1(
         &mut self,
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         defaultValue: quest_hook::libil2cpp::Gc<crate::System::Enum>,
@@ -273,7 +277,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::EnumF
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnumField_UxmlFactory {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EnumField>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EnumField_UxmlTraits>,
     >,
@@ -285,7 +289,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+EnumField+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::EnumField_UxmlFactory {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EnumField>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EnumField_UxmlTraits>,
     >;
@@ -333,11 +337,13 @@ for crate::UnityEngine::UIElements::EnumField_UxmlFactory {
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnumField_UxmlTraits {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
         quest_hook::libil2cpp::Gc<crate::System::Enum>,
     >,
     pub m_Type: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Enum>,
+        crate::UnityEngine::UIElements::UxmlTypeAttributeDescription_1<
+            quest_hook::libil2cpp::Gc<crate::System::Enum>,
+        >,
     >,
     pub m_Value: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
@@ -353,7 +359,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+EnumField+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::EnumField_UxmlTraits {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
         quest_hook::libil2cpp::Gc<crate::System::Enum>,
     >;
     fn deref(&self) -> &Self::Target {

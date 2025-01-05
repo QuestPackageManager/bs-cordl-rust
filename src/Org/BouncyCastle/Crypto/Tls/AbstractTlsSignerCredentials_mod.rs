@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AbstractTlsSignerCredentials {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsCredentials,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsCredentials,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsSignerCredentials")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsSignerCredentials")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsSignerCredentials {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsCredentials,
-    >;
+    type Target = crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsCredentials;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -89,54 +85,32 @@ for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsSignerCredentials {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsSignerCredentials")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials>,
-> for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsSignerCredentials {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials,
-    > {
+impl AsRef<crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials>
+for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsSignerCredentials {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsSignerCredentials")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials>,
-> for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsSignerCredentials {
+impl AsMut<crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials>
+for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsSignerCredentials {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsSignerCredentials")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::Tls::TlsSignerCredentials>
+for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsSignerCredentials {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Tls::TlsSignerCredentials {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsSignerCredentials")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::Tls::TlsSignerCredentials>
+for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsSignerCredentials {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsSignerCredentials")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::TlsSignerCredentials,
-    >,
-> for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsSignerCredentials {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::TlsSignerCredentials,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsSignerCredentials")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::TlsSignerCredentials,
-    >,
-> for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsSignerCredentials {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::TlsSignerCredentials,
-    > {
+    ) -> &mut crate::Org::BouncyCastle::Crypto::Tls::TlsSignerCredentials {
         unsafe { std::mem::transmute(self) }
     }
 }

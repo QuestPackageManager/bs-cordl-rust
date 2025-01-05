@@ -35,7 +35,7 @@ impl crate::System::Threading::CancellationToken {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Gc1(
+    pub fn Equals_Il2CppObject1(
         &mut self,
         other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -57,7 +57,9 @@ impl crate::System::Threading::CancellationToken {
     pub fn InternalRegisterWithoutEC(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
@@ -70,7 +72,7 @@ impl crate::System::Threading::CancellationToken {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Register_Gc0(
+    pub fn Register_Action0(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<
@@ -83,10 +85,12 @@ impl crate::System::Threading::CancellationToken {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Register_Gc1(
+    pub fn Register_Action_1_Il2CppObject1(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
@@ -99,10 +103,12 @@ impl crate::System::Threading::CancellationToken {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Register_Gc__cordl_bool__cordl_bool2(
+    pub fn Register_Action_1_Il2CppObject__cordl_bool__cordl_bool2(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         useSynchronizationContext: bool,
@@ -137,7 +143,7 @@ impl crate::System::Threading::CancellationToken {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_CancellationTokenSource0(
         &mut self,
         source: quest_hook::libil2cpp::Gc<
             crate::System::Threading::CancellationTokenSource,

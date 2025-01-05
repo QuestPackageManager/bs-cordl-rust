@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CollectionParser {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Net+Http+Headers+CollectionParser")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Http+Headers+CollectionParser")]
 impl std::ops::Deref for crate::System::Net::Http::Headers::CollectionParser {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,7 +40,9 @@ impl crate::System::Net::Http::Headers::CollectionParser {
         minimalCount: i32,
         result: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                crate::System::Collections::Generic::List_1<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -48,11 +50,15 @@ impl crate::System::Net::Http::Headers::CollectionParser {
             .invoke("TryParse", (input, minimalCount, result))?;
         Ok(__cordl_ret.into())
     }
-    pub fn TryParse_Gc_ByRefMut0<T>(
+    pub fn TryParse_ElementTryParser_1_ByRefMut0<T>(
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         minimalCount: i32,
-        parser: quest_hook::libil2cpp::Gc<T>,
-        result: quest_hook::libil2cpp::ByRefMut<quest_hook::libil2cpp::Gc<T>>,
+        parser: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::Headers::ElementTryParser_1<T>,
+        >,
+        result: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument

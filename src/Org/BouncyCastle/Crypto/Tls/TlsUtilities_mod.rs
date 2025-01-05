@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TlsUtilities {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsUtilities")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsUtilities")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -207,7 +207,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Concat", (a, b))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateHash_Gc1(
+    pub fn CreateHash_SignatureAndHashAlgorithm1(
         signatureAndHashAlgorithm: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::SignatureAndHashAlgorithm,
         >,
@@ -347,13 +347,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     pub fn GenSsl3Const() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GenSsl3Const", ())?;
         Ok(__cordl_ret.into())
@@ -589,7 +589,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             .invoke("IsTimeout", (e))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsTlsV11_Gc0(
+    pub fn IsTlsV11_ProtocolVersion0(
         version: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
         >,
@@ -598,7 +598,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             .invoke("IsTlsV11", (version))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsTlsV11_Gc1(
+    pub fn IsTlsV11_TlsContext1(
         context: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
         >,
@@ -607,7 +607,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             .invoke("IsTlsV11", (context))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsTlsV12_Gc0(
+    pub fn IsTlsV12_ProtocolVersion0(
         version: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
         >,
@@ -616,7 +616,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             .invoke("IsTlsV12", (version))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsTlsV12_Gc1(
+    pub fn IsTlsV12_TlsContext1(
         context: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
         >,
@@ -712,21 +712,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             .invoke("PRF", (context, secret, asciiLabel, seed, _cordl_size))?;
         Ok(__cordl_ret.into())
     }
-    pub fn PRF_legacy_Gc_Gc_Gc_i32_0(
-        secret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-        asciiLabel: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        seed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-        _cordl_size: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PRF_legacy", (secret, asciiLabel, seed, _cordl_size))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn PRF_legacy_Gc_Gc_Gc_i32_1(
+    pub fn PRF_legacy_Il2CppArray1(
         secret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         labelSeed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -738,6 +724,20 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             quest_hook::libil2cpp::Il2CppArray<u8>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("PRF_legacy", (secret, label, labelSeed, _cordl_size))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PRF_legacy_Il2CppString0(
+        secret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        asciiLabel: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        seed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        _cordl_size: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PRF_legacy", (secret, asciiLabel, seed, _cordl_size))?;
         Ok(__cordl_ret.into())
     }
     pub fn ParseSupportedSignatureAlgorithms(
@@ -784,7 +784,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             .invoke("ReadDerObject", (encoding))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadFully_Gc1(
+    pub fn ReadFully_Il2CppArray1(
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -858,14 +858,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             .invoke("ReadUint16Array", (count, input))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadUint16_Gc0(
-        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReadUint16", (input))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ReadUint16_i32_1(
+    pub fn ReadUint16_Il2CppArray_i32_1(
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -873,14 +866,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             .invoke("ReadUint16", (buf, offset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadUint24_Gc0(
+    pub fn ReadUint16_Stream0(
         input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReadUint24", (input))?;
+            .invoke("ReadUint16", (input))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadUint24_i32_1(
+    pub fn ReadUint24_Il2CppArray_i32_1(
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -888,14 +881,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             .invoke("ReadUint24", (buf, offset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadUint32_Gc0(
+    pub fn ReadUint24_Stream0(
         input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReadUint32", (input))?;
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadUint24", (input))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadUint32_i32_1(
+    pub fn ReadUint32_Il2CppArray_i32_1(
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<i64> {
@@ -903,19 +896,26 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             .invoke("ReadUint32", (buf, offset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadUint48_Gc0(
+    pub fn ReadUint32_Stream0(
         input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReadUint48", (input))?;
+            .invoke("ReadUint32", (input))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadUint48_i32_1(
+    pub fn ReadUint48_Il2CppArray_i32_1(
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ReadUint48", (buf, offset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadUint48_Stream0(
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadUint48", (input))?;
         Ok(__cordl_ret.into())
     }
     pub fn ReadUint8Array(
@@ -930,14 +930,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             .invoke("ReadUint8Array", (count, input))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadUint8_Gc0(
-        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    ) -> quest_hook::libil2cpp::Result<u8> {
-        let __cordl_ret: u8 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReadUint8", (input))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ReadUint8_i32_1(
+    pub fn ReadUint8_Il2CppArray_i32_1(
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<u8> {
@@ -945,14 +938,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             .invoke("ReadUint8", (buf, offset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadVersionRaw_Gc1(
+    pub fn ReadUint8_Stream0(
         input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReadVersionRaw", (input))?;
+    ) -> quest_hook::libil2cpp::Result<u8> {
+        let __cordl_ret: u8 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadUint8", (input))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadVersionRaw_i32_0(
+    pub fn ReadVersionRaw_Il2CppArray_i32_0(
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -960,18 +953,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             .invoke("ReadVersionRaw", (buf, offset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadVersion_Gc1(
+    pub fn ReadVersionRaw_Stream1(
         input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReadVersion", (input))?;
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadVersionRaw", (input))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadVersion_i32_0(
+    pub fn ReadVersion_Il2CppArray_i32_0(
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<
@@ -981,6 +970,17 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ReadVersion", (buf, offset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadVersion_Stream1(
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadVersion", (input))?;
         Ok(__cordl_ret.into())
     }
     pub fn TrackHashAlgorithms(
@@ -1064,15 +1064,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             .invoke("WriteOpaque8", (buf, output))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteUint16ArrayWithUint16Length_Gc_Gc0(
-        uints: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
-        output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("WriteUint16ArrayWithUint16Length", (uints, output))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn WriteUint16ArrayWithUint16Length_i32_1(
+    pub fn WriteUint16ArrayWithUint16Length_Il2CppArray_i32_1(
         uints: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
@@ -1081,15 +1073,15 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             .invoke("WriteUint16ArrayWithUint16Length", (uints, buf, offset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteUint16Array_Gc_Gc0(
+    pub fn WriteUint16ArrayWithUint16Length_Stream0(
         uints: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("WriteUint16Array", (uints, output))?;
+            .invoke("WriteUint16ArrayWithUint16Length", (uints, output))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteUint16Array_i32_1(
+    pub fn WriteUint16Array_Il2CppArray_i32_1(
         uints: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
@@ -1098,7 +1090,15 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             .invoke("WriteUint16Array", (uints, buf, offset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteUint16_i32_1(
+    pub fn WriteUint16Array_Stream0(
+        uints: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteUint16Array", (uints, output))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteUint16_Il2CppArray_i32_1(
         i: i32,
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
@@ -1107,7 +1107,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             .invoke("WriteUint16", (i, buf, offset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteUint16_i32_Gc0(
+    pub fn WriteUint16_Stream0(
         i: i32,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1115,7 +1115,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             .invoke("WriteUint16", (i, output))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteUint24_i32_1(
+    pub fn WriteUint24_Il2CppArray_i32_1(
         i: i32,
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
@@ -1124,7 +1124,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             .invoke("WriteUint24", (i, buf, offset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteUint24_i32_Gc0(
+    pub fn WriteUint24_Stream0(
         i: i32,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1132,7 +1132,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             .invoke("WriteUint24", (i, output))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteUint32_i32_1(
+    pub fn WriteUint32_Il2CppArray_i32_1(
         i: i64,
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
@@ -1141,7 +1141,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             .invoke("WriteUint32", (i, buf, offset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteUint32_i64_Gc0(
+    pub fn WriteUint32_Stream0(
         i: i64,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1149,7 +1149,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             .invoke("WriteUint32", (i, output))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteUint48_i32_1(
+    pub fn WriteUint48_Il2CppArray_i32_1(
         i: i64,
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
@@ -1158,7 +1158,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             .invoke("WriteUint48", (i, buf, offset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteUint48_i64_Gc0(
+    pub fn WriteUint48_Stream0(
         i: i64,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1166,7 +1166,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             .invoke("WriteUint48", (i, output))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteUint64_i32_1(
+    pub fn WriteUint64_Il2CppArray_i32_1(
         i: i64,
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
@@ -1175,7 +1175,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             .invoke("WriteUint64", (i, buf, offset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteUint64_i64_Gc0(
+    pub fn WriteUint64_Stream0(
         i: i64,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1183,15 +1183,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             .invoke("WriteUint64", (i, output))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteUint8ArrayWithUint8Length_Gc_Gc0(
-        uints: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-        output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("WriteUint8ArrayWithUint8Length", (uints, output))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn WriteUint8ArrayWithUint8Length_i32_1(
+    pub fn WriteUint8ArrayWithUint8Length_Il2CppArray_i32_1(
         uints: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
@@ -1200,15 +1192,15 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             .invoke("WriteUint8ArrayWithUint8Length", (uints, buf, offset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteUint8Array_Gc_Gc0(
+    pub fn WriteUint8ArrayWithUint8Length_Stream0(
         uints: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("WriteUint8Array", (uints, output))?;
+            .invoke("WriteUint8ArrayWithUint8Length", (uints, output))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteUint8Array_i32_1(
+    pub fn WriteUint8Array_Il2CppArray_i32_1(
         uints: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
@@ -1217,7 +1209,15 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             .invoke("WriteUint8Array", (uints, buf, offset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteUint8_i32_1(
+    pub fn WriteUint8Array_Stream0(
+        uints: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteUint8Array", (uints, output))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteUint8_Il2CppArray_i32_1(
         i: u8,
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
@@ -1226,7 +1226,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             .invoke("WriteUint8", (i, buf, offset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteUint8_u8_Gc0(
+    pub fn WriteUint8_Stream0(
         i: u8,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1234,17 +1234,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             .invoke("WriteUint8", (i, output))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteVersion_Gc_Gc0(
-        version: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
-        >,
-        output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("WriteVersion", (version, output))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn WriteVersion_i32_1(
+    pub fn WriteVersion_Il2CppArray_i32_1(
         version: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
         >,
@@ -1253,6 +1243,16 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("WriteVersion", (version, buf, offset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteVersion_Stream0(
+        version: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
+        >,
+        output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteVersion", (version, output))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

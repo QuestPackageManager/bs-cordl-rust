@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonException {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    __cordl_parent: crate::System::Exception,
 }
 #[cfg(feature = "Newtonsoft+Json+JsonException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+JsonException")]
 impl std::ops::Deref for crate::Newtonsoft::Json::JsonException {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Exception>;
+    type Target = crate::System::Exception;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,7 +44,7 @@ impl crate::Newtonsoft::Json::JsonException {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Il2CppString1(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -53,7 +53,7 @@ impl crate::Newtonsoft::Json::JsonException {
             .invoke_void(".ctor", (message))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc2(
+    pub fn New_Il2CppString_Exception2(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -63,7 +63,7 @@ impl crate::Newtonsoft::Json::JsonException {
             .invoke_void(".ctor", (message, innerException))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_StreamingContext3(
+    pub fn New_SerializationInfo_StreamingContext3(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -85,7 +85,7 @@ impl crate::Newtonsoft::Json::JsonException {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -96,7 +96,7 @@ impl crate::Newtonsoft::Json::JsonException {
             .invoke(".ctor", (message))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc2(
+    pub fn _ctor_Il2CppString_Exception2(
         &mut self,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
@@ -108,7 +108,7 @@ impl crate::Newtonsoft::Json::JsonException {
             .invoke(".ctor", (message, innerException))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_StreamingContext3(
+    pub fn _ctor_SerializationInfo_StreamingContext3(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,

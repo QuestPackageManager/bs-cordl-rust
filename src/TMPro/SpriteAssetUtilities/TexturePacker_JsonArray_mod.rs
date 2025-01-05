@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TexturePacker_JsonArray {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray")]
 impl std::ops::Deref for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -131,9 +131,11 @@ impl crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta {}
 #[repr(C)]
 #[derive(Debug)]
 pub struct TexturePacker_JsonArray_SpriteDataObject {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub frames: quest_hook::libil2cpp::Gc<
-        crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame,
+        crate::System::Collections::Generic::List_1<
+            crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame,
+        >,
     >,
     pub meta: crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta,
 }
@@ -146,7 +148,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteDataObject")]
 impl std::ops::Deref
 for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteDataObject {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

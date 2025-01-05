@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HttpWebResponse {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Net::WebResponse>,
+    __cordl_parent: crate::System::Net::WebResponse,
     pub uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
     pub webHeaders: quest_hook::libil2cpp::Gc<crate::System::Net::WebHeaderCollection>,
     pub cookieCollection: quest_hook::libil2cpp::Gc<
@@ -27,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+HttpWebResponse")]
 impl std::ops::Deref for crate::System::Net::HttpWebResponse {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Net::WebResponse>;
+    type Target = crate::System::Net::WebResponse;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -114,19 +114,19 @@ impl crate::System::Net::HttpWebResponse {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc_Gc_Gc2(
-        uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
-        method: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        stream: quest_hook::libil2cpp::Gc<crate::System::Net::WebResponseStream>,
-        container: quest_hook::libil2cpp::Gc<crate::System::Net::CookieContainer>,
+    pub fn New_SerializationInfo_StreamingContext3(
+        serializationInfo: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
+        streamingContext: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (uri, method, stream, container))?;
+            .invoke_void(".ctor", (serializationInfo, streamingContext))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc_HttpStatusCode_Gc1(
+    pub fn New_Uri_Il2CppString_HttpStatusCode_WebHeaderCollection1(
         uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
         method: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         status: crate::System::Net::HttpStatusCode,
@@ -138,16 +138,16 @@ impl crate::System::Net::HttpWebResponse {
             .invoke_void(".ctor", (uri, method, status, headers))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_StreamingContext3(
-        serializationInfo: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::Serialization::SerializationInfo,
-        >,
-        streamingContext: crate::System::Runtime::Serialization::StreamingContext,
+    pub fn New_Uri_Il2CppString_WebResponseStream_CookieContainer2(
+        uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+        method: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        stream: quest_hook::libil2cpp::Gc<crate::System::Net::WebResponseStream>,
+        container: quest_hook::libil2cpp::Gc<crate::System::Net::CookieContainer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (serializationInfo, streamingContext))?;
+            .invoke_void(".ctor", (uri, method, stream, container))?;
         Ok(__cordl_object.into())
     }
     pub fn System_IDisposable_Dispose(
@@ -187,21 +187,21 @@ impl crate::System::Net::HttpWebResponse {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_Gc_Gc2(
+    pub fn _ctor_SerializationInfo_StreamingContext3(
         &mut self,
-        uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
-        method: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        stream: quest_hook::libil2cpp::Gc<crate::System::Net::WebResponseStream>,
-        container: quest_hook::libil2cpp::Gc<crate::System::Net::CookieContainer>,
+        serializationInfo: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
+        streamingContext: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (uri, method, stream, container))?;
+            .invoke(".ctor", (serializationInfo, streamingContext))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_HttpStatusCode_Gc1(
+    pub fn _ctor_Uri_Il2CppString_HttpStatusCode_WebHeaderCollection1(
         &mut self,
         uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
         method: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -215,18 +215,18 @@ impl crate::System::Net::HttpWebResponse {
             .invoke(".ctor", (uri, method, status, headers))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_StreamingContext3(
+    pub fn _ctor_Uri_Il2CppString_WebResponseStream_CookieContainer2(
         &mut self,
-        serializationInfo: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::Serialization::SerializationInfo,
-        >,
-        streamingContext: crate::System::Runtime::Serialization::StreamingContext,
+        uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+        method: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        stream: quest_hook::libil2cpp::Gc<crate::System::Net::WebResponseStream>,
+        container: quest_hook::libil2cpp::Gc<crate::System::Net::CookieContainer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (serializationInfo, streamingContext))?;
+            .invoke(".ctor", (uri, method, stream, container))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_Headers(
@@ -286,40 +286,28 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::HttpWebResponse {
     }
 }
 #[cfg(feature = "System+Net+HttpWebResponse")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsRef<crate::System::IDisposable> for crate::System::Net::HttpWebResponse {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+HttpWebResponse")]
+impl AsMut<crate::System::IDisposable> for crate::System::Net::HttpWebResponse {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+HttpWebResponse")]
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
 for crate::System::Net::HttpWebResponse {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Net+HttpWebResponse")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
 for crate::System::Net::HttpWebResponse {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Net+HttpWebResponse")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::Net::HttpWebResponse {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Net+HttpWebResponse")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::Net::HttpWebResponse {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }

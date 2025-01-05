@@ -2,13 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Task_WhenAllPromise {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::System::Threading::Tasks::Task_1<
         crate::System::Threading::Tasks::VoidTaskResult,
     >,
     pub m_tasks: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Threading::Tasks::Task>,
     >,
     pub m_count: i32,
 }
@@ -19,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+Tasks+Task+WhenAllPromise")]
 impl std::ops::Deref for crate::GlobalNamespace::Task_WhenAllPromise {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::System::Threading::Tasks::Task_1<
         crate::System::Threading::Tasks::VoidTaskResult,
     >;
     fn deref(&self) -> &Self::Target {
@@ -48,7 +46,7 @@ impl crate::GlobalNamespace::Task_WhenAllPromise {
     pub fn New(
         tasks: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+                *mut crate::System::Threading::Tasks::Task,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -62,7 +60,7 @@ impl crate::GlobalNamespace::Task_WhenAllPromise {
         &mut self,
         tasks: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+                *mut crate::System::Threading::Tasks::Task,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -104,26 +102,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Task_WhenAllP
     }
 }
 #[cfg(feature = "System+Threading+Tasks+Task+WhenAllPromise")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::ITaskCompletionAction>,
-> for crate::GlobalNamespace::Task_WhenAllPromise {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Threading::Tasks::ITaskCompletionAction,
-    > {
+impl AsRef<crate::System::Threading::Tasks::ITaskCompletionAction>
+for crate::GlobalNamespace::Task_WhenAllPromise {
+    fn as_ref(&self) -> &crate::System::Threading::Tasks::ITaskCompletionAction {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Threading+Tasks+Task+WhenAllPromise")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::ITaskCompletionAction>,
-> for crate::GlobalNamespace::Task_WhenAllPromise {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Threading::Tasks::ITaskCompletionAction,
-    > {
+impl AsMut<crate::System::Threading::Tasks::ITaskCompletionAction>
+for crate::GlobalNamespace::Task_WhenAllPromise {
+    fn as_mut(&mut self) -> &mut crate::System::Threading::Tasks::ITaskCompletionAction {
         unsafe { std::mem::transmute(self) }
     }
 }

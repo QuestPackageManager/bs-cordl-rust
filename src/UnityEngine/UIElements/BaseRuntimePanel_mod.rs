@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseRuntimePanel {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Panel>,
+    __cordl_parent: crate::UnityEngine::UIElements::Panel,
     pub m_SelectableGameObject: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::GameObject,
     >,
@@ -18,8 +18,7 @@ pub struct BaseRuntimePanel {
     pub panelToWorld: crate::UnityEngine::Matrix4x4,
     pub _targetDisplay_k__BackingField: i32,
     pub m_ScreenToPanelSpace: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Vector2,
-        crate::UnityEngine::Vector2,
+        crate::System::Func_2<crate::UnityEngine::Vector2, crate::UnityEngine::Vector2>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseRuntimePanel")]
@@ -29,7 +28,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+BaseRuntimePanel")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::BaseRuntimePanel {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Panel>;
+    type Target = crate::UnityEngine::UIElements::Panel;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -202,16 +201,20 @@ impl crate::UnityEngine::UIElements::BaseRuntimePanel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Vector2,
-            crate::UnityEngine::Vector2,
+            crate::System::Func_2<
+                crate::UnityEngine::Vector2,
+                crate::UnityEngine::Vector2,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Vector2,
-            crate::UnityEngine::Vector2,
+            crate::System::Func_2<
+                crate::UnityEngine::Vector2,
+                crate::UnityEngine::Vector2,
+            >,
         > = __cordl_object.invoke("get_screenToPanelSpace", ())?;
         Ok(__cordl_ret.into())
     }
@@ -278,8 +281,10 @@ impl crate::UnityEngine::UIElements::BaseRuntimePanel {
     pub fn set_screenToPanelSpace(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Vector2,
-            crate::UnityEngine::Vector2,
+            crate::System::Func_2<
+                crate::UnityEngine::Vector2,
+                crate::UnityEngine::Vector2,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

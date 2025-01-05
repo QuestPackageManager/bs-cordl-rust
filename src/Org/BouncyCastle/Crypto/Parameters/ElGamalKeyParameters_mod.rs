@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ElGamalKeyParameters {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
     pub parameters: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Parameters::ElGamalParameters,
     >,
@@ -18,9 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+ElGamalKeyParameters")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Parameters::ElGamalKeyParameters {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-    >;
+    type Target = crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,17 +30,7 @@ for crate::Org::BouncyCastle::Crypto::Parameters::ElGamalKeyParameters {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+ElGamalKeyParameters")]
 impl crate::Org::BouncyCastle::Crypto::Parameters::ElGamalKeyParameters {
-    pub fn Equals_Gc0(
-        &mut self,
-        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Equals_Gc1(
+    pub fn Equals_ElGamalKeyParameters1(
         &mut self,
         other: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::ElGamalKeyParameters,
@@ -54,6 +40,16 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::ElGamalKeyParameters {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Equals_Il2CppObject0(
+        &mut self,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {

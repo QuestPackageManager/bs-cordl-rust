@@ -5,7 +5,7 @@ pub struct BaseUxmlFactory_2<
     TCreatedType: quest_hook::libil2cpp::Type,
     TTraits: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Traits: TTraits,
     __cordl_phantom_TCreatedType: std::marker::PhantomData<TCreatedType>,
     __cordl_phantom_TTraits: std::marker::PhantomData<TTraits>,
@@ -22,7 +22,7 @@ impl<
     TTraits: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::UnityEngine::UIElements::BaseUxmlFactory_2<TCreatedType, TTraits> {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

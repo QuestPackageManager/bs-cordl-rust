@@ -2,10 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapLevelDataLoader {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _loadRequests: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelDataLoadRequest>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BeatmapLevelDataLoadRequest,
+            >,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapLevelDataLoader")]
@@ -15,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapLevelDataLoader")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelDataLoader {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -33,11 +37,15 @@ impl crate::GlobalNamespace::BeatmapLevelDataLoader {
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         assetBundlePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<bool>,
+        > = __cordl_object
             .invoke(
                 "CheckBeatmapLevelDataFromAssetBundleExistsAsync",
                 (levelId, assetBundlePath, cancellationToken),
@@ -64,14 +72,18 @@ impl crate::GlobalNamespace::BeatmapLevelDataLoader {
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
+            >,
         > = __cordl_object
             .invoke(
                 "LoadBeatmapLevelDataFromAssetBundleAsync",
@@ -125,16 +137,16 @@ for crate::GlobalNamespace::BeatmapLevelDataLoader {
     }
 }
 #[cfg(feature = "BeatmapLevelDataLoader")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsRef<crate::System::IDisposable>
 for crate::GlobalNamespace::BeatmapLevelDataLoader {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BeatmapLevelDataLoader")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsMut<crate::System::IDisposable>
 for crate::GlobalNamespace::BeatmapLevelDataLoader {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }

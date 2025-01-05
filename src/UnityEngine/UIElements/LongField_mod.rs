@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LongField {
-    __cordl_parent: quest_hook::libil2cpp::Gc<i64>,
+    __cordl_parent: crate::UnityEngine::UIElements::TextValueField_1<i64>,
 }
 #[cfg(feature = "UnityEngine+UIElements+LongField")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+LongField")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::LongField {
-    type Target = quest_hook::libil2cpp::Gc<i64>;
+    type Target = crate::UnityEngine::UIElements::TextValueField_1<i64>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -60,7 +60,7 @@ impl crate::UnityEngine::UIElements::LongField {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_i32_1(
+    pub fn New_Il2CppString_i32_1(
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         maxLength: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -104,7 +104,7 @@ impl crate::UnityEngine::UIElements::LongField {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_i32_1(
+    pub fn _ctor_Il2CppString_i32_1(
         &mut self,
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         maxLength: i32,
@@ -143,7 +143,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::LongF
 #[repr(C)]
 #[derive(Debug)]
 pub struct LongField_LongInput {
-    __cordl_parent: quest_hook::libil2cpp::Gc<i64>,
+    __cordl_parent: crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<i64>,
 }
 #[cfg(feature = "UnityEngine+UIElements+LongField+LongInput")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -152,7 +152,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+LongField+LongInput")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::LongField_LongInput {
-    type Target = quest_hook::libil2cpp::Gc<i64>;
+    type Target = crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<i64>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -272,7 +272,7 @@ for crate::UnityEngine::UIElements::LongField_LongInput {
 #[repr(C)]
 #[derive(Debug)]
 pub struct LongField_UxmlFactory {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::LongField>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::LongField_UxmlTraits>,
     >,
@@ -284,7 +284,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+LongField+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::LongField_UxmlFactory {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::LongField>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::LongField_UxmlTraits>,
     >;
@@ -332,7 +332,7 @@ for crate::UnityEngine::UIElements::LongField_UxmlFactory {
 #[repr(C)]
 #[derive(Debug)]
 pub struct LongField_UxmlTraits {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::TextValueFieldTraits_2<
         i64,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::UxmlLongAttributeDescription,
@@ -346,7 +346,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+LongField+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::LongField_UxmlTraits {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::TextValueFieldTraits_2<
         i64,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::UxmlLongAttributeDescription,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CounterSignatureDigestCalculator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub alg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Cms+CounterSignatureDigestCalculator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::CounterSignatureDigestCalculator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -76,22 +76,16 @@ for crate::Org::BouncyCastle::Cms::CounterSignatureDigestCalculator {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CounterSignatureDigestCalculator")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::IDigestCalculator>>
+impl AsRef<crate::Org::BouncyCastle::Cms::IDigestCalculator>
 for crate::Org::BouncyCastle::Cms::CounterSignatureDigestCalculator {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::IDigestCalculator> {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Cms::IDigestCalculator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CounterSignatureDigestCalculator")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::IDigestCalculator>>
+impl AsMut<crate::Org::BouncyCastle::Cms::IDigestCalculator>
 for crate::Org::BouncyCastle::Cms::CounterSignatureDigestCalculator {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Cms::IDigestCalculator,
-    > {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Cms::IDigestCalculator {
         unsafe { std::mem::transmute(self) }
     }
 }

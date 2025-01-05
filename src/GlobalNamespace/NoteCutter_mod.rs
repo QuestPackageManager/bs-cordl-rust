@@ -2,17 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteCutter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _colliders: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
     >,
     pub _cuttableBySaberSortParams: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::NoteCutter_CuttableBySaberSortParams,
-            >,
+            *mut crate::GlobalNamespace::NoteCutter_CuttableBySaberSortParams,
         >,
     >,
     pub _comparer: quest_hook::libil2cpp::Gc<
@@ -25,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "NoteCutter")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteCutter {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -85,7 +81,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteCutter {
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteCutter_CuttableBySaberSortParams {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub cuttableBySaber: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::CuttableBySaber,
     >,
@@ -100,7 +96,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "NoteCutter+CuttableBySaberSortParams")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteCutter_CuttableBySaberSortParams {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -146,7 +142,7 @@ for crate::GlobalNamespace::NoteCutter_CuttableBySaberSortParams {
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteCutter_CuttableBySaberSortParamsComparer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "NoteCutter+CuttableBySaberSortParamsComparer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -157,7 +153,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "NoteCutter+CuttableBySaberSortParamsComparer")]
 impl std::ops::Deref
 for crate::GlobalNamespace::NoteCutter_CuttableBySaberSortParamsComparer {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -211,20 +207,16 @@ for crate::GlobalNamespace::NoteCutter_CuttableBySaberSortParamsComparer {
     }
 }
 #[cfg(feature = "NoteCutter+CuttableBySaberSortParamsComparer")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>>
+impl AsRef<crate::System::Collections::IComparer>
 for crate::GlobalNamespace::NoteCutter_CuttableBySaberSortParamsComparer {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer> {
+    fn as_ref(&self) -> &crate::System::Collections::IComparer {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "NoteCutter+CuttableBySaberSortParamsComparer")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>>
+impl AsMut<crate::System::Collections::IComparer>
 for crate::GlobalNamespace::NoteCutter_CuttableBySaberSortParamsComparer {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IComparer {
         unsafe { std::mem::transmute(self) }
     }
 }

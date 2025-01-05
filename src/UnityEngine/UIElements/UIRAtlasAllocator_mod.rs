@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UIRAtlasAllocator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _maxAtlasSize_k__BackingField: i32,
     pub _maxImageWidth_k__BackingField: i32,
     pub _maxImageHeight_k__BackingField: i32,
@@ -15,9 +15,7 @@ pub struct UIRAtlasAllocator {
     >,
     pub m_OpenRows: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::UIRAtlasAllocator_Row,
-            >,
+            *mut crate::UnityEngine::UIElements::UIRAtlasAllocator_Row,
         >,
     >,
     pub m_1SidePadding: i32,
@@ -31,7 +29,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIRAtlasAllocator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -260,16 +258,16 @@ for crate::UnityEngine::UIElements::UIRAtlasAllocator {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsRef<crate::System::IDisposable>
 for crate::UnityEngine::UIElements::UIRAtlasAllocator {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsMut<crate::System::IDisposable>
 for crate::UnityEngine::UIElements::UIRAtlasAllocator {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -277,7 +275,7 @@ for crate::UnityEngine::UIElements::UIRAtlasAllocator {
 #[repr(C)]
 #[derive(Debug)]
 pub struct UIRAtlasAllocator_AreaNode {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub rect: crate::UnityEngine::RectInt,
     pub previous: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UIRAtlasAllocator_AreaNode,
@@ -294,7 +292,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator+AreaNode")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIRAtlasAllocator_AreaNode {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -384,7 +382,7 @@ for crate::UnityEngine::UIElements::UIRAtlasAllocator_AreaNode {
 #[repr(C)]
 #[derive(Debug)]
 pub struct UIRAtlasAllocator_Row {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _offsetX_k__BackingField: i32,
     pub _offsetY_k__BackingField: i32,
     pub _width_k__BackingField: i32,
@@ -398,7 +396,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator+Row")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIRAtlasAllocator_Row {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

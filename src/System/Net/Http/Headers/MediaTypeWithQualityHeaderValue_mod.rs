@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MediaTypeWithQualityHeaderValue {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Net::Http::Headers::MediaTypeHeaderValue,
-    >,
+    __cordl_parent: crate::System::Net::Http::Headers::MediaTypeHeaderValue,
 }
 #[cfg(feature = "System+Net+Http+Headers+MediaTypeWithQualityHeaderValue")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Net+Http+Headers+MediaTypeWithQualityHeaderValue")]
 impl std::ops::Deref
 for crate::System::Net::Http::Headers::MediaTypeWithQualityHeaderValue {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Net::Http::Headers::MediaTypeHeaderValue,
-    >;
+    type Target = crate::System::Net::Http::Headers::MediaTypeHeaderValue;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -43,8 +39,10 @@ impl crate::System::Net::Http::Headers::MediaTypeWithQualityHeaderValue {
         minimalCount: i32,
         result: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Net::Http::Headers::MediaTypeWithQualityHeaderValue,
+                crate::System::Collections::Generic::List_1<
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Net::Http::Headers::MediaTypeWithQualityHeaderValue,
+                    >,
                 >,
             >,
         >,

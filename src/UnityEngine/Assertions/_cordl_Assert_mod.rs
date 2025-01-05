@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct _cordl_Assert {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+Assertions+Assert")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Assertions+Assert")]
 impl std::ops::Deref for crate::UnityEngine::Assertions::_cordl_Assert {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,7 +24,7 @@ impl std::ops::DerefMut for crate::UnityEngine::Assertions::_cordl_Assert {
 }
 #[cfg(feature = "UnityEngine+Assertions+Assert")]
 impl crate::UnityEngine::Assertions::_cordl_Assert {
-    pub fn AreEqual_Gc_Gc_Gc3(
+    pub fn AreEqual_Object_Object_Il2CppString3(
         expected: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         actual: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -45,7 +45,7 @@ impl crate::UnityEngine::Assertions::_cordl_Assert {
             .invoke("AreEqual", (expected, actual))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AreEqual_T_T_Gc1<T>(
+    pub fn AreEqual_T_T_Il2CppString1<T>(
         expected: T,
         actual: T,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -58,11 +58,13 @@ impl crate::UnityEngine::Assertions::_cordl_Assert {
             .invoke("AreEqual", (expected, actual, message))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AreEqual_T_T_Gc_Gc2<T>(
+    pub fn AreEqual_T_T_Il2CppString_IEqualityComparer_1_2<T>(
         expected: T,
         actual: T,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        comparer: quest_hook::libil2cpp::Gc<T>,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -96,7 +98,7 @@ impl crate::UnityEngine::Assertions::_cordl_Assert {
             .invoke("IsFalse", (condition, message))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsNotNull_Gc_Gc2(
+    pub fn IsNotNull_Object_Il2CppString2(
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -115,7 +117,7 @@ impl crate::UnityEngine::Assertions::_cordl_Assert {
             .invoke("IsNotNull", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsNotNull_T_Gc1<T>(
+    pub fn IsNotNull_T_Il2CppString1<T>(
         value: T,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -127,7 +129,7 @@ impl crate::UnityEngine::Assertions::_cordl_Assert {
             .invoke("IsNotNull", (value, message))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsNull_Gc_Gc2(
+    pub fn IsNull_Object_Il2CppString2(
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -146,7 +148,7 @@ impl crate::UnityEngine::Assertions::_cordl_Assert {
             .invoke("IsNull", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsNull_T_Gc1<T>(
+    pub fn IsNull_T_Il2CppString1<T>(
         value: T,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -158,7 +160,7 @@ impl crate::UnityEngine::Assertions::_cordl_Assert {
             .invoke("IsNull", (value, message))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsTrue_Gc1(
+    pub fn IsTrue_Il2CppString1(
         condition: bool,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

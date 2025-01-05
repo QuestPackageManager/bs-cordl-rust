@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRSpaceQuery {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRSpaceQuery")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRSpaceQuery")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSpaceQuery {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -46,7 +46,9 @@ pub struct OVRSpaceQuery_Options {
     pub _QueryType_k__BackingField: crate::GlobalNamespace::OVRPlugin_SpaceQueryType,
     pub _ActionType_k__BackingField: crate::GlobalNamespace::OVRPlugin_SpaceQueryActionType,
     pub _componentType: crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
-    pub _uuidFilter: quest_hook::libil2cpp::Gc<crate::System::Guid>,
+    pub _uuidFilter: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEnumerable_1<crate::System::Guid>,
+    >,
 }
 #[cfg(feature = "OVRSpaceQuery+Options")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -91,7 +93,9 @@ impl crate::GlobalNamespace::OVRSpaceQuery_Options {
         Ok(__cordl_ret.into())
     }
     pub fn ValidateSingleFilter(
-        uuidFilter: quest_hook::libil2cpp::Gc<crate::System::Guid>,
+        uuidFilter: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<crate::System::Guid>,
+        >,
         componentFilter: crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -175,12 +179,14 @@ impl crate::GlobalNamespace::OVRSpaceQuery_Options {
     }
     pub fn get_UuidFilter(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Guid>> {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Guid> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_UuidFilter",
-            (),
-        )?;
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<crate::System::Guid>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<crate::System::Guid>,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_UuidFilter", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn set_ActionType(
@@ -251,7 +257,9 @@ impl crate::GlobalNamespace::OVRSpaceQuery_Options {
     }
     pub fn set_UuidFilter(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Guid>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<crate::System::Guid>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

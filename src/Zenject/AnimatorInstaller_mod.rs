@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AnimatorInstaller {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Zenject::Installer_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Animator>,
         quest_hook::libil2cpp::Gc<crate::Zenject::AnimatorInstaller>,
     >,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+AnimatorInstaller")]
 impl std::ops::Deref for crate::Zenject::AnimatorInstaller {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Zenject::Installer_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Animator>,
         quest_hook::libil2cpp::Gc<crate::Zenject::AnimatorInstaller>,
     >;
@@ -52,9 +52,7 @@ impl crate::Zenject::AnimatorInstaller {
     }
     pub fn __zenCreate(
         P_0: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

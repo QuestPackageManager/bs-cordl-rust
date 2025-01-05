@@ -2,19 +2,19 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SymmetricAlgorithm {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub BlockSizeValue: i32,
     pub FeedbackSizeValue: i32,
     pub IVValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub KeyValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub LegalBlockSizesValue: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::KeySizes>,
+            *mut crate::System::Security::Cryptography::KeySizes,
         >,
     >,
     pub LegalKeySizesValue: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::KeySizes>,
+            *mut crate::System::Security::Cryptography::KeySizes,
         >,
     >,
     pub KeySizeValue: i32,
@@ -29,7 +29,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+Cryptography+SymmetricAlgorithm")]
 impl std::ops::Deref for crate::System::Security::Cryptography::SymmetricAlgorithm {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -79,7 +79,7 @@ impl crate::System::Security::Cryptography::SymmetricAlgorithm {
         > = __cordl_object.invoke("CreateDecryptor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateDecryptor_Gc_Gc1(
+    pub fn CreateDecryptor_Il2CppArray_Il2CppArray1(
         &mut self,
         rgbKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         rgbIV: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -111,7 +111,7 @@ impl crate::System::Security::Cryptography::SymmetricAlgorithm {
         > = __cordl_object.invoke("CreateEncryptor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateEncryptor_Gc_Gc1(
+    pub fn CreateEncryptor_Il2CppArray_Il2CppArray1(
         &mut self,
         rgbKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         rgbIV: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -248,9 +248,7 @@ impl crate::System::Security::Cryptography::SymmetricAlgorithm {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Security::Cryptography::KeySizes,
-                >,
+                *mut crate::System::Security::Cryptography::KeySizes,
             >,
         >,
     > {
@@ -259,9 +257,7 @@ impl crate::System::Security::Cryptography::SymmetricAlgorithm {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Security::Cryptography::KeySizes,
-                >,
+                *mut crate::System::Security::Cryptography::KeySizes,
             >,
         > = __cordl_object.invoke("get_LegalKeySizes", ())?;
         Ok(__cordl_ret.into())
@@ -368,16 +364,16 @@ for crate::System::Security::Cryptography::SymmetricAlgorithm {
     }
 }
 #[cfg(feature = "System+Security+Cryptography+SymmetricAlgorithm")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsRef<crate::System::IDisposable>
 for crate::System::Security::Cryptography::SymmetricAlgorithm {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Security+Cryptography+SymmetricAlgorithm")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsMut<crate::System::IDisposable>
 for crate::System::Security::Cryptography::SymmetricAlgorithm {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }

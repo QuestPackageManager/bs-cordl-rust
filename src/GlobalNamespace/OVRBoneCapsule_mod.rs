@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRBoneCapsule {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _BoneIndex_k__BackingField: i16,
     pub _CapsuleRigidbody_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Rigidbody,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRBoneCapsule")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRBoneCapsule {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -38,7 +38,7 @@ impl crate::GlobalNamespace::OVRBoneCapsule {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i16_Gc_Gc1(
+    pub fn New_i16_Rigidbody_CapsuleCollider1(
         boneIndex: i16,
         capsuleRigidBody: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rigidbody>,
         capsuleCollider: quest_hook::libil2cpp::Gc<crate::UnityEngine::CapsuleCollider>,
@@ -59,7 +59,7 @@ impl crate::GlobalNamespace::OVRBoneCapsule {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i16_Gc_Gc1(
+    pub fn _ctor_i16_Rigidbody_CapsuleCollider1(
         &mut self,
         boneIndex: i16,
         capsuleRigidBody: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rigidbody>,

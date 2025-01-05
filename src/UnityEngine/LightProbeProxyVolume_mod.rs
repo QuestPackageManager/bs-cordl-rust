@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightProbeProxyVolume {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Behaviour>,
+    __cordl_parent: crate::UnityEngine::Behaviour,
 }
 #[cfg(feature = "UnityEngine+LightProbeProxyVolume")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+LightProbeProxyVolume")]
 impl std::ops::Deref for crate::UnityEngine::LightProbeProxyVolume {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Behaviour>;
+    type Target = crate::UnityEngine::Behaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

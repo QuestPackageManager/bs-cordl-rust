@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteJumpStartBeatOffsetDropdown {
-    __cordl_parent: quest_hook::libil2cpp::Gc<f32>,
+    __cordl_parent: crate::GlobalNamespace::ValueDropdownController_1<f32>,
 }
 #[cfg(feature = "NoteJumpStartBeatOffsetDropdown")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "NoteJumpStartBeatOffsetDropdown")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteJumpStartBeatOffsetDropdown {
-    type Target = quest_hook::libil2cpp::Gc<f32>;
+    type Target = crate::GlobalNamespace::ValueDropdownController_1<f32>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,9 +28,13 @@ impl crate::GlobalNamespace::NoteJumpStartBeatOffsetDropdown {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                f32,
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Tuple_2<
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                >,
             >,
         >,
     > {
@@ -38,9 +42,13 @@ impl crate::GlobalNamespace::NoteJumpStartBeatOffsetDropdown {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                f32,
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Tuple_2<
+                        f32,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                >,
             >,
         > = __cordl_object.invoke("GetNamedValues", ())?;
         Ok(__cordl_ret.into())

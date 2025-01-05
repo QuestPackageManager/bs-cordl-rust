@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AbstractFpCurve {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Math::EC::ECCurve,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Math::EC::ECCurve,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+AbstractFpCurve")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Math+EC+AbstractFpCurve")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::AbstractFpCurve {
-    type Target = quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>;
+    type Target = crate::Org::BouncyCastle::Math::EC::ECCurve;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

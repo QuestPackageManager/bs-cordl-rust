@@ -219,7 +219,7 @@ impl crate::System::RuntimeTypeHandle {
             .invoke("IsByRef", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsComObject_Gc0(
+    pub fn IsComObject_RuntimeType0(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
@@ -307,7 +307,18 @@ impl crate::System::RuntimeTypeHandle {
             .invoke("IsSzArray", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_IntPtr0(
+        &mut self,
+        val: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (val),
+        )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_RuntimeType1(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -318,7 +329,7 @@ impl crate::System::RuntimeTypeHandle {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_StreamingContext2(
+    pub fn _ctor_SerializationInfo_StreamingContext2(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -329,17 +340,6 @@ impl crate::System::RuntimeTypeHandle {
             self,
             ".ctor",
             (info, context),
-        )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_IntPtr0(
-        &mut self,
-        val: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (val),
         )?;
         Ok(__cordl_ret.into())
     }
@@ -395,26 +395,16 @@ impl crate::System::RuntimeTypeHandle {
     }
 }
 #[cfg(feature = "System+RuntimeTypeHandle")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::RuntimeTypeHandle {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::RuntimeTypeHandle {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
         todo!()
     }
 }
 #[cfg(feature = "System+RuntimeTypeHandle")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::RuntimeTypeHandle {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::RuntimeTypeHandle {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
         todo!()
     }
 }

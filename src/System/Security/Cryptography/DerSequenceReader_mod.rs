@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DerSequenceReader {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _end: i32,
     pub _position: i32,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+Cryptography+DerSequenceReader")]
 impl std::ops::Deref for crate::System::Security::Cryptography::DerSequenceReader {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -58,7 +58,7 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
             .invoke("EatTag", (expected))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_DerSequenceReader_DerTag_Gc_i32_i32_2(
+    pub fn New_DerSequenceReader_DerTag_Il2CppArray_i32_i32_2(
         tagToEat: crate::System::Security::Cryptography::DerSequenceReader_DerTag,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
@@ -70,7 +70,7 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
             .invoke_void(".ctor", (tagToEat, data, offset, length))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc0(
+    pub fn New_Il2CppArray0(
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -79,7 +79,7 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
             .invoke_void(".ctor", (data))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_i32_i32_1(
+    pub fn New_Il2CppArray_i32_i32_1(
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
         length: i32,
@@ -373,7 +373,7 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
             .invoke("TrimTrailingNulls", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_DerSequenceReader_DerTag_Gc_i32_i32_2(
+    pub fn _ctor_DerSequenceReader_DerTag_Il2CppArray_i32_i32_2(
         &mut self,
         tagToEat: crate::System::Security::Cryptography::DerSequenceReader_DerTag,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -387,7 +387,7 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
             .invoke(".ctor", (tagToEat, data, offset, length))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Il2CppArray0(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -398,7 +398,7 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
             .invoke(".ctor", (data))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_i32_i32_1(
+    pub fn _ctor_Il2CppArray_i32_i32_1(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TreeViewController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::BaseTreeViewController,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::BaseTreeViewController,
 }
 #[cfg(feature = "UnityEngine+UIElements+TreeViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+TreeViewController")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TreeViewController {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::BaseTreeViewController,
-    >;
+    type Target = crate::UnityEngine::UIElements::BaseTreeViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

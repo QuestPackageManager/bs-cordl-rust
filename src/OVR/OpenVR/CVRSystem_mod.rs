@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CVRSystem {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub FnTable: crate::OVR::OpenVR::IVRSystem,
 }
 #[cfg(feature = "OVR+OpenVR+CVRSystem")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+CVRSystem")]
 impl std::ops::Deref for crate::OVR::OpenVR::CVRSystem {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -776,7 +776,7 @@ impl crate::OVR::OpenVR::CVRSystem_PollNextEventUnion {}
 #[repr(C)]
 #[derive(Debug)]
 pub struct CVRSystem__GetControllerStatePacked {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+CVRSystem+_GetControllerStatePacked")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -785,7 +785,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+CVRSystem+_GetControllerStatePacked")]
 impl std::ops::Deref for crate::OVR::OpenVR::CVRSystem__GetControllerStatePacked {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -895,7 +895,7 @@ for crate::OVR::OpenVR::CVRSystem__GetControllerStatePacked {
 #[repr(C)]
 #[derive(Debug)]
 pub struct CVRSystem__GetControllerStateWithPosePacked {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+CVRSystem+_GetControllerStateWithPosePacked")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -906,7 +906,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVR+OpenVR+CVRSystem+_GetControllerStateWithPosePacked")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::CVRSystem__GetControllerStateWithPosePacked {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1036,7 +1036,7 @@ for crate::OVR::OpenVR::CVRSystem__GetControllerStateWithPosePacked {
 #[repr(C)]
 #[derive(Debug)]
 pub struct CVRSystem__PollNextEventPacked {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+CVRSystem+_PollNextEventPacked")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1045,7 +1045,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+CVRSystem+_PollNextEventPacked")]
 impl std::ops::Deref for crate::OVR::OpenVR::CVRSystem__PollNextEventPacked {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameEnergyCounter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _batteryLives: i32,
     pub _initData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::GameEnergyCounter_InitData,
@@ -18,7 +18,9 @@ pub struct GameEnergyCounter {
     >,
     pub didInitEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub gameEnergyDidReach0Event: quest_hook::libil2cpp::Gc<crate::System::Action>,
-    pub gameEnergyDidChangeEvent: quest_hook::libil2cpp::Gc<f32>,
+    pub gameEnergyDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<f32>,
+    >,
     pub _energy_k__BackingField: f32,
     pub _energyType_k__BackingField: crate::GlobalNamespace::GameplayModifiers_EnergyType,
     pub _instaFail_k__BackingField: bool,
@@ -35,7 +37,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "GameEnergyCounter")]
 impl std::ops::Deref for crate::GlobalNamespace::GameEnergyCounter {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -154,7 +156,7 @@ impl crate::GlobalNamespace::GameEnergyCounter {
     }
     pub fn add_gameEnergyDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<f32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -248,7 +250,7 @@ impl crate::GlobalNamespace::GameEnergyCounter {
     }
     pub fn remove_gameEnergyDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<f32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -334,20 +336,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GameEnergyCou
     }
 }
 #[cfg(feature = "GameEnergyCounter")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGameEnergyCounter>>
+impl AsRef<crate::GlobalNamespace::IGameEnergyCounter>
 for crate::GlobalNamespace::GameEnergyCounter {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGameEnergyCounter> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IGameEnergyCounter {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "GameEnergyCounter")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGameEnergyCounter>>
+impl AsMut<crate::GlobalNamespace::IGameEnergyCounter>
 for crate::GlobalNamespace::GameEnergyCounter {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGameEnergyCounter> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IGameEnergyCounter {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -355,7 +353,7 @@ for crate::GlobalNamespace::GameEnergyCounter {
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameEnergyCounter_InitData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub energyType: crate::GlobalNamespace::GameplayModifiers_EnergyType,
     pub noFail: bool,
     pub instaFail: bool,
@@ -368,7 +366,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "GameEnergyCounter+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::GameEnergyCounter_InitData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

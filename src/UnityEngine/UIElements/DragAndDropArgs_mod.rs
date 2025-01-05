@@ -149,26 +149,16 @@ impl crate::UnityEngine::UIElements::DragAndDropArgs {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DragAndDropArgs")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IListDragAndDropArgs>,
-> for crate::UnityEngine::UIElements::DragAndDropArgs {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::IListDragAndDropArgs,
-    > {
+impl AsRef<crate::UnityEngine::UIElements::IListDragAndDropArgs>
+for crate::UnityEngine::UIElements::DragAndDropArgs {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IListDragAndDropArgs {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DragAndDropArgs")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IListDragAndDropArgs>,
-> for crate::UnityEngine::UIElements::DragAndDropArgs {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::IListDragAndDropArgs,
-    > {
+impl AsMut<crate::UnityEngine::UIElements::IListDragAndDropArgs>
+for crate::UnityEngine::UIElements::DragAndDropArgs {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IListDragAndDropArgs {
         todo!()
     }
 }

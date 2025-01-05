@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerGameplayAnimator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MultiplayerGameplayAnimator,
-    >,
+    __cordl_parent: crate::GlobalNamespace::MultiplayerGameplayAnimator,
     pub _bigAvatarAnimator: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MultiplayerBigAvatarAnimator,
     >,
@@ -32,9 +30,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MultiplayerConnectedPlayerGameplayAnimator")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerGameplayAnimator {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MultiplayerGameplayAnimator,
-    >;
+    type Target = crate::GlobalNamespace::MultiplayerGameplayAnimator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

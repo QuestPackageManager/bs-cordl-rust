@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509ChainImplMono {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Security::Cryptography::X509Certificates::X509ChainImpl,
-    >,
+    __cordl_parent: crate::System::Security::Cryptography::X509Certificates::X509ChainImpl,
     pub location: crate::System::Security::Cryptography::X509Certificates::StoreLocation,
     pub elements: quest_hook::libil2cpp::Gc<
         crate::System::Security::Cryptography::X509Certificates::X509ChainElementCollection,
@@ -58,9 +56,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509ChainImplMono")]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Security::Cryptography::X509Certificates::X509ChainImpl,
-    >;
+    type Target = crate::System::Security::Cryptography::X509Certificates::X509ChainImpl;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -136,7 +132,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             .invoke("CheckRevocationOnChain", (flag))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CheckRevocation_Gc1(
+    pub fn CheckRevocation_X509Certificate2_1(
         &mut self,
         certificate: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
@@ -206,7 +202,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
         > = __cordl_object.invoke("FindParent", (certificate))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAuthorityKeyIdentifier_Gc0(
+    pub fn GetAuthorityKeyIdentifier_X509Certificate2_0(
         certificate: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
         >,
@@ -219,7 +215,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             .invoke("GetAuthorityKeyIdentifier", (certificate))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAuthorityKeyIdentifier_Gc1(
+    pub fn GetAuthorityKeyIdentifier_X509Crl1(
         crl: quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Crl>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -230,7 +226,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             .invoke("GetAuthorityKeyIdentifier", (crl))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAuthorityKeyIdentifier_Gc2(
+    pub fn GetAuthorityKeyIdentifier_X509Extension2(
         ext: quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Extension>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

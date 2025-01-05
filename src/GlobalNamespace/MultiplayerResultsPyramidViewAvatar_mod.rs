@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerResultsPyramidViewAvatar {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _badgeDirector: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Playables::PlayableDirector,
     >,
@@ -22,14 +22,10 @@ pub struct MultiplayerResultsPyramidViewAvatar {
     pub _nameBackground: quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
     pub _badgeCanvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
     pub _badgeTitles: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::TMPro::TextMeshProUGUI>,
     >,
     pub _badgeImages: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::HMUI::ImageView>,
     >,
     pub _badgeSubtitleText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _badgeSubtitleCanvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
@@ -71,7 +67,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplayerResultsPyramidViewAvatar")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -168,7 +164,7 @@ for crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerResultsPyramidViewAvatar_Factory {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Zenject::PlaceholderFactory_2<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar,
@@ -184,7 +180,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MultiplayerResultsPyramidViewAvatar+Factory")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar_Factory {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Zenject::PlaceholderFactory_2<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar,

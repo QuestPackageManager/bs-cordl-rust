@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapEventDataBox {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _indexFilter_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IndexFilter,
     >,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapEventDataBox")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapEventDataBox {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -62,7 +62,7 @@ impl crate::GlobalNamespace::BeatmapEventDataBox {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetBeatStep_Gc_BeatmapEventDataBox_DistributionParamType_f32_f32_1(
+    pub fn GetBeatStep_IndexFilter_BeatmapEventDataBox_DistributionParamType_f32_f32_1(
         indexFilter: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IndexFilter>,
         distributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
         distributionParam: f32,
@@ -144,7 +144,9 @@ impl crate::GlobalNamespace::BeatmapEventDataBox {
             crate::GlobalNamespace::IBeatmapLightEventConverter,
         >,
         output: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

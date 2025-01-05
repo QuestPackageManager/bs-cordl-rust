@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Pkcs12StoreBuilder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub keyAlgorithm: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
     >,
@@ -24,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12StoreBuilder")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -73,7 +73,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder {
         > = __cordl_object.invoke("SetCertAlgorithm", (certAlgorithm))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetKeyAlgorithm_Gc0(
+    pub fn SetKeyAlgorithm_DerObjectIdentifier0(
         &mut self,
         keyAlgorithm: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
@@ -89,7 +89,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12StoreBuilder {
         > = __cordl_object.invoke("SetKeyAlgorithm", (keyAlgorithm))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetKeyAlgorithm_Gc1(
+    pub fn SetKeyAlgorithm_DerObjectIdentifier1(
         &mut self,
         keyAlgorithm: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,

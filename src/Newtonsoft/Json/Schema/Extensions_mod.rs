@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Extensions {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Newtonsoft+Json+Schema+Extensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Schema+Extensions")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Schema::Extensions {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,7 +29,9 @@ impl crate::Newtonsoft::Json::Schema::Extensions {
         schema: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
         errorMessages: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                crate::System::Collections::Generic::IList_1<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -37,7 +39,7 @@ impl crate::Newtonsoft::Json::Schema::Extensions {
             .invoke("IsValid", (source, schema, errorMessages))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsValid_Gc_Gc0(
+    pub fn IsValid_JToken_JsonSchema0(
         source: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         schema: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -45,7 +47,15 @@ impl crate::Newtonsoft::Json::Schema::Extensions {
             .invoke("IsValid", (source, schema))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Validate_Gc1(
+    pub fn Validate_JToken_JsonSchema0(
+        source: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+        schema: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Validate", (source, schema))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Validate_ValidationEventHandler1(
         source: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         schema: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
         validationEventHandler: quest_hook::libil2cpp::Gc<
@@ -54,14 +64,6 @@ impl crate::Newtonsoft::Json::Schema::Extensions {
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Validate", (source, schema, validationEventHandler))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Validate_Gc_Gc0(
-        source: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
-        schema: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Validate", (source, schema))?;
         Ok(__cordl_ret.into())
     }
 }

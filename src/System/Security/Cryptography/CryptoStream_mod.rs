@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CryptoStream {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    __cordl_parent: crate::System::IO::Stream,
     pub _stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub _transform: quest_hook::libil2cpp::Gc<
         crate::System::Security::Cryptography::ICryptoTransform,
@@ -29,7 +29,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+Cryptography+CryptoStream")]
 impl std::ops::Deref for crate::System::Security::Cryptography::CryptoStream {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::IO::Stream>;
+    type Target = crate::System::IO::Stream;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -188,7 +188,7 @@ impl crate::System::Security::Cryptography::CryptoStream {
             .invoke("InitializeBuffer", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc_Gc_CryptoStreamMode0(
+    pub fn New_Stream_ICryptoTransform_CryptoStreamMode0(
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         transform: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::ICryptoTransform,
@@ -233,11 +233,15 @@ impl crate::System::Security::Cryptography::CryptoStream {
         offset: i32,
         count: i32,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<i32>,
+        > = __cordl_object
             .invoke("ReadAsync", (buffer, offset, count, cancellationToken))?;
         Ok(__cordl_ret.into())
     }
@@ -248,11 +252,15 @@ impl crate::System::Security::Cryptography::CryptoStream {
         count: i32,
         cancellationToken: crate::System::Threading::CancellationToken,
         useAsync: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<i32>,
+        > = __cordl_object
             .invoke(
                 "ReadAsyncCore",
                 (buffer, offset, count, cancellationToken, useAsync),
@@ -265,11 +273,15 @@ impl crate::System::Security::Cryptography::CryptoStream {
         offset: i32,
         count: i32,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<i32>,
+        > = __cordl_object
             .invoke("ReadAsyncInternal", (buffer, offset, count, cancellationToken))?;
         Ok(__cordl_ret.into())
     }
@@ -384,7 +396,7 @@ impl crate::System::Security::Cryptography::CryptoStream {
             .invoke("WriteByte", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_CryptoStreamMode0(
+    pub fn _ctor_Stream_ICryptoTransform_CryptoStreamMode0(
         &mut self,
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         transform: quest_hook::libil2cpp::Gc<
@@ -493,16 +505,16 @@ for crate::System::Security::Cryptography::CryptoStream {
     }
 }
 #[cfg(feature = "System+Security+Cryptography+CryptoStream")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsRef<crate::System::IDisposable>
 for crate::System::Security::Cryptography::CryptoStream {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Security+Cryptography+CryptoStream")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsMut<crate::System::IDisposable>
 for crate::System::Security::Cryptography::CryptoStream {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UITKTextHandle {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::TextCore::Text::TextHandle,
-    >,
+    __cordl_parent: crate::UnityEngine::TextCore::Text::TextHandle,
     pub _MeasuredSizes_k__BackingField: crate::UnityEngine::Vector2,
     pub _RoundedSizes_k__BackingField: crate::UnityEngine::Vector2,
     pub m_TextElement: quest_hook::libil2cpp::Gc<
@@ -22,9 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UITKTextHandle")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UITKTextHandle {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::TextCore::Text::TextHandle,
-    >;
+    type Target = crate::UnityEngine::TextCore::Text::TextHandle;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

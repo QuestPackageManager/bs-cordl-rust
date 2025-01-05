@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScoreUIController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _scoreText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _scoreController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IScoreController,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ScoreUIController")]
 impl std::ops::Deref for crate::GlobalNamespace::ScoreUIController {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -161,7 +161,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScoreUIContro
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScoreUIController_InitData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub scoreDisplayType: crate::GlobalNamespace::ScoreUIController_ScoreDisplayType,
 }
 #[cfg(feature = "ScoreUIController+InitData")]
@@ -171,7 +171,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ScoreUIController+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::ScoreUIController_InitData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

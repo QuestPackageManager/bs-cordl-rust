@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct KeyNotFoundException {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::SystemException>,
+    __cordl_parent: crate::System::SystemException,
 }
 #[cfg(feature = "System+Collections+Generic+KeyNotFoundException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+Generic+KeyNotFoundException")]
 impl std::ops::Deref for crate::System::Collections::Generic::KeyNotFoundException {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::SystemException>;
+    type Target = crate::System::SystemException;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,7 +32,7 @@ impl crate::System::Collections::Generic::KeyNotFoundException {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Il2CppString1(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -41,7 +41,7 @@ impl crate::System::Collections::Generic::KeyNotFoundException {
             .invoke_void(".ctor", (message))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_StreamingContext2(
+    pub fn New_SerializationInfo_StreamingContext2(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -63,7 +63,7 @@ impl crate::System::Collections::Generic::KeyNotFoundException {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -74,7 +74,7 @@ impl crate::System::Collections::Generic::KeyNotFoundException {
             .invoke(".ctor", (message))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_StreamingContext2(
+    pub fn _ctor_SerializationInfo_StreamingContext2(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,

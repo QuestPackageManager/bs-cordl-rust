@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CharEntityEncoderFallback {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Text::EncoderFallback>,
+    __cordl_parent: crate::System::Text::EncoderFallback,
     pub fallbackBuffer: quest_hook::libil2cpp::Gc<
         crate::System::Xml::CharEntityEncoderFallbackBuffer,
     >,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+CharEntityEncoderFallback")]
 impl std::ops::Deref for crate::System::Xml::CharEntityEncoderFallback {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Text::EncoderFallback>;
+    type Target = crate::System::Text::EncoderFallback;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

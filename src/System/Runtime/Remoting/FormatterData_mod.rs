@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FormatterData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Remoting::ProviderData,
-    >,
+    __cordl_parent: crate::System::Runtime::Remoting::ProviderData,
 }
 #[cfg(feature = "System+Runtime+Remoting+FormatterData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+Remoting+FormatterData")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::FormatterData {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Remoting::ProviderData,
-    >;
+    type Target = crate::System::Runtime::Remoting::ProviderData;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

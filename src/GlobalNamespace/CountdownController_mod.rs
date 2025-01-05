@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CountdownController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
     pub _countdownElementControllers: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CountdownElementController>,
+            *mut crate::GlobalNamespace::CountdownElementController,
         >,
     >,
     pub _timeProvider: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ITimeProvider>,
@@ -15,7 +15,9 @@ pub struct CountdownController {
     pub _gongSounded: bool,
     pub _countdownRunning: bool,
     pub _countdownElementControllerQueue: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CountdownElementController>,
+        crate::System::Collections::Generic::Queue_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CountdownElementController>,
+        >,
     >,
 }
 #[cfg(feature = "CountdownController")]
@@ -25,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "CountdownController")]
 impl std::ops::Deref for crate::GlobalNamespace::CountdownController {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NullableConverter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::ComponentModel::TypeConverter,
-    >,
+    __cordl_parent: crate::System::ComponentModel::TypeConverter,
     pub _NullableType_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _UnderlyingType_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _UnderlyingTypeConverter_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -18,9 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+ComponentModel+NullableConverter")]
 impl std::ops::Deref for crate::System::ComponentModel::NullableConverter {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::ComponentModel::TypeConverter,
-    >;
+    type Target = crate::System::ComponentModel::TypeConverter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -138,9 +134,7 @@ impl crate::System::ComponentModel::NullableConverter {
         >,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         attributes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<

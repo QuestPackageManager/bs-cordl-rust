@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SXprUtilities {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+SXprUtilities")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+SXprUtilities")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::OpenPgp::SXprUtilities {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -114,7 +114,7 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::SXprUtilities {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SXprUtilities_MyS2k {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::S2k>,
+    __cordl_parent: crate::Org::BouncyCastle::Bcpg::S2k,
     pub mIterationCount64: i64,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+SXprUtilities+MyS2k")]
@@ -125,7 +125,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+SXprUtilities+MyS2k")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::OpenPgp::SXprUtilities_MyS2k {
-    type Target = quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::S2k>;
+    type Target = crate::Org::BouncyCastle::Bcpg::S2k;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

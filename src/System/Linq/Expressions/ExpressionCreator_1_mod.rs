@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExpressionCreator_1<TDelegate: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     __cordl_phantom_TDelegate: std::marker::PhantomData<TDelegate>,
 }
 #[cfg(feature = "System+Linq+Expressions+ExpressionCreator_1")]
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+ExpressionCreator_1")]
 impl<TDelegate: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Linq::Expressions::ExpressionCreator_1<TDelegate> {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,8 +34,10 @@ impl<
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         tailCall: bool,
         parameters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::ParameterExpression,
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::ParameterExpression,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<

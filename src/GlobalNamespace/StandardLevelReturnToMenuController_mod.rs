@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StandardLevelReturnToMenuController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _standardLevelSceneSetupData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
     >,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "StandardLevelReturnToMenuController")]
 impl std::ops::Deref for crate::GlobalNamespace::StandardLevelReturnToMenuController {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -70,22 +70,16 @@ for crate::GlobalNamespace::StandardLevelReturnToMenuController {
     }
 }
 #[cfg(feature = "StandardLevelReturnToMenuController")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReturnToMenuController>>
+impl AsRef<crate::GlobalNamespace::IReturnToMenuController>
 for crate::GlobalNamespace::StandardLevelReturnToMenuController {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReturnToMenuController> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IReturnToMenuController {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "StandardLevelReturnToMenuController")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReturnToMenuController>>
+impl AsMut<crate::GlobalNamespace::IReturnToMenuController>
 for crate::GlobalNamespace::StandardLevelReturnToMenuController {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IReturnToMenuController,
-    > {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IReturnToMenuController {
         unsafe { std::mem::transmute(self) }
     }
 }

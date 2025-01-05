@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TcpListener {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ServerSocketEP: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
     pub m_ServerSocket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
     pub m_Active: bool,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Sockets+TcpListener")]
 impl std::ops::Deref for crate::System::Net::Sockets::TcpListener {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

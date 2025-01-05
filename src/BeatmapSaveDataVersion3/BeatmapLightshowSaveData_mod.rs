@@ -2,30 +2,44 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapLightshowSaveData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub basicBeatmapEvents: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::BasicEventData>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::BasicEventData>,
+        >,
     >,
     pub colorBoostBeatmapEvents: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::ColorBoostEventData>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapSaveDataVersion3::ColorBoostEventData,
+            >,
+        >,
     >,
     pub lightColorEventBoxGroups: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::BeatmapSaveDataVersion3::LightColorEventBoxGroup,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapSaveDataVersion3::LightColorEventBoxGroup,
+            >,
         >,
     >,
     pub lightRotationEventBoxGroups: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup,
+            >,
         >,
     >,
     pub lightTranslationEventBoxGroups: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::BeatmapSaveDataVersion3::LightTranslationEventBoxGroup,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapSaveDataVersion3::LightTranslationEventBoxGroup,
+            >,
         >,
     >,
     pub vfxEventBoxGroups: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::FxEventBoxGroup>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::FxEventBoxGroup>,
+        >,
     >,
     pub _fxEventsCollection: quest_hook::libil2cpp::Gc<
         crate::BeatmapSaveDataVersion3::FxEventsCollection,
@@ -39,7 +53,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapSaveDataVersion3+BeatmapLightshowSaveData")]
 impl std::ops::Deref for crate::BeatmapSaveDataVersion3::BeatmapLightshowSaveData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

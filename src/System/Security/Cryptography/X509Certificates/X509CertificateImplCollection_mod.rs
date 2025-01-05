@@ -4,10 +4,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509CertificateImplCollection {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub list: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
+            >,
         >,
     >,
 }
@@ -24,7 +26,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X509CertificateImplCollection {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -109,7 +111,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509CertificateImp
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_X509CertificateImplCollection1(
         other: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509CertificateImplCollection,
         >,
@@ -130,7 +132,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509CertificateImp
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_X509CertificateImplCollection1(
         &mut self,
         other: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509CertificateImplCollection,
@@ -182,18 +184,18 @@ for crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl
 #[cfg(
     feature = "System+Security+Cryptography+X509Certificates+X509CertificateImplCollection"
 )]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsRef<crate::System::IDisposable>
 for crate::System::Security::Cryptography::X509Certificates::X509CertificateImplCollection {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(
     feature = "System+Security+Cryptography+X509Certificates+X509CertificateImplCollection"
 )]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsMut<crate::System::IDisposable>
 for crate::System::Security::Cryptography::X509Certificates::X509CertificateImplCollection {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }

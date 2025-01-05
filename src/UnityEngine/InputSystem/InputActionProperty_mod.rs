@@ -28,31 +28,7 @@ for crate::UnityEngine::InputSystem::InputActionProperty {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionProperty")]
 impl crate::UnityEngine::InputSystem::InputActionProperty {
-    pub fn Equals_Gc1(
-        &mut self,
-        other: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Equals_Gc2(
-        &mut self,
-        other: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputActionReference,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Equals_Gc3(
+    pub fn Equals_Il2CppObject3(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -63,9 +39,33 @@ impl crate::UnityEngine::InputSystem::InputActionProperty {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Equals_InputAction1(
+        &mut self,
+        other: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals_InputActionProperty0(
         &mut self,
         other: crate::UnityEngine::InputSystem::InputActionProperty,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Equals_InputActionReference2(
+        &mut self,
+        other: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputActionReference,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -82,7 +82,7 @@ impl crate::UnityEngine::InputSystem::InputActionProperty {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_InputAction0(
         &mut self,
         action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -93,7 +93,7 @@ impl crate::UnityEngine::InputSystem::InputActionProperty {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_InputActionReference1(
         &mut self,
         reference: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputActionReference,
@@ -173,11 +173,11 @@ impl crate::UnityEngine::InputSystem::InputActionProperty {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionProperty")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionProperty>,
+    crate::System::IEquatable_1<crate::UnityEngine::InputSystem::InputActionProperty>,
 > for crate::UnityEngine::InputSystem::InputActionProperty {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         crate::UnityEngine::InputSystem::InputActionProperty,
     > {
         todo!()
@@ -185,11 +185,11 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionProperty")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionProperty>,
+    crate::System::IEquatable_1<crate::UnityEngine::InputSystem::InputActionProperty>,
 > for crate::UnityEngine::InputSystem::InputActionProperty {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         crate::UnityEngine::InputSystem::InputActionProperty,
     > {
         todo!()
@@ -197,13 +197,13 @@ impl AsMut<
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionProperty")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
     >,
 > for crate::UnityEngine::InputSystem::InputActionProperty {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
     > {
         todo!()
@@ -211,13 +211,13 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionProperty")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
     >,
 > for crate::UnityEngine::InputSystem::InputActionProperty {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
     > {
         todo!()
@@ -225,13 +225,13 @@ impl AsMut<
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionProperty")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionReference>,
     >,
 > for crate::UnityEngine::InputSystem::InputActionProperty {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionReference>,
     > {
         todo!()
@@ -239,13 +239,13 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionProperty")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionReference>,
     >,
 > for crate::UnityEngine::InputSystem::InputActionProperty {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionReference>,
     > {
         todo!()

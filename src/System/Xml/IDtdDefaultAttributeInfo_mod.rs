@@ -80,20 +80,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::IDtdDefaultAttrib
     }
 }
 #[cfg(feature = "System+Xml+IDtdDefaultAttributeInfo")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdAttributeInfo>>
+impl AsRef<crate::System::Xml::IDtdAttributeInfo>
 for crate::System::Xml::IDtdDefaultAttributeInfo {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdAttributeInfo> {
+    fn as_ref(&self) -> &crate::System::Xml::IDtdAttributeInfo {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+IDtdDefaultAttributeInfo")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdAttributeInfo>>
+impl AsMut<crate::System::Xml::IDtdAttributeInfo>
 for crate::System::Xml::IDtdDefaultAttributeInfo {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdAttributeInfo> {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IDtdAttributeInfo {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExplicitContentWarningViewController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+    __cordl_parent: crate::HMUI::ViewController,
     pub _toggleExplicit: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
     pub _continueButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _playerDataModel: quest_hook::libil2cpp::Gc<
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ExplicitContentWarningViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::ExplicitContentWarningViewController {
-    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>;
+    type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

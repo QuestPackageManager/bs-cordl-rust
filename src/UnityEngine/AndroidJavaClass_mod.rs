@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AndroidJavaClass {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaObject>,
+    __cordl_parent: crate::UnityEngine::AndroidJavaObject,
 }
 #[cfg(feature = "UnityEngine+AndroidJavaClass")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+AndroidJavaClass")]
 impl std::ops::Deref for crate::UnityEngine::AndroidJavaClass {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaObject>;
+    type Target = crate::UnityEngine::AndroidJavaObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,7 +24,7 @@ impl std::ops::DerefMut for crate::UnityEngine::AndroidJavaClass {
 }
 #[cfg(feature = "UnityEngine+AndroidJavaClass")]
 impl crate::UnityEngine::AndroidJavaClass {
-    pub fn New_Gc0(
+    pub fn New_Il2CppString0(
         className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -53,7 +53,7 @@ impl crate::UnityEngine::AndroidJavaClass {
             .invoke("_AndroidJavaClass", (className))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Il2CppString0(
         &mut self,
         className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRControllerDrivenHandPosesSample {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub buttonOff: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub buttonConforming: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub buttonNatural: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRControllerDrivenHandPosesSample")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRControllerDrivenHandPosesSample {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

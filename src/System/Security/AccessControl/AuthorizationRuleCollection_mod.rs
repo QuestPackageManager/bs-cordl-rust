@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AuthorizationRuleCollection {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::ReadOnlyCollectionBase,
-    >,
+    __cordl_parent: crate::System::Collections::ReadOnlyCollectionBase,
 }
 #[cfg(feature = "System+Security+AccessControl+AuthorizationRuleCollection")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Security+AccessControl+AuthorizationRuleCollection")]
 impl std::ops::Deref
 for crate::System::Security::AccessControl::AuthorizationRuleCollection {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Collections::ReadOnlyCollectionBase,
-    >;
+    type Target = crate::System::Collections::ReadOnlyCollectionBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,9 +30,7 @@ impl crate::System::Security::AccessControl::AuthorizationRuleCollection {
     pub fn New(
         rules: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Security::AccessControl::AuthorizationRule,
-                >,
+                *mut crate::System::Security::AccessControl::AuthorizationRule,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -50,9 +44,7 @@ impl crate::System::Security::AccessControl::AuthorizationRuleCollection {
         &mut self,
         rules: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Security::AccessControl::AuthorizationRule,
-                >,
+                *mut crate::System::Security::AccessControl::AuthorizationRule,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

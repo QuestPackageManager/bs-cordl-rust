@@ -32,7 +32,7 @@ impl<
 > crate::GlobalNamespace::ICubeNoteControllerInitializable_1<T> {
     pub fn add_cubeNoteControllerDidInitEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<T>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -52,7 +52,7 @@ impl<
     }
     pub fn remove_cubeNoteControllerDidInitEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<T>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

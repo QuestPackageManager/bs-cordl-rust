@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TutorialBeatmapObjectPoolsInstaller {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
+    __cordl_parent: crate::Zenject::MonoInstaller,
     pub _basicNotePrefab: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::TutorialNoteController,
     >,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TutorialBeatmapObjectPoolsInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::TutorialBeatmapObjectPoolsInstaller {
-    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>;
+    type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

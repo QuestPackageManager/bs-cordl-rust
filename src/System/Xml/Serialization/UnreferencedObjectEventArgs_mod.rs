@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnreferencedObjectEventArgs {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::EventArgs>,
+    __cordl_parent: crate::System::EventArgs,
     pub o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Serialization+UnreferencedObjectEventArgs")]
 impl std::ops::Deref for crate::System::Xml::Serialization::UnreferencedObjectEventArgs {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::EventArgs>;
+    type Target = crate::System::EventArgs;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

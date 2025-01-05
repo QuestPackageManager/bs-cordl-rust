@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CommandBufferGrabPass {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::CommandBufferGOCore,
-    >,
+    __cordl_parent: crate::GlobalNamespace::CommandBufferGOCore,
     pub _textureName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _cameraEvent: crate::UnityEngine::Rendering::CameraEvent,
 }
@@ -15,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "CommandBufferGrabPass")]
 impl std::ops::Deref for crate::GlobalNamespace::CommandBufferGrabPass {
-    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CommandBufferGOCore>;
+    type Target = crate::GlobalNamespace::CommandBufferGOCore;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,16 +30,20 @@ impl crate::GlobalNamespace::CommandBufferGrabPass {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CommandBufferOwners>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CommandBufferOwners>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CommandBufferOwners>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CommandBufferOwners>,
+            >,
         > = __cordl_object.invoke("CamerasDict", ())?;
         Ok(__cordl_ret.into())
     }

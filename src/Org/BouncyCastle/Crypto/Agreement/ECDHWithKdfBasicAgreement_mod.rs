@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ECDHWithKdfBasicAgreement {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Agreement::ECDHBasicAgreement,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Crypto::Agreement::ECDHBasicAgreement,
     pub algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub kdf: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::IDerivationFunction,
@@ -19,9 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+ECDHWithKdfBasicAgreement")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Agreement::ECDHWithKdfBasicAgreement {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Agreement::ECDHBasicAgreement,
-    >;
+    type Target = crate::Org::BouncyCastle::Crypto::Agreement::ECDHBasicAgreement;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

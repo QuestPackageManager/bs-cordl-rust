@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResourceProviderBase {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ProviderId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_BehaviourFlags: crate::UnityEngine::ResourceManagement::ResourceProviders::ProviderBehaviourFlags,
 }
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -185,58 +185,38 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderB
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ResourceManagement::ResourceProviders::IResourceProvider,
-    >,
-> for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase {
+impl AsRef<crate::UnityEngine::ResourceManagement::ResourceProviders::IResourceProvider>
+for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ResourceManagement::ResourceProviders::IResourceProvider,
-    > {
+    ) -> &crate::UnityEngine::ResourceManagement::ResourceProviders::IResourceProvider {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ResourceManagement::ResourceProviders::IResourceProvider,
-    >,
-> for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase {
+impl AsMut<crate::UnityEngine::ResourceManagement::ResourceProviders::IResourceProvider>
+for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ResourceManagement::ResourceProviders::IResourceProvider,
-    > {
+    ) -> &mut crate::UnityEngine::ResourceManagement::ResourceProviders::IResourceProvider {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ResourceManagement::Util::IInitializableObject,
-    >,
-> for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase {
+impl AsRef<crate::UnityEngine::ResourceManagement::Util::IInitializableObject>
+for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ResourceManagement::Util::IInitializableObject,
-    > {
+    ) -> &crate::UnityEngine::ResourceManagement::Util::IInitializableObject {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ResourceManagement::Util::IInitializableObject,
-    >,
-> for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase {
+impl AsMut<crate::UnityEngine::ResourceManagement::Util::IInitializableObject>
+for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ResourceManagement::Util::IInitializableObject,
-    > {
+    ) -> &mut crate::UnityEngine::ResourceManagement::Util::IInitializableObject {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -246,8 +226,10 @@ impl AsMut<
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResourceProviderBase_BaseInitAsyncOp {
-    __cordl_parent: quest_hook::libil2cpp::Gc<bool>,
-    pub m_CallBack: quest_hook::libil2cpp::Gc<bool>,
+    __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
+        bool,
+    >,
+    pub m_CallBack: quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,
 }
 #[cfg(
     feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase+BaseInitAsyncOp"
@@ -263,7 +245,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase_BaseInitAsyncOp {
-    type Target = quest_hook::libil2cpp::Gc<bool>;
+    type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
+        bool,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -293,7 +277,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProvider
     }
     pub fn Init(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<bool>,
+        callback: quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RijndaelManagedTransform {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_cipherMode: crate::System::Security::Cryptography::CipherMode,
     pub m_paddingValue: crate::System::Security::Cryptography::PaddingMode,
     pub m_transformMode: crate::System::Security::Cryptography::RijndaelManagedTransformMode,
@@ -43,7 +43,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Security+Cryptography+RijndaelManagedTransform")]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::RijndaelManagedTransform {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -345,40 +345,32 @@ for crate::System::Security::Cryptography::RijndaelManagedTransform {
     }
 }
 #[cfg(feature = "System+Security+Cryptography+RijndaelManagedTransform")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsRef<crate::System::IDisposable>
 for crate::System::Security::Cryptography::RijndaelManagedTransform {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Security+Cryptography+RijndaelManagedTransform")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsMut<crate::System::IDisposable>
 for crate::System::Security::Cryptography::RijndaelManagedTransform {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Security+Cryptography+RijndaelManagedTransform")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::ICryptoTransform>,
-> for crate::System::Security::Cryptography::RijndaelManagedTransform {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Security::Cryptography::ICryptoTransform,
-    > {
+impl AsRef<crate::System::Security::Cryptography::ICryptoTransform>
+for crate::System::Security::Cryptography::RijndaelManagedTransform {
+    fn as_ref(&self) -> &crate::System::Security::Cryptography::ICryptoTransform {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Security+Cryptography+RijndaelManagedTransform")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::ICryptoTransform>,
-> for crate::System::Security::Cryptography::RijndaelManagedTransform {
+impl AsMut<crate::System::Security::Cryptography::ICryptoTransform>
+for crate::System::Security::Cryptography::RijndaelManagedTransform {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Security::Cryptography::ICryptoTransform,
-    > {
+    ) -> &mut crate::System::Security::Cryptography::ICryptoTransform {
         unsafe { std::mem::transmute(self) }
     }
 }

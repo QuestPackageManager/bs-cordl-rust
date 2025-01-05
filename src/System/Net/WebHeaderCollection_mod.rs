@@ -2,13 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct WebHeaderCollection {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Specialized::NameValueCollection,
-    >,
+    __cordl_parent: crate::System::Collections::Specialized::NameValueCollection,
     pub m_CommonHeaders: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub m_NumCommonHeaders: i32,
     pub m_InnerCollection: quest_hook::libil2cpp::Gc<
@@ -23,9 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+WebHeaderCollection")]
 impl std::ops::Deref for crate::System::Net::WebHeaderCollection {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Specialized::NameValueCollection,
-    >;
+    type Target = crate::System::Collections::Specialized::NameValueCollection;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -52,7 +46,7 @@ impl crate::System::Net::WebHeaderCollection {
             .invoke("AddInternal", (name, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Add_Gc0(
+    pub fn Add_Il2CppString0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -64,7 +58,7 @@ impl crate::System::Net::WebHeaderCollection {
             .invoke("Add", (name, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Add_Gc1(
+    pub fn Add_Il2CppString1(
         &mut self,
         header: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -169,23 +163,19 @@ impl crate::System::Net::WebHeaderCollection {
             .invoke("GetObjectData", (serializationInfo, streamingContext))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetValues_Gc0(
+    pub fn GetValues_Il2CppString0(
         &mut self,
         header: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("GetValues", (header))?;
         Ok(__cordl_ret.into())
     }
@@ -194,22 +184,18 @@ impl crate::System::Net::WebHeaderCollection {
         index: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("GetValues", (index))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Get_Gc0(
+    pub fn Get_Il2CppString0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -244,7 +230,7 @@ impl crate::System::Net::WebHeaderCollection {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_StreamingContext2(
+    pub fn New_SerializationInfo_StreamingContext2(
         serializationInfo: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -297,17 +283,6 @@ impl crate::System::Net::WebHeaderCollection {
             .invoke("RemoveInternal", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Remove_Gc1(
-        &mut self,
-        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Remove", (name))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn Remove_HttpRequestHeader0(
         &mut self,
         header: crate::System::Net::HttpRequestHeader,
@@ -317,6 +292,17 @@ impl crate::System::Net::WebHeaderCollection {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Remove", (header))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Remove_Il2CppString1(
+        &mut self,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Remove", (name))?;
         Ok(__cordl_ret.into())
     }
     pub fn Set(
@@ -394,7 +380,7 @@ impl crate::System::Net::WebHeaderCollection {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_StreamingContext2(
+    pub fn _ctor_SerializationInfo_StreamingContext2(
         &mut self,
         serializationInfo: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -459,26 +445,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::WebHeaderCollecti
     }
 }
 #[cfg(feature = "System+Net+WebHeaderCollection")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::Net::WebHeaderCollection {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Net::WebHeaderCollection {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Net+WebHeaderCollection")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::Net::WebHeaderCollection {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Net::WebHeaderCollection {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }

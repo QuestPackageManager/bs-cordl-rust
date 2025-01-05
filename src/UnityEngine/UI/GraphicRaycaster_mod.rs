@@ -2,15 +2,15 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GraphicRaycaster {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::BaseRaycaster,
-    >,
+    __cordl_parent: crate::UnityEngine::EventSystems::BaseRaycaster,
     pub m_IgnoreReversedGraphics: bool,
     pub m_BlockingObjects: crate::UnityEngine::UI::GraphicRaycaster_BlockingObjects,
     pub m_BlockingMask: crate::UnityEngine::LayerMask,
     pub m_Canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
     pub m_RaycastResults: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UI+GraphicRaycaster")]
@@ -20,9 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+GraphicRaycaster")]
 impl std::ops::Deref for crate::UnityEngine::UI::GraphicRaycaster {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::BaseRaycaster,
-    >;
+    type Target = crate::UnityEngine::EventSystems::BaseRaycaster;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -45,31 +43,19 @@ impl crate::UnityEngine::UI::GraphicRaycaster {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn Raycast_Gc_Gc0(
-        &mut self,
-        eventData: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::PointerEventData,
-        >,
-        resultAppendList: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::RaycastResult,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Raycast", (eventData, resultAppendList))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Raycast_Vector2_Gc_Gc1(
+    pub fn Raycast_Canvas_Camera_Vector2_IList_1_List_1_1(
         canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
         eventCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         pointerPosition: crate::UnityEngine::Vector2,
         foundGraphics: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+            >,
         >,
         results: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -77,6 +63,24 @@ impl crate::UnityEngine::UI::GraphicRaycaster {
                 "Raycast",
                 (canvas, eventCamera, pointerPosition, foundGraphics, results),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Raycast_PointerEventData_List_1_0(
+        &mut self,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::PointerEventData,
+        >,
+        resultAppendList: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::EventSystems::RaycastResult,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Raycast", (eventData, resultAppendList))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

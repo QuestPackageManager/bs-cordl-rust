@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventBase_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+    __cordl_parent: crate::UnityEngine::UIElements::EventBase,
     pub m_RefCount: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+EventBase_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::EventBase_1<T> {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>;
+    type Target = crate::UnityEngine::UIElements::EventBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -65,7 +65,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::EventBase_1
             .invoke("GetPooled", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetPooled_Gc1(
+    pub fn GetPooled_EventBase1(
         e: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -111,7 +111,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::EventBase_1
         Ok(__cordl_ret.into())
     }
     pub fn SetCreateFunction(
-        createMethod: quest_hook::libil2cpp::Gc<T>,
+        createMethod: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

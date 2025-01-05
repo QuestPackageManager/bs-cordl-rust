@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XElement {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XContainer>,
+    __cordl_parent: crate::System::Xml::Linq::XContainer,
     pub name: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName>,
     pub lastAttr: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XAttribute>,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Linq+XElement")]
 impl std::ops::Deref for crate::System::Xml::Linq::XElement {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XContainer>;
+    type Target = crate::System::Xml::Linq::XContainer;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -88,14 +88,18 @@ impl crate::System::Xml::Linq::XElement {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XAttribute>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XAttribute>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XAttribute>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XAttribute>,
+            >,
         > = __cordl_object.invoke("Attributes", ())?;
         Ok(__cordl_ret.into())
     }
@@ -116,14 +120,18 @@ impl crate::System::Xml::Linq::XElement {
         name: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XAttribute>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XAttribute>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XAttribute>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XAttribute>,
+            >,
         > = __cordl_object.invoke("GetAttributes", (name))?;
         Ok(__cordl_ret.into())
     }
@@ -156,16 +164,7 @@ impl crate::System::Xml::Linq::XElement {
         > = __cordl_object.invoke("GetPrefixOfNamespace", (ns))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
-        name: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (name))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc1(
+    pub fn New_XElement1(
         other: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -174,7 +173,16 @@ impl crate::System::Xml::Linq::XElement {
             .invoke_void(".ctor", (other))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc2(
+    pub fn New_XName0(
+        name: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (name))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_XStreamingElement2(
         other: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XStreamingElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -278,18 +286,7 @@ impl crate::System::Xml::Linq::XElement {
             .invoke("WriteTo", (writer))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
-        &mut self,
-        name: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (name))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_XElement1(
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -300,7 +297,18 @@ impl crate::System::Xml::Linq::XElement {
             .invoke(".ctor", (other))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_XName0(
+        &mut self,
+        name: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_XStreamingElement2(
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XStreamingElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -382,26 +390,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Linq::XElement {
     }
 }
 #[cfg(feature = "System+Xml+Linq+XElement")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::IXmlSerializable>,
-> for crate::System::Xml::Linq::XElement {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Serialization::IXmlSerializable,
-    > {
+impl AsRef<crate::System::Xml::Serialization::IXmlSerializable>
+for crate::System::Xml::Linq::XElement {
+    fn as_ref(&self) -> &crate::System::Xml::Serialization::IXmlSerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+Linq+XElement")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::IXmlSerializable>,
-> for crate::System::Xml::Linq::XElement {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Serialization::IXmlSerializable,
-    > {
+impl AsMut<crate::System::Xml::Serialization::IXmlSerializable>
+for crate::System::Xml::Linq::XElement {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::Serialization::IXmlSerializable {
         unsafe { std::mem::transmute(self) }
     }
 }

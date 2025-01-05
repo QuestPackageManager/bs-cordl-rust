@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AttributeCertificate {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub acinfo: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::X509::AttributeCertificateInfo,
     >,
@@ -23,9 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+AttributeCertificate")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::X509::AttributeCertificate {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -63,7 +59,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::AttributeCertificate {
         > = __cordl_object.invoke("GetSignatureOctets", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Asn1Sequence1(
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -72,7 +68,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::AttributeCertificate {
             .invoke_void(".ctor", (seq))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc0(
+    pub fn New_AttributeCertificateInfo_AlgorithmIdentifier_DerBitString0(
         acinfo: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::AttributeCertificateInfo,
         >,
@@ -102,7 +98,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::AttributeCertificate {
         > = __cordl_object.invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Asn1Sequence1(
         &mut self,
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -113,7 +109,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::AttributeCertificate {
             .invoke(".ctor", (seq))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc0(
+    pub fn _ctor_AttributeCertificateInfo_AlgorithmIdentifier_DerBitString0(
         &mut self,
         acinfo: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::AttributeCertificateInfo,

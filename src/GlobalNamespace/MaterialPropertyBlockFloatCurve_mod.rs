@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MaterialPropertyBlockFloatCurve {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MaterialPropertyBlockAnimator,
-    >,
+    __cordl_parent: crate::GlobalNamespace::MaterialPropertyBlockAnimator,
     pub _curve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
     pub _valueMultiplier: f32,
     pub _speedMultiplier: f32,
@@ -16,9 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MaterialPropertyBlockFloatCurve")]
 impl std::ops::Deref for crate::GlobalNamespace::MaterialPropertyBlockFloatCurve {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MaterialPropertyBlockAnimator,
-    >;
+    type Target = crate::GlobalNamespace::MaterialPropertyBlockAnimator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

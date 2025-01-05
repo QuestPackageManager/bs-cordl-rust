@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MockVRHelper {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub inputFocusWasCapturedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub inputFocusWasReleasedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub vrFocusWasCapturedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MockVRHelper")]
 impl std::ops::Deref for crate::GlobalNamespace::MockVRHelper {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -410,20 +410,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MockVRHelper 
     }
 }
 #[cfg(feature = "MockVRHelper")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRPlatformHelper>>
+impl AsRef<crate::GlobalNamespace::IVRPlatformHelper>
 for crate::GlobalNamespace::MockVRHelper {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRPlatformHelper> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IVRPlatformHelper {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MockVRHelper")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRPlatformHelper>>
+impl AsMut<crate::GlobalNamespace::IVRPlatformHelper>
 for crate::GlobalNamespace::MockVRHelper {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRPlatformHelper> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IVRPlatformHelper {
         unsafe { std::mem::transmute(self) }
     }
 }

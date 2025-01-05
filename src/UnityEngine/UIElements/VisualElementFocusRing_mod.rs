@@ -2,12 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct VisualElementFocusRing {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub root: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     pub _defaultFocusOrder_k__BackingField: crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder,
     pub m_FocusRing: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
+            >,
         >,
     >,
 }
@@ -18,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+VisualElementFocusRing")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::VisualElementFocusRing {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,8 +42,10 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         scopeIndex: quest_hook::libil2cpp::ByRefMut<i32>,
         scopeList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -177,8 +181,10 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
     pub fn SortAndFlattenScopeLists(
         &mut self,
         rootScopeList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -249,20 +255,16 @@ for crate::UnityEngine::UIElements::VisualElementFocusRing {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElementFocusRing")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IFocusRing>>
+impl AsRef<crate::UnityEngine::UIElements::IFocusRing>
 for crate::UnityEngine::UIElements::VisualElementFocusRing {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IFocusRing> {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IFocusRing {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElementFocusRing")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IFocusRing>>
+impl AsMut<crate::UnityEngine::UIElements::IFocusRing>
 for crate::UnityEngine::UIElements::VisualElementFocusRing {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IFocusRing> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IFocusRing {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -285,15 +287,17 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct VisualElementFocusRing_FocusRingRecord {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_AutoIndex: i32,
     pub m_Focusable: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::Focusable,
     >,
     pub m_IsSlot: bool,
     pub m_ScopeNavigationOrder: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
+            >,
         >,
     >,
 }
@@ -306,7 +310,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+VisualElementFocusRing+FocusRingRecord")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

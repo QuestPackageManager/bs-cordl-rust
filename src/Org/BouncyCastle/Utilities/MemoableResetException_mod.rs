@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MemoableResetException {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::InvalidCastException>,
+    __cordl_parent: crate::System::InvalidCastException,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+MemoableResetException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Utilities+MemoableResetException")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Utilities::MemoableResetException {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::InvalidCastException>;
+    type Target = crate::System::InvalidCastException;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

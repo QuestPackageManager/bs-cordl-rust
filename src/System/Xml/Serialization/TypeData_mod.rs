@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub elementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub sType: crate::System::Xml::Serialization::SchemaTypes,
@@ -29,7 +29,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Serialization+TypeData")]
 impl std::ops::Deref for crate::System::Xml::Serialization::TypeData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -99,7 +99,7 @@ impl crate::System::Xml::Serialization::TypeData {
             .invoke("LookupTypeConvertor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc_Gc1(
+    pub fn New_TypeData_XmlSchemaPatternFacet1(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         elementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isPrimitive: bool,
@@ -119,7 +119,7 @@ impl crate::System::Xml::Serialization::TypeData {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc__cordl_bool0(
+    pub fn New_Type_Il2CppString__cordl_bool0(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         elementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isPrimitive: bool,
@@ -130,7 +130,7 @@ impl crate::System::Xml::Serialization::TypeData {
             .invoke_void(".ctor", (_cordl_type, elementName, isPrimitive))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc_Gc1(
+    pub fn _ctor_TypeData_XmlSchemaPatternFacet1(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         elementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -152,7 +152,7 @@ impl crate::System::Xml::Serialization::TypeData {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc__cordl_bool0(
+    pub fn _ctor_Type_Il2CppString__cordl_bool0(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         elementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

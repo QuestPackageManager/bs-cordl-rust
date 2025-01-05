@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultDllImportSearchPathsAttribute {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+    __cordl_parent: crate::System::Attribute,
     pub _paths: crate::System::Runtime::InteropServices::DllImportSearchPath,
 }
 #[cfg(feature = "System+Runtime+InteropServices+DefaultDllImportSearchPathsAttribute")]
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+InteropServices+DefaultDllImportSearchPathsAttribute")]
 impl std::ops::Deref
 for crate::System::Runtime::InteropServices::DefaultDllImportSearchPathsAttribute {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Attribute>;
+    type Target = crate::System::Attribute;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

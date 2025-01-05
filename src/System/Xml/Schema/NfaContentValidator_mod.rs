@@ -2,14 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NfaContentValidator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::ContentValidator,
-    >,
+    __cordl_parent: crate::System::Xml::Schema::ContentValidator,
     pub firstpos: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
     pub followpos: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::Schema::BitSet>,
     >,
     pub symbols: quest_hook::libil2cpp::Gc<
         crate::System::Xml::Schema::SymbolsDictionary,
@@ -24,9 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+NfaContentValidator")]
 impl std::ops::Deref for crate::System::Xml::Schema::NfaContentValidator {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::ContentValidator,
-    >;
+    type Target = crate::System::Xml::Schema::ContentValidator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -95,9 +89,7 @@ impl crate::System::Xml::Schema::NfaContentValidator {
     pub fn New(
         firstpos: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
         followpos: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::Schema::BitSet>,
         >,
         symbols: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::SymbolsDictionary,
@@ -146,9 +138,7 @@ impl crate::System::Xml::Schema::NfaContentValidator {
         &mut self,
         firstpos: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
         followpos: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::Schema::BitSet>,
         >,
         symbols: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::SymbolsDictionary,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct IesEngine {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub agree: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::IBasicAgreement,
     >,
@@ -32,7 +32,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+IesEngine")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Engines::IesEngine {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -119,7 +119,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::IesEngine {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc1(
+    pub fn New_BufferedBlockCipher1(
         agree: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IBasicAgreement,
         >,
@@ -137,7 +137,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::IesEngine {
             .invoke_void(".ctor", (agree, kdf, mac, cipher))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc_Gc0(
+    pub fn New_IBasicAgreement_IDerivationFunction_IMac0(
         agree: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IBasicAgreement,
         >,
@@ -168,7 +168,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::IesEngine {
         > = __cordl_object.invoke("ProcessBlock", (input, inOff, inLen))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_BufferedBlockCipher1(
         &mut self,
         agree: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IBasicAgreement,
@@ -188,7 +188,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::IesEngine {
             .invoke(".ctor", (agree, kdf, mac, cipher))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_Gc0(
+    pub fn _ctor_IBasicAgreement_IDerivationFunction_IMac0(
         &mut self,
         agree: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IBasicAgreement,

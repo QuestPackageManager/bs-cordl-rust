@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConfigurableJoint {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Joint>,
+    __cordl_parent: crate::UnityEngine::Joint,
 }
 #[cfg(feature = "UnityEngine+ConfigurableJoint")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ConfigurableJoint")]
 impl std::ops::Deref for crate::UnityEngine::ConfigurableJoint {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Joint>;
+    type Target = crate::UnityEngine::Joint;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

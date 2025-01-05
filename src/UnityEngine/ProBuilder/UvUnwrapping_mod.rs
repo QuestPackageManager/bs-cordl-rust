@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UvUnwrapping {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+UvUnwrapping")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+UvUnwrapping")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::UvUnwrapping {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,7 +30,9 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
         uvs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
-        indexes: quest_hook::libil2cpp::Gc<i32>,
+        indexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
         anchor: crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Anchor,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -41,7 +43,9 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
         uvs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
-        indexes: quest_hook::libil2cpp::Gc<i32>,
+        indexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
         uvSettings: crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -49,10 +53,18 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
         Ok(__cordl_ret.into())
     }
     pub fn CalculateDelta(
-        src: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
-        srcIndices: quest_hook::libil2cpp::Gc<i32>,
-        dst: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
-        dstIndices: quest_hook::libil2cpp::Gc<i32>,
+        src: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
+        >,
+        srcIndices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
+        dst: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
+        >,
+        dstIndices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ProBuilder::UvUnwrapping_UVTransform,
     > {
@@ -80,7 +92,9 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
         Ok(__cordl_ret.into())
     }
     pub fn GetIndex(
-        collection: quest_hook::libil2cpp::Gc<i32>,
+        collection: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -88,8 +102,12 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
         Ok(__cordl_ret.into())
     }
     pub fn GetRotatedSize(
-        points: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
-        indices: quest_hook::libil2cpp::Gc<i32>,
+        points: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
+        >,
+        indices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
         center: crate::UnityEngine::Vector2,
         rotation: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
@@ -120,7 +138,9 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
         uvs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
-        indexes: quest_hook::libil2cpp::Gc<i32>,
+        indexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
         scale: crate::UnityEngine::Vector2,
         bounds: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Bounds2D>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -131,7 +151,9 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
     pub fn SetAutoAndAlignUnwrapParamsToUVs(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         facesToConvert: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -141,9 +163,7 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
     pub fn SetAutoUV(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         faces: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ProBuilder::Face>,
         >,
         _cordl_auto: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

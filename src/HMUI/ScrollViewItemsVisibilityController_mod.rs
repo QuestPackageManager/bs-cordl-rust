@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScrollViewItemsVisibilityController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _viewport: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub _contentRectTransform: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::RectTransform,
     >,
     pub _items: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::HMUI::ScrollViewItemForVisibilityController>,
+            *mut crate::HMUI::ScrollViewItemForVisibilityController,
         >,
     >,
     pub _lastContentAnchoredPositionY: f32,
@@ -18,7 +18,7 @@ pub struct ScrollViewItemsVisibilityController {
     >,
     pub _upperItemsCornes: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
+            *mut crate::System::Tuple_2<
                 quest_hook::libil2cpp::Gc<
                     crate::HMUI::ScrollViewItemForVisibilityController,
                 >,
@@ -28,7 +28,7 @@ pub struct ScrollViewItemsVisibilityController {
     >,
     pub _lowerItemsCornes: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
+            *mut crate::System::Tuple_2<
                 quest_hook::libil2cpp::Gc<
                     crate::HMUI::ScrollViewItemForVisibilityController,
                 >,
@@ -48,7 +48,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+ScrollViewItemsVisibilityController")]
 impl std::ops::Deref for crate::HMUI::ScrollViewItemsVisibilityController {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

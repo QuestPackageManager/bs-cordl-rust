@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameLiftClientConnectionRequestHandler {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _playerSessionId_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "GameLiftClientConnectionRequestHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::GameLiftClientConnectionRequestHandler {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -120,22 +120,16 @@ for crate::GlobalNamespace::GameLiftClientConnectionRequestHandler {
     }
 }
 #[cfg(feature = "GameLiftClientConnectionRequestHandler")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectionRequestHandler>>
+impl AsRef<crate::GlobalNamespace::IConnectionRequestHandler>
 for crate::GlobalNamespace::GameLiftClientConnectionRequestHandler {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectionRequestHandler> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IConnectionRequestHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "GameLiftClientConnectionRequestHandler")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectionRequestHandler>>
+impl AsMut<crate::GlobalNamespace::IConnectionRequestHandler>
 for crate::GlobalNamespace::GameLiftClientConnectionRequestHandler {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IConnectionRequestHandler,
-    > {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IConnectionRequestHandler {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetDataReader {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _position: i32,
     pub _dataSize: i32,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LiteNetLib+Utils+NetDataReader")]
 impl std::ops::Deref for crate::LiteNetLib::Utils::NetDataReader {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -102,7 +102,7 @@ impl crate::LiteNetLib::Utils::NetDataReader {
         > = __cordl_object.invoke("GetBytesWithLength", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetBytes_Gc_i32_1(
+    pub fn GetBytes_Il2CppArray_i32_1(
         &mut self,
         destination: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         count: i32,
@@ -293,18 +293,14 @@ impl crate::LiteNetLib::Utils::NetDataReader {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("GetStringArray", ())?;
         Ok(__cordl_ret.into())
     }
@@ -313,18 +309,14 @@ impl crate::LiteNetLib::Utils::NetDataReader {
         maxStringLength: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("GetStringArray", (maxStringLength))?;
         Ok(__cordl_ret.into())
     }
@@ -422,7 +414,7 @@ impl crate::LiteNetLib::Utils::NetDataReader {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Il2CppArray1(
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -431,7 +423,7 @@ impl crate::LiteNetLib::Utils::NetDataReader {
             .invoke_void(".ctor", (source))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_i32_2(
+    pub fn New_Il2CppArray_i32_2(
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -441,7 +433,7 @@ impl crate::LiteNetLib::Utils::NetDataReader {
             .invoke_void(".ctor", (source, offset))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_i32_i32_3(
+    pub fn New_Il2CppArray_i32_i32_3(
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
         maxSize: i32,
@@ -563,18 +555,7 @@ impl crate::LiteNetLib::Utils::NetDataReader {
         let __cordl_ret: u16 = __cordl_object.invoke("PeekUShort", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetSource_Gc0(
-        &mut self,
-        dataWriter: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetSource", (dataWriter))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetSource_Gc1(
+    pub fn SetSource_Il2CppArray1(
         &mut self,
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -585,7 +566,7 @@ impl crate::LiteNetLib::Utils::NetDataReader {
             .invoke("SetSource", (source))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetSource_i32_2(
+    pub fn SetSource_Il2CppArray_i32_2(
         &mut self,
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
@@ -597,7 +578,7 @@ impl crate::LiteNetLib::Utils::NetDataReader {
             .invoke("SetSource", (source, offset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetSource_i32_i32_3(
+    pub fn SetSource_Il2CppArray_i32_i32_3(
         &mut self,
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
@@ -608,6 +589,17 @@ impl crate::LiteNetLib::Utils::NetDataReader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetSource", (source, offset, maxSize))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetSource_NetDataWriter0(
+        &mut self,
+        dataWriter: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetSource", (dataWriter))?;
         Ok(__cordl_ret.into())
     }
     pub fn SkipBytes(
@@ -741,7 +733,7 @@ impl crate::LiteNetLib::Utils::NetDataReader {
         result: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    *mut quest_hook::libil2cpp::Il2CppString,
                 >,
             >,
         >,
@@ -792,7 +784,7 @@ impl crate::LiteNetLib::Utils::NetDataReader {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Il2CppArray1(
         &mut self,
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -803,7 +795,7 @@ impl crate::LiteNetLib::Utils::NetDataReader {
             .invoke(".ctor", (source))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_i32_2(
+    pub fn _ctor_Il2CppArray_i32_2(
         &mut self,
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
@@ -815,7 +807,7 @@ impl crate::LiteNetLib::Utils::NetDataReader {
             .invoke(".ctor", (source, offset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_i32_i32_3(
+    pub fn _ctor_Il2CppArray_i32_i32_3(
         &mut self,
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,

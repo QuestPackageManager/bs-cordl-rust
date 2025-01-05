@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Core {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Oculus+Platform+Core")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+Core")]
 impl std::ops::Deref for crate::Oculus::Platform::Core {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,43 +24,53 @@ impl std::ops::DerefMut for crate::Oculus::Platform::Core {
 }
 #[cfg(feature = "Oculus+Platform+Core")]
 impl crate::Oculus::Platform::Core {
-    pub fn AsyncInitialize_Gc0(
-        appId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::PlatformInitialize,
-            >,
-        >,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::PlatformInitialize,
-            >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AsyncInitialize", (appId))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn AsyncInitialize_Gc_Gc1(
+    pub fn AsyncInitialize_Dictionary_2_Il2CppString1(
         accessToken: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         initConfigOptions: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::InitConfigOptions,
-            bool,
+            crate::System::Collections::Generic::Dictionary_2<
+                crate::Oculus::Platform::InitConfigOptions,
+                bool,
+            >,
         >,
         appId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::PlatformInitialize,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::PlatformInitialize,
+                >,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::PlatformInitialize,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::PlatformInitialize,
+                >,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("AsyncInitialize", (accessToken, initConfigOptions, appId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AsyncInitialize_Il2CppString0(
+        appId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::PlatformInitialize,
+                >,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::PlatformInitialize,
+                >,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AsyncInitialize", (appId))?;
         Ok(__cordl_ret.into())
     }
     pub fn ForceInitialized() -> quest_hook::libil2cpp::Result<

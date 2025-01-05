@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HashAlgorithm {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _disposed: bool,
     pub HashSizeValue: i32,
     pub HashValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+Cryptography+HashAlgorithm")]
 impl std::ops::Deref for crate::System::Security::Cryptography::HashAlgorithm {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -51,7 +51,7 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
             .invoke("Clear", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ComputeHash_Gc0(
+    pub fn ComputeHash_Il2CppArray0(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
@@ -65,21 +65,7 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
         > = __cordl_object.invoke("ComputeHash", (buffer))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ComputeHash_Gc2(
-        &mut self,
-        inputStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = __cordl_object.invoke("ComputeHash", (inputStream))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ComputeHash_i32_i32_1(
+    pub fn ComputeHash_Il2CppArray_i32_i32_1(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
@@ -93,6 +79,20 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
         > = __cordl_object.invoke("ComputeHash", (buffer, offset, count))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ComputeHash_Stream2(
+        &mut self,
+        inputStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = __cordl_object.invoke("ComputeHash", (inputStream))?;
         Ok(__cordl_ret.into())
     }
     pub fn Create(
@@ -283,40 +283,32 @@ for crate::System::Security::Cryptography::HashAlgorithm {
     }
 }
 #[cfg(feature = "System+Security+Cryptography+HashAlgorithm")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsRef<crate::System::IDisposable>
 for crate::System::Security::Cryptography::HashAlgorithm {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Security+Cryptography+HashAlgorithm")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsMut<crate::System::IDisposable>
 for crate::System::Security::Cryptography::HashAlgorithm {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Security+Cryptography+HashAlgorithm")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::ICryptoTransform>,
-> for crate::System::Security::Cryptography::HashAlgorithm {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Security::Cryptography::ICryptoTransform,
-    > {
+impl AsRef<crate::System::Security::Cryptography::ICryptoTransform>
+for crate::System::Security::Cryptography::HashAlgorithm {
+    fn as_ref(&self) -> &crate::System::Security::Cryptography::ICryptoTransform {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Security+Cryptography+HashAlgorithm")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::ICryptoTransform>,
-> for crate::System::Security::Cryptography::HashAlgorithm {
+impl AsMut<crate::System::Security::Cryptography::ICryptoTransform>
+for crate::System::Security::Cryptography::HashAlgorithm {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Security::Cryptography::ICryptoTransform,
-    > {
+    ) -> &mut crate::System::Security::Cryptography::ICryptoTransform {
         unsafe { std::mem::transmute(self) }
     }
 }

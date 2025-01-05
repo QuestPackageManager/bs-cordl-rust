@@ -256,7 +256,7 @@ for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonString")]
 impl crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString {
-    pub fn Equals_Gc1(
+    pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -324,13 +324,13 @@ impl crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonString")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString,
     >,
 > for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString,
     > {
         todo!()
@@ -338,13 +338,13 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonString")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString,
     >,
 > for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString,
     > {
         todo!()
@@ -360,11 +360,15 @@ pub struct JsonParser_JsonValue {
     pub integerValue: i64,
     pub stringValue: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString,
     pub arrayValue: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+        >,
     >,
     pub objectValue: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+        >,
     >,
     pub anyValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
@@ -387,7 +391,7 @@ for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValue")]
 impl crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
-    pub fn Equals_Gc2(
+    pub fn Equals_Il2CppObject2(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -398,7 +402,7 @@ impl crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Gc_JsonParser_JsonValue1(
+    pub fn Equals_Il2CppObject_JsonParser_JsonValue1(
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         value: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -467,30 +471,12 @@ impl crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
             .invoke("op_Equality", (left, right))?;
         Ok(__cordl_ret.into())
     }
-    pub fn op_Implicit_Gc3(
-        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("op_Implicit", (str))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn op_Implicit_Gc5(
-        array: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("op_Implicit", (array))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn op_Implicit_Gc6(
+    pub fn op_Implicit_Dictionary_2_6(
         obj: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
@@ -499,13 +485,22 @@ impl crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
             .invoke("op_Implicit", (obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn op_Implicit_Gc7(
+    pub fn op_Implicit_Enum7(
         val: quest_hook::libil2cpp::Gc<crate::System::Enum>,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
     > {
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("op_Implicit", (val))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_Il2CppString3(
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (str))?;
         Ok(__cordl_ret.into())
     }
     pub fn op_Implicit_JsonParser_JsonString4(
@@ -515,6 +510,19 @@ impl crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
     > {
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("op_Implicit", (str))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_List_1_5(
+        array: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (array))?;
         Ok(__cordl_ret.into())
     }
     pub fn op_Implicit__cordl_bool0(
@@ -555,13 +563,13 @@ impl crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValue")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
     >,
 > for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
     > {
         todo!()
@@ -569,13 +577,13 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValue")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
     >,
 > for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
     > {
         todo!()

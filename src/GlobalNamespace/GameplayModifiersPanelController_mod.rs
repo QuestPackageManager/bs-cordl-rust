@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameplayModifiersPanelController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _gameplayModifiersModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::GameplayModifiersModelSO,
     >,
@@ -21,13 +21,15 @@ pub struct GameplayModifiersPanelController {
     pub _toggleBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ToggleBinder>,
     pub _gameplayModifierToggles: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierToggle>,
+            *mut crate::GlobalNamespace::GameplayModifierToggle,
         >,
     >,
     pub _changingGameplayModifierToggles: bool,
     pub _toggleForGameplayModifierParam: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+        >,
     >,
 }
 #[cfg(feature = "GameplayModifiersPanelController")]
@@ -38,7 +40,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "GameplayModifiersPanelController")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplayModifiersPanelController {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -201,20 +203,16 @@ for crate::GlobalNamespace::GameplayModifiersPanelController {
     }
 }
 #[cfg(feature = "GameplayModifiersPanelController")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRefreshable>>
+impl AsRef<crate::GlobalNamespace::IRefreshable>
 for crate::GlobalNamespace::GameplayModifiersPanelController {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRefreshable> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IRefreshable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "GameplayModifiersPanelController")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRefreshable>>
+impl AsMut<crate::GlobalNamespace::IRefreshable>
 for crate::GlobalNamespace::GameplayModifiersPanelController {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRefreshable> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IRefreshable {
         unsafe { std::mem::transmute(self) }
     }
 }

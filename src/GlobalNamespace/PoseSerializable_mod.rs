@@ -34,7 +34,7 @@ impl crate::GlobalNamespace::PoseSerializable {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Gc1(
+    pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -144,38 +144,34 @@ impl crate::GlobalNamespace::PoseSerializable {
     }
 }
 #[cfg(feature = "PoseSerializable")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PoseSerializable>>
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::PoseSerializable {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "PoseSerializable")]
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::PoseSerializable {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "PoseSerializable")]
+impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::PoseSerializable>>
 for crate::GlobalNamespace::PoseSerializable {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PoseSerializable> {
+    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::PoseSerializable> {
         todo!()
     }
 }
 #[cfg(feature = "PoseSerializable")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PoseSerializable>>
+impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::PoseSerializable>>
 for crate::GlobalNamespace::PoseSerializable {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PoseSerializable> {
-        todo!()
-    }
-}
-#[cfg(feature = "PoseSerializable")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable>>
-for crate::GlobalNamespace::PoseSerializable {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable> {
-        todo!()
-    }
-}
-#[cfg(feature = "PoseSerializable")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable>>
-for crate::GlobalNamespace::PoseSerializable {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable> {
+    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::PoseSerializable> {
         todo!()
     }
 }

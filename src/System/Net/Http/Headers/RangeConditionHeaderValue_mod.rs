@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RangeConditionHeaderValue {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Date_k__BackingField: crate::System::Nullable_1<crate::System::DateTimeOffset>,
     pub _EntityTag_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::System::Net::Http::Headers::EntityTagHeaderValue,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Http+Headers+RangeConditionHeaderValue")]
 impl std::ops::Deref for crate::System::Net::Http::Headers::RangeConditionHeaderValue {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -56,7 +56,7 @@ impl crate::System::Net::Http::Headers::RangeConditionHeaderValue {
             .invoke_void(".ctor", (date))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_EntityTagHeaderValue1(
         entityTag: quest_hook::libil2cpp::Gc<
             crate::System::Net::Http::Headers::EntityTagHeaderValue,
         >,
@@ -116,7 +116,7 @@ impl crate::System::Net::Http::Headers::RangeConditionHeaderValue {
             .invoke(".ctor", (date))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_EntityTagHeaderValue1(
         &mut self,
         entityTag: quest_hook::libil2cpp::Gc<
             crate::System::Net::Http::Headers::EntityTagHeaderValue,
@@ -192,16 +192,16 @@ for crate::System::Net::Http::Headers::RangeConditionHeaderValue {
     }
 }
 #[cfg(feature = "System+Net+Http+Headers+RangeConditionHeaderValue")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
+impl AsRef<crate::System::ICloneable>
 for crate::System::Net::Http::Headers::RangeConditionHeaderValue {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
+    fn as_ref(&self) -> &crate::System::ICloneable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Net+Http+Headers+RangeConditionHeaderValue")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
+impl AsMut<crate::System::ICloneable>
 for crate::System::Net::Http::Headers::RangeConditionHeaderValue {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
+    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
         unsafe { std::mem::transmute(self) }
     }
 }

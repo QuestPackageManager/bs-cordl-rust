@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HttpListenerException {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::ComponentModel::Win32Exception,
-    >,
+    __cordl_parent: crate::System::ComponentModel::Win32Exception,
 }
 #[cfg(feature = "System+Net+HttpListenerException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+HttpListenerException")]
 impl std::ops::Deref for crate::System::Net::HttpListenerException {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::ComponentModel::Win32Exception,
-    >;
+    type Target = crate::System::ComponentModel::Win32Exception;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,7 +31,7 @@ impl crate::System::Net::HttpListenerException {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_StreamingContext2(
+    pub fn New_SerializationInfo_StreamingContext2(
         serializationInfo: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -47,7 +43,7 @@ impl crate::System::Net::HttpListenerException {
             .invoke_void(".ctor", (serializationInfo, streamingContext))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_Gc1(
+    pub fn New_i32_Il2CppString1(
         errorCode: i32,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -67,7 +63,7 @@ impl crate::System::Net::HttpListenerException {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_StreamingContext2(
+    pub fn _ctor_SerializationInfo_StreamingContext2(
         &mut self,
         serializationInfo: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -81,7 +77,7 @@ impl crate::System::Net::HttpListenerException {
             .invoke(".ctor", (serializationInfo, streamingContext))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_Gc1(
+    pub fn _ctor_i32_Il2CppString1(
         &mut self,
         errorCode: i32,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

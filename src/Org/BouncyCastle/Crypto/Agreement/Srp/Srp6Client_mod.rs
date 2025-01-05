@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Srp6Client {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub N: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     pub g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     pub privA: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -27,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+Srp+Srp6Client")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Client {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -111,7 +111,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Client {
             .invoke("GenerateClientCredentials", (salt, identity, password))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Init_Gc0(
+    pub fn Init_BigInteger_BigInteger_IDigest_SecureRandom0(
         &mut self,
         N: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -127,7 +127,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Client {
             .invoke("Init", (N, g, digest, random))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Init_Gc_Gc_Gc1(
+    pub fn Init_Srp6GroupParameters_IDigest_SecureRandom1(
         &mut self,
         group: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::Srp6GroupParameters,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TouchScreenKeyboard {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Ptr: crate::System::IntPtr,
 }
 #[cfg(feature = "UnityEngine+TouchScreenKeyboard")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+TouchScreenKeyboard")]
 impl std::ops::Deref for crate::UnityEngine::TouchScreenKeyboard {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -95,7 +95,7 @@ impl crate::UnityEngine::TouchScreenKeyboard {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn Open_Gc_TouchScreenKeyboardType__cordl_bool__cordl_bool__cordl_bool1(
+    pub fn Open_Il2CppString_TouchScreenKeyboardType__cordl_bool__cordl_bool__cordl_bool1(
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         keyboardType: crate::UnityEngine::TouchScreenKeyboardType,
         autocorrection: bool,
@@ -110,7 +110,7 @@ impl crate::UnityEngine::TouchScreenKeyboard {
             .invoke("Open", (text, keyboardType, autocorrection, multiline, secure))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Open__cordl_bool_Gc_i32_0(
+    pub fn Open__cordl_bool_Il2CppString_i32_0(
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         keyboardType: crate::UnityEngine::TouchScreenKeyboardType,
         autocorrection: bool,

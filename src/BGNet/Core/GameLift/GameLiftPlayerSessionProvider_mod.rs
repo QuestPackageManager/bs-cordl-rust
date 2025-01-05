@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameLiftPlayerSessionProvider {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _networkConfig: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::INetworkConfig,
     >,
@@ -13,8 +13,10 @@ pub struct GameLiftPlayerSessionProvider {
         crate::GlobalNamespace::XPlatformAuthFeatureFlag,
     >,
     pub _pingAverages: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::RollingAverage>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::RollingAverage>,
+        >,
     >,
     pub _pingCount: i32,
     pub _lastPingTime: i64,
@@ -27,7 +29,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider")]
 impl std::ops::Deref for crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -50,16 +52,20 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            i64,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                i64,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            i64,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                i64,
+            >,
         > = __cordl_object.invoke("GetAverageLatencies", ())?;
         Ok(__cordl_ret.into())
     }
@@ -87,14 +93,22 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BGNet::Core::GameLift::PlayerSessionInfo>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BGNet::Core::GameLift::PlayerSessionInfo,
+                >,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BGNet::Core::GameLift::PlayerSessionInfo>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BGNet::Core::GameLift::PlayerSessionInfo,
+                >,
+            >,
         > = __cordl_object
             .invoke(
                 "GetGameLiftPlayerSessionInfo",
@@ -118,13 +132,19 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
         cancellationToken: crate::System::Threading::CancellationToken,
         skipCache: bool,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::XPlatformAccessTokenData>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::XPlatformAccessTokenData,
+            >,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::XPlatformAccessTokenData,
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::XPlatformAccessTokenData,
+            >,
         > = __cordl_object
             .invoke(
                 "GetXPlatformAccessToken",
@@ -159,9 +179,11 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
         awsRegion: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::ValueTuple_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                i64,
+            crate::System::Threading::Tasks::Task_1<
+                crate::System::ValueTuple_2<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i64,
+                >,
             >,
         >,
     > {
@@ -169,9 +191,11 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::ValueTuple_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                i64,
+            crate::System::Threading::Tasks::Task_1<
+                crate::System::ValueTuple_2<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i64,
+                >,
             >,
         > = __cordl_object.invoke("PingRegionAsync", (awsRegion))?;
         Ok(__cordl_ret.into())
@@ -191,9 +215,11 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
         region: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::ValueTuple_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                i64,
+            crate::System::Threading::Tasks::Task_1<
+                crate::System::ValueTuple_2<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i64,
+                >,
             >,
         >,
     > {
@@ -201,9 +227,11 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::ValueTuple_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                i64,
+            crate::System::Threading::Tasks::Task_1<
+                crate::System::ValueTuple_2<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i64,
+                >,
             >,
         > = __cordl_object.invoke("<PingAllAwsGameLiftRegions>b__16_0", (region))?;
         Ok(__cordl_ret.into())
@@ -234,46 +262,32 @@ for crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
     }
 }
 #[cfg(feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider,
-    >,
-> for crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider,
-    >,
-> for crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPollable>>
+impl AsRef<crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider>
 for crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPollable> {
+    fn as_ref(&self) -> &crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPollable>>
+impl AsMut<crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider>
 for crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPollable> {
+    ) -> &mut crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider")]
+impl AsRef<crate::GlobalNamespace::IPollable>
+for crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPollable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider")]
+impl AsMut<crate::GlobalNamespace::IPollable>
+for crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPollable {
         unsafe { std::mem::transmute(self) }
     }
 }

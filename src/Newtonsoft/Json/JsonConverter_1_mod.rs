@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonConverter_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
+    __cordl_parent: crate::Newtonsoft::Json::JsonConverter,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "Newtonsoft+Json+JsonConverter_1")]
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Newtonsoft+Json+JsonConverter_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Newtonsoft::Json::JsonConverter_1<T> {
-    type Target = quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>;
+    type Target = crate::Newtonsoft::Json::JsonConverter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -52,7 +52,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Newtonsoft::Json::JsonConverter_1<T>
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn ReadJson_Gc_Gc0(
+    pub fn ReadJson_Il2CppObject_JsonSerializer0(
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
         objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -74,7 +74,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Newtonsoft::Json::JsonConverter_1<T>
             .invoke("ReadJson", (reader, objectType, existingValue, serializer))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadJson_T__cordl_bool_Gc1(
+    pub fn ReadJson_T__cordl_bool_JsonSerializer1(
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
         objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -96,7 +96,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Newtonsoft::Json::JsonConverter_1<T>
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteJson_Gc0(
+    pub fn WriteJson_Il2CppObject0(
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

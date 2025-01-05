@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Environment {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Environment")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Environment")]
 impl std::ops::Deref for crate::System::Environment {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,7 +44,7 @@ impl crate::System::Environment {
             .invoke("Exit", (exitCode))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FailFast_Gc1(
+    pub fn FailFast_Il2CppString1(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         exception: quest_hook::libil2cpp::Gc<crate::System::Exception>,
         errorSource: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -53,7 +53,7 @@ impl crate::System::Environment {
             .invoke("FailFast", (message, exception, errorSource))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FailFast_Gc_Gc0(
+    pub fn FailFast_Il2CppString_Exception0(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         exception: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -63,30 +63,22 @@ impl crate::System::Environment {
     }
     pub fn GetCommandLineArgs() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetCommandLineArgs", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn GetEnvironmentVariableNames() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetEnvironmentVariableNames", ())?;
         Ok(__cordl_ret.into())
@@ -103,7 +95,7 @@ impl crate::System::Environment {
             .invoke("GetEnvironmentVariable", (variable, target))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetEnvironmentVariable_Gc0(
+    pub fn GetEnvironmentVariable_Il2CppString0(
         variable: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -153,15 +145,11 @@ impl crate::System::Environment {
     }
     pub fn GetLogicalDrivesInternal() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetLogicalDrivesInternal", ())?;
         Ok(__cordl_ret.into())
@@ -208,23 +196,10 @@ impl crate::System::Environment {
             .invoke("GetResourceStringEncodingName", (codePage))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetResourceString_Gc0(
-        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetResourceString", (key))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetResourceString_Gc1(
+    pub fn GetResourceString_Il2CppArray1(
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         values: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -233,6 +208,17 @@ impl crate::System::Environment {
             quest_hook::libil2cpp::Il2CppString,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetResourceString", (key, values))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetResourceString_Il2CppString0(
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetResourceString", (key))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetStackTrace(
@@ -258,15 +244,7 @@ impl crate::System::Environment {
             .invoke("GetWindowsFolderPath", (folder))?;
         Ok(__cordl_ret.into())
     }
-    pub fn InternalSetEnvironmentVariable_Gc1(
-        variable: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InternalSetEnvironmentVariable", (variable, value))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn InternalSetEnvironmentVariable_i32_Gc_i32_0(
+    pub fn InternalSetEnvironmentVariable_Il2CppObject_i32_Il2CppObject_i32_0(
         variable: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         variable_length: i32,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -277,6 +255,14 @@ impl crate::System::Environment {
                 "InternalSetEnvironmentVariable",
                 (variable, variable_length, value, value_length),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalSetEnvironmentVariable_Il2CppString_Il2CppString1(
+        variable: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalSetEnvironmentVariable", (variable, value))?;
         Ok(__cordl_ret.into())
     }
     pub fn ReadXdgUserDir(

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MacUtilities {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+Security+MacUtilities")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Security+MacUtilities")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Security::MacUtilities {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -39,7 +39,7 @@ impl crate::Org::BouncyCastle::Security::MacUtilities {
             .invoke("CalculateMac", (algorithm, cp, input))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DoFinal_Gc0(
+    pub fn DoFinal_IMac0(
         mac: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -49,7 +49,7 @@ impl crate::Org::BouncyCastle::Security::MacUtilities {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("DoFinal", (mac))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DoFinal_Gc1(
+    pub fn DoFinal_Il2CppArray1(
         mac: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
@@ -74,7 +74,7 @@ impl crate::Org::BouncyCastle::Security::MacUtilities {
             .invoke("GetAlgorithmName", (oid))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetMac_Gc0(
+    pub fn GetMac_DerObjectIdentifier0(
         id: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
@@ -86,7 +86,7 @@ impl crate::Org::BouncyCastle::Security::MacUtilities {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetMac", (id))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetMac_Gc1(
+    pub fn GetMac_Il2CppString1(
         algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,

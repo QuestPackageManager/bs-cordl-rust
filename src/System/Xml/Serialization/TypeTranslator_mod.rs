@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeTranslator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Xml+Serialization+TypeTranslator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Serialization+TypeTranslator")]
 impl std::ops::Deref for crate::System::Xml::Serialization::TypeTranslator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -46,7 +46,7 @@ impl crate::System::Xml::Serialization::TypeTranslator {
             .invoke("GetArrayName", (elemName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetPrimitiveTypeData_Gc0(
+    pub fn GetPrimitiveTypeData_Il2CppString0(
         typeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::TypeData>,
@@ -69,18 +69,7 @@ impl crate::System::Xml::Serialization::TypeTranslator {
             .invoke("GetPrimitiveTypeData", (typeName, nullable))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetTypeData_Gc0(
-        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::TypeData>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Serialization::TypeData,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetTypeData", (_cordl_type))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetTypeData_Gc__cordl_bool1(
+    pub fn GetTypeData_Il2CppString__cordl_bool1(
         runtimeType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         xmlDataType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         underlyingEnumType: bool,
@@ -91,6 +80,17 @@ impl crate::System::Xml::Serialization::TypeTranslator {
             crate::System::Xml::Serialization::TypeData,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetTypeData", (runtimeType, xmlDataType, underlyingEnumType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTypeData_Type0(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::TypeData>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Serialization::TypeData,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTypeData", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
     pub fn ParseArrayType(

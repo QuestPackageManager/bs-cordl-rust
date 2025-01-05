@@ -2,25 +2,21 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SerializationInfo {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_members: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub m_data: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
     pub m_types: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
     >,
     pub m_nameToIndex: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        i32,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            i32,
+        >,
     >,
     pub m_currMember: i32,
     pub m_converter: quest_hook::libil2cpp::Gc<
@@ -41,7 +37,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+Serialization+SerializationInfo")]
 impl std::ops::Deref for crate::System::Runtime::Serialization::SerializationInfo {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -82,7 +78,7 @@ impl crate::System::Runtime::Serialization::SerializationInfo {
             .invoke("AddValue", (name, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddValue_Gc1(
+    pub fn AddValue_Il2CppObject1(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -94,7 +90,7 @@ impl crate::System::Runtime::Serialization::SerializationInfo {
             .invoke("AddValue", (name, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddValue_Gc_Gc0(
+    pub fn AddValue_Il2CppObject_Type0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -378,7 +374,7 @@ impl crate::System::Runtime::Serialization::SerializationInfo {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc_Gc0(
+    pub fn New_Type_IFormatterConverter0(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         converter: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::IFormatterConverter,
@@ -430,7 +426,7 @@ impl crate::System::Runtime::Serialization::SerializationInfo {
             .invoke("UpdateValue", (name, value, _cordl_type))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc0(
+    pub fn _ctor_Type_IFormatterConverter0(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         converter: quest_hook::libil2cpp::Gc<

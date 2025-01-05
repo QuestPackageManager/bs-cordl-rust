@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Monitor {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Threading+Monitor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+Monitor")]
 impl std::ops::Deref for crate::System::Threading::Monitor {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,7 +32,7 @@ impl crate::System::Threading::Monitor {
             .invoke("Enter", (obj, lockTaken))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Enter_Gc0(
+    pub fn Enter_Il2CppObject0(
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -144,7 +144,7 @@ impl crate::System::Threading::Monitor {
             .invoke("TryEnter", (obj, lockTaken))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Wait_Gc_i32_1(
+    pub fn Wait_Il2CppObject_i32_1(
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         millisecondsTimeout: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {

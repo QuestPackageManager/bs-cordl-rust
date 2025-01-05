@@ -53,30 +53,18 @@ impl crate::UnityEngine::InputSystem::XR::PoseState {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+XR+PoseState")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo,
-    >,
-> for crate::UnityEngine::InputSystem::XR::PoseState {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo,
-    > {
+impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo>
+for crate::UnityEngine::InputSystem::XR::PoseState {
+    fn as_ref(&self) -> &crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+XR+PoseState")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo,
-    >,
-> for crate::UnityEngine::InputSystem::XR::PoseState {
+impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo>
+for crate::UnityEngine::InputSystem::XR::PoseState {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo,
-    > {
+    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo {
         todo!()
     }
 }

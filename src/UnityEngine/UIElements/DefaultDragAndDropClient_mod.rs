@@ -2,16 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultDragAndDropClient {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::DragAndDropData,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::DragAndDropData,
     pub m_GenericData: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub m_DraggedInfoLabel: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::Label,
     >,
     pub m_VisualMode: crate::UnityEngine::UIElements::DragVisualMode,
     pub m_UnityObjectReferences: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+        crate::System::Collections::Generic::IEnumerable_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+DefaultDragAndDropClient")]
@@ -22,9 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+DefaultDragAndDropClient")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DefaultDragAndDropClient {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::DragAndDropData,
-    >;
+    type Target = crate::UnityEngine::UIElements::DragAndDropData;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -160,20 +158,16 @@ for crate::UnityEngine::UIElements::DefaultDragAndDropClient {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DefaultDragAndDropClient")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IDragAndDrop>>
+impl AsRef<crate::UnityEngine::UIElements::IDragAndDrop>
 for crate::UnityEngine::UIElements::DefaultDragAndDropClient {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IDragAndDrop> {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IDragAndDrop {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DefaultDragAndDropClient")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IDragAndDrop>>
+impl AsMut<crate::UnityEngine::UIElements::IDragAndDrop>
 for crate::UnityEngine::UIElements::DefaultDragAndDropClient {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IDragAndDrop> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IDragAndDrop {
         unsafe { std::mem::transmute(self) }
     }
 }

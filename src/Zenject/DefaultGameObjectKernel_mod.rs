@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultGameObjectKernel {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::MonoKernel>,
+    __cordl_parent: crate::Zenject::MonoKernel,
 }
 #[cfg(feature = "Zenject+DefaultGameObjectKernel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+DefaultGameObjectKernel")]
 impl std::ops::Deref for crate::Zenject::DefaultGameObjectKernel {
-    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::MonoKernel>;
+    type Target = crate::Zenject::MonoKernel;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

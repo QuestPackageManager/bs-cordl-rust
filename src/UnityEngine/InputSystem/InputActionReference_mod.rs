@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputActionReference {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+    __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub m_Asset: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::InputActionAsset,
     >,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputActionReference")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputActionReference {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>;
+    type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -73,7 +73,7 @@ impl crate::UnityEngine::InputSystem::InputActionReference {
             .invoke("SetInternal", (asset, action))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Set_Gc0(
+    pub fn Set_InputAction0(
         &mut self,
         action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -84,7 +84,7 @@ impl crate::UnityEngine::InputSystem::InputActionReference {
             .invoke("Set", (action))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Set_Gc_Gc1(
+    pub fn Set_InputActionAsset_Il2CppString_Il2CppString1(
         &mut self,
         asset: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputActionAsset,

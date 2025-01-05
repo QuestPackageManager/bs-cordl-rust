@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaComplexContentRestriction {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::XmlSchemaContent,
-    >,
+    __cordl_parent: crate::System::Xml::Schema::XmlSchemaContent,
     pub particle: quest_hook::libil2cpp::Gc<
         crate::System::Xml::Schema::XmlSchemaParticle,
     >,
@@ -24,9 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlSchemaComplexContentRestriction")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaComplexContentRestriction {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::XmlSchemaContent,
-    >;
+    type Target = crate::System::Xml::Schema::XmlSchemaContent;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

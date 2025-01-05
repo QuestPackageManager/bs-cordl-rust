@@ -2,12 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AbstractF2mCurve {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Math::EC::ECCurve,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Math::EC::ECCurve,
     pub si: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+            *mut crate::Org::BouncyCastle::Math::BigInteger,
         >,
     >,
 }
@@ -18,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Math+EC+AbstractF2mCurve")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::AbstractF2mCurve {
-    type Target = quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>;
+    type Target = crate::Org::BouncyCastle::Math::EC::ECCurve;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -81,7 +79,7 @@ impl crate::Org::BouncyCastle::Math::EC::AbstractF2mCurve {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                *mut crate::Org::BouncyCastle::Math::BigInteger,
             >,
         >,
     > {
@@ -90,7 +88,7 @@ impl crate::Org::BouncyCastle::Math::EC::AbstractF2mCurve {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                *mut crate::Org::BouncyCastle::Math::BigInteger,
             >,
         > = __cordl_object.invoke("GetSi", ())?;
         Ok(__cordl_ret.into())

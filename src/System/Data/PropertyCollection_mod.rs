@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PropertyCollection {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    __cordl_parent: crate::System::Collections::Hashtable,
 }
 #[cfg(feature = "System+Data+PropertyCollection")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+PropertyCollection")]
 impl std::ops::Deref for crate::System::Data::PropertyCollection {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>;
+    type Target = crate::System::Collections::Hashtable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,7 +44,7 @@ impl crate::System::Data::PropertyCollection {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_StreamingContext1(
+    pub fn New_SerializationInfo_StreamingContext1(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -66,7 +66,7 @@ impl crate::System::Data::PropertyCollection {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_StreamingContext1(
+    pub fn _ctor_SerializationInfo_StreamingContext1(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -91,16 +91,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::PropertyCollecti
     }
 }
 #[cfg(feature = "System+Data+PropertyCollection")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
-for crate::System::Data::PropertyCollection {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
+impl AsRef<crate::System::ICloneable> for crate::System::Data::PropertyCollection {
+    fn as_ref(&self) -> &crate::System::ICloneable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Data+PropertyCollection")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
-for crate::System::Data::PropertyCollection {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
+impl AsMut<crate::System::ICloneable> for crate::System::Data::PropertyCollection {
+    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
         unsafe { std::mem::transmute(self) }
     }
 }

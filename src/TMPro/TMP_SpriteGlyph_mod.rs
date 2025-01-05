@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_SpriteGlyph {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
+    __cordl_parent: crate::UnityEngine::TextCore::Glyph,
     pub sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
 }
 #[cfg(feature = "TMPro+TMP_SpriteGlyph")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+TMP_SpriteGlyph")]
 impl std::ops::Deref for crate::TMPro::TMP_SpriteGlyph {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>;
+    type Target = crate::UnityEngine::TextCore::Glyph;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -45,7 +45,7 @@ impl crate::TMPro::TMP_SpriteGlyph {
             .invoke_void(".ctor", (index, metrics, glyphRect, scale, atlasIndex))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_u32_GlyphMetrics_GlyphRect_f32_i32_Gc2(
+    pub fn New_u32_GlyphMetrics_GlyphRect_f32_i32_Sprite2(
         index: u32,
         metrics: crate::UnityEngine::TextCore::GlyphMetrics,
         glyphRect: crate::UnityEngine::TextCore::GlyphRect,
@@ -87,7 +87,7 @@ impl crate::TMPro::TMP_SpriteGlyph {
             .invoke(".ctor", (index, metrics, glyphRect, scale, atlasIndex))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_u32_GlyphMetrics_GlyphRect_f32_i32_Gc2(
+    pub fn _ctor_u32_GlyphMetrics_GlyphRect_f32_i32_Sprite2(
         &mut self,
         index: u32,
         metrics: crate::UnityEngine::TextCore::GlyphMetrics,

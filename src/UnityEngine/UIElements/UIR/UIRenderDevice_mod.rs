@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UIRenderDevice {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_MockDevice: bool,
     pub m_DefaultStencilState: crate::System::IntPtr,
     pub m_VertexDecl: crate::System::IntPtr,
@@ -13,13 +13,21 @@ pub struct UIRenderDevice {
     pub m_LargeMeshVertexCount: u32,
     pub m_IndexToVertexCountRatio: f32,
     pub m_DeferredFrees: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToFree,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::List_1<
+                    crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToFree,
+                >,
+            >,
         >,
     >,
     pub m_Updates: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::List_1<
+                    crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate,
+                >,
+            >,
         >,
     >,
     pub m_Fences: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -30,7 +38,9 @@ pub struct UIRenderDevice {
     pub m_NextUpdateID: u32,
     pub m_DrawStats: crate::UnityEngine::UIElements::UIR::UIRenderDevice_DrawStatistics,
     pub m_MeshHandles: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::MeshHandle>,
+        crate::UnityEngine::UIElements::UIR::LinkedPool_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::MeshHandle>,
+        >,
     >,
     pub m_DrawParams: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UIR::DrawParams,
@@ -49,7 +59,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::UIRenderDevice {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -77,14 +87,18 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::MeshHandle>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate,
+            >,
         > = __cordl_object.invoke("ActiveUpdatesForMeshHandle", (mesh))?;
         Ok(__cordl_ret.into())
     }
@@ -98,7 +112,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
             .invoke("AdvanceFrame", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Allocate_Gc_u32__cordl_bool1(
+    pub fn Allocate_MeshHandle_u32__cordl_bool1(
         &mut self,
         meshHandle: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::UIR::MeshHandle,
@@ -222,8 +236,12 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
     }
     pub fn DrawRanges<I, T>(
         &mut self,
-        ib: quest_hook::libil2cpp::Gc<I>,
-        vb: quest_hook::libil2cpp::Gc<T>,
+        ib: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<I>,
+        >,
+        vb: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<T>,
+        >,
         ranges: crate::Unity::Collections::NativeSlice_1<
             crate::UnityEngine::UIElements::UIR::DrawBufferRange,
         >,
@@ -677,16 +695,16 @@ for crate::UnityEngine::UIElements::UIR::UIRenderDevice {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsRef<crate::System::IDisposable>
 for crate::UnityEngine::UIElements::UIR::UIRenderDevice {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsMut<crate::System::IDisposable>
 for crate::UnityEngine::UIElements::UIR::UIRenderDevice {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaCollection {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub collection: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
     pub schemaNames: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaNames>,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlSchemaCollection")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaCollection {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,21 +34,7 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XmlSchemaCollection {
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaCollection")]
 impl crate::System::Xml::Schema::XmlSchemaCollection {
-    pub fn Add_Gc_Gc2(
-        &mut self,
-        ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        node: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaCollectionNode,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Add", (ns, node))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Add_Gc__cordl_bool0(
+    pub fn Add_SchemaInfo_XmlSchema__cordl_bool0(
         &mut self,
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         schemaInfo: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaInfo>,
@@ -65,7 +51,7 @@ impl crate::System::Xml::Schema::XmlSchemaCollection {
         > = __cordl_object.invoke("Add", (ns, schemaInfo, schema, compile))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Add_Gc__cordl_bool_Gc1(
+    pub fn Add_SchemaInfo_XmlSchema__cordl_bool_XmlResolver1(
         &mut self,
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         schemaInfo: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaInfo>,
@@ -81,6 +67,20 @@ impl crate::System::Xml::Schema::XmlSchemaCollection {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchema,
         > = __cordl_object.invoke("Add", (ns, schemaInfo, schema, compile, resolver))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Add_XmlSchemaCollectionNode2(
+        &mut self,
+        ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        node: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaCollectionNode,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Add", (ns, node))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetEnumerator(
@@ -286,38 +286,30 @@ for crate::System::Xml::Schema::XmlSchemaCollection {
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaCollection")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
+impl AsRef<crate::System::Collections::ICollection>
 for crate::System::Xml::Schema::XmlSchemaCollection {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaCollection")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
+impl AsMut<crate::System::Collections::ICollection>
 for crate::System::Xml::Schema::XmlSchemaCollection {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaCollection")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+impl AsRef<crate::System::Collections::IEnumerable>
 for crate::System::Xml::Schema::XmlSchemaCollection {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaCollection")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+impl AsMut<crate::System::Collections::IEnumerable>
 for crate::System::Xml::Schema::XmlSchemaCollection {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }

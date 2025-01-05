@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MaterialPropertyBlock {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Ptr: crate::System::IntPtr,
 }
 #[cfg(feature = "UnityEngine+MaterialPropertyBlock")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+MaterialPropertyBlock")]
 impl std::ops::Deref for crate::UnityEngine::MaterialPropertyBlock {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -225,7 +225,7 @@ impl crate::UnityEngine::MaterialPropertyBlock {
             .invoke("SetColorImpl_Injected", (name, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetColor_Gc0(
+    pub fn SetColor_Il2CppString0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: crate::UnityEngine::Color,
@@ -274,7 +274,19 @@ impl crate::UnityEngine::MaterialPropertyBlock {
             .invoke("SetFloatArrayImpl", (name, values, count))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetFloatArray_i32_0(
+    pub fn SetFloatArray_Il2CppArray2(
+        &mut self,
+        nameID: i32,
+        values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetFloatArray", (nameID, values))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetFloatArray_Il2CppArray_i32_0(
         &mut self,
         name: i32,
         values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
@@ -287,22 +299,12 @@ impl crate::UnityEngine::MaterialPropertyBlock {
             .invoke("SetFloatArray", (name, values, count))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetFloatArray_i32_Gc1(
+    pub fn SetFloatArray_List_1_1(
         &mut self,
         nameID: i32,
-        values: quest_hook::libil2cpp::Gc<f32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetFloatArray", (nameID, values))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetFloatArray_i32_Gc2(
-        &mut self,
-        nameID: i32,
-        values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -365,7 +367,7 @@ impl crate::UnityEngine::MaterialPropertyBlock {
             .invoke("SetMatrixArray", (name, values, count))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetMatrixArray_i32_Gc1(
+    pub fn SetMatrixArray_i32_Il2CppArray1(
         &mut self,
         nameID: i32,
         values: quest_hook::libil2cpp::Gc<
@@ -445,7 +447,7 @@ impl crate::UnityEngine::MaterialPropertyBlock {
             .invoke("SetVectorArray", (name, values, count))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetVectorArray_i32_Gc1(
+    pub fn SetVectorArray_i32_Il2CppArray1(
         &mut self,
         nameID: i32,
         values: quest_hook::libil2cpp::Gc<

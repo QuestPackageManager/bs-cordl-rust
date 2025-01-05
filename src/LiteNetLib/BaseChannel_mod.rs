@@ -2,11 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseChannel {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Next: quest_hook::libil2cpp::Gc<crate::LiteNetLib::BaseChannel>,
     pub Peer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
     pub OutgoingQueue: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
+        crate::System::Collections::Generic::Queue_1<
+            quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
+        >,
     >,
 }
 #[cfg(feature = "LiteNetLib+BaseChannel")]
@@ -16,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LiteNetLib+BaseChannel")]
 impl std::ops::Deref for crate::LiteNetLib::BaseChannel {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

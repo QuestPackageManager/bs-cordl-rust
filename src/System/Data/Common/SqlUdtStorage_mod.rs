@@ -2,11 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SqlUdtStorage {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Data::Common::DataStorage>,
+    __cordl_parent: crate::System::Data::Common::DataStorage,
     pub _values: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
     pub _implementsIXmlSerializable: bool,
     pub _implementsIComparable: bool,
@@ -18,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+Common+SqlUdtStorage")]
 impl std::ops::Deref for crate::System::Data::Common::SqlUdtStorage {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Data::Common::DataStorage>;
+    type Target = crate::System::Data::Common::DataStorage;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -69,7 +67,7 @@ impl crate::System::Data::Common::SqlUdtStorage {
             .invoke("CompareValueTo", (recordNo1, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ConvertObjectToXml_Gc0(
+    pub fn ConvertObjectToXml_Il2CppObject0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
@@ -83,7 +81,7 @@ impl crate::System::Data::Common::SqlUdtStorage {
         > = __cordl_object.invoke("ConvertObjectToXml", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ConvertObjectToXml_Gc_Gc1(
+    pub fn ConvertObjectToXml_XmlWriter_XmlRootAttribute1(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         xmlWriter: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
@@ -98,7 +96,7 @@ impl crate::System::Data::Common::SqlUdtStorage {
             .invoke("ConvertObjectToXml", (value, xmlWriter, xmlAttrib))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ConvertXmlToObject_Gc0(
+    pub fn ConvertXmlToObject_Il2CppString0(
         &mut self,
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -112,7 +110,7 @@ impl crate::System::Data::Common::SqlUdtStorage {
         > = __cordl_object.invoke("ConvertXmlToObject", (s))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ConvertXmlToObject_Gc1(
+    pub fn ConvertXmlToObject_XmlReader_XmlRootAttribute1(
         &mut self,
         xmlReader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
         xmlAttrib: quest_hook::libil2cpp::Gc<
@@ -201,7 +199,17 @@ impl crate::System::Data::Common::SqlUdtStorage {
         let __cordl_ret: bool = __cordl_object.invoke("IsNull", (record))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc1(
+    pub fn New_DataColumn_Type0(
+        column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (column, _cordl_type))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Il2CppObject1(
         column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         nullValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -210,16 +218,6 @@ impl crate::System::Data::Common::SqlUdtStorage {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (column, _cordl_type, nullValue))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_Gc0(
-        column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
-        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (column, _cordl_type))?;
         Ok(__cordl_object.into())
     }
     pub fn Set(
@@ -257,7 +255,19 @@ impl crate::System::Data::Common::SqlUdtStorage {
             .invoke("SetStorage", (store, nullbits))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_DataColumn_Type0(
+        &mut self,
+        column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (column, _cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppObject1(
         &mut self,
         column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -268,18 +278,6 @@ impl crate::System::Data::Common::SqlUdtStorage {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (column, _cordl_type, nullValue))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_Gc0(
-        &mut self,
-        column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
-        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (column, _cordl_type))?;
         Ok(__cordl_ret.into())
     }
 }

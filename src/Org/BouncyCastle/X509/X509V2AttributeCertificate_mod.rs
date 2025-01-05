@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509V2AttributeCertificate {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::X509::X509ExtensionBase,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::X509::X509ExtensionBase,
     pub cert: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::X509::AttributeCertificate,
     >,
@@ -19,9 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+X509+X509V2AttributeCertificate")]
 impl std::ops::Deref for crate::Org::BouncyCastle::X509::X509V2AttributeCertificate {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::X509::X509ExtensionBase,
-    >;
+    type Target = crate::Org::BouncyCastle::X509::X509ExtensionBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -83,7 +79,7 @@ impl crate::Org::BouncyCastle::X509::X509V2AttributeCertificate {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Attribute>,
+                *mut crate::Org::BouncyCastle::X509::X509Attribute,
             >,
         >,
     > {
@@ -92,18 +88,18 @@ impl crate::Org::BouncyCastle::X509::X509V2AttributeCertificate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Attribute>,
+                *mut crate::Org::BouncyCastle::X509::X509Attribute,
             >,
         > = __cordl_object.invoke("GetAttributes", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAttributes_Gc1(
+    pub fn GetAttributes_Il2CppString1(
         &mut self,
         oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Attribute>,
+                *mut crate::Org::BouncyCastle::X509::X509Attribute,
             >,
         >,
     > {
@@ -112,7 +108,7 @@ impl crate::Org::BouncyCastle::X509::X509V2AttributeCertificate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Attribute>,
+                *mut crate::Org::BouncyCastle::X509::X509Attribute,
             >,
         > = __cordl_object.invoke("GetAttributes", (oid))?;
         Ok(__cordl_ret.into())
@@ -198,25 +194,7 @@ impl crate::Org::BouncyCastle::X509::X509V2AttributeCertificate {
         let __cordl_ret: bool = __cordl_object.invoke("IsValid", (date))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
-        encIn: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (encIn))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc1(
-        encoded: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (encoded))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc2(
+    pub fn New_AttributeCertificate2(
         cert: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::AttributeCertificate,
         >,
@@ -227,7 +205,25 @@ impl crate::Org::BouncyCastle::X509::X509V2AttributeCertificate {
             .invoke_void(".ctor", (cert))?;
         Ok(__cordl_object.into())
     }
-    pub fn Verify_Gc0(
+    pub fn New_Il2CppArray1(
+        encoded: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (encoded))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Stream0(
+        encIn: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (encIn))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn Verify_AsymmetricKeyParameter0(
         &mut self,
         key: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
@@ -240,7 +236,7 @@ impl crate::Org::BouncyCastle::X509::X509V2AttributeCertificate {
             .invoke("Verify", (key))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Verify_Gc1(
+    pub fn Verify_IVerifierFactoryProvider1(
         &mut self,
         verifierProvider: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IVerifierFactoryProvider,
@@ -253,29 +249,7 @@ impl crate::Org::BouncyCastle::X509::X509V2AttributeCertificate {
             .invoke("Verify", (verifierProvider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
-        &mut self,
-        encIn: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (encIn))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc1(
-        &mut self,
-        encoded: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (encoded))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_AttributeCertificate2(
         &mut self,
         cert: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::AttributeCertificate,
@@ -286,6 +260,28 @@ impl crate::Org::BouncyCastle::X509::X509V2AttributeCertificate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (cert))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppArray1(
+        &mut self,
+        encoded: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (encoded))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Stream0(
+        &mut self,
+        encIn: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (encIn))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_Holder(
@@ -392,44 +388,32 @@ for crate::Org::BouncyCastle::X509::X509V2AttributeCertificate {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+X509+X509V2AttributeCertificate")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::IX509AttributeCertificate>,
-> for crate::Org::BouncyCastle::X509::X509V2AttributeCertificate {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Org+BouncyCastle+X509+X509V2AttributeCertificate")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::IX509AttributeCertificate>,
-> for crate::Org::BouncyCastle::X509::X509V2AttributeCertificate {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Org+BouncyCastle+X509+X509V2AttributeCertificate")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::IX509Extension>>
+impl AsRef<crate::Org::BouncyCastle::X509::IX509AttributeCertificate>
 for crate::Org::BouncyCastle::X509::X509V2AttributeCertificate {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::IX509Extension> {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::X509::IX509AttributeCertificate {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+X509+X509V2AttributeCertificate")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::IX509Extension>>
+impl AsMut<crate::Org::BouncyCastle::X509::IX509AttributeCertificate>
 for crate::Org::BouncyCastle::X509::X509V2AttributeCertificate {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::IX509Extension> {
+    ) -> &mut crate::Org::BouncyCastle::X509::IX509AttributeCertificate {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+X509+X509V2AttributeCertificate")]
+impl AsRef<crate::Org::BouncyCastle::X509::IX509Extension>
+for crate::Org::BouncyCastle::X509::X509V2AttributeCertificate {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::X509::IX509Extension {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+X509+X509V2AttributeCertificate")]
+impl AsMut<crate::Org::BouncyCastle::X509::IX509Extension>
+for crate::Org::BouncyCastle::X509::X509V2AttributeCertificate {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::X509::IX509Extension {
         unsafe { std::mem::transmute(self) }
     }
 }

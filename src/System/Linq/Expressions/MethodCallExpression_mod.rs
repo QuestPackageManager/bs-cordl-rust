@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MethodCallExpression {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Expression,
-    >,
+    __cordl_parent: crate::System::Linq::Expressions::Expression,
     pub _Method_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::System::Reflection::MethodInfo,
     >,
@@ -16,9 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Linq+Expressions+MethodCallExpression")]
 impl std::ops::Deref for crate::System::Linq::Expressions::MethodCallExpression {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Expression,
-    >;
+    type Target = crate::System::Linq::Expressions::Expression;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -89,7 +85,9 @@ impl crate::System::Linq::Expressions::MethodCallExpression {
             crate::System::Linq::Expressions::Expression,
         >,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::MethodCallExpression>,
@@ -180,26 +178,16 @@ for crate::System::Linq::Expressions::MethodCallExpression {
     }
 }
 #[cfg(feature = "System+Linq+Expressions+MethodCallExpression")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::IArgumentProvider>,
-> for crate::System::Linq::Expressions::MethodCallExpression {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::IArgumentProvider,
-    > {
+impl AsRef<crate::System::Linq::Expressions::IArgumentProvider>
+for crate::System::Linq::Expressions::MethodCallExpression {
+    fn as_ref(&self) -> &crate::System::Linq::Expressions::IArgumentProvider {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Linq+Expressions+MethodCallExpression")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::IArgumentProvider>,
-> for crate::System::Linq::Expressions::MethodCallExpression {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::IArgumentProvider,
-    > {
+impl AsMut<crate::System::Linq::Expressions::IArgumentProvider>
+for crate::System::Linq::Expressions::MethodCallExpression {
+    fn as_mut(&mut self) -> &mut crate::System::Linq::Expressions::IArgumentProvider {
         unsafe { std::mem::transmute(self) }
     }
 }

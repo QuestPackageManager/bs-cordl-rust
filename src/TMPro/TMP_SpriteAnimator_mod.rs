@@ -2,8 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_SpriteAnimator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
-    pub m_animations: quest_hook::libil2cpp::Gc<i32, bool>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    pub m_animations: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<i32, bool>,
+    >,
     pub m_TextComponent: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
 }
 #[cfg(feature = "TMPro+TMP_SpriteAnimator")]
@@ -13,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+TMP_SpriteAnimator")]
 impl std::ops::Deref for crate::TMPro::TMP_SpriteAnimator {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

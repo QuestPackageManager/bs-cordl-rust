@@ -2,15 +2,19 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnicodeLineBreakingRules {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_UnicodeLineBreakingRules: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::TextAsset,
     >,
     pub m_LeadingCharacters: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
     pub m_FollowingCharacters: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
     pub m_UseModernHangulLineBreakingRules: bool,
-    pub m_LeadingCharactersLookup: quest_hook::libil2cpp::Gc<u32>,
-    pub m_FollowingCharactersLookup: quest_hook::libil2cpp::Gc<u32>,
+    pub m_LeadingCharactersLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<u32>,
+    >,
+    pub m_FollowingCharactersLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<u32>,
+    >,
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+UnicodeLineBreakingRules")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -20,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+TextCore+Text+UnicodeLineBreakingRules")]
 impl std::ops::Deref for crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -36,8 +40,12 @@ for crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
 impl crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
     pub fn GetCharacters(
         file: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<u32>> {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<u32> = <Self as quest_hook::libil2cpp::Type>::class()
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::HashSet_1<u32>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<u32>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetCharacters", (file))?;
         Ok(__cordl_ret.into())
     }
@@ -51,7 +59,7 @@ impl crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
             .invoke("LoadLineBreakingRules", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn LoadLineBreakingRules_Gc_Gc1(
+    pub fn LoadLineBreakingRules_TextAsset_TextAsset1(
         &mut self,
         leadingRules: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
         followingRules: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
@@ -94,12 +102,15 @@ impl crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
     }
     pub fn get_followingCharactersLookup(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<u32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::HashSet_1<u32>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<u32> = __cordl_object
-            .invoke("get_followingCharactersLookup", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<u32>,
+        > = __cordl_object.invoke("get_followingCharactersLookup", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_leadingCharacters(
@@ -116,12 +127,15 @@ impl crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
     }
     pub fn get_leadingCharactersLookup(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<u32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::HashSet_1<u32>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<u32> = __cordl_object
-            .invoke("get_leadingCharactersLookup", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<u32>,
+        > = __cordl_object.invoke("get_leadingCharactersLookup", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_useModernHangulLineBreakingRules(

@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RawAcl {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Security::AccessControl::GenericAcl,
-    >,
+    __cordl_parent: crate::System::Security::AccessControl::GenericAcl,
     pub revision: u8,
     pub list: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Security::AccessControl::GenericAce>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::System::Security::AccessControl::GenericAce>,
+        >,
     >,
 }
 #[cfg(feature = "System+Security+AccessControl+RawAcl")]
@@ -17,9 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+AccessControl+RawAcl")]
 impl std::ops::Deref for crate::System::Security::AccessControl::RawAcl {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Security::AccessControl::GenericAcl,
-    >;
+    type Target = crate::System::Security::AccessControl::GenericAcl;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

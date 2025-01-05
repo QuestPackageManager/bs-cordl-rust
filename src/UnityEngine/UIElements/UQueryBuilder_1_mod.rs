@@ -3,16 +3,22 @@
 #[derive(Debug, Clone, Default)]
 pub struct UQueryBuilder_1<T: quest_hook::libil2cpp::Type> {
     pub m_StyleSelectors: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSelector>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSelector>,
+        >,
     >,
     pub m_Parts: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::StyleSelectorPart,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::StyleSelectorPart,
+        >,
     >,
     pub m_Element: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualElement,
     >,
     pub m_Matchers: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::RuleMatcher,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::RuleMatcher,
+        >,
     >,
     pub m_Relationship: crate::UnityEngine::UIElements::StyleSelectorRelationship,
     pub pseudoStatesMask: i32,
@@ -124,7 +130,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::UQueryBuild
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Gc1(
+    pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool>
@@ -247,22 +253,10 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::UQueryBuild
     pub fn get_parts(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSelectorPart>,
-    >
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::StyleSelectorPart,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_parts", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_styleSelectors(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSelector>,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::StyleSelectorPart,
+            >,
         >,
     >
     where
@@ -270,7 +264,29 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::UQueryBuild
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSelector>,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::StyleSelectorPart,
+            >,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_parts", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_styleSelectors(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSelector>,
+            >,
+        >,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSelector>,
+            >,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_styleSelectors", ())?;
         Ok(__cordl_ret.into())
     }
@@ -278,22 +294,24 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::UQueryBuild
 #[cfg(feature = "UnityEngine+UIElements+UQueryBuilder_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UQueryBuilder_1<T>>>
+> AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::UQueryBuilder_1<T>>>
 for crate::UnityEngine::UIElements::UQueryBuilder_1<T> {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UQueryBuilder_1<T>> {
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::UQueryBuilder_1<T>,
+    > {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UQueryBuilder_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UQueryBuilder_1<T>>>
+> AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::UQueryBuilder_1<T>>>
 for crate::UnityEngine::UIElements::UQueryBuilder_1<T> {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         crate::UnityEngine::UIElements::UQueryBuilder_1<T>,
     > {
         todo!()

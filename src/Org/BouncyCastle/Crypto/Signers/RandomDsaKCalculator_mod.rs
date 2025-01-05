@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RandomDsaKCalculator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub q: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     pub random: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Security::SecureRandom,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+RandomDsaKCalculator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Signers::RandomDsaKCalculator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,7 +31,7 @@ for crate::Org::BouncyCastle::Crypto::Signers::RandomDsaKCalculator {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+RandomDsaKCalculator")]
 impl crate::Org::BouncyCastle::Crypto::Signers::RandomDsaKCalculator {
-    pub fn Init_Gc1(
+    pub fn Init_BigInteger_Il2CppArray1(
         &mut self,
         n: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         d: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -44,7 +44,7 @@ impl crate::Org::BouncyCastle::Crypto::Signers::RandomDsaKCalculator {
             .invoke("Init", (n, d, message))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Init_Gc_Gc0(
+    pub fn Init_SecureRandom0(
         &mut self,
         n: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         random: quest_hook::libil2cpp::Gc<
@@ -107,26 +107,18 @@ for crate::Org::BouncyCastle::Crypto::Signers::RandomDsaKCalculator {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+RandomDsaKCalculator")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Signers::IDsaKCalculator>,
-> for crate::Org::BouncyCastle::Crypto::Signers::RandomDsaKCalculator {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Signers::IDsaKCalculator,
-    > {
+impl AsRef<crate::Org::BouncyCastle::Crypto::Signers::IDsaKCalculator>
+for crate::Org::BouncyCastle::Crypto::Signers::RandomDsaKCalculator {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Signers::IDsaKCalculator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+RandomDsaKCalculator")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Signers::IDsaKCalculator>,
-> for crate::Org::BouncyCastle::Crypto::Signers::RandomDsaKCalculator {
+impl AsMut<crate::Org::BouncyCastle::Crypto::Signers::IDsaKCalculator>
+for crate::Org::BouncyCastle::Crypto::Signers::RandomDsaKCalculator {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Signers::IDsaKCalculator,
-    > {
+    ) -> &mut crate::Org::BouncyCastle::Crypto::Signers::IDsaKCalculator {
         unsafe { std::mem::transmute(self) }
     }
 }

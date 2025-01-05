@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Streams {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+IO+Streams")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Utilities+IO+Streams")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Utilities::IO::Streams {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -78,7 +78,7 @@ impl crate::Org::BouncyCastle::Utilities::IO::Streams {
             .invoke("ReadAllLimited", (inStr, limit))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadFully_Gc_Gc0(
+    pub fn ReadFully_Stream_Il2CppArray0(
         inStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -96,21 +96,21 @@ impl crate::Org::BouncyCastle::Utilities::IO::Streams {
             .invoke("ReadFully", (inStr, buf, off, len))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteBufTo_Gc_Gc0(
-        buf: quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>,
-        output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("WriteBufTo", (buf, output))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn WriteBufTo_i32_1(
+    pub fn WriteBufTo_Il2CppArray_i32_1(
         buf: quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>,
         output: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("WriteBufTo", (buf, output, offset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteBufTo_Stream0(
+        buf: quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>,
+        output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteBufTo", (buf, output))?;
         Ok(__cordl_ret.into())
     }
     pub fn WriteZeroes(

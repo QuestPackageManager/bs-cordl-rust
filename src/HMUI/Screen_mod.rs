@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Screen {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ScreenBase>,
+    __cordl_parent: crate::HMUI::ScreenBase,
     pub _rootViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     pub _isBeingDestroyed: bool,
 }
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+Screen")]
 impl std::ops::Deref for crate::HMUI::Screen {
-    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ScreenBase>;
+    type Target = crate::HMUI::ScreenBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

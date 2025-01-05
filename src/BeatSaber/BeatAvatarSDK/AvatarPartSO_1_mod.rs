@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AvatarPartSO_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PersistentScriptableObject,
-    >,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _localizationKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _partAsset: T,
@@ -18,9 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarPartSO_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::BeatSaber::BeatAvatarSDK::AvatarPartSO_1<T> {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PersistentScriptableObject,
-    >;
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -114,24 +110,16 @@ for crate::BeatSaber::BeatAvatarSDK::AvatarPartSO_1<T> {
     }
 }
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarPartSO_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::IAvatarPart>>
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::BeatSaber::BeatAvatarSDK::IAvatarPart>
 for crate::BeatSaber::BeatAvatarSDK::AvatarPartSO_1<T> {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::IAvatarPart> {
+    fn as_ref(&self) -> &crate::BeatSaber::BeatAvatarSDK::IAvatarPart {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarPartSO_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::IAvatarPart>>
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::BeatSaber::BeatAvatarSDK::IAvatarPart>
 for crate::BeatSaber::BeatAvatarSDK::AvatarPartSO_1<T> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::IAvatarPart> {
+    fn as_mut(&mut self) -> &mut crate::BeatSaber::BeatAvatarSDK::IAvatarPart {
         unsafe { std::mem::transmute(self) }
     }
 }

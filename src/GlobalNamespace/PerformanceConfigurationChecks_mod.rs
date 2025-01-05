@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PerformanceConfigurationChecks {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub appConfig: crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig,
     pub xrConfig: crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig,
     pub ovrConfig: crate::GlobalNamespace::PerformanceConfigurationChecks_OVRConfig,
@@ -11,8 +11,10 @@ pub struct PerformanceConfigurationChecks {
     pub playerConfig: crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig,
     pub levelConfig: crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig,
     pub invalid: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch,
+        >,
     >,
 }
 #[cfg(feature = "PerformanceConfigurationChecks")]
@@ -22,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PerformanceConfigurationChecks")]
 impl std::ops::Deref for crate::GlobalNamespace::PerformanceConfigurationChecks {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimeStampToken {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub tsToken: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsSignedData>,
     pub tsaSignerInfo: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Cms::SignerInformation,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampToken")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Tsp::TimeStampToken {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -91,7 +91,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampToken {
         > = __cordl_object.invoke("GetEncoded", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetEncoded_Gc1(
+    pub fn GetEncoded_Il2CppString1(
         &mut self,
         encoding: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -105,18 +105,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampToken {
         > = __cordl_object.invoke("GetEncoded", (encoding))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
-        contentInfo: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (contentInfo))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc1(
+    pub fn New_CmsSignedData1(
         signedData: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cms::CmsSignedData,
         >,
@@ -125,6 +114,17 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampToken {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (signedData))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_ContentInfo0(
+        contentInfo: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (contentInfo))?;
         Ok(__cordl_object.into())
     }
     pub fn ToCmsSignedData(
@@ -151,20 +151,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampToken {
             .invoke("Validate", (cert))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
-        &mut self,
-        contentInfo: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (contentInfo))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_CmsSignedData1(
         &mut self,
         signedData: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cms::CmsSignedData,
@@ -175,6 +162,19 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampToken {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (signedData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_ContentInfo0(
+        &mut self,
+        contentInfo: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (contentInfo))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_SignedAttributes(
@@ -244,7 +244,7 @@ for crate::Org::BouncyCastle::Tsp::TimeStampToken {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimeStampToken_CertID {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub certID: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::Ess::EssCertID,
     >,
@@ -259,7 +259,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampToken+CertID")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Tsp::TimeStampToken_CertID {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -313,7 +313,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampToken_CertID {
         > = __cordl_object.invoke("GetHashAlgorithmName", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_EssCertID0(
         certID: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Ess::EssCertID>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -322,7 +322,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampToken_CertID {
             .invoke_void(".ctor", (certID))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_EssCertIDv2_1(
         certID: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Ess::EssCertIDv2,
         >,
@@ -333,7 +333,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampToken_CertID {
             .invoke_void(".ctor", (certID))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_EssCertID0(
         &mut self,
         certID: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Ess::EssCertID>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -344,7 +344,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampToken_CertID {
             .invoke(".ctor", (certID))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_EssCertIDv2_1(
         &mut self,
         certID: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Ess::EssCertIDv2,

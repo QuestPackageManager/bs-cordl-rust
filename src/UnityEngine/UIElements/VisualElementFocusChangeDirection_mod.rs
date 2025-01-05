@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct VisualElementFocusChangeDirection {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::FocusChangeDirection,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::FocusChangeDirection,
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElementFocusChangeDirection")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+VisualElementFocusChangeDirection")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::VisualElementFocusChangeDirection {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::FocusChangeDirection,
-    >;
+    type Target = crate::UnityEngine::UIElements::FocusChangeDirection;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

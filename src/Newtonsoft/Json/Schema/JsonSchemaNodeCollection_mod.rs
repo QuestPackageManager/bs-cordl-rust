@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonSchemaNodeCollection {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::System::Collections::ObjectModel::KeyedCollection_2<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaNode>,
     >,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaNodeCollection")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Schema::JsonSchemaNodeCollection {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::System::Collections::ObjectModel::KeyedCollection_2<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaNode>,
     >;

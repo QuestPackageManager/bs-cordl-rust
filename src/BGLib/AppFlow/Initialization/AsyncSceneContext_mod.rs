@@ -2,12 +2,20 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsyncSceneContext {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,
+    __cordl_parent: crate::Zenject::SceneContext,
     pub _asyncPreloaders: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::BGLib::AppFlow::Initialization::AsyncPreloader>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::BGLib::AppFlow::Initialization::AsyncPreloader,
+            >,
+        >,
     >,
     pub _asyncInstallers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::BGLib::AppFlow::Initialization::AsyncInstaller>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::BGLib::AppFlow::Initialization::AsyncInstaller,
+            >,
+        >,
     >,
     pub _state: crate::BGLib::AppFlow::Initialization::AsyncSceneContext_State,
     pub _registry: quest_hook::libil2cpp::Gc<
@@ -22,7 +30,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BGLib+AppFlow+Initialization+AsyncSceneContext")]
 impl std::ops::Deref for crate::BGLib::AppFlow::Initialization::AsyncSceneContext {
-    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>;
+    type Target = crate::Zenject::SceneContext;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -78,8 +86,10 @@ impl crate::BGLib::AppFlow::Initialization::AsyncSceneContext {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry,
+                >,
             >,
         >,
     > {
@@ -87,8 +97,10 @@ impl crate::BGLib::AppFlow::Initialization::AsyncSceneContext {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry,
+                >,
             >,
         > = __cordl_object.invoke("LoadInstallersAsync", ())?;
         Ok(__cordl_ret.into())

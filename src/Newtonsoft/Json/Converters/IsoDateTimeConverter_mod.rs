@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct IsoDateTimeConverter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Converters::DateTimeConverterBase,
-    >,
+    __cordl_parent: crate::Newtonsoft::Json::Converters::DateTimeConverterBase,
     pub _dateTimeStyles: crate::System::Globalization::DateTimeStyles,
     pub _dateTimeFormat: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
@@ -17,9 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Converters+IsoDateTimeConverter")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Converters::IsoDateTimeConverter {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Converters::DateTimeConverterBase,
-    >;
+    type Target = crate::Newtonsoft::Json::Converters::DateTimeConverterBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

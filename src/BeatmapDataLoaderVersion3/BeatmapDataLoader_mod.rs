@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader")]
 impl std::ops::Deref for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -164,11 +164,15 @@ impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader {
         beatmapJson: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataBasicInfo>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataBasicInfo>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataBasicInfo>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataBasicInfo>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetBeatmapDataBasicInfoFromSaveDataJsonAsync", (beatmapJson))?;
         Ok(__cordl_ret.into())
@@ -279,11 +283,15 @@ impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
                 "GetBeatmapDataFromSaveDataJsonAsync",
@@ -333,9 +341,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader_BasicEventConverter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
-    >,
+    __cordl_parent: crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
     pub _specialEventsFilter: quest_hook::libil2cpp::Gc<
         crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_SpecialEventsFilter,
     >,
@@ -349,9 +355,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BasicEventConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BasicEventConverter {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
-    >;
+    type Target = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -438,7 +442,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BasicEventConverter {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader_BeatmapDataItemConverter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _bpmTimeProcessor: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BpmTimeProcessor,
     >,
@@ -455,7 +459,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BeatmapDataItemConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -528,9 +532,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader_BombNoteConverter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
-    >,
+    __cordl_parent: crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BombNoteConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -541,9 +543,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BombNoteConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BombNoteConverter {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
-    >;
+    type Target = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -618,9 +618,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BombNoteConverter {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader_BpmEventConverter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
-    >,
+    __cordl_parent: crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BpmEventConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -631,9 +629,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BpmEventConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BpmEventConverter {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
-    >;
+    type Target = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -708,9 +704,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BpmEventConverter {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader_BurstSliderConverter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
-    >,
+    __cordl_parent: crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BurstSliderConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -721,9 +715,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BurstSliderConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BurstSliderConverter {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
-    >;
+    type Target = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -798,9 +790,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BurstSliderConverter {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader_ColorBoostEventConverter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
-    >,
+    __cordl_parent: crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+ColorBoostEventConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -811,9 +801,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+ColorBoostEventConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ColorBoostEventConverter {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
-    >;
+    type Target = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -888,9 +876,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ColorBoostEventConverter
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader_ColorNoteConverter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
-    >,
+    __cordl_parent: crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+ColorNoteConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -901,9 +887,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+ColorNoteConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ColorNoteConverter {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
-    >;
+    type Target = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -978,7 +962,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ColorNoteConverter {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader_FloatVfxBaseDataConvertor {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+FloatVfxBaseDataConvertor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -989,7 +973,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+FloatVfxBaseDataConvertor")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_FloatVfxBaseDataConvertor {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1032,7 +1016,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_FloatVfxBaseDataConverto
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader_FloatVfxEventBoxConverter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _fxEventsCollection: quest_hook::libil2cpp::Gc<
         crate::BeatmapSaveDataVersion3::FxEventsCollection,
     >,
@@ -1046,7 +1030,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+FloatVfxEventBoxConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_FloatVfxEventBoxConverter {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1114,7 +1098,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_FloatVfxEventBoxConverte
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader_IndexFilterConverter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+IndexFilterConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1125,7 +1109,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+IndexFilterConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IndexFilterConverter {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1168,7 +1152,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IndexFilterConverter {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader_IntVfxBaseDataConvertor {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+IntVfxBaseDataConvertor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1179,7 +1163,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+IntVfxBaseDataConvertor")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IntVfxBaseDataConvertor {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1222,7 +1206,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IntVfxBaseDataConvertor 
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader_IntVfxEventBoxConverter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _fxEventsCollection: quest_hook::libil2cpp::Gc<
         crate::BeatmapSaveDataVersion3::FxEventsCollection,
     >,
@@ -1236,7 +1220,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+IntVfxEventBoxConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IntVfxEventBoxConverter {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1306,7 +1290,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IntVfxEventBoxConverter 
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader_LightColoBaseDataConvertor {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(
     feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightColoBaseDataConvertor"
@@ -1321,7 +1305,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightColoBaseDataConvertor {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1371,7 +1355,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightColoBaseDataConvert
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader_LightColorEventBoxConverter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(
     feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightColorEventBoxConverter"
@@ -1386,7 +1370,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightColorEventBoxConverter {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1454,7 +1438,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightColorEventBoxConver
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader_LightRotationBaseDataConvertor {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(
     feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightRotationBaseDataConvertor"
@@ -1469,7 +1453,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightRotationBaseDataConvertor {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1519,7 +1503,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightRotationBaseDataCon
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader_LightRotationEventBoxConverter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(
     feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightRotationEventBoxConverter"
@@ -1534,7 +1518,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightRotationEventBoxConverter {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1602,7 +1586,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightRotationEventBoxCon
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader_LightTranslationBaseDataConvertor {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(
     feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightTranslationBaseDataConvertor"
@@ -1617,7 +1601,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightTranslationBaseDataConvertor {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1667,7 +1651,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightTranslationBaseData
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader_LightTranslationEventBoxConverter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(
     feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightTranslationEventBoxConverter"
@@ -1682,7 +1666,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightTranslationEventBoxConverter {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1748,9 +1732,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightTranslationEventBox
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader_ObstacleConverter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
-    >,
+    __cordl_parent: crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+ObstacleConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1761,9 +1743,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+ObstacleConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ObstacleConverter {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
-    >;
+    type Target = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1845,9 +1825,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ObstacleConverter {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader_SliderConverter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
-    >,
+    __cordl_parent: crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+SliderConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1858,9 +1836,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+SliderConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_SliderConverter {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
-    >;
+    type Target = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1935,9 +1911,11 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_SliderConverter {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader_SpecialEventsFilter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _eventTypesToFilter: quest_hook::libil2cpp::Gc<
-        crate::BeatmapSaveDataCommon::BeatmapEventType,
+        crate::System::Collections::Generic::HashSet_1<
+            crate::BeatmapSaveDataCommon::BeatmapEventType,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+SpecialEventsFilter")]
@@ -1949,7 +1927,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+SpecialEventsFilter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_SpecialEventsFilter {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2019,9 +1997,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_SpecialEventsFilter {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader_WaypointConverter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
-    >,
+    __cordl_parent: crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+WaypointConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2032,9 +2008,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+WaypointConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_WaypointConverter {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
-    >;
+    type Target = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

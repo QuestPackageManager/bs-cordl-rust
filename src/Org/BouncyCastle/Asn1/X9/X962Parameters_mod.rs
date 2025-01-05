@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X962Parameters {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub _params: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962Parameters")]
@@ -14,9 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962Parameters")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::X9::X962Parameters {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -39,18 +35,25 @@ impl crate::Org::BouncyCastle::Asn1::X9::X962Parameters {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
-        ecParameters: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X9::X9ECParameters,
-        >,
+    pub fn New_Asn1Null2(
+        obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Null>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (ecParameters))?;
+            .invoke_void(".ctor", (obj))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Asn1Object3(
+        obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (obj))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_DerObjectIdentifier1(
         namedCurve: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
@@ -61,22 +64,15 @@ impl crate::Org::BouncyCastle::Asn1::X9::X962Parameters {
             .invoke_void(".ctor", (namedCurve))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc2(
-        obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Null>,
+    pub fn New_X9ECParameters0(
+        ecParameters: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X9::X9ECParameters,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (obj))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc3(
-        obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (obj))?;
+            .invoke_void(".ctor", (ecParameters))?;
         Ok(__cordl_object.into())
     }
     pub fn ToAsn1Object(
@@ -92,20 +88,29 @@ impl crate::Org::BouncyCastle::Asn1::X9::X962Parameters {
         > = __cordl_object.invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Asn1Null2(
         &mut self,
-        ecParameters: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X9::X9ECParameters,
-        >,
+        obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Null>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (ecParameters))?;
+            .invoke(".ctor", (obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Asn1Object3(
+        &mut self,
+        obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_DerObjectIdentifier1(
         &mut self,
         namedCurve: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
@@ -118,26 +123,17 @@ impl crate::Org::BouncyCastle::Asn1::X9::X962Parameters {
             .invoke(".ctor", (namedCurve))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_X9ECParameters0(
         &mut self,
-        obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Null>,
+        ecParameters: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X9::X9ECParameters,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (obj))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc3(
-        &mut self,
-        obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (obj))?;
+            .invoke(".ctor", (ecParameters))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_IsImplicitlyCA(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -179,20 +175,16 @@ for crate::Org::BouncyCastle::Asn1::X9::X962Parameters {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962Parameters")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice>>
+impl AsRef<crate::Org::BouncyCastle::Asn1::IAsn1Choice>
 for crate::Org::BouncyCastle::Asn1::X9::X962Parameters {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice> {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Asn1::IAsn1Choice {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962Parameters")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice>>
+impl AsMut<crate::Org::BouncyCastle::Asn1::IAsn1Choice>
 for crate::Org::BouncyCastle::Asn1::X9::X962Parameters {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice> {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Asn1::IAsn1Choice {
         unsafe { std::mem::transmute(self) }
     }
 }

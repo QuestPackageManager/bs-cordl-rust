@@ -2,14 +2,22 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DrawParams {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    pub view: quest_hook::libil2cpp::Gc<crate::UnityEngine::Matrix4x4>,
-    pub scissor: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rect>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub view: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Stack_1<crate::UnityEngine::Matrix4x4>,
+    >,
+    pub scissor: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Stack_1<crate::UnityEngine::Rect>,
+    >,
     pub renderTexture: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+        >,
     >,
     pub defaultMaterial: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+DrawParams")]
@@ -19,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UIR+DrawParams")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::DrawParams {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

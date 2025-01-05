@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RawImage {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::MaskableGraphic>,
+    __cordl_parent: crate::UnityEngine::UI::MaskableGraphic,
     pub m_Texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     pub m_UVRect: crate::UnityEngine::Rect,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+RawImage")]
 impl std::ops::Deref for crate::UnityEngine::UI::RawImage {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::MaskableGraphic>;
+    type Target = crate::UnityEngine::UI::MaskableGraphic;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

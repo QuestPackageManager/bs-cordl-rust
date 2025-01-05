@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BinaryNode {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,
+    __cordl_parent: crate::System::Data::ExpressionNode,
     pub _op: i32,
     pub _left: quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,
     pub _right: quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+BinaryNode")]
 impl std::ops::Deref for crate::System::Data::BinaryNode {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>;
+    type Target = crate::System::Data::ExpressionNode;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,7 +29,7 @@ impl std::ops::DerefMut for crate::System::Data::BinaryNode {
 impl crate::System::Data::BinaryNode {
     #[cfg(feature = "System+Data+BinaryNode+DataTypePrecedence")]
     pub type DataTypePrecedence = crate::System::Data::BinaryNode_DataTypePrecedence;
-    pub fn BinaryCompare_Gc1(
+    pub fn BinaryCompare_CompareInfo1(
         &mut self,
         vLeft: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         vRight: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -44,7 +44,7 @@ impl crate::System::Data::BinaryNode {
             .invoke("BinaryCompare", (vLeft, vRight, resultType, op, comparer))?;
         Ok(__cordl_ret.into())
     }
-    pub fn BinaryCompare_Gc_Gc_StorageType_i32_0(
+    pub fn BinaryCompare_Il2CppObject_Il2CppObject_StorageType_i32_0(
         &mut self,
         vLeft: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         vRight: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -62,7 +62,9 @@ impl crate::System::Data::BinaryNode {
         &mut self,
         table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         list: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -115,21 +117,7 @@ impl crate::System::Data::BinaryNode {
         > = __cordl_object.invoke("Eval", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Eval_Gc2(
-        &mut self,
-        recordNos: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object.invoke("Eval", (recordNos))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Eval_Gc_DataRowVersion1(
+    pub fn Eval_DataRow_DataRowVersion1(
         &mut self,
         row: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
         version: crate::System::Data::DataRowVersion,
@@ -144,7 +132,7 @@ impl crate::System::Data::BinaryNode {
         > = __cordl_object.invoke("Eval", (row, version))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Eval_Gc_Gc_DataRowVersion_Gc3(
+    pub fn Eval_ExpressionNode_DataRow_DataRowVersion_Il2CppArray3(
         expr: quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,
         row: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
         version: crate::System::Data::DataRowVersion,
@@ -156,6 +144,20 @@ impl crate::System::Data::BinaryNode {
             quest_hook::libil2cpp::Il2CppObject,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Eval", (expr, row, version, recordNos))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Eval_Il2CppArray2(
+        &mut self,
+        recordNos: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("Eval", (recordNos))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetPrecedence(

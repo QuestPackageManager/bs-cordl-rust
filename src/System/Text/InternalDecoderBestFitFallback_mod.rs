@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InternalDecoderBestFitFallback {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Text::DecoderFallback>,
+    __cordl_parent: crate::System::Text::DecoderFallback,
     pub _encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
     pub _arrayBestFit: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<char>,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Text+InternalDecoderBestFitFallback")]
 impl std::ops::Deref for crate::System::Text::InternalDecoderBestFitFallback {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Text::DecoderFallback>;
+    type Target = crate::System::Text::DecoderFallback;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

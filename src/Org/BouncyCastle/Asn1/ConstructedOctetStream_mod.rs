@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConstructedOctetStream {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Utilities::IO::BaseInputStream,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseInputStream,
     pub _parser: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::Asn1StreamParser,
     >,
@@ -18,9 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+ConstructedOctetStream")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::ConstructedOctetStream {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Utilities::IO::BaseInputStream,
-    >;
+    type Target = crate::Org::BouncyCastle::Utilities::IO::BaseInputStream;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

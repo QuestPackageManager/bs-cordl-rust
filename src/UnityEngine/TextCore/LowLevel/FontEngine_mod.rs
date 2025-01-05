@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FontEngine {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+FontEngine")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+FontEngine")]
 impl std::ops::Deref for crate::UnityEngine::TextCore::LowLevel::FontEngine {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -25,7 +25,9 @@ impl std::ops::DerefMut for crate::UnityEngine::TextCore::LowLevel::FontEngine {
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+FontEngine")]
 impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
     pub fn GenericListToMarshallingArray<T>(
-        srcList: quest_hook::libil2cpp::ByRefMut<quest_hook::libil2cpp::Gc<T>>,
+        srcList: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+        >,
         dstArray: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         >,
@@ -58,7 +60,9 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         Ok(__cordl_ret.into())
     }
     pub fn GetGlyphPairAdjustmentRecords(
-        glyphIndexes: quest_hook::libil2cpp::Gc<u32>,
+        glyphIndexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<u32>,
+        >,
         recordCount: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -120,7 +124,28 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
             .invoke("InitializeFontEngine_Internal", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn LoadFontFace_Gc_i32_3(
+    pub fn LoadFontFace_Font_i32_1(
+        font: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
+        pointSize: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::TextCore::LowLevel::FontEngineError,
+    > {
+        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::FontEngineError = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadFontFace", (font, pointSize))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadFontFace_Font_i32_i32_2(
+        font: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
+        pointSize: i32,
+        faceIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::TextCore::LowLevel::FontEngineError,
+    > {
+        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::FontEngineError = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadFontFace", (font, pointSize, faceIndex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadFontFace_Il2CppString_Il2CppString_i32_3(
         familyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         styleName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         pointSize: i32,
@@ -129,6 +154,17 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
     > {
         let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::FontEngineError = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("LoadFontFace", (familyName, styleName, pointSize))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadFontFace_Il2CppString_i32_i32_0(
+        filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        pointSize: i32,
+        faceIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::TextCore::LowLevel::FontEngineError,
+    > {
+        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::FontEngineError = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadFontFace", (filePath, pointSize, faceIndex))?;
         Ok(__cordl_ret.into())
     }
     pub fn LoadFontFace_With_Size_And_FaceIndex_Internal(
@@ -175,38 +211,6 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn LoadFontFace_i32_1(
-        font: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
-        pointSize: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::TextCore::LowLevel::FontEngineError,
-    > {
-        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::FontEngineError = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("LoadFontFace", (font, pointSize))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn LoadFontFace_i32_i32_0(
-        filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        pointSize: i32,
-        faceIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::TextCore::LowLevel::FontEngineError,
-    > {
-        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::FontEngineError = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("LoadFontFace", (filePath, pointSize, faceIndex))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn LoadFontFace_i32_i32_2(
-        font: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
-        pointSize: i32,
-        faceIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::TextCore::LowLevel::FontEngineError,
-    > {
-        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::FontEngineError = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("LoadFontFace", (font, pointSize, faceIndex))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn PopulatePairAdjustmentRecordMarshallingArray_from_KernTable(
         glyphIndexes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         recordCount: quest_hook::libil2cpp::ByRefMut<i32>,
@@ -251,10 +255,14 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         padding: i32,
         packingMode: crate::UnityEngine::TextCore::LowLevel::GlyphPackingMode,
         freeGlyphRects: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::TextCore::GlyphRect,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::TextCore::GlyphRect,
+            >,
         >,
         usedGlyphRects: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::TextCore::GlyphRect,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::TextCore::GlyphRect,
+            >,
         >,
         renderMode: crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode,
         texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
@@ -323,21 +331,27 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         Ok(__cordl_ret.into())
     }
     pub fn TryAddGlyphsToTexture(
-        glyphIndexes: quest_hook::libil2cpp::Gc<u32>,
+        glyphIndexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<u32>,
+        >,
         padding: i32,
         packingMode: crate::UnityEngine::TextCore::LowLevel::GlyphPackingMode,
         freeGlyphRects: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::TextCore::GlyphRect,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::TextCore::GlyphRect,
+            >,
         >,
         usedGlyphRects: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::TextCore::GlyphRect,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::TextCore::GlyphRect,
+            >,
         >,
         renderMode: crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode,
         texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
         glyphs: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
+                    *mut crate::UnityEngine::TextCore::Glyph,
                 >,
             >,
         >,

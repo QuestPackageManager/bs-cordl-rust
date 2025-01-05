@@ -2,10 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JPath {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _expression: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _Filters_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JsonPath::PathFilter>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
+            >,
+        >,
     >,
     pub _currentIndex: i32,
 }
@@ -16,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+JPath")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Linq::JsonPath::JPath {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -75,10 +79,36 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::JPath {
             .invoke("EnsureLength", (message))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Evaluate_Gc1(
+    pub fn Evaluate_JToken_JsonSelectSettings0(
+        &mut self,
+        root: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+        t: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+        settings: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JsonSelectSettings,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            >,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            >,
+        > = __cordl_object.invoke("Evaluate", (root, t, settings))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Evaluate_List_1_JToken_JsonSelectSettings1(
         filters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
+                >,
             >,
         >,
         root: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
@@ -88,33 +118,17 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::JPath {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Evaluate", (filters, root, t, settings))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Evaluate_Gc_Gc_Gc0(
-        &mut self,
-        root: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
-        t: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
-        settings: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Linq::JsonSelectSettings,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
-        > = __cordl_object.invoke("Evaluate", (root, t, settings))?;
         Ok(__cordl_ret.into())
     }
     pub fn Match(
@@ -205,8 +219,10 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::JPath {
     pub fn ParsePath(
         &mut self,
         filters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
+                >,
             >,
         >,
         currentPartStartIndex: i32,
@@ -292,8 +308,10 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::JPath {
         &mut self,
         expressionPath: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<
-                    crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
+                crate::System::Collections::Generic::List_1<
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
+                    >,
                 >,
             >,
         >,
@@ -332,8 +350,10 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::JPath {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
+                >,
             >,
         >,
     > {
@@ -341,8 +361,10 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::JPath {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
+                >,
             >,
         > = __cordl_object.invoke("get_Filters", ())?;
         Ok(__cordl_ret.into())

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVREyeGaze {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub Eye: crate::GlobalNamespace::OVREyeGaze_EyeId,
     pub _Confidence_k__BackingField: f32,
     pub ConfidenceThreshold: f32,
@@ -14,7 +14,9 @@ pub struct OVREyeGaze {
     pub _initialRotationOffset: crate::UnityEngine::Quaternion,
     pub _viewTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _onPermissionGranted: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
 }
 #[cfg(feature = "OVREyeGaze")]
@@ -23,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVREyeGaze")]
 impl std::ops::Deref for crate::GlobalNamespace::OVREyeGaze {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

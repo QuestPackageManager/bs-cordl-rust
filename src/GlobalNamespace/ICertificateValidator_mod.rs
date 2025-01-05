@@ -32,7 +32,7 @@ impl crate::GlobalNamespace::ICertificateValidator {
         >,
         certificateChain: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

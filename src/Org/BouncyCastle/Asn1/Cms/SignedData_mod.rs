@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignedData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub version: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
     pub digestAlgorithms: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::Asn1Set,
@@ -25,9 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+SignedData")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Cms::SignedData {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -80,7 +76,7 @@ impl crate::Org::BouncyCastle::Asn1::Cms::SignedData {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Asn1Sequence1(
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -89,7 +85,7 @@ impl crate::Org::BouncyCastle::Asn1::Cms::SignedData {
             .invoke_void(".ctor", (seq))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc_Gc_Gc0(
+    pub fn New_Asn1Set_ContentInfo_Asn1Set_Asn1Set_Asn1Set0(
         digestAlgorithms: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1Set,
         >,
@@ -122,7 +118,7 @@ impl crate::Org::BouncyCastle::Asn1::Cms::SignedData {
         > = __cordl_object.invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Asn1Sequence1(
         &mut self,
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -133,7 +129,7 @@ impl crate::Org::BouncyCastle::Asn1::Cms::SignedData {
             .invoke(".ctor", (seq))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_Gc_Gc0(
+    pub fn _ctor_Asn1Set_ContentInfo_Asn1Set_Asn1Set_Asn1Set0(
         &mut self,
         digestAlgorithms: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1Set,

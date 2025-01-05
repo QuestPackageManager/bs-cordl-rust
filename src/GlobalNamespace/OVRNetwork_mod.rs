@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRNetwork {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRNetwork")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRNetwork")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRNetwork {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -123,19 +123,19 @@ impl crate::GlobalNamespace::OVRNetwork_FrameHeader {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRNetwork_OVRNetworkTcpClient {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub connectionStateChangedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub payloadReceivedCallback: quest_hook::libil2cpp::Gc<
-        i32,
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-        i32,
-        i32,
+        crate::System::Action_4<
+            i32,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+            i32,
+            i32,
+        >,
     >,
     pub tcpClient: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::TcpClient>,
     pub receivedBuffers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppArray<u8>>,
     >,
     pub receivedBufferIndex: i32,
     pub receivedBufferDataSize: i32,
@@ -150,7 +150,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRNetwork+OVRNetworkTcpClient")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpClient {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -269,11 +269,13 @@ for crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpClient {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRNetwork_OVRNetworkTcpServer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub tcpListener: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::TcpListener>,
     pub clientsLock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub clients: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::TcpClient>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::TcpClient>,
+        >,
     >,
 }
 #[cfg(feature = "OVRNetwork+OVRNetworkTcpServer")]
@@ -283,7 +285,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRNetwork+OVRNetworkTcpServer")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpServer {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -60,7 +60,7 @@ impl crate::OVR::OpenVR::IVRScreenshots {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRScreenshots__GetScreenshotPropertyFilename {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_GetScreenshotPropertyFilename")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -71,7 +71,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_GetScreenshotPropertyFilename")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyFilename {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -181,7 +181,7 @@ for crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyFilename {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRScreenshots__GetScreenshotPropertyType {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_GetScreenshotPropertyType")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -191,7 +191,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_GetScreenshotPropertyType")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyType {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -282,7 +282,7 @@ for crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyType {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRScreenshots__HookScreenshot {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_HookScreenshot")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -291,7 +291,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_HookScreenshot")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRScreenshots__HookScreenshot {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -388,7 +388,7 @@ for crate::OVR::OpenVR::IVRScreenshots__HookScreenshot {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRScreenshots__RequestScreenshot {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_RequestScreenshot")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -397,7 +397,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_RequestScreenshot")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRScreenshots__RequestScreenshot {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -508,7 +508,7 @@ for crate::OVR::OpenVR::IVRScreenshots__RequestScreenshot {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRScreenshots__SubmitScreenshot {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_SubmitScreenshot")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -517,7 +517,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_SubmitScreenshot")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRScreenshots__SubmitScreenshot {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -636,7 +636,7 @@ for crate::OVR::OpenVR::IVRScreenshots__SubmitScreenshot {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRScreenshots__TakeStereoScreenshot {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_TakeStereoScreenshot")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -646,7 +646,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_TakeStereoScreenshot")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRScreenshots__TakeStereoScreenshot {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -754,7 +754,7 @@ for crate::OVR::OpenVR::IVRScreenshots__TakeStereoScreenshot {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRScreenshots__UpdateScreenshotProgress {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_UpdateScreenshotProgress")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -764,7 +764,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_UpdateScreenshotProgress")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRScreenshots__UpdateScreenshotProgress {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

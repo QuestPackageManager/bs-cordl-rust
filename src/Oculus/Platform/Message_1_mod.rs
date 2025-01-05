@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Message_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message>,
+    __cordl_parent: crate::Oculus::Platform::Message,
     pub data: T,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Oculus+Platform+Message_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Oculus::Platform::Message_1<T> {
-    type Target = quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message>;
+    type Target = crate::Oculus::Platform::Message;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -98,7 +98,7 @@ for crate::Oculus::Platform::Message_1<T> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Message_1_Callback<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "Oculus+Platform+Message_1+Callback")]
@@ -109,7 +109,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Oculus+Platform+Message_1+Callback")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Oculus::Platform::Message_1_Callback<T> {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -125,7 +125,7 @@ for crate::Oculus::Platform::Message_1_Callback<T> {
 impl<T: quest_hook::libil2cpp::Type> crate::Oculus::Platform::Message_1_Callback<T> {
     pub fn BeginInvoke(
         &mut self,
-        message: quest_hook::libil2cpp::Gc<T>,
+        message: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message_1<T>>,
         callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
@@ -159,7 +159,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Oculus::Platform::Message_1_Callback
     }
     pub fn Invoke(
         &mut self,
-        message: quest_hook::libil2cpp::Gc<T>,
+        message: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message_1<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

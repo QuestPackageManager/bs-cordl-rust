@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_InputInterfaceTerrain {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::HoudiniEngineUnity::HEU_InputInterface,
-    >,
+    __cordl_parent: crate::HoudiniEngineUnity::HEU_InputInterface,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTerrain")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTerrain")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::HoudiniEngineUnity::HEU_InputInterface,
-    >;
+    type Target = crate::HoudiniEngineUnity::HEU_InputInterface;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -262,7 +258,7 @@ for crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain {
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_InputInterfaceTerrain_HEU_InputDataTerrain {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputData>,
+    __cordl_parent: crate::HoudiniEngineUnity::HEU_InputData,
     pub _heightFieldName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _parentNodeID: i32,
     pub _voxelSize: f32,
@@ -286,7 +282,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTerrain+HEU_InputDataTerrain")]
 impl std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain_HEU_InputDataTerrain {
-    type Target = quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputData>;
+    type Target = crate::HoudiniEngineUnity::HEU_InputData;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

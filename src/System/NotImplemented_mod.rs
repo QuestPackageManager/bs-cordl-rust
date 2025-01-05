@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NotImplemented {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+NotImplemented")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+NotImplemented")]
 impl std::ops::Deref for crate::System::NotImplemented {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,11 +24,13 @@ impl std::ops::DerefMut for crate::System::NotImplemented {
 }
 #[cfg(feature = "System+NotImplemented")]
 impl crate::System::NotImplemented {
-    pub fn get_ByDesign() -> quest_hook::libil2cpp::Result<
+    pub fn ByDesignWithMessage(
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_ByDesign", ())?;
+            .invoke("ByDesignWithMessage", (message))?;
         Ok(__cordl_ret.into())
     }
 }

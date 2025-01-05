@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TransformScopeConcreteIdArgConditionCopyNonLazyBinder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-    >,
+    __cordl_parent: crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
     pub _GameObjectInfo_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::Zenject::GameObjectCreationParameters,
     >,
@@ -18,9 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Zenject+TransformScopeConcreteIdArgConditionCopyNonLazyBinder")]
 impl std::ops::Deref
 for crate::Zenject::TransformScopeConcreteIdArgConditionCopyNonLazyBinder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-    >;
+    type Target = crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -64,7 +60,28 @@ impl crate::Zenject::TransformScopeConcreteIdArgConditionCopyNonLazyBinder {
         > = __cordl_object.invoke("UnderTransformGroup", (transformGroupname))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UnderTransform_Gc0(
+    pub fn UnderTransform_Func_2_1(
+        &mut self,
+        parentGetter: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
+        > = __cordl_object.invoke("UnderTransform", (parentGetter))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnderTransform_Transform0(
         &mut self,
         parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<
@@ -78,25 +95,6 @@ impl crate::Zenject::TransformScopeConcreteIdArgConditionCopyNonLazyBinder {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
         > = __cordl_object.invoke("UnderTransform", (parent))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn UnderTransform_Gc1(
-        &mut self,
-        parentGetter: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-        > = __cordl_object.invoke("UnderTransform", (parentGetter))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

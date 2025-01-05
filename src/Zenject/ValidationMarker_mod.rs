@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ValidationMarker {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _InstantiateFailed_k__BackingField: bool,
     pub _MarkedType_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+ValidationMarker")]
 impl std::ops::Deref for crate::Zenject::ValidationMarker {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::Zenject::ValidationMarker {
 }
 #[cfg(feature = "Zenject+ValidationMarker")]
 impl crate::Zenject::ValidationMarker {
-    pub fn New_Gc1(
+    pub fn New_Type1(
         markedType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -45,7 +45,7 @@ impl crate::Zenject::ValidationMarker {
             .invoke_void(".ctor", (markedType, instantiateFailed))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Type1(
         &mut self,
         markedType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

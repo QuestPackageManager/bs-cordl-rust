@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SecureStringHasher {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub hashCodeRandomizer: i32,
 }
 #[cfg(feature = "System+Xml+SecureStringHasher")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+SecureStringHasher")]
 impl std::ops::Deref for crate::System::Xml::SecureStringHasher {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -97,13 +97,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::SecureStringHashe
 }
 #[cfg(feature = "System+Xml+SecureStringHasher")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IEqualityComparer_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 > for crate::System::Xml::SecureStringHasher {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::Collections::Generic::IEqualityComparer_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -111,13 +111,13 @@ impl AsRef<
 }
 #[cfg(feature = "System+Xml+SecureStringHasher")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IEqualityComparer_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 > for crate::System::Xml::SecureStringHasher {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::Collections::Generic::IEqualityComparer_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -127,7 +127,7 @@ impl AsMut<
 #[repr(C)]
 #[derive(Debug)]
 pub struct SecureStringHasher_HashCodeOfStringDelegate {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "System+Xml+SecureStringHasher+HashCodeOfStringDelegate")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -138,7 +138,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Xml+SecureStringHasher+HashCodeOfStringDelegate")]
 impl std::ops::Deref
 for crate::System::Xml::SecureStringHasher_HashCodeOfStringDelegate {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

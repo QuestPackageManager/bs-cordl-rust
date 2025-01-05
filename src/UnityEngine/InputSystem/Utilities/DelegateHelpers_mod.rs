@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DelegateHelpers {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+DelegateHelpers")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+DelegateHelpers")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,8 +29,10 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
         callbacks: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
                 quest_hook::libil2cpp::Gc<
-                    TValue,
-                    quest_hook::libil2cpp::Gc<crate::System::Action>,
+                    crate::System::Func_2<
+                        TValue,
+                        quest_hook::libil2cpp::Gc<crate::System::Action>,
+                    >,
                 >,
             >,
         >,
@@ -52,7 +54,7 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
     pub fn InvokeCallbacksSafe_AnyCallbackReturnsObject<TValue, TReturn>(
         callbacks: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
-                quest_hook::libil2cpp::Gc<TValue, TReturn>,
+                quest_hook::libil2cpp::Gc<crate::System::Func_2<TValue, TReturn>>,
             >,
         >,
         argument: TValue,
@@ -75,7 +77,7 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
     pub fn InvokeCallbacksSafe_AnyCallbackReturnsTrue<TValue1, TValue2>(
         callbacks: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
-                quest_hook::libil2cpp::Gc<TValue1, TValue2, bool>,
+                quest_hook::libil2cpp::Gc<crate::System::Func_3<TValue1, TValue2, bool>>,
             >,
         >,
         argument1: TValue1,
@@ -96,7 +98,7 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn InvokeCallbacksSafe_Gc_Gc0(
+    pub fn InvokeCallbacksSafe_Il2CppString_Il2CppObject0(
         callbacks: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
                 quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -109,10 +111,13 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
             .invoke("InvokeCallbacksSafe", (callbacks, callbackName, context))?;
         Ok(__cordl_ret.into())
     }
-    pub fn InvokeCallbacksSafe_TValue1_TValue2_Gc_Gc2<TValue1, TValue2>(
+    pub fn InvokeCallbacksSafe_TValue1_TValue2_Il2CppString_Il2CppObject2<
+        TValue1,
+        TValue2,
+    >(
         callbacks: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
-                quest_hook::libil2cpp::Gc<TValue1, TValue2>,
+                quest_hook::libil2cpp::Gc<crate::System::Action_2<TValue1, TValue2>>,
             >,
         >,
         argument1: TValue1,
@@ -133,10 +138,10 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn InvokeCallbacksSafe_TValue_Gc_Gc1<TValue>(
+    pub fn InvokeCallbacksSafe_TValue_Il2CppString_Il2CppObject1<TValue>(
         callbacks: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
-                quest_hook::libil2cpp::Gc<TValue>,
+                quest_hook::libil2cpp::Gc<crate::System::Action_1<TValue>>,
             >,
         >,
         argument: TValue,

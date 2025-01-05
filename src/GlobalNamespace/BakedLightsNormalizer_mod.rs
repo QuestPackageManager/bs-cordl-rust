@@ -2,11 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BakedLightsNormalizer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _maxTotalIntensity: f32,
     pub _lightmapLightDict: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LightConstants_BakeId,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightmapLightWithIds>,
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::GlobalNamespace::LightConstants_BakeId,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightmapLightWithIds>,
+        >,
     >,
     pub _lightmapDictInitialized: bool,
     pub _grayscaleTotal: f32,
@@ -21,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BakedLightsNormalizer")]
 impl std::ops::Deref for crate::GlobalNamespace::BakedLightsNormalizer {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -93,16 +95,20 @@ impl crate::GlobalNamespace::BakedLightsNormalizer {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LightConstants_BakeId,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightmapLightWithIds>,
+            crate::System::Collections::Generic::Dictionary_2<
+                crate::GlobalNamespace::LightConstants_BakeId,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightmapLightWithIds>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LightConstants_BakeId,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightmapLightWithIds>,
+            crate::System::Collections::Generic::Dictionary_2<
+                crate::GlobalNamespace::LightConstants_BakeId,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightmapLightWithIds>,
+            >,
         > = __cordl_object.invoke("get_lightmapLightDict", ())?;
         Ok(__cordl_ret.into())
     }

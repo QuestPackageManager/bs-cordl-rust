@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Math {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Math")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+Math")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::Math {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -76,25 +76,37 @@ impl crate::UnityEngine::ProBuilder::Math {
             .invoke("ApproxC", (a, b, delta))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Average_Gc_Gc0(
-        array: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
-        indexes: quest_hook::libil2cpp::Gc<i32>,
+    pub fn Average_IList_1_IList_1_0(
+        array: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
+        >,
+        indexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Average", (array, indexes))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Average_Gc_Gc1(
-        array: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
-        indexes: quest_hook::libil2cpp::Gc<i32>,
+    pub fn Average_IList_1_IList_1_1(
+        array: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector3>,
+        >,
+        indexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
         let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Average", (array, indexes))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Average_Gc_Gc2(
-        array: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
-        indexes: quest_hook::libil2cpp::Gc<i32>,
+    pub fn Average_IList_1_IList_1_2(
+        array: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector4>,
+        >,
+        indexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
         let __cordl_ret: crate::UnityEngine::Vector4 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Average", (array, indexes))?;
@@ -184,7 +196,9 @@ impl crate::UnityEngine::ProBuilder::Math {
         positions: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
         >,
-        indices: quest_hook::libil2cpp::Gc<i32>,
+        indices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Bounds> {
         let __cordl_ret: crate::UnityEngine::Bounds = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetBounds", (positions, indices))?;
@@ -284,23 +298,25 @@ impl crate::UnityEngine::ProBuilder::Math {
             .invoke("LargestValue", (v))?;
         Ok(__cordl_ret.into())
     }
-    pub fn LargestVector2_Gc0(
+    pub fn LargestVector2_IList_1_1(
+        v: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+        >,
+        indexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LargestVector2", (v, indexes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LargestVector2_Il2CppArray0(
         v: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("LargestVector2", (v))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn LargestVector2_Gc1(
-        v: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
-        >,
-        indexes: quest_hook::libil2cpp::Gc<i32>,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("LargestVector2", (v, indexes))?;
         Ok(__cordl_ret.into())
     }
     pub fn MakeNonZero(value: f32, min: f32) -> quest_hook::libil2cpp::Result<f32> {
@@ -338,17 +354,21 @@ impl crate::UnityEngine::ProBuilder::Math {
             .invoke("NormalTangentBitangent", (mesh, face))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Normal_Gc_Gc1(
+    pub fn Normal_IList_1_IList_1_1(
         vertices: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
+            >,
         >,
-        indexes: quest_hook::libil2cpp::Gc<i32>,
+        indexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
         let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Normal", (vertices, indexes))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Normal_Gc_Gc2(
+    pub fn Normal_ProBuilderMesh_Face2(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         face: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
@@ -409,7 +429,7 @@ impl crate::UnityEngine::ProBuilder::Math {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn PointInPolygon_Gc_Vector2_1(
+    pub fn PointInPolygon_Bounds2D_Vector2_1(
         positions: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
@@ -423,7 +443,7 @@ impl crate::UnityEngine::ProBuilder::Math {
             .invoke("PointInPolygon", (positions, polyBounds, edges, point))?;
         Ok(__cordl_ret.into())
     }
-    pub fn PointInPolygon_Gc_Vector2_2(
+    pub fn PointInPolygon_Bounds2D_Vector2_2(
         positions: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
         >,
@@ -563,23 +583,25 @@ impl crate::UnityEngine::ProBuilder::Math {
             .invoke("SignedAngle", (a, b))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SmallestVector2_Gc0(
+    pub fn SmallestVector2_IList_1_1(
+        v: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+        >,
+        indexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SmallestVector2", (v, indexes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SmallestVector2_Il2CppArray0(
         v: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("SmallestVector2", (v))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn SmallestVector2_Gc1(
-        v: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
-        >,
-        indexes: quest_hook::libil2cpp::Gc<i32>,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SmallestVector2", (v, indexes))?;
         Ok(__cordl_ret.into())
     }
     pub fn SqrDistance(

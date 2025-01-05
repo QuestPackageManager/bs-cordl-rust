@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StepFloatMaterialPropertyEffectTarget {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::FloatFxGroupEffectTarget,
-    >,
+    __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
     pub _materialPropertyBlockController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MaterialPropertyBlockController,
     >,
@@ -21,9 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "StepFloatMaterialPropertyEffectTarget")]
 impl std::ops::Deref for crate::GlobalNamespace::StepFloatMaterialPropertyEffectTarget {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::FloatFxGroupEffectTarget,
-    >;
+    type Target = crate::GlobalNamespace::FloatFxGroupEffectTarget;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

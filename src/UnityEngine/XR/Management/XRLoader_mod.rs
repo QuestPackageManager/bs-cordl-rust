@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XRLoader {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+    __cordl_parent: crate::UnityEngine::ScriptableObject,
 }
 #[cfg(feature = "UnityEngine+XR+Management+XRLoader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+XR+Management+XRLoader")]
 impl std::ops::Deref for crate::UnityEngine::XR::Management::XRLoader {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>;
+    type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -46,13 +46,19 @@ impl crate::UnityEngine::XR::Management::XRLoader {
         &mut self,
         buildingPlayer: bool,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::GraphicsDeviceType>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::Rendering::GraphicsDeviceType,
+            >,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Rendering::GraphicsDeviceType,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::Rendering::GraphicsDeviceType,
+            >,
         > = __cordl_object.invoke("GetSupportedGraphicsDeviceTypes", (buildingPlayer))?;
         Ok(__cordl_ret.into())
     }

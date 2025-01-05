@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NumericConvertInstruction {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::Instruction,
-    >,
+    __cordl_parent: crate::System::Linq::Expressions::Interpreter::Instruction,
     pub _from: crate::System::TypeCode,
     pub _to: crate::System::TypeCode,
     pub _isLiftedToNull: bool,
@@ -18,9 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Interpreter+NumericConvertInstruction")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::NumericConvertInstruction {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::Instruction,
-    >;
+    type Target = crate::System::Linq::Expressions::Interpreter::Instruction;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

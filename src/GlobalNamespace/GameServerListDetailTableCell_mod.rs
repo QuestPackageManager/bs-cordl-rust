@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameServerListDetailTableCell {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
+    __cordl_parent: crate::HMUI::TableCell,
     pub _joinServerButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub joinServerButtonWasPressedEvent: quest_hook::libil2cpp::Gc<
         crate::System::Action,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "GameServerListDetailTableCell")]
 impl std::ops::Deref for crate::GlobalNamespace::GameServerListDetailTableCell {
-    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>;
+    type Target = crate::HMUI::TableCell;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

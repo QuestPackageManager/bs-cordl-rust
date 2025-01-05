@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignatureByRefType {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Reflection::SignatureHasElementType,
-    >,
+    __cordl_parent: crate::System::Reflection::SignatureHasElementType,
 }
 #[cfg(feature = "System+Reflection+SignatureByRefType")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Reflection+SignatureByRefType")]
 impl std::ops::Deref for crate::System::Reflection::SignatureByRefType {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Reflection::SignatureHasElementType,
-    >;
+    type Target = crate::System::Reflection::SignatureHasElementType;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

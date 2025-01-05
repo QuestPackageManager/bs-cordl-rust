@@ -4,9 +4,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LessThanOrEqualInstruction_LessThanOrEqualSingle {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::LessThanOrEqualInstruction,
-    >,
+    __cordl_parent: crate::System::Linq::Expressions::Interpreter::LessThanOrEqualInstruction,
 }
 #[cfg(
     feature = "System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction+LessThanOrEqualSingle"
@@ -22,9 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::LessThanOrEqualInstruction_LessThanOrEqualSingle {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::LessThanOrEqualInstruction,
-    >;
+    type Target = crate::System::Linq::Expressions::Interpreter::LessThanOrEqualInstruction;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

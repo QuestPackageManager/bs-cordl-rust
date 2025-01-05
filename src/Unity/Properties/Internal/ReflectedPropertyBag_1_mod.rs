@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectedPropertyBag_1<TContainer: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TContainer>,
+    __cordl_parent: crate::Unity::Properties::ContainerPropertyBag_1<TContainer>,
     __cordl_phantom_TContainer: std::marker::PhantomData<TContainer>,
 }
 #[cfg(feature = "Unity+Properties+Internal+ReflectedPropertyBag_1")]
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Unity+Properties+Internal+ReflectedPropertyBag_1")]
 impl<TContainer: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Unity::Properties::Internal::ReflectedPropertyBag_1<TContainer> {
-    type Target = quest_hook::libil2cpp::Gc<TContainer>;
+    type Target = crate::Unity::Properties::ContainerPropertyBag_1<TContainer>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,7 +32,9 @@ impl<
 > crate::Unity::Properties::Internal::ReflectedPropertyBag_1<TContainer> {
     pub fn AddProperty<TValue>(
         &mut self,
-        property: quest_hook::libil2cpp::Gc<TContainer, TValue>,
+        property: quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::Property_2<TContainer, TValue>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

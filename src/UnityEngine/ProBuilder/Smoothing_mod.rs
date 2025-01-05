@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Smoothing {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Smoothing")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+Smoothing")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::Smoothing {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,10 +29,12 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
     pub const smoothRangeMax: i32 = 24i32;
     pub const smoothRangeMin: i32 = 1i32;
     pub const smoothingGroupNone: i32 = 0i32;
-    pub fn ApplySmoothingGroups_Gc1(
+    pub fn ApplySmoothingGroups_Il2CppArray1(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         faces: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            >,
         >,
         angleThreshold: f32,
         normals: quest_hook::libil2cpp::Gc<
@@ -43,10 +45,12 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
             .invoke("ApplySmoothingGroups", (mesh, faces, angleThreshold, normals))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ApplySmoothingGroups_Gc_Gc_f32_0(
+    pub fn ApplySmoothingGroups_ProBuilderMesh_IEnumerable_1_f32_0(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         faces: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            >,
         >,
         angleThreshold: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -61,7 +65,9 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
         wing: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
         angleThreshold: f32,
         processed: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            crate::System::Collections::Generic::HashSet_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
@@ -73,7 +79,9 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
     }
     pub fn GetNextUnusedSmoothingGroup(
         start: i32,
-        used: quest_hook::libil2cpp::Gc<i32>,
+        used: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetNextUnusedSmoothingGroup", (start, used))?;

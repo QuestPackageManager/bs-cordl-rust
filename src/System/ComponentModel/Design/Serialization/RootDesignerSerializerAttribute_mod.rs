@@ -4,7 +4,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RootDesignerSerializerAttribute {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+    __cordl_parent: crate::System::Attribute,
     pub _typeId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _Reloadable_k__BackingField: bool,
     pub _SerializerTypeName_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -27,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::System::ComponentModel::Design::Serialization::RootDesignerSerializerAttribute {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Attribute>;
+    type Target = crate::System::Attribute;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

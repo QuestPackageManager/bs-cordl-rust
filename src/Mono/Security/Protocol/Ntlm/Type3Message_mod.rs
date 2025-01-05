@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Type3Message {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Mono::Security::Protocol::Ntlm::MessageBase,
-    >,
+    __cordl_parent: crate::Mono::Security::Protocol::Ntlm::MessageBase,
     pub _level: crate::Mono::Security::Protocol::Ntlm::NtlmAuthLevel,
     pub _challenge: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _host: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -24,9 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Security+Protocol+Ntlm+Type3Message")]
 impl std::ops::Deref for crate::Mono::Security::Protocol::Ntlm::Type3Message {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Mono::Security::Protocol::Ntlm::MessageBase,
-    >;
+    type Target = crate::Mono::Security::Protocol::Ntlm::MessageBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

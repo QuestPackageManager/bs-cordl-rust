@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TlsException {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::IO::IOException>,
+    __cordl_parent: crate::System::IO::IOException,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsException")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::TlsException {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::IO::IOException>;
+    type Target = crate::System::IO::IOException;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

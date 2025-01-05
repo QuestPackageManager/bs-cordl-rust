@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PackDefinitionSO {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PersistentScriptableObject,
-    >,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _beatmapLevelPack: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapLevelPackSO,
     >,
@@ -17,7 +15,9 @@ pub struct PackDefinitionSO {
     >,
     pub _tags: crate::GlobalNamespace::PackDefinitionSO_Tags,
     pub _packPromoInfoReference: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackPromoInfoSO>,
+        crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackPromoInfoSO>,
+        >,
     >,
     pub _perceivedLoudnessPerLevel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PerceivedLoudnessSO,
@@ -33,9 +33,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PackDefinitionSO")]
 impl std::ops::Deref for crate::GlobalNamespace::PackDefinitionSO {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PersistentScriptableObject,
-    >;
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -199,14 +197,18 @@ impl crate::GlobalNamespace::PackDefinitionSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackPromoInfoSO>,
+            crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackPromoInfoSO>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackPromoInfoSO>,
+            crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackPromoInfoSO>,
+            >,
         > = __cordl_object.invoke("get_packPromoInfoReference", ())?;
         Ok(__cordl_ret.into())
     }
@@ -304,7 +306,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PackDefinitio
 #[repr(C)]
 #[derive(Debug)]
 pub struct PackDefinitionSO_Credits {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub order: i32,
     pub creditsPrefab: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
@@ -317,7 +319,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PackDefinitionSO+Credits")]
 impl std::ops::Deref for crate::GlobalNamespace::PackDefinitionSO_Credits {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -362,7 +364,7 @@ for crate::GlobalNamespace::PackDefinitionSO_Credits {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PackDefinitionSO_LeaderboardIds {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _riftLeaderboardIds: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::LeaderboardIdsSO,
     >,
@@ -386,7 +388,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PackDefinitionSO+LeaderboardIds")]
 impl std::ops::Deref for crate::GlobalNamespace::PackDefinitionSO_LeaderboardIds {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -551,7 +553,7 @@ for crate::GlobalNamespace::PackDefinitionSO_LeaderboardIds {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PackDefinitionSO_LevelProductPacks {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _steamLevelProductPacks: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SteamLevelProductPacksSO,
     >,
@@ -576,7 +578,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PackDefinitionSO+LevelProductPacks")]
 impl std::ops::Deref for crate::GlobalNamespace::PackDefinitionSO_LevelProductPacks {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

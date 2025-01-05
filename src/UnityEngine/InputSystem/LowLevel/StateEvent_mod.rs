@@ -50,7 +50,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::StateEvent {
             .invoke("FromUnchecked", (ptr))?;
         Ok(__cordl_ret.into())
     }
-    pub fn From_Gc_ByRefMut_Allocator1(
+    pub fn From_InputDevice_ByRefMut_Allocator1(
         device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
         eventPtr: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
@@ -61,7 +61,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::StateEvent {
             .invoke("From", (device, eventPtr, allocator))?;
         Ok(__cordl_ret.into())
     }
-    pub fn From_Gc_ByRefMut_Allocator__cordl_bool2(
+    pub fn From_InputDevice_ByRefMut_Allocator__cordl_bool2(
         device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
         eventPtr: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
@@ -159,30 +159,18 @@ impl crate::UnityEngine::InputSystem::LowLevel::StateEvent {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+StateEvent")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::IInputEventTypeInfo,
-    >,
-> for crate::UnityEngine::InputSystem::LowLevel::StateEvent {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::IInputEventTypeInfo,
-    > {
+impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputEventTypeInfo>
+for crate::UnityEngine::InputSystem::LowLevel::StateEvent {
+    fn as_ref(&self) -> &crate::UnityEngine::InputSystem::LowLevel::IInputEventTypeInfo {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+StateEvent")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::IInputEventTypeInfo,
-    >,
-> for crate::UnityEngine::InputSystem::LowLevel::StateEvent {
+impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputEventTypeInfo>
+for crate::UnityEngine::InputSystem::LowLevel::StateEvent {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::IInputEventTypeInfo,
-    > {
+    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputEventTypeInfo {
         todo!()
     }
 }

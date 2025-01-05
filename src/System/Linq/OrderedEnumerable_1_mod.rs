@@ -2,8 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OrderedEnumerable_1<TElement: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    pub source: quest_hook::libil2cpp::Gc<TElement>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub source: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEnumerable_1<TElement>,
+    >,
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,
 }
 #[cfg(feature = "System+Linq+OrderedEnumerable_1")]
@@ -14,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+OrderedEnumerable_1")]
 impl<TElement: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Linq::OrderedEnumerable_1<TElement> {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,8 +34,12 @@ impl<
 > crate::System::Linq::OrderedEnumerable_1<TElement> {
     pub fn GetEnumerableSorter(
         &mut self,
-        next: quest_hook::libil2cpp::Gc<TElement>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TElement>>
+        next: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::EnumerableSorter_1<TElement>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::EnumerableSorter_1<TElement>>,
+    >
     where
         TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -41,13 +47,18 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TElement> = __cordl_object
-            .invoke("GetEnumerableSorter", (next))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::EnumerableSorter_1<TElement>,
+        > = __cordl_object.invoke("GetEnumerableSorter", (next))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TElement>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<TElement>,
+        >,
+    >
     where
         TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -55,8 +66,9 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TElement> = __cordl_object
-            .invoke("GetEnumerator", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<TElement>,
+        > = __cordl_object.invoke("GetEnumerator", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
@@ -89,10 +101,14 @@ impl<
     }
     pub fn System_Linq_IOrderedEnumerable_TElement__CreateOrderedEnumerable<TKey>(
         &mut self,
-        keySelector: quest_hook::libil2cpp::Gc<TElement, TKey>,
-        comparer: quest_hook::libil2cpp::Gc<TKey>,
+        keySelector: quest_hook::libil2cpp::Gc<crate::System::Func_2<TElement, TKey>>,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IComparer_1<TKey>,
+        >,
         descending: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TElement>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::IOrderedEnumerable_1<TElement>>,
+    >
     where
         TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -102,7 +118,9 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TElement> = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::IOrderedEnumerable_1<TElement>,
+        > = __cordl_object
             .invoke(
                 "System.Linq.IOrderedEnumerable<TElement>.CreateOrderedEnumerable",
                 (keySelector, comparer, descending),
@@ -133,52 +151,58 @@ for crate::System::Linq::OrderedEnumerable_1<TElement> {
     }
 }
 #[cfg(feature = "System+Linq+OrderedEnumerable_1")]
-impl<TElement: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<TElement>>
+impl<
+    TElement: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerable_1<TElement>>
 for crate::System::Linq::OrderedEnumerable_1<TElement> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TElement> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Linq+OrderedEnumerable_1")]
-impl<TElement: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<TElement>>
-for crate::System::Linq::OrderedEnumerable_1<TElement> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TElement> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Linq+OrderedEnumerable_1")]
-impl<TElement: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<TElement>>
-for crate::System::Linq::OrderedEnumerable_1<TElement> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TElement> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Linq+OrderedEnumerable_1")]
-impl<TElement: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<TElement>>
-for crate::System::Linq::OrderedEnumerable_1<TElement> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TElement> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<TElement> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Linq+OrderedEnumerable_1")]
 impl<
     TElement: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
-for crate::System::Linq::OrderedEnumerable_1<TElement> {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Linq+OrderedEnumerable_1")]
-impl<
-    TElement: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+> AsMut<crate::System::Collections::Generic::IEnumerable_1<TElement>>
 for crate::System::Linq::OrderedEnumerable_1<TElement> {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<TElement> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Linq+OrderedEnumerable_1")]
+impl<
+    TElement: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::IEnumerable>
+for crate::System::Linq::OrderedEnumerable_1<TElement> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Linq+OrderedEnumerable_1")]
+impl<
+    TElement: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::IEnumerable>
+for crate::System::Linq::OrderedEnumerable_1<TElement> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Linq+OrderedEnumerable_1")]
+impl<
+    TElement: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Linq::IOrderedEnumerable_1<TElement>>
+for crate::System::Linq::OrderedEnumerable_1<TElement> {
+    fn as_ref(&self) -> &crate::System::Linq::IOrderedEnumerable_1<TElement> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Linq+OrderedEnumerable_1")]
+impl<
+    TElement: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Linq::IOrderedEnumerable_1<TElement>>
+for crate::System::Linq::OrderedEnumerable_1<TElement> {
+    fn as_mut(&mut self) -> &mut crate::System::Linq::IOrderedEnumerable_1<TElement> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectEventDescriptor {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::ComponentModel::EventDescriptor,
-    >,
+    __cordl_parent: crate::System::ComponentModel::EventDescriptor,
     pub _type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _componentClass: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _addMethod: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
@@ -19,9 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+ComponentModel+ReflectEventDescriptor")]
 impl std::ops::Deref for crate::System::ComponentModel::ReflectEventDescriptor {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::ComponentModel::EventDescriptor,
-    >;
+    type Target = crate::System::ComponentModel::EventDescriptor;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

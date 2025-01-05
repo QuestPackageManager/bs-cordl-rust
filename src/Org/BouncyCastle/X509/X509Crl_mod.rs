@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509Crl {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::X509::X509ExtensionBase,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::X509::X509ExtensionBase,
     pub c: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::X509::CertificateList,
     >,
@@ -21,9 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+X509+X509Crl")]
 impl std::ops::Deref for crate::Org::BouncyCastle::X509::X509Crl {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::X509::X509ExtensionBase,
-    >;
+    type Target = crate::Org::BouncyCastle::X509::X509ExtensionBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -207,7 +203,7 @@ impl crate::Org::BouncyCastle::X509::X509Crl {
         > = __cordl_object.invoke("ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Verify_Gc0(
+    pub fn Verify_AsymmetricKeyParameter0(
         &mut self,
         publicKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
@@ -220,7 +216,7 @@ impl crate::Org::BouncyCastle::X509::X509Crl {
             .invoke("Verify", (publicKey))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Verify_Gc1(
+    pub fn Verify_IVerifierFactoryProvider1(
         &mut self,
         verifierProvider: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IVerifierFactoryProvider,

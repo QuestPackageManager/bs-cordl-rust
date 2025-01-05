@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Iso9796d2Signer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     pub cipher: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
@@ -27,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Iso9796d2Signer")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Signers::Iso9796d2Signer {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -130,7 +130,7 @@ impl crate::Org::BouncyCastle::Crypto::Signers::Iso9796d2Signer {
         let __cordl_ret: bool = __cordl_object.invoke("IsSameAs", (a, b))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc_Gc1(
+    pub fn New_IAsymmetricBlockCipher_IDigest1(
         cipher: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
         >,
@@ -207,7 +207,7 @@ impl crate::Org::BouncyCastle::Crypto::Signers::Iso9796d2Signer {
         let __cordl_ret: bool = __cordl_object.invoke("VerifySignature", (signature))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc1(
+    pub fn _ctor_IAsymmetricBlockCipher_IDigest1(
         &mut self,
         cipher: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
@@ -261,44 +261,30 @@ for crate::Org::BouncyCastle::Crypto::Signers::Iso9796d2Signer {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Iso9796d2Signer")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>>
+impl AsRef<crate::Org::BouncyCastle::Crypto::ISigner>
 for crate::Org::BouncyCastle::Crypto::Signers::Iso9796d2Signer {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner> {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::ISigner {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Iso9796d2Signer")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>>
+impl AsMut<crate::Org::BouncyCastle::Crypto::ISigner>
 for crate::Org::BouncyCastle::Crypto::Signers::Iso9796d2Signer {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner> {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::ISigner {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Iso9796d2Signer")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISignerWithRecovery>,
-> for crate::Org::BouncyCastle::Crypto::Signers::Iso9796d2Signer {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::ISignerWithRecovery,
-    > {
+impl AsRef<crate::Org::BouncyCastle::Crypto::ISignerWithRecovery>
+for crate::Org::BouncyCastle::Crypto::Signers::Iso9796d2Signer {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::ISignerWithRecovery {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Iso9796d2Signer")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISignerWithRecovery>,
-> for crate::Org::BouncyCastle::Crypto::Signers::Iso9796d2Signer {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::ISignerWithRecovery,
-    > {
+impl AsMut<crate::Org::BouncyCastle::Crypto::ISignerWithRecovery>
+for crate::Org::BouncyCastle::Crypto::Signers::Iso9796d2Signer {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::ISignerWithRecovery {
         unsafe { std::mem::transmute(self) }
     }
 }

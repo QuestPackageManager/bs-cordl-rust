@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct IntSwitchInstruction_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::Instruction,
+    __cordl_parent: crate::System::Linq::Expressions::Interpreter::Instruction,
+    pub _cases: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<T, i32>,
     >,
-    pub _cases: quest_hook::libil2cpp::Gc<T, i32>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+IntSwitchInstruction_1")]
@@ -17,9 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Interpreter+IntSwitchInstruction_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::IntSwitchInstruction_1<T> {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::Instruction,
-    >;
+    type Target = crate::System::Linq::Expressions::Interpreter::Instruction;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -36,7 +34,9 @@ impl<
     T: quest_hook::libil2cpp::Type,
 > crate::System::Linq::Expressions::Interpreter::IntSwitchInstruction_1<T> {
     pub fn New(
-        cases: quest_hook::libil2cpp::Gc<T, i32>,
+        cases: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<T, i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -66,7 +66,9 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        cases: quest_hook::libil2cpp::Gc<T, i32>,
+        cases: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<T, i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

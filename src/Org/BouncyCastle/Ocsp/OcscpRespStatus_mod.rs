@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OcscpRespStatus {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Ocsp::OcspRespStatus,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Ocsp::OcspRespStatus,
 }
 #[cfg(feature = "Org+BouncyCastle+Ocsp+OcscpRespStatus")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Ocsp+OcscpRespStatus")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Ocsp::OcscpRespStatus {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Ocsp::OcspRespStatus,
-    >;
+    type Target = crate::Org::BouncyCastle::Ocsp::OcspRespStatus;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

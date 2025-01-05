@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsyncResult {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub async_state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub handle: quest_hook::libil2cpp::Gc<crate::System::Threading::WaitHandle>,
     pub async_delegate: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -34,7 +34,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+Remoting+Messaging+AsyncResult")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Messaging::AsyncResult {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -311,58 +311,46 @@ for crate::System::Runtime::Remoting::Messaging::AsyncResult {
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+AsyncResult")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>>
+impl AsRef<crate::System::IAsyncResult>
 for crate::System::Runtime::Remoting::Messaging::AsyncResult {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> {
+    fn as_ref(&self) -> &crate::System::IAsyncResult {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+AsyncResult")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>>
+impl AsMut<crate::System::IAsyncResult>
 for crate::System::Runtime::Remoting::Messaging::AsyncResult {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> {
+    fn as_mut(&mut self) -> &mut crate::System::IAsyncResult {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+AsyncResult")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Messaging::IMessageSink>,
-> for crate::System::Runtime::Remoting::Messaging::AsyncResult {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Remoting::Messaging::IMessageSink,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Runtime+Remoting+Messaging+AsyncResult")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Messaging::IMessageSink>,
-> for crate::System::Runtime::Remoting::Messaging::AsyncResult {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Remoting::Messaging::IMessageSink,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Runtime+Remoting+Messaging+AsyncResult")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem>>
+impl AsRef<crate::System::Runtime::Remoting::Messaging::IMessageSink>
 for crate::System::Runtime::Remoting::Messaging::AsyncResult {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem> {
+    fn as_ref(&self) -> &crate::System::Runtime::Remoting::Messaging::IMessageSink {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+AsyncResult")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem>>
+impl AsMut<crate::System::Runtime::Remoting::Messaging::IMessageSink>
 for crate::System::Runtime::Remoting::Messaging::AsyncResult {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem> {
+    ) -> &mut crate::System::Runtime::Remoting::Messaging::IMessageSink {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Messaging+AsyncResult")]
+impl AsRef<crate::System::Threading::IThreadPoolWorkItem>
+for crate::System::Runtime::Remoting::Messaging::AsyncResult {
+    fn as_ref(&self) -> &crate::System::Threading::IThreadPoolWorkItem {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Messaging+AsyncResult")]
+impl AsMut<crate::System::Threading::IThreadPoolWorkItem>
+for crate::System::Runtime::Remoting::Messaging::AsyncResult {
+    fn as_mut(&mut self) -> &mut crate::System::Threading::IThreadPoolWorkItem {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AbandonedMutexException {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::SystemException>,
+    __cordl_parent: crate::System::SystemException,
     pub _mutexIndex: i32,
     pub _mutex: quest_hook::libil2cpp::Gc<crate::System::Threading::Mutex>,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+AbandonedMutexException")]
 impl std::ops::Deref for crate::System::Threading::AbandonedMutexException {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::SystemException>;
+    type Target = crate::System::SystemException;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -33,7 +33,7 @@ impl crate::System::Threading::AbandonedMutexException {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_StreamingContext2(
+    pub fn New_SerializationInfo_StreamingContext2(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -45,7 +45,7 @@ impl crate::System::Threading::AbandonedMutexException {
             .invoke_void(".ctor", (info, context))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_Gc1(
+    pub fn New_i32_WaitHandle1(
         location: i32,
         handle: quest_hook::libil2cpp::Gc<crate::System::Threading::WaitHandle>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -77,7 +77,7 @@ impl crate::System::Threading::AbandonedMutexException {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_StreamingContext2(
+    pub fn _ctor_SerializationInfo_StreamingContext2(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -91,7 +91,7 @@ impl crate::System::Threading::AbandonedMutexException {
             .invoke(".ctor", (info, context))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_Gc1(
+    pub fn _ctor_i32_WaitHandle1(
         &mut self,
         location: i32,
         handle: quest_hook::libil2cpp::Gc<crate::System::Threading::WaitHandle>,

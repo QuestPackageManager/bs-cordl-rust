@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FadeInOnSceneTransitionFinished {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::ZenjectSafeBehaviour,
-    >,
+    __cordl_parent: crate::GlobalNamespace::ZenjectSafeBehaviour,
     pub _fadeInOut: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::FadeInOutController,
     >,
@@ -19,9 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "FadeInOnSceneTransitionFinished")]
 impl std::ops::Deref for crate::GlobalNamespace::FadeInOnSceneTransitionFinished {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::ZenjectSafeBehaviour,
-    >;
+    type Target = crate::GlobalNamespace::ZenjectSafeBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

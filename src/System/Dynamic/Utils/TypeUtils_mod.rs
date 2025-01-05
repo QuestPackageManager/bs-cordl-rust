@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeUtils {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Dynamic+Utils+TypeUtils")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Dynamic+Utils+TypeUtils")]
 impl std::ops::Deref for crate::System::Dynamic::Utils::TypeUtils {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -43,7 +43,7 @@ impl crate::System::Dynamic::Utils::TypeUtils {
     pub fn FindConversionOperator(
         methods: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+                *mut crate::System::Reflection::MethodInfo,
             >,
         >,
         typeFrom: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -340,7 +340,7 @@ impl crate::System::Dynamic::Utils::TypeUtils {
             .invoke("StrictHasReferenceConversionTo", (source, dest, skipNonArray))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ValidateType_Gc_Gc0(
+    pub fn ValidateType_Type_Il2CppString0(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         paramName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

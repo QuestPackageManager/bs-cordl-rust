@@ -4,7 +4,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EditAvatarColorViewController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+    __cordl_parent: crate::HMUI::ViewController,
     pub _hsvPanelController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::HSVPanelController,
     >,
@@ -13,9 +13,13 @@ pub struct EditAvatarColorViewController {
     >,
     pub _cancelButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _applyButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
-    pub didChangeColorEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
-    pub didFinishEvent: quest_hook::libil2cpp::Gc<bool>,
-    pub _colorCallback: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
+    pub didChangeColorEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::UnityEngine::Color>,
+    >,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+    pub _colorCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::UnityEngine::Color>,
+    >,
     pub _initialColor: crate::UnityEngine::Color,
     pub _colorChanged: bool,
     pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
@@ -33,7 +37,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewController {
-    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>;
+    type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -138,7 +142,9 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
     }
     pub fn SetColorCallback(
         &mut self,
-        colorCallback: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
+        colorCallback: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::UnityEngine::Color>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -169,7 +175,9 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
     }
     pub fn add_didChangeColorEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::UnityEngine::Color>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -180,7 +188,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
     }
     pub fn add_didFinishEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<bool>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -201,7 +209,9 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
     }
     pub fn remove_didChangeColorEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::UnityEngine::Color>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -212,7 +222,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
     }
     pub fn remove_didFinishEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<bool>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

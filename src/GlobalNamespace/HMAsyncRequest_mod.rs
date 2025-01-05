@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HMAsyncRequest {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::HMAutoincrementedRequestId,
-    >,
+    __cordl_parent: crate::GlobalNamespace::HMAutoincrementedRequestId,
     pub _cancelled: bool,
     pub _cancelHander: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::HMAsyncRequest_CancelHander,
@@ -17,9 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMAsyncRequest")]
 impl std::ops::Deref for crate::GlobalNamespace::HMAsyncRequest {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::HMAutoincrementedRequestId,
-    >;
+    type Target = crate::GlobalNamespace::HMAutoincrementedRequestId;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -108,7 +104,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::HMAsyncReques
 #[repr(C)]
 #[derive(Debug)]
 pub struct HMAsyncRequest_CancelHander {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "HMAsyncRequest+CancelHander")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -117,7 +113,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMAsyncRequest+CancelHander")]
 impl std::ops::Deref for crate::GlobalNamespace::HMAsyncRequest_CancelHander {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

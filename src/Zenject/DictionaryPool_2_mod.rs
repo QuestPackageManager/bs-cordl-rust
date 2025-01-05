@@ -5,7 +5,11 @@ pub struct DictionaryPool_2<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TKey, TValue>>,
+    __cordl_parent: crate::Zenject::StaticMemoryPool_1<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
+        >,
+    >,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
@@ -19,7 +23,11 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::Zenject::DictionaryPool_2<TKey, TValue> {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TKey, TValue>>;
+    type Target = crate::Zenject::StaticMemoryPool_1<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
+        >,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -52,7 +60,9 @@ impl<
         Ok(__cordl_object.into())
     }
     pub fn OnDespawned(
-        items: quest_hook::libil2cpp::Gc<TKey, TValue>,
+        items: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -65,7 +75,9 @@ impl<
         Ok(__cordl_ret.into())
     }
     pub fn OnSpawned(
-        items: quest_hook::libil2cpp::Gc<TKey, TValue>,
+        items: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -92,7 +104,7 @@ impl<
         Ok(__cordl_ret.into())
     }
     pub fn get_Instance() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<TKey, TValue>,
+        quest_hook::libil2cpp::Gc<crate::Zenject::DictionaryPool_2<TKey, TValue>>,
     >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -100,8 +112,9 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TKey, TValue> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_Instance", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::DictionaryPool_2<TKey, TValue>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Instance", ())?;
         Ok(__cordl_ret.into())
     }
 }

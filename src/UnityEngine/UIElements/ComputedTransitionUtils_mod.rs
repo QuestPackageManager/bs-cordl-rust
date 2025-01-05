@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ComputedTransitionUtils {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+UIElements+ComputedTransitionUtils")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+ComputedTransitionUtils")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ComputedTransitionUtils {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,7 +29,9 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
             crate::UnityEngine::UIElements::ComputedStyle,
         >,
         outData: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::ComputedTransitionProperty,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::ComputedTransitionProperty,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -38,8 +40,10 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
     }
     pub fn ConvertTransitionFunction(
         mode: crate::UnityEngine::UIElements::EasingMode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<f32, f32>> {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<f32, f32> = <Self as quest_hook::libil2cpp::Type>::class()
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ConvertTransitionFunction", (mode))?;
         Ok(__cordl_ret.into())
     }
@@ -92,7 +96,7 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
         Ok(__cordl_ret.into())
     }
     pub fn GetWrappingTransitionData<T>(
-        list: quest_hook::libil2cpp::Gc<T>,
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
         i: i32,
         defaultValue: T,
     ) -> quest_hook::libil2cpp::Result<T>
@@ -124,17 +128,33 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
             .invoke("SameTransitionProperty", (x, y))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SameTransitionProperty_Gc_Gc1(
-        a: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StylePropertyName>,
-        b: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StylePropertyName>,
+    pub fn SameTransitionProperty_List_1_List_1_1(
+        a: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::StylePropertyName,
+            >,
+        >,
+        b: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::StylePropertyName,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("SameTransitionProperty", (a, b))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SameTransitionProperty_Gc_Gc2(
-        a: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TimeValue>,
-        b: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TimeValue>,
+    pub fn SameTransitionProperty_List_1_List_1_2(
+        a: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::TimeValue,
+            >,
+        >,
+        b: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::TimeValue,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("SameTransitionProperty", (a, b))?;

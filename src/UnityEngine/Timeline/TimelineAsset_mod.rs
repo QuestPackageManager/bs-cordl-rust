@@ -2,26 +2,24 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimelineAsset {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Playables::PlayableAsset,
-    >,
+    __cordl_parent: crate::UnityEngine::Playables::PlayableAsset,
     pub m_Version: i32,
     pub m_Tracks: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+        >,
     >,
     pub m_FixedDuration: f64,
     pub m_CacheOutputTracks: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Timeline::TrackAsset>,
     >,
     pub m_CacheRootTracks: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
-    >,
-    pub m_CacheFlattenedTracks: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
+        crate::System::Collections::Generic::List_1<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
         >,
+    >,
+    pub m_CacheFlattenedTracks: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Timeline::TrackAsset>,
     >,
     pub m_EditorSettings: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Timeline::TimelineAsset_EditorSettings,
@@ -38,9 +36,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Timeline+TimelineAsset")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::TimelineAsset {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Playables::PlayableAsset,
-    >;
+    type Target = crate::UnityEngine::Playables::PlayableAsset;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -68,7 +64,9 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
         track: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
         allTracks: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
+                crate::System::Collections::Generic::List_1<
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -149,7 +147,7 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
         let __cordl_ret: T = __cordl_object.invoke("CreateTrack", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateTrack_Gc2<T>(
+    pub fn CreateTrack_Il2CppString2<T>(
         &mut self,
         trackName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<T>
@@ -163,7 +161,7 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
         let __cordl_ret: T = __cordl_object.invoke("CreateTrack", (trackName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateTrack_Gc_Gc1<T>(
+    pub fn CreateTrack_TrackAsset_Il2CppString1<T>(
         &mut self,
         parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
         trackName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -178,7 +176,7 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
         let __cordl_ret: T = __cordl_object.invoke("CreateTrack", (parent, trackName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateTrack_Gc_Gc_Gc0(
+    pub fn CreateTrack_Type_TrackAsset_Il2CppString0(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
@@ -204,18 +202,7 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
         let __cordl_ret: bool = __cordl_object.invoke("DeleteClip", (clip))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DeleteRecordedAnimation_Gc0(
-        &mut self,
-        track: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DeleteRecordedAnimation", (track))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn DeleteRecordedAnimation_Gc1(
+    pub fn DeleteRecordedAnimation_TimelineClip1(
         &mut self,
         clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelineClip>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -224,6 +211,17 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DeleteRecordedAnimation", (clip))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DeleteRecordedAnimation_TrackAsset0(
+        &mut self,
+        track: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DeleteRecordedAnimation", (track))?;
         Ok(__cordl_ret.into())
     }
     pub fn DeleteTrack(
@@ -270,14 +268,18 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
+            >,
         > = __cordl_object.invoke("GetOutputTracks", ())?;
         Ok(__cordl_ret.into())
     }
@@ -299,14 +301,18 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
+            >,
         > = __cordl_object.invoke("GetRootTracks", ())?;
         Ok(__cordl_ret.into())
     }
@@ -503,7 +509,7 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
+                *mut crate::UnityEngine::Timeline::TrackAsset,
             >,
         >,
     > {
@@ -512,7 +518,7 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
+                *mut crate::UnityEngine::Timeline::TrackAsset,
             >,
         > = __cordl_object.invoke("get_flattenedTracks", ())?;
         Ok(__cordl_ret.into())
@@ -540,13 +546,19 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
     pub fn get_outputs(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableBinding>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::Playables::PlayableBinding,
+            >,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Playables::PlayableBinding,
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::Playables::PlayableBinding,
+            >,
         > = __cordl_object.invoke("get_outputs", ())?;
         Ok(__cordl_ret.into())
     }
@@ -561,14 +573,18 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+            >,
         > = __cordl_object.invoke("get_trackObjects", ())?;
         Ok(__cordl_ret.into())
     }
@@ -605,60 +621,44 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Timeline::Timelin
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelineAsset")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver>>
+impl AsRef<crate::UnityEngine::ISerializationCallbackReceiver>
 for crate::UnityEngine::Timeline::TimelineAsset {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver> {
+    fn as_ref(&self) -> &crate::UnityEngine::ISerializationCallbackReceiver {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelineAsset")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver>>
+impl AsMut<crate::UnityEngine::ISerializationCallbackReceiver>
 for crate::UnityEngine::Timeline::TimelineAsset {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ISerializationCallbackReceiver,
-    > {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ISerializationCallbackReceiver {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelineAsset")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IPropertyPreview>>
+impl AsRef<crate::UnityEngine::Timeline::IPropertyPreview>
 for crate::UnityEngine::Timeline::TimelineAsset {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IPropertyPreview> {
+    fn as_ref(&self) -> &crate::UnityEngine::Timeline::IPropertyPreview {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelineAsset")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IPropertyPreview>>
+impl AsMut<crate::UnityEngine::Timeline::IPropertyPreview>
 for crate::UnityEngine::Timeline::TimelineAsset {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IPropertyPreview> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Timeline::IPropertyPreview {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelineAsset")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::ITimelineClipAsset>>
+impl AsRef<crate::UnityEngine::Timeline::ITimelineClipAsset>
 for crate::UnityEngine::Timeline::TimelineAsset {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::ITimelineClipAsset> {
+    fn as_ref(&self) -> &crate::UnityEngine::Timeline::ITimelineClipAsset {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelineAsset")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::ITimelineClipAsset>>
+impl AsMut<crate::UnityEngine::Timeline::ITimelineClipAsset>
 for crate::UnityEngine::Timeline::TimelineAsset {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Timeline::ITimelineClipAsset,
-    > {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Timeline::ITimelineClipAsset {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -680,7 +680,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimelineAsset_EditorSettings {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Framerate: f64,
     pub m_ScenePreview: bool,
 }
@@ -692,7 +692,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Timeline+TimelineAsset+EditorSettings")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::TimelineAsset_EditorSettings {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -819,7 +819,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimelineAsset_TimelineAssetUpgrade {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelineAsset+TimelineAssetUpgrade")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -830,7 +830,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+Timeline+TimelineAsset+TimelineAssetUpgrade")]
 impl std::ops::Deref
 for crate::UnityEngine::Timeline::TimelineAsset_TimelineAssetUpgrade {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,20 +2,24 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct VisualTreeStyleUpdaterTraversal {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::StyleSheets::HierarchyTraversal,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::StyleSheets::HierarchyTraversal,
     pub m_ProcessVarContext: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::StyleVariableContext,
     >,
     pub m_UpdateList: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        crate::System::Collections::Generic::HashSet_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        >,
     >,
     pub m_ParentList: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        crate::System::Collections::Generic::HashSet_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        >,
     >,
     pub m_TempMatchResults: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord,
+        >,
     >,
     pub _currentPixelsPerPoint_k__BackingField: f32,
     pub m_StyleMatchingContext: quest_hook::libil2cpp::Gc<
@@ -25,7 +29,9 @@ pub struct VisualTreeStyleUpdaterTraversal {
         crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
     >,
     pub m_AnimatedProperties: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeStyleUpdaterTraversal")]
@@ -37,9 +43,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeStyleUpdaterTraversal")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::StyleSheets::HierarchyTraversal,
-    >;
+    type Target = crate::UnityEngine::UIElements::StyleSheets::HierarchyTraversal;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -136,7 +140,9 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
             crate::UnityEngine::UIElements::VisualElement,
         >,
         matchingSelectors: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::ComputedStyle> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

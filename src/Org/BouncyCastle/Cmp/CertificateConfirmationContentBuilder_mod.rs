@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CertificateConfirmationContentBuilder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub digestAlgFinder: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Cms::DefaultDigestAlgorithmIdentifierFinder,
     >,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Cmp+CertificateConfirmationContentBuilder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cmp::CertificateConfirmationContentBuilder {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -73,7 +73,7 @@ impl crate::Org::BouncyCastle::Cmp::CertificateConfirmationContentBuilder {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_DefaultDigestAlgorithmIdentifierFinder1(
         digestAlgFinder: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cms::DefaultDigestAlgorithmIdentifierFinder,
         >,
@@ -94,7 +94,7 @@ impl crate::Org::BouncyCastle::Cmp::CertificateConfirmationContentBuilder {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_DefaultDigestAlgorithmIdentifierFinder1(
         &mut self,
         digestAlgFinder: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cms::DefaultDigestAlgorithmIdentifierFinder,

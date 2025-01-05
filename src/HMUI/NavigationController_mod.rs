@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NavigationController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ContainerViewController>,
+    __cordl_parent: crate::HMUI::ContainerViewController,
     pub _orientation: crate::HMUI::NavigationController_Orientation,
     pub _reversedStacking: bool,
     pub _alignment: crate::HMUI::NavigationController_Alignment,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+NavigationController")]
 impl std::ops::Deref for crate::HMUI::NavigationController {
-    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ContainerViewController>;
+    type Target = crate::HMUI::ContainerViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -36,10 +36,14 @@ impl crate::HMUI::NavigationController {
     pub fn GetNewPositionsForViewControllers(
         &mut self,
         viewControllers: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+            >,
         >,
         fixedViewControllers: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+            crate::System::Collections::Generic::HashSet_1<
+                quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+            >,
         >,
         fixedEndPos: f32,
     ) -> quest_hook::libil2cpp::Result<
@@ -60,7 +64,9 @@ impl crate::HMUI::NavigationController {
     pub fn LayoutViewControllers(
         &mut self,
         viewControllers: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

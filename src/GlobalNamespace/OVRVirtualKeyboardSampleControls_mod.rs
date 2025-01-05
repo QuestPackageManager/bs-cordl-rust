@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRVirtualKeyboardSampleControls {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub ShowButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub MoveButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub HideButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
@@ -27,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRVirtualKeyboardSampleControls")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRVirtualKeyboardSampleControls {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

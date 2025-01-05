@@ -14,7 +14,7 @@ pub struct FactoryToChoiceIdBinder_11<
     TParam10: quest_hook::libil2cpp::Type,
     TContract: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Zenject::FactoryArgumentsToChoiceBinder_11<
         TParam1,
         TParam2,
         TParam3,
@@ -73,7 +73,7 @@ for crate::Zenject::FactoryToChoiceIdBinder_11<
     TParam10,
     TContract,
 > {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Zenject::FactoryArgumentsToChoiceBinder_11<
         TParam1,
         TParam2,
         TParam3,
@@ -187,17 +187,19 @@ impl<
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TParam5,
-            TParam6,
-            TParam7,
-            TParam8,
-            TParam9,
-            TParam10,
-            TContract,
+            crate::Zenject::FactoryArgumentsToChoiceBinder_11<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TParam5,
+                TParam6,
+                TParam7,
+                TParam8,
+                TParam9,
+                TParam10,
+                TContract,
+            >,
         >,
     >
     where
@@ -228,17 +230,19 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TParam5,
-            TParam6,
-            TParam7,
-            TParam8,
-            TParam9,
-            TParam10,
-            TContract,
+            crate::Zenject::FactoryArgumentsToChoiceBinder_11<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TParam5,
+                TParam6,
+                TParam7,
+                TParam8,
+                TParam9,
+                TParam10,
+                TContract,
+            >,
         > = __cordl_object.invoke("WithId", (identifier))?;
         Ok(__cordl_ret.into())
     }

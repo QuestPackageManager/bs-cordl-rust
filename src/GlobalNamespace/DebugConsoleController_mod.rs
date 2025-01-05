@@ -2,13 +2,17 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DebugConsoleController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub onNewMessageToOutput: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        crate::UnityEngine::LogType,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::UnityEngine::LogType,
+        >,
     >,
     pub _stringsFromSTDIN: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::Queue_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub _commandLineParserResult: crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult,
@@ -16,8 +20,10 @@ pub struct DebugConsoleController {
         crate::GlobalNamespace::ICoroutineStarter,
     >,
     pub _commands: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>,
+        >,
     >,
     pub _commandsExecutionTask: quest_hook::libil2cpp::Gc<
         crate::System::Threading::Tasks::Task,
@@ -30,7 +36,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "DebugConsoleController")]
 impl std::ops::Deref for crate::GlobalNamespace::DebugConsoleController {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -106,7 +112,9 @@ impl crate::GlobalNamespace::DebugConsoleController {
     pub fn FillDictOfCommands(
         &mut self,
         commandInstances: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -120,14 +128,18 @@ impl crate::GlobalNamespace::DebugConsoleController {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>,
+            >,
         > = __cordl_object.invoke("GetAllConsoleCommandInstances", ())?;
         Ok(__cordl_ret.into())
     }
@@ -149,16 +161,20 @@ impl crate::GlobalNamespace::DebugConsoleController {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>,
+            >,
         > = __cordl_object.invoke("GetCommands", ())?;
         Ok(__cordl_ret.into())
     }
@@ -228,7 +244,9 @@ impl crate::GlobalNamespace::DebugConsoleController {
         &mut self,
         commandText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         messages: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
+            crate::System::Collections::Generic::List_1<
+                crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -273,32 +291,30 @@ for crate::GlobalNamespace::DebugConsoleController {
     }
 }
 #[cfg(feature = "DebugConsoleController")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>>
+impl AsRef<crate::Zenject::IInitializable>
 for crate::GlobalNamespace::DebugConsoleController {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable> {
+    fn as_ref(&self) -> &crate::Zenject::IInitializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "DebugConsoleController")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>>
+impl AsMut<crate::Zenject::IInitializable>
 for crate::GlobalNamespace::DebugConsoleController {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IInitializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "DebugConsoleController")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::ITickable>>
+impl AsRef<crate::Zenject::ITickable>
 for crate::GlobalNamespace::DebugConsoleController {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::ITickable> {
+    fn as_ref(&self) -> &crate::Zenject::ITickable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "DebugConsoleController")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::ITickable>>
+impl AsMut<crate::Zenject::ITickable>
 for crate::GlobalNamespace::DebugConsoleController {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::ITickable> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::ITickable {
         unsafe { std::mem::transmute(self) }
     }
 }

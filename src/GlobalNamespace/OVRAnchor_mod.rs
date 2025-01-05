@@ -21,18 +21,6 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRA
 }
 #[cfg(feature = "OVRAnchor")]
 impl crate::GlobalNamespace::OVRAnchor {
-    pub fn CreateSpatialAnchorAsync_Gc_Gc1(
-        transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-        centerEyeCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::OVRTask_1<crate::GlobalNamespace::OVRAnchor>,
-    > {
-        let __cordl_ret: crate::GlobalNamespace::OVRTask_1<
-            crate::GlobalNamespace::OVRAnchor,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateSpatialAnchorAsync", (transform, centerEyeCamera))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn CreateSpatialAnchorAsync_Pose0(
         trackingSpacePose: crate::UnityEngine::Pose,
     ) -> quest_hook::libil2cpp::Result<
@@ -42,6 +30,18 @@ impl crate::GlobalNamespace::OVRAnchor {
             crate::GlobalNamespace::OVRAnchor,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("CreateSpatialAnchorAsync", (trackingSpacePose))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateSpatialAnchorAsync_Transform_Camera1(
+        transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+        centerEyeCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRTask_1<crate::GlobalNamespace::OVRAnchor>,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::OVRTask_1<
+            crate::GlobalNamespace::OVRAnchor,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateSpatialAnchorAsync", (transform, centerEyeCamera))?;
         Ok(__cordl_ret.into())
     }
     pub fn Dispose(
@@ -54,7 +54,7 @@ impl crate::GlobalNamespace::OVRAnchor {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Gc1(
+    pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -77,16 +77,26 @@ impl crate::GlobalNamespace::OVRAnchor {
         Ok(__cordl_ret.into())
     }
     pub fn FetchAnchors(
-        anchors: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor>,
+        anchors: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                crate::GlobalNamespace::OVRAnchor,
+            >,
+        >,
         queryInfo: crate::GlobalNamespace::OVRPlugin_SpaceQueryInfo,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTask_1<bool>> {
         let __cordl_ret: crate::GlobalNamespace::OVRTask_1<bool> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("FetchAnchors", (anchors, queryInfo))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FetchAnchorsAsync_Gc_Gc_OVRSpace_StorageLocation_f64_2(
-        uuids: quest_hook::libil2cpp::Gc<crate::System::Guid>,
-        anchors: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor>,
+    pub fn FetchAnchorsAsync_IEnumerable_1_IList_1_OVRSpace_StorageLocation_f64_2(
+        uuids: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<crate::System::Guid>,
+        >,
+        anchors: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                crate::GlobalNamespace::OVRAnchor,
+            >,
+        >,
         location: crate::GlobalNamespace::OVRSpace_StorageLocation,
         timeout: f64,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTask_1<bool>> {
@@ -94,8 +104,12 @@ impl crate::GlobalNamespace::OVRAnchor {
             .invoke("FetchAnchorsAsync", (uuids, anchors, location, timeout))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FetchAnchorsAsync_Gc_OVRSpace_StorageLocation_i32_f64_1<T>(
-        anchors: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor>,
+    pub fn FetchAnchorsAsync_IList_1_OVRSpace_StorageLocation_i32_f64_1<T>(
+        anchors: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                crate::GlobalNamespace::OVRAnchor,
+            >,
+        >,
         location: crate::GlobalNamespace::OVRSpace_StorageLocation,
         maxResults: i32,
         timeout: f64,
@@ -108,9 +122,13 @@ impl crate::GlobalNamespace::OVRAnchor {
             .invoke("FetchAnchorsAsync", (anchors, location, maxResults, timeout))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FetchAnchorsAsync_OVRPlugin_SpaceComponentType_Gc_OVRSpace_StorageLocation_i32_f64_0(
+    pub fn FetchAnchorsAsync_OVRPlugin_SpaceComponentType_IList_1_OVRSpace_StorageLocation_i32_f64_0(
         _cordl_type: crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
-        anchors: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor>,
+        anchors: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                crate::GlobalNamespace::OVRAnchor,
+            >,
+        >,
         location: crate::GlobalNamespace::OVRSpace_StorageLocation,
         maxResults: i32,
         timeout: f64,
@@ -142,8 +160,10 @@ impl crate::GlobalNamespace::OVRAnchor {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetQueryInfo_Gc_f64_1(
-        uuids: quest_hook::libil2cpp::Gc<crate::System::Guid>,
+    pub fn GetQueryInfo_IEnumerable_1_f64_1(
+        uuids: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<crate::System::Guid>,
+        >,
         location: crate::GlobalNamespace::OVRSpace_StorageLocation,
         timeout: f64,
     ) -> quest_hook::libil2cpp::Result<
@@ -255,32 +275,30 @@ impl crate::GlobalNamespace::OVRAnchor {
     }
 }
 #[cfg(feature = "OVRAnchor")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor>>
-for crate::GlobalNamespace::OVRAnchor {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor> {
+impl AsRef<crate::System::IDisposable> for crate::GlobalNamespace::OVRAnchor {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         todo!()
     }
 }
 #[cfg(feature = "OVRAnchor")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor>>
+impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::OVRAnchor {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRAnchor")]
+impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::OVRAnchor>>
+for crate::GlobalNamespace::OVRAnchor {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::GlobalNamespace::OVRAnchor> {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRAnchor")]
+impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRAnchor>>
 for crate::GlobalNamespace::OVRAnchor {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor> {
-        todo!()
-    }
-}
-#[cfg(feature = "OVRAnchor")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::GlobalNamespace::OVRAnchor {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
-        todo!()
-    }
-}
-#[cfg(feature = "OVRAnchor")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::GlobalNamespace::OVRAnchor {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::OVRAnchor> {
         todo!()
     }
 }

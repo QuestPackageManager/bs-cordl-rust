@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RemoteProcedureCall_1<T0: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::RemoteProcedureCall,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
+    pub _value0: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RemoteProcedureCall_TypeWrapper_1<T0>,
     >,
-    pub _value0: quest_hook::libil2cpp::Gc<T0>,
     __cordl_phantom_T0: std::marker::PhantomData<T0>,
 }
 #[cfg(feature = "RemoteProcedureCall_1")]
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "RemoteProcedureCall_1")]
 impl<T0: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::RemoteProcedureCall_1<T0> {
-    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::RemoteProcedureCall>;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

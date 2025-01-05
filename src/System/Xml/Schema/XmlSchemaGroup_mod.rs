@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaGroup {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::XmlSchemaAnnotated,
-    >,
+    __cordl_parent: crate::System::Xml::Schema::XmlSchemaAnnotated,
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub particle: quest_hook::libil2cpp::Gc<
         crate::System::Xml::Schema::XmlSchemaGroupBase,
@@ -23,9 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlSchemaGroup")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaGroup {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::XmlSchemaAnnotated,
-    >;
+    type Target = crate::System::Xml::Schema::XmlSchemaAnnotated;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -51,7 +47,7 @@ impl crate::System::Xml::Schema::XmlSchemaGroup {
         > = __cordl_object.invoke("Clone", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Clone_Gc1(
+    pub fn Clone_XmlSchema1(
         &mut self,
         parentSchema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
     ) -> quest_hook::libil2cpp::Result<

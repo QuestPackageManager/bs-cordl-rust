@@ -2,11 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorSchemesAsyncInstaller {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSchemeSO>,
     >,
     pub _colorSchemes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSchemeSO>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSchemeSO>,
+        >,
     >,
 }
 #[cfg(feature = "Environments+Definitions+ColorSchemesAsyncInstaller")]
@@ -17,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Environments+Definitions+ColorSchemesAsyncInstaller")]
 impl std::ops::Deref for crate::Environments::Definitions::ColorSchemesAsyncInstaller {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSchemeSO>,
     >;
     fn deref(&self) -> &Self::Target {
@@ -46,7 +48,9 @@ impl crate::Environments::Definitions::ColorSchemesAsyncInstaller {
     pub fn LoadResourcesBeforeInstall(
         &mut self,
         colorSchemes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSchemeSO>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSchemeSO>,
+            >,
         >,
         registry: quest_hook::libil2cpp::Gc<
             crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry,

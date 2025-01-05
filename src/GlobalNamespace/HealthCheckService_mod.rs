@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HealthCheckService {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _port: i32,
     pub _runThread: quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,
     pub _disposed: bool,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HealthCheckService")]
 impl std::ops::Deref for crate::GlobalNamespace::HealthCheckService {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -90,50 +90,42 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::HealthCheckSe
     }
 }
 #[cfg(feature = "HealthCheckService")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IHealthCheckService>>
+impl AsRef<crate::GlobalNamespace::IHealthCheckService>
 for crate::GlobalNamespace::HealthCheckService {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IHealthCheckService> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IHealthCheckService {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HealthCheckService")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IHealthCheckService>>
+impl AsMut<crate::GlobalNamespace::IHealthCheckService>
 for crate::GlobalNamespace::HealthCheckService {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IHealthCheckService> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IHealthCheckService {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HealthCheckService")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPollable>>
+impl AsRef<crate::GlobalNamespace::IPollable>
 for crate::GlobalNamespace::HealthCheckService {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPollable> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPollable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HealthCheckService")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPollable>>
+impl AsMut<crate::GlobalNamespace::IPollable>
 for crate::GlobalNamespace::HealthCheckService {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPollable> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPollable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HealthCheckService")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::GlobalNamespace::HealthCheckService {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsRef<crate::System::IDisposable> for crate::GlobalNamespace::HealthCheckService {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HealthCheckService")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::GlobalNamespace::HealthCheckService {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::HealthCheckService {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }

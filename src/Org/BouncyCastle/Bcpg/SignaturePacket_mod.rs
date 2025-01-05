@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignaturePacket {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Bcpg::ContainedPacket,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Bcpg::ContainedPacket,
     pub version: i32,
     pub signatureType: i32,
     pub creationTime: i64,
@@ -13,18 +11,18 @@ pub struct SignaturePacket {
     pub hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
     pub signature: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::MPInteger>,
+            *mut crate::Org::BouncyCastle::Bcpg::MPInteger,
         >,
     >,
     pub fingerprint: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub hashedData: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::SignatureSubpacket>,
+            *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
         >,
     >,
     pub unhashedData: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::SignatureSubpacket>,
+            *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
         >,
     >,
     pub signatureEncoding: quest_hook::libil2cpp::Gc<
@@ -38,9 +36,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Bcpg+SignaturePacket")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::SignaturePacket {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Bcpg::ContainedPacket,
-    >;
+    type Target = crate::Org::BouncyCastle::Bcpg::ContainedPacket;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -79,9 +75,7 @@ impl crate::Org::BouncyCastle::Bcpg::SignaturePacket {
     pub fn GetEncodedSubpackets(
         ps: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
-                >,
+                *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -98,9 +92,7 @@ impl crate::Org::BouncyCastle::Bcpg::SignaturePacket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
-                >,
+                *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
             >,
         >,
     > {
@@ -109,9 +101,7 @@ impl crate::Org::BouncyCastle::Bcpg::SignaturePacket {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
-                >,
+                *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
             >,
         > = __cordl_object.invoke("GetHashedSubPackets", ())?;
         Ok(__cordl_ret.into())
@@ -121,7 +111,7 @@ impl crate::Org::BouncyCastle::Bcpg::SignaturePacket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::MPInteger>,
+                *mut crate::Org::BouncyCastle::Bcpg::MPInteger,
             >,
         >,
     > {
@@ -130,7 +120,7 @@ impl crate::Org::BouncyCastle::Bcpg::SignaturePacket {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::MPInteger>,
+                *mut crate::Org::BouncyCastle::Bcpg::MPInteger,
             >,
         > = __cordl_object.invoke("GetSignature", ())?;
         Ok(__cordl_ret.into())
@@ -166,9 +156,7 @@ impl crate::Org::BouncyCastle::Bcpg::SignaturePacket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
-                >,
+                *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
             >,
         >,
     > {
@@ -177,14 +165,12 @@ impl crate::Org::BouncyCastle::Bcpg::SignaturePacket {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
-                >,
+                *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
             >,
         > = __cordl_object.invoke("GetUnhashedSubPackets", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_BcpgInputStream0(
         bcpgIn: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
         >,
@@ -195,7 +181,7 @@ impl crate::Org::BouncyCastle::Bcpg::SignaturePacket {
             .invoke_void(".ctor", (bcpgIn))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_i32_i64_PublicKeyAlgorithmTag_HashAlgorithmTag_Gc_Gc_Gc_Gc3(
+    pub fn New_i32_i32_i64_PublicKeyAlgorithmTag_HashAlgorithmTag_Il2CppArray_Il2CppArray_Il2CppArray_Il2CppArray3(
         version: i32,
         signatureType: i32,
         keyId: i64,
@@ -203,22 +189,18 @@ impl crate::Org::BouncyCastle::Bcpg::SignaturePacket {
         hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
         hashedData: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
-                >,
+                *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
             >,
         >,
         unhashedData: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
-                >,
+                *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
             >,
         >,
         fingerprint: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         signature: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::MPInteger>,
+                *mut crate::Org::BouncyCastle::Bcpg::MPInteger,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -241,7 +223,7 @@ impl crate::Org::BouncyCastle::Bcpg::SignaturePacket {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_i32_i64_PublicKeyAlgorithmTag_HashAlgorithmTag_i64_Gc_Gc2(
+    pub fn New_i32_i32_i64_PublicKeyAlgorithmTag_HashAlgorithmTag_i64_Il2CppArray_Il2CppArray2(
         version: i32,
         signatureType: i32,
         keyId: i64,
@@ -251,7 +233,7 @@ impl crate::Org::BouncyCastle::Bcpg::SignaturePacket {
         fingerprint: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         signature: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::MPInteger>,
+                *mut crate::Org::BouncyCastle::Bcpg::MPInteger,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -273,29 +255,25 @@ impl crate::Org::BouncyCastle::Bcpg::SignaturePacket {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_i64_PublicKeyAlgorithmTag_HashAlgorithmTag_Gc_Gc_Gc_Gc1(
+    pub fn New_i32_i64_PublicKeyAlgorithmTag_HashAlgorithmTag_Il2CppArray_Il2CppArray_Il2CppArray_Il2CppArray1(
         signatureType: i32,
         keyId: i64,
         keyAlgorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
         hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
         hashedData: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
-                >,
+                *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
             >,
         >,
         unhashedData: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
-                >,
+                *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
             >,
         >,
         fingerprint: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         signature: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::MPInteger>,
+                *mut crate::Org::BouncyCastle::Bcpg::MPInteger,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -317,7 +295,7 @@ impl crate::Org::BouncyCastle::Bcpg::SignaturePacket {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_BcpgInputStream0(
         &mut self,
         bcpgIn: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
@@ -330,7 +308,7 @@ impl crate::Org::BouncyCastle::Bcpg::SignaturePacket {
             .invoke(".ctor", (bcpgIn))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_i32_i64_PublicKeyAlgorithmTag_HashAlgorithmTag_Gc_Gc_Gc_Gc3(
+    pub fn _ctor_i32_i32_i64_PublicKeyAlgorithmTag_HashAlgorithmTag_Il2CppArray_Il2CppArray_Il2CppArray_Il2CppArray3(
         &mut self,
         version: i32,
         signatureType: i32,
@@ -339,22 +317,18 @@ impl crate::Org::BouncyCastle::Bcpg::SignaturePacket {
         hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
         hashedData: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
-                >,
+                *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
             >,
         >,
         unhashedData: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
-                >,
+                *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
             >,
         >,
         fingerprint: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         signature: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::MPInteger>,
+                *mut crate::Org::BouncyCastle::Bcpg::MPInteger,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -378,7 +352,7 @@ impl crate::Org::BouncyCastle::Bcpg::SignaturePacket {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_i32_i64_PublicKeyAlgorithmTag_HashAlgorithmTag_i64_Gc_Gc2(
+    pub fn _ctor_i32_i32_i64_PublicKeyAlgorithmTag_HashAlgorithmTag_i64_Il2CppArray_Il2CppArray2(
         &mut self,
         version: i32,
         signatureType: i32,
@@ -389,7 +363,7 @@ impl crate::Org::BouncyCastle::Bcpg::SignaturePacket {
         fingerprint: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         signature: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::MPInteger>,
+                *mut crate::Org::BouncyCastle::Bcpg::MPInteger,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -412,7 +386,7 @@ impl crate::Org::BouncyCastle::Bcpg::SignaturePacket {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_i64_PublicKeyAlgorithmTag_HashAlgorithmTag_Gc_Gc_Gc_Gc1(
+    pub fn _ctor_i32_i64_PublicKeyAlgorithmTag_HashAlgorithmTag_Il2CppArray_Il2CppArray_Il2CppArray_Il2CppArray1(
         &mut self,
         signatureType: i32,
         keyId: i64,
@@ -420,22 +394,18 @@ impl crate::Org::BouncyCastle::Bcpg::SignaturePacket {
         hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
         hashedData: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
-                >,
+                *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
             >,
         >,
         unhashedData: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
-                >,
+                *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
             >,
         >,
         fingerprint: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         signature: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::MPInteger>,
+                *mut crate::Org::BouncyCastle::Bcpg::MPInteger,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

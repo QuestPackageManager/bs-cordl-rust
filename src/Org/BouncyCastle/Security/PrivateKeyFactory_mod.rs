@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PrivateKeyFactory {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+Security+PrivateKeyFactory")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Security+PrivateKeyFactory")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Security::PrivateKeyFactory {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,7 +24,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Security::PrivateKeyFactor
 }
 #[cfg(feature = "Org+BouncyCastle+Security+PrivateKeyFactory")]
 impl crate::Org::BouncyCastle::Security::PrivateKeyFactory {
-    pub fn CreateKey_Gc0(
+    pub fn CreateKey_Il2CppArray0(
         privateKeyInfoData: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
         >,
@@ -39,19 +39,7 @@ impl crate::Org::BouncyCastle::Security::PrivateKeyFactory {
             .invoke("CreateKey", (privateKeyInfoData))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateKey_Gc1(
-        inStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        >,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("CreateKey", (inStr))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn CreateKey_Gc2(
+    pub fn CreateKey_PrivateKeyInfo2(
         keyInfo: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo,
         >,
@@ -66,7 +54,33 @@ impl crate::Org::BouncyCastle::Security::PrivateKeyFactory {
             .invoke("CreateKey", (keyInfo))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DecryptKey_Gc_Gc0(
+    pub fn CreateKey_Stream1(
+        inStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("CreateKey", (inStr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DecryptKey_Asn1Object3(
+        passPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        asn1Object: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DecryptKey", (passPhrase, asn1Object))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DecryptKey_EncryptedPrivateKeyInfo0(
         passPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         encInfo: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Pkcs::EncryptedPrivateKeyInfo,
@@ -82,7 +96,7 @@ impl crate::Org::BouncyCastle::Security::PrivateKeyFactory {
             .invoke("DecryptKey", (passPhrase, encInfo))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DecryptKey_Gc_Gc1(
+    pub fn DecryptKey_Il2CppArray1(
         passPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         encryptedPrivateKeyInfoData: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -98,7 +112,7 @@ impl crate::Org::BouncyCastle::Security::PrivateKeyFactory {
             .invoke("DecryptKey", (passPhrase, encryptedPrivateKeyInfoData))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DecryptKey_Gc_Gc2(
+    pub fn DecryptKey_Stream2(
         passPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         encryptedPrivateKeyInfoStream: quest_hook::libil2cpp::Gc<
             crate::System::IO::Stream,
@@ -114,21 +128,7 @@ impl crate::Org::BouncyCastle::Security::PrivateKeyFactory {
             .invoke("DecryptKey", (passPhrase, encryptedPrivateKeyInfoStream))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DecryptKey_Gc_Gc3(
-        passPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
-        asn1Object: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        >,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("DecryptKey", (passPhrase, asn1Object))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn EncryptKey_Gc_Gc_Gc_i32_Gc0(
+    pub fn EncryptKey_DerObjectIdentifier0(
         algorithm: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
@@ -147,7 +147,7 @@ impl crate::Org::BouncyCastle::Security::PrivateKeyFactory {
             .invoke("EncryptKey", (algorithm, passPhrase, salt, iterationCount, key))?;
         Ok(__cordl_ret.into())
     }
-    pub fn EncryptKey_Gc_Gc_Gc_i32_Gc1(
+    pub fn EncryptKey_Il2CppString1(
         algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         passPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

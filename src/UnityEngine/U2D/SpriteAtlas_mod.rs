@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SpriteAtlas {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    __cordl_parent: crate::UnityEngine::Object,
 }
 #[cfg(feature = "UnityEngine+U2D+SpriteAtlas")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+U2D+SpriteAtlas")]
 impl std::ops::Deref for crate::UnityEngine::U2D::SpriteAtlas {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>;
+    type Target = crate::UnityEngine::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -50,9 +50,7 @@ impl crate::UnityEngine::U2D::SpriteAtlas {
     pub fn GetSpritesScripting(
         &mut self,
         sprites: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Sprite>,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -64,9 +62,7 @@ impl crate::UnityEngine::U2D::SpriteAtlas {
     pub fn GetSpritesWithNameScripting(
         &mut self,
         sprites: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Sprite>,
         >,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -77,12 +73,10 @@ impl crate::UnityEngine::U2D::SpriteAtlas {
             .invoke("GetSpritesWithNameScripting", (sprites, name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetSprites_Gc0(
+    pub fn GetSprites_Il2CppArray0(
         &mut self,
         sprites: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Sprite>,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -91,12 +85,10 @@ impl crate::UnityEngine::U2D::SpriteAtlas {
         let __cordl_ret: i32 = __cordl_object.invoke("GetSprites", (sprites))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetSprites_Gc1(
+    pub fn GetSprites_Il2CppString1(
         &mut self,
         sprites: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Sprite>,
         >,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {

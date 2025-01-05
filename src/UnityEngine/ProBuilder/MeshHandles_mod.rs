@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MeshHandles {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshHandles")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+MeshHandles")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::MeshHandles {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,16 +24,20 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::MeshHandles {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshHandles")]
 impl crate::UnityEngine::ProBuilder::MeshHandles {
-    pub fn CreateEdgeBillboardMesh_Gc1(
+    pub fn CreateEdgeBillboardMesh_ICollection_1_1(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         target: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
-        edges: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
+        edges: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::ICollection_1<
+                crate::UnityEngine::ProBuilder::Edge,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("CreateEdgeBillboardMesh", (mesh, target, edges))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateEdgeBillboardMesh_Gc_Gc0(
+    pub fn CreateEdgeBillboardMesh_ProBuilderMesh_Mesh0(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         target: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -41,7 +45,7 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
             .invoke("CreateEdgeBillboardMesh", (mesh, target))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateEdgeMesh_Gc1(
+    pub fn CreateEdgeMesh_Il2CppArray1(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         target: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         edges: quest_hook::libil2cpp::Gc<
@@ -52,7 +56,7 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
             .invoke("CreateEdgeMesh", (mesh, target, edges))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateEdgeMesh_Gc_Gc0(
+    pub fn CreateEdgeMesh_ProBuilderMesh_Mesh0(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         target: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -71,7 +75,9 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
     pub fn CreateFaceMeshFromFaces(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         faces: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            >,
         >,
         target: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -79,17 +85,23 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
             .invoke("CreateFaceMeshFromFaces", (mesh, faces, target))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreatePointBillboardMesh_Gc1(
-        positions: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
-        indexes: quest_hook::libil2cpp::Gc<i32>,
+    pub fn CreatePointBillboardMesh_IList_1_Mesh1(
+        positions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector3>,
+        >,
+        indexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
         target: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("CreatePointBillboardMesh", (positions, indexes, target))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreatePointBillboardMesh_Gc_Gc0(
-        positions: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+    pub fn CreatePointBillboardMesh_Mesh0(
+        positions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector3>,
+        >,
         target: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -100,23 +112,27 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
         positions: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
         >,
-        indexes: quest_hook::libil2cpp::Gc<i32>,
+        indexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
         target: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("CreatePointMesh", (positions, indexes, target))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateVertexMesh_Gc1(
+    pub fn CreateVertexMesh_IList_1_1(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         target: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
-        indexes: quest_hook::libil2cpp::Gc<i32>,
+        indexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("CreateVertexMesh", (mesh, target, indexes))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateVertexMesh_Gc_Gc0(
+    pub fn CreateVertexMesh_ProBuilderMesh_Mesh0(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         target: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BsonWriter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+    __cordl_parent: crate::Newtonsoft::Json::JsonWriter,
     pub _writer: quest_hook::libil2cpp::Gc<
         crate::Newtonsoft::Json::Bson::BsonBinaryWriter,
     >,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Bson+BsonWriter")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Bson::BsonWriter {
-    type Target = quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>;
+    type Target = crate::Newtonsoft::Json::JsonWriter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -84,22 +84,22 @@ impl crate::Newtonsoft::Json::Bson::BsonWriter {
             .invoke("Flush", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
-        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (stream))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc1(
+    pub fn New_BinaryWriter1(
         writer: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (writer))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Stream0(
+        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (stream))?;
         Ok(__cordl_object.into())
     }
     pub fn RemoveParent(
@@ -274,50 +274,6 @@ impl crate::Newtonsoft::Json::Bson::BsonWriter {
             .invoke("WriteValue", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteValue_Gc0(
-        &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteValue", (value))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn WriteValue_Gc1(
-        &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteValue", (value))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn WriteValue_Gc17(
-        &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteValue", (value))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn WriteValue_Gc20(
-        &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Uri>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteValue", (value))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn WriteValue_Guid18(
         &mut self,
         value: crate::System::Guid,
@@ -329,9 +285,53 @@ impl crate::Newtonsoft::Json::Bson::BsonWriter {
             .invoke("WriteValue", (value))?;
         Ok(__cordl_ret.into())
     }
+    pub fn WriteValue_Il2CppArray17(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteValue", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteValue_Il2CppObject0(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteValue", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteValue_Il2CppString1(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteValue", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn WriteValue_TimeSpan19(
         &mut self,
         value: crate::System::TimeSpan,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteValue", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteValue_Uri20(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<crate::System::Uri>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -472,18 +472,7 @@ impl crate::Newtonsoft::Json::Bson::BsonWriter {
             .invoke("WriteValue", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
-        &mut self,
-        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (stream))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_BinaryWriter1(
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -492,6 +481,17 @@ impl crate::Newtonsoft::Json::Bson::BsonWriter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (writer))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Stream0(
+        &mut self,
+        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (stream))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_DateTimeKindHandling(

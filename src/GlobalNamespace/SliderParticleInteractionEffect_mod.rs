@@ -2,13 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SliderParticleInteractionEffect {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::SliderInteractionEffect,
-    >,
+    __cordl_parent: crate::GlobalNamespace::SliderInteractionEffect,
     pub _particleSystems: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ParticleSystem>,
     >,
     pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
     pub _saberManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberManager>,
@@ -22,9 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SliderParticleInteractionEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderParticleInteractionEffect {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::SliderInteractionEffect,
-    >;
+    type Target = crate::GlobalNamespace::SliderInteractionEffect;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

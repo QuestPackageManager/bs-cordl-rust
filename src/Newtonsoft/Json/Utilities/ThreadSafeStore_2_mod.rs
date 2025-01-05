@@ -5,9 +5,11 @@ pub struct ThreadSafeStore_2<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    pub _concurrentStore: quest_hook::libil2cpp::Gc<TKey, TValue>,
-    pub _creator: quest_hook::libil2cpp::Gc<TKey, TValue>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _concurrentStore: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Concurrent::ConcurrentDictionary_2<TKey, TValue>,
+    >,
+    pub _creator: quest_hook::libil2cpp::Gc<crate::System::Func_2<TKey, TValue>>,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
@@ -22,7 +24,7 @@ impl<
     TValue: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::Newtonsoft::Json::Utilities::ThreadSafeStore_2<TKey, TValue> {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -56,7 +58,7 @@ impl<
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        creator: quest_hook::libil2cpp::Gc<TKey, TValue>,
+        creator: quest_hook::libil2cpp::Gc<crate::System::Func_2<TKey, TValue>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -72,7 +74,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        creator: quest_hook::libil2cpp::Gc<TKey, TValue>,
+        creator: quest_hook::libil2cpp::Gc<crate::System::Func_2<TKey, TValue>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

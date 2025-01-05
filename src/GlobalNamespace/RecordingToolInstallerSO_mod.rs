@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RecordingToolInstallerSO {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>,
+    __cordl_parent: crate::Zenject::ScriptableObjectInstaller,
 }
 #[cfg(feature = "RecordingToolInstallerSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "RecordingToolInstallerSO")]
 impl std::ops::Deref for crate::GlobalNamespace::RecordingToolInstallerSO {
-    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>;
+    type Target = crate::Zenject::ScriptableObjectInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

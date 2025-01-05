@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EncoderExceptionFallback {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Text::EncoderFallback>,
+    __cordl_parent: crate::System::Text::EncoderFallback,
 }
 #[cfg(feature = "System+Text+EncoderExceptionFallback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Text+EncoderExceptionFallback")]
 impl std::ops::Deref for crate::System::Text::EncoderExceptionFallback {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Text::EncoderFallback>;
+    type Target = crate::System::Text::EncoderFallback;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

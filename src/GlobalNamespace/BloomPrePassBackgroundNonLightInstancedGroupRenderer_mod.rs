@@ -2,37 +2,37 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundNonLightInstancedGroupRenderer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BloomPrePassNonLightPass,
-    >,
+    __cordl_parent: crate::GlobalNamespace::BloomPrePassNonLightPass,
     pub _renderers: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::BloomPrePassBackgroundNonLightRenderer,
-            >,
+            *mut crate::GlobalNamespace::BloomPrePassBackgroundNonLightRenderer,
         >,
     >,
     pub _supportedProperties: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer_SupportedProperty,
-            >,
+            *mut crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer_SupportedProperty,
         >,
     >,
     pub _reusableFloatArrays: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+        >,
     >,
     pub _reusableVectorArrays: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
+            >,
         >,
     >,
     pub _reusableMatrixArrays: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
+            >,
         >,
     >,
     pub _reusableArraysSize: i32,
@@ -55,9 +55,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BloomPrePassBackgroundNonLightInstancedGroupRenderer")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BloomPrePassNonLightPass,
-    >;
+    type Target = crate::GlobalNamespace::BloomPrePassNonLightPass;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -217,7 +215,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundNonLightInstancedGroupRenderer_SupportedProperty {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub propertyType: crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer_PropertyType,
     pub propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub propertyId: i32,
@@ -235,7 +233,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer_SupportedProperty {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

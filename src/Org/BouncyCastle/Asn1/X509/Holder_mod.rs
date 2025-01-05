@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub baseCertificateID: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::X509::IssuerSerial,
     >,
@@ -23,9 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+Holder")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::X509::Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -48,7 +44,16 @@ impl crate::Org::BouncyCastle::Asn1::X509::Holder {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_Asn1Sequence1(
+        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (seq))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Asn1TaggedObject0(
         tagObj: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
         >,
@@ -59,27 +64,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::Holder {
             .invoke_void(".ctor", (tagObj))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
-        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seq))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc2(
-        baseCertificateID: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::IssuerSerial,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (baseCertificateID))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc4(
+    pub fn New_GeneralNames4(
         entityName: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
         >,
@@ -90,18 +75,30 @@ impl crate::Org::BouncyCastle::Asn1::X509::Holder {
             .invoke_void(".ctor", (entityName))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc6(
-        objectDigestInfo: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::ObjectDigestInfo,
+    pub fn New_GeneralNames_i32_5(
+        entityName: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
+        >,
+        version: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (entityName, version))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_IssuerSerial2(
+        baseCertificateID: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::IssuerSerial,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (objectDigestInfo))?;
+            .invoke_void(".ctor", (baseCertificateID))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_3(
+    pub fn New_IssuerSerial_i32_3(
         baseCertificateID: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::IssuerSerial,
         >,
@@ -113,16 +110,15 @@ impl crate::Org::BouncyCastle::Asn1::X509::Holder {
             .invoke_void(".ctor", (baseCertificateID, version))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_5(
-        entityName: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
+    pub fn New_ObjectDigestInfo6(
+        objectDigestInfo: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::ObjectDigestInfo,
         >,
-        version: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (entityName, version))?;
+            .invoke_void(".ctor", (objectDigestInfo))?;
         Ok(__cordl_object.into())
     }
     pub fn ToAsn1Object(
@@ -138,7 +134,18 @@ impl crate::Org::BouncyCastle::Asn1::X509::Holder {
         > = __cordl_object.invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Asn1Sequence1(
+        &mut self,
+        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (seq))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Asn1TaggedObject0(
         &mut self,
         tagObj: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
@@ -151,31 +158,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::Holder {
             .invoke(".ctor", (tagObj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
-        &mut self,
-        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (seq))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc2(
-        &mut self,
-        baseCertificateID: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::IssuerSerial,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (baseCertificateID))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc4(
+    pub fn _ctor_GeneralNames4(
         &mut self,
         entityName: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
@@ -188,20 +171,34 @@ impl crate::Org::BouncyCastle::Asn1::X509::Holder {
             .invoke(".ctor", (entityName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc6(
+    pub fn _ctor_GeneralNames_i32_5(
         &mut self,
-        objectDigestInfo: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::ObjectDigestInfo,
+        entityName: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
+        >,
+        version: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (entityName, version))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_IssuerSerial2(
+        &mut self,
+        baseCertificateID: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::IssuerSerial,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (objectDigestInfo))?;
+            .invoke(".ctor", (baseCertificateID))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_3(
+    pub fn _ctor_IssuerSerial_i32_3(
         &mut self,
         baseCertificateID: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::IssuerSerial,
@@ -215,18 +212,17 @@ impl crate::Org::BouncyCastle::Asn1::X509::Holder {
             .invoke(".ctor", (baseCertificateID, version))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_5(
+    pub fn _ctor_ObjectDigestInfo6(
         &mut self,
-        entityName: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
+        objectDigestInfo: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::ObjectDigestInfo,
         >,
-        version: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (entityName, version))?;
+            .invoke(".ctor", (objectDigestInfo))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_BaseCertificateID(

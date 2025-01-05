@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MacSink {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
     pub mMac: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+IO+MacSink")]
@@ -14,9 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+IO+MacSink")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::IO::MacSink {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
-    >;
+    type Target = crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

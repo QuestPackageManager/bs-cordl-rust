@@ -56,22 +56,16 @@ for crate::Org::BouncyCastle::Asn1::IAsn1ApplicationSpecificParser {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+IAsn1ApplicationSpecificParser")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Convertible>>
+impl AsRef<crate::Org::BouncyCastle::Asn1::IAsn1Convertible>
 for crate::Org::BouncyCastle::Asn1::IAsn1ApplicationSpecificParser {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Convertible> {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Asn1::IAsn1Convertible {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+IAsn1ApplicationSpecificParser")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Convertible>>
+impl AsMut<crate::Org::BouncyCastle::Asn1::IAsn1Convertible>
 for crate::Org::BouncyCastle::Asn1::IAsn1ApplicationSpecificParser {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::IAsn1Convertible,
-    > {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Asn1::IAsn1Convertible {
         unsafe { std::mem::transmute(self) }
     }
 }

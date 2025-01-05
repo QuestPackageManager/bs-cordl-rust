@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PSVRLoader {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::XR::Management::XRLoaderHelper,
-    >,
+    __cordl_parent: crate::UnityEngine::XR::Management::XRLoaderHelper,
 }
 #[cfg(feature = "UnityEngine+PS4+XR+PSVRLoader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+PS4+XR+PSVRLoader")]
 impl std::ops::Deref for crate::UnityEngine::PS4::XR::PSVRLoader {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::XR::Management::XRLoaderHelper,
-    >;
+    type Target = crate::UnityEngine::XR::Management::XRLoaderHelper;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

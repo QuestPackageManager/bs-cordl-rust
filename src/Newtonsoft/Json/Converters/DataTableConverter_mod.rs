@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataTableConverter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
+    __cordl_parent: crate::Newtonsoft::Json::JsonConverter,
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+DataTableConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Converters+DataTableConverter")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Converters::DataTableConverter {
-    type Target = quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>;
+    type Target = crate::Newtonsoft::Json::JsonConverter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

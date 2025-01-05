@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BooleanQueryExpression {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
-    >,
+    __cordl_parent: crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
     pub Left: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub Right: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
@@ -17,9 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+BooleanQueryExpression")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
-    >;
+    type Target = crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -56,14 +52,18 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression {
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            >,
         > = __cordl_object.invoke("GetResult", (root, t, o))?;
         Ok(__cordl_ret.into())
     }

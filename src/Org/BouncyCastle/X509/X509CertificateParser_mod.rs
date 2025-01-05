@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509CertificateParser {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub sData: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Set>,
     pub sDataObjectCount: i32,
     pub currentStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+X509+X509CertificateParser")]
 impl std::ops::Deref for crate::Org::BouncyCastle::X509::X509CertificateParser {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -63,7 +63,7 @@ impl crate::Org::BouncyCastle::X509::X509CertificateParser {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn ReadCertificate_Gc0(
+    pub fn ReadCertificate_Il2CppArray0(
         &mut self,
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
@@ -77,7 +77,7 @@ impl crate::Org::BouncyCastle::X509::X509CertificateParser {
         > = __cordl_object.invoke("ReadCertificate", (input))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadCertificate_Gc1(
+    pub fn ReadCertificate_Stream1(
         &mut self,
         inStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<
@@ -91,7 +91,7 @@ impl crate::Org::BouncyCastle::X509::X509CertificateParser {
         > = __cordl_object.invoke("ReadCertificate", (inStream))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadCertificates_Gc0(
+    pub fn ReadCertificates_Il2CppArray0(
         &mut self,
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
@@ -105,7 +105,7 @@ impl crate::Org::BouncyCastle::X509::X509CertificateParser {
         > = __cordl_object.invoke("ReadCertificates", (input))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadCertificates_Gc1(
+    pub fn ReadCertificates_Stream1(
         &mut self,
         inStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<

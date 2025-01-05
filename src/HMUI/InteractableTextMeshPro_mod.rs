@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InteractableTextMeshPro {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::UIBehaviour,
-    >,
+    __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
     pub _interactionAlpha: f32,
     pub _noInteractionAlpha: f32,
     pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _canvasGroupCache: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
+        >,
     >,
 }
 #[cfg(feature = "HMUI+InteractableTextMeshPro")]
@@ -19,9 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+InteractableTextMeshPro")]
 impl std::ops::Deref for crate::HMUI::InteractableTextMeshPro {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::UIBehaviour,
-    >;
+    type Target = crate::UnityEngine::EventSystems::UIBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointerEventData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::BaseEventData,
-    >,
+    __cordl_parent: crate::UnityEngine::EventSystems::BaseEventData,
     pub _pointerEnter_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::GameObject,
     >,
@@ -24,7 +22,9 @@ pub struct PointerEventData {
     pub _pointerCurrentRaycast_k__BackingField: crate::UnityEngine::EventSystems::RaycastResult,
     pub _pointerPressRaycast_k__BackingField: crate::UnityEngine::EventSystems::RaycastResult,
     pub hovered: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        >,
     >,
     pub _eligibleForClick_k__BackingField: bool,
     pub _displayIndex_k__BackingField: i32,
@@ -59,9 +59,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+EventSystems+PointerEventData")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::PointerEventData {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::BaseEventData,
-    >;
+    type Target = crate::UnityEngine::EventSystems::BaseEventData;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

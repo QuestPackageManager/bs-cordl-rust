@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaComplexType {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
+    __cordl_parent: crate::System::Xml::Schema::XmlSchemaType,
     pub block: crate::System::Xml::Schema::XmlSchemaDerivationMethod,
     pub contentModel: quest_hook::libil2cpp::Gc<
         crate::System::Xml::Schema::XmlSchemaContentModel,
@@ -38,7 +38,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlSchemaComplexType")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaComplexType {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>;
+    type Target = crate::System::Xml::Schema::XmlSchemaType;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -115,7 +115,7 @@ impl crate::System::Xml::Schema::XmlSchemaComplexType {
         > = __cordl_object.invoke("Clone", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Clone_Gc1(
+    pub fn Clone_XmlSchema1(
         &mut self,
         parentSchema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
     ) -> quest_hook::libil2cpp::Result<

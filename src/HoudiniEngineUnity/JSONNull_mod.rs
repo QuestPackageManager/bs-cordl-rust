@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JSONNull {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONNode>,
+    __cordl_parent: crate::HoudiniEngineUnity::JSONNode,
 }
 #[cfg(feature = "HoudiniEngineUnity+JSONNull")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+JSONNull")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::JSONNull {
-    type Target = quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONNode>;
+    type Target = crate::HoudiniEngineUnity::JSONNode;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

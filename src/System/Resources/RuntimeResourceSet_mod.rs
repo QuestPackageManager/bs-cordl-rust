@@ -2,17 +2,21 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RuntimeResourceSet {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Resources::ResourceSet>,
+    __cordl_parent: crate::System::Resources::ResourceSet,
     pub _resCache: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        crate::System::Resources::ResourceLocator,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Resources::ResourceLocator,
+        >,
     >,
     pub _defaultReader: quest_hook::libil2cpp::Gc<
         crate::System::Resources::ResourceReader,
     >,
     pub _caseInsensitiveTable: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        crate::System::Resources::ResourceLocator,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Resources::ResourceLocator,
+        >,
     >,
     pub _haveReadFromReader: bool,
 }
@@ -23,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Resources+RuntimeResourceSet")]
 impl std::ops::Deref for crate::System::Resources::RuntimeResourceSet {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Resources::ResourceSet>;
+    type Target = crate::System::Resources::ResourceSet;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -74,7 +78,7 @@ impl crate::System::Resources::RuntimeResourceSet {
         > = __cordl_object.invoke("GetEnumeratorHelper", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetObject_Gc0(
+    pub fn GetObject_Il2CppString0(
         &mut self,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -119,7 +123,7 @@ impl crate::System::Resources::RuntimeResourceSet {
         > = __cordl_object.invoke("GetObject", (key, ignoreCase, isString))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetString_Gc0(
+    pub fn GetString_Il2CppString0(
         &mut self,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -148,7 +152,7 @@ impl crate::System::Resources::RuntimeResourceSet {
         > = __cordl_object.invoke("GetString", (key, ignoreCase))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_Il2CppString0(
         fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -157,7 +161,7 @@ impl crate::System::Resources::RuntimeResourceSet {
             .invoke_void(".ctor", (fileName))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Stream1(
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -171,8 +175,10 @@ impl crate::System::Resources::RuntimeResourceSet {
         resLocation: crate::System::Resources::ResourceLocator,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         copyOfCache: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            crate::System::Resources::ResourceLocator,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                crate::System::Resources::ResourceLocator,
+            >,
         >,
         keyInWrongCase: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -203,7 +209,7 @@ impl crate::System::Resources::RuntimeResourceSet {
         > = __cordl_object.invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Il2CppString0(
         &mut self,
         fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -214,7 +220,7 @@ impl crate::System::Resources::RuntimeResourceSet {
             .invoke(".ctor", (fileName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Stream1(
         &mut self,
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -236,20 +242,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Resources::RuntimeReso
     }
 }
 #[cfg(feature = "System+Resources+RuntimeResourceSet")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+impl AsRef<crate::System::Collections::IEnumerable>
 for crate::System::Resources::RuntimeResourceSet {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Resources+RuntimeResourceSet")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+impl AsMut<crate::System::Collections::IEnumerable>
 for crate::System::Resources::RuntimeResourceSet {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }

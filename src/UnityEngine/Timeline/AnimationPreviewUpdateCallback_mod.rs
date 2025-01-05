@@ -2,12 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AnimationPreviewUpdateCallback {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Output: crate::UnityEngine::Animations::AnimationPlayableOutput,
     pub m_Graph: crate::UnityEngine::Playables::PlayableGraph,
     pub m_PreviewComponents: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Animations::IAnimationWindowPreview,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::Animations::IAnimationWindowPreview,
+            >,
         >,
     >,
 }
@@ -19,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Timeline+AnimationPreviewUpdateCallback")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::AnimationPreviewUpdateCallback {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -85,26 +87,18 @@ for crate::UnityEngine::Timeline::AnimationPreviewUpdateCallback {
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+AnimationPreviewUpdateCallback")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::ITimelineEvaluateCallback>,
-> for crate::UnityEngine::Timeline::AnimationPreviewUpdateCallback {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Timeline::ITimelineEvaluateCallback,
-    > {
+impl AsRef<crate::UnityEngine::Timeline::ITimelineEvaluateCallback>
+for crate::UnityEngine::Timeline::AnimationPreviewUpdateCallback {
+    fn as_ref(&self) -> &crate::UnityEngine::Timeline::ITimelineEvaluateCallback {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+AnimationPreviewUpdateCallback")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::ITimelineEvaluateCallback>,
-> for crate::UnityEngine::Timeline::AnimationPreviewUpdateCallback {
+impl AsMut<crate::UnityEngine::Timeline::ITimelineEvaluateCallback>
+for crate::UnityEngine::Timeline::AnimationPreviewUpdateCallback {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Timeline::ITimelineEvaluateCallback,
-    > {
+    ) -> &mut crate::UnityEngine::Timeline::ITimelineEvaluateCallback {
         unsafe { std::mem::transmute(self) }
     }
 }

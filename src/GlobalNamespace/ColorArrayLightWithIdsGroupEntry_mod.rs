@@ -2,14 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorArrayLightWithIdsGroupEntry {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _colorArrayLightWithIds: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::ColorArrayLightWithIds,
     >,
     pub _lightGroups: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::LightGroupSO>,
     >,
     pub _excludedLightIds: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<i32>,
@@ -23,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ColorArrayLightWithIdsGroupEntry")]
 impl std::ops::Deref for crate::GlobalNamespace::ColorArrayLightWithIdsGroupEntry {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -57,18 +55,14 @@ impl crate::GlobalNamespace::ColorArrayLightWithIdsGroupEntry {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::LightGroupSO>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::LightGroupSO>,
         > = __cordl_object.invoke("get_lightGroups", ())?;
         Ok(__cordl_ret.into())
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct G_AudioText {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_DBText: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
     pub m_graphyManager: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::GraphyManager>,
     pub m_audioMonitor: quest_hook::libil2cpp::Gc<
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Tayx+Graphy+Audio+G_AudioText")]
 impl std::ops::Deref for crate::Tayx::Graphy::Audio::G_AudioText {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -5,14 +5,23 @@ pub struct KeyedFactoryBase_2<
     TBase: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub _typePairs: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<TKey, quest_hook::libil2cpp::Gc<crate::System::Type>>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::ModestTree::Util::ValuePair_2<
+                    TKey,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                >,
+            >,
+        >,
     >,
     pub _typeMap: quest_hook::libil2cpp::Gc<
-        TKey,
-        quest_hook::libil2cpp::Gc<crate::System::Type>,
+        crate::System::Collections::Generic::Dictionary_2<
+            TKey,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+        >,
     >,
     pub _fallbackType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     __cordl_phantom_TBase: std::marker::PhantomData<TBase>,
@@ -28,7 +37,7 @@ impl<
     TBase: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::Zenject::KeyedFactoryBase_2<TBase, TKey> {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -200,9 +209,7 @@ impl<
     pub fn __zenInjectMethod0(
         P_0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         P_1: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -249,24 +256,10 @@ impl<
     }
     pub fn get_Keys(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TKey>>
-    where
-        TBase: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TKey> = __cordl_object
-            .invoke("get_Keys", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_ProvidedTypes(
-        &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::ICollection_1<TKey>,
+        >,
     >
     where
         TBase: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -278,14 +271,44 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            crate::System::Collections::Generic::ICollection_1<TKey>,
+        > = __cordl_object.invoke("get_Keys", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_ProvidedTypes(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
+    >
+    where
+        TBase: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         > = __cordl_object.invoke("get_ProvidedTypes", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_TypeMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<TKey, quest_hook::libil2cpp::Gc<crate::System::Type>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                TKey,
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
     >
     where
         TBase: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -297,8 +320,10 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            TKey,
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            crate::System::Collections::Generic::Dictionary_2<
+                TKey,
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         > = __cordl_object.invoke("get_TypeMap", ())?;
         Ok(__cordl_ret.into())
     }
@@ -319,9 +344,9 @@ impl<
 impl<
     TBase: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::IValidatable>>
+> AsRef<crate::Zenject::IValidatable>
 for crate::Zenject::KeyedFactoryBase_2<TBase, TKey> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::IValidatable> {
+    fn as_ref(&self) -> &crate::Zenject::IValidatable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -329,11 +354,9 @@ for crate::Zenject::KeyedFactoryBase_2<TBase, TKey> {
 impl<
     TBase: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::IValidatable>>
+> AsMut<crate::Zenject::IValidatable>
 for crate::Zenject::KeyedFactoryBase_2<TBase, TKey> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::IValidatable> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IValidatable {
         unsafe { std::mem::transmute(self) }
     }
 }

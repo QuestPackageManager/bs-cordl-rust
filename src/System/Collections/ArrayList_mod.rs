@@ -2,11 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArrayList {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _items: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
     pub _size: i32,
     pub _version: i32,
@@ -19,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+ArrayList")]
 impl std::ops::Deref for crate::System::Collections::ArrayList {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -104,7 +102,7 @@ impl crate::System::Collections::ArrayList {
         let __cordl_ret: bool = __cordl_object.invoke("Contains", (item))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CopyTo_Gc0(
+    pub fn CopyTo_Array0(
         &mut self,
         array: quest_hook::libil2cpp::Gc<crate::System::Array>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -115,7 +113,7 @@ impl crate::System::Collections::ArrayList {
             .invoke("CopyTo", (array))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CopyTo_Gc_i32_1(
+    pub fn CopyTo_Array_i32_1(
         &mut self,
         array: quest_hook::libil2cpp::Gc<crate::System::Array>,
         arrayIndex: i32,
@@ -127,7 +125,7 @@ impl crate::System::Collections::ArrayList {
             .invoke("CopyTo", (array, arrayIndex))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CopyTo_i32_Gc_i32_i32_2(
+    pub fn CopyTo_i32_Array_i32_i32_2(
         &mut self,
         index: i32,
         array: quest_hook::libil2cpp::Gc<crate::System::Array>,
@@ -206,7 +204,7 @@ impl crate::System::Collections::ArrayList {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc2(
+    pub fn New_ICollection2(
         c: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -290,7 +288,7 @@ impl crate::System::Collections::ArrayList {
             .invoke("Reverse", (index, count))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Sort_Gc0(
+    pub fn Sort_IComparer0(
         &mut self,
         comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -301,7 +299,7 @@ impl crate::System::Collections::ArrayList {
             .invoke("Sort", (comparer))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Sort_i32_i32_Gc1(
+    pub fn Sort_i32_i32_IComparer1(
         &mut self,
         index: i32,
         count: i32,
@@ -318,22 +316,18 @@ impl crate::System::Collections::ArrayList {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         > = __cordl_object.invoke("ToArray", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToArray_Gc1(
+    pub fn ToArray_Type1(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Array>> {
@@ -354,7 +348,7 @@ impl crate::System::Collections::ArrayList {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_ICollection2(
         &mut self,
         c: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -465,68 +459,54 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Collections::ArrayList
     }
 }
 #[cfg(feature = "System+Collections+ArrayList")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
+impl AsRef<crate::System::Collections::ICollection>
 for crate::System::Collections::ArrayList {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+ArrayList")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
+impl AsMut<crate::System::Collections::ICollection>
 for crate::System::Collections::ArrayList {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+ArrayList")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+impl AsRef<crate::System::Collections::IEnumerable>
 for crate::System::Collections::ArrayList {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+ArrayList")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+impl AsMut<crate::System::Collections::IEnumerable>
 for crate::System::Collections::ArrayList {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+ArrayList")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IList>>
-for crate::System::Collections::ArrayList {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IList> {
+impl AsRef<crate::System::Collections::IList> for crate::System::Collections::ArrayList {
+    fn as_ref(&self) -> &crate::System::Collections::IList {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+ArrayList")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IList>>
-for crate::System::Collections::ArrayList {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IList> {
+impl AsMut<crate::System::Collections::IList> for crate::System::Collections::ArrayList {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IList {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+ArrayList")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
-for crate::System::Collections::ArrayList {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
+impl AsRef<crate::System::ICloneable> for crate::System::Collections::ArrayList {
+    fn as_ref(&self) -> &crate::System::ICloneable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+ArrayList")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
-for crate::System::Collections::ArrayList {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
+impl AsMut<crate::System::ICloneable> for crate::System::Collections::ArrayList {
+    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -534,7 +514,7 @@ for crate::System::Collections::ArrayList {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArrayList_ArrayListDebugView {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Collections+ArrayList+ArrayListDebugView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -544,7 +524,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+ArrayList+ArrayListDebugView")]
 impl std::ops::Deref for crate::System::Collections::ArrayList_ArrayListDebugView {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -571,7 +551,7 @@ for crate::System::Collections::ArrayList_ArrayListDebugView {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArrayList_ArrayListEnumeratorSimple {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _list: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     pub _index: i32,
     pub _version: i32,
@@ -587,7 +567,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Collections+ArrayList+ArrayListEnumeratorSimple")]
 impl std::ops::Deref
 for crate::System::Collections::ArrayList_ArrayListEnumeratorSimple {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -676,34 +656,30 @@ for crate::System::Collections::ArrayList_ArrayListEnumeratorSimple {
     }
 }
 #[cfg(feature = "System+Collections+ArrayList+ArrayListEnumeratorSimple")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
+impl AsRef<crate::System::Collections::IEnumerator>
 for crate::System::Collections::ArrayList_ArrayListEnumeratorSimple {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+ArrayList+ArrayListEnumeratorSimple")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
+impl AsMut<crate::System::Collections::IEnumerator>
 for crate::System::Collections::ArrayList_ArrayListEnumeratorSimple {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+ArrayList+ArrayListEnumeratorSimple")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
+impl AsRef<crate::System::ICloneable>
 for crate::System::Collections::ArrayList_ArrayListEnumeratorSimple {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
+    fn as_ref(&self) -> &crate::System::ICloneable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+ArrayList+ArrayListEnumeratorSimple")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
+impl AsMut<crate::System::ICloneable>
 for crate::System::Collections::ArrayList_ArrayListEnumeratorSimple {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
+    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
         unsafe { std::mem::transmute(self) }
     }
 }

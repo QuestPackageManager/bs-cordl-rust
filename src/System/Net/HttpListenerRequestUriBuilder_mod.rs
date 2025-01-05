@@ -2,14 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HttpListenerRequestUriBuilder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub rawUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub cookedUriScheme: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub cookedUriHost: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub cookedUriPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub cookedUriQuery: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub requestUriString: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
-    pub rawOctets: quest_hook::libil2cpp::Gc<u8>,
+    pub rawOctets: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<u8>,
+    >,
     pub rawPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub requestUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
 }
@@ -20,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+HttpListenerRequestUriBuilder")]
 impl std::ops::Deref for crate::System::Net::HttpListenerRequestUriBuilder {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -65,7 +67,9 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
     }
     pub fn AppendOctetsPercentEncoded(
         target: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
-        octets: quest_hook::libil2cpp::Gc<u8>,
+        octets: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<u8>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("AppendOctetsPercentEncoded", (target, octets))?;
@@ -112,7 +116,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
             .invoke("BuildRequestUriUsingRawPath", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn BuildRequestUriUsingRawPath_Gc1(
+    pub fn BuildRequestUriUsingRawPath_Encoding1(
         &mut self,
         encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
     ) -> quest_hook::libil2cpp::Result<
@@ -146,7 +150,9 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
         Ok(__cordl_ret.into())
     }
     pub fn GetOctetsAsString(
-        octets: quest_hook::libil2cpp::Gc<u8>,
+        octets: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<u8>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
@@ -186,9 +192,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
         methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

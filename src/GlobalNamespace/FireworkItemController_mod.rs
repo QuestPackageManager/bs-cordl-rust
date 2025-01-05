@@ -2,17 +2,15 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FireworkItemController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _particleSystems: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::FireworkItemController_FireworkItemParticleSystem,
-            >,
+            *mut crate::GlobalNamespace::FireworkItemController_FireworkItemParticleSystem,
         >,
     >,
     pub _lights: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TubeBloomPrePassLight>,
+            *mut crate::GlobalNamespace::TubeBloomPrePassLight,
         >,
     >,
     pub _audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
@@ -28,12 +26,12 @@ pub struct FireworkItemController {
     pub _minSpeedMultiplier: f32,
     pub _maxSpeedMultiplier: f32,
     pub _explosionClips: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::AudioClip>,
     >,
     pub _randomAudioPicker: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+        crate::GlobalNamespace::RandomObjectPicker_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+        >,
     >,
     pub _directionalLight: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::DirectionalLight,
@@ -41,7 +39,9 @@ pub struct FireworkItemController {
     pub _directionalLightIntensity: f32,
     pub _initialized: bool,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FireworkItemController>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FireworkItemController>,
+        >,
     >,
 }
 #[cfg(feature = "FireworkItemController")]
@@ -51,7 +51,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "FireworkItemController")]
 impl std::ops::Deref for crate::GlobalNamespace::FireworkItemController {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -162,7 +162,9 @@ impl crate::GlobalNamespace::FireworkItemController {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FireworkItemController>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FireworkItemController>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -175,7 +177,9 @@ impl crate::GlobalNamespace::FireworkItemController {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FireworkItemController>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FireworkItemController>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -222,7 +226,7 @@ for crate::GlobalNamespace::FireworkItemController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct FireworkItemController_FireworkItemParticleSystem {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _particleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
     pub _isSubemitter: bool,
     pub _useMainColor: bool,
@@ -239,7 +243,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "FireworkItemController+FireworkItemParticleSystem")]
 impl std::ops::Deref
 for crate::GlobalNamespace::FireworkItemController_FireworkItemParticleSystem {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -285,7 +289,7 @@ for crate::GlobalNamespace::FireworkItemController_FireworkItemParticleSystem {
 #[repr(C)]
 #[derive(Debug)]
 pub struct FireworkItemController_Pool {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FireworkItemController>,
     >,
 }
@@ -296,7 +300,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "FireworkItemController+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::FireworkItemController_Pool {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FireworkItemController>,
     >;
     fn deref(&self) -> &Self::Target {

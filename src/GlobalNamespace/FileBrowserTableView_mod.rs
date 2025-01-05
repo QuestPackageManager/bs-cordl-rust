@@ -2,20 +2,20 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileBrowserTableView {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _tableView: quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
     pub _cellPrefab: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::FileBrowserTableCell,
     >,
     pub _cellHeight: f32,
     pub didSelectRow: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileBrowserTableView>,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileBrowserItem>,
-    >,
-    pub _items: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileBrowserTableView>,
             quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileBrowserItem>,
         >,
+    >,
+    pub _items: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::FileBrowserItem>,
     >,
 }
 #[cfg(feature = "FileBrowserTableView")]
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "FileBrowserTableView")]
 impl std::ops::Deref for crate::GlobalNamespace::FileBrowserTableView {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -88,7 +88,7 @@ impl crate::GlobalNamespace::FileBrowserTableView {
         &mut self,
         items: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileBrowserItem>,
+                *mut crate::GlobalNamespace::FileBrowserItem,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -139,7 +139,7 @@ impl crate::GlobalNamespace::FileBrowserTableView {
         &mut self,
         items: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileBrowserItem>,
+                *mut crate::GlobalNamespace::FileBrowserItem,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -163,8 +163,10 @@ impl crate::GlobalNamespace::FileBrowserTableView {
     pub fn add_didSelectRow(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileBrowserTableView>,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileBrowserItem>,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileBrowserTableView>,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileBrowserItem>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -177,8 +179,10 @@ impl crate::GlobalNamespace::FileBrowserTableView {
     pub fn remove_didSelectRow(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileBrowserTableView>,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileBrowserItem>,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileBrowserTableView>,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileBrowserItem>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -199,18 +203,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FileBrowserTa
     }
 }
 #[cfg(feature = "FileBrowserTableView")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::HMUI::TableView_IDataSource>>
+impl AsRef<crate::HMUI::TableView_IDataSource>
 for crate::GlobalNamespace::FileBrowserTableView {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::HMUI::TableView_IDataSource> {
+    fn as_ref(&self) -> &crate::HMUI::TableView_IDataSource {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "FileBrowserTableView")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::HMUI::TableView_IDataSource>>
+impl AsMut<crate::HMUI::TableView_IDataSource>
 for crate::GlobalNamespace::FileBrowserTableView {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::HMUI::TableView_IDataSource> {
+    fn as_mut(&mut self) -> &mut crate::HMUI::TableView_IDataSource {
         unsafe { std::mem::transmute(self) }
     }
 }

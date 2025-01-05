@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_GlyphPairAdjustmentRecord {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_FirstAdjustmentRecord: crate::TMPro::TMP_GlyphAdjustmentRecord,
     pub m_SecondAdjustmentRecord: crate::TMPro::TMP_GlyphAdjustmentRecord,
     pub m_FeatureLookupFlags: crate::TMPro::FontFeatureLookupFlags,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+TMP_GlyphPairAdjustmentRecord")]
 impl std::ops::Deref for crate::TMPro::TMP_GlyphPairAdjustmentRecord {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

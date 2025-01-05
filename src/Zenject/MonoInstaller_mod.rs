@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MonoInstaller {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstallerBase>,
+    __cordl_parent: crate::Zenject::MonoInstallerBase,
 }
 #[cfg(feature = "Zenject+MonoInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+MonoInstaller")]
 impl std::ops::Deref for crate::Zenject::MonoInstaller {
-    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstallerBase>;
+    type Target = crate::Zenject::MonoInstallerBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightDelegateCreator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _lambda: quest_hook::libil2cpp::Gc<
         crate::System::Linq::Expressions::LambdaExpression,
     >,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LightDelegateCreator")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::LightDelegateCreator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -45,13 +45,11 @@ impl crate::System::Linq::Expressions::Interpreter::LightDelegateCreator {
             .invoke("CreateDelegate", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateDelegate_Gc1(
+    pub fn CreateDelegate_Il2CppArray1(
         &mut self,
         closure: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Runtime::CompilerServices::IStrongBox,
-                >,
+                *mut crate::System::Runtime::CompilerServices::IStrongBox,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<

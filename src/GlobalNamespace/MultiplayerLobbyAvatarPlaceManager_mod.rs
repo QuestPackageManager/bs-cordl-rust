@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLobbyAvatarPlaceManager {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _lobbyStateDataModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::ILobbyStateDataModel,
     >,
@@ -10,7 +10,11 @@ pub struct MultiplayerLobbyAvatarPlaceManager {
         crate::GlobalNamespace::MultiplayerLobbyAvatarPlace_Pool,
     >,
     pub _allPlaces: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerLobbyAvatarPlace>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerLobbyAvatarPlace,
+            >,
+        >,
     >,
     pub _innerCircleRadius: f32,
     pub _minOuterCircleRadius: f32,
@@ -23,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplayerLobbyAvatarPlaceManager")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLobbyAvatarPlaceManager {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

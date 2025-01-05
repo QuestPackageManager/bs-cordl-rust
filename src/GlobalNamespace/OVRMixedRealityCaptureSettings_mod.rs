@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRMixedRealityCaptureSettings {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+    __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub enableMixedReality: bool,
     pub extraHiddenLayers: crate::UnityEngine::LayerMask,
     pub extraVisibleLayers: crate::UnityEngine::LayerMask,
@@ -41,7 +41,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRMixedRealityCaptureSettings")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>;
+    type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -808,30 +808,18 @@ for crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
     }
 }
 #[cfg(feature = "OVRMixedRealityCaptureSettings")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
-    >,
-> for crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
-    > {
+impl AsRef<crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration>
+for crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
+    fn as_ref(&self) -> &crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OVRMixedRealityCaptureSettings")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
-    >,
-> for crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
+impl AsMut<crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration>
+for crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
-    > {
+    ) -> &mut crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration {
         unsafe { std::mem::transmute(self) }
     }
 }

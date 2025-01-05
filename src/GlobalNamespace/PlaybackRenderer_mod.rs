@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlaybackRenderer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub texturesReadyEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _clearBackgroundShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     pub _isSetup: bool,
@@ -15,9 +15,7 @@ pub struct PlaybackRenderer {
     pub _clipMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub _screenshots: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
-            >,
+            *mut crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
         >,
     >,
 }
@@ -28,7 +26,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PlaybackRenderer")]
 impl std::ops::Deref for crate::GlobalNamespace::PlaybackRenderer {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -150,9 +148,7 @@ impl crate::GlobalNamespace::PlaybackRenderer {
         textureHeight: i32,
         screenshots: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
-                >,
+                *mut crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -199,9 +195,7 @@ impl crate::GlobalNamespace::PlaybackRenderer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
-                >,
+                *mut crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
             >,
         >,
     > {
@@ -210,9 +204,7 @@ impl crate::GlobalNamespace::PlaybackRenderer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
-                >,
+                *mut crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
             >,
         > = __cordl_object.invoke("get_screenshots", ())?;
         Ok(__cordl_ret.into())
@@ -242,7 +234,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlaybackRende
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlaybackRenderer_PlaybackScreenshot {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _layerMask: crate::UnityEngine::LayerMask,
     pub _type: crate::GlobalNamespace::PlaybackScreenshot_PlaybackRenderer_Type,
@@ -258,7 +250,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PlaybackRenderer+PlaybackScreenshot")]
 impl std::ops::Deref for crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,16 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataTableCollection {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Data::InternalDataCollectionBase,
-    >,
+    __cordl_parent: crate::System::Data::InternalDataCollectionBase,
     pub _dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
     pub _list: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     pub _defaultNameIndex: i32,
     pub _delayedAddRangeTables: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataTable>,
     >,
     pub _onCollectionChangedDelegate: quest_hook::libil2cpp::Gc<
         crate::System::ComponentModel::CollectionChangeEventHandler,
@@ -28,9 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+DataTableCollection")]
 impl std::ops::Deref for crate::System::Data::DataTableCollection {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Data::InternalDataCollectionBase,
-    >;
+    type Target = crate::System::Data::InternalDataCollectionBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -92,15 +86,11 @@ impl crate::System::Data::DataTableCollection {
     pub fn BaseGroupSwitch(
         &mut self,
         oldArray: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataTable>,
         >,
         oldLength: i32,
         newArray: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataTable>,
         >,
         newLength: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -144,7 +134,7 @@ impl crate::System::Data::DataTableCollection {
             .invoke("Clear", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Contains_Gc0(
+    pub fn Contains_Il2CppString0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -154,7 +144,7 @@ impl crate::System::Data::DataTableCollection {
         let __cordl_ret: bool = __cordl_object.invoke("Contains", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Contains_Gc__cordl_bool__cordl_bool1(
+    pub fn Contains_Il2CppString__cordl_bool__cordl_bool1(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         tableNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -208,7 +198,7 @@ impl crate::System::Data::DataTableCollection {
             .invoke("GetTableSmart", (name, ns))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IndexOf_Gc0(
+    pub fn IndexOf_DataTable0(
         &mut self,
         table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -218,7 +208,7 @@ impl crate::System::Data::DataTableCollection {
         let __cordl_ret: i32 = __cordl_object.invoke("IndexOf", (table))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IndexOf_Gc1(
+    pub fn IndexOf_Il2CppString1(
         &mut self,
         tableName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -228,7 +218,7 @@ impl crate::System::Data::DataTableCollection {
         let __cordl_ret: i32 = __cordl_object.invoke("IndexOf", (tableName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IndexOf_Gc__cordl_bool2(
+    pub fn IndexOf_Il2CppString_Il2CppString__cordl_bool2(
         &mut self,
         tableName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         tableNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -241,7 +231,7 @@ impl crate::System::Data::DataTableCollection {
             .invoke("IndexOf", (tableName, tableNamespace, chekforNull))?;
         Ok(__cordl_ret.into())
     }
-    pub fn InternalIndexOf_Gc0(
+    pub fn InternalIndexOf_Il2CppString0(
         &mut self,
         tableName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -251,7 +241,7 @@ impl crate::System::Data::DataTableCollection {
         let __cordl_ret: i32 = __cordl_object.invoke("InternalIndexOf", (tableName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn InternalIndexOf_Gc1(
+    pub fn InternalIndexOf_Il2CppString1(
         &mut self,
         tableName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         tableNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -338,7 +328,9 @@ impl crate::System::Data::DataTableCollection {
     pub fn ReplaceFromInference(
         &mut self,
         tableList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -370,7 +362,7 @@ impl crate::System::Data::DataTableCollection {
             .invoke(".ctor", (dataSet))?;
         Ok(__cordl_ret.into())
     }
-    pub fn get_Item_Gc1(
+    pub fn get_Item_Il2CppString1(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -383,7 +375,7 @@ impl crate::System::Data::DataTableCollection {
             .invoke("get_Item", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn get_Item_Gc_Gc2(
+    pub fn get_Item_Il2CppString_Il2CppString2(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         tableNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

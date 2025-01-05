@@ -65,26 +65,16 @@ for crate::System::Runtime::Remoting::Channels::IChannelSender {
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Channels+IChannelSender")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Channels::IChannel>,
-> for crate::System::Runtime::Remoting::Channels::IChannelSender {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Remoting::Channels::IChannel,
-    > {
+impl AsRef<crate::System::Runtime::Remoting::Channels::IChannel>
+for crate::System::Runtime::Remoting::Channels::IChannelSender {
+    fn as_ref(&self) -> &crate::System::Runtime::Remoting::Channels::IChannel {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Channels+IChannelSender")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Channels::IChannel>,
-> for crate::System::Runtime::Remoting::Channels::IChannelSender {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Remoting::Channels::IChannel,
-    > {
+impl AsMut<crate::System::Runtime::Remoting::Channels::IChannel>
+for crate::System::Runtime::Remoting::Channels::IChannelSender {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Remoting::Channels::IChannel {
         unsafe { std::mem::transmute(self) }
     }
 }

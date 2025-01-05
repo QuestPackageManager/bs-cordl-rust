@@ -2,23 +2,29 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MirroredNoteController_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::NoteControllerBase,
-    >,
+    __cordl_parent: crate::GlobalNamespace::NoteControllerBase,
     pub _noteTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub followedNote: T,
     pub _followedNoteTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _didInitEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INoteControllerDidInitEvent>,
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::INoteControllerDidInitEvent,
+            >,
+        >,
     >,
     pub _noteDidPassJumpThreeQuartersEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::INoteControllerNoteDidPassJumpThreeQuartersEvent,
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::INoteControllerNoteDidPassJumpThreeQuartersEvent,
+            >,
         >,
     >,
     pub _noteDidStartDissolvingEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
+            >,
         >,
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -31,7 +37,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MirroredNoteController_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::MirroredNoteController_1<T> {
-    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteControllerBase>;
+    type Target = crate::GlobalNamespace::NoteControllerBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -201,8 +207,10 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::INoteControllerDidInitEvent,
+            crate::GlobalNamespace::ILazyCopyHashSet_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::INoteControllerDidInitEvent,
+                >,
             >,
         >,
     >
@@ -214,8 +222,10 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::INoteControllerDidInitEvent,
+            crate::GlobalNamespace::ILazyCopyHashSet_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::INoteControllerDidInitEvent,
+                >,
             >,
         > = __cordl_object.invoke("get_didInitEvent", ())?;
         Ok(__cordl_ret.into())
@@ -240,8 +250,10 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::INoteControllerNoteDidPassJumpThreeQuartersEvent,
+            crate::GlobalNamespace::ILazyCopyHashSet_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::INoteControllerNoteDidPassJumpThreeQuartersEvent,
+                >,
             >,
         >,
     >
@@ -253,8 +265,10 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::INoteControllerNoteDidPassJumpThreeQuartersEvent,
+            crate::GlobalNamespace::ILazyCopyHashSet_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::INoteControllerNoteDidPassJumpThreeQuartersEvent,
+                >,
             >,
         > = __cordl_object.invoke("get_noteDidPassJumpThreeQuartersEvent", ())?;
         Ok(__cordl_ret.into())
@@ -263,8 +277,10 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
+            crate::GlobalNamespace::ILazyCopyHashSet_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
+                >,
             >,
         >,
     >
@@ -276,8 +292,10 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
+            crate::GlobalNamespace::ILazyCopyHashSet_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
+                >,
             >,
         > = __cordl_object.invoke("get_noteDidStartDissolvingEvent", ())?;
         Ok(__cordl_ret.into())
@@ -296,64 +314,44 @@ for crate::GlobalNamespace::MirroredNoteController_1<T> {
 #[cfg(feature = "MirroredNoteController_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::INoteControllerNoteDidPassJumpThreeQuartersEvent,
-    >,
-> for crate::GlobalNamespace::MirroredNoteController_1<T> {
+> AsRef<crate::GlobalNamespace::INoteControllerNoteDidPassJumpThreeQuartersEvent>
+for crate::GlobalNamespace::MirroredNoteController_1<T> {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::INoteControllerNoteDidPassJumpThreeQuartersEvent,
-    > {
+    ) -> &crate::GlobalNamespace::INoteControllerNoteDidPassJumpThreeQuartersEvent {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MirroredNoteController_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::INoteControllerNoteDidPassJumpThreeQuartersEvent,
-    >,
-> for crate::GlobalNamespace::MirroredNoteController_1<T> {
+> AsMut<crate::GlobalNamespace::INoteControllerNoteDidPassJumpThreeQuartersEvent>
+for crate::GlobalNamespace::MirroredNoteController_1<T> {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::INoteControllerNoteDidPassJumpThreeQuartersEvent,
-    > {
+    ) -> &mut crate::GlobalNamespace::INoteControllerNoteDidPassJumpThreeQuartersEvent {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MirroredNoteController_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
-    >,
-> for crate::GlobalNamespace::MirroredNoteController_1<T> {
+> AsRef<crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent>
+for crate::GlobalNamespace::MirroredNoteController_1<T> {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
-    > {
+    ) -> &crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MirroredNoteController_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
-    >,
-> for crate::GlobalNamespace::MirroredNoteController_1<T> {
+> AsMut<crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent>
+for crate::GlobalNamespace::MirroredNoteController_1<T> {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
-    > {
+    ) -> &mut crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerDisappearingArrowController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::GlobalNamespace::DisappearingArrowControllerBase_1<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
         >,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MultiplayerConnectedPlayerDisappearingArrowController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerDisappearingArrowController {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::GlobalNamespace::DisappearingArrowControllerBase_1<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
         >,

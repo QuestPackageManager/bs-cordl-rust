@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SHA384Managed {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Security::Cryptography::SHA384,
-    >,
+    __cordl_parent: crate::System::Security::Cryptography::SHA384,
     pub _buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _count: u64,
     pub _stateSHA384: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
@@ -17,9 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+Cryptography+SHA384Managed")]
 impl std::ops::Deref for crate::System::Security::Cryptography::SHA384Managed {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Security::Cryptography::SHA384,
-    >;
+    type Target = crate::System::Security::Cryptography::SHA384;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UxmlObjectAsset {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UxmlAsset>,
+    __cordl_parent: crate::UnityEngine::UIElements::UxmlAsset,
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlObjectAsset")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UxmlObjectAsset")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UxmlObjectAsset {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UxmlAsset>;
+    type Target = crate::UnityEngine::UIElements::UxmlAsset;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

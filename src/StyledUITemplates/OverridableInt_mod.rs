@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OverridableInt {
-    __cordl_parent: quest_hook::libil2cpp::Gc<i32>,
+    __cordl_parent: crate::StyledUITemplates::OverridableData_1<i32>,
 }
 #[cfg(feature = "StyledUITemplates+OverridableInt")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "StyledUITemplates+OverridableInt")]
 impl std::ops::Deref for crate::StyledUITemplates::OverridableInt {
-    type Target = quest_hook::libil2cpp::Gc<i32>;
+    type Target = crate::StyledUITemplates::OverridableData_1<i32>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

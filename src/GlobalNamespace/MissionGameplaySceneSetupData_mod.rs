@@ -2,11 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionGameplaySceneSetupData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneSetupData>,
+    __cordl_parent: crate::GlobalNamespace::SceneSetupData,
     pub missionObjectives: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjective>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MissionObjective>,
     >,
     pub autoRestart: bool,
     pub beatmapKey: crate::GlobalNamespace::BeatmapKey,
@@ -23,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MissionGameplaySceneSetupData")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionGameplaySceneSetupData {
-    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneSetupData>;
+    type Target = crate::GlobalNamespace::SceneSetupData;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -39,7 +37,7 @@ impl crate::GlobalNamespace::MissionGameplaySceneSetupData {
     pub fn New(
         missionObjectives: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjective>,
+                *mut crate::GlobalNamespace::MissionObjective,
             >,
         >,
         autoRestart: bool,
@@ -70,7 +68,7 @@ impl crate::GlobalNamespace::MissionGameplaySceneSetupData {
         &mut self,
         missionObjectives: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjective>,
+                *mut crate::GlobalNamespace::MissionObjective,
             >,
         >,
         autoRestart: bool,

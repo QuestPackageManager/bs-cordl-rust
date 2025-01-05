@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplierValuesRecorder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _scoreController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IScoreController,
     >,
@@ -10,7 +10,9 @@ pub struct MultiplierValuesRecorder {
         crate::GlobalNamespace::AudioTimeSyncController,
     >,
     pub _multiplierValues: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MultiplierValuesRecorder_MultiplierValue,
+        crate::System::Collections::Generic::List_1<
+            crate::GlobalNamespace::MultiplierValuesRecorder_MultiplierValue,
+        >,
     >,
 }
 #[cfg(feature = "MultiplierValuesRecorder")]
@@ -20,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplierValuesRecorder")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplierValuesRecorder {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -91,14 +93,18 @@ impl crate::GlobalNamespace::MultiplierValuesRecorder {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplierValuesRecorder_MultiplierValue,
+            crate::System::Collections::Generic::List_1<
+                crate::GlobalNamespace::MultiplierValuesRecorder_MultiplierValue,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplierValuesRecorder_MultiplierValue,
+            crate::System::Collections::Generic::List_1<
+                crate::GlobalNamespace::MultiplierValuesRecorder_MultiplierValue,
+            >,
         > = __cordl_object.invoke("get_multiplierValues", ())?;
         Ok(__cordl_ret.into())
     }

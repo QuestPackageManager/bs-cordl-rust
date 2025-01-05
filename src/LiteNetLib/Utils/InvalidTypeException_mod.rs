@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InvalidTypeException {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::ArgumentException>,
+    __cordl_parent: crate::System::ArgumentException,
 }
 #[cfg(feature = "LiteNetLib+Utils+InvalidTypeException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LiteNetLib+Utils+InvalidTypeException")]
 impl std::ops::Deref for crate::LiteNetLib::Utils::InvalidTypeException {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::ArgumentException>;
+    type Target = crate::System::ArgumentException;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

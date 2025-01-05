@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DeclareSignalRequireHandlerAsyncTickPriorityCopyBinder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Zenject::DeclareSignalAsyncTickPriorityCopyBinder,
-    >,
+    __cordl_parent: crate::Zenject::DeclareSignalAsyncTickPriorityCopyBinder,
 }
 #[cfg(feature = "Zenject+DeclareSignalRequireHandlerAsyncTickPriorityCopyBinder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Zenject+DeclareSignalRequireHandlerAsyncTickPriorityCopyBinder")]
 impl std::ops::Deref
 for crate::Zenject::DeclareSignalRequireHandlerAsyncTickPriorityCopyBinder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Zenject::DeclareSignalAsyncTickPriorityCopyBinder,
-    >;
+    type Target = crate::Zenject::DeclareSignalAsyncTickPriorityCopyBinder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

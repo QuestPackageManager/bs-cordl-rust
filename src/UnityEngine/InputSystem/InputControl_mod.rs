@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputControl {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_StateBlock: crate::UnityEngine::InputSystem::LowLevel::InputStateBlock,
     pub m_Name: crate::UnityEngine::InputSystem::Utilities::InternedString,
     pub m_Path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -45,7 +45,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputControl")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputControl {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -156,7 +156,7 @@ impl crate::UnityEngine::InputSystem::InputControl {
         let __cordl_ret: f32 = __cordl_object.invoke("EvaluateMagnitude", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn EvaluateMagnitude_Gc1(
+    pub fn EvaluateMagnitude_Il2CppObject1(
         &mut self,
         statePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<f32> {
@@ -176,7 +176,7 @@ impl crate::UnityEngine::InputSystem::InputControl {
             .invoke("FinishSetup", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetChildControl_Gc0(
+    pub fn GetChildControl_Il2CppString0(
         &mut self,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -190,7 +190,7 @@ impl crate::UnityEngine::InputSystem::InputControl {
         > = __cordl_object.invoke("GetChildControl", (path))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetChildControl_Gc1<TControl>(
+    pub fn GetChildControl_Il2CppString1<TControl>(
         &mut self,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<TControl>
@@ -358,7 +358,7 @@ impl crate::UnityEngine::InputSystem::InputControl {
         > = __cordl_object.invoke("ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn TryGetChildControl_Gc0(
+    pub fn TryGetChildControl_Il2CppString0(
         &mut self,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -372,7 +372,7 @@ impl crate::UnityEngine::InputSystem::InputControl {
         > = __cordl_object.invoke("TryGetChildControl", (path))?;
         Ok(__cordl_ret.into())
     }
-    pub fn TryGetChildControl_Gc1<TControl>(
+    pub fn TryGetChildControl_Il2CppString1<TControl>(
         &mut self,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<TControl>

@@ -2,12 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RegexCode {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Codes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub Strings: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub TrackCount: i32,
     pub Caps: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
@@ -28,7 +26,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Text+RegularExpressions+RegexCode")]
 impl std::ops::Deref for crate::System::Text::RegularExpressions::RegexCode {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -92,7 +90,9 @@ impl crate::System::Text::RegularExpressions::RegexCode {
     pub fn New(
         codes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         stringlist: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         trackcount: i32,
         caps: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
@@ -134,7 +134,9 @@ impl crate::System::Text::RegularExpressions::RegexCode {
         &mut self,
         codes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         stringlist: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         trackcount: i32,
         caps: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimeStampRequest {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::X509::X509ExtensionBase,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::X509::X509ExtensionBase,
     pub req: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::Tsp::TimeStampReq,
     >,
@@ -19,9 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampRequest")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Tsp::TimeStampRequest {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::X509::X509ExtensionBase,
-    >;
+    type Target = crate::Org::BouncyCastle::X509::X509ExtensionBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -101,16 +97,16 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequest {
         > = __cordl_object.invoke("GetX509Extensions", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
-        req: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Tsp::TimeStampReq>,
+    pub fn New_Asn1InputStream3(
+        str: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1InputStream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (req))?;
+            .invoke_void(".ctor", (str))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Il2CppArray1(
         req: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -119,7 +115,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequest {
             .invoke_void(".ctor", (req))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc2(
+    pub fn New_Stream2(
         input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -128,13 +124,13 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequest {
             .invoke_void(".ctor", (input))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc3(
-        str: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1InputStream>,
+    pub fn New_TimeStampReq0(
+        req: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Tsp::TimeStampReq>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (str))?;
+            .invoke_void(".ctor", (req))?;
         Ok(__cordl_object.into())
     }
     pub fn Validate(
@@ -150,18 +146,18 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequest {
             .invoke("Validate", (algorithms, policies, extensions))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Asn1InputStream3(
         &mut self,
-        req: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Tsp::TimeStampReq>,
+        str: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1InputStream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (req))?;
+            .invoke(".ctor", (str))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Il2CppArray1(
         &mut self,
         req: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -172,7 +168,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequest {
             .invoke(".ctor", (req))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_Stream2(
         &mut self,
         input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -183,15 +179,15 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequest {
             .invoke(".ctor", (input))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc3(
+    pub fn _ctor_TimeStampReq0(
         &mut self,
-        str: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1InputStream>,
+        req: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Tsp::TimeStampReq>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (str))?;
+            .invoke(".ctor", (req))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_CertReq(&mut self) -> quest_hook::libil2cpp::Result<bool> {

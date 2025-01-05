@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapEditorGameplaySceneSetupData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneSetupData>,
+    __cordl_parent: crate::GlobalNamespace::SceneSetupData,
     pub data: crate::GlobalNamespace::BeatmapEditorStartTestLevelData,
     pub recordVRMovement: bool,
     pub playVRMovement: bool,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapEditorGameplaySceneSetupData")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapEditorGameplaySceneSetupData {
-    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneSetupData>;
+    type Target = crate::GlobalNamespace::SceneSetupData;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

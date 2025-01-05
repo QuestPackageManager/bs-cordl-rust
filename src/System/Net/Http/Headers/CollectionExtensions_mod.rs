@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CollectionExtensions {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Net+Http+Headers+CollectionExtensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Http+Headers+CollectionExtensions")]
 impl std::ops::Deref for crate::System::Net::Http::Headers::CollectionExtensions {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -25,8 +25,12 @@ impl std::ops::DerefMut for crate::System::Net::Http::Headers::CollectionExtensi
 #[cfg(feature = "System+Net+Http+Headers+CollectionExtensions")]
 impl crate::System::Net::Http::Headers::CollectionExtensions {
     pub fn SequenceEqual<TSource>(
-        first: quest_hook::libil2cpp::Gc<TSource>,
-        second: quest_hook::libil2cpp::Gc<TSource>,
+        first: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<TSource>,
+        >,
+        second: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<TSource>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -38,8 +42,10 @@ impl crate::System::Net::Http::Headers::CollectionExtensions {
     }
     pub fn SetValue(
         parameters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Net::Http::Headers::NameValueHeaderValue,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Net::Http::Headers::NameValueHeaderValue,
+                >,
             >,
         >,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -50,7 +56,7 @@ impl crate::System::Net::Http::Headers::CollectionExtensions {
         Ok(__cordl_ret.into())
     }
     pub fn ToString<T>(
-        list: quest_hook::libil2cpp::Gc<T>,
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >
@@ -64,7 +70,7 @@ impl crate::System::Net::Http::Headers::CollectionExtensions {
         Ok(__cordl_ret.into())
     }
     pub fn ToStringBuilder<T>(
-        list: quest_hook::libil2cpp::Gc<T>,
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
         sb: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where

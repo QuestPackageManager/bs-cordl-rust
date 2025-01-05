@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileWebStream {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::IO::FileStream>,
+    __cordl_parent: crate::System::IO::FileStream,
     pub m_request: quest_hook::libil2cpp::Gc<crate::System::Net::FileWebRequest>,
 }
 #[cfg(feature = "System+Net+FileWebStream")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+FileWebStream")]
 impl std::ops::Deref for crate::System::Net::FileWebStream {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::IO::FileStream>;
+    type Target = crate::System::IO::FileStream;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -101,7 +101,7 @@ impl crate::System::Net::FileWebStream {
             .invoke("EndWrite", (ar))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc_Gc_FileMode_FileAccess_FileShare0(
+    pub fn New_FileWebRequest_Il2CppString_FileMode_FileAccess_FileShare0(
         request: quest_hook::libil2cpp::Gc<crate::System::Net::FileWebRequest>,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         mode: crate::System::IO::FileMode,
@@ -169,7 +169,7 @@ impl crate::System::Net::FileWebStream {
             .invoke("Write", (buffer, offset, _cordl_size))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_FileMode_FileAccess_FileShare0(
+    pub fn _ctor_FileWebRequest_Il2CppString_FileMode_FileAccess_FileShare0(
         &mut self,
         request: quest_hook::libil2cpp::Gc<crate::System::Net::FileWebRequest>,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -215,18 +215,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::FileWebStream {
     }
 }
 #[cfg(feature = "System+Net+FileWebStream")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Net::ICloseEx>>
-for crate::System::Net::FileWebStream {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Net::ICloseEx> {
+impl AsRef<crate::System::Net::ICloseEx> for crate::System::Net::FileWebStream {
+    fn as_ref(&self) -> &crate::System::Net::ICloseEx {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Net+FileWebStream")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Net::ICloseEx>>
-for crate::System::Net::FileWebStream {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Net::ICloseEx> {
+impl AsMut<crate::System::Net::ICloseEx> for crate::System::Net::FileWebStream {
+    fn as_mut(&mut self) -> &mut crate::System::Net::ICloseEx {
         unsafe { std::mem::transmute(self) }
     }
 }

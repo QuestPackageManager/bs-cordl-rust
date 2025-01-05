@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InitialStyle {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+InitialStyle")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+InitialStyle")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::StyleSheets::InitialStyle {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -424,37 +424,61 @@ impl crate::UnityEngine::UIElements::StyleSheets::InitialStyle {
         Ok(__cordl_ret.into())
     }
     pub fn get_transitionDelay() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TimeValue>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::TimeValue,
+            >,
+        >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::TimeValue,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::TimeValue,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("get_transitionDelay", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_transitionDuration() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TimeValue>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::TimeValue,
+            >,
+        >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::TimeValue,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::TimeValue,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("get_transitionDuration", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_transitionProperty() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StylePropertyName>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::StylePropertyName,
+            >,
+        >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::StylePropertyName,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::StylePropertyName,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("get_transitionProperty", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_transitionTimingFunction() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EasingFunction>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::EasingFunction,
+            >,
+        >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::EasingFunction,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::EasingFunction,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("get_transitionTimingFunction", ())?;
         Ok(__cordl_ret.into())

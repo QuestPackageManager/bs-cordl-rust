@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSerializationWriterInterpreter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Serialization::XmlSerializationWriter,
-    >,
+    __cordl_parent: crate::System::Xml::Serialization::XmlSerializationWriter,
     pub _typeMap: quest_hook::libil2cpp::Gc<
         crate::System::Xml::Serialization::XmlMapping,
     >,
@@ -19,9 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Xml+Serialization+XmlSerializationWriterInterpreter")]
 impl std::ops::Deref
 for crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Serialization::XmlSerializationWriter,
-    >;
+    type Target = crate::System::Xml::Serialization::XmlSerializationWriter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -271,9 +267,7 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
             crate::System::Xml::Serialization::XmlMembersMapping,
         >,
         parameters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -458,7 +452,7 @@ for crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSerializationWriterInterpreter_CallbackInfo {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _swi: quest_hook::libil2cpp::Gc<
         crate::System::Xml::Serialization::XmlSerializationWriterInterpreter,
     >,
@@ -479,7 +473,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::System::Xml::Serialization::XmlSerializationWriterInterpreter_CallbackInfo {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

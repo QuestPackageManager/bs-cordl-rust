@@ -42,7 +42,7 @@ for crate::GlobalNamespace::IScoreSyncStateManager {
 }
 #[cfg(feature = "IScoreSyncStateManager")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::GlobalNamespace::IScoreSyncStateManager_5<
         crate::GlobalNamespace::StandardScoreSyncState,
         crate::GlobalNamespace::StandardScoreSyncState_Score,
         i32,
@@ -56,7 +56,7 @@ impl AsRef<
 > for crate::GlobalNamespace::IScoreSyncStateManager {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::GlobalNamespace::IScoreSyncStateManager_5<
         crate::GlobalNamespace::StandardScoreSyncState,
         crate::GlobalNamespace::StandardScoreSyncState_Score,
         i32,
@@ -72,7 +72,7 @@ impl AsRef<
 }
 #[cfg(feature = "IScoreSyncStateManager")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::GlobalNamespace::IScoreSyncStateManager_5<
         crate::GlobalNamespace::StandardScoreSyncState,
         crate::GlobalNamespace::StandardScoreSyncState_Score,
         i32,
@@ -86,7 +86,7 @@ impl AsMut<
 > for crate::GlobalNamespace::IScoreSyncStateManager {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::GlobalNamespace::IScoreSyncStateManager_5<
         crate::GlobalNamespace::StandardScoreSyncState,
         crate::GlobalNamespace::StandardScoreSyncState_Score,
         i32,

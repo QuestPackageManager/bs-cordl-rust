@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct WheelEvent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::MouseEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::WheelEvent>,
     >,
     pub _delta_k__BackingField: crate::UnityEngine::Vector3,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+WheelEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::WheelEvent {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::MouseEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::WheelEvent>,
     >;
     fn deref(&self) -> &Self::Target {
@@ -29,7 +29,7 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::WheelEvent {
 }
 #[cfg(feature = "UnityEngine+UIElements+WheelEvent")]
 impl crate::UnityEngine::UIElements::WheelEvent {
-    pub fn GetPooled_Gc0(
+    pub fn GetPooled_Event0(
         systemEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::WheelEvent>,
@@ -40,7 +40,7 @@ impl crate::UnityEngine::UIElements::WheelEvent {
             .invoke("GetPooled", (systemEvent))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetPooled_Vector3_Gc2(
+    pub fn GetPooled_Vector3_IPointerEvent2(
         delta: crate::UnityEngine::Vector3,
         pointerEvent: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::IPointerEvent,

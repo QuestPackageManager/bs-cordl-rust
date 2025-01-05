@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Mouse {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Pointer>,
+    __cordl_parent: crate::UnityEngine::InputSystem::Pointer,
     pub _scroll_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Controls::DeltaControl,
     >,
@@ -32,7 +32,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+Mouse")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Mouse {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Pointer>;
+    type Target = crate::UnityEngine::InputSystem::Pointer;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -383,30 +383,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::Mous
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Mouse")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver,
-    >,
-> for crate::UnityEngine::InputSystem::Mouse {
+impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver>
+for crate::UnityEngine::InputSystem::Mouse {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver,
-    > {
+    ) -> &crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Mouse")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver,
-    >,
-> for crate::UnityEngine::InputSystem::Mouse {
+impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver>
+for crate::UnityEngine::InputSystem::Mouse {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver,
-    > {
+    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver {
         unsafe { std::mem::transmute(self) }
     }
 }

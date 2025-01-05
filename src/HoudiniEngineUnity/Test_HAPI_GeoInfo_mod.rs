@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Test_HAPI_GeoInfo {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_self: crate::HoudiniEngineUnity::HAPI_GeoInfo,
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_HAPI_GeoInfo")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+Test_HAPI_GeoInfo")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::Test_HAPI_GeoInfo {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -67,13 +67,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::Test_HAPI_
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_HAPI_GeoInfo")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_HAPI_GeoInfo>,
     >,
 > for crate::HoudiniEngineUnity::Test_HAPI_GeoInfo {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_HAPI_GeoInfo>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -81,13 +81,13 @@ impl AsRef<
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_HAPI_GeoInfo")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_HAPI_GeoInfo>,
     >,
 > for crate::HoudiniEngineUnity::Test_HAPI_GeoInfo {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_HAPI_GeoInfo>,
     > {
         unsafe { std::mem::transmute(self) }

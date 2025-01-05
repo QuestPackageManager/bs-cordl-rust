@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightshowSaveData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub waypoints: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion4::BeatmapBeatIndex>,
+            *mut crate::BeatmapSaveDataVersion4::BeatmapBeatIndex,
         >,
     >,
     pub waypointsData: quest_hook::libil2cpp::Gc<
@@ -14,7 +14,7 @@ pub struct LightshowSaveData {
     >,
     pub basicEvents: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion4::BeatIndex>,
+            *mut crate::BeatmapSaveDataVersion4::BeatIndex,
         >,
     >,
     pub basicEventsData: quest_hook::libil2cpp::Gc<
@@ -22,7 +22,7 @@ pub struct LightshowSaveData {
     >,
     pub colorBoostEvents: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion4::BeatIndex>,
+            *mut crate::BeatmapSaveDataVersion4::BeatIndex,
         >,
     >,
     pub colorBoostEventsData: quest_hook::libil2cpp::Gc<
@@ -32,7 +32,7 @@ pub struct LightshowSaveData {
     >,
     pub eventBoxGroups: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion4::EventBoxGroup>,
+            *mut crate::BeatmapSaveDataVersion4::EventBoxGroup,
         >,
     >,
     pub indexFilters: quest_hook::libil2cpp::Gc<
@@ -86,7 +86,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapSaveDataVersion4+LightshowSaveData")]
 impl std::ops::Deref for crate::BeatmapSaveDataVersion4::LightshowSaveData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

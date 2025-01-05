@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MobileTlsProvider {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Mono::Security::Interface::MonoTlsProvider,
-    >,
+    __cordl_parent: crate::Mono::Security::Interface::MonoTlsProvider,
 }
 #[cfg(feature = "Mono+Net+Security+MobileTlsProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Net+Security+MobileTlsProvider")]
 impl std::ops::Deref for crate::Mono::Net::Security::MobileTlsProvider {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Mono::Security::Interface::MonoTlsProvider,
-    >;
+    type Target = crate::Mono::Security::Interface::MonoTlsProvider;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EmptyPlatformAchievementsHandler {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "EmptyPlatformAchievementsHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "EmptyPlatformAchievementsHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::EmptyPlatformAchievementsHandler {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -98,26 +98,16 @@ for crate::GlobalNamespace::EmptyPlatformAchievementsHandler {
     }
 }
 #[cfg(feature = "EmptyPlatformAchievementsHandler")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPlatformAchievementsHandler>,
-> for crate::GlobalNamespace::EmptyPlatformAchievementsHandler {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IPlatformAchievementsHandler,
-    > {
+impl AsRef<crate::GlobalNamespace::IPlatformAchievementsHandler>
+for crate::GlobalNamespace::EmptyPlatformAchievementsHandler {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPlatformAchievementsHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "EmptyPlatformAchievementsHandler")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPlatformAchievementsHandler>,
-> for crate::GlobalNamespace::EmptyPlatformAchievementsHandler {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IPlatformAchievementsHandler,
-    > {
+impl AsMut<crate::GlobalNamespace::IPlatformAchievementsHandler>
+for crate::GlobalNamespace::EmptyPlatformAchievementsHandler {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPlatformAchievementsHandler {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,20 +2,20 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLevelSelectionFlowCoordinator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LevelSelectionFlowCoordinator,
-    >,
+    __cordl_parent: crate::GlobalNamespace::LevelSelectionFlowCoordinator,
     pub _notAllowedCharacteristics: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
+            *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
         >,
     >,
     pub _lobbyGameStateController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::ILobbyGameStateController,
     >,
     pub didSelectLevelEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
+            >,
         >,
     >,
     pub didFinishedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -39,9 +39,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MultiplayerLevelSelectionFlowCoordinator")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLevelSelectionFlowCoordinator {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LevelSelectionFlowCoordinator,
-    >;
+    type Target = crate::GlobalNamespace::LevelSelectionFlowCoordinator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -205,8 +203,10 @@ impl crate::GlobalNamespace::MultiplayerLevelSelectionFlowCoordinator {
     pub fn add_didSelectLevelEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -279,9 +279,7 @@ impl crate::GlobalNamespace::MultiplayerLevelSelectionFlowCoordinator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BeatmapCharacteristicSO,
-                >,
+                *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
             >,
         >,
     > {
@@ -290,9 +288,7 @@ impl crate::GlobalNamespace::MultiplayerLevelSelectionFlowCoordinator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BeatmapCharacteristicSO,
-                >,
+                *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
             >,
         > = __cordl_object.invoke("get_notAllowedCharacteristics", ())?;
         Ok(__cordl_ret.into())
@@ -331,8 +327,10 @@ impl crate::GlobalNamespace::MultiplayerLevelSelectionFlowCoordinator {
     pub fn remove_didSelectLevelEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

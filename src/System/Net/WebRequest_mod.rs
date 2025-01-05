@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct WebRequest {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>,
+    __cordl_parent: crate::System::MarshalByRefObject,
     pub m_AuthenticationLevel: crate::System::Net::Security::AuthenticationLevel,
     pub m_ImpersonationLevel: crate::System::Security::Principal::TokenImpersonationLevel,
     pub m_CachePolicy: quest_hook::libil2cpp::Gc<
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+WebRequest")]
 impl std::ops::Deref for crate::System::Net::WebRequest {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>;
+    type Target = crate::System::MarshalByRefObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -75,7 +75,7 @@ impl crate::System::Net::WebRequest {
             .invoke("BeginGetResponse", (callback, state))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Create_Gc1(
+    pub fn Create_Il2CppString1(
         requestUriString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::WebRequest>,
@@ -84,7 +84,7 @@ impl crate::System::Net::WebRequest {
             .invoke("Create", (requestUriString))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Create_Gc2(
+    pub fn Create_Uri2(
         requestUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::WebRequest>,
@@ -93,7 +93,7 @@ impl crate::System::Net::WebRequest {
             .invoke("Create", (requestUri))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Create__cordl_bool0(
+    pub fn Create_Uri__cordl_bool0(
         requestUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
         useUriBase: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -146,13 +146,19 @@ impl crate::System::Net::WebRequest {
     pub fn GetRequestStreamAsync(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::IO::Stream>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+            >,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+            >,
         > = __cordl_object.invoke("GetRequestStreamAsync", ())?;
         Ok(__cordl_ret.into())
     }
@@ -172,14 +178,18 @@ impl crate::System::Net::WebRequest {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Net::WebResponse>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::System::Net::WebResponse>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Net::WebResponse>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::System::Net::WebResponse>,
+            >,
         > = __cordl_object.invoke("GetResponseAsync", ())?;
         Ok(__cordl_ret.into())
     }
@@ -201,7 +211,7 @@ impl crate::System::Net::WebRequest {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_StreamingContext1(
+    pub fn New_SerializationInfo_StreamingContext1(
         serializationInfo: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -255,13 +265,19 @@ impl crate::System::Net::WebRequest {
     pub fn _GetRequestStreamAsync_b__78_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::IO::Stream>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+            >,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+            >,
         > = __cordl_object.invoke("<GetRequestStreamAsync>b__78_0", ())?;
         Ok(__cordl_ret.into())
     }
@@ -269,14 +285,18 @@ impl crate::System::Net::WebRequest {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Net::WebResponse>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::System::Net::WebResponse>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Net::WebResponse>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::System::Net::WebResponse>,
+            >,
         > = __cordl_object.invoke("<GetResponseAsync>b__79_0", ())?;
         Ok(__cordl_ret.into())
     }
@@ -290,7 +310,7 @@ impl crate::System::Net::WebRequest {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_StreamingContext1(
+    pub fn _ctor_SerializationInfo_StreamingContext1(
         &mut self,
         serializationInfo: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -541,26 +561,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::WebRequest {
     }
 }
 #[cfg(feature = "System+Net+WebRequest")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::Net::WebRequest {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Net::WebRequest {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Net+WebRequest")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::Net::WebRequest {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Net::WebRequest {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -568,7 +578,7 @@ impl AsMut<
 #[repr(C)]
 #[derive(Debug)]
 pub struct WebRequest_DesignerWebRequestCreate {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Net+WebRequest+DesignerWebRequestCreate")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -577,7 +587,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+WebRequest+DesignerWebRequestCreate")]
 impl std::ops::Deref for crate::System::Net::WebRequest_DesignerWebRequestCreate {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -632,20 +642,16 @@ for crate::System::Net::WebRequest_DesignerWebRequestCreate {
     }
 }
 #[cfg(feature = "System+Net+WebRequest+DesignerWebRequestCreate")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Net::IWebRequestCreate>>
+impl AsRef<crate::System::Net::IWebRequestCreate>
 for crate::System::Net::WebRequest_DesignerWebRequestCreate {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Net::IWebRequestCreate> {
+    fn as_ref(&self) -> &crate::System::Net::IWebRequestCreate {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Net+WebRequest+DesignerWebRequestCreate")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Net::IWebRequestCreate>>
+impl AsMut<crate::System::Net::IWebRequestCreate>
 for crate::System::Net::WebRequest_DesignerWebRequestCreate {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Net::IWebRequestCreate> {
+    fn as_mut(&mut self) -> &mut crate::System::Net::IWebRequestCreate {
         unsafe { std::mem::transmute(self) }
     }
 }

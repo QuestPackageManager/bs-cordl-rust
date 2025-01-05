@@ -112,7 +112,9 @@ impl<
         count: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<quest_hook::libil2cpp::Gc<TKey, TValue>>,
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
+            >,
         >,
     >
     where
@@ -125,7 +127,9 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<quest_hook::libil2cpp::Gc<TKey, TValue>>,
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
+            >,
         > = __cordl_object.invoke("GetNearestNeighbours", (point, count))?;
         Ok(__cordl_ret.into())
     }
@@ -136,7 +140,9 @@ impl<
         count: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<quest_hook::libil2cpp::Gc<TKey, TValue>>,
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
+            >,
         >,
     >
     where
@@ -149,7 +155,9 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<quest_hook::libil2cpp::Gc<TKey, TValue>>,
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
+            >,
         > = __cordl_object.invoke("RadialSearch", (center, radius, count))?;
         Ok(__cordl_ret.into())
     }
@@ -242,11 +250,20 @@ for crate::UnityEngine::ProBuilder::KdTree::IKdTree_2<TKey, TValue> {
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
-for crate::UnityEngine::ProBuilder::KdTree::IKdTree_2<TKey, TValue> {
+> AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
+        >,
+    >,
+> for crate::UnityEngine::ProBuilder::KdTree::IKdTree_2<TKey, TValue> {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
+        >,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -254,11 +271,20 @@ for crate::UnityEngine::ProBuilder::KdTree::IKdTree_2<TKey, TValue> {
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
-for crate::UnityEngine::ProBuilder::KdTree::IKdTree_2<TKey, TValue> {
+> AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
+        >,
+    >,
+> for crate::UnityEngine::ProBuilder::KdTree::IKdTree_2<TKey, TValue> {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
+        >,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -266,11 +292,9 @@ for crate::UnityEngine::ProBuilder::KdTree::IKdTree_2<TKey, TValue> {
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TKey, TValue>>>
+> AsRef<crate::System::Collections::IEnumerable>
 for crate::UnityEngine::ProBuilder::KdTree::IKdTree_2<TKey, TValue> {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TKey, TValue>> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -278,11 +302,9 @@ for crate::UnityEngine::ProBuilder::KdTree::IKdTree_2<TKey, TValue> {
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TKey, TValue>>>
+> AsMut<crate::System::Collections::IEnumerable>
 for crate::UnityEngine::ProBuilder::KdTree::IKdTree_2<TKey, TValue> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TKey, TValue>> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }

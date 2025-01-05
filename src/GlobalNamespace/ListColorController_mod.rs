@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ListColorController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IncDecColorController,
-    >,
+    __cordl_parent: crate::GlobalNamespace::IncDecColorController,
     pub _idx: i32,
     pub _numberOfElements: i32,
 }
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ListColorController")]
 impl std::ops::Deref for crate::GlobalNamespace::ListColorController {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IncDecColorController,
-    >;
+    type Target = crate::GlobalNamespace::IncDecColorController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

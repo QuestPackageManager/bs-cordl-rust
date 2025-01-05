@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlAttribute {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
+    __cordl_parent: crate::System::Xml::XmlNode,
     pub name: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlName>,
     pub lastChild: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlLinkedNode>,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlAttribute")]
 impl std::ops::Deref for crate::System::Xml::XmlAttribute {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>;
+    type Target = crate::System::Xml::XmlNode;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -105,17 +105,7 @@ impl crate::System::Xml::XmlAttribute {
             .invoke("IsValidChildType", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc_Gc0(
-        name: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlName>,
-        doc: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDocument>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (name, doc))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_Gc1(
+    pub fn New_Il2CppString_Il2CppString_Il2CppString_XmlDocument1(
         prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         namespaceURI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -125,6 +115,16 @@ impl crate::System::Xml::XmlAttribute {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (prefix, localName, namespaceURI, doc))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_XmlName_XmlDocument0(
+        name: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlName>,
+        doc: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDocument>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (name, doc))?;
         Ok(__cordl_object.into())
     }
     pub fn PrepareOwnerElementInElementIdAttrMap(
@@ -207,19 +207,7 @@ impl crate::System::Xml::XmlAttribute {
             .invoke("WriteTo", (w))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc0(
-        &mut self,
-        name: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlName>,
-        doc: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDocument>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (name, doc))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_Gc1(
+    pub fn _ctor_Il2CppString_Il2CppString_Il2CppString_XmlDocument1(
         &mut self,
         prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -231,6 +219,18 @@ impl crate::System::Xml::XmlAttribute {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (prefix, localName, namespaceURI, doc))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_XmlName_XmlDocument0(
+        &mut self,
+        name: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlName>,
+        doc: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDocument>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (name, doc))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_BaseURI(

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PS4PlatformAdditionalContentModel {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::SonyPlatformAdditionalContentModel,
-    >,
+    __cordl_parent: crate::GlobalNamespace::SonyPlatformAdditionalContentModel,
 }
 #[cfg(feature = "PS4PlatformAdditionalContentModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -14,9 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PS4PlatformAdditionalContentModel")]
 impl std::ops::Deref for crate::GlobalNamespace::PS4PlatformAdditionalContentModel {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::SonyPlatformAdditionalContentModel,
-    >;
+    type Target = crate::GlobalNamespace::SonyPlatformAdditionalContentModel;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

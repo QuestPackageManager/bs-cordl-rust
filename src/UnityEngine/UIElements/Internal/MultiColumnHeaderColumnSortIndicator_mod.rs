@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiColumnHeaderColumnSortIndicator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::VisualElement,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
     pub m_IndexLabel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Label>,
 }
 #[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumnSortIndicator")]
@@ -16,9 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumnSortIndicator")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnSortIndicator {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::VisualElement,
-    >;
+    type Target = crate::UnityEngine::UIElements::VisualElement;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

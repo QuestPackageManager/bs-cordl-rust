@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PauseController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _pauseMenuManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PauseMenuManager,
     >,
@@ -31,7 +31,9 @@ pub struct PauseController {
     pub didPauseEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub didStartToResumeEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub didResumeEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
-    pub canPauseEvent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<bool>>,
+    pub canPauseEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>>,
+    >,
     pub didReturnToMenuEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _pauseChangedStateTime: f32,
     pub _wantsToPause: bool,
@@ -44,7 +46,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PauseController")]
 impl std::ops::Deref for crate::GlobalNamespace::PauseController {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -259,7 +261,11 @@ impl crate::GlobalNamespace::PauseController {
     }
     pub fn add_canPauseEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<bool>>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -335,7 +341,11 @@ impl crate::GlobalNamespace::PauseController {
     }
     pub fn remove_canPauseEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<bool>>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -402,7 +412,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PauseControll
 #[repr(C)]
 #[derive(Debug)]
 pub struct PauseController_InitData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub startPaused: bool,
 }
 #[cfg(feature = "PauseController+InitData")]
@@ -412,7 +422,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PauseController+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::PauseController_InitData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

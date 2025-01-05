@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XRMeshSubsystem {
-    __cordl_parent: quest_hook::libil2cpp::Gc<Blacklisted>,
+    __cordl_parent: crate::UnityEngine::IntegratedSubsystem_1<Blacklisted>,
 }
 #[cfg(feature = "UnityEngine+XR+XRMeshSubsystem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+XR+XRMeshSubsystem")]
 impl std::ops::Deref for crate::UnityEngine::XR::XRMeshSubsystem {
-    type Target = quest_hook::libil2cpp::Gc<Blacklisted>;
+    type Target = crate::UnityEngine::IntegratedSubsystem_1<Blacklisted>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,7 +30,7 @@ impl crate::UnityEngine::XR::XRMeshSubsystem {
         &mut self,
         result: crate::UnityEngine::XR::MeshGenerationResult,
         onMeshGenerationComplete: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::XR::MeshGenerationResult,
+            crate::System::Action_1<crate::UnityEngine::XR::MeshGenerationResult>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -111,16 +111,16 @@ impl crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList {
     }
 }
 #[cfg(feature = "UnityEngine+XR+XRMeshSubsystem+MeshTransformList")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsRef<crate::System::IDisposable>
 for crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+XR+XRMeshSubsystem+MeshTransformList")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsMut<crate::System::IDisposable>
 for crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         todo!()
     }
 }

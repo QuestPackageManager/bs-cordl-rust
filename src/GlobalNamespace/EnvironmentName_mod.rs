@@ -33,7 +33,7 @@ impl crate::GlobalNamespace::EnvironmentName {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Gc1(
+    pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -91,7 +91,7 @@ impl crate::GlobalNamespace::EnvironmentName {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("op_Implicit", (e))?;
         Ok(__cordl_ret.into())
     }
-    pub fn op_Implicit_Gc1(
+    pub fn op_Implicit_Il2CppString1(
         environmentName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::EnvironmentName> {
         let __cordl_ret: crate::GlobalNamespace::EnvironmentName = <Self as quest_hook::libil2cpp::Type>::class()

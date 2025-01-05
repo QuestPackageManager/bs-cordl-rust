@@ -4,7 +4,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExtendedProtectionPolicy {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(
     feature = "System+Security+Authentication+ExtendedProtection+ExtendedProtectionPolicy"
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,7 +37,16 @@ for crate::System::Security::Authentication::ExtendedProtection::ExtendedProtect
     feature = "System+Security+Authentication+ExtendedProtection+ExtendedProtectionPolicy"
 )]
 impl crate::System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy {
-    pub fn New_Gc_StreamingContext1(
+    pub fn New_PolicyEnforcement0(
+        policyEnforcement: crate::System::Security::Authentication::ExtendedProtection::PolicyEnforcement,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (policyEnforcement))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_SerializationInfo_StreamingContext1(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -47,15 +56,6 @@ impl crate::System::Security::Authentication::ExtendedProtection::ExtendedProtec
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (info, context))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_PolicyEnforcement0(
-        policyEnforcement: crate::System::Security::Authentication::ExtendedProtection::PolicyEnforcement,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (policyEnforcement))?;
         Ok(__cordl_object.into())
     }
     pub fn System_Runtime_Serialization_ISerializable_GetObjectData(
@@ -88,7 +88,18 @@ impl crate::System::Security::Authentication::ExtendedProtection::ExtendedProtec
         > = __cordl_object.invoke("ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_StreamingContext1(
+    pub fn _ctor_PolicyEnforcement0(
+        &mut self,
+        policyEnforcement: crate::System::Security::Authentication::ExtendedProtection::PolicyEnforcement,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (policyEnforcement))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_SerializationInfo_StreamingContext1(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -100,17 +111,6 @@ impl crate::System::Security::Authentication::ExtendedProtection::ExtendedProtec
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (info, context))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_PolicyEnforcement0(
-        &mut self,
-        policyEnforcement: crate::System::Security::Authentication::ExtendedProtection::PolicyEnforcement,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (policyEnforcement))?;
         Ok(__cordl_ret.into())
     }
 }
@@ -129,30 +129,18 @@ for crate::System::Security::Authentication::ExtendedProtection::ExtendedProtect
 #[cfg(
     feature = "System+Security+Authentication+ExtendedProtection+ExtendedProtectionPolicy"
 )]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
->
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
 for crate::System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(
     feature = "System+Security+Authentication+ExtendedProtection+ExtendedProtectionPolicy"
 )]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
->
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
 for crate::System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }

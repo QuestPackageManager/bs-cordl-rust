@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XPathItem {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Xml+XPath+XPathItem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XPath+XPathItem")]
 impl std::ops::Deref for crate::System::Xml::XPath::XPathItem {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,21 +31,7 @@ impl crate::System::Xml::XPath::XPathItem {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn ValueAs_Gc0(
-        &mut self,
-        returnType: quest_hook::libil2cpp::Gc<crate::System::Type>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object.invoke("ValueAs", (returnType))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ValueAs_Gc1(
+    pub fn ValueAs_IXmlNamespaceResolver1(
         &mut self,
         returnType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         nsResolver: quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver>,
@@ -58,6 +44,20 @@ impl crate::System::Xml::XPath::XPathItem {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("ValueAs", (returnType, nsResolver))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValueAs_Type0(
+        &mut self,
+        returnType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("ValueAs", (returnType))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

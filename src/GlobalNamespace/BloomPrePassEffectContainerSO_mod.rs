@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassEffectContainerSO {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PersistentScriptableObject,
-    >,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _bloomPrePassEffect: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BloomPrePassEffectSO,
     >,
@@ -16,9 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BloomPrePassEffectContainerSO")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassEffectContainerSO {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PersistentScriptableObject,
-    >;
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

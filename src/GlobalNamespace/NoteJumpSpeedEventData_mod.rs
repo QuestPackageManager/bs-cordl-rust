@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteJumpSpeedEventData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
+    __cordl_parent: crate::GlobalNamespace::BeatmapEventData,
     pub _relativeNoteJumpSpeed_k__BackingField: f32,
     pub easeType: crate::GlobalNamespace::EaseType,
     pub usePreviousValue: bool,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "NoteJumpSpeedEventData")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteJumpSpeedEventData {
-    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>;
+    type Target = crate::GlobalNamespace::BeatmapEventData;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

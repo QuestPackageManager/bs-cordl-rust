@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameplayCoreSceneSetupData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneSetupData>,
+    __cordl_parent: crate::GlobalNamespace::SceneSetupData,
     pub beatmapKey: crate::GlobalNamespace::BeatmapKey,
     pub beatmapBasicData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapBasicData,
@@ -65,7 +65,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "GameplayCoreSceneSetupData")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplayCoreSceneSetupData {
-    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneSetupData>;
+    type Target = crate::GlobalNamespace::SceneSetupData;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -93,14 +93,18 @@ impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
         beatmapLevelDataVersion: crate::GlobalNamespace::BeatmapLevelDataVersion,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
+            >,
         > = __cordl_object.invoke("LoadBeatmapLevelData", (beatmapLevelDataVersion))?;
         Ok(__cordl_ret.into())
     }
@@ -127,7 +131,141 @@ impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
         > = __cordl_object.invoke("LoadTransformedBeatmapDataAsync", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_ByRefMut_Gc__cordl_bool_Gc_Gc__cordl_bool_Gc_Nullable_1_0(
+    pub fn New_ByRefMut_BeatmapLevel_GameplayModifiers_PlayerSpecificSettings_PracticeSettings__cordl_bool_EnvironmentInfoSO_ColorScheme_SettingsManager_AudioClipAsyncLoader_BeatmapDataLoader_BeatmapLevelsEntitlementModel__cordl_bool_EnvironmentsListModel_Nullable_1_2(
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
+        beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+        gameplayModifiers: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameplayModifiers,
+        >,
+        playerSpecificSettings: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSpecificSettings,
+        >,
+        practiceSettings: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PracticeSettings,
+        >,
+        useTestNoteCutSoundEffects: bool,
+        targetEnvironmentInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentInfoSO,
+        >,
+        originalEnvironmentInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentInfoSO,
+        >,
+        colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
+        settingsManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SettingsManager,
+        >,
+        audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::AudioClipAsyncLoader,
+        >,
+        beatmapDataLoader: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapDataLoader,
+        >,
+        beatmapLevelsEntitlementModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
+        >,
+        enableBeatmapDataCaching: bool,
+        environmentsListModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentsListModel,
+        >,
+        recordingToolData: crate::System::Nullable_1<
+            crate::GlobalNamespace::RecordingToolManager_SetupData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    beatmapKey,
+                    beatmapLevel,
+                    gameplayModifiers,
+                    playerSpecificSettings,
+                    practiceSettings,
+                    useTestNoteCutSoundEffects,
+                    targetEnvironmentInfo,
+                    originalEnvironmentInfo,
+                    colorScheme,
+                    settingsManager,
+                    audioClipAsyncLoader,
+                    beatmapDataLoader,
+                    beatmapLevelsEntitlementModel,
+                    enableBeatmapDataCaching,
+                    environmentsListModel,
+                    recordingToolData,
+                ),
+            )?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_ByRefMut_BeatmapLevel_GameplayModifiers_PlayerSpecificSettings_PracticeSettings__cordl_bool_EnvironmentInfoSO_ColorScheme_SettingsManager_AudioClipAsyncLoader_BeatmapDataLoader_BeatmapLevelsEntitlementModel__cordl_bool__cordl_bool_EnvironmentsListModel_Nullable_1_3(
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
+        beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+        gameplayModifiers: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameplayModifiers,
+        >,
+        playerSpecificSettings: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSpecificSettings,
+        >,
+        practiceSettings: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PracticeSettings,
+        >,
+        useTestNoteCutSoundEffects: bool,
+        targetEnvironmentInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentInfoSO,
+        >,
+        originalEnvironmentInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentInfoSO,
+        >,
+        colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
+        settingsManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SettingsManager,
+        >,
+        audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::AudioClipAsyncLoader,
+        >,
+        beatmapDataLoader: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapDataLoader,
+        >,
+        beatmapLevelsEntitlementModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
+        >,
+        enableBeatmapDataCaching: bool,
+        allowNullBeatmapLevelData: bool,
+        environmentsListModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentsListModel,
+        >,
+        recordingToolData: crate::System::Nullable_1<
+            crate::GlobalNamespace::RecordingToolManager_SetupData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    beatmapKey,
+                    beatmapLevel,
+                    gameplayModifiers,
+                    playerSpecificSettings,
+                    practiceSettings,
+                    useTestNoteCutSoundEffects,
+                    targetEnvironmentInfo,
+                    originalEnvironmentInfo,
+                    colorScheme,
+                    settingsManager,
+                    audioClipAsyncLoader,
+                    beatmapDataLoader,
+                    beatmapLevelsEntitlementModel,
+                    enableBeatmapDataCaching,
+                    allowNullBeatmapLevelData,
+                    environmentsListModel,
+                    recordingToolData,
+                ),
+            )?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_ByRefMut_BeatmapLevel_GameplayModifiers_PlayerSpecificSettings_PracticeSettings__cordl_bool_EnvironmentInfoSO_ColorScheme_SettingsManager_AudioClipAsyncLoader_BeatmapDataLoader_BeatmapLevelsModel_BeatmapLevelsEntitlementModel__cordl_bool_EnvironmentsListModel_Nullable_1_0(
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         gameplayModifiers: quest_hook::libil2cpp::Gc<
@@ -197,141 +335,7 @@ impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_ByRefMut_Gc__cordl_bool_Gc__cordl_bool_Gc_Nullable_1_2(
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
-        beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
-        gameplayModifiers: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::GameplayModifiers,
-        >,
-        playerSpecificSettings: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PlayerSpecificSettings,
-        >,
-        practiceSettings: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PracticeSettings,
-        >,
-        useTestNoteCutSoundEffects: bool,
-        targetEnvironmentInfo: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::EnvironmentInfoSO,
-        >,
-        originalEnvironmentInfo: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::EnvironmentInfoSO,
-        >,
-        colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
-        settingsManager: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::SettingsManager,
-        >,
-        audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::AudioClipAsyncLoader,
-        >,
-        beatmapDataLoader: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapDataLoader,
-        >,
-        beatmapLevelsEntitlementModel: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
-        >,
-        enableBeatmapDataCaching: bool,
-        environmentsListModel: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::EnvironmentsListModel,
-        >,
-        recordingToolData: crate::System::Nullable_1<
-            crate::GlobalNamespace::RecordingToolManager_SetupData,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    beatmapKey,
-                    beatmapLevel,
-                    gameplayModifiers,
-                    playerSpecificSettings,
-                    practiceSettings,
-                    useTestNoteCutSoundEffects,
-                    targetEnvironmentInfo,
-                    originalEnvironmentInfo,
-                    colorScheme,
-                    settingsManager,
-                    audioClipAsyncLoader,
-                    beatmapDataLoader,
-                    beatmapLevelsEntitlementModel,
-                    enableBeatmapDataCaching,
-                    environmentsListModel,
-                    recordingToolData,
-                ),
-            )?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_ByRefMut_Gc__cordl_bool_Gc__cordl_bool__cordl_bool_Gc_Nullable_1_3(
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
-        beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
-        gameplayModifiers: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::GameplayModifiers,
-        >,
-        playerSpecificSettings: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PlayerSpecificSettings,
-        >,
-        practiceSettings: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PracticeSettings,
-        >,
-        useTestNoteCutSoundEffects: bool,
-        targetEnvironmentInfo: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::EnvironmentInfoSO,
-        >,
-        originalEnvironmentInfo: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::EnvironmentInfoSO,
-        >,
-        colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
-        settingsManager: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::SettingsManager,
-        >,
-        audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::AudioClipAsyncLoader,
-        >,
-        beatmapDataLoader: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapDataLoader,
-        >,
-        beatmapLevelsEntitlementModel: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
-        >,
-        enableBeatmapDataCaching: bool,
-        allowNullBeatmapLevelData: bool,
-        environmentsListModel: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::EnvironmentsListModel,
-        >,
-        recordingToolData: crate::System::Nullable_1<
-            crate::GlobalNamespace::RecordingToolManager_SetupData,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    beatmapKey,
-                    beatmapLevel,
-                    gameplayModifiers,
-                    playerSpecificSettings,
-                    practiceSettings,
-                    useTestNoteCutSoundEffects,
-                    targetEnvironmentInfo,
-                    originalEnvironmentInfo,
-                    colorScheme,
-                    settingsManager,
-                    audioClipAsyncLoader,
-                    beatmapDataLoader,
-                    beatmapLevelsEntitlementModel,
-                    enableBeatmapDataCaching,
-                    allowNullBeatmapLevelData,
-                    environmentsListModel,
-                    recordingToolData,
-                ),
-            )?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_ByRefMut_Gc__cordl_bool_Gc__cordl_bool_Gc_Nullable_1_1(
+    pub fn New_IBeatmapLevelData_ByRefMut_BeatmapLevel_GameplayModifiers_PlayerSpecificSettings_PracticeSettings__cordl_bool_EnvironmentInfoSO_ColorScheme_SettingsManager_AudioClipAsyncLoader_BeatmapDataLoader_BeatmapLevelsEntitlementModel__cordl_bool_EnvironmentsListModel_Nullable_1_1(
         beatmapLevelData: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IBeatmapLevelData,
         >,
@@ -417,7 +421,145 @@ impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
         > = __cordl_object.invoke("TransformBeatmapData", (beatmapData))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_ByRefMut_Gc__cordl_bool_Gc_Gc__cordl_bool_Gc_Nullable_1_0(
+    pub fn _ctor_ByRefMut_BeatmapLevel_GameplayModifiers_PlayerSpecificSettings_PracticeSettings__cordl_bool_EnvironmentInfoSO_ColorScheme_SettingsManager_AudioClipAsyncLoader_BeatmapDataLoader_BeatmapLevelsEntitlementModel__cordl_bool_EnvironmentsListModel_Nullable_1_2(
+        &mut self,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
+        beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+        gameplayModifiers: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameplayModifiers,
+        >,
+        playerSpecificSettings: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSpecificSettings,
+        >,
+        practiceSettings: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PracticeSettings,
+        >,
+        useTestNoteCutSoundEffects: bool,
+        targetEnvironmentInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentInfoSO,
+        >,
+        originalEnvironmentInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentInfoSO,
+        >,
+        colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
+        settingsManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SettingsManager,
+        >,
+        audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::AudioClipAsyncLoader,
+        >,
+        beatmapDataLoader: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapDataLoader,
+        >,
+        beatmapLevelsEntitlementModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
+        >,
+        enableBeatmapDataCaching: bool,
+        environmentsListModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentsListModel,
+        >,
+        recordingToolData: crate::System::Nullable_1<
+            crate::GlobalNamespace::RecordingToolManager_SetupData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                ".ctor",
+                (
+                    beatmapKey,
+                    beatmapLevel,
+                    gameplayModifiers,
+                    playerSpecificSettings,
+                    practiceSettings,
+                    useTestNoteCutSoundEffects,
+                    targetEnvironmentInfo,
+                    originalEnvironmentInfo,
+                    colorScheme,
+                    settingsManager,
+                    audioClipAsyncLoader,
+                    beatmapDataLoader,
+                    beatmapLevelsEntitlementModel,
+                    enableBeatmapDataCaching,
+                    environmentsListModel,
+                    recordingToolData,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_ByRefMut_BeatmapLevel_GameplayModifiers_PlayerSpecificSettings_PracticeSettings__cordl_bool_EnvironmentInfoSO_ColorScheme_SettingsManager_AudioClipAsyncLoader_BeatmapDataLoader_BeatmapLevelsEntitlementModel__cordl_bool__cordl_bool_EnvironmentsListModel_Nullable_1_3(
+        &mut self,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
+        beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+        gameplayModifiers: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameplayModifiers,
+        >,
+        playerSpecificSettings: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSpecificSettings,
+        >,
+        practiceSettings: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PracticeSettings,
+        >,
+        useTestNoteCutSoundEffects: bool,
+        targetEnvironmentInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentInfoSO,
+        >,
+        originalEnvironmentInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentInfoSO,
+        >,
+        colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
+        settingsManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SettingsManager,
+        >,
+        audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::AudioClipAsyncLoader,
+        >,
+        beatmapDataLoader: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapDataLoader,
+        >,
+        beatmapLevelsEntitlementModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
+        >,
+        enableBeatmapDataCaching: bool,
+        allowNullBeatmapLevelData: bool,
+        environmentsListModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentsListModel,
+        >,
+        recordingToolData: crate::System::Nullable_1<
+            crate::GlobalNamespace::RecordingToolManager_SetupData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                ".ctor",
+                (
+                    beatmapKey,
+                    beatmapLevel,
+                    gameplayModifiers,
+                    playerSpecificSettings,
+                    practiceSettings,
+                    useTestNoteCutSoundEffects,
+                    targetEnvironmentInfo,
+                    originalEnvironmentInfo,
+                    colorScheme,
+                    settingsManager,
+                    audioClipAsyncLoader,
+                    beatmapDataLoader,
+                    beatmapLevelsEntitlementModel,
+                    enableBeatmapDataCaching,
+                    allowNullBeatmapLevelData,
+                    environmentsListModel,
+                    recordingToolData,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_ByRefMut_BeatmapLevel_GameplayModifiers_PlayerSpecificSettings_PracticeSettings__cordl_bool_EnvironmentInfoSO_ColorScheme_SettingsManager_AudioClipAsyncLoader_BeatmapDataLoader_BeatmapLevelsModel_BeatmapLevelsEntitlementModel__cordl_bool_EnvironmentsListModel_Nullable_1_0(
         &mut self,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
@@ -489,145 +631,7 @@ impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_ByRefMut_Gc__cordl_bool_Gc__cordl_bool_Gc_Nullable_1_2(
-        &mut self,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
-        beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
-        gameplayModifiers: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::GameplayModifiers,
-        >,
-        playerSpecificSettings: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PlayerSpecificSettings,
-        >,
-        practiceSettings: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PracticeSettings,
-        >,
-        useTestNoteCutSoundEffects: bool,
-        targetEnvironmentInfo: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::EnvironmentInfoSO,
-        >,
-        originalEnvironmentInfo: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::EnvironmentInfoSO,
-        >,
-        colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
-        settingsManager: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::SettingsManager,
-        >,
-        audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::AudioClipAsyncLoader,
-        >,
-        beatmapDataLoader: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapDataLoader,
-        >,
-        beatmapLevelsEntitlementModel: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
-        >,
-        enableBeatmapDataCaching: bool,
-        environmentsListModel: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::EnvironmentsListModel,
-        >,
-        recordingToolData: crate::System::Nullable_1<
-            crate::GlobalNamespace::RecordingToolManager_SetupData,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
-                (
-                    beatmapKey,
-                    beatmapLevel,
-                    gameplayModifiers,
-                    playerSpecificSettings,
-                    practiceSettings,
-                    useTestNoteCutSoundEffects,
-                    targetEnvironmentInfo,
-                    originalEnvironmentInfo,
-                    colorScheme,
-                    settingsManager,
-                    audioClipAsyncLoader,
-                    beatmapDataLoader,
-                    beatmapLevelsEntitlementModel,
-                    enableBeatmapDataCaching,
-                    environmentsListModel,
-                    recordingToolData,
-                ),
-            )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_ByRefMut_Gc__cordl_bool_Gc__cordl_bool__cordl_bool_Gc_Nullable_1_3(
-        &mut self,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
-        beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
-        gameplayModifiers: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::GameplayModifiers,
-        >,
-        playerSpecificSettings: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PlayerSpecificSettings,
-        >,
-        practiceSettings: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PracticeSettings,
-        >,
-        useTestNoteCutSoundEffects: bool,
-        targetEnvironmentInfo: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::EnvironmentInfoSO,
-        >,
-        originalEnvironmentInfo: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::EnvironmentInfoSO,
-        >,
-        colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
-        settingsManager: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::SettingsManager,
-        >,
-        audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::AudioClipAsyncLoader,
-        >,
-        beatmapDataLoader: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapDataLoader,
-        >,
-        beatmapLevelsEntitlementModel: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
-        >,
-        enableBeatmapDataCaching: bool,
-        allowNullBeatmapLevelData: bool,
-        environmentsListModel: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::EnvironmentsListModel,
-        >,
-        recordingToolData: crate::System::Nullable_1<
-            crate::GlobalNamespace::RecordingToolManager_SetupData,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
-                (
-                    beatmapKey,
-                    beatmapLevel,
-                    gameplayModifiers,
-                    playerSpecificSettings,
-                    practiceSettings,
-                    useTestNoteCutSoundEffects,
-                    targetEnvironmentInfo,
-                    originalEnvironmentInfo,
-                    colorScheme,
-                    settingsManager,
-                    audioClipAsyncLoader,
-                    beatmapDataLoader,
-                    beatmapLevelsEntitlementModel,
-                    enableBeatmapDataCaching,
-                    allowNullBeatmapLevelData,
-                    environmentsListModel,
-                    recordingToolData,
-                ),
-            )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_ByRefMut_Gc__cordl_bool_Gc__cordl_bool_Gc_Nullable_1_1(
+    pub fn _ctor_IBeatmapLevelData_ByRefMut_BeatmapLevel_GameplayModifiers_PlayerSpecificSettings_PracticeSettings__cordl_bool_EnvironmentInfoSO_ColorScheme_SettingsManager_AudioClipAsyncLoader_BeatmapDataLoader_BeatmapLevelsEntitlementModel__cordl_bool_EnvironmentsListModel_Nullable_1_1(
         &mut self,
         beatmapLevelData: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IBeatmapLevelData,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct VRPointer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _leftVRController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::VRController,
     >,
@@ -16,7 +16,9 @@ pub struct VRPointer {
     pub _defaultLaserPointerLength: f32,
     pub _laserPointerWidth: f32,
     pub lastUsedControllerChangedEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRController>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRController>,
+        >,
     >,
     pub _currentPointerData: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::EventSystems::PointerEventData,
@@ -50,7 +52,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "VRUIControls+VRPointer")]
 impl std::ops::Deref for crate::VRUIControls::VRPointer {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -251,7 +253,9 @@ impl crate::VRUIControls::VRPointer {
     pub fn add_lastUsedControllerChangedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRController>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRController>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -334,7 +338,9 @@ impl crate::VRUIControls::VRPointer {
     pub fn remove_lastUsedControllerChangedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRController>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRController>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

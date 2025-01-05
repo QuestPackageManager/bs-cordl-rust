@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AbstractTlsContext {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mNonceRandom: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Prng::IRandomGenerator,
     >,
@@ -31,7 +31,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsContext")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsContext {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -260,22 +260,16 @@ for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsContext {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsContext")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsContext>>
+impl AsRef<crate::Org::BouncyCastle::Crypto::Tls::TlsContext>
 for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsContext {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsContext> {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Tls::TlsContext {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsContext")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsContext>>
+impl AsMut<crate::Org::BouncyCastle::Crypto::Tls::TlsContext>
 for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsContext {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
-    > {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::Tls::TlsContext {
         unsafe { std::mem::transmute(self) }
     }
 }

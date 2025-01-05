@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BasicConstraintsExtension {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Mono::Security::X509::X509Extension,
-    >,
+    __cordl_parent: crate::Mono::Security::X509::X509Extension,
     pub cA: bool,
     pub pathLenConstraint: i32,
 }
@@ -17,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Mono+Security+X509+Extensions+BasicConstraintsExtension")]
 impl std::ops::Deref
 for crate::Mono::Security::X509::Extensions::BasicConstraintsExtension {
-    type Target = quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Extension>;
+    type Target = crate::Mono::Security::X509::X509Extension;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

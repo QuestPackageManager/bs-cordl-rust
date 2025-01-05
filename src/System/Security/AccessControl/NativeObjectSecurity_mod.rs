@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NativeObjectSecurity {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Security::AccessControl::CommonObjectSecurity,
-    >,
+    __cordl_parent: crate::System::Security::AccessControl::CommonObjectSecurity,
     pub exception_from_error_code: quest_hook::libil2cpp::Gc<
         crate::System::Security::AccessControl::NativeObjectSecurity_ExceptionFromErrorCode,
     >,
@@ -17,9 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+AccessControl+NativeObjectSecurity")]
 impl std::ops::Deref for crate::System::Security::AccessControl::NativeObjectSecurity {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Security::AccessControl::CommonObjectSecurity,
-    >;
+    type Target = crate::System::Security::AccessControl::CommonObjectSecurity;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -76,7 +72,7 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity {
             .invoke("InternalGet", (name, includeSections))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_AccessControlSections1(
+    pub fn New_Il2CppString_AccessControlSections1(
         isContainer: bool,
         resourceType: crate::System::Security::AccessControl::ResourceType,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -88,7 +84,7 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity {
             .invoke_void(".ctor", (isContainer, resourceType, name, includeSections))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_AccessControlSections_Gc_Gc2(
+    pub fn New_Il2CppString_AccessControlSections_NativeObjectSecurity_ExceptionFromErrorCode_Il2CppObject2(
         isContainer: bool,
         resourceType: crate::System::Security::AccessControl::ResourceType,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -114,7 +110,7 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc0(
+    pub fn New_NativeObjectSecurity_ExceptionFromErrorCode_Il2CppObject0(
         isContainer: bool,
         resourceType: crate::System::Security::AccessControl::ResourceType,
         exceptionFromErrorCode: quest_hook::libil2cpp::Gc<
@@ -147,7 +143,7 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity {
             .invoke("RaiseExceptionOnFailure", (errorCode, name, handle, context))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_AccessControlSections1(
+    pub fn _ctor_Il2CppString_AccessControlSections1(
         &mut self,
         isContainer: bool,
         resourceType: crate::System::Security::AccessControl::ResourceType,
@@ -161,7 +157,7 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity {
             .invoke(".ctor", (isContainer, resourceType, name, includeSections))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_AccessControlSections_Gc_Gc2(
+    pub fn _ctor_Il2CppString_AccessControlSections_NativeObjectSecurity_ExceptionFromErrorCode_Il2CppObject2(
         &mut self,
         isContainer: bool,
         resourceType: crate::System::Security::AccessControl::ResourceType,
@@ -189,7 +185,7 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_NativeObjectSecurity_ExceptionFromErrorCode_Il2CppObject0(
         &mut self,
         isContainer: bool,
         resourceType: crate::System::Security::AccessControl::ResourceType,
@@ -225,7 +221,7 @@ for crate::System::Security::AccessControl::NativeObjectSecurity {
 #[repr(C)]
 #[derive(Debug)]
 pub struct NativeObjectSecurity_ExceptionFromErrorCode {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
     feature = "System+Security+AccessControl+NativeObjectSecurity+ExceptionFromErrorCode"
@@ -240,7 +236,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::System::Security::AccessControl::NativeObjectSecurity_ExceptionFromErrorCode {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

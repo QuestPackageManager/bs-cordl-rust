@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AndroidAmbientTemperature {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::AmbientTemperatureSensor,
-    >,
+    __cordl_parent: crate::UnityEngine::InputSystem::AmbientTemperatureSensor,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Android+AndroidAmbientTemperature")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+InputSystem+Android+AndroidAmbientTemperature")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Android::AndroidAmbientTemperature {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::AmbientTemperatureSensor,
-    >;
+    type Target = crate::UnityEngine::InputSystem::AmbientTemperatureSensor;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

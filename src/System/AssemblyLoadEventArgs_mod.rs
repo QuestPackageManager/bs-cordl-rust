@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssemblyLoadEventArgs {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::EventArgs>,
+    __cordl_parent: crate::System::EventArgs,
     pub _LoadedAssembly_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::System::Reflection::Assembly,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+AssemblyLoadEventArgs")]
 impl std::ops::Deref for crate::System::AssemblyLoadEventArgs {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::EventArgs>;
+    type Target = crate::System::EventArgs;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

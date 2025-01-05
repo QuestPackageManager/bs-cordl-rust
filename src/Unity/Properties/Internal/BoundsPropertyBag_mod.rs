@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BoundsPropertyBag {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Bounds>,
+    __cordl_parent: crate::Unity::Properties::ContainerPropertyBag_1<
+        crate::UnityEngine::Bounds,
+    >,
 }
 #[cfg(feature = "Unity+Properties+Internal+BoundsPropertyBag")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Properties+Internal+BoundsPropertyBag")]
 impl std::ops::Deref for crate::Unity::Properties::Internal::BoundsPropertyBag {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Bounds>;
+    type Target = crate::Unity::Properties::ContainerPropertyBag_1<
+        crate::UnityEngine::Bounds,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -60,7 +64,7 @@ for crate::Unity::Properties::Internal::BoundsPropertyBag {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BoundsPropertyBag_CenterProperty {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Unity::Properties::Property_2<
         crate::UnityEngine::Bounds,
         crate::UnityEngine::Vector3,
     >,
@@ -74,7 +78,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Unity+Properties+Internal+BoundsPropertyBag+CenterProperty")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::BoundsPropertyBag_CenterProperty {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Unity::Properties::Property_2<
         crate::UnityEngine::Bounds,
         crate::UnityEngine::Vector3,
     >;
@@ -136,7 +140,7 @@ for crate::Unity::Properties::Internal::BoundsPropertyBag_CenterProperty {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BoundsPropertyBag_ExtentsProperty {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Unity::Properties::Property_2<
         crate::UnityEngine::Bounds,
         crate::UnityEngine::Vector3,
     >,
@@ -150,7 +154,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Unity+Properties+Internal+BoundsPropertyBag+ExtentsProperty")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::BoundsPropertyBag_ExtentsProperty {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Unity::Properties::Property_2<
         crate::UnityEngine::Bounds,
         crate::UnityEngine::Vector3,
     >;

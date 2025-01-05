@@ -2,16 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StackTrace {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub frames: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::System::Diagnostics::StackFrame>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Diagnostics::StackFrame>,
     >,
     pub captured_traces: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::System::Diagnostics::StackTrace>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Diagnostics::StackTrace>,
     >,
     pub debug_info: bool,
 }
@@ -22,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Diagnostics+StackTrace")]
 impl std::ops::Deref for crate::System::Diagnostics::StackTrace {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -111,7 +107,7 @@ impl crate::System::Diagnostics::StackTrace {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc__cordl_bool4(
+    pub fn New_Exception__cordl_bool4(
         e: quest_hook::libil2cpp::Gc<crate::System::Exception>,
         fNeedFileInfo: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -121,7 +117,7 @@ impl crate::System::Diagnostics::StackTrace {
             .invoke_void(".ctor", (e, fNeedFileInfo))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_i32__cordl_bool5(
+    pub fn New_Exception_i32__cordl_bool5(
         e: quest_hook::libil2cpp::Gc<crate::System::Exception>,
         skipFrames: i32,
         fNeedFileInfo: bool,
@@ -197,7 +193,7 @@ impl crate::System::Diagnostics::StackTrace {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc__cordl_bool4(
+    pub fn _ctor_Exception__cordl_bool4(
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::System::Exception>,
         fNeedFileInfo: bool,
@@ -209,7 +205,7 @@ impl crate::System::Diagnostics::StackTrace {
             .invoke(".ctor", (e, fNeedFileInfo))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_i32__cordl_bool5(
+    pub fn _ctor_Exception_i32__cordl_bool5(
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::System::Exception>,
         skipFrames: i32,
@@ -270,13 +266,13 @@ impl crate::System::Diagnostics::StackTrace {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Diagnostics::StackFrame>,
+                *mut crate::System::Diagnostics::StackFrame,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Diagnostics::StackFrame>,
+                *mut crate::System::Diagnostics::StackFrame,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("get_trace", (e, skipFrames, fNeedFileInfo))?;

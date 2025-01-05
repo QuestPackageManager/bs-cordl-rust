@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLevelLoader {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IMultiplayerSessionManager,
     >,
@@ -14,15 +14,19 @@ pub struct MultiplayerLevelLoader {
     >,
     pub stillDownloadingSongEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub countdownFinishedEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelGameplaySetupData>,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelGameplaySetupData>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
+        >,
     >,
     pub _loaderState: crate::GlobalNamespace::MultiplayerLevelLoader_MultiplayerBeatmapLoaderState,
     pub _getBeatmapCancellationTokenSource: quest_hook::libil2cpp::Gc<
         crate::System::Threading::CancellationTokenSource,
     >,
     pub _getBeatmapLevelResultTask: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LoadBeatmapLevelDataResult,
+        crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::LoadBeatmapLevelDataResult,
+        >,
     >,
     pub _gameplaySetupData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::ILevelGameplaySetupData,
@@ -40,7 +44,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplayerLevelLoader")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLevelLoader {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -71,13 +75,19 @@ impl crate::GlobalNamespace::MultiplayerLevelLoader {
             crate::GlobalNamespace::ILevelGameplaySetupData,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LoadBeatmapLevelDataResult>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::LoadBeatmapLevelDataResult,
+            >,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LoadBeatmapLevelDataResult,
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::LoadBeatmapLevelDataResult,
+            >,
         > = __cordl_object.invoke("LoadBeatmapLevelDataAsync", (gameplaySetupData))?;
         Ok(__cordl_ret.into())
     }
@@ -136,8 +146,12 @@ impl crate::GlobalNamespace::MultiplayerLevelLoader {
     pub fn add_countdownFinishedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelGameplaySetupData>,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::ILevelGameplaySetupData,
+                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -161,8 +175,12 @@ impl crate::GlobalNamespace::MultiplayerLevelLoader {
     pub fn remove_countdownFinishedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelGameplaySetupData>,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::ILevelGameplaySetupData,
+                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -195,16 +213,16 @@ for crate::GlobalNamespace::MultiplayerLevelLoader {
     }
 }
 #[cfg(feature = "MultiplayerLevelLoader")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::ITickable>>
+impl AsRef<crate::Zenject::ITickable>
 for crate::GlobalNamespace::MultiplayerLevelLoader {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::ITickable> {
+    fn as_ref(&self) -> &crate::Zenject::ITickable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MultiplayerLevelLoader")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::ITickable>>
+impl AsMut<crate::Zenject::ITickable>
 for crate::GlobalNamespace::MultiplayerLevelLoader {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::ITickable> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::ITickable {
         unsafe { std::mem::transmute(self) }
     }
 }

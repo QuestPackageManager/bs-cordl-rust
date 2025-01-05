@@ -2,11 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AudioClipQueue {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
     pub _queue: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::AudioClipQueue_AudioClipWithDelay,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::AudioClipQueue_AudioClipWithDelay,
+            >,
         >,
     >,
 }
@@ -17,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "AudioClipQueue")]
 impl std::ops::Deref for crate::GlobalNamespace::AudioClipQueue {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -95,7 +97,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AudioClipQueu
 #[repr(C)]
 #[derive(Debug)]
 pub struct AudioClipQueue_AudioClipWithDelay {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub audioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
     pub delay: f32,
 }
@@ -107,7 +109,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "AudioClipQueue+AudioClipWithDelay")]
 impl std::ops::Deref for crate::GlobalNamespace::AudioClipQueue_AudioClipWithDelay {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

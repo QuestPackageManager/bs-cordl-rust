@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassEffectSO {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TextureEffectSO>,
+    __cordl_parent: crate::GlobalNamespace::TextureEffectSO,
     pub _textureWidth: i32,
     pub _textureHeight: i32,
     pub _fov: crate::UnityEngine::Vector2,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BloomPrePassEffectSO")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassEffectSO {
-    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TextureEffectSO>;
+    type Target = crate::GlobalNamespace::TextureEffectSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -110,20 +110,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BloomPrePassE
     }
 }
 #[cfg(feature = "BloomPrePassEffectSO")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBloomPrePassParams>>
+impl AsRef<crate::GlobalNamespace::IBloomPrePassParams>
 for crate::GlobalNamespace::BloomPrePassEffectSO {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBloomPrePassParams> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IBloomPrePassParams {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BloomPrePassEffectSO")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBloomPrePassParams>>
+impl AsMut<crate::GlobalNamespace::IBloomPrePassParams>
 for crate::GlobalNamespace::BloomPrePassEffectSO {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBloomPrePassParams> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IBloomPrePassParams {
         unsafe { std::mem::transmute(self) }
     }
 }

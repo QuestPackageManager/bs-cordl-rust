@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventsTestScenesTransitionSetupDataSO {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::ScenesTransitionSetupDataSO,
-    >,
+    __cordl_parent: crate::GlobalNamespace::ScenesTransitionSetupDataSO,
     pub _environmentInfo: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::EnvironmentInfoSO,
     >,
@@ -21,9 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "EventsTestScenesTransitionSetupDataSO")]
 impl std::ops::Deref for crate::GlobalNamespace::EventsTestScenesTransitionSetupDataSO {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::ScenesTransitionSetupDataSO,
-    >;
+    type Target = crate::GlobalNamespace::ScenesTransitionSetupDataSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

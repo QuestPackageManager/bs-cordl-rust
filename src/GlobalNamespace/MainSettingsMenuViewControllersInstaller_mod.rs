@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MainSettingsMenuViewControllersInstaller {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
+    __cordl_parent: crate::Zenject::MonoInstaller,
     pub _defaultSettingsMenuViewController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MainSettingsMenuViewController,
     >,
@@ -31,7 +31,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MainSettingsMenuViewControllersInstaller")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MainSettingsMenuViewControllersInstaller {
-    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>;
+    type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

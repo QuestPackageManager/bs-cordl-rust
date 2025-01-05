@@ -2,16 +2,20 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LeaderboardScoreUploader {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub allScoresDidUploadEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _scoresToUpload: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData,
+            >,
         >,
     >,
     pub _scoresToUploadForCurrentPlayer: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData,
+            >,
         >,
     >,
     pub _uploadScoreCallback: quest_hook::libil2cpp::Gc<
@@ -28,7 +32,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LeaderboardScoreUploader")]
 impl std::ops::Deref for crate::GlobalNamespace::LeaderboardScoreUploader {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -195,7 +199,7 @@ for crate::GlobalNamespace::LeaderboardScoreUploader {
 #[repr(C)]
 #[derive(Debug)]
 pub struct LeaderboardScoreUploader_ScoreData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _playerId_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
@@ -221,7 +225,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LeaderboardScoreUploader+ScoreData")]
 impl std::ops::Deref for crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -514,10 +518,12 @@ for crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct LeaderboardScoreUploader_ScoresToUploadData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub scores: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData,
+            >,
         >,
     >,
 }
@@ -530,7 +536,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "LeaderboardScoreUploader+ScoresToUploadData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LeaderboardScoreUploader_ScoresToUploadData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -576,7 +582,7 @@ for crate::GlobalNamespace::LeaderboardScoreUploader_ScoresToUploadData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct LeaderboardScoreUploader_UploadScoreCallback {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "LeaderboardScoreUploader+UploadScoreCallback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -587,7 +593,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "LeaderboardScoreUploader+UploadScoreCallback")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LeaderboardScoreUploader_UploadScoreCallback {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

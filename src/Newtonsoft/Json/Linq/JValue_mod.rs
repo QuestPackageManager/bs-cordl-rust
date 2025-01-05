@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JValue {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+    __cordl_parent: crate::Newtonsoft::Json::Linq::JToken,
     pub _valueType: crate::Newtonsoft::Json::Linq::JTokenType,
     pub _value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Linq::JValue {
-    type Target = quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>;
+    type Target = crate::Newtonsoft::Json::Linq::JToken;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -128,17 +128,7 @@ impl crate::Newtonsoft::Json::Linq::JValue {
         let __cordl_ret: bool = __cordl_object.invoke("DeepEquals", (node))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Gc0(
-        &mut self,
-        other: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Equals_Gc1(
+    pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -146,6 +136,16 @@ impl crate::Newtonsoft::Json::Linq::JValue {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Equals_JValue0(
+        &mut self,
+        other: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetDeepHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -220,8 +220,8 @@ impl crate::Newtonsoft::Json::Linq::JValue {
             .invoke_void(".ctor", (value))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc12(
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub fn New_Guid13(
+        value: crate::System::Guid,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -229,16 +229,7 @@ impl crate::Newtonsoft::Json::Linq::JValue {
             .invoke_void(".ctor", (value))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc14(
-        value: quest_hook::libil2cpp::Gc<crate::System::Uri>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (value))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc16(
+    pub fn New_Il2CppObject16(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -247,7 +238,26 @@ impl crate::Newtonsoft::Json::Linq::JValue {
             .invoke_void(".ctor", (value))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc2(
+    pub fn New_Il2CppObject_JTokenType0(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        _cordl_type: crate::Newtonsoft::Json::Linq::JTokenType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (value, _cordl_type))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Il2CppString12(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (value))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_JValue2(
         other: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -256,7 +266,7 @@ impl crate::Newtonsoft::Json::Linq::JValue {
             .invoke_void(".ctor", (other))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc1(
+    pub fn New_JValue_JsonCloneSettings1(
         other: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
         settings: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Linq::JsonCloneSettings,
@@ -268,18 +278,8 @@ impl crate::Newtonsoft::Json::Linq::JValue {
             .invoke_void(".ctor", (other, settings))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_JTokenType0(
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        _cordl_type: crate::Newtonsoft::Json::Linq::JTokenType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (value, _cordl_type))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Guid13(
-        value: crate::System::Guid,
+    pub fn New_TimeSpan15(
+        value: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -287,8 +287,8 @@ impl crate::Newtonsoft::Json::Linq::JValue {
             .invoke_void(".ctor", (value))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_TimeSpan15(
-        value: crate::System::TimeSpan,
+    pub fn New_Uri14(
+        value: quest_hook::libil2cpp::Gc<crate::System::Uri>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -566,21 +566,7 @@ impl crate::Newtonsoft::Json::Linq::JValue {
         > = __cordl_object.invoke("ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Gc1(
-        &mut self,
-        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = __cordl_object.invoke("ToString", (format))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ToString_Gc2(
+    pub fn ToString_IFormatProvider2(
         &mut self,
         formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<
@@ -594,7 +580,21 @@ impl crate::Newtonsoft::Json::Linq::JValue {
         > = __cordl_object.invoke("ToString", (formatProvider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Gc_Gc3(
+    pub fn ToString_Il2CppString1(
+        &mut self,
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("ToString", (format))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToString_Il2CppString_IFormatProvider3(
         &mut self,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
@@ -622,7 +622,7 @@ impl crate::Newtonsoft::Json::Linq::JValue {
         writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
         converters: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
+                *mut crate::Newtonsoft::Json::JsonConverter,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -639,7 +639,7 @@ impl crate::Newtonsoft::Json::Linq::JValue {
         cancellationToken: crate::System::Threading::CancellationToken,
         converters: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
+                *mut crate::Newtonsoft::Json::JsonConverter,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -687,9 +687,9 @@ impl crate::Newtonsoft::Json::Linq::JValue {
             .invoke(".ctor", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc12(
+    pub fn _ctor_Guid13(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: crate::System::Guid,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -698,18 +698,7 @@ impl crate::Newtonsoft::Json::Linq::JValue {
             .invoke(".ctor", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc14(
-        &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Uri>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (value))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc16(
+    pub fn _ctor_Il2CppObject16(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -720,7 +709,30 @@ impl crate::Newtonsoft::Json::Linq::JValue {
             .invoke(".ctor", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_Il2CppObject_JTokenType0(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        _cordl_type: crate::Newtonsoft::Json::Linq::JTokenType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (value, _cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppString12(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_JValue2(
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -731,7 +743,7 @@ impl crate::Newtonsoft::Json::Linq::JValue {
             .invoke(".ctor", (other))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc1(
+    pub fn _ctor_JValue_JsonCloneSettings1(
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
         settings: quest_hook::libil2cpp::Gc<
@@ -745,21 +757,9 @@ impl crate::Newtonsoft::Json::Linq::JValue {
             .invoke(".ctor", (other, settings))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_JTokenType0(
+    pub fn _ctor_TimeSpan15(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        _cordl_type: crate::Newtonsoft::Json::Linq::JTokenType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (value, _cordl_type))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Guid13(
-        &mut self,
-        value: crate::System::Guid,
+        value: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -768,9 +768,9 @@ impl crate::Newtonsoft::Json::Linq::JValue {
             .invoke(".ctor", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_TimeSpan15(
+    pub fn _ctor_Uri14(
         &mut self,
-        value: crate::System::TimeSpan,
+        value: quest_hook::libil2cpp::Gc<crate::System::Uri>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -897,56 +897,26 @@ impl quest_hook::libil2cpp::ObjectType for crate::Newtonsoft::Json::Linq::JValue
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
-for crate::Newtonsoft::Json::Linq::JValue {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IComparable> {
+impl AsRef<crate::System::IComparable> for crate::Newtonsoft::Json::Linq::JValue {
+    fn as_ref(&self) -> &crate::System::IComparable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
-for crate::Newtonsoft::Json::Linq::JValue {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IComparable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IConvertible>>
-for crate::Newtonsoft::Json::Linq::JValue {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IConvertible> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IConvertible>>
-for crate::Newtonsoft::Json::Linq::JValue {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IConvertible> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
-for crate::Newtonsoft::Json::Linq::JValue {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
-for crate::Newtonsoft::Json::Linq::JValue {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
+impl AsMut<crate::System::IComparable> for crate::Newtonsoft::Json::Linq::JValue {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IComparable_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
     >,
 > for crate::Newtonsoft::Json::Linq::JValue {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IComparable_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -954,27 +924,39 @@ impl AsRef<
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IComparable_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
     >,
 > for crate::Newtonsoft::Json::Linq::JValue {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IComparable_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
     > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
+impl AsRef<crate::System::IConvertible> for crate::Newtonsoft::Json::Linq::JValue {
+    fn as_ref(&self) -> &crate::System::IConvertible {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
+impl AsMut<crate::System::IConvertible> for crate::Newtonsoft::Json::Linq::JValue {
+    fn as_mut(&mut self) -> &mut crate::System::IConvertible {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
     >,
 > for crate::Newtonsoft::Json::Linq::JValue {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -982,15 +964,27 @@ impl AsRef<
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
     >,
 > for crate::Newtonsoft::Json::Linq::JValue {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
     > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
+impl AsRef<crate::System::IFormattable> for crate::Newtonsoft::Json::Linq::JValue {
+    fn as_ref(&self) -> &crate::System::IFormattable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
+impl AsMut<crate::System::IFormattable> for crate::Newtonsoft::Json::Linq::JValue {
+    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -998,7 +992,7 @@ impl AsMut<
 #[repr(C)]
 #[derive(Debug)]
 pub struct JValue_JValueDynamicProxy {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Newtonsoft::Json::Utilities::DynamicProxy_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
     >,
 }
@@ -1010,7 +1004,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Linq+JValue+JValueDynamicProxy")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Linq::JValue_JValueDynamicProxy {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Newtonsoft::Json::Utilities::DynamicProxy_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
     >;
     fn deref(&self) -> &Self::Target {

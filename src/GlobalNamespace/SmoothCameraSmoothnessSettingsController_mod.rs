@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SmoothCameraSmoothnessSettingsController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::ListSettingsController,
-    >,
+    __cordl_parent: crate::GlobalNamespace::ListSettingsController,
     pub _settingsManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SettingsManager,
     >,
@@ -18,9 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "SmoothCameraSmoothnessSettingsController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SmoothCameraSmoothnessSettingsController {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::ListSettingsController,
-    >;
+    type Target = crate::GlobalNamespace::ListSettingsController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

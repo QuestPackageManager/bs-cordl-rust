@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GenericDropdownMenu {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _dropdownMenu: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::GenericDropdownMenu,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BGLib+UIToolkitUtilities+GenericDropdownMenu")]
 impl std::ops::Deref for crate::BGLib::UIToolkitUtilities::GenericDropdownMenu {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -39,23 +39,7 @@ impl crate::BGLib::UIToolkitUtilities::GenericDropdownMenu {
             .invoke("AddDisabledItem", (itemName, isChecked))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddItem_Gc1(
-        &mut self,
-        itemName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        isChecked: bool,
-        action: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
-        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddItem", (itemName, isChecked, action, data))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn AddItem_Gc__cordl_bool_Gc0(
+    pub fn AddItem_Action0(
         &mut self,
         itemName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isChecked: bool,
@@ -66,6 +50,24 @@ impl crate::BGLib::UIToolkitUtilities::GenericDropdownMenu {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddItem", (itemName, isChecked, action))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddItem_Action_1_Il2CppObject1(
+        &mut self,
+        itemName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        isChecked: bool,
+        action: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
+        >,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddItem", (itemName, isChecked, action, data))?;
         Ok(__cordl_ret.into())
     }
     pub fn AddSeparator(

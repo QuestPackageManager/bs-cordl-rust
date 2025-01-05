@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssetReference {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_AssetGUID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_SubObjectName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_SubObjectType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+AddressableAssets+AssetReference")]
 impl std::ops::Deref for crate::UnityEngine::AddressableAssets::AssetReference {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -43,7 +43,7 @@ impl crate::UnityEngine::AddressableAssets::AssetReference {
             .invoke("CreateFailedOperation", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn InstantiateAsync_Gc__cordl_bool1(
+    pub fn InstantiateAsync_Transform__cordl_bool1(
         &mut self,
         parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         instantiateInWorldSpace: bool,
@@ -61,7 +61,7 @@ impl crate::UnityEngine::AddressableAssets::AssetReference {
             .invoke("InstantiateAsync", (parent, instantiateInWorldSpace))?;
         Ok(__cordl_ret.into())
     }
-    pub fn InstantiateAsync_Vector3_Quaternion_Gc0(
+    pub fn InstantiateAsync_Vector3_Quaternion_Transform0(
         &mut self,
         position: crate::UnityEngine::Vector3,
         rotation: crate::UnityEngine::Quaternion,
@@ -79,7 +79,7 @@ impl crate::UnityEngine::AddressableAssets::AssetReference {
         > = __cordl_object.invoke("InstantiateAsync", (position, rotation, parent))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Instantiate_Gc__cordl_bool1(
+    pub fn Instantiate_Transform__cordl_bool1(
         &mut self,
         parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         instantiateInWorldSpace: bool,
@@ -96,7 +96,7 @@ impl crate::UnityEngine::AddressableAssets::AssetReference {
         > = __cordl_object.invoke("Instantiate", (parent, instantiateInWorldSpace))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Instantiate_Vector3_Quaternion_Gc0(
+    pub fn Instantiate_Vector3_Quaternion_Transform0(
         &mut self,
         position: crate::UnityEngine::Vector3,
         rotation: crate::UnityEngine::Quaternion,
@@ -200,7 +200,7 @@ impl crate::UnityEngine::AddressableAssets::AssetReference {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Il2CppString1(
         guid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -265,17 +265,7 @@ impl crate::UnityEngine::AddressableAssets::AssetReference {
         > = __cordl_object.invoke("UnLoadScene", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ValidateAsset_Gc0(
-        &mut self,
-        obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("ValidateAsset", (obj))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ValidateAsset_Gc1(
+    pub fn ValidateAsset_Il2CppString1(
         &mut self,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -283,6 +273,16 @@ impl crate::UnityEngine::AddressableAssets::AssetReference {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("ValidateAsset", (path))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateAsset_Object0(
+        &mut self,
+        obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("ValidateAsset", (obj))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
@@ -295,7 +295,7 @@ impl crate::UnityEngine::AddressableAssets::AssetReference {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
         guid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -420,26 +420,16 @@ for crate::UnityEngine::AddressableAssets::AssetReference {
     }
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+AssetReference")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::AddressableAssets::IKeyEvaluator>,
-> for crate::UnityEngine::AddressableAssets::AssetReference {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::AddressableAssets::IKeyEvaluator,
-    > {
+impl AsRef<crate::UnityEngine::AddressableAssets::IKeyEvaluator>
+for crate::UnityEngine::AddressableAssets::AssetReference {
+    fn as_ref(&self) -> &crate::UnityEngine::AddressableAssets::IKeyEvaluator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+AssetReference")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::AddressableAssets::IKeyEvaluator>,
-> for crate::UnityEngine::AddressableAssets::AssetReference {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::AddressableAssets::IKeyEvaluator,
-    > {
+impl AsMut<crate::UnityEngine::AddressableAssets::IKeyEvaluator>
+for crate::UnityEngine::AddressableAssets::AssetReference {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::AddressableAssets::IKeyEvaluator {
         unsafe { std::mem::transmute(self) }
     }
 }

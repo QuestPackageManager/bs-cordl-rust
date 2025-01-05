@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FtpWebResponse {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Net::WebResponse>,
+    __cordl_parent: crate::System::Net::WebResponse,
     pub _responseStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub _contentLength: i64,
     pub _responseUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
@@ -23,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+FtpWebResponse")]
 impl std::ops::Deref for crate::System::Net::FtpWebResponse {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Net::WebResponse>;
+    type Target = crate::System::Net::WebResponse;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -190,16 +190,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::FtpWebResponse {
     }
 }
 #[cfg(feature = "System+Net+FtpWebResponse")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::System::Net::FtpWebResponse {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsRef<crate::System::IDisposable> for crate::System::Net::FtpWebResponse {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Net+FtpWebResponse")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::System::Net::FtpWebResponse {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsMut<crate::System::IDisposable> for crate::System::Net::FtpWebResponse {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -207,7 +205,7 @@ for crate::System::Net::FtpWebResponse {
 #[repr(C)]
 #[derive(Debug)]
 pub struct FtpWebResponse_EmptyStream {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>,
+    __cordl_parent: crate::System::IO::MemoryStream,
 }
 #[cfg(feature = "System+Net+FtpWebResponse+EmptyStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -216,7 +214,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+FtpWebResponse+EmptyStream")]
 impl std::ops::Deref for crate::System::Net::FtpWebResponse_EmptyStream {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>;
+    type Target = crate::System::IO::MemoryStream;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerModeSelectionViewController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+    __cordl_parent: crate::HMUI::ViewController,
     pub _quickPlayButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _gameBrowserButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _joinWithCodeButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
@@ -17,10 +17,12 @@ pub struct MultiplayerModeSelectionViewController {
         crate::GlobalNamespace::INetworkConfig,
     >,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerModeSelectionViewController,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerModeSelectionViewController,
+            >,
+            crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton,
         >,
-        crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton,
     >,
 }
 #[cfg(feature = "MultiplayerModeSelectionViewController")]
@@ -31,7 +33,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplayerModeSelectionViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerModeSelectionViewController {
-    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>;
+    type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -147,10 +149,12 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionViewController {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerModeSelectionViewController,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MultiplayerModeSelectionViewController,
+                >,
+                crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton,
             >,
-            crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -163,10 +167,12 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionViewController {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerModeSelectionViewController,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MultiplayerModeSelectionViewController,
+                >,
+                crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton,
             >,
-            crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

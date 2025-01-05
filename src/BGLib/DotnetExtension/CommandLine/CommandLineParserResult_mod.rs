@@ -4,11 +4,15 @@
 pub struct CommandLineParserResult {
     pub applicationPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _parsed: quest_hook::libil2cpp::Gc<
-        crate::BGLib::DotnetExtension::CommandLine::ArgumentOption,
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::IReadOnlyDictionary_2<
+            crate::BGLib::DotnetExtension::CommandLine::ArgumentOption,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub unexpectedArguments: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
 }
 #[cfg(feature = "BGLib+DotnetExtension+CommandLine+CommandLineParserResult")]
@@ -41,7 +45,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Contains_Gc1(
+    pub fn Contains_Il2CppString1(
         &mut self,
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -81,11 +85,15 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult {
         &mut self,
         applicationPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         parsed: quest_hook::libil2cpp::Gc<
-            crate::BGLib::DotnetExtension::CommandLine::ArgumentOption,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IReadOnlyDictionary_2<
+                crate::BGLib::DotnetExtension::CommandLine::ArgumentOption,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         unexpectedArguments: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -106,7 +114,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_Item", (option))?;
         Ok(__cordl_ret.into())
     }
-    pub fn get_Item_Gc1(
+    pub fn get_Item_Il2CppString1(
         &mut self,
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<

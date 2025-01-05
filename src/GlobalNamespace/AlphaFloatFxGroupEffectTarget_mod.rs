@@ -2,16 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AlphaFloatFxGroupEffectTarget {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::FloatFxGroupEffectTarget,
-    >,
+    __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
     pub _staticColor: crate::UnityEngine::Color,
     pub _property: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _materialPropertyBlockControllers: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MaterialPropertyBlockController,
-            >,
+            *mut crate::GlobalNamespace::MaterialPropertyBlockController,
         >,
     >,
     pub _propertyId: i32,
@@ -24,9 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "AlphaFloatFxGroupEffectTarget")]
 impl std::ops::Deref for crate::GlobalNamespace::AlphaFloatFxGroupEffectTarget {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::FloatFxGroupEffectTarget,
-    >;
+    type Target = crate::GlobalNamespace::FloatFxGroupEffectTarget;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

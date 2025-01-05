@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OvrToolMetrics {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _metrics: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _sample: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
-    pub _samples: quest_hook::libil2cpp::Gc<i64>,
+    pub _samples: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i64>,
+    >,
 }
 #[cfg(feature = "OvrToolMetrics")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OvrToolMetrics")]
 impl std::ops::Deref for crate::GlobalNamespace::OvrToolMetrics {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -116,16 +116,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OvrToolMetric
     }
 }
 #[cfg(feature = "OvrToolMetrics")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::GlobalNamespace::OvrToolMetrics {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsRef<crate::System::IDisposable> for crate::GlobalNamespace::OvrToolMetrics {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OvrToolMetrics")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::GlobalNamespace::OvrToolMetrics {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::OvrToolMetrics {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }

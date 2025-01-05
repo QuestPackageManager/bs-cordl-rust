@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CompletionActionInvoker {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_action: quest_hook::libil2cpp::Gc<
         crate::System::Threading::Tasks::ITaskCompletionAction,
     >,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+Tasks+CompletionActionInvoker")]
 impl std::ops::Deref for crate::System::Threading::Tasks::CompletionActionInvoker {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -90,20 +90,16 @@ for crate::System::Threading::Tasks::CompletionActionInvoker {
     }
 }
 #[cfg(feature = "System+Threading+Tasks+CompletionActionInvoker")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem>>
+impl AsRef<crate::System::Threading::IThreadPoolWorkItem>
 for crate::System::Threading::Tasks::CompletionActionInvoker {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem> {
+    fn as_ref(&self) -> &crate::System::Threading::IThreadPoolWorkItem {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Threading+Tasks+CompletionActionInvoker")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem>>
+impl AsMut<crate::System::Threading::IThreadPoolWorkItem>
 for crate::System::Threading::Tasks::CompletionActionInvoker {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem> {
+    fn as_mut(&mut self) -> &mut crate::System::Threading::IThreadPoolWorkItem {
         unsafe { std::mem::transmute(self) }
     }
 }

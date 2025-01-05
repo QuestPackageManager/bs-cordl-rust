@@ -4,9 +4,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExclusiveOrInstruction_ExclusiveOrUInt64 {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::ExclusiveOrInstruction,
-    >,
+    __cordl_parent: crate::System::Linq::Expressions::Interpreter::ExclusiveOrInstruction,
 }
 #[cfg(
     feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrUInt64"
@@ -21,9 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrUInt64 {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::ExclusiveOrInstruction,
-    >;
+    type Target = crate::System::Linq::Expressions::Interpreter::ExclusiveOrInstruction;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

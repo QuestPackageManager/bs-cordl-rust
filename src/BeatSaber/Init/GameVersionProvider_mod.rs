@@ -2,9 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameVersionProvider {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _versionTask: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
+        crate::System::Threading::Tasks::Task_1<
+            quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
+        >,
     >,
     pub _platformInit: quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::IPlatformInit>,
 }
@@ -15,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+Init+GameVersionProvider")]
 impl std::ops::Deref for crate::BeatSaber::Init::GameVersionProvider {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -53,14 +55,18 @@ impl crate::BeatSaber::Init::GameVersionProvider {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
+            >,
         > = __cordl_object.invoke("GetVersionAsync", ())?;
         Ok(__cordl_ret.into())
     }
@@ -68,14 +74,18 @@ impl crate::BeatSaber::Init::GameVersionProvider {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
+            >,
         > = __cordl_object.invoke("GetVersionInternalAsync", ())?;
         Ok(__cordl_ret.into())
     }
@@ -124,18 +134,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::BeatSaber::Init::GameVersionPr
     }
 }
 #[cfg(feature = "BeatSaber+Init+GameVersionProvider")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>>
+impl AsRef<crate::Zenject::IInitializable>
 for crate::BeatSaber::Init::GameVersionProvider {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable> {
+    fn as_ref(&self) -> &crate::Zenject::IInitializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BeatSaber+Init+GameVersionProvider")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>>
+impl AsMut<crate::Zenject::IInitializable>
 for crate::BeatSaber::Init::GameVersionProvider {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IInitializable {
         unsafe { std::mem::transmute(self) }
     }
 }

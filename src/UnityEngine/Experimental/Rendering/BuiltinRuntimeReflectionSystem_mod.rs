@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BuiltinRuntimeReflectionSystem {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+Experimental+Rendering+BuiltinRuntimeReflectionSystem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+Experimental+Rendering+BuiltinRuntimeReflectionSystem")]
 impl std::ops::Deref
 for crate::UnityEngine::Experimental::Rendering::BuiltinRuntimeReflectionSystem {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -100,44 +100,36 @@ for crate::UnityEngine::Experimental::Rendering::BuiltinRuntimeReflectionSystem 
     }
 }
 #[cfg(feature = "UnityEngine+Experimental+Rendering+BuiltinRuntimeReflectionSystem")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsRef<crate::System::IDisposable>
 for crate::UnityEngine::Experimental::Rendering::BuiltinRuntimeReflectionSystem {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Experimental+Rendering+BuiltinRuntimeReflectionSystem")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsMut<crate::System::IDisposable>
 for crate::UnityEngine::Experimental::Rendering::BuiltinRuntimeReflectionSystem {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Experimental+Rendering+BuiltinRuntimeReflectionSystem")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Experimental::Rendering::IScriptableRuntimeReflectionSystem,
-    >,
+    crate::UnityEngine::Experimental::Rendering::IScriptableRuntimeReflectionSystem,
 > for crate::UnityEngine::Experimental::Rendering::BuiltinRuntimeReflectionSystem {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Experimental::Rendering::IScriptableRuntimeReflectionSystem,
-    > {
+    ) -> &crate::UnityEngine::Experimental::Rendering::IScriptableRuntimeReflectionSystem {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Experimental+Rendering+BuiltinRuntimeReflectionSystem")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Experimental::Rendering::IScriptableRuntimeReflectionSystem,
-    >,
+    crate::UnityEngine::Experimental::Rendering::IScriptableRuntimeReflectionSystem,
 > for crate::UnityEngine::Experimental::Rendering::BuiltinRuntimeReflectionSystem {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Experimental::Rendering::IScriptableRuntimeReflectionSystem,
-    > {
+    ) -> &mut crate::UnityEngine::Experimental::Rendering::IScriptableRuntimeReflectionSystem {
         unsafe { std::mem::transmute(self) }
     }
 }

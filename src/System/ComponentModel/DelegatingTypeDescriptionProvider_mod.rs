@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DelegatingTypeDescriptionProvider {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::ComponentModel::TypeDescriptionProvider,
-    >,
+    __cordl_parent: crate::System::ComponentModel::TypeDescriptionProvider,
     pub _type: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "System+ComponentModel+DelegatingTypeDescriptionProvider")]
@@ -16,9 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+ComponentModel+DelegatingTypeDescriptionProvider")]
 impl std::ops::Deref
 for crate::System::ComponentModel::DelegatingTypeDescriptionProvider {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::ComponentModel::TypeDescriptionProvider,
-    >;
+    type Target = crate::System::ComponentModel::TypeDescriptionProvider;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,14 +33,10 @@ impl crate::System::ComponentModel::DelegatingTypeDescriptionProvider {
         provider: quest_hook::libil2cpp::Gc<crate::System::IServiceProvider>,
         objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         argTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         >,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -92,9 +84,7 @@ impl crate::System::ComponentModel::DelegatingTypeDescriptionProvider {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::ComponentModel::IExtenderProvider,
-                >,
+                *mut crate::System::ComponentModel::IExtenderProvider,
             >,
         >,
     > {
@@ -103,9 +93,7 @@ impl crate::System::ComponentModel::DelegatingTypeDescriptionProvider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::ComponentModel::IExtenderProvider,
-                >,
+                *mut crate::System::ComponentModel::IExtenderProvider,
             >,
         > = __cordl_object.invoke("GetExtenderProviders", (instance))?;
         Ok(__cordl_ret.into())

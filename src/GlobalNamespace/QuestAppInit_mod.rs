@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct QuestAppInit {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::BSAppInit>,
+    __cordl_parent: crate::BeatSaber::Init::BSAppInit,
     pub _mainSystemInit: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MainSystemInit,
     >,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "QuestAppInit")]
 impl std::ops::Deref for crate::GlobalNamespace::QuestAppInit {
-    type Target = quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::BSAppInit>;
+    type Target = crate::BeatSaber::Init::BSAppInit;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

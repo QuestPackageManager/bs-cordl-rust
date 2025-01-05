@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AvatarColorTrack {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
+    __cordl_parent: crate::UnityEngine::Timeline::TrackAsset,
 }
 #[cfg(feature = "AvatarColorTrack")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "AvatarColorTrack")]
 impl std::ops::Deref for crate::GlobalNamespace::AvatarColorTrack {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>;
+    type Target = crate::UnityEngine::Timeline::TrackAsset;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

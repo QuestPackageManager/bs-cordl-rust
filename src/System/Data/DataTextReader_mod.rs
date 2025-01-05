@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataTextReader {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
+    __cordl_parent: crate::System::Xml::XmlReader,
     pub _xmlreader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
 }
 #[cfg(feature = "System+Data+DataTextReader")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+DataTextReader")]
 impl std::ops::Deref for crate::System::Data::DataTextReader {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>;
+    type Target = crate::System::Xml::XmlReader;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,7 +44,7 @@ impl crate::System::Data::DataTextReader {
             .invoke("CreateReader", (xr))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAttribute_Gc0(
+    pub fn GetAttribute_Il2CppString0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -58,7 +58,7 @@ impl crate::System::Data::DataTextReader {
         > = __cordl_object.invoke("GetAttribute", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAttribute_Gc_Gc1(
+    pub fn GetAttribute_Il2CppString_Il2CppString1(
         &mut self,
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         namespaceURI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -101,7 +101,7 @@ impl crate::System::Data::DataTextReader {
         > = __cordl_object.invoke("LookupNamespace", (prefix))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MoveToAttribute_Gc0(
+    pub fn MoveToAttribute_Il2CppString0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {

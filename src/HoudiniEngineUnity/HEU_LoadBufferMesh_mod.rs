@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_LoadBufferMesh {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::HoudiniEngineUnity::HEU_LoadBufferBase,
-    >,
+    __cordl_parent: crate::HoudiniEngineUnity::HEU_LoadBufferBase,
     pub _geoCache: quest_hook::libil2cpp::Gc<
         crate::HoudiniEngineUnity::HEU_GenerateGeoCache,
     >,
     pub _LODGroupMeshes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeoGroup>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeoGroup>,
+        >,
     >,
     pub _defaultMaterialKey: i32,
     pub _bGenerateUVs: bool,
@@ -24,9 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_LoadBufferMesh")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_LoadBufferMesh {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::HoudiniEngineUnity::HEU_LoadBufferBase,
-    >;
+    type Target = crate::HoudiniEngineUnity::HEU_LoadBufferBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlAsyncCheckReader {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
+    __cordl_parent: crate::System::Xml::XmlReader,
     pub coreReader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
     pub lastTask: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlAsyncCheckReader")]
 impl std::ops::Deref for crate::System::Xml::XmlAsyncCheckReader {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>;
+    type Target = crate::System::Xml::XmlReader;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -68,7 +68,7 @@ impl crate::System::Xml::XmlAsyncCheckReader {
             .invoke("Dispose", (disposing))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAttribute_Gc0(
+    pub fn GetAttribute_Il2CppString0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -82,7 +82,7 @@ impl crate::System::Xml::XmlAsyncCheckReader {
         > = __cordl_object.invoke("GetAttribute", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAttribute_Gc_Gc1(
+    pub fn GetAttribute_Il2CppString_Il2CppString1(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         namespaceURI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -137,7 +137,7 @@ impl crate::System::Xml::XmlAsyncCheckReader {
         > = __cordl_object.invoke("LookupNamespace", (prefix))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MoveToAttribute_Gc0(
+    pub fn MoveToAttribute_Il2CppString0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {

@@ -6,11 +6,17 @@ pub struct GroupedEnumerable_3<
     TKey: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    pub source: quest_hook::libil2cpp::Gc<TSource>,
-    pub keySelector: quest_hook::libil2cpp::Gc<TSource, TKey>,
-    pub elementSelector: quest_hook::libil2cpp::Gc<TSource, TElement>,
-    pub comparer: quest_hook::libil2cpp::Gc<TKey>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub source: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEnumerable_1<TSource>,
+    >,
+    pub keySelector: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, TKey>>,
+    pub elementSelector: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<TSource, TElement>,
+    >,
+    pub comparer: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
+    >,
     __cordl_phantom_TSource: std::marker::PhantomData<TSource>,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,
@@ -26,7 +32,7 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::System::Linq::GroupedEnumerable_3<TSource, TKey, TElement> {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -51,7 +57,13 @@ impl<
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TKey, TElement>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::IGrouping_2<TKey, TElement>,
+                >,
+            >,
+        >,
     >
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -65,15 +77,25 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<TKey, TElement>,
+            crate::System::Collections::Generic::IEnumerator_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::IGrouping_2<TKey, TElement>,
+                >,
+            >,
         > = __cordl_object.invoke("GetEnumerator", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        source: quest_hook::libil2cpp::Gc<TSource>,
-        keySelector: quest_hook::libil2cpp::Gc<TSource, TKey>,
-        elementSelector: quest_hook::libil2cpp::Gc<TSource, TElement>,
-        comparer: quest_hook::libil2cpp::Gc<TKey>,
+        source: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TSource>,
+        >,
+        keySelector: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, TKey>>,
+        elementSelector: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<TSource, TElement>,
+        >,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -112,10 +134,16 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        source: quest_hook::libil2cpp::Gc<TSource>,
-        keySelector: quest_hook::libil2cpp::Gc<TSource, TKey>,
-        elementSelector: quest_hook::libil2cpp::Gc<TSource, TElement>,
-        comparer: quest_hook::libil2cpp::Gc<TKey>,
+        source: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TSource>,
+        >,
+        keySelector: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, TKey>>,
+        elementSelector: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<TSource, TElement>,
+        >,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -152,11 +180,16 @@ impl<
     TSource: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
-for crate::System::Linq::GroupedEnumerable_3<TSource, TKey, TElement> {
+> AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::IGrouping_2<TKey, TElement>>,
+    >,
+> for crate::System::Linq::GroupedEnumerable_3<TSource, TKey, TElement> {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::IGrouping_2<TKey, TElement>>,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -165,11 +198,16 @@ impl<
     TSource: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
-for crate::System::Linq::GroupedEnumerable_3<TSource, TKey, TElement> {
+> AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::IGrouping_2<TKey, TElement>>,
+    >,
+> for crate::System::Linq::GroupedEnumerable_3<TSource, TKey, TElement> {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::IGrouping_2<TKey, TElement>>,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -178,11 +216,9 @@ impl<
     TSource: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TKey, TElement>>>
+> AsRef<crate::System::Collections::IEnumerable>
 for crate::System::Linq::GroupedEnumerable_3<TSource, TKey, TElement> {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TKey, TElement>> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -191,11 +227,9 @@ impl<
     TSource: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TKey, TElement>>>
+> AsMut<crate::System::Collections::IEnumerable>
 for crate::System::Linq::GroupedEnumerable_3<TSource, TKey, TElement> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TKey, TElement>> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }

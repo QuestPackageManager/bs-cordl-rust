@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SafeAsciiDecoder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Text::Decoder>,
+    __cordl_parent: crate::System::Text::Decoder,
 }
 #[cfg(feature = "System+Xml+SafeAsciiDecoder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+SafeAsciiDecoder")]
 impl std::ops::Deref for crate::System::Xml::SafeAsciiDecoder {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Text::Decoder>;
+    type Target = crate::System::Text::Decoder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

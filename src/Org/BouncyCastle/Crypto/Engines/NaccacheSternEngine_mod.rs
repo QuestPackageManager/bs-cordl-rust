@@ -2,15 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NaccacheSternEngine {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub forEncryption: bool,
     pub key: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyParameters,
     >,
     pub lookup: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Collections::IList>,
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+NaccacheSternEngine")]
@@ -21,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+NaccacheSternEngine")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Engines::NaccacheSternEngine {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -187,26 +185,18 @@ for crate::Org::BouncyCastle::Crypto::Engines::NaccacheSternEngine {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+NaccacheSternEngine")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher>,
-> for crate::Org::BouncyCastle::Crypto::Engines::NaccacheSternEngine {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
-    > {
+impl AsRef<crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher>
+for crate::Org::BouncyCastle::Crypto::Engines::NaccacheSternEngine {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+NaccacheSternEngine")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher>,
-> for crate::Org::BouncyCastle::Crypto::Engines::NaccacheSternEngine {
+impl AsMut<crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher>
+for crate::Org::BouncyCastle::Crypto::Engines::NaccacheSternEngine {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
-    > {
+    ) -> &mut crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher {
         unsafe { std::mem::transmute(self) }
     }
 }

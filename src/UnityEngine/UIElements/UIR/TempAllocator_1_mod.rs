@@ -2,12 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TempAllocator_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ExcessMinCapacity: i32,
     pub m_ExcessMaxCapacity: i32,
     pub m_Pool: crate::UnityEngine::UIElements::UIR::TempAllocator_1_Page<T>,
     pub m_Excess: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UIR::TempAllocator_1_Page<T>,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::UIR::TempAllocator_1_Page<T>,
+        >,
     >,
     pub m_NextExcessSize: i32,
     pub _disposed_k__BackingField: bool,
@@ -21,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+UIR+TempAllocator_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::UIR::TempAllocator_1<T> {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -179,20 +181,16 @@ for crate::UnityEngine::UIElements::UIR::TempAllocator_1<T> {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+TempAllocator_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
 for crate::UnityEngine::UIElements::UIR::TempAllocator_1<T> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+TempAllocator_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
 for crate::UnityEngine::UIElements::UIR::TempAllocator_1<T> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }

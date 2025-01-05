@@ -2,19 +2,23 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct QuickPlaySongPacksDropdown {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _simpleTextDropdown: quest_hook::libil2cpp::Gc<crate::HMUI::SimpleTextDropdown>,
     pub _songPackMasksModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SongPackMasksModel,
     >,
-    pub didSelectCellWithIdxEvent: quest_hook::libil2cpp::Gc<i32>,
+    pub didSelectCellWithIdxEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<i32>,
+    >,
     pub _initialized: bool,
     pub _quickPlaySongPacksOverride: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::QuickPlaySetupData_QuickPlaySongPacksOverride,
     >,
     pub _data: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::QuickPlaySongPacksDropdown_SongPackMaskItem,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::QuickPlaySongPacksDropdown_SongPackMaskItem,
+            >,
         >,
     >,
 }
@@ -25,7 +29,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "QuickPlaySongPacksDropdown")]
 impl std::ops::Deref for crate::GlobalNamespace::QuickPlaySongPacksDropdown {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -177,7 +181,7 @@ impl crate::GlobalNamespace::QuickPlaySongPacksDropdown {
     }
     pub fn add_didSelectCellWithIdxEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<i32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -188,7 +192,7 @@ impl crate::GlobalNamespace::QuickPlaySongPacksDropdown {
     }
     pub fn remove_didSelectCellWithIdxEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<i32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -212,7 +216,7 @@ for crate::GlobalNamespace::QuickPlaySongPacksDropdown {
 #[repr(C)]
 #[derive(Debug)]
 pub struct QuickPlaySongPacksDropdown_SongPackMaskItem {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub serializedName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub localizedName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub order: i32,
@@ -227,7 +231,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "QuickPlaySongPacksDropdown+SongPackMaskItem")]
 impl std::ops::Deref
 for crate::GlobalNamespace::QuickPlaySongPacksDropdown_SongPackMaskItem {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

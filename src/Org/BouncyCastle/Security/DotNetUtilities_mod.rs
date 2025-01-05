@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DotNetUtilities {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+Security+DotNetUtilities")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Security+DotNetUtilities")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Security::DotNetUtilities {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -36,7 +36,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             .invoke("ConvertRSAParametersField", (n, _cordl_size))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateRSAProvider_Gc1(
+    pub fn CreateRSAProvider_CspParameters1(
         rp: crate::System::Security::Cryptography::RSAParameters,
         csp: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::CspParameters,
@@ -74,6 +74,19 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             .invoke("FromX509Certificate", (x509Cert))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetDsaKeyPair_DSA0(
+        dsa: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::DSA>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricCipherKeyPair,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricCipherKeyPair,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDsaKeyPair", (dsa))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetDsaKeyPair_DSAParameters1(
         dp: crate::System::Security::Cryptography::DSAParameters,
     ) -> quest_hook::libil2cpp::Result<
@@ -87,17 +100,17 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             .invoke("GetDsaKeyPair", (dp))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetDsaKeyPair_Gc0(
+    pub fn GetDsaPublicKey_DSA0(
         dsa: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::DSA>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::AsymmetricCipherKeyPair,
+            crate::Org::BouncyCastle::Crypto::Parameters::DsaPublicKeyParameters,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::AsymmetricCipherKeyPair,
+            crate::Org::BouncyCastle::Crypto::Parameters::DsaPublicKeyParameters,
         > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetDsaKeyPair", (dsa))?;
+            .invoke("GetDsaPublicKey", (dsa))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetDsaPublicKey_DSAParameters1(
@@ -111,19 +124,6 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             crate::Org::BouncyCastle::Crypto::Parameters::DsaPublicKeyParameters,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetDsaPublicKey", (dp))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetDsaPublicKey_Gc0(
-        dsa: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::DSA>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::Parameters::DsaPublicKeyParameters,
-        >,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::Parameters::DsaPublicKeyParameters,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetDsaPublicKey", (dsa))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetKeyPair(
@@ -141,7 +141,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             .invoke("GetKeyPair", (privateKey))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetRsaKeyPair_Gc0(
+    pub fn GetRsaKeyPair_RSA0(
         rsa: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -167,7 +167,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             .invoke("GetRsaKeyPair", (rp))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetRsaPublicKey_Gc0(
+    pub fn GetRsaPublicKey_RSA0(
         rsa: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -200,7 +200,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn ToRSAParameters_Gc0(
+    pub fn ToRSAParameters_RsaKeyParameters0(
         rsaKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters,
         >,
@@ -211,7 +211,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             .invoke("ToRSAParameters", (rsaKey))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToRSAParameters_Gc1(
+    pub fn ToRSAParameters_RsaPrivateCrtKeyParameters1(
         privKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters,
         >,
@@ -222,7 +222,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             .invoke("ToRSAParameters", (privKey))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToRSAParameters_Gc2(
+    pub fn ToRSAParameters_RsaPrivateKeyStructure2(
         privKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Pkcs::RsaPrivateKeyStructure,
         >,
@@ -233,7 +233,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             .invoke("ToRSAParameters", (privKey))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToRSA_Gc0(
+    pub fn ToRSA_RsaKeyParameters0(
         rsaKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters,
         >,
@@ -245,7 +245,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ToRSA", (rsaKey))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToRSA_Gc1(
+    pub fn ToRSA_RsaKeyParameters_CspParameters1(
         rsaKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters,
         >,
@@ -261,7 +261,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             .invoke("ToRSA", (rsaKey, csp))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToRSA_Gc2(
+    pub fn ToRSA_RsaPrivateCrtKeyParameters2(
         privKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters,
         >,
@@ -273,7 +273,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ToRSA", (privKey))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToRSA_Gc3(
+    pub fn ToRSA_RsaPrivateCrtKeyParameters_CspParameters3(
         privKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters,
         >,
@@ -289,7 +289,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             .invoke("ToRSA", (privKey, csp))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToRSA_Gc4(
+    pub fn ToRSA_RsaPrivateKeyStructure4(
         privKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Pkcs::RsaPrivateKeyStructure,
         >,
@@ -301,7 +301,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ToRSA", (privKey))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToRSA_Gc5(
+    pub fn ToRSA_RsaPrivateKeyStructure_CspParameters5(
         privKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Pkcs::RsaPrivateKeyStructure,
         >,
@@ -317,22 +317,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             .invoke("ToRSA", (privKey, csp))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToX509Certificate_Gc0(
-        x509Struct: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Security::Cryptography::X509Certificates::X509Certificate,
-        >,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Security::Cryptography::X509Certificates::X509Certificate,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToX509Certificate", (x509Struct))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ToX509Certificate_Gc1(
+    pub fn ToX509Certificate_X509Certificate1(
         x509Cert: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::X509::X509Certificate,
         >,
@@ -345,6 +330,21 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             crate::System::Security::Cryptography::X509Certificates::X509Certificate,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ToX509Certificate", (x509Cert))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToX509Certificate_X509CertificateStructure0(
+        x509Struct: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToX509Certificate", (x509Struct))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

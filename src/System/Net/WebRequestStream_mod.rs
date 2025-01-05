@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct WebRequestStream {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Net::WebConnectionStream>,
+    __cordl_parent: crate::System::Net::WebConnectionStream,
     pub writeBuffer: quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>,
     pub requestWritten: bool,
     pub allowBuffering: bool,
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+WebRequestStream")]
 impl std::ops::Deref for crate::System::Net::WebRequestStream {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Net::WebConnectionStream>;
+    type Target = crate::System::Net::WebConnectionStream;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -149,11 +149,15 @@ impl crate::System::Net::WebRequestStream {
         offset: i32,
         _cordl_size: i32,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<i32>,
+        > = __cordl_object
             .invoke("ReadAsync", (buffer, offset, _cordl_size, cancellationToken))?;
         Ok(__cordl_ret.into())
     }

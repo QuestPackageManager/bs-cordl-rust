@@ -2,12 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResultsTableView {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _tableView: quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
     pub _cellPrefab: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ResultsTableCell>,
     pub _rowHeight: f32,
     pub _dataList: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerPlayerResultsData>,
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerPlayerResultsData,
+            >,
+        >,
     >,
 }
 #[cfg(feature = "ResultsTableView")]
@@ -17,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ResultsTableView")]
 impl std::ops::Deref for crate::GlobalNamespace::ResultsTableView {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -69,8 +73,10 @@ impl crate::GlobalNamespace::ResultsTableView {
     pub fn SetData(
         &mut self,
         dataList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerPlayerResultsData,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MultiplayerPlayerResultsData,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -102,18 +108,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ResultsTableV
     }
 }
 #[cfg(feature = "ResultsTableView")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::HMUI::TableView_IDataSource>>
+impl AsRef<crate::HMUI::TableView_IDataSource>
 for crate::GlobalNamespace::ResultsTableView {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::HMUI::TableView_IDataSource> {
+    fn as_ref(&self) -> &crate::HMUI::TableView_IDataSource {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "ResultsTableView")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::HMUI::TableView_IDataSource>>
+impl AsMut<crate::HMUI::TableView_IDataSource>
 for crate::GlobalNamespace::ResultsTableView {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::HMUI::TableView_IDataSource> {
+    fn as_mut(&mut self) -> &mut crate::HMUI::TableView_IDataSource {
         unsafe { std::mem::transmute(self) }
     }
 }

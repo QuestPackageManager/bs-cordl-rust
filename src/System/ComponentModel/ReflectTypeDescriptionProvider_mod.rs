@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectTypeDescriptionProvider {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::ComponentModel::TypeDescriptionProvider,
-    >,
+    __cordl_parent: crate::System::ComponentModel::TypeDescriptionProvider,
     pub _typeData: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
 }
 #[cfg(feature = "System+ComponentModel+ReflectTypeDescriptionProvider")]
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+ComponentModel+ReflectTypeDescriptionProvider")]
 impl std::ops::Deref for crate::System::ComponentModel::ReflectTypeDescriptionProvider {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::ComponentModel::TypeDescriptionProvider,
-    >;
+    type Target = crate::System::ComponentModel::TypeDescriptionProvider;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,19 +31,15 @@ impl crate::System::ComponentModel::ReflectTypeDescriptionProvider {
         feature = "System+ComponentModel+ReflectTypeDescriptionProvider+ReflectedTypeData"
     )]
     pub type ReflectedTypeData = crate::System::ComponentModel::ReflectTypeDescriptionProvider_ReflectedTypeData;
-    pub fn CreateInstance_Gc_Gc0(
+    pub fn CreateInstance_IServiceProvider_Il2CppArray_Il2CppArray0(
         &mut self,
         provider: quest_hook::libil2cpp::Gc<crate::System::IServiceProvider>,
         objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         argTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         >,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -61,7 +53,7 @@ impl crate::System::ComponentModel::ReflectTypeDescriptionProvider {
             .invoke("CreateInstance", (provider, objectType, argTypes, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateInstance_Gc_Gc1(
+    pub fn CreateInstance_Type1(
         objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         callingType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
@@ -384,9 +376,7 @@ impl crate::System::ComponentModel::ReflectTypeDescriptionProvider {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::ComponentModel::IExtenderProvider,
-                >,
+                *mut crate::System::ComponentModel::IExtenderProvider,
             >,
         >,
     > {
@@ -395,9 +385,7 @@ impl crate::System::ComponentModel::ReflectTypeDescriptionProvider {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::ComponentModel::IExtenderProvider,
-                >,
+                *mut crate::System::ComponentModel::IExtenderProvider,
             >,
         > = __cordl_object.invoke("GetExtenderProviders", (instance))?;
         Ok(__cordl_ret.into())
@@ -409,17 +397,13 @@ impl crate::System::ComponentModel::ReflectTypeDescriptionProvider {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::ComponentModel::IExtenderProvider,
-                >,
+                *mut crate::System::ComponentModel::IExtenderProvider,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::ComponentModel::IExtenderProvider,
-                >,
+                *mut crate::System::ComponentModel::IExtenderProvider,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetExtenders", (components, instance, cache))?;
@@ -525,38 +509,30 @@ impl crate::System::ComponentModel::ReflectTypeDescriptionProvider {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn ReflectGetAttributes_Gc0(
-        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-            >,
-        >,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-            >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReflectGetAttributes", (_cordl_type))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ReflectGetAttributes_Gc1(
+    pub fn ReflectGetAttributes_MemberInfo1(
         member: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ReflectGetAttributes", (member))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReflectGetAttributes_Type0(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReflectGetAttributes", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
     pub fn ReflectGetEvents(
@@ -564,13 +540,13 @@ impl crate::System::ComponentModel::ReflectTypeDescriptionProvider {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::ComponentModel::EventDescriptor>,
+                *mut crate::System::ComponentModel::EventDescriptor,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::ComponentModel::EventDescriptor>,
+                *mut crate::System::ComponentModel::EventDescriptor,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ReflectGetEvents", (_cordl_type))?;
@@ -583,17 +559,13 @@ impl crate::System::ComponentModel::ReflectTypeDescriptionProvider {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::ComponentModel::PropertyDescriptor,
-                >,
+                *mut crate::System::ComponentModel::PropertyDescriptor,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::ComponentModel::PropertyDescriptor,
-                >,
+                *mut crate::System::ComponentModel::PropertyDescriptor,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ReflectGetExtendedProperties", (provider))?;
@@ -604,17 +576,13 @@ impl crate::System::ComponentModel::ReflectTypeDescriptionProvider {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::ComponentModel::PropertyDescriptor,
-                >,
+                *mut crate::System::ComponentModel::PropertyDescriptor,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::ComponentModel::PropertyDescriptor,
-                >,
+                *mut crate::System::ComponentModel::PropertyDescriptor,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ReflectGetProperties", (_cordl_type))?;
@@ -679,7 +647,7 @@ for crate::System::ComponentModel::ReflectTypeDescriptionProvider {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectTypeDescriptionProvider_ReflectedTypeData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _attributes: quest_hook::libil2cpp::Gc<
         crate::System::ComponentModel::AttributeCollection,
@@ -694,14 +662,10 @@ pub struct ReflectTypeDescriptionProvider_ReflectedTypeData {
         crate::System::ComponentModel::TypeConverter,
     >,
     pub _editors: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
     pub _editorTypes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
     >,
     pub _editorCount: i32,
 }
@@ -718,7 +682,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::System::ComponentModel::ReflectTypeDescriptionProvider_ReflectedTypeData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

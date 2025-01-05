@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FactoryFromBinderUntyped {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::FactoryFromBinderBase>,
+    __cordl_parent: crate::Zenject::FactoryFromBinderBase,
 }
 #[cfg(feature = "Zenject+FactoryFromBinderUntyped")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+FactoryFromBinderUntyped")]
 impl std::ops::Deref for crate::Zenject::FactoryFromBinderUntyped {
-    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::FactoryFromBinderBase>;
+    type Target = crate::Zenject::FactoryFromBinderBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

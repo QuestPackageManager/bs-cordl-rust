@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HkdfParameters {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ikm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub skipExpand: bool,
     pub salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+HkdfParameters")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -82,7 +82,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters {
         > = __cordl_object.invoke("GetSalt", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Il2CppArray1(
         ikm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         info: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -93,7 +93,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters {
             .invoke_void(".ctor", (ikm, salt, info))?;
         Ok(__cordl_object.into())
     }
-    pub fn New__cordl_bool_Gc0(
+    pub fn New__cordl_bool_Il2CppArray0(
         ikm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         skip: bool,
         salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -119,7 +119,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters {
             .invoke("SkipExtractParameters", (ikm, info))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Il2CppArray1(
         &mut self,
         ikm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -132,7 +132,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters {
             .invoke(".ctor", (ikm, salt, info))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor__cordl_bool_Gc0(
+    pub fn _ctor__cordl_bool_Il2CppArray0(
         &mut self,
         ikm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         skip: bool,
@@ -165,26 +165,18 @@ for crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+HkdfParameters")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDerivationParameters>,
-> for crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::IDerivationParameters,
-    > {
+impl AsRef<crate::Org::BouncyCastle::Crypto::IDerivationParameters>
+for crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IDerivationParameters {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+HkdfParameters")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDerivationParameters>,
-> for crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters {
+impl AsMut<crate::Org::BouncyCastle::Crypto::IDerivationParameters>
+for crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::IDerivationParameters,
-    > {
+    ) -> &mut crate::Org::BouncyCastle::Crypto::IDerivationParameters {
         unsafe { std::mem::transmute(self) }
     }
 }

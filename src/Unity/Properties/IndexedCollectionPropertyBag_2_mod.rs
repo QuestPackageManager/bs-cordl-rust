@@ -5,8 +5,13 @@ pub struct IndexedCollectionPropertyBag_2<
     TList: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TList>,
-    pub m_Property: quest_hook::libil2cpp::Gc<TList, TElement>,
+    __cordl_parent: crate::Unity::Properties::PropertyBag_1<TList>,
+    pub m_Property: quest_hook::libil2cpp::Gc<
+        crate::Unity::Properties::IndexedCollectionPropertyBag_2_ListElementProperty<
+            TList,
+            TElement,
+        >,
+    >,
     __cordl_phantom_TList: std::marker::PhantomData<TList>,
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,
 }
@@ -22,7 +27,7 @@ impl<
     TElement: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::Unity::Properties::IndexedCollectionPropertyBag_2<TList, TElement> {
-    type Target = quest_hook::libil2cpp::Gc<TList>;
+    type Target = crate::Unity::Properties::PropertyBag_1<TList>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -130,9 +135,9 @@ for crate::Unity::Properties::IndexedCollectionPropertyBag_2<TList, TElement> {
 impl<
     TList: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<TList>>
+> AsRef<crate::Unity::Properties::IConstructor>
 for crate::Unity::Properties::IndexedCollectionPropertyBag_2<TList, TElement> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TList> {
+    fn as_ref(&self) -> &crate::Unity::Properties::IConstructor {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -140,9 +145,9 @@ for crate::Unity::Properties::IndexedCollectionPropertyBag_2<TList, TElement> {
 impl<
     TList: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<TList>>
+> AsMut<crate::Unity::Properties::IConstructor>
 for crate::Unity::Properties::IndexedCollectionPropertyBag_2<TList, TElement> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TList> {
+    fn as_mut(&mut self) -> &mut crate::Unity::Properties::IConstructor {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -150,9 +155,9 @@ for crate::Unity::Properties::IndexedCollectionPropertyBag_2<TList, TElement> {
 impl<
     TList: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<TList>>
+> AsRef<crate::Unity::Properties::IConstructorWithCount_1<TList>>
 for crate::Unity::Properties::IndexedCollectionPropertyBag_2<TList, TElement> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TList> {
+    fn as_ref(&self) -> &crate::Unity::Properties::IConstructorWithCount_1<TList> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -160,33 +165,11 @@ for crate::Unity::Properties::IndexedCollectionPropertyBag_2<TList, TElement> {
 impl<
     TList: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<TList>>
-for crate::Unity::Properties::IndexedCollectionPropertyBag_2<TList, TElement> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TList> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Unity+Properties+IndexedCollectionPropertyBag_2")]
-impl<
-    TList: quest_hook::libil2cpp::Type,
-    TElement: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::Unity::Properties::IConstructor>>
-for crate::Unity::Properties::IndexedCollectionPropertyBag_2<TList, TElement> {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Unity::Properties::IConstructor> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Unity+Properties+IndexedCollectionPropertyBag_2")]
-impl<
-    TList: quest_hook::libil2cpp::Type,
-    TElement: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::Unity::Properties::IConstructor>>
+> AsMut<crate::Unity::Properties::IConstructorWithCount_1<TList>>
 for crate::Unity::Properties::IndexedCollectionPropertyBag_2<TList, TElement> {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Unity::Properties::IConstructor> {
+    ) -> &mut crate::Unity::Properties::IConstructorWithCount_1<TList> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -194,11 +177,9 @@ for crate::Unity::Properties::IndexedCollectionPropertyBag_2<TList, TElement> {
 impl<
     TList: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::Unity::Properties::IPropertyBag>>
+> AsRef<crate::Unity::Properties::IPropertyBag>
 for crate::Unity::Properties::IndexedCollectionPropertyBag_2<TList, TElement> {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Unity::Properties::IPropertyBag> {
+    fn as_ref(&self) -> &crate::Unity::Properties::IPropertyBag {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -206,11 +187,29 @@ for crate::Unity::Properties::IndexedCollectionPropertyBag_2<TList, TElement> {
 impl<
     TList: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::Unity::Properties::IPropertyBag>>
+> AsMut<crate::Unity::Properties::IPropertyBag>
 for crate::Unity::Properties::IndexedCollectionPropertyBag_2<TList, TElement> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Unity::Properties::IPropertyBag> {
+    fn as_mut(&mut self) -> &mut crate::Unity::Properties::IPropertyBag {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Unity+Properties+IndexedCollectionPropertyBag_2")]
+impl<
+    TList: quest_hook::libil2cpp::Type,
+    TElement: quest_hook::libil2cpp::Type,
+> AsRef<crate::Unity::Properties::IPropertyBag_1<TList>>
+for crate::Unity::Properties::IndexedCollectionPropertyBag_2<TList, TElement> {
+    fn as_ref(&self) -> &crate::Unity::Properties::IPropertyBag_1<TList> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Unity+Properties+IndexedCollectionPropertyBag_2")]
+impl<
+    TList: quest_hook::libil2cpp::Type,
+    TElement: quest_hook::libil2cpp::Type,
+> AsMut<crate::Unity::Properties::IPropertyBag_1<TList>>
+for crate::Unity::Properties::IndexedCollectionPropertyBag_2<TList, TElement> {
+    fn as_mut(&mut self) -> &mut crate::Unity::Properties::IPropertyBag_1<TList> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -221,7 +220,7 @@ pub struct IndexedCollectionPropertyBag_2_ListElementProperty<
     TList: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TList, TElement>,
+    __cordl_parent: crate::Unity::Properties::Property_2<TList, TElement>,
     pub m_Index: i32,
     __cordl_phantom_TList: std::marker::PhantomData<TList>,
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,
@@ -242,7 +241,7 @@ for crate::Unity::Properties::IndexedCollectionPropertyBag_2_ListElementProperty
     TList,
     TElement,
 > {
-    type Target = quest_hook::libil2cpp::Gc<TList, TElement>;
+    type Target = crate::Unity::Properties::Property_2<TList, TElement>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

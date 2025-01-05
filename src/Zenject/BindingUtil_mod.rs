@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BindingUtil {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Zenject+BindingUtil")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+BindingUtil")]
 impl std::ops::Deref for crate::Zenject::BindingUtil {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -25,7 +25,9 @@ impl std::ops::DerefMut for crate::Zenject::BindingUtil {
 impl crate::Zenject::BindingUtil {
     pub fn AssertConcreteTypeListIsNotEmpty(
         concreteTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -43,31 +45,37 @@ impl crate::Zenject::BindingUtil {
             .invoke("AssertDerivesFromUnityObject", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn AssertDerivesFromUnityObject_Gc0(
-        types: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
+    pub fn AssertDerivesFromUnityObject_IEnumerable_1_0(
+        types: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("AssertDerivesFromUnityObject", (types))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AssertDerivesFromUnityObject_Gc2(
+    pub fn AssertDerivesFromUnityObject_Type2(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("AssertDerivesFromUnityObject", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AssertInstanceDerivesFromOrEqual_Gc_Gc0(
+    pub fn AssertInstanceDerivesFromOrEqual_IEnumerable_1_0(
         instance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         parentTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("AssertInstanceDerivesFromOrEqual", (instance, parentTypes))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AssertInstanceDerivesFromOrEqual_Gc_Gc1(
+    pub fn AssertInstanceDerivesFromOrEqual_Type1(
         instance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         baseType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -86,14 +94,18 @@ impl crate::Zenject::BindingUtil {
             .invoke("AssertIsComponent", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn AssertIsComponent_Gc0(
-        types: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
+    pub fn AssertIsComponent_IEnumerable_1_0(
+        types: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("AssertIsComponent", (types))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AssertIsComponent_Gc2(
+    pub fn AssertIsComponent_Type2(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -108,34 +120,32 @@ impl crate::Zenject::BindingUtil {
             .invoke("AssertIsDerivedFromType", (concreteType, parentType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AssertIsDerivedFromTypes_Gc_Gc1(
+    pub fn AssertIsDerivedFromTypes_IEnumerable_1_1(
         concreteTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
         parentTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("AssertIsDerivedFromTypes", (concreteTypes, parentTypes))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AssertIsDerivedFromTypes_Gc_Gc2(
-        concreteType: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        parentTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AssertIsDerivedFromTypes", (concreteType, parentTypes))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn AssertIsDerivedFromTypes_InvalidBindResponses0(
+    pub fn AssertIsDerivedFromTypes_IEnumerable_1_InvalidBindResponses0(
         concreteTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
         parentTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
         invalidBindResponse: crate::Zenject::InvalidBindResponses,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -144,6 +154,18 @@ impl crate::Zenject::BindingUtil {
                 "AssertIsDerivedFromTypes",
                 (concreteTypes, parentTypes, invalidBindResponse),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AssertIsDerivedFromTypes_Type2(
+        concreteType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        parentTypes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AssertIsDerivedFromTypes", (concreteType, parentTypes))?;
         Ok(__cordl_ret.into())
     }
     pub fn AssertIsInterfaceOrComponent_1<T>() -> quest_hook::libil2cpp::Result<
@@ -157,14 +179,18 @@ impl crate::Zenject::BindingUtil {
             .invoke("AssertIsInterfaceOrComponent", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn AssertIsInterfaceOrComponent_Gc0(
-        types: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
+    pub fn AssertIsInterfaceOrComponent_IEnumerable_1_0(
+        types: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("AssertIsInterfaceOrComponent", (types))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AssertIsInterfaceOrComponent_Gc2(
+    pub fn AssertIsInterfaceOrComponent_Type2(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -182,14 +208,18 @@ impl crate::Zenject::BindingUtil {
             .invoke("AssertIsInterfaceOrScriptableObject", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn AssertIsInterfaceOrScriptableObject_Gc0(
-        types: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
+    pub fn AssertIsInterfaceOrScriptableObject_IEnumerable_1_0(
+        types: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("AssertIsInterfaceOrScriptableObject", (types))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AssertIsInterfaceOrScriptableObject_Gc2(
+    pub fn AssertIsInterfaceOrScriptableObject_Type2(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -207,14 +237,18 @@ impl crate::Zenject::BindingUtil {
             .invoke("AssertIsNotAbstract", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn AssertIsNotAbstract_Gc0(
-        types: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
+    pub fn AssertIsNotAbstract_IEnumerable_1_0(
+        types: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("AssertIsNotAbstract", (types))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AssertIsNotAbstract_Gc2(
+    pub fn AssertIsNotAbstract_Type2(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -232,14 +266,18 @@ impl crate::Zenject::BindingUtil {
             .invoke("AssertIsNotComponent", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn AssertIsNotComponent_Gc0(
-        types: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
+    pub fn AssertIsNotComponent_IEnumerable_1_0(
+        types: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("AssertIsNotComponent", (types))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AssertIsNotComponent_Gc2(
+    pub fn AssertIsNotComponent_Type2(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -268,14 +306,22 @@ impl crate::Zenject::BindingUtil {
         Ok(__cordl_ret.into())
     }
     pub fn AssertTypesAreNotAbstract(
-        types: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
+        types: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("AssertTypesAreNotAbstract", (types))?;
         Ok(__cordl_ret.into())
     }
     pub fn AssertTypesAreNotComponents(
-        types: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
+        types: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("AssertTypesAreNotComponents", (types))?;

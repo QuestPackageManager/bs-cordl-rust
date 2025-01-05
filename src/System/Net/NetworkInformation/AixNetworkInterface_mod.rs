@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AixNetworkInterface {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Net::NetworkInformation::UnixNetworkInterface,
-    >,
+    __cordl_parent: crate::System::Net::NetworkInformation::UnixNetworkInterface,
     pub _ifa_flags: u32,
     pub _ifru_mtu: i32,
 }
@@ -16,9 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+NetworkInformation+AixNetworkInterface")]
 impl std::ops::Deref for crate::System::Net::NetworkInformation::AixNetworkInterface {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Net::NetworkInformation::UnixNetworkInterface,
-    >;
+    type Target = crate::System::Net::NetworkInformation::UnixNetworkInterface;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

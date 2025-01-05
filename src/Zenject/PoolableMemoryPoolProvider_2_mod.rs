@@ -5,7 +5,7 @@ pub struct PoolableMemoryPoolProvider_2<
     TContract: quest_hook::libil2cpp::Type,
     TMemoryPool: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TContract>,
+    __cordl_parent: crate::Zenject::PoolableMemoryPoolProviderBase_1<TContract>,
     pub _pool: TMemoryPool,
     __cordl_phantom_TContract: std::marker::PhantomData<TContract>,
     __cordl_phantom_TMemoryPool: std::marker::PhantomData<TMemoryPool>,
@@ -22,7 +22,7 @@ impl<
     TMemoryPool: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::Zenject::PoolableMemoryPoolProvider_2<TContract, TMemoryPool> {
-    type Target = quest_hook::libil2cpp::Gc<TContract>;
+    type Target = crate::Zenject::PoolableMemoryPoolProviderBase_1<TContract>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -45,12 +45,16 @@ impl<
     pub fn GetAllInstancesWithInjectSplit(
         &mut self,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-        args: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        args: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
         injectAction: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<crate::System::Action>,
         >,
         buffer: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -137,9 +141,9 @@ for crate::Zenject::PoolableMemoryPoolProvider_2<TContract, TMemoryPool> {
 impl<
     TContract: quest_hook::libil2cpp::Type,
     TMemoryPool: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::IValidatable>>
+> AsRef<crate::Zenject::IValidatable>
 for crate::Zenject::PoolableMemoryPoolProvider_2<TContract, TMemoryPool> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::IValidatable> {
+    fn as_ref(&self) -> &crate::Zenject::IValidatable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -147,11 +151,9 @@ for crate::Zenject::PoolableMemoryPoolProvider_2<TContract, TMemoryPool> {
 impl<
     TContract: quest_hook::libil2cpp::Type,
     TMemoryPool: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::IValidatable>>
+> AsMut<crate::Zenject::IValidatable>
 for crate::Zenject::PoolableMemoryPoolProvider_2<TContract, TMemoryPool> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::IValidatable> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IValidatable {
         unsafe { std::mem::transmute(self) }
     }
 }

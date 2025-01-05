@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PrefabGameObjectProvider {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _prefabCreator: quest_hook::libil2cpp::Gc<crate::Zenject::IPrefabInstantiator>,
 }
 #[cfg(feature = "Zenject+PrefabGameObjectProvider")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+PrefabGameObjectProvider")]
 impl std::ops::Deref for crate::Zenject::PrefabGameObjectProvider {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,12 +28,16 @@ impl crate::Zenject::PrefabGameObjectProvider {
     pub fn GetAllInstancesWithInjectSplit(
         &mut self,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-        args: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        args: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
         injectAction: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<crate::System::Action>,
         >,
         buffer: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -105,16 +109,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::PrefabGameObjectProvi
     }
 }
 #[cfg(feature = "Zenject+PrefabGameObjectProvider")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>>
-for crate::Zenject::PrefabGameObjectProvider {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::IProvider> {
+impl AsRef<crate::Zenject::IProvider> for crate::Zenject::PrefabGameObjectProvider {
+    fn as_ref(&self) -> &crate::Zenject::IProvider {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+PrefabGameObjectProvider")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>>
-for crate::Zenject::PrefabGameObjectProvider {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::IProvider> {
+impl AsMut<crate::Zenject::IProvider> for crate::Zenject::PrefabGameObjectProvider {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IProvider {
         unsafe { std::mem::transmute(self) }
     }
 }

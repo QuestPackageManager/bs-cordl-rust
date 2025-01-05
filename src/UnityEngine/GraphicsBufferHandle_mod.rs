@@ -22,17 +22,6 @@ for crate::UnityEngine::GraphicsBufferHandle {
 }
 #[cfg(feature = "UnityEngine+GraphicsBufferHandle")]
 impl crate::UnityEngine::GraphicsBufferHandle {
-    pub fn Equals_Gc0(
-        &mut self,
-        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
-        )?;
-        Ok(__cordl_ret.into())
-    }
     pub fn Equals_GraphicsBufferHandle1(
         &mut self,
         other: crate::UnityEngine::GraphicsBufferHandle,
@@ -41,6 +30,17 @@ impl crate::UnityEngine::GraphicsBufferHandle {
             self,
             "Equals",
             (other),
+        )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Equals_Il2CppObject0(
+        &mut self,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
         )?;
         Ok(__cordl_ret.into())
     }
@@ -54,20 +54,20 @@ impl crate::UnityEngine::GraphicsBufferHandle {
     }
 }
 #[cfg(feature = "UnityEngine+GraphicsBufferHandle")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBufferHandle>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::GraphicsBufferHandle>>
 for crate::UnityEngine::GraphicsBufferHandle {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBufferHandle> {
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::GraphicsBufferHandle> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+GraphicsBufferHandle")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBufferHandle>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::GraphicsBufferHandle>>
 for crate::UnityEngine::GraphicsBufferHandle {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBufferHandle> {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::GraphicsBufferHandle> {
         todo!()
     }
 }

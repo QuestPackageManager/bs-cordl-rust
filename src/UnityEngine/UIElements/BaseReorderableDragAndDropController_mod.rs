@@ -2,11 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseReorderableDragAndDropController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_View: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::BaseVerticalCollectionView,
     >,
-    pub m_SortedSelectedIds: quest_hook::libil2cpp::Gc<i32>,
+    pub m_SortedSelectedIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
+    >,
     pub _enableReordering_k__BackingField: bool,
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseReorderableDragAndDropController")]
@@ -18,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+BaseReorderableDragAndDropController")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::BaseReorderableDragAndDropController {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,7 +36,9 @@ for crate::UnityEngine::UIElements::BaseReorderableDragAndDropController {
 impl crate::UnityEngine::UIElements::BaseReorderableDragAndDropController {
     pub fn CanStartDrag(
         &mut self,
-        itemIds: quest_hook::libil2cpp::Gc<i32>,
+        itemIds: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -65,12 +69,17 @@ impl crate::UnityEngine::UIElements::BaseReorderableDragAndDropController {
     }
     pub fn GetSortedSelectedIds(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = __cordl_object
-            .invoke("GetSortedSelectedIds", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        > = __cordl_object.invoke("GetSortedSelectedIds", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn HandleAutoExpand(
@@ -126,7 +135,9 @@ impl crate::UnityEngine::UIElements::BaseReorderableDragAndDropController {
     }
     pub fn SetupDragAndDrop(
         &mut self,
-        itemIds: quest_hook::libil2cpp::Gc<i32>,
+        itemIds: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
         skipText: bool,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StartDragArgs> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -179,60 +190,32 @@ for crate::UnityEngine::UIElements::BaseReorderableDragAndDropController {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseReorderableDragAndDropController")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::ICollectionDragAndDropController,
-    >,
-> for crate::UnityEngine::UIElements::BaseReorderableDragAndDropController {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::ICollectionDragAndDropController,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+BaseReorderableDragAndDropController")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::ICollectionDragAndDropController,
-    >,
-> for crate::UnityEngine::UIElements::BaseReorderableDragAndDropController {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::ICollectionDragAndDropController,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+BaseReorderableDragAndDropController")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IReorderable>>
+impl AsRef<crate::UnityEngine::UIElements::ICollectionDragAndDropController>
 for crate::UnityEngine::UIElements::BaseReorderableDragAndDropController {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IReorderable> {
+    ) -> &crate::UnityEngine::UIElements::ICollectionDragAndDropController {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseReorderableDragAndDropController")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IReorderable>>
+impl AsMut<crate::UnityEngine::UIElements::ICollectionDragAndDropController>
 for crate::UnityEngine::UIElements::BaseReorderableDragAndDropController {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IReorderable> {
+    ) -> &mut crate::UnityEngine::UIElements::ICollectionDragAndDropController {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseReorderableDragAndDropController")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::UnityEngine::UIElements::IDragAndDropController_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IListDragAndDropArgs>,
     >,
 > for crate::UnityEngine::UIElements::BaseReorderableDragAndDropController {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::UnityEngine::UIElements::IDragAndDropController_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IListDragAndDropArgs>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -240,15 +223,29 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseReorderableDragAndDropController")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::UnityEngine::UIElements::IDragAndDropController_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IListDragAndDropArgs>,
     >,
 > for crate::UnityEngine::UIElements::BaseReorderableDragAndDropController {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::UnityEngine::UIElements::IDragAndDropController_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IListDragAndDropArgs>,
     > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+BaseReorderableDragAndDropController")]
+impl AsRef<crate::UnityEngine::UIElements::IReorderable>
+for crate::UnityEngine::UIElements::BaseReorderableDragAndDropController {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IReorderable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+BaseReorderableDragAndDropController")]
+impl AsMut<crate::UnityEngine::UIElements::IReorderable>
+for crate::UnityEngine::UIElements::BaseReorderableDragAndDropController {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IReorderable {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HexEncoder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub encodingTable: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub decodingTable: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Utilities+Encoders+HexEncoder")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Utilities::Encoders::HexEncoder {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -68,21 +68,7 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::HexEncoder {
         let __cordl_ret: i32 = __cordl_object.invoke("DecodeString", (data, outStream))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Encode_Gc_i32_i32_Gc1(
-        &mut self,
-        buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-        off: i32,
-        len: i32,
-        outStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("Encode", (buf, off, len, outStream))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Encode_i32_0(
+    pub fn Encode_Il2CppArray_i32_0(
         &mut self,
         inBuf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         inOff: i32,
@@ -95,6 +81,20 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::HexEncoder {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("Encode", (inBuf, inOff, inLen, outBuf, outOff))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Encode_Stream1(
+        &mut self,
+        buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        off: i32,
+        len: i32,
+        outStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("Encode", (buf, off, len, outStream))?;
         Ok(__cordl_ret.into())
     }
     pub fn Ignore(c: char) -> quest_hook::libil2cpp::Result<bool> {
@@ -141,26 +141,18 @@ for crate::Org::BouncyCastle::Utilities::Encoders::HexEncoder {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Encoders+HexEncoder")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Encoders::IEncoder>,
-> for crate::Org::BouncyCastle::Utilities::Encoders::HexEncoder {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Utilities::Encoders::IEncoder,
-    > {
+impl AsRef<crate::Org::BouncyCastle::Utilities::Encoders::IEncoder>
+for crate::Org::BouncyCastle::Utilities::Encoders::HexEncoder {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Utilities::Encoders::IEncoder {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Encoders+HexEncoder")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Encoders::IEncoder>,
-> for crate::Org::BouncyCastle::Utilities::Encoders::HexEncoder {
+impl AsMut<crate::Org::BouncyCastle::Utilities::Encoders::IEncoder>
+for crate::Org::BouncyCastle::Utilities::Encoders::HexEncoder {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Utilities::Encoders::IEncoder,
-    > {
+    ) -> &mut crate::Org::BouncyCastle::Utilities::Encoders::IEncoder {
         unsafe { std::mem::transmute(self) }
     }
 }

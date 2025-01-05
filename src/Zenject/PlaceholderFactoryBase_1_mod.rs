@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlaceholderFactoryBase_1<TValue: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _provider: quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
     pub _injectContext: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Zenject+PlaceholderFactoryBase_1")]
 impl<TValue: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::PlaceholderFactoryBase_1<TValue> {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -49,7 +49,9 @@ impl<
     }
     pub fn CreateInternal(
         &mut self,
-        extraArgs: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        extraArgs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
     ) -> quest_hook::libil2cpp::Result<TValue>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -100,9 +102,7 @@ impl<
     pub fn __zenInjectMethod0(
         P_0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         P_1: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -128,7 +128,11 @@ impl<
     pub fn get_ParamTypes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
     >
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -138,7 +142,9 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         > = __cordl_object.invoke("get_ParamTypes", ())?;
         Ok(__cordl_ret.into())
     }
@@ -154,42 +160,30 @@ for crate::Zenject::PlaceholderFactoryBase_1<TValue> {
     }
 }
 #[cfg(feature = "Zenject+PlaceholderFactoryBase_1")]
-impl<
-    TValue: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::IPlaceholderFactory>>
+impl<TValue: quest_hook::libil2cpp::Type> AsRef<crate::Zenject::IPlaceholderFactory>
 for crate::Zenject::PlaceholderFactoryBase_1<TValue> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::IPlaceholderFactory> {
+    fn as_ref(&self) -> &crate::Zenject::IPlaceholderFactory {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+PlaceholderFactoryBase_1")]
-impl<
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::IPlaceholderFactory>>
+impl<TValue: quest_hook::libil2cpp::Type> AsMut<crate::Zenject::IPlaceholderFactory>
 for crate::Zenject::PlaceholderFactoryBase_1<TValue> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::IPlaceholderFactory> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IPlaceholderFactory {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+PlaceholderFactoryBase_1")]
-impl<
-    TValue: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::IValidatable>>
+impl<TValue: quest_hook::libil2cpp::Type> AsRef<crate::Zenject::IValidatable>
 for crate::Zenject::PlaceholderFactoryBase_1<TValue> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::IValidatable> {
+    fn as_ref(&self) -> &crate::Zenject::IValidatable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+PlaceholderFactoryBase_1")]
-impl<
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::IValidatable>>
+impl<TValue: quest_hook::libil2cpp::Type> AsMut<crate::Zenject::IValidatable>
 for crate::Zenject::PlaceholderFactoryBase_1<TValue> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::IValidatable> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IValidatable {
         unsafe { std::mem::transmute(self) }
     }
 }

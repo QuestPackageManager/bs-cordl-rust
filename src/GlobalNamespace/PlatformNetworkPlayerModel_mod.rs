@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlatformNetworkPlayerModel {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BaseNetworkPlayerModel,
-    >,
+    __cordl_parent: crate::GlobalNamespace::BaseNetworkPlayerModel,
 }
 #[cfg(feature = "PlatformNetworkPlayerModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PlatformNetworkPlayerModel")]
 impl std::ops::Deref for crate::GlobalNamespace::PlatformNetworkPlayerModel {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BaseNetworkPlayerModel,
-    >;
+    type Target = crate::GlobalNamespace::BaseNetworkPlayerModel;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -61,14 +57,18 @@ impl crate::GlobalNamespace::PlatformNetworkPlayerModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
+            >,
         > = __cordl_object.invoke("get_friends", ())?;
         Ok(__cordl_ret.into())
     }
@@ -87,9 +87,7 @@ for crate::GlobalNamespace::PlatformNetworkPlayerModel {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlatformNetworkPlayerModel_CreatePartyConfig {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BaseNetworkPlayerModel_PartyConfig,
-    >,
+    __cordl_parent: crate::GlobalNamespace::BaseNetworkPlayerModel_PartyConfig,
 }
 #[cfg(feature = "PlatformNetworkPlayerModel+CreatePartyConfig")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -100,9 +98,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "PlatformNetworkPlayerModel+CreatePartyConfig")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PlatformNetworkPlayerModel_CreatePartyConfig {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BaseNetworkPlayerModel_PartyConfig,
-    >;
+    type Target = crate::GlobalNamespace::BaseNetworkPlayerModel_PartyConfig;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -146,13 +142,13 @@ for crate::GlobalNamespace::PlatformNetworkPlayerModel_CreatePartyConfig {
 }
 #[cfg(feature = "PlatformNetworkPlayerModel+CreatePartyConfig")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::GlobalNamespace::INetworkPlayerModelPartyConfig_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlatformNetworkPlayerModel>,
     >,
 > for crate::GlobalNamespace::PlatformNetworkPlayerModel_CreatePartyConfig {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::GlobalNamespace::INetworkPlayerModelPartyConfig_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlatformNetworkPlayerModel>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -160,13 +156,13 @@ impl AsRef<
 }
 #[cfg(feature = "PlatformNetworkPlayerModel+CreatePartyConfig")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::GlobalNamespace::INetworkPlayerModelPartyConfig_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlatformNetworkPlayerModel>,
     >,
 > for crate::GlobalNamespace::PlatformNetworkPlayerModel_CreatePartyConfig {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::GlobalNamespace::INetworkPlayerModelPartyConfig_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlatformNetworkPlayerModel>,
     > {
         unsafe { std::mem::transmute(self) }

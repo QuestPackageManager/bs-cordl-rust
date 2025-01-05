@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Pen {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Pointer>,
+    __cordl_parent: crate::UnityEngine::InputSystem::Pointer,
     pub _tip_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Controls::ButtonControl,
     >,
@@ -38,7 +38,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+Pen")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Pen {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Pointer>;
+    type Target = crate::UnityEngine::InputSystem::Pointer;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

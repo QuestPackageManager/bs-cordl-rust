@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlListConverter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::XmlBaseConverter,
-    >,
+    __cordl_parent: crate::System::Xml::Schema::XmlBaseConverter,
     pub atomicConverter: quest_hook::libil2cpp::Gc<
         crate::System::Xml::Schema::XmlValueConverter,
     >,
@@ -16,9 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlListConverter")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlListConverter {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::XmlBaseConverter,
-    >;
+    type Target = crate::System::Xml::Schema::XmlBaseConverter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -116,7 +112,7 @@ impl crate::System::Xml::Schema::XmlListConverter {
         > = __cordl_object.invoke("ListAsString", (list, nsResolver))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_XmlBaseConverter0(
         atomicConverter: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlBaseConverter,
         >,
@@ -127,7 +123,7 @@ impl crate::System::Xml::Schema::XmlListConverter {
             .invoke_void(".ctor", (atomicConverter))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_XmlBaseConverter_Type1(
         atomicConverter: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlBaseConverter,
         >,
@@ -139,7 +135,7 @@ impl crate::System::Xml::Schema::XmlListConverter {
             .invoke_void(".ctor", (atomicConverter, clrTypeDefault))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc2(
+    pub fn New_XmlSchemaType2(
         schemaType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -153,14 +149,18 @@ impl crate::System::Xml::Schema::XmlListConverter {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = __cordl_object.invoke("StringAsList", (value))?;
         Ok(__cordl_ret.into())
     }
@@ -197,7 +197,7 @@ impl crate::System::Xml::Schema::XmlListConverter {
             .invoke("ToList", (list, nsResolver))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_XmlBaseConverter0(
         &mut self,
         atomicConverter: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlBaseConverter,
@@ -210,7 +210,7 @@ impl crate::System::Xml::Schema::XmlListConverter {
             .invoke(".ctor", (atomicConverter))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_XmlBaseConverter_Type1(
         &mut self,
         atomicConverter: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlBaseConverter,
@@ -224,7 +224,7 @@ impl crate::System::Xml::Schema::XmlListConverter {
             .invoke(".ctor", (atomicConverter, clrTypeDefault))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_XmlSchemaType2(
         &mut self,
         schemaType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

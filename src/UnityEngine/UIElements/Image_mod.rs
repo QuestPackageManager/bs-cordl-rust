@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Image {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::VisualElement,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
     pub m_ScaleMode: crate::UnityEngine::ScaleMode,
     pub m_Image: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     pub m_Sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
@@ -24,9 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+Image")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Image {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::VisualElement,
-    >;
+    type Target = crate::UnityEngine::UIElements::VisualElement;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -77,18 +73,7 @@ impl crate::UnityEngine::UIElements::Image {
             .invoke("GetSourceRect", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetTextureDisplaySize_Gc0(
-        &mut self,
-        texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
-            .invoke("GetTextureDisplaySize", (texture))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetTextureDisplaySize_Gc1(
+    pub fn GetTextureDisplaySize_Sprite1(
         &mut self,
         sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
@@ -97,6 +82,17 @@ impl crate::UnityEngine::UIElements::Image {
         );
         let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
             .invoke("GetTextureDisplaySize", (sprite))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTextureDisplaySize_Texture0(
+        &mut self,
+        texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector2 = __cordl_object
+            .invoke("GetTextureDisplaySize", (texture))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -331,7 +327,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Image
 #[repr(C)]
 #[derive(Debug)]
 pub struct Image_UxmlFactory {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Image>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Image_UxmlTraits>,
     >,
@@ -343,7 +339,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+Image+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Image_UxmlFactory {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Image>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Image_UxmlTraits>,
     >;
@@ -391,9 +387,7 @@ for crate::UnityEngine::UIElements::Image_UxmlFactory {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Image_UxmlTraits {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
 }
 #[cfg(feature = "UnityEngine+UIElements+Image+UxmlTraits")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -402,9 +396,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+Image+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Image_UxmlTraits {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
-    >;
+    type Target = crate::UnityEngine::UIElements::VisualElement_UxmlTraits;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

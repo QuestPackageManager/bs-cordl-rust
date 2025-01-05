@@ -2,12 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ContainerViewController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+    __cordl_parent: crate::HMUI::ViewController,
     pub _controllersContainer: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::RectTransform,
     >,
     pub _viewControllers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+        >,
     >,
 }
 #[cfg(feature = "HMUI+ContainerViewController")]
@@ -17,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+ContainerViewController")]
 impl std::ops::Deref for crate::HMUI::ContainerViewController {
-    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>;
+    type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,10 +37,10 @@ impl crate::HMUI::ContainerViewController {
         viewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
         finishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
         animationLayouter: quest_hook::libil2cpp::Gc<
-            f32,
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Il2CppArray<
-                    quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+            crate::System::Action_2<
+                f32,
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<*mut crate::HMUI::ViewController>,
                 >,
             >,
         >,
@@ -59,10 +61,10 @@ impl crate::HMUI::ContainerViewController {
         newViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
         finishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
         animationLayouter: quest_hook::libil2cpp::Gc<
-            f32,
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Il2CppArray<
-                    quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+            crate::System::Action_2<
+                f32,
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<*mut crate::HMUI::ViewController>,
                 >,
             >,
         >,
@@ -105,7 +107,9 @@ impl crate::HMUI::ContainerViewController {
     pub fn GetNewXPositionsForViewControllers(
         &mut self,
         viewControllers: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+            >,
         >,
         exludeFromEndCount: i32,
     ) -> quest_hook::libil2cpp::Result<
@@ -133,7 +137,9 @@ impl crate::HMUI::ContainerViewController {
     pub fn LayoutViewControllers(
         &mut self,
         viewControllers: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -153,20 +159,20 @@ impl crate::HMUI::ContainerViewController {
     pub fn RemoveViewControllers(
         &mut self,
         viewControllers: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::HMUI::ViewController>,
         >,
         finishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
         animationLayouter: quest_hook::libil2cpp::Gc<
-            f32,
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Il2CppArray<
-                    quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+            crate::System::Action_3<
+                f32,
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<*mut crate::HMUI::ViewController>,
                 >,
-            >,
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::HashSet_1<
+                        quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                    >,
+                >,
             >,
         >,
         immediately: bool,
@@ -184,20 +190,20 @@ impl crate::HMUI::ContainerViewController {
     pub fn RemoveViewControllersCoroutine(
         &mut self,
         viewControllersToRemove: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::HMUI::ViewController>,
         >,
         finishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
         animationLayouter: quest_hook::libil2cpp::Gc<
-            f32,
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Il2CppArray<
-                    quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+            crate::System::Action_3<
+                f32,
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<*mut crate::HMUI::ViewController>,
                 >,
-            >,
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::HashSet_1<
+                        quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                    >,
+                >,
             >,
         >,
         immediately: bool,
@@ -235,9 +241,7 @@ impl crate::HMUI::ContainerViewController {
     pub fn SetChildViewControllers(
         &mut self,
         viewControllers: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::HMUI::ViewController>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -315,13 +319,19 @@ impl crate::HMUI::ContainerViewController {
     pub fn get_viewControllers(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+            >,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+            >,
         > = __cordl_object.invoke("get_viewControllers", ())?;
         Ok(__cordl_ret.into())
     }

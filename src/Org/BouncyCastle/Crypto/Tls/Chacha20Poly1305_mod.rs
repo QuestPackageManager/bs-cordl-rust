@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Chacha20Poly1305 {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub context: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
     >,
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+Chacha20Poly1305")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::Chacha20Poly1305 {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -239,22 +239,16 @@ for crate::Org::BouncyCastle::Crypto::Tls::Chacha20Poly1305 {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+Chacha20Poly1305")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsCipher>>
+impl AsRef<crate::Org::BouncyCastle::Crypto::Tls::TlsCipher>
 for crate::Org::BouncyCastle::Crypto::Tls::Chacha20Poly1305 {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsCipher> {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Tls::TlsCipher {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+Chacha20Poly1305")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsCipher>>
+impl AsMut<crate::Org::BouncyCastle::Crypto::Tls::TlsCipher>
 for crate::Org::BouncyCastle::Crypto::Tls::Chacha20Poly1305 {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::TlsCipher,
-    > {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::Tls::TlsCipher {
         unsafe { std::mem::transmute(self) }
     }
 }

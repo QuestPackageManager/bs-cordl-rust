@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HMACSHA1 {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Security::Cryptography::HMAC,
-    >,
+    __cordl_parent: crate::System::Security::Cryptography::HMAC,
 }
 #[cfg(feature = "System+Security+Cryptography+HMACSHA1")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+Cryptography+HMACSHA1")]
 impl std::ops::Deref for crate::System::Security::Cryptography::HMACSHA1 {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::HMAC>;
+    type Target = crate::System::Security::Cryptography::HMAC;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -33,7 +31,7 @@ impl crate::System::Security::Cryptography::HMACSHA1 {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Il2CppArray1(
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -42,7 +40,7 @@ impl crate::System::Security::Cryptography::HMACSHA1 {
             .invoke_void(".ctor", (key))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc__cordl_bool2(
+    pub fn New_Il2CppArray__cordl_bool2(
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         useManagedSha1: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -62,7 +60,7 @@ impl crate::System::Security::Cryptography::HMACSHA1 {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Il2CppArray1(
         &mut self,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -73,7 +71,7 @@ impl crate::System::Security::Cryptography::HMACSHA1 {
             .invoke(".ctor", (key))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc__cordl_bool2(
+    pub fn _ctor_Il2CppArray__cordl_bool2(
         &mut self,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         useManagedSha1: bool,

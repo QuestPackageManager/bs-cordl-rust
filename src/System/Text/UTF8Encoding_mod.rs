@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UTF8Encoding {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    __cordl_parent: crate::System::Text::Encoding,
     pub _emitUTF8Identifier: bool,
     pub _isThrowException: bool,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Text+UTF8Encoding")]
 impl std::ops::Deref for crate::System::Text::UTF8Encoding {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>;
+    type Target = crate::System::Text::Encoding;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -60,7 +60,7 @@ impl crate::System::Text::UTF8Encoding {
             .invoke("FallbackInvalidByteSequence", (pSrc, ch, fallback, pTarget))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FallbackInvalidByteSequence_Gc1(
+    pub fn FallbackInvalidByteSequence_Il2CppObject1(
         &mut self,
         pSrc: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         ch: i32,
@@ -73,17 +73,20 @@ impl crate::System::Text::UTF8Encoding {
             .invoke("FallbackInvalidByteSequence", (pSrc, ch, fallback))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetByteCount_Gc1(
+    pub fn GetByteCount_Il2CppArray_i32_i32_0(
         &mut self,
-        chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        index: i32,
+        count: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetByteCount", (chars))?;
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("GetByteCount", (chars, index, count))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetByteCount_i32_2(
+    pub fn GetByteCount_Il2CppObject_i32_2(
         &mut self,
         chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         count: i32,
@@ -94,7 +97,7 @@ impl crate::System::Text::UTF8Encoding {
         let __cordl_ret: i32 = __cordl_object.invoke("GetByteCount", (chars, count))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetByteCount_i32_Gc3(
+    pub fn GetByteCount_Il2CppObject_i32_EncoderNLS3(
         &mut self,
         chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         count: i32,
@@ -107,17 +110,14 @@ impl crate::System::Text::UTF8Encoding {
             .invoke("GetByteCount", (chars, count, baseEncoder))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetByteCount_i32_i32_0(
+    pub fn GetByteCount_Il2CppString1(
         &mut self,
-        chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
-        index: i32,
-        count: i32,
+        chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetByteCount", (chars, index, count))?;
+        let __cordl_ret: i32 = __cordl_object.invoke("GetByteCount", (chars))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetBytesUnknown(
@@ -137,51 +137,7 @@ impl crate::System::Text::UTF8Encoding {
         > = __cordl_object.invoke("GetBytesUnknown", (pSrc, ch))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetBytes_Gc_i32_2(
-        &mut self,
-        chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        charCount: i32,
-        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        byteCount: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetBytes", (chars, charCount, bytes, byteCount))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetBytes_Gc_i32_Gc3(
-        &mut self,
-        chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        charCount: i32,
-        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        byteCount: i32,
-        baseEncoder: quest_hook::libil2cpp::Gc<crate::System::Text::EncoderNLS>,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetBytes", (chars, charCount, bytes, byteCount, baseEncoder))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetBytes_i32_Gc_i32_0(
-        &mut self,
-        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        charIndex: i32,
-        charCount: i32,
-        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-        byteIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetBytes", (s, charIndex, charCount, bytes, byteIndex))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetBytes_i32_Gc_i32_1(
+    pub fn GetBytes_Il2CppArray_i32_Il2CppArray_i32_1(
         &mut self,
         chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         charIndex: i32,
@@ -196,31 +152,51 @@ impl crate::System::Text::UTF8Encoding {
             .invoke("GetBytes", (chars, charIndex, charCount, bytes, byteIndex))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetCharCount_Gc2(
+    pub fn GetBytes_Il2CppObject_Il2CppObject_i32_2(
         &mut self,
+        chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        charCount: i32,
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        count: i32,
-        baseDecoder: quest_hook::libil2cpp::Gc<crate::System::Text::DecoderNLS>,
+        byteCount: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object
-            .invoke("GetCharCount", (bytes, count, baseDecoder))?;
+            .invoke("GetBytes", (chars, charCount, bytes, byteCount))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetCharCount_Gc_i32_1(
+    pub fn GetBytes_Il2CppObject_Il2CppObject_i32_EncoderNLS3(
         &mut self,
+        chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        charCount: i32,
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        count: i32,
+        byteCount: i32,
+        baseEncoder: quest_hook::libil2cpp::Gc<crate::System::Text::EncoderNLS>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetCharCount", (bytes, count))?;
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("GetBytes", (chars, charCount, bytes, byteCount, baseEncoder))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetCharCount_i32_0(
+    pub fn GetBytes_Il2CppString_i32_Il2CppArray_i32_0(
+        &mut self,
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        charIndex: i32,
+        charCount: i32,
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        byteIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("GetBytes", (s, charIndex, charCount, bytes, byteIndex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCharCount_Il2CppArray_i32_0(
         &mut self,
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         index: i32,
@@ -233,7 +209,46 @@ impl crate::System::Text::UTF8Encoding {
             .invoke("GetCharCount", (bytes, index, count))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetChars_Gc_i32_1(
+    pub fn GetCharCount_Il2CppObject1(
+        &mut self,
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetCharCount", (bytes, count))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCharCount_Il2CppObject_DecoderNLS2(
+        &mut self,
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        count: i32,
+        baseDecoder: quest_hook::libil2cpp::Gc<crate::System::Text::DecoderNLS>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("GetCharCount", (bytes, count, baseDecoder))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetChars_Il2CppArray_i32_Il2CppArray_i32_0(
+        &mut self,
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        byteIndex: i32,
+        byteCount: i32,
+        chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        charIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("GetChars", (bytes, byteIndex, byteCount, chars, charIndex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetChars_Il2CppObject_Il2CppObject_i32_1(
         &mut self,
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         byteCount: i32,
@@ -247,7 +262,7 @@ impl crate::System::Text::UTF8Encoding {
             .invoke("GetChars", (bytes, byteCount, chars, charCount))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetChars_Gc_i32_Gc2(
+    pub fn GetChars_Il2CppObject_Il2CppObject_i32_DecoderNLS2(
         &mut self,
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         byteCount: i32,
@@ -260,21 +275,6 @@ impl crate::System::Text::UTF8Encoding {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("GetChars", (bytes, byteCount, chars, charCount, baseDecoder))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetChars_i32_Gc_i32_0(
-        &mut self,
-        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-        byteIndex: i32,
-        byteCount: i32,
-        chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
-        charIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetChars", (bytes, byteIndex, byteCount, chars, charIndex))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetDecoder(
@@ -395,7 +395,7 @@ impl crate::System::Text::UTF8Encoding {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn PtrDiff_Gc_Gc0(
+    pub fn PtrDiff_Il2CppObject_Il2CppObject0(
         a: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         b: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -403,7 +403,7 @@ impl crate::System::Text::UTF8Encoding {
             .invoke("PtrDiff", (a, b))?;
         Ok(__cordl_ret.into())
     }
-    pub fn PtrDiff_Gc_Gc1(
+    pub fn PtrDiff_Il2CppObject_Il2CppObject1(
         a: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         b: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -478,7 +478,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Text::UTF8Encoding {
 #[repr(C)]
 #[derive(Debug)]
 pub struct UTF8Encoding_UTF8Decoder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Text::DecoderNLS>,
+    __cordl_parent: crate::System::Text::DecoderNLS,
     pub bits: i32,
 }
 #[cfg(feature = "System+Text+UTF8Encoding+UTF8Decoder")]
@@ -488,7 +488,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Text+UTF8Encoding+UTF8Decoder")]
 impl std::ops::Deref for crate::System::Text::UTF8Encoding_UTF8Decoder {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Text::DecoderNLS>;
+    type Target = crate::System::Text::DecoderNLS;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -553,7 +553,7 @@ for crate::System::Text::UTF8Encoding_UTF8Decoder {
 #[repr(C)]
 #[derive(Debug)]
 pub struct UTF8Encoding_UTF8Encoder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Text::EncoderNLS>,
+    __cordl_parent: crate::System::Text::EncoderNLS,
     pub surrogateChar: i32,
 }
 #[cfg(feature = "System+Text+UTF8Encoding+UTF8Encoder")]
@@ -563,7 +563,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Text+UTF8Encoding+UTF8Encoder")]
 impl std::ops::Deref for crate::System::Text::UTF8Encoding_UTF8Encoder {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Text::EncoderNLS>;
+    type Target = crate::System::Text::EncoderNLS;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

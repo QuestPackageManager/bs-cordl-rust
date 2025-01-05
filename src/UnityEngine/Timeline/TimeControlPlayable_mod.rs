@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimeControlPlayable {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Playables::PlayableBehaviour,
-    >,
+    __cordl_parent: crate::UnityEngine::Playables::PlayableBehaviour,
     pub m_timeControl: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Timeline::ITimeControl,
     >,
@@ -17,9 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Timeline+TimeControlPlayable")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::TimeControlPlayable {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Playables::PlayableBehaviour,
-    >;
+    type Target = crate::UnityEngine::Playables::PlayableBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

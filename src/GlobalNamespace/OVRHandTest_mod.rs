@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BoolMonitor_OVRHandTest_BoolGenerator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVRHandTest+BoolMonitor+BoolGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRHandTest+BoolMonitor+BoolGenerator")]
 impl std::ops::Deref for crate::GlobalNamespace::BoolMonitor_OVRHandTest_BoolGenerator {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -94,10 +94,12 @@ for crate::GlobalNamespace::BoolMonitor_OVRHandTest_BoolGenerator {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRHandTest {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub uiText: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
     pub monitors: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHandTest_BoolMonitor>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHandTest_BoolMonitor>,
+        >,
     >,
     pub data: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     pub hs_LH: crate::GlobalNamespace::OVRPlugin_HandState,
@@ -117,7 +119,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRHandTest")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRHandTest {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -183,7 +185,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRHandTest {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRHandTest_BoolMonitor {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_generator: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BoolMonitor_OVRHandTest_BoolGenerator,
@@ -201,7 +203,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRHandTest+BoolMonitor")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRHandTest_BoolMonitor {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

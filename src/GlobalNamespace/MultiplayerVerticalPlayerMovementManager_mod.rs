@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerVerticalPlayerMovementManager {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _movementRange: f32,
     pub _duelMovementRange: f32,
     pub _maxMoveSpeedMetersPerSecond: f32,
@@ -22,15 +22,19 @@ pub struct MultiplayerVerticalPlayerMovementManager {
         crate::GlobalNamespace::MultiplayerController,
     >,
     pub _reusablePlayersList: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
+            >,
         >,
     >,
     pub _currentSpeedsDictionary: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerConnectedPlayerFacade,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerConnectedPlayerFacade,
+            >,
+            f32,
         >,
-        f32,
     >,
     pub _lastFrameBaseScore: f32,
 }
@@ -43,7 +47,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MultiplayerVerticalPlayerMovementManager")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerVerticalPlayerMovementManager {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

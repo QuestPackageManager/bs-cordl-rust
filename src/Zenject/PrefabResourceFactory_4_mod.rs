@@ -7,7 +7,7 @@ pub struct PrefabResourceFactory_4<
     P3: quest_hook::libil2cpp::Type,
     T: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     __cordl_phantom_P1: std::marker::PhantomData<P1>,
     __cordl_phantom_P2: std::marker::PhantomData<P2>,
@@ -26,7 +26,7 @@ impl<
     P3: quest_hook::libil2cpp::Type,
     T: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::Zenject::PrefabResourceFactory_4<P1, P2, P3, T> {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -94,9 +94,7 @@ impl<
     }
     pub fn __zenCreate(
         P_0: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -213,9 +211,9 @@ impl<
     P2: quest_hook::libil2cpp::Type,
     P3: quest_hook::libil2cpp::Type,
     T: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::IFactory>>
+> AsRef<crate::Zenject::IFactory>
 for crate::Zenject::PrefabResourceFactory_4<P1, P2, P3, T> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::IFactory> {
+    fn as_ref(&self) -> &crate::Zenject::IFactory {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -225,9 +223,9 @@ impl<
     P2: quest_hook::libil2cpp::Type,
     P3: quest_hook::libil2cpp::Type,
     T: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::IFactory>>
+> AsMut<crate::Zenject::IFactory>
 for crate::Zenject::PrefabResourceFactory_4<P1, P2, P3, T> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::IFactory> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IFactory {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -238,7 +236,7 @@ impl<
     P3: quest_hook::libil2cpp::Type,
     T: quest_hook::libil2cpp::Type,
 > AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::Zenject::IFactory_5<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         P1,
         P2,
@@ -248,7 +246,7 @@ impl<
 > for crate::Zenject::PrefabResourceFactory_4<P1, P2, P3, T> {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::Zenject::IFactory_5<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         P1,
         P2,
@@ -265,7 +263,7 @@ impl<
     P3: quest_hook::libil2cpp::Type,
     T: quest_hook::libil2cpp::Type,
 > AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::Zenject::IFactory_5<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         P1,
         P2,
@@ -275,7 +273,7 @@ impl<
 > for crate::Zenject::PrefabResourceFactory_4<P1, P2, P3, T> {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::Zenject::IFactory_5<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         P1,
         P2,

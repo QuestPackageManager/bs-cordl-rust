@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TcpClient {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ClientSocket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
     pub m_Active: bool,
     pub m_DataStream: quest_hook::libil2cpp::Gc<
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Sockets+TcpClient")]
 impl std::ops::Deref for crate::System::Net::Sockets::TcpClient {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -72,7 +72,7 @@ impl crate::System::Net::Sockets::TcpClient {
         > = __cordl_object.invoke("ConnectAsync", (host, port))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Connect_Gc1(
+    pub fn Connect_IPEndPoint1(
         &mut self,
         remoteEP: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -83,7 +83,7 @@ impl crate::System::Net::Sockets::TcpClient {
             .invoke("Connect", (remoteEP))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Connect_i32_0(
+    pub fn Connect_Il2CppString_i32_0(
         &mut self,
         hostname: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         port: i32,
@@ -166,7 +166,7 @@ impl crate::System::Net::Sockets::TcpClient {
             .invoke_void(".ctor", (family))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc2(
+    pub fn New_Socket2(
         acceptedSocket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -196,7 +196,7 @@ impl crate::System::Net::Sockets::TcpClient {
             .invoke(".ctor", (family))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_Socket2(
         &mut self,
         acceptedSocket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -259,16 +259,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::Sockets::TcpClien
     }
 }
 #[cfg(feature = "System+Net+Sockets+TcpClient")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::System::Net::Sockets::TcpClient {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsRef<crate::System::IDisposable> for crate::System::Net::Sockets::TcpClient {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Net+Sockets+TcpClient")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::System::Net::Sockets::TcpClient {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsMut<crate::System::IDisposable> for crate::System::Net::Sockets::TcpClient {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }

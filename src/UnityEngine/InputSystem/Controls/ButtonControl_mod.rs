@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ButtonControl {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::AxisControl,
-    >,
+    __cordl_parent: crate::UnityEngine::InputSystem::Controls::AxisControl,
     pub pressPoint: f32,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Controls+ButtonControl")]
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+Controls+ButtonControl")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Controls::ButtonControl {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Controls::AxisControl,
-    >;
+    type Target = crate::UnityEngine::InputSystem::Controls::AxisControl;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

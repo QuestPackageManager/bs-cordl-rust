@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Version {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Major: i32,
     pub _Minor: i32,
     pub _Build: i32,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Version")]
 impl std::ops::Deref for crate::System::Version {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,7 +40,7 @@ impl crate::System::Version {
         > = __cordl_object.invoke("Clone", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn CompareTo_Gc0(
+    pub fn CompareTo_Il2CppObject0(
         &mut self,
         version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -50,7 +50,7 @@ impl crate::System::Version {
         let __cordl_ret: i32 = __cordl_object.invoke("CompareTo", (version))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CompareTo_Gc1(
+    pub fn CompareTo_Version1(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Version>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -60,7 +60,7 @@ impl crate::System::Version {
         let __cordl_ret: i32 = __cordl_object.invoke("CompareTo", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Gc0(
+    pub fn Equals_Il2CppObject0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -70,7 +70,7 @@ impl crate::System::Version {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Gc1(
+    pub fn Equals_Version1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<crate::System::Version>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -94,7 +94,7 @@ impl crate::System::Version {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc3(
+    pub fn New_Il2CppString3(
         version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -103,7 +103,7 @@ impl crate::System::Version {
             .invoke_void(".ctor", (version))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc5(
+    pub fn New_Version5(
         version: quest_hook::libil2cpp::Gc<crate::System::Version>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -279,7 +279,7 @@ impl crate::System::Version {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc3(
+    pub fn _ctor_Il2CppString3(
         &mut self,
         version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -290,7 +290,7 @@ impl crate::System::Version {
             .invoke(".ctor", (version))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc5(
+    pub fn _ctor_Version5(
         &mut self,
         version: quest_hook::libil2cpp::Gc<crate::System::Version>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -434,86 +434,86 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Version {
     }
 }
 #[cfg(feature = "System+Version")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
-for crate::System::Version {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
+impl AsRef<crate::System::ICloneable> for crate::System::Version {
+    fn as_ref(&self) -> &crate::System::ICloneable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Version")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
-for crate::System::Version {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
+impl AsMut<crate::System::ICloneable> for crate::System::Version {
+    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Version")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
-for crate::System::Version {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IComparable> {
+impl AsRef<crate::System::IComparable> for crate::System::Version {
+    fn as_ref(&self) -> &crate::System::IComparable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Version")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
-for crate::System::Version {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IComparable> {
+impl AsMut<crate::System::IComparable> for crate::System::Version {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Version")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ISpanFormattable>>
-for crate::System::Version {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ISpanFormattable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Version")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ISpanFormattable>>
-for crate::System::Version {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::ISpanFormattable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Version")]
-impl AsRef<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Version>>>
-for crate::System::Version {
+impl AsRef<
+    crate::System::IComparable_1<quest_hook::libil2cpp::Gc<crate::System::Version>>,
+> for crate::System::Version {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Version>> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Version")]
-impl AsMut<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Version>>>
-for crate::System::Version {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IComparable_1<
         quest_hook::libil2cpp::Gc<crate::System::Version>,
     > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Version")]
-impl AsRef<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Version>>>
-for crate::System::Version {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Version>> {
+impl AsMut<
+    crate::System::IComparable_1<quest_hook::libil2cpp::Gc<crate::System::Version>>,
+> for crate::System::Version {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IComparable_1<
+        quest_hook::libil2cpp::Gc<crate::System::Version>,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Version")]
-impl AsMut<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Version>>>
-for crate::System::Version {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+impl AsRef<
+    crate::System::IEquatable_1<quest_hook::libil2cpp::Gc<crate::System::Version>>,
+> for crate::System::Version {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::System::Version>,
     > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Version")]
+impl AsMut<
+    crate::System::IEquatable_1<quest_hook::libil2cpp::Gc<crate::System::Version>>,
+> for crate::System::Version {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        quest_hook::libil2cpp::Gc<crate::System::Version>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Version")]
+impl AsRef<crate::System::ISpanFormattable> for crate::System::Version {
+    fn as_ref(&self) -> &crate::System::ISpanFormattable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Version")]
+impl AsMut<crate::System::ISpanFormattable> for crate::System::Version {
+    fn as_mut(&mut self) -> &mut crate::System::ISpanFormattable {
         unsafe { std::mem::transmute(self) }
     }
 }

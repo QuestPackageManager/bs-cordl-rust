@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Test_MeshRenderer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_self: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_MeshRenderer")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+Test_MeshRenderer")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::Test_MeshRenderer {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -74,13 +74,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::Test_MeshR
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_MeshRenderer")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::HoudiniEngineUnity::IEquivableWrapperClass_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_MeshRenderer>,
     >,
 > for crate::HoudiniEngineUnity::Test_MeshRenderer {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::HoudiniEngineUnity::IEquivableWrapperClass_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_MeshRenderer>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -88,13 +88,13 @@ impl AsRef<
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_MeshRenderer")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::HoudiniEngineUnity::IEquivableWrapperClass_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_MeshRenderer>,
     >,
 > for crate::HoudiniEngineUnity::Test_MeshRenderer {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::HoudiniEngineUnity::IEquivableWrapperClass_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_MeshRenderer>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -102,13 +102,13 @@ impl AsMut<
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_MeshRenderer")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_MeshRenderer>,
     >,
 > for crate::HoudiniEngineUnity::Test_MeshRenderer {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_MeshRenderer>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -116,13 +116,13 @@ impl AsRef<
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_MeshRenderer")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_MeshRenderer>,
     >,
 > for crate::HoudiniEngineUnity::Test_MeshRenderer {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_MeshRenderer>,
     > {
         unsafe { std::mem::transmute(self) }

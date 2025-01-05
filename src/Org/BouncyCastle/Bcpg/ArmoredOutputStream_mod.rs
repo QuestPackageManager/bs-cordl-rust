@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArmoredOutputStream {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
     pub outStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub bufPtr: i32,
@@ -24,9 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Bcpg+ArmoredOutputStream")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::ArmoredOutputStream {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
-    >;
+    type Target = crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -112,16 +108,7 @@ impl crate::Org::BouncyCastle::Bcpg::ArmoredOutputStream {
             .invoke("EndClearText", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
-        outStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (outStream))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc1(
+    pub fn New_IDictionary1(
         outStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         headers: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -129,6 +116,15 @@ impl crate::Org::BouncyCastle::Bcpg::ArmoredOutputStream {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (outStream, headers))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Stream0(
+        outStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (outStream))?;
         Ok(__cordl_object.into())
     }
     pub fn ResetHeaders(
@@ -176,18 +172,7 @@ impl crate::Org::BouncyCastle::Bcpg::ArmoredOutputStream {
             .invoke("WriteHeaderEntry", (name, v))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
-        &mut self,
-        outStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (outStream))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_IDictionary1(
         &mut self,
         outStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         headers: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
@@ -197,6 +182,17 @@ impl crate::Org::BouncyCastle::Bcpg::ArmoredOutputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (outStream, headers))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Stream0(
+        &mut self,
+        outStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (outStream))?;
         Ok(__cordl_ret.into())
     }
 }

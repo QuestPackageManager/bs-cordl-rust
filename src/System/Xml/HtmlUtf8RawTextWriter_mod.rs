@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HtmlUtf8RawTextWriter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlUtf8RawTextWriter>,
+    __cordl_parent: crate::System::Xml::XmlUtf8RawTextWriter,
     pub elementScope: quest_hook::libil2cpp::Gc<crate::System::Xml::ByteStack>,
     pub currentElementProperties: crate::System::Xml::ElementProperties,
     pub currentAttributeProperties: crate::System::Xml::AttributeProperties,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+HtmlUtf8RawTextWriter")]
 impl std::ops::Deref for crate::System::Xml::HtmlUtf8RawTextWriter {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::XmlUtf8RawTextWriter>;
+    type Target = crate::System::Xml::XmlUtf8RawTextWriter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -278,7 +278,7 @@ impl crate::System::Xml::HtmlUtf8RawTextWriter {
             .invoke("WriteUriAttributeText", (pSrc, pSrcEnd))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteXmlDeclaration_Gc1(
+    pub fn WriteXmlDeclaration_Il2CppString1(
         &mut self,
         xmldecl: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OcspReqGenerator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub list: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     pub requestorName: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::X509::GeneralName,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Ocsp+OcspReqGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Ocsp::OcspReqGenerator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -33,7 +33,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Ocsp::OcspReqGenerator {
 impl crate::Org::BouncyCastle::Ocsp::OcspReqGenerator {
     #[cfg(feature = "Org+BouncyCastle+Ocsp+OcspReqGenerator+RequestObject")]
     pub type RequestObject = crate::Org::BouncyCastle::Ocsp::OcspReqGenerator_RequestObject;
-    pub fn AddRequest_Gc0(
+    pub fn AddRequest_CertificateID0(
         &mut self,
         certId: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Ocsp::CertificateID>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -44,7 +44,7 @@ impl crate::Org::BouncyCastle::Ocsp::OcspReqGenerator {
             .invoke("AddRequest", (certId))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddRequest_Gc1(
+    pub fn AddRequest_X509Extensions1(
         &mut self,
         certId: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Ocsp::CertificateID>,
         singleRequestExtensions: quest_hook::libil2cpp::Gc<
@@ -68,9 +68,7 @@ impl crate::Org::BouncyCastle::Ocsp::OcspReqGenerator {
         >,
         chain: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::X509::X509Certificate,
-                >,
+                *mut crate::Org::BouncyCastle::X509::X509Certificate,
             >,
         >,
         random: quest_hook::libil2cpp::Gc<
@@ -101,7 +99,7 @@ impl crate::Org::BouncyCastle::Ocsp::OcspReqGenerator {
         > = __cordl_object.invoke("Generate", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Generate_Gc_Gc_Gc1(
+    pub fn Generate_Il2CppString_AsymmetricKeyParameter_Il2CppArray1(
         &mut self,
         signingAlgorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         privateKey: quest_hook::libil2cpp::Gc<
@@ -109,9 +107,7 @@ impl crate::Org::BouncyCastle::Ocsp::OcspReqGenerator {
         >,
         chain: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::X509::X509Certificate,
-                >,
+                *mut crate::Org::BouncyCastle::X509::X509Certificate,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -125,7 +121,7 @@ impl crate::Org::BouncyCastle::Ocsp::OcspReqGenerator {
         > = __cordl_object.invoke("Generate", (signingAlgorithm, privateKey, chain))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Generate_Gc_Gc_Gc_Gc2(
+    pub fn Generate_Il2CppString_AsymmetricKeyParameter_Il2CppArray_SecureRandom2(
         &mut self,
         signingAlgorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         privateKey: quest_hook::libil2cpp::Gc<
@@ -133,9 +129,7 @@ impl crate::Org::BouncyCastle::Ocsp::OcspReqGenerator {
         >,
         chain: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::X509::X509Certificate,
-                >,
+                *mut crate::Org::BouncyCastle::X509::X509Certificate,
             >,
         >,
         random: quest_hook::libil2cpp::Gc<
@@ -173,10 +167,10 @@ impl crate::Org::BouncyCastle::Ocsp::OcspReqGenerator {
             .invoke("SetRequestExtensions", (requestExtensions))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetRequestorName_Gc0(
+    pub fn SetRequestorName_GeneralName1(
         &mut self,
         requestorName: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::X509Name,
+            crate::Org::BouncyCastle::Asn1::X509::GeneralName,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -186,10 +180,10 @@ impl crate::Org::BouncyCastle::Ocsp::OcspReqGenerator {
             .invoke("SetRequestorName", (requestorName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetRequestorName_Gc1(
+    pub fn SetRequestorName_X509Name0(
         &mut self,
         requestorName: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+            crate::Org::BouncyCastle::Asn1::X509::X509Name,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -237,7 +231,7 @@ for crate::Org::BouncyCastle::Ocsp::OcspReqGenerator {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OcspReqGenerator_RequestObject {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub certId: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Ocsp::CertificateID>,
     pub extensions: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
@@ -251,7 +245,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Ocsp+OcspReqGenerator+RequestObject")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Ocsp::OcspReqGenerator_RequestObject {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

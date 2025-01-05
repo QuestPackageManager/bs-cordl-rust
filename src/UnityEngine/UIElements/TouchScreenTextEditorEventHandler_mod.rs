@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TouchScreenTextEditorEventHandler {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::TextEditorEventHandler,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::TextEditorEventHandler,
     pub m_TouchKeyboardPoller: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::IVisualElementScheduledItem,
     >,
@@ -20,9 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+TouchScreenTextEditorEventHandler")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::TouchScreenTextEditorEventHandler {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::TextEditorEventHandler,
-    >;
+    type Target = crate::UnityEngine::UIElements::TextEditorEventHandler;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

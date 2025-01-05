@@ -2,11 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnitySerializationHolder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_instantiation: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
     >,
     pub m_elementTypes: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<i32>,
@@ -27,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+UnitySerializationHolder")]
 impl std::ops::Deref for crate::System::UnitySerializationHolder {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -80,7 +78,7 @@ impl crate::System::UnitySerializationHolder {
         > = __cordl_object.invoke("GetRealObject", (context))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetUnitySerializationInfo_Gc1(
+    pub fn GetUnitySerializationInfo_RuntimeType1(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -100,7 +98,7 @@ impl crate::System::UnitySerializationHolder {
             .invoke("GetUnitySerializationInfo", (info, unityType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetUnitySerializationInfo_i32_Gc_Gc2(
+    pub fn GetUnitySerializationInfo_i32_Il2CppString_RuntimeAssembly2(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -171,50 +169,32 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::UnitySerializationHold
     }
 }
 #[cfg(feature = "System+UnitySerializationHolder")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::IObjectReference>,
-> for crate::System::UnitySerializationHolder {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IObjectReference,
-    > {
+impl AsRef<crate::System::Runtime::Serialization::IObjectReference>
+for crate::System::UnitySerializationHolder {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::IObjectReference {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+UnitySerializationHolder")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::IObjectReference>,
-> for crate::System::UnitySerializationHolder {
+impl AsMut<crate::System::Runtime::Serialization::IObjectReference>
+for crate::System::UnitySerializationHolder {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IObjectReference,
-    > {
+    ) -> &mut crate::System::Runtime::Serialization::IObjectReference {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+UnitySerializationHolder")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::UnitySerializationHolder {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::UnitySerializationHolder {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+UnitySerializationHolder")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::UnitySerializationHolder {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::UnitySerializationHolder {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X931SecureRandomBuilder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mRandom: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Security::SecureRandom,
     >,
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+X931SecureRandomBuilder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Prng::X931SecureRandomBuilder {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -65,7 +65,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::X931SecureRandomBuilder {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc2(
+    pub fn New_IEntropySourceProvider2(
         entropySourceProvider: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IEntropySourceProvider,
         >,
@@ -76,7 +76,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::X931SecureRandomBuilder {
             .invoke_void(".ctor", (entropySourceProvider))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc__cordl_bool1(
+    pub fn New_SecureRandom__cordl_bool1(
         entropySource: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Security::SecureRandom,
         >,
@@ -114,7 +114,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::X931SecureRandomBuilder {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_IEntropySourceProvider2(
         &mut self,
         entropySourceProvider: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IEntropySourceProvider,
@@ -127,7 +127,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::X931SecureRandomBuilder {
             .invoke(".ctor", (entropySourceProvider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc__cordl_bool1(
+    pub fn _ctor_SecureRandom__cordl_bool1(
         &mut self,
         entropySource: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Security::SecureRandom,

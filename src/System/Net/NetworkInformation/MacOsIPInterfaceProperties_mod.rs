@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MacOsIPInterfaceProperties {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Net::NetworkInformation::UnixIPInterfaceProperties,
-    >,
+    __cordl_parent: crate::System::Net::NetworkInformation::UnixIPInterfaceProperties,
 }
 #[cfg(feature = "System+Net+NetworkInformation+MacOsIPInterfaceProperties")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Net+NetworkInformation+MacOsIPInterfaceProperties")]
 impl std::ops::Deref
 for crate::System::Net::NetworkInformation::MacOsIPInterfaceProperties {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Net::NetworkInformation::UnixIPInterfaceProperties,
-    >;
+    type Target = crate::System::Net::NetworkInformation::UnixIPInterfaceProperties;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -36,7 +32,9 @@ impl crate::System::Net::NetworkInformation::MacOsIPInterfaceProperties {
             crate::System::Net::NetworkInformation::MacOsNetworkInterface,
         >,
         addresses: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -50,7 +48,7 @@ impl crate::System::Net::NetworkInformation::MacOsIPInterfaceProperties {
         gw_addr_list: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    *mut quest_hook::libil2cpp::Il2CppString,
                 >,
             >,
         >,
@@ -65,7 +63,9 @@ impl crate::System::Net::NetworkInformation::MacOsIPInterfaceProperties {
             crate::System::Net::NetworkInformation::MacOsNetworkInterface,
         >,
         addresses: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NativeMethods {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Microsoft+Win32+NativeMethods")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Microsoft+Win32+NativeMethods")]
 impl std::ops::Deref for crate::Microsoft::Win32::NativeMethods {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -69,7 +69,15 @@ impl crate::Microsoft::Win32::NativeMethods {
             .invoke("GetCurrentProcessId", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetExitCodeProcess_Gc1(
+    pub fn GetExitCodeProcess_IntPtr0(
+        processHandle: crate::System::IntPtr,
+        exitCode: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetExitCodeProcess", (processHandle, exitCode))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetExitCodeProcess_SafeProcessHandle1(
         processHandle: quest_hook::libil2cpp::Gc<
             crate::Microsoft::Win32::SafeHandles::SafeProcessHandle,
         >,
@@ -79,18 +87,8 @@ impl crate::Microsoft::Win32::NativeMethods {
             .invoke("GetExitCodeProcess", (processHandle, exitCode))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetExitCodeProcess_IntPtr0(
-        processHandle: crate::System::IntPtr,
-        exitCode: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetExitCodeProcess", (processHandle, exitCode))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetProcessTimes_Gc1(
-        handle: quest_hook::libil2cpp::Gc<
-            crate::Microsoft::Win32::SafeHandles::SafeProcessHandle,
-        >,
+    pub fn GetProcessTimes_IntPtr0(
+        handle: crate::System::IntPtr,
         creation: quest_hook::libil2cpp::ByRefMut<i64>,
         _cordl_exit: quest_hook::libil2cpp::ByRefMut<i64>,
         kernel: quest_hook::libil2cpp::ByRefMut<i64>,
@@ -100,8 +98,10 @@ impl crate::Microsoft::Win32::NativeMethods {
             .invoke("GetProcessTimes", (handle, creation, _cordl_exit, kernel, user))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetProcessTimes_IntPtr0(
-        handle: crate::System::IntPtr,
+    pub fn GetProcessTimes_SafeProcessHandle1(
+        handle: quest_hook::libil2cpp::Gc<
+            crate::Microsoft::Win32::SafeHandles::SafeProcessHandle,
+        >,
         creation: quest_hook::libil2cpp::ByRefMut<i64>,
         _cordl_exit: quest_hook::libil2cpp::ByRefMut<i64>,
         kernel: quest_hook::libil2cpp::ByRefMut<i64>,

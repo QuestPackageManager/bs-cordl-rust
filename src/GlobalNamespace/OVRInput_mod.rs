@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRControllerBase_OVRInput_VirtualAxis1DMap {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub None: crate::GlobalNamespace::OVRInput_RawAxis1D,
     pub PrimaryIndexTrigger: crate::GlobalNamespace::OVRInput_RawAxis1D,
     pub PrimaryHandTrigger: crate::GlobalNamespace::OVRInput_RawAxis1D,
@@ -28,7 +28,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis1DMap")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis1DMap {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -85,7 +85,7 @@ for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis1DMap {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRControllerBase_OVRInput_VirtualAxis2DMap {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub None: crate::GlobalNamespace::OVRInput_RawAxis2D,
     pub PrimaryThumbstick: crate::GlobalNamespace::OVRInput_RawAxis2D,
     pub PrimaryTouchpad: crate::GlobalNamespace::OVRInput_RawAxis2D,
@@ -101,7 +101,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis2DMap")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis2DMap {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -158,7 +158,7 @@ for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis2DMap {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRControllerBase_OVRInput_VirtualButtonMap {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub None: crate::GlobalNamespace::OVRInput_RawButton,
     pub One: crate::GlobalNamespace::OVRInput_RawButton,
     pub Two: crate::GlobalNamespace::OVRInput_RawButton,
@@ -202,7 +202,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVRInput+OVRControllerBase+VirtualButtonMap")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualButtonMap {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -259,7 +259,7 @@ for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualButtonMap {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRControllerBase_OVRInput_VirtualNearTouchMap {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub None: crate::GlobalNamespace::OVRInput_RawNearTouch,
     pub PrimaryIndexTrigger: crate::GlobalNamespace::OVRInput_RawNearTouch,
     pub PrimaryThumbButtons: crate::GlobalNamespace::OVRInput_RawNearTouch,
@@ -275,7 +275,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVRInput+OVRControllerBase+VirtualNearTouchMap")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualNearTouchMap {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -332,7 +332,7 @@ for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualNearTouchMap {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRControllerBase_OVRInput_VirtualTouchMap {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub None: crate::GlobalNamespace::OVRInput_RawTouch,
     pub One: crate::GlobalNamespace::OVRInput_RawTouch,
     pub Two: crate::GlobalNamespace::OVRInput_RawTouch,
@@ -356,7 +356,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVRInput+OVRControllerBase+VirtualTouchMap")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualTouchMap {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -413,7 +413,7 @@ for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualTouchMap {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRInput {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRInput")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -421,7 +421,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRInput")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRInput {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1276,7 +1276,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRInput_HapticInfo {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub playingHaptics: bool,
     pub hapticsDurationPlayed: f32,
     pub hapticsDuration: f32,
@@ -1290,7 +1290,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRInput+HapticInfo")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRInput_HapticInfo {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1451,7 +1451,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRInput_OVRControllerBase {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub controllerType: crate::GlobalNamespace::OVRInput_Controller,
     pub buttonMap: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualButtonMap,
@@ -1482,7 +1482,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRInput+OVRControllerBase")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRInput_OVRControllerBase {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1729,9 +1729,7 @@ for crate::GlobalNamespace::OVRInput_OVRControllerBase {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRInput_OVRControllerGamepadAndroid {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRInput_OVRControllerBase,
-    >,
+    __cordl_parent: crate::GlobalNamespace::OVRInput_OVRControllerBase,
 }
 #[cfg(feature = "OVRInput+OVRControllerGamepadAndroid")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1741,9 +1739,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRInput+OVRControllerGamepadAndroid")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRInput_OVRControllerGamepadAndroid {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRInput_OVRControllerBase,
-    >;
+    type Target = crate::GlobalNamespace::OVRInput_OVRControllerBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1839,9 +1835,7 @@ for crate::GlobalNamespace::OVRInput_OVRControllerGamepadAndroid {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRInput_OVRControllerGamepadPC {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRInput_OVRControllerBase,
-    >,
+    __cordl_parent: crate::GlobalNamespace::OVRInput_OVRControllerBase,
 }
 #[cfg(feature = "OVRInput+OVRControllerGamepadPC")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1850,9 +1844,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRInput+OVRControllerGamepadPC")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRInput_OVRControllerGamepadPC {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRInput_OVRControllerBase,
-    >;
+    type Target = crate::GlobalNamespace::OVRInput_OVRControllerBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1947,9 +1939,7 @@ for crate::GlobalNamespace::OVRInput_OVRControllerGamepadPC {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRInput_OVRControllerHands {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRInput_OVRControllerBase,
-    >,
+    __cordl_parent: crate::GlobalNamespace::OVRInput_OVRControllerBase,
 }
 #[cfg(feature = "OVRInput+OVRControllerHands")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1958,9 +1948,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRInput+OVRControllerHands")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRInput_OVRControllerHands {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRInput_OVRControllerBase,
-    >;
+    type Target = crate::GlobalNamespace::OVRInput_OVRControllerBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2062,9 +2050,7 @@ for crate::GlobalNamespace::OVRInput_OVRControllerHands {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRInput_OVRControllerLHand {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRInput_OVRControllerBase,
-    >,
+    __cordl_parent: crate::GlobalNamespace::OVRInput_OVRControllerBase,
 }
 #[cfg(feature = "OVRInput+OVRControllerLHand")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2073,9 +2059,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRInput+OVRControllerLHand")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRInput_OVRControllerLHand {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRInput_OVRControllerBase,
-    >;
+    type Target = crate::GlobalNamespace::OVRInput_OVRControllerBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2177,9 +2161,7 @@ for crate::GlobalNamespace::OVRInput_OVRControllerLHand {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRInput_OVRControllerLTouch {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRInput_OVRControllerBase,
-    >,
+    __cordl_parent: crate::GlobalNamespace::OVRInput_OVRControllerBase,
 }
 #[cfg(feature = "OVRInput+OVRControllerLTouch")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2188,9 +2170,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRInput+OVRControllerLTouch")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRInput_OVRControllerLTouch {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRInput_OVRControllerBase,
-    >;
+    type Target = crate::GlobalNamespace::OVRInput_OVRControllerBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2292,9 +2272,7 @@ for crate::GlobalNamespace::OVRInput_OVRControllerLTouch {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRInput_OVRControllerRHand {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRInput_OVRControllerBase,
-    >,
+    __cordl_parent: crate::GlobalNamespace::OVRInput_OVRControllerBase,
 }
 #[cfg(feature = "OVRInput+OVRControllerRHand")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2303,9 +2281,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRInput+OVRControllerRHand")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRInput_OVRControllerRHand {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRInput_OVRControllerBase,
-    >;
+    type Target = crate::GlobalNamespace::OVRInput_OVRControllerBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2407,9 +2383,7 @@ for crate::GlobalNamespace::OVRInput_OVRControllerRHand {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRInput_OVRControllerRTouch {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRInput_OVRControllerBase,
-    >,
+    __cordl_parent: crate::GlobalNamespace::OVRInput_OVRControllerBase,
 }
 #[cfg(feature = "OVRInput+OVRControllerRTouch")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2418,9 +2392,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRInput+OVRControllerRTouch")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRInput_OVRControllerRTouch {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRInput_OVRControllerBase,
-    >;
+    type Target = crate::GlobalNamespace::OVRInput_OVRControllerBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2522,9 +2494,7 @@ for crate::GlobalNamespace::OVRInput_OVRControllerRTouch {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRInput_OVRControllerRemote {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRInput_OVRControllerBase,
-    >,
+    __cordl_parent: crate::GlobalNamespace::OVRInput_OVRControllerBase,
 }
 #[cfg(feature = "OVRInput+OVRControllerRemote")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2533,9 +2503,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRInput+OVRControllerRemote")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRInput_OVRControllerRemote {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRInput_OVRControllerBase,
-    >;
+    type Target = crate::GlobalNamespace::OVRInput_OVRControllerBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2630,9 +2598,7 @@ for crate::GlobalNamespace::OVRInput_OVRControllerRemote {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRInput_OVRControllerTouch {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRInput_OVRControllerBase,
-    >,
+    __cordl_parent: crate::GlobalNamespace::OVRInput_OVRControllerBase,
 }
 #[cfg(feature = "OVRInput+OVRControllerTouch")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2641,9 +2607,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRInput+OVRControllerTouch")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRInput_OVRControllerTouch {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRInput_OVRControllerBase,
-    >;
+    type Target = crate::GlobalNamespace::OVRInput_OVRControllerBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

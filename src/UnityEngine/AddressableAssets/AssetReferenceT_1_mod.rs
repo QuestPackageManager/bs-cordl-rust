@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssetReferenceT_1<TObject: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::AddressableAssets::AssetReference,
-    >,
+    __cordl_parent: crate::UnityEngine::AddressableAssets::AssetReference,
     __cordl_phantom_TObject: std::marker::PhantomData<TObject>,
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+AssetReferenceT_1")]
@@ -16,9 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+AddressableAssets+AssetReferenceT_1")]
 impl<TObject: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::AddressableAssets::AssetReferenceT_1<TObject> {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::AddressableAssets::AssetReference,
-    >;
+    type Target = crate::UnityEngine::AddressableAssets::AssetReference;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -85,21 +81,7 @@ impl<
             .invoke_void(".ctor", (guid))?;
         Ok(__cordl_object.into())
     }
-    pub fn ValidateAsset_Gc0(
-        &mut self,
-        obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("ValidateAsset", (obj))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ValidateAsset_Gc1(
+    pub fn ValidateAsset_Il2CppString1(
         &mut self,
         mainAssetPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool>
@@ -111,6 +93,20 @@ impl<
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("ValidateAsset", (mainAssetPath))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateAsset_Object0(
+        &mut self,
+        obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("ValidateAsset", (obj))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

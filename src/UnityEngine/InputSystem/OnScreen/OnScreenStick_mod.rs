@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OnScreenStick {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::OnScreen::OnScreenControl,
-    >,
+    __cordl_parent: crate::UnityEngine::InputSystem::OnScreen::OnScreenControl,
     pub m_MovementRange: f32,
     pub m_DynamicOriginRange: f32,
     pub m_ControlPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -19,7 +17,9 @@ pub struct OnScreenStick {
     pub m_StartPos: crate::UnityEngine::Vector3,
     pub m_PointerDownPos: crate::UnityEngine::Vector2,
     pub m_RaycastResults: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::RaycastResult,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::EventSystems::RaycastResult,
+        >,
     >,
     pub m_PointerEventData: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::EventSystems::PointerEventData,
@@ -33,9 +33,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenStick")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::OnScreen::OnScreenStick {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::OnScreen::OnScreenControl,
-    >;
+    type Target = crate::UnityEngine::InputSystem::OnScreen::OnScreenControl;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -139,7 +137,18 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenStick {
             .invoke("OnDrawGizmosSelected", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn OnPointerDown_Gc0(
+    pub fn OnPointerDown_InputAction_CallbackContext1(
+        &mut self,
+        ctx: crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPointerDown", (ctx))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OnPointerDown_PointerEventData0(
         &mut self,
         eventData: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::EventSystems::PointerEventData,
@@ -150,17 +159,6 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenStick {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnPointerDown", (eventData))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn OnPointerDown_InputAction_CallbackContext1(
-        &mut self,
-        ctx: crate::UnityEngine::InputSystem::InputAction_CallbackContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPointerDown", (ctx))?;
         Ok(__cordl_ret.into())
     }
     pub fn OnPointerMove(
@@ -174,7 +172,18 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenStick {
             .invoke("OnPointerMove", (ctx))?;
         Ok(__cordl_ret.into())
     }
-    pub fn OnPointerUp_Gc0(
+    pub fn OnPointerUp_InputAction_CallbackContext1(
+        &mut self,
+        ctx: crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPointerUp", (ctx))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OnPointerUp_PointerEventData0(
         &mut self,
         eventData: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::EventSystems::PointerEventData,
@@ -185,17 +194,6 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenStick {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnPointerUp", (eventData))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn OnPointerUp_InputAction_CallbackContext1(
-        &mut self,
-        ctx: crate::UnityEngine::InputSystem::InputAction_CallbackContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPointerUp", (ctx))?;
         Ok(__cordl_ret.into())
     }
     pub fn Start(
@@ -344,92 +342,58 @@ for crate::UnityEngine::InputSystem::OnScreen::OnScreenStick {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenStick")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDragHandler>>
+impl AsRef<crate::UnityEngine::EventSystems::IDragHandler>
 for crate::UnityEngine::InputSystem::OnScreen::OnScreenStick {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDragHandler> {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IDragHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenStick")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDragHandler>>
+impl AsMut<crate::UnityEngine::EventSystems::IDragHandler>
 for crate::UnityEngine::InputSystem::OnScreen::OnScreenStick {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDragHandler> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IDragHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenStick")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
-> for crate::UnityEngine::InputSystem::OnScreen::OnScreenStick {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IEventSystemHandler,
-    > {
+impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::UnityEngine::InputSystem::OnScreen::OnScreenStick {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenStick")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
-> for crate::UnityEngine::InputSystem::OnScreen::OnScreenStick {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IEventSystemHandler,
-    > {
+impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::UnityEngine::InputSystem::OnScreen::OnScreenStick {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenStick")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerDownHandler>,
-> for crate::UnityEngine::InputSystem::OnScreen::OnScreenStick {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerDownHandler,
-    > {
+impl AsRef<crate::UnityEngine::EventSystems::IPointerDownHandler>
+for crate::UnityEngine::InputSystem::OnScreen::OnScreenStick {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerDownHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenStick")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerDownHandler>,
-> for crate::UnityEngine::InputSystem::OnScreen::OnScreenStick {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerDownHandler,
-    > {
+impl AsMut<crate::UnityEngine::EventSystems::IPointerDownHandler>
+for crate::UnityEngine::InputSystem::OnScreen::OnScreenStick {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerDownHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenStick")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerUpHandler>,
-> for crate::UnityEngine::InputSystem::OnScreen::OnScreenStick {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerUpHandler,
-    > {
+impl AsRef<crate::UnityEngine::EventSystems::IPointerUpHandler>
+for crate::UnityEngine::InputSystem::OnScreen::OnScreenStick {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerUpHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenStick")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerUpHandler>,
-> for crate::UnityEngine::InputSystem::OnScreen::OnScreenStick {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerUpHandler,
-    > {
+impl AsMut<crate::UnityEngine::EventSystems::IPointerUpHandler>
+for crate::UnityEngine::InputSystem::OnScreen::OnScreenStick {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerUpHandler {
         unsafe { std::mem::transmute(self) }
     }
 }

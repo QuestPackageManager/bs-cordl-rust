@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusHMD {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::XR::XRHMD,
-    >,
+    __cordl_parent: crate::UnityEngine::InputSystem::XR::XRHMD,
     pub _userPresence_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Controls::ButtonControl,
     >,
@@ -82,7 +80,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+XR+Oculus+Input+OculusHMD")]
 impl std::ops::Deref for crate::Unity::XR::Oculus::Input::OculusHMD {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::XR::XRHMD>;
+    type Target = crate::UnityEngine::InputSystem::XR::XRHMD;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

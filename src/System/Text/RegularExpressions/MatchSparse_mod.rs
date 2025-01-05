@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MatchSparse {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Text::RegularExpressions::Match,
-    >,
+    __cordl_parent: crate::System::Text::RegularExpressions::Match,
     pub _caps: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
 }
 #[cfg(feature = "System+Text+RegularExpressions+MatchSparse")]
@@ -14,9 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Text+RegularExpressions+MatchSparse")]
 impl std::ops::Deref for crate::System::Text::RegularExpressions::MatchSparse {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Text::RegularExpressions::Match,
-    >;
+    type Target = crate::System::Text::RegularExpressions::Match;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

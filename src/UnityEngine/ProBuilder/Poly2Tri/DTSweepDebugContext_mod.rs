@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DTSweepDebugContext {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationDebugContext,
-    >,
+    __cordl_parent: crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationDebugContext,
     pub _primaryTriangle: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
     >,
@@ -29,9 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DTSweepDebugContext")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepDebugContext {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationDebugContext,
-    >;
+    type Target = crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationDebugContext;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

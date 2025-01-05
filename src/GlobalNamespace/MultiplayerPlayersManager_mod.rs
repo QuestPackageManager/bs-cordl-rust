@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerPlayersManager {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _activeLocalPlayerControllerPrefab: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MultiplayerLocalActivePlayerFacade,
     >,
@@ -35,13 +35,17 @@ pub struct MultiplayerPlayersManager {
     pub playerSpawningDidFinishEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub didSwitchPlayerToInactiveEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub playerDidFinishEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+            >,
         >,
     >,
     pub playerNetworkDidFailedEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+            >,
         >,
     >,
     pub _activeLocalPlayerFacade: quest_hook::libil2cpp::Gc<
@@ -66,17 +70,23 @@ pub struct MultiplayerPlayersManager {
         crate::GlobalNamespace::MultiplayerConnectedPlayerFacade_Factory,
     >,
     pub _connectedPlayerControllersMap: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerConnectedPlayerFacade,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerConnectedPlayerFacade,
+            >,
         >,
     >,
     pub _connectedPlayerCenterFacingRotationsMap: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        f32,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            f32,
+        >,
     >,
     pub _allActiveAtGameStartPlayers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+        >,
     >,
 }
 #[cfg(feature = "MultiplayerPlayersManager")]
@@ -86,7 +96,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplayerPlayersManager")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerPlayersManager {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -160,7 +170,9 @@ impl crate::GlobalNamespace::MultiplayerPlayersManager {
         &mut self,
         localPlayerStartState: crate::GlobalNamespace::MultiplayerPlayerStartState,
         allActiveAtGameStartPlayers: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -254,8 +266,10 @@ impl crate::GlobalNamespace::MultiplayerPlayersManager {
     pub fn add_playerDidFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -269,8 +283,10 @@ impl crate::GlobalNamespace::MultiplayerPlayersManager {
     pub fn add_playerNetworkDidFailedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -311,14 +327,18 @@ impl crate::GlobalNamespace::MultiplayerPlayersManager {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+            >,
         > = __cordl_object.invoke("get_allActiveAtGameStartPlayers", ())?;
         Ok(__cordl_ret.into())
     }
@@ -385,8 +405,10 @@ impl crate::GlobalNamespace::MultiplayerPlayersManager {
     pub fn remove_playerDidFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -400,8 +422,10 @@ impl crate::GlobalNamespace::MultiplayerPlayersManager {
     pub fn remove_playerNetworkDidFailedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -446,30 +470,18 @@ for crate::GlobalNamespace::MultiplayerPlayersManager {
     }
 }
 #[cfg(feature = "MultiplayerPlayersManager")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher,
-    >,
-> for crate::GlobalNamespace::MultiplayerPlayersManager {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher,
-    > {
+impl AsRef<crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher>
+for crate::GlobalNamespace::MultiplayerPlayersManager {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MultiplayerPlayersManager")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher,
-    >,
-> for crate::GlobalNamespace::MultiplayerPlayersManager {
+impl AsMut<crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher>
+for crate::GlobalNamespace::MultiplayerPlayersManager {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher,
-    > {
+    ) -> &mut crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher {
         unsafe { std::mem::transmute(self) }
     }
 }

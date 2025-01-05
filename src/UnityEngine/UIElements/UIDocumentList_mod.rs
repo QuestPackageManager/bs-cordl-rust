@@ -2,9 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UIDocumentList {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_AttachedUIDocuments: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIDocument>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIDocument>,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIDocumentList")]
@@ -14,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UIDocumentList")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIDocumentList {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

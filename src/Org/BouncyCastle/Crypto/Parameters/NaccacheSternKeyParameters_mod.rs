@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NaccacheSternKeyParameters {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
     pub g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     pub n: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     pub lowerSigmaBound: i32,
@@ -18,9 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+NaccacheSternKeyParameters")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyParameters {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-    >;
+    type Target = crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

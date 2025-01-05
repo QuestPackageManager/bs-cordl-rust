@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CmsEnvelopedHelper {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsEnvelopedHelper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsEnvelopedHelper")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -163,7 +163,7 @@ for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper {
 #[repr(C)]
 #[derive(Debug)]
 pub struct CmsEnvelopedHelper_CmsAuthenticatedSecureReadable {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub algorithm: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
     >,
@@ -183,7 +183,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsAuthenticatedSecureReadable {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -287,24 +287,18 @@ for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsAuthenticatedSecureRead
 #[cfg(
     feature = "Org+BouncyCastle+Cms+CmsEnvelopedHelper+CmsAuthenticatedSecureReadable"
 )]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsSecureReadable>>
+impl AsRef<crate::Org::BouncyCastle::Cms::CmsSecureReadable>
 for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsAuthenticatedSecureReadable {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsSecureReadable> {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Cms::CmsSecureReadable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(
     feature = "Org+BouncyCastle+Cms+CmsEnvelopedHelper+CmsAuthenticatedSecureReadable"
 )]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsSecureReadable>>
+impl AsMut<crate::Org::BouncyCastle::Cms::CmsSecureReadable>
 for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsAuthenticatedSecureReadable {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Cms::CmsSecureReadable,
-    > {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Cms::CmsSecureReadable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -312,7 +306,7 @@ for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsAuthenticatedSecureRead
 #[repr(C)]
 #[derive(Debug)]
 pub struct CmsEnvelopedHelper_CmsEnvelopedSecureReadable {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub algorithm: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
     >,
@@ -330,7 +324,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsEnvelopedHelper+CmsEnvelopedSecureReadable")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsEnvelopedSecureReadable {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -426,22 +420,16 @@ for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsEnvelopedSecureReadable
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsEnvelopedHelper+CmsEnvelopedSecureReadable")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsSecureReadable>>
+impl AsRef<crate::Org::BouncyCastle::Cms::CmsSecureReadable>
 for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsEnvelopedSecureReadable {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsSecureReadable> {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Cms::CmsSecureReadable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsEnvelopedHelper+CmsEnvelopedSecureReadable")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsSecureReadable>>
+impl AsMut<crate::Org::BouncyCastle::Cms::CmsSecureReadable>
 for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsEnvelopedSecureReadable {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Cms::CmsSecureReadable,
-    > {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Cms::CmsSecureReadable {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OpenVRControllerWMR {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::XR::XRController,
-    >,
+    __cordl_parent: crate::UnityEngine::InputSystem::XR::XRController,
     pub _deviceVelocity_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Controls::Vector3Control,
     >,
@@ -46,9 +44,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+XR+OpenVR+OpenVRControllerWMR")]
 impl std::ops::Deref for crate::Unity::XR::OpenVR::OpenVRControllerWMR {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::XR::XRController,
-    >;
+    type Target = crate::UnityEngine::InputSystem::XR::XRController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

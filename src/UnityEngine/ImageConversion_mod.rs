@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ImageConversion {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+ImageConversion")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ImageConversion")]
 impl std::ops::Deref for crate::UnityEngine::ImageConversion {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,7 +24,7 @@ impl std::ops::DerefMut for crate::UnityEngine::ImageConversion {
 }
 #[cfg(feature = "UnityEngine+ImageConversion")]
 impl crate::UnityEngine::ImageConversion {
-    pub fn EncodeToEXR_Gc1(
+    pub fn EncodeToEXR_Texture2D1(
         tex: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -46,7 +46,7 @@ impl crate::UnityEngine::ImageConversion {
             .invoke("EncodeToEXR", (tex, flags))?;
         Ok(__cordl_ret.into())
     }
-    pub fn EncodeToJPG_Gc1(
+    pub fn EncodeToJPG_Texture2D1(
         tex: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -88,7 +88,7 @@ impl crate::UnityEngine::ImageConversion {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("EncodeToTGA", (tex))?;
         Ok(__cordl_ret.into())
     }
-    pub fn LoadImage_Gc_Gc1(
+    pub fn LoadImage_Texture2D_Il2CppArray1(
         tex: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<bool> {

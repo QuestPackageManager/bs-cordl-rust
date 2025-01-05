@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RecipientKeyIdentifier {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub subjectKeyIdentifier: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::Asn1OctetString,
     >,
@@ -23,9 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+RecipientKeyIdentifier")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Cms::RecipientKeyIdentifier {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -38,19 +34,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Cms::RecipientKeyIde
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+RecipientKeyIdentifier")]
 impl crate::Org::BouncyCastle::Asn1::Cms::RecipientKeyIdentifier {
-    pub fn GetInstance_Gc1(
-        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Cms::RecipientKeyIdentifier,
-        >,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Cms::RecipientKeyIdentifier,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetInstance__cordl_bool0(
+    pub fn GetInstance_Asn1TaggedObject__cordl_bool0(
         ato: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1TaggedObject>,
         explicitly: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -64,27 +48,19 @@ impl crate::Org::BouncyCastle::Asn1::Cms::RecipientKeyIdentifier {
             .invoke("GetInstance", (ato, explicitly))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc1(
-        subjectKeyIdentifier: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub fn GetInstance_Il2CppObject1(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::RecipientKeyIdentifier,
         >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (subjectKeyIdentifier))?;
-        Ok(__cordl_object.into())
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::RecipientKeyIdentifier,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn New_Gc3(
-        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seq))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_Gc0(
+    pub fn New_Asn1OctetString_DerGeneralizedTime_OtherKeyAttribute0(
         subjectKeyIdentifier: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1OctetString,
         >,
@@ -101,7 +77,27 @@ impl crate::Org::BouncyCastle::Asn1::Cms::RecipientKeyIdentifier {
             .invoke_void(".ctor", (subjectKeyIdentifier, date, other))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc2(
+    pub fn New_Asn1Sequence3(
+        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (seq))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Il2CppArray1(
+        subjectKeyIdentifier: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (subjectKeyIdentifier))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Il2CppArray_DerGeneralizedTime_OtherKeyAttribute2(
         subjectKeyIdentifier: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
         >,
@@ -131,31 +127,7 @@ impl crate::Org::BouncyCastle::Asn1::Cms::RecipientKeyIdentifier {
         > = __cordl_object.invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
-        &mut self,
-        subjectKeyIdentifier: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u8>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (subjectKeyIdentifier))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc3(
-        &mut self,
-        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (seq))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_Gc0(
+    pub fn _ctor_Asn1OctetString_DerGeneralizedTime_OtherKeyAttribute0(
         &mut self,
         subjectKeyIdentifier: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1OctetString,
@@ -174,7 +146,31 @@ impl crate::Org::BouncyCastle::Asn1::Cms::RecipientKeyIdentifier {
             .invoke(".ctor", (subjectKeyIdentifier, date, other))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc2(
+    pub fn _ctor_Asn1Sequence3(
+        &mut self,
+        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (seq))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppArray1(
+        &mut self,
+        subjectKeyIdentifier: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (subjectKeyIdentifier))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppArray_DerGeneralizedTime_OtherKeyAttribute2(
         &mut self,
         subjectKeyIdentifier: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,

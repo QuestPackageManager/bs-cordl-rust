@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorOverrideOption {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _override: bool,
     pub _useFixedColor: bool,
     pub _fixedColor: crate::UnityEngine::Color,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "StyledUITemplates+ColorOverrideOption")]
 impl std::ops::Deref for crate::StyledUITemplates::ColorOverrideOption {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,7 +30,7 @@ impl std::ops::DerefMut for crate::StyledUITemplates::ColorOverrideOption {
 }
 #[cfg(feature = "StyledUITemplates+ColorOverrideOption")]
 impl crate::StyledUITemplates::ColorOverrideOption {
-    pub fn Equals_Gc0(
+    pub fn Equals_ColorOverrideOption0(
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::StyledUITemplates::ColorOverrideOption>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -40,7 +40,7 @@ impl crate::StyledUITemplates::ColorOverrideOption {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Gc1(
+    pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -64,7 +64,7 @@ impl crate::StyledUITemplates::ColorOverrideOption {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_ColorOverrideOption1(
         other: quest_hook::libil2cpp::Gc<crate::StyledUITemplates::ColorOverrideOption>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -83,7 +83,7 @@ impl crate::StyledUITemplates::ColorOverrideOption {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_ColorOverrideOption1(
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::StyledUITemplates::ColorOverrideOption>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -197,13 +197,13 @@ for crate::StyledUITemplates::ColorOverrideOption {
 }
 #[cfg(feature = "StyledUITemplates+ColorOverrideOption")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::StyledUITemplates::ColorOverrideOption>,
     >,
 > for crate::StyledUITemplates::ColorOverrideOption {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::StyledUITemplates::ColorOverrideOption>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -211,13 +211,13 @@ impl AsRef<
 }
 #[cfg(feature = "StyledUITemplates+ColorOverrideOption")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::StyledUITemplates::ColorOverrideOption>,
     >,
 > for crate::StyledUITemplates::ColorOverrideOption {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::StyledUITemplates::ColorOverrideOption>,
     > {
         unsafe { std::mem::transmute(self) }

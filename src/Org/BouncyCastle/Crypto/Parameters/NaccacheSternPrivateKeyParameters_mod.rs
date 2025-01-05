@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NaccacheSternPrivateKeyParameters {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyParameters,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyParameters,
     pub phiN: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     pub smallPrimes: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
@@ -17,9 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+NaccacheSternPrivateKeyParameters")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternPrivateKeyParameters {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyParameters,
-    >;
+    type Target = crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyParameters;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -33,7 +29,7 @@ for crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternPrivateKeyParamet
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+NaccacheSternPrivateKeyParameters")]
 impl crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternPrivateKeyParameters {
-    pub fn New_Gc_Gc_i32_Gc_Gc0(
+    pub fn New_ArrayList0(
         g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         n: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         lowerSigmaBound: i32,
@@ -46,7 +42,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternPrivateKeyParame
             .invoke_void(".ctor", (g, n, lowerSigmaBound, smallPrimes, phiN))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc_i32_Gc_Gc1(
+    pub fn New_IList1(
         g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         n: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         lowerSigmaBound: i32,
@@ -59,7 +55,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternPrivateKeyParame
             .invoke_void(".ctor", (g, n, lowerSigmaBound, smallPrimes, phiN))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc_Gc_i32_Gc_Gc0(
+    pub fn _ctor_ArrayList0(
         &mut self,
         g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         n: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -74,7 +70,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternPrivateKeyParame
             .invoke(".ctor", (g, n, lowerSigmaBound, smallPrimes, phiN))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_i32_Gc_Gc1(
+    pub fn _ctor_IList1(
         &mut self,
         g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         n: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,

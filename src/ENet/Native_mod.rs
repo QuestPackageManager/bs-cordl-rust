@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Native {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "ENet+Native")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ENet+Native")]
 impl std::ops::Deref for crate::ENet::Native {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -378,7 +378,7 @@ impl crate::ENet::Native {
             .invoke("enet_packet_check_references", (packet))?;
         Ok(__cordl_ret.into())
     }
-    pub fn enet_packet_create_Gc0(
+    pub fn enet_packet_create_Il2CppArray0(
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         dataLength: crate::System::IntPtr,
         flags: crate::ENet::PacketFlags,
@@ -396,7 +396,7 @@ impl crate::ENet::Native {
             .invoke("enet_packet_create", (data, dataLength, flags))?;
         Ok(__cordl_ret.into())
     }
-    pub fn enet_packet_create_offset_Gc0(
+    pub fn enet_packet_create_offset_Il2CppArray0(
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         dataLength: crate::System::IntPtr,
         dataOffset: crate::System::IntPtr,

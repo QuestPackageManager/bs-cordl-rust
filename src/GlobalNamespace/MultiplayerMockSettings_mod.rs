@@ -2,12 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerMockSettings {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+    __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _localPlayer: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MockPlayerSettings,
     >,
     pub _otherPlayers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockPlayerSettings>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockPlayerSettings>,
+        >,
     >,
     pub _quickplayServer: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MockServerSettings,
@@ -26,7 +28,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplayerMockSettings")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerMockSettings {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>;
+    type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -94,14 +96,18 @@ impl crate::GlobalNamespace::MultiplayerMockSettings {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockPlayerSettings>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockPlayerSettings>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockPlayerSettings>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockPlayerSettings>,
+            >,
         > = __cordl_object.invoke("get_otherPlayers", ())?;
         Ok(__cordl_ret.into())
     }

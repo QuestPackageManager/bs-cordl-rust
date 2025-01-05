@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionCompletionResults {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub levelCompletionResults: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::LevelCompletionResults,
     >,
     pub missionObjectiveResults: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjectiveResult>,
+            *mut crate::GlobalNamespace::MissionObjectiveResult,
         >,
     >,
 }
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MissionCompletionResults")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionCompletionResults {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -38,7 +38,7 @@ impl crate::GlobalNamespace::MissionCompletionResults {
         >,
         missionObjectiveResults: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjectiveResult>,
+                *mut crate::GlobalNamespace::MissionObjectiveResult,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -55,7 +55,7 @@ impl crate::GlobalNamespace::MissionCompletionResults {
         >,
         missionObjectiveResults: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjectiveResult>,
+                *mut crate::GlobalNamespace::MissionObjectiveResult,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

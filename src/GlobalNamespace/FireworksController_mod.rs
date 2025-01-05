@@ -2,14 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FireworksController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _spawnSize: crate::UnityEngine::Vector3,
     pub _minSpawnInterval: f32,
     pub _maxSpawnInterval: f32,
     pub _directionalLights: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DirectionalLight>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::DirectionalLight>,
     >,
     pub _lightsIntensity: f32,
     pub _currentLightId: i32,
@@ -17,7 +15,9 @@ pub struct FireworksController {
         crate::GlobalNamespace::FireworkItemController_Pool,
     >,
     pub _activeFireworks: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FireworkItemController>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FireworkItemController>,
+        >,
     >,
 }
 #[cfg(feature = "FireworksController")]
@@ -27,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "FireworksController")]
 impl std::ops::Deref for crate::GlobalNamespace::FireworksController {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

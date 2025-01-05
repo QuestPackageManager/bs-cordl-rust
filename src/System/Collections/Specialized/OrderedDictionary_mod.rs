@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OrderedDictionary {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _objectsArray: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     pub _objectsTable: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub _initialCapacity: i32,
@@ -23,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+Specialized+OrderedDictionary")]
 impl std::ops::Deref for crate::System::Collections::Specialized::OrderedDictionary {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -132,7 +132,7 @@ impl crate::System::Collections::Specialized::OrderedDictionary {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_StreamingContext3(
+    pub fn New_SerializationInfo_StreamingContext3(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -153,7 +153,7 @@ impl crate::System::Collections::Specialized::OrderedDictionary {
             .invoke_void(".ctor", (capacity))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_Gc2(
+    pub fn New_i32_IEqualityComparer2(
         capacity: i32,
         comparer: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IEqualityComparer,
@@ -257,7 +257,7 @@ impl crate::System::Collections::Specialized::OrderedDictionary {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_StreamingContext3(
+    pub fn _ctor_SerializationInfo_StreamingContext3(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -282,7 +282,7 @@ impl crate::System::Collections::Specialized::OrderedDictionary {
             .invoke(".ctor", (capacity))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_Gc2(
+    pub fn _ctor_i32_IEqualityComparer2(
         &mut self,
         capacity: i32,
         comparer: quest_hook::libil2cpp::Gc<
@@ -400,108 +400,76 @@ for crate::System::Collections::Specialized::OrderedDictionary {
     }
 }
 #[cfg(feature = "System+Collections+Specialized+OrderedDictionary")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
+impl AsRef<crate::System::Collections::ICollection>
+for crate::System::Collections::Specialized::OrderedDictionary {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Specialized+OrderedDictionary")]
+impl AsMut<crate::System::Collections::ICollection>
+for crate::System::Collections::Specialized::OrderedDictionary {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Specialized+OrderedDictionary")]
+impl AsRef<crate::System::Collections::IDictionary>
+for crate::System::Collections::Specialized::OrderedDictionary {
+    fn as_ref(&self) -> &crate::System::Collections::IDictionary {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Specialized+OrderedDictionary")]
+impl AsMut<crate::System::Collections::IDictionary>
+for crate::System::Collections::Specialized::OrderedDictionary {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IDictionary {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Specialized+OrderedDictionary")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::System::Collections::Specialized::OrderedDictionary {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Specialized+OrderedDictionary")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::System::Collections::Specialized::OrderedDictionary {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Specialized+OrderedDictionary")]
+impl AsRef<crate::System::Runtime::Serialization::IDeserializationCallback>
 for crate::System::Collections::Specialized::OrderedDictionary {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
+    ) -> &crate::System::Runtime::Serialization::IDeserializationCallback {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+Specialized+OrderedDictionary")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
+impl AsMut<crate::System::Runtime::Serialization::IDeserializationCallback>
 for crate::System::Collections::Specialized::OrderedDictionary {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
+    ) -> &mut crate::System::Runtime::Serialization::IDeserializationCallback {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+Specialized+OrderedDictionary")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>>
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
 for crate::System::Collections::Specialized::OrderedDictionary {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary> {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+Specialized+OrderedDictionary")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>>
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
 for crate::System::Collections::Specialized::OrderedDictionary {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Specialized+OrderedDictionary")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
-for crate::System::Collections::Specialized::OrderedDictionary {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Specialized+OrderedDictionary")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
-for crate::System::Collections::Specialized::OrderedDictionary {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Specialized+OrderedDictionary")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IDeserializationCallback,
-    >,
-> for crate::System::Collections::Specialized::OrderedDictionary {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IDeserializationCallback,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Specialized+OrderedDictionary")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IDeserializationCallback,
-    >,
-> for crate::System::Collections::Specialized::OrderedDictionary {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IDeserializationCallback,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Specialized+OrderedDictionary")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::Collections::Specialized::OrderedDictionary {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Specialized+OrderedDictionary")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::Collections::Specialized::OrderedDictionary {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -511,7 +479,7 @@ impl AsMut<
 #[repr(C)]
 #[derive(Debug)]
 pub struct OrderedDictionary_OrderedDictionaryEnumerator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _objectReturnType: i32,
     pub _arrayEnumerator: quest_hook::libil2cpp::Gc<
         crate::System::Collections::IEnumerator,
@@ -530,7 +498,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::System::Collections::Specialized::OrderedDictionary_OrderedDictionaryEnumerator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -652,46 +620,36 @@ for crate::System::Collections::Specialized::OrderedDictionary_OrderedDictionary
 #[cfg(
     feature = "System+Collections+Specialized+OrderedDictionary+OrderedDictionaryEnumerator"
 )]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionaryEnumerator>>
+impl AsRef<crate::System::Collections::IDictionaryEnumerator>
 for crate::System::Collections::Specialized::OrderedDictionary_OrderedDictionaryEnumerator {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionaryEnumerator> {
+    fn as_ref(&self) -> &crate::System::Collections::IDictionaryEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(
     feature = "System+Collections+Specialized+OrderedDictionary+OrderedDictionaryEnumerator"
 )]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionaryEnumerator>>
+impl AsMut<crate::System::Collections::IDictionaryEnumerator>
 for crate::System::Collections::Specialized::OrderedDictionary_OrderedDictionaryEnumerator {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Collections::IDictionaryEnumerator,
-    > {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IDictionaryEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(
     feature = "System+Collections+Specialized+OrderedDictionary+OrderedDictionaryEnumerator"
 )]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
+impl AsRef<crate::System::Collections::IEnumerator>
 for crate::System::Collections::Specialized::OrderedDictionary_OrderedDictionaryEnumerator {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(
     feature = "System+Collections+Specialized+OrderedDictionary+OrderedDictionaryEnumerator"
 )]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
+impl AsMut<crate::System::Collections::IEnumerator>
 for crate::System::Collections::Specialized::OrderedDictionary_OrderedDictionaryEnumerator {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -701,7 +659,7 @@ for crate::System::Collections::Specialized::OrderedDictionary_OrderedDictionary
 #[repr(C)]
 #[derive(Debug)]
 pub struct OrderedDictionary_OrderedDictionaryKeyValueCollection {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _objects: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     pub _isKeys: bool,
 }
@@ -719,7 +677,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::System::Collections::Specialized::OrderedDictionary_OrderedDictionaryKeyValueCollection {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -833,44 +791,36 @@ for crate::System::Collections::Specialized::OrderedDictionary_OrderedDictionary
 #[cfg(
     feature = "System+Collections+Specialized+OrderedDictionary+OrderedDictionaryKeyValueCollection"
 )]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
+impl AsRef<crate::System::Collections::ICollection>
 for crate::System::Collections::Specialized::OrderedDictionary_OrderedDictionaryKeyValueCollection {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(
     feature = "System+Collections+Specialized+OrderedDictionary+OrderedDictionaryKeyValueCollection"
 )]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
+impl AsMut<crate::System::Collections::ICollection>
 for crate::System::Collections::Specialized::OrderedDictionary_OrderedDictionaryKeyValueCollection {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(
     feature = "System+Collections+Specialized+OrderedDictionary+OrderedDictionaryKeyValueCollection"
 )]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+impl AsRef<crate::System::Collections::IEnumerable>
 for crate::System::Collections::Specialized::OrderedDictionary_OrderedDictionaryKeyValueCollection {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(
     feature = "System+Collections+Specialized+OrderedDictionary+OrderedDictionaryKeyValueCollection"
 )]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+impl AsMut<crate::System::Collections::IEnumerable>
 for crate::System::Collections::Specialized::OrderedDictionary_OrderedDictionaryKeyValueCollection {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }

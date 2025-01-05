@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ImageView {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ImageViewBase>,
+    __cordl_parent: crate::HMUI::ImageViewBase,
     pub _useScriptableObjectColors: bool,
     pub _colorSo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
     pub _color0So: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
@@ -23,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+ImageView")]
 impl std::ops::Deref for crate::HMUI::ImageView {
-    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ImageViewBase>;
+    type Target = crate::HMUI::ImageViewBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -110,7 +110,7 @@ impl crate::HMUI::ImageView {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddQuad_Gc_Color32_Gc0(
+    pub fn AddQuad_Il2CppArray_Color32_Il2CppArray0(
         vertexHelper: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
         quadPositions: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
@@ -289,7 +289,7 @@ impl crate::HMUI::ImageView {
             .invoke("OnPopulateMesh", (toFill))?;
         Ok(__cordl_ret.into())
     }
-    pub fn RadialCut_Gc0(
+    pub fn RadialCut_Il2CppArray0(
         xy: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
         >,
@@ -457,20 +457,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::ImageView {
     }
 }
 #[cfg(feature = "HMUI+ImageView")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IComponentRefresher>>
-for crate::HMUI::ImageView {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IComponentRefresher> {
+impl AsRef<crate::GlobalNamespace::IComponentRefresher> for crate::HMUI::ImageView {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IComponentRefresher {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HMUI+ImageView")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IComponentRefresher>>
-for crate::HMUI::ImageView {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IComponentRefresher> {
+impl AsMut<crate::GlobalNamespace::IComponentRefresher> for crate::HMUI::ImageView {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IComponentRefresher {
         unsafe { std::mem::transmute(self) }
     }
 }

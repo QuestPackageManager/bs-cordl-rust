@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AudioSource {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioBehaviour>,
+    __cordl_parent: crate::UnityEngine::AudioBehaviour,
 }
 #[cfg(feature = "UnityEngine+AudioSource")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+AudioSource")]
 impl std::ops::Deref for crate::UnityEngine::AudioSource {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioBehaviour>;
+    type Target = crate::UnityEngine::AudioBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -70,7 +70,7 @@ impl crate::UnityEngine::AudioSource {
             .invoke("GetOutputDataHelper", (source, samples, channel))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetOutputData_Gc1(
+    pub fn GetOutputData_Il2CppArray1(
         &mut self,
         samples: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         channel: i32,
@@ -128,7 +128,7 @@ impl crate::UnityEngine::AudioSource {
             .invoke("GetSpectrumDataHelper", (source, samples, channel, window))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetSpectrumData_Gc1(
+    pub fn GetSpectrumData_Il2CppArray1(
         &mut self,
         samples: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         channel: i32,
@@ -174,7 +174,7 @@ impl crate::UnityEngine::AudioSource {
             .invoke("Pause", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn PlayClipAtPoint_Gc_Vector3_0(
+    pub fn PlayClipAtPoint_AudioClip_Vector3_0(
         clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
         position: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -219,7 +219,7 @@ impl crate::UnityEngine::AudioSource {
             .invoke("PlayOneShotHelper", (source, clip, volumeScale))?;
         Ok(__cordl_ret.into())
     }
-    pub fn PlayOneShot_Gc0(
+    pub fn PlayOneShot_AudioClip0(
         &mut self,
         clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

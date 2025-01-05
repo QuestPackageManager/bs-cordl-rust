@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ServerObjectReplySink {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _replySink: quest_hook::libil2cpp::Gc<
         crate::System::Runtime::Remoting::Messaging::IMessageSink,
     >,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+Remoting+Messaging+ServerObjectReplySink")]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Messaging::ServerObjectReplySink {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -112,26 +112,18 @@ for crate::System::Runtime::Remoting::Messaging::ServerObjectReplySink {
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+ServerObjectReplySink")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Messaging::IMessageSink>,
-> for crate::System::Runtime::Remoting::Messaging::ServerObjectReplySink {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Remoting::Messaging::IMessageSink,
-    > {
+impl AsRef<crate::System::Runtime::Remoting::Messaging::IMessageSink>
+for crate::System::Runtime::Remoting::Messaging::ServerObjectReplySink {
+    fn as_ref(&self) -> &crate::System::Runtime::Remoting::Messaging::IMessageSink {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+ServerObjectReplySink")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Messaging::IMessageSink>,
-> for crate::System::Runtime::Remoting::Messaging::ServerObjectReplySink {
+impl AsMut<crate::System::Runtime::Remoting::Messaging::IMessageSink>
+for crate::System::Runtime::Remoting::Messaging::ServerObjectReplySink {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Remoting::Messaging::IMessageSink,
-    > {
+    ) -> &mut crate::System::Runtime::Remoting::Messaging::IMessageSink {
         unsafe { std::mem::transmute(self) }
     }
 }

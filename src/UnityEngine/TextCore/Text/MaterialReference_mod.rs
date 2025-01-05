@@ -34,7 +34,7 @@ for crate::UnityEngine::TextCore::Text::MaterialReference {
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+MaterialReference")]
 impl crate::UnityEngine::TextCore::Text::MaterialReference {
-    pub fn AddMaterialReference_Gc_Gc_ByRefMut_Gc0(
+    pub fn AddMaterialReference_FontAsset0(
         material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         fontAsset: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::TextCore::Text::FontAsset,
@@ -46,7 +46,9 @@ impl crate::UnityEngine::TextCore::Text::MaterialReference {
                 >,
             >,
         >,
-        materialReferenceIndexLookup: quest_hook::libil2cpp::Gc<i32, i32>,
+        materialReferenceIndexLookup: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
@@ -55,7 +57,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReference {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddMaterialReference_Gc_Gc_ByRefMut_Gc1(
+    pub fn AddMaterialReference_SpriteAsset1(
         material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         spriteAsset: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::TextCore::Text::SpriteAsset,
@@ -67,7 +69,9 @@ impl crate::UnityEngine::TextCore::Text::MaterialReference {
                 >,
             >,
         >,
-        materialReferenceIndexLookup: quest_hook::libil2cpp::Gc<i32, i32>,
+        materialReferenceIndexLookup: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(

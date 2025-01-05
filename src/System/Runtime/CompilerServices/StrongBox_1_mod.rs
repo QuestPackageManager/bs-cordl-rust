@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StrongBox_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Value: T,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+CompilerServices+StrongBox_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Runtime::CompilerServices::StrongBox_1<T> {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -130,26 +130,18 @@ for crate::System::Runtime::CompilerServices::StrongBox_1<T> {
 #[cfg(feature = "System+Runtime+CompilerServices+StrongBox_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::System::Runtime::CompilerServices::IStrongBox>>
+> AsRef<crate::System::Runtime::CompilerServices::IStrongBox>
 for crate::System::Runtime::CompilerServices::StrongBox_1<T> {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::CompilerServices::IStrongBox,
-    > {
+    fn as_ref(&self) -> &crate::System::Runtime::CompilerServices::IStrongBox {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Runtime+CompilerServices+StrongBox_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::System::Runtime::CompilerServices::IStrongBox>>
+> AsMut<crate::System::Runtime::CompilerServices::IStrongBox>
 for crate::System::Runtime::CompilerServices::StrongBox_1<T> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::CompilerServices::IStrongBox,
-    > {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::CompilerServices::IStrongBox {
         unsafe { std::mem::transmute(self) }
     }
 }

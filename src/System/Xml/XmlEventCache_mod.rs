@@ -2,11 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlEventCache {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlRawWriter>,
+    __cordl_parent: crate::System::Xml::XmlRawWriter,
     pub pages: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                crate::System::Xml::XmlEventCache_XmlEvent,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::System::Xml::XmlEventCache_XmlEvent,
+                >,
             >,
         >,
     >,
@@ -25,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlEventCache")]
 impl std::ops::Deref for crate::System::Xml::XmlEventCache {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::XmlRawWriter>;
+    type Target = crate::System::Xml::XmlRawWriter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -42,19 +44,7 @@ impl crate::System::Xml::XmlEventCache {
     pub type XmlEvent = crate::System::Xml::XmlEventCache_XmlEvent;
     #[cfg(feature = "System+Xml+XmlEventCache+XmlEventType")]
     pub type XmlEventType = crate::System::Xml::XmlEventCache_XmlEventType;
-    pub fn AddEvent_Gc1(
-        &mut self,
-        eventType: crate::System::Xml::XmlEventCache_XmlEventType,
-        s1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddEvent", (eventType, s1))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn AddEvent_Gc5(
+    pub fn AddEvent_Il2CppObject5(
         &mut self,
         eventType: crate::System::Xml::XmlEventCache_XmlEventType,
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -66,7 +56,19 @@ impl crate::System::Xml::XmlEventCache {
             .invoke("AddEvent", (eventType, o))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddEvent_Gc_Gc2(
+    pub fn AddEvent_Il2CppString1(
+        &mut self,
+        eventType: crate::System::Xml::XmlEventCache_XmlEventType,
+        s1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddEvent", (eventType, s1))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddEvent_Il2CppString_Il2CppString2(
         &mut self,
         eventType: crate::System::Xml::XmlEventCache_XmlEventType,
         s1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -79,7 +81,7 @@ impl crate::System::Xml::XmlEventCache {
             .invoke("AddEvent", (eventType, s1, s2))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddEvent_Gc_Gc_Gc3(
+    pub fn AddEvent_Il2CppString_Il2CppString_Il2CppString3(
         &mut self,
         eventType: crate::System::Xml::XmlEventCache_XmlEventType,
         s1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -93,7 +95,7 @@ impl crate::System::Xml::XmlEventCache {
             .invoke("AddEvent", (eventType, s1, s2, s3))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddEvent_Gc_Gc_Gc_Gc4(
+    pub fn AddEvent_Il2CppString_Il2CppString_Il2CppString_Il2CppObject4(
         &mut self,
         eventType: crate::System::Xml::XmlEventCache_XmlEventType,
         s1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -378,18 +380,7 @@ impl crate::System::Xml::XmlEventCache {
             .invoke("WriteProcessingInstruction", (name, text))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteRaw_Gc1(
-        &mut self,
-        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteRaw", (data))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn WriteRaw_i32_i32_0(
+    pub fn WriteRaw_Il2CppArray_i32_i32_0(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         index: i32,
@@ -400,6 +391,17 @@ impl crate::System::Xml::XmlEventCache {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteRaw", (buffer, index, count))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteRaw_Il2CppString1(
+        &mut self,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteRaw", (data))?;
         Ok(__cordl_ret.into())
     }
     pub fn WriteStartAttribute(
@@ -473,7 +475,7 @@ impl crate::System::Xml::XmlEventCache {
             .invoke("WriteWhitespace", (ws))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteXmlDeclaration_Gc1(
+    pub fn WriteXmlDeclaration_Il2CppString1(
         &mut self,
         xmldecl: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -545,19 +547,7 @@ for crate::System::Xml::XmlEventCache_XmlEvent {
 }
 #[cfg(feature = "System+Xml+XmlEventCache+XmlEvent")]
 impl crate::System::Xml::XmlEventCache_XmlEvent {
-    pub fn InitEvent_Gc1(
-        &mut self,
-        eventType: crate::System::Xml::XmlEventCache_XmlEventType,
-        s1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "InitEvent",
-            (eventType, s1),
-        )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn InitEvent_Gc5(
+    pub fn InitEvent_Il2CppObject5(
         &mut self,
         eventType: crate::System::Xml::XmlEventCache_XmlEventType,
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -569,7 +559,19 @@ impl crate::System::Xml::XmlEventCache_XmlEvent {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn InitEvent_Gc_Gc2(
+    pub fn InitEvent_Il2CppString1(
+        &mut self,
+        eventType: crate::System::Xml::XmlEventCache_XmlEventType,
+        s1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "InitEvent",
+            (eventType, s1),
+        )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InitEvent_Il2CppString_Il2CppString2(
         &mut self,
         eventType: crate::System::Xml::XmlEventCache_XmlEventType,
         s1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -582,7 +584,7 @@ impl crate::System::Xml::XmlEventCache_XmlEvent {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn InitEvent_Gc_Gc_Gc3(
+    pub fn InitEvent_Il2CppString_Il2CppString_Il2CppString3(
         &mut self,
         eventType: crate::System::Xml::XmlEventCache_XmlEventType,
         s1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -596,7 +598,7 @@ impl crate::System::Xml::XmlEventCache_XmlEvent {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn InitEvent_Gc_Gc_Gc_Gc4(
+    pub fn InitEvent_Il2CppString_Il2CppString_Il2CppString_Il2CppObject4(
         &mut self,
         eventType: crate::System::Xml::XmlEventCache_XmlEventType,
         s1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

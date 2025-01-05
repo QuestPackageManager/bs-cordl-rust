@@ -86,7 +86,7 @@ impl crate::OVR::OpenVR::IVRTrackedCamera {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRTrackedCamera__AcquireVideoStreamingService {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_AcquireVideoStreamingService")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -97,7 +97,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_AcquireVideoStreamingService")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRTrackedCamera__AcquireVideoStreamingService {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -188,7 +188,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__AcquireVideoStreamingService {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRTrackedCamera__GetCameraErrorNameFromEnum {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetCameraErrorNameFromEnum")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -199,7 +199,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetCameraErrorNameFromEnum")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraErrorNameFromEnum {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -287,7 +287,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraErrorNameFromEnum {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRTrackedCamera__GetCameraFrameSize {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetCameraFrameSize")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -297,7 +297,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetCameraFrameSize")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraFrameSize {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -409,7 +409,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraFrameSize {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRTrackedCamera__GetCameraIntrinsics {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetCameraIntrinsics")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -419,7 +419,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetCameraIntrinsics")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraIntrinsics {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -517,7 +517,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraIntrinsics {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRTrackedCamera__GetCameraProjection {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetCameraProjection")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -527,7 +527,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetCameraProjection")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraProjection {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -634,7 +634,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraProjection {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRTrackedCamera__GetVideoStreamFrameBuffer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamFrameBuffer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -645,7 +645,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamFrameBuffer")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamFrameBuffer {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -772,7 +772,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamFrameBuffer {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRTrackedCamera__GetVideoStreamTextureD3D11 {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureD3D11")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -783,7 +783,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureD3D11")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureD3D11 {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -917,7 +917,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureD3D11 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRTrackedCamera__GetVideoStreamTextureGL {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureGL")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -927,7 +927,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureGL")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureGL {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1051,7 +1051,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureGL {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRTrackedCamera__GetVideoStreamTextureSize {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureSize")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1062,7 +1062,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureSize")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureSize {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1181,7 +1181,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureSize {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRTrackedCamera__HasCamera {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_HasCamera")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1190,7 +1190,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_HasCamera")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRTrackedCamera__HasCamera {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1280,7 +1280,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__HasCamera {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRTrackedCamera__ReleaseVideoStreamTextureGL {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_ReleaseVideoStreamTextureGL")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1291,7 +1291,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_ReleaseVideoStreamTextureGL")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRTrackedCamera__ReleaseVideoStreamTextureGL {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1381,7 +1381,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__ReleaseVideoStreamTextureGL {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRTrackedCamera__ReleaseVideoStreamingService {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_ReleaseVideoStreamingService")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1392,7 +1392,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_ReleaseVideoStreamingService")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRTrackedCamera__ReleaseVideoStreamingService {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

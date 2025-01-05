@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PrincipalUtilities {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+X509+PrincipalUtilities")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+X509+PrincipalUtilities")]
 impl std::ops::Deref for crate::Org::BouncyCastle::X509::PrincipalUtilities {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,7 +24,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::X509::PrincipalUtilities {
 }
 #[cfg(feature = "Org+BouncyCastle+X509+PrincipalUtilities")]
 impl crate::Org::BouncyCastle::X509::PrincipalUtilities {
-    pub fn GetIssuerX509Principal_Gc0(
+    pub fn GetIssuerX509Principal_X509Certificate0(
         cert: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Name>,
@@ -35,7 +35,7 @@ impl crate::Org::BouncyCastle::X509::PrincipalUtilities {
             .invoke("GetIssuerX509Principal", (cert))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetIssuerX509Principal_Gc1(
+    pub fn GetIssuerX509Principal_X509Crl1(
         crl: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Crl>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Name>,

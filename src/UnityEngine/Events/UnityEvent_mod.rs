@@ -2,13 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityEvent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Events::UnityEventBase,
-    >,
+    __cordl_parent: crate::UnityEngine::Events::UnityEventBase,
     pub m_InvokeArray: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
 }
 #[cfg(feature = "UnityEngine+Events+UnityEvent")]
@@ -18,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Events+UnityEvent")]
 impl std::ops::Deref for crate::UnityEngine::Events::UnityEvent {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityEventBase>;
+    type Target = crate::UnityEngine::Events::UnityEventBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -57,7 +53,7 @@ impl crate::UnityEngine::Events::UnityEvent {
         > = __cordl_object.invoke("FindMethod_Impl", (name, targetObjType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetDelegate_Gc0(
+    pub fn GetDelegate_Il2CppObject_MethodInfo0(
         &mut self,
         target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         theFunction: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
@@ -72,7 +68,7 @@ impl crate::UnityEngine::Events::UnityEvent {
         > = __cordl_object.invoke("GetDelegate", (target, theFunction))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetDelegate_Gc1(
+    pub fn GetDelegate_UnityAction1(
         action: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::BaseInvokableCall>,

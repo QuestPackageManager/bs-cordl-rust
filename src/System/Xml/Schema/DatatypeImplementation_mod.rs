@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DatatypeImplementation {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::XmlSchemaDatatype,
-    >,
+    __cordl_parent: crate::System::Xml::Schema::XmlSchemaDatatype,
     pub variety: crate::System::Xml::Schema::XmlSchemaDatatypeVariety,
     pub restriction: quest_hook::libil2cpp::Gc<
         crate::System::Xml::Schema::RestrictionFacets,
@@ -26,9 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+DatatypeImplementation")]
 impl std::ops::Deref for crate::System::Xml::Schema::DatatypeImplementation {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::XmlSchemaDatatype,
-    >;
+    type Target = crate::System::Xml::Schema::XmlSchemaDatatype;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -75,7 +71,7 @@ impl crate::System::Xml::Schema::DatatypeImplementation {
         > = __cordl_object.invoke("CreateValueConverter", (schemaType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DeriveByList_Gc0(
+    pub fn DeriveByList_XmlSchemaType0(
         &mut self,
         schemaType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
     ) -> quest_hook::libil2cpp::Result<
@@ -89,7 +85,7 @@ impl crate::System::Xml::Schema::DatatypeImplementation {
         > = __cordl_object.invoke("DeriveByList", (schemaType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DeriveByList_i32_Gc1(
+    pub fn DeriveByList_i32_XmlSchemaType1(
         &mut self,
         minSize: i32,
         schemaType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
@@ -126,9 +122,7 @@ impl crate::System::Xml::Schema::DatatypeImplementation {
     pub fn DeriveByUnion(
         types: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Xml::Schema::XmlSchemaSimpleType,
-                >,
+                *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
             >,
         >,
         schemaType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
@@ -200,17 +194,13 @@ impl crate::System::Xml::Schema::DatatypeImplementation {
     pub fn GetBuiltInTypes() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Xml::Schema::XmlSchemaSimpleType,
-                >,
+                *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Xml::Schema::XmlSchemaSimpleType,
-                >,
+                *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetBuiltInTypes", ())?;
@@ -316,7 +306,7 @@ impl crate::System::Xml::Schema::DatatypeImplementation {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn ParseValue_Gc_Gc_Gc0(
+    pub fn ParseValue_Il2CppString_XmlNameTable_IXmlNamespaceResolver0(
         &mut self,
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
@@ -579,7 +569,7 @@ for crate::System::Xml::Schema::DatatypeImplementation {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DatatypeImplementation_SchemaDatatypeMap {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _cordl_type: quest_hook::libil2cpp::Gc<
         crate::System::Xml::Schema::DatatypeImplementation,
@@ -595,7 +585,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Xml+Schema+DatatypeImplementation+SchemaDatatypeMap")]
 impl std::ops::Deref
 for crate::System::Xml::Schema::DatatypeImplementation_SchemaDatatypeMap {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -619,7 +609,7 @@ impl crate::System::Xml::Schema::DatatypeImplementation_SchemaDatatypeMap {
         let __cordl_ret: i32 = __cordl_object.invoke("CompareTo", (obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc_Gc0(
+    pub fn New_Il2CppString_DatatypeImplementation0(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         _cordl_type: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::DatatypeImplementation,
@@ -644,7 +634,7 @@ impl crate::System::Xml::Schema::DatatypeImplementation_SchemaDatatypeMap {
             .invoke_void(".ctor", (name, _cordl_type, parentIndex))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc_Gc0(
+    pub fn _ctor_Il2CppString_DatatypeImplementation0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         _cordl_type: quest_hook::libil2cpp::Gc<
@@ -717,16 +707,16 @@ for crate::System::Xml::Schema::DatatypeImplementation_SchemaDatatypeMap {
     }
 }
 #[cfg(feature = "System+Xml+Schema+DatatypeImplementation+SchemaDatatypeMap")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
+impl AsRef<crate::System::IComparable>
 for crate::System::Xml::Schema::DatatypeImplementation_SchemaDatatypeMap {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IComparable> {
+    fn as_ref(&self) -> &crate::System::IComparable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+Schema+DatatypeImplementation+SchemaDatatypeMap")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
+impl AsMut<crate::System::IComparable>
 for crate::System::Xml::Schema::DatatypeImplementation_SchemaDatatypeMap {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IComparable> {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable {
         unsafe { std::mem::transmute(self) }
     }
 }

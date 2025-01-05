@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DateTimeFacetsChecker {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::FacetsChecker>,
+    __cordl_parent: crate::System::Xml::Schema::FacetsChecker,
 }
 #[cfg(feature = "System+Xml+Schema+DateTimeFacetsChecker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+DateTimeFacetsChecker")]
 impl std::ops::Deref for crate::System::Xml::Schema::DateTimeFacetsChecker {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::FacetsChecker>;
+    type Target = crate::System::Xml::Schema::FacetsChecker;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,7 +40,7 @@ impl crate::System::Xml::Schema::DateTimeFacetsChecker {
             .invoke("CheckValueFacets", (value, datatype))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CheckValueFacets_Gc0(
+    pub fn CheckValueFacets_Il2CppObject0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         datatype: quest_hook::libil2cpp::Gc<
@@ -71,7 +71,7 @@ impl crate::System::Xml::Schema::DateTimeFacetsChecker {
             .invoke("MatchEnumeration", (value, enumeration, datatype))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MatchEnumeration_Gc0(
+    pub fn MatchEnumeration_Il2CppObject0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         enumeration: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,

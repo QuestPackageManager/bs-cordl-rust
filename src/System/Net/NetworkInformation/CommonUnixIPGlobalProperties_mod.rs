@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CommonUnixIPGlobalProperties {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Net::NetworkInformation::IPGlobalProperties,
-    >,
+    __cordl_parent: crate::System::Net::NetworkInformation::IPGlobalProperties,
 }
 #[cfg(feature = "System+Net+NetworkInformation+CommonUnixIPGlobalProperties")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Net+NetworkInformation+CommonUnixIPGlobalProperties")]
 impl std::ops::Deref
 for crate::System::Net::NetworkInformation::CommonUnixIPGlobalProperties {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Net::NetworkInformation::IPGlobalProperties,
-    >;
+    type Target = crate::System::Net::NetworkInformation::IPGlobalProperties;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -37,20 +37,16 @@ impl crate::UnityEngine::Experimental::Playables::TexturePlayableOutput {
     }
 }
 #[cfg(feature = "UnityEngine+Experimental+Playables+TexturePlayableOutput")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::IPlayableOutput>>
+impl AsRef<crate::UnityEngine::Playables::IPlayableOutput>
 for crate::UnityEngine::Experimental::Playables::TexturePlayableOutput {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::IPlayableOutput> {
+    fn as_ref(&self) -> &crate::UnityEngine::Playables::IPlayableOutput {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Experimental+Playables+TexturePlayableOutput")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::IPlayableOutput>>
+impl AsMut<crate::UnityEngine::Playables::IPlayableOutput>
 for crate::UnityEngine::Experimental::Playables::TexturePlayableOutput {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::IPlayableOutput> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::IPlayableOutput {
         todo!()
     }
 }

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OnScreenButton {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::OnScreen::OnScreenControl,
-    >,
+    __cordl_parent: crate::UnityEngine::InputSystem::OnScreen::OnScreenControl,
     pub m_ControlPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenButton")]
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenButton")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::OnScreen::OnScreenButton {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::OnScreen::OnScreenControl,
-    >;
+    type Target = crate::UnityEngine::InputSystem::OnScreen::OnScreenControl;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -109,74 +105,44 @@ for crate::UnityEngine::InputSystem::OnScreen::OnScreenButton {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenButton")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
-> for crate::UnityEngine::InputSystem::OnScreen::OnScreenButton {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IEventSystemHandler,
-    > {
+impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::UnityEngine::InputSystem::OnScreen::OnScreenButton {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenButton")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
-> for crate::UnityEngine::InputSystem::OnScreen::OnScreenButton {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IEventSystemHandler,
-    > {
+impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::UnityEngine::InputSystem::OnScreen::OnScreenButton {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenButton")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerDownHandler>,
-> for crate::UnityEngine::InputSystem::OnScreen::OnScreenButton {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerDownHandler,
-    > {
+impl AsRef<crate::UnityEngine::EventSystems::IPointerDownHandler>
+for crate::UnityEngine::InputSystem::OnScreen::OnScreenButton {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerDownHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenButton")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerDownHandler>,
-> for crate::UnityEngine::InputSystem::OnScreen::OnScreenButton {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerDownHandler,
-    > {
+impl AsMut<crate::UnityEngine::EventSystems::IPointerDownHandler>
+for crate::UnityEngine::InputSystem::OnScreen::OnScreenButton {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerDownHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenButton")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerUpHandler>,
-> for crate::UnityEngine::InputSystem::OnScreen::OnScreenButton {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerUpHandler,
-    > {
+impl AsRef<crate::UnityEngine::EventSystems::IPointerUpHandler>
+for crate::UnityEngine::InputSystem::OnScreen::OnScreenButton {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerUpHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenButton")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerUpHandler>,
-> for crate::UnityEngine::InputSystem::OnScreen::OnScreenButton {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerUpHandler,
-    > {
+impl AsMut<crate::UnityEngine::EventSystems::IPointerUpHandler>
+for crate::UnityEngine::InputSystem::OnScreen::OnScreenButton {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerUpHandler {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CommandBuffer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Ptr: crate::System::IntPtr,
 }
 #[cfg(feature = "UnityEngine+Rendering+CommandBuffer")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Rendering+CommandBuffer")]
 impl std::ops::Deref for crate::UnityEngine::Rendering::CommandBuffer {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -25,33 +25,6 @@ impl std::ops::DerefMut for crate::UnityEngine::Rendering::CommandBuffer {
 }
 #[cfg(feature = "UnityEngine+Rendering+CommandBuffer")]
 impl crate::UnityEngine::Rendering::CommandBuffer {
-    pub fn Blit_Gc1(
-        &mut self,
-        source: crate::UnityEngine::Rendering::RenderTargetIdentifier,
-        dest: crate::UnityEngine::Rendering::RenderTargetIdentifier,
-        mat: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Blit", (source, dest, mat))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Blit_Gc_i32_2(
-        &mut self,
-        source: crate::UnityEngine::Rendering::RenderTargetIdentifier,
-        dest: crate::UnityEngine::Rendering::RenderTargetIdentifier,
-        mat: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-        pass: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Blit", (source, dest, mat, pass))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn Blit_Identifier(
         &mut self,
         source: quest_hook::libil2cpp::ByRefMut<
@@ -118,6 +91,33 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
                     destDepthSlice,
                 ),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Blit_Material1(
+        &mut self,
+        source: crate::UnityEngine::Rendering::RenderTargetIdentifier,
+        dest: crate::UnityEngine::Rendering::RenderTargetIdentifier,
+        mat: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Blit", (source, dest, mat))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Blit_Material_i32_2(
+        &mut self,
+        source: crate::UnityEngine::Rendering::RenderTargetIdentifier,
+        dest: crate::UnityEngine::Rendering::RenderTargetIdentifier,
+        mat: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        pass: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Blit", (source, dest, mat, pass))?;
         Ok(__cordl_ret.into())
     }
     pub fn Blit_RenderTargetIdentifier_RenderTargetIdentifier0(
@@ -241,7 +241,7 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn DrawMesh_Gc_Matrix4x4_Gc3(
+    pub fn DrawMesh_Mesh_Matrix4x4_Material3(
         &mut self,
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         matrix: crate::UnityEngine::Matrix4x4,
@@ -283,7 +283,7 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
             .invoke("DrawMesh", (mesh, matrix, material, submeshIndex, shaderPass))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DrawMesh_i32_i32_Gc0(
+    pub fn DrawMesh_i32_i32_MaterialPropertyBlock0(
         &mut self,
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         matrix: crate::UnityEngine::Matrix4x4,
@@ -572,7 +572,7 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
             .invoke("SetGlobalFloat", (nameID, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetGlobalTexture_Gc0(
+    pub fn SetGlobalTexture_Il2CppString0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: crate::UnityEngine::Rendering::RenderTargetIdentifier,
@@ -765,16 +765,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::Comman
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+CommandBuffer")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::UnityEngine::Rendering::CommandBuffer {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsRef<crate::System::IDisposable> for crate::UnityEngine::Rendering::CommandBuffer {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+CommandBuffer")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::UnityEngine::Rendering::CommandBuffer {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsMut<crate::System::IDisposable> for crate::UnityEngine::Rendering::CommandBuffer {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }

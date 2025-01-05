@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X9Curve {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub curve: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,
     pub seed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub fieldIdentifier: quest_hook::libil2cpp::Gc<
@@ -18,9 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X9Curve")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::X9::X9Curve {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -46,7 +42,7 @@ impl crate::Org::BouncyCastle::Asn1::X9::X9Curve {
         > = __cordl_object.invoke("GetSeed", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_ECCurve0(
         curve: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -55,7 +51,7 @@ impl crate::Org::BouncyCastle::Asn1::X9::X9Curve {
             .invoke_void(".ctor", (curve))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_ECCurve_Il2CppArray1(
         curve: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,
         seed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -65,7 +61,7 @@ impl crate::Org::BouncyCastle::Asn1::X9::X9Curve {
             .invoke_void(".ctor", (curve, seed))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc2(
+    pub fn New_X9FieldID_Asn1Sequence2(
         fieldID: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X9::X9FieldID,
         >,
@@ -77,7 +73,7 @@ impl crate::Org::BouncyCastle::Asn1::X9::X9Curve {
             .invoke_void(".ctor", (fieldID, seq))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc_Gc3(
+    pub fn New_X9FieldID_BigInteger_BigInteger_Asn1Sequence3(
         fieldID: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X9::X9FieldID,
         >,
@@ -104,7 +100,7 @@ impl crate::Org::BouncyCastle::Asn1::X9::X9Curve {
         > = __cordl_object.invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_ECCurve0(
         &mut self,
         curve: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -115,7 +111,7 @@ impl crate::Org::BouncyCastle::Asn1::X9::X9Curve {
             .invoke(".ctor", (curve))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_ECCurve_Il2CppArray1(
         &mut self,
         curve: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,
         seed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -127,7 +123,7 @@ impl crate::Org::BouncyCastle::Asn1::X9::X9Curve {
             .invoke(".ctor", (curve, seed))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_X9FieldID_Asn1Sequence2(
         &mut self,
         fieldID: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X9::X9FieldID,
@@ -141,7 +137,7 @@ impl crate::Org::BouncyCastle::Asn1::X9::X9Curve {
             .invoke(".ctor", (fieldID, seq))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_Gc3(
+    pub fn _ctor_X9FieldID_BigInteger_BigInteger_Asn1Sequence3(
         &mut self,
         fieldID: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X9::X9FieldID,

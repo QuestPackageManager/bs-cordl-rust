@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MaskableGraphic {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+    __cordl_parent: crate::UnityEngine::UI::Graphic,
     pub m_ShouldRecalculateStencil: bool,
     pub m_MaskMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub m_ParentMask: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::RectMask2D>,
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+MaskableGraphic")]
 impl std::ops::Deref for crate::UnityEngine::UI::MaskableGraphic {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>;
+    type Target = crate::UnityEngine::UI::Graphic;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -293,52 +293,44 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::MaskableGraph
     }
 }
 #[cfg(feature = "UnityEngine+UI+MaskableGraphic")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IClippable>>
+impl AsRef<crate::UnityEngine::UI::IClippable>
 for crate::UnityEngine::UI::MaskableGraphic {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IClippable> {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::IClippable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+MaskableGraphic")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IClippable>>
+impl AsMut<crate::UnityEngine::UI::IClippable>
 for crate::UnityEngine::UI::MaskableGraphic {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IClippable> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::IClippable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+MaskableGraphic")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IMaskable>>
+impl AsRef<crate::UnityEngine::UI::IMaskable>
 for crate::UnityEngine::UI::MaskableGraphic {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IMaskable> {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::IMaskable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+MaskableGraphic")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IMaskable>>
+impl AsMut<crate::UnityEngine::UI::IMaskable>
 for crate::UnityEngine::UI::MaskableGraphic {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IMaskable> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::IMaskable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+MaskableGraphic")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IMaterialModifier>>
+impl AsRef<crate::UnityEngine::UI::IMaterialModifier>
 for crate::UnityEngine::UI::MaskableGraphic {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IMaterialModifier> {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::IMaterialModifier {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+MaskableGraphic")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IMaterialModifier>>
+impl AsMut<crate::UnityEngine::UI::IMaterialModifier>
 for crate::UnityEngine::UI::MaskableGraphic {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IMaterialModifier> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::IMaterialModifier {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -346,7 +338,7 @@ for crate::UnityEngine::UI::MaskableGraphic {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MaskableGraphic_CullStateChangedEvent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<bool>,
+    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<bool>,
 }
 #[cfg(feature = "UnityEngine+UI+MaskableGraphic+CullStateChangedEvent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -356,7 +348,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+MaskableGraphic+CullStateChangedEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::MaskableGraphic_CullStateChangedEvent {
-    type Target = quest_hook::libil2cpp::Gc<bool>;
+    type Target = crate::UnityEngine::Events::UnityEvent_1<bool>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

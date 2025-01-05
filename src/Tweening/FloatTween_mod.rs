@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatTween {
-    __cordl_parent: quest_hook::libil2cpp::Gc<f32>,
+    __cordl_parent: crate::Tweening::Tween_1<f32>,
 }
 #[cfg(feature = "Tweening+FloatTween")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Tweening+FloatTween")]
 impl std::ops::Deref for crate::Tweening::FloatTween {
-    type Target = quest_hook::libil2cpp::Gc<f32>;
+    type Target = crate::Tweening::Tween_1<f32>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,10 +37,10 @@ impl crate::Tweening::FloatTween {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_f32_f32_Gc_f32_EaseType_f32_1(
+    pub fn New_f32_f32_Action_1_f32_EaseType_f32_1(
         fromValue: f32,
         toValue: f32,
-        onUpdate: quest_hook::libil2cpp::Gc<f32>,
+        onUpdate: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
         duration: f32,
         easeType: crate::GlobalNamespace::EaseType,
         delay: f32,
@@ -64,11 +64,11 @@ impl crate::Tweening::FloatTween {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_f32_f32_Gc_f32_EaseType_f32_1(
+    pub fn _ctor_f32_f32_Action_1_f32_EaseType_f32_1(
         &mut self,
         fromValue: f32,
         toValue: f32,
-        onUpdate: quest_hook::libil2cpp::Gc<f32>,
+        onUpdate: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
         duration: f32,
         easeType: crate::GlobalNamespace::EaseType,
         delay: f32,

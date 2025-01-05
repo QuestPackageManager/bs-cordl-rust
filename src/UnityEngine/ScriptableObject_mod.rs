@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScriptableObject {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    __cordl_parent: crate::UnityEngine::Object,
 }
 #[cfg(feature = "UnityEngine+ScriptableObject")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ScriptableObject")]
 impl std::ops::Deref for crate::UnityEngine::ScriptableObject {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>;
+    type Target = crate::UnityEngine::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -33,7 +33,7 @@ impl crate::UnityEngine::ScriptableObject {
             .invoke("CreateInstance", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateInstance_Gc0(
+    pub fn CreateInstance_Type0(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,

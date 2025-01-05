@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BinaryOperationBinder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Dynamic::DynamicMetaObjectBinder,
-    >,
+    __cordl_parent: crate::System::Dynamic::DynamicMetaObjectBinder,
     pub _Operation_k__BackingField: crate::System::Linq::Expressions::ExpressionType,
 }
 #[cfg(feature = "System+Dynamic+BinaryOperationBinder")]
@@ -14,9 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Dynamic+BinaryOperationBinder")]
 impl std::ops::Deref for crate::System::Dynamic::BinaryOperationBinder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Dynamic::DynamicMetaObjectBinder,
-    >;
+    type Target = crate::System::Dynamic::DynamicMetaObjectBinder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,7 +30,7 @@ impl crate::System::Dynamic::BinaryOperationBinder {
         target: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
         args: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+                *mut crate::System::Dynamic::DynamicMetaObject,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -48,7 +44,7 @@ impl crate::System::Dynamic::BinaryOperationBinder {
         > = __cordl_object.invoke("Bind", (target, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FallbackBinaryOperation_Gc1(
+    pub fn FallbackBinaryOperation_DynamicMetaObject1(
         &mut self,
         target: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
         arg: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
@@ -67,7 +63,7 @@ impl crate::System::Dynamic::BinaryOperationBinder {
             .invoke("FallbackBinaryOperation", (target, arg, errorSuggestion))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FallbackBinaryOperation_Gc_Gc0(
+    pub fn FallbackBinaryOperation_DynamicMetaObject_DynamicMetaObject0(
         &mut self,
         target: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
         arg: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,

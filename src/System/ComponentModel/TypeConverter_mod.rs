@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeConverter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+ComponentModel+TypeConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+ComponentModel+TypeConverter")]
 impl std::ops::Deref for crate::System::ComponentModel::TypeConverter {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,17 +29,7 @@ impl crate::System::ComponentModel::TypeConverter {
     pub type SimplePropertyDescriptor = crate::System::ComponentModel::TypeConverter_SimplePropertyDescriptor;
     #[cfg(feature = "System+ComponentModel+TypeConverter+StandardValuesCollection")]
     pub type StandardValuesCollection = crate::System::ComponentModel::TypeConverter_StandardValuesCollection;
-    pub fn CanConvertFrom_Gc0(
-        &mut self,
-        sourceType: quest_hook::libil2cpp::Gc<crate::System::Type>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("CanConvertFrom", (sourceType))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn CanConvertFrom_Gc1(
+    pub fn CanConvertFrom_ITypeDescriptorContext_Type1(
         &mut self,
         context: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::ITypeDescriptorContext,
@@ -53,18 +43,17 @@ impl crate::System::ComponentModel::TypeConverter {
             .invoke("CanConvertFrom", (context, sourceType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CanConvertTo_Gc0(
+    pub fn CanConvertFrom_Type0(
         &mut self,
-        destinationType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        sourceType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("CanConvertTo", (destinationType))?;
+        let __cordl_ret: bool = __cordl_object.invoke("CanConvertFrom", (sourceType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CanConvertTo_Gc1(
+    pub fn CanConvertTo_ITypeDescriptorContext_Type1(
         &mut self,
         context: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::ITypeDescriptorContext,
@@ -78,21 +67,18 @@ impl crate::System::ComponentModel::TypeConverter {
             .invoke("CanConvertTo", (context, destinationType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ConvertFromInvariantString_Gc0(
+    pub fn CanConvertTo_Type0(
         &mut self,
-        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
+        destinationType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object.invoke("ConvertFromInvariantString", (text))?;
+        let __cordl_ret: bool = __cordl_object
+            .invoke("CanConvertTo", (destinationType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ConvertFromInvariantString_Gc1(
+    pub fn ConvertFromInvariantString_ITypeDescriptorContext_Il2CppString1(
         &mut self,
         context: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::ITypeDescriptorContext,
@@ -109,7 +95,7 @@ impl crate::System::ComponentModel::TypeConverter {
         > = __cordl_object.invoke("ConvertFromInvariantString", (context, text))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ConvertFromString_Gc0(
+    pub fn ConvertFromInvariantString_Il2CppString0(
         &mut self,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -120,27 +106,10 @@ impl crate::System::ComponentModel::TypeConverter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object.invoke("ConvertFromString", (text))?;
+        > = __cordl_object.invoke("ConvertFromInvariantString", (text))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ConvertFromString_Gc1(
-        &mut self,
-        context: quest_hook::libil2cpp::Gc<
-            crate::System::ComponentModel::ITypeDescriptorContext,
-        >,
-        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object.invoke("ConvertFromString", (context, text))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ConvertFromString_Gc_Gc2(
+    pub fn ConvertFromString_ITypeDescriptorContext_CultureInfo_Il2CppString2(
         &mut self,
         context: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::ITypeDescriptorContext,
@@ -158,9 +127,12 @@ impl crate::System::ComponentModel::TypeConverter {
         > = __cordl_object.invoke("ConvertFromString", (context, culture, text))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ConvertFrom_Gc0(
+    pub fn ConvertFromString_ITypeDescriptorContext_Il2CppString1(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        context: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::ITypeDescriptorContext,
+        >,
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
@@ -169,10 +141,24 @@ impl crate::System::ComponentModel::TypeConverter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object.invoke("ConvertFrom", (value))?;
+        > = __cordl_object.invoke("ConvertFromString", (context, text))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ConvertFrom_Gc_Gc1(
+    pub fn ConvertFromString_Il2CppString0(
+        &mut self,
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("ConvertFromString", (text))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ConvertFrom_ITypeDescriptorContext_CultureInfo_Il2CppObject1(
         &mut self,
         context: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::ITypeDescriptorContext,
@@ -190,21 +176,21 @@ impl crate::System::ComponentModel::TypeConverter {
         > = __cordl_object.invoke("ConvertFrom", (context, culture, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ConvertToInvariantString_Gc0(
+    pub fn ConvertFrom_Il2CppObject0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = __cordl_object.invoke("ConvertToInvariantString", (value))?;
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("ConvertFrom", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ConvertToInvariantString_Gc1(
+    pub fn ConvertToInvariantString_ITypeDescriptorContext_Il2CppObject1(
         &mut self,
         context: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::ITypeDescriptorContext,
@@ -221,7 +207,7 @@ impl crate::System::ComponentModel::TypeConverter {
         > = __cordl_object.invoke("ConvertToInvariantString", (context, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ConvertToString_Gc0(
+    pub fn ConvertToInvariantString_Il2CppObject0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
@@ -232,27 +218,10 @@ impl crate::System::ComponentModel::TypeConverter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = __cordl_object.invoke("ConvertToString", (value))?;
+        > = __cordl_object.invoke("ConvertToInvariantString", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ConvertToString_Gc1(
-        &mut self,
-        context: quest_hook::libil2cpp::Gc<
-            crate::System::ComponentModel::ITypeDescriptorContext,
-        >,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = __cordl_object.invoke("ConvertToString", (context, value))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ConvertToString_Gc_Gc2(
+    pub fn ConvertToString_ITypeDescriptorContext_CultureInfo_Il2CppObject2(
         &mut self,
         context: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::ITypeDescriptorContext,
@@ -270,22 +239,38 @@ impl crate::System::ComponentModel::TypeConverter {
         > = __cordl_object.invoke("ConvertToString", (context, culture, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ConvertTo_Gc_Gc0(
+    pub fn ConvertToString_ITypeDescriptorContext_Il2CppObject1(
         &mut self,
+        context: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::ITypeDescriptorContext,
+        >,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        destinationType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object.invoke("ConvertTo", (value, destinationType))?;
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("ConvertToString", (context, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ConvertTo_Gc_Gc1(
+    pub fn ConvertToString_Il2CppObject0(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("ConvertToString", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ConvertTo_ITypeDescriptorContext_CultureInfo_Il2CppObject_Type1(
         &mut self,
         context: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::ITypeDescriptorContext,
@@ -305,7 +290,22 @@ impl crate::System::ComponentModel::TypeConverter {
             .invoke("ConvertTo", (context, culture, value, destinationType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateInstance_Gc0(
+    pub fn ConvertTo_Il2CppObject_Type0(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        destinationType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("ConvertTo", (value, destinationType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateInstance_IDictionary0(
         &mut self,
         propertyValues: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IDictionary,
@@ -321,7 +321,7 @@ impl crate::System::ComponentModel::TypeConverter {
         > = __cordl_object.invoke("CreateInstance", (propertyValues))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateInstance_Gc1(
+    pub fn CreateInstance_ITypeDescriptorContext_IDictionary1(
         &mut self,
         context: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::ITypeDescriptorContext,
@@ -376,7 +376,7 @@ impl crate::System::ComponentModel::TypeConverter {
         let __cordl_ret: bool = __cordl_object.invoke("GetCreateInstanceSupported", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetCreateInstanceSupported_Gc1(
+    pub fn GetCreateInstanceSupported_ITypeDescriptorContext1(
         &mut self,
         context: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::ITypeDescriptorContext,
@@ -396,7 +396,7 @@ impl crate::System::ComponentModel::TypeConverter {
         let __cordl_ret: bool = __cordl_object.invoke("GetPropertiesSupported", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetPropertiesSupported_Gc1(
+    pub fn GetPropertiesSupported_ITypeDescriptorContext1(
         &mut self,
         context: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::ITypeDescriptorContext,
@@ -409,23 +409,7 @@ impl crate::System::ComponentModel::TypeConverter {
             .invoke("GetPropertiesSupported", (context))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetProperties_Gc0(
-        &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::ComponentModel::PropertyDescriptorCollection,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::ComponentModel::PropertyDescriptorCollection,
-        > = __cordl_object.invoke("GetProperties", (value))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetProperties_Gc1(
+    pub fn GetProperties_ITypeDescriptorContext_Il2CppObject1(
         &mut self,
         context: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::ITypeDescriptorContext,
@@ -444,16 +428,14 @@ impl crate::System::ComponentModel::TypeConverter {
         > = __cordl_object.invoke("GetProperties", (context, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetProperties_Gc_Gc2(
+    pub fn GetProperties_ITypeDescriptorContext_Il2CppObject_Il2CppArray2(
         &mut self,
         context: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::ITypeDescriptorContext,
         >,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         attributes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -468,6 +450,22 @@ impl crate::System::ComponentModel::TypeConverter {
         > = __cordl_object.invoke("GetProperties", (context, value, attributes))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetProperties_Il2CppObject0(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::PropertyDescriptorCollection,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::PropertyDescriptorCollection,
+        > = __cordl_object.invoke("GetProperties", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetStandardValuesExclusive_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -477,7 +475,7 @@ impl crate::System::ComponentModel::TypeConverter {
         let __cordl_ret: bool = __cordl_object.invoke("GetStandardValuesExclusive", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetStandardValuesExclusive_Gc1(
+    pub fn GetStandardValuesExclusive_ITypeDescriptorContext1(
         &mut self,
         context: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::ITypeDescriptorContext,
@@ -499,7 +497,7 @@ impl crate::System::ComponentModel::TypeConverter {
         let __cordl_ret: bool = __cordl_object.invoke("GetStandardValuesSupported", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetStandardValuesSupported_Gc1(
+    pub fn GetStandardValuesSupported_ITypeDescriptorContext1(
         &mut self,
         context: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::ITypeDescriptorContext,
@@ -525,7 +523,7 @@ impl crate::System::ComponentModel::TypeConverter {
         > = __cordl_object.invoke("GetStandardValues", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetStandardValues_Gc1(
+    pub fn GetStandardValues_ITypeDescriptorContext1(
         &mut self,
         context: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::ITypeDescriptorContext,
@@ -543,17 +541,7 @@ impl crate::System::ComponentModel::TypeConverter {
         > = __cordl_object.invoke("GetStandardValues", (context))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsValid_Gc0(
-        &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsValid", (value))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn IsValid_Gc1(
+    pub fn IsValid_ITypeDescriptorContext_Il2CppObject1(
         &mut self,
         context: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::ITypeDescriptorContext,
@@ -564,6 +552,16 @@ impl crate::System::ComponentModel::TypeConverter {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsValid", (context, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsValid_Il2CppObject0(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsValid", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -579,9 +577,7 @@ impl crate::System::ComponentModel::TypeConverter {
             crate::System::ComponentModel::PropertyDescriptorCollection,
         >,
         names: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -625,9 +621,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::ComponentModel::TypeCo
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeConverter_SimplePropertyDescriptor {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::ComponentModel::PropertyDescriptor,
-    >,
+    __cordl_parent: crate::System::ComponentModel::PropertyDescriptor,
     pub componentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub propertyType: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
@@ -640,9 +634,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+ComponentModel+TypeConverter+SimplePropertyDescriptor")]
 impl std::ops::Deref
 for crate::System::ComponentModel::TypeConverter_SimplePropertyDescriptor {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::ComponentModel::PropertyDescriptor,
-    >;
+    type Target = crate::System::ComponentModel::PropertyDescriptor;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -666,14 +658,12 @@ impl crate::System::ComponentModel::TypeConverter_SimplePropertyDescriptor {
         let __cordl_ret: bool = __cordl_object.invoke("CanResetValue", (component))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Il2CppArray1(
         componentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         propertyType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         attributes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -682,7 +672,7 @@ impl crate::System::ComponentModel::TypeConverter_SimplePropertyDescriptor {
             .invoke_void(".ctor", (componentType, name, propertyType, attributes))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc_Gc0(
+    pub fn New_Type_Il2CppString_Type0(
         componentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         propertyType: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -715,15 +705,13 @@ impl crate::System::ComponentModel::TypeConverter_SimplePropertyDescriptor {
             .invoke("ShouldSerializeValue", (component))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Il2CppArray1(
         &mut self,
         componentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         propertyType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         attributes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -733,7 +721,7 @@ impl crate::System::ComponentModel::TypeConverter_SimplePropertyDescriptor {
             .invoke(".ctor", (componentType, name, propertyType, attributes))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_Gc0(
+    pub fn _ctor_Type_Il2CppString_Type0(
         &mut self,
         componentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -788,7 +776,7 @@ for crate::System::ComponentModel::TypeConverter_SimplePropertyDescriptor {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeConverter_StandardValuesCollection {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub values: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
     pub valueArray: quest_hook::libil2cpp::Gc<crate::System::Array>,
 }
@@ -801,7 +789,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+ComponentModel+TypeConverter+StandardValuesCollection")]
 impl std::ops::Deref
 for crate::System::ComponentModel::TypeConverter_StandardValuesCollection {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -951,38 +939,30 @@ for crate::System::ComponentModel::TypeConverter_StandardValuesCollection {
     }
 }
 #[cfg(feature = "System+ComponentModel+TypeConverter+StandardValuesCollection")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
+impl AsRef<crate::System::Collections::ICollection>
 for crate::System::ComponentModel::TypeConverter_StandardValuesCollection {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+ComponentModel+TypeConverter+StandardValuesCollection")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
+impl AsMut<crate::System::Collections::ICollection>
 for crate::System::ComponentModel::TypeConverter_StandardValuesCollection {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+ComponentModel+TypeConverter+StandardValuesCollection")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+impl AsRef<crate::System::Collections::IEnumerable>
 for crate::System::ComponentModel::TypeConverter_StandardValuesCollection {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+ComponentModel+TypeConverter+StandardValuesCollection")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+impl AsMut<crate::System::Collections::IEnumerable>
 for crate::System::ComponentModel::TypeConverter_StandardValuesCollection {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }

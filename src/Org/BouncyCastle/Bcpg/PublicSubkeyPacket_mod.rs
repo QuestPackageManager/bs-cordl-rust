@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PublicSubkeyPacket {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Bcpg::PublicKeyPacket,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Bcpg::PublicKeyPacket,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+PublicSubkeyPacket")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Bcpg+PublicSubkeyPacket")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::PublicSubkeyPacket {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Bcpg::PublicKeyPacket,
-    >;
+    type Target = crate::Org::BouncyCastle::Bcpg::PublicKeyPacket;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -41,7 +37,7 @@ impl crate::Org::BouncyCastle::Bcpg::PublicSubkeyPacket {
             .invoke("Encode", (bcpgOut))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_BcpgInputStream0(
         bcpgIn: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
         >,
@@ -52,7 +48,7 @@ impl crate::Org::BouncyCastle::Bcpg::PublicSubkeyPacket {
             .invoke_void(".ctor", (bcpgIn))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_PublicKeyAlgorithmTag_DateTime_Gc1(
+    pub fn New_PublicKeyAlgorithmTag_DateTime_IBcpgKey1(
         algorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
         _cordl_time: crate::System::DateTime,
         key: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::IBcpgKey>,
@@ -63,7 +59,7 @@ impl crate::Org::BouncyCastle::Bcpg::PublicSubkeyPacket {
             .invoke_void(".ctor", (algorithm, _cordl_time, key))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_BcpgInputStream0(
         &mut self,
         bcpgIn: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
@@ -76,7 +72,7 @@ impl crate::Org::BouncyCastle::Bcpg::PublicSubkeyPacket {
             .invoke(".ctor", (bcpgIn))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_PublicKeyAlgorithmTag_DateTime_Gc1(
+    pub fn _ctor_PublicKeyAlgorithmTag_DateTime_IBcpgKey1(
         &mut self,
         algorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
         _cordl_time: crate::System::DateTime,

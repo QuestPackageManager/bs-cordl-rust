@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CreateInstanceBinder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Dynamic::DynamicMetaObjectBinder,
-    >,
+    __cordl_parent: crate::System::Dynamic::DynamicMetaObjectBinder,
 }
 #[cfg(feature = "System+Dynamic+CreateInstanceBinder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Dynamic+CreateInstanceBinder")]
 impl std::ops::Deref for crate::System::Dynamic::CreateInstanceBinder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Dynamic::DynamicMetaObjectBinder,
-    >;
+    type Target = crate::System::Dynamic::DynamicMetaObjectBinder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -33,7 +29,7 @@ impl crate::System::Dynamic::CreateInstanceBinder {
         target: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
         args: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+                *mut crate::System::Dynamic::DynamicMetaObject,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -47,12 +43,12 @@ impl crate::System::Dynamic::CreateInstanceBinder {
         > = __cordl_object.invoke("Bind", (target, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FallbackCreateInstance_Gc1(
+    pub fn FallbackCreateInstance_DynamicMetaObject1(
         &mut self,
         target: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
         args: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+                *mut crate::System::Dynamic::DynamicMetaObject,
             >,
         >,
         errorSuggestion: quest_hook::libil2cpp::Gc<
@@ -70,12 +66,12 @@ impl crate::System::Dynamic::CreateInstanceBinder {
             .invoke("FallbackCreateInstance", (target, args, errorSuggestion))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FallbackCreateInstance_Gc_Gc0(
+    pub fn FallbackCreateInstance_DynamicMetaObject_Il2CppArray0(
         &mut self,
         target: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
         args: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+                *mut crate::System::Dynamic::DynamicMetaObject,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SelectorActiveAxis {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ActiveAxis>,
+    __cordl_parent: crate::System::Xml::Schema::ActiveAxis,
     pub cs: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ConstraintStruct>,
     pub KSs: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     pub KSpointer: i32,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+SelectorActiveAxis")]
 impl std::ops::Deref for crate::System::Xml::Schema::SelectorActiveAxis {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ActiveAxis>;
+    type Target = crate::System::Xml::Schema::ActiveAxis;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

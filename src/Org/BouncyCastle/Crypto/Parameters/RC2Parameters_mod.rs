@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RC2Parameters {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
     pub bits: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+RC2Parameters")]
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+RC2Parameters")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Parameters::RC2Parameters {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
-    >;
+    type Target = crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,7 +26,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Parameters::RC2Par
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+RC2Parameters")]
 impl crate::Org::BouncyCastle::Crypto::Parameters::RC2Parameters {
-    pub fn New_Gc0(
+    pub fn New_Il2CppArray0(
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -72,7 +68,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::RC2Parameters {
             .invoke_void(".ctor", (key, keyOff, keyLen, bits))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Il2CppArray0(
         &mut self,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DownloadHandlerAudioClip {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Networking::DownloadHandler,
-    >,
+    __cordl_parent: crate::UnityEngine::Networking::DownloadHandler,
     pub m_NativeData: crate::Unity::Collections::NativeArray_1<u8>,
 }
 #[cfg(feature = "UnityEngine+Networking+DownloadHandlerAudioClip")]
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Networking+DownloadHandlerAudioClip")]
 impl std::ops::Deref for crate::UnityEngine::Networking::DownloadHandlerAudioClip {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Networking::DownloadHandler,
-    >;
+    type Target = crate::UnityEngine::Networking::DownloadHandler;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

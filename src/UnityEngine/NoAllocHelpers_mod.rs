@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoAllocHelpers {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+NoAllocHelpers")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+NoAllocHelpers")]
 impl std::ops::Deref for crate::UnityEngine::NoAllocHelpers {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -25,7 +25,7 @@ impl std::ops::DerefMut for crate::UnityEngine::NoAllocHelpers {
 #[cfg(feature = "UnityEngine+NoAllocHelpers")]
 impl crate::UnityEngine::NoAllocHelpers {
     pub fn EnsureListElemCount<T>(
-        list: quest_hook::libil2cpp::Gc<T>,
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -44,7 +44,7 @@ impl crate::UnityEngine::NoAllocHelpers {
         Ok(__cordl_ret.into())
     }
     pub fn ExtractArrayFromListT<T>(
-        list: quest_hook::libil2cpp::Gc<T>,
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     >
@@ -67,7 +67,7 @@ impl crate::UnityEngine::NoAllocHelpers {
         Ok(__cordl_ret.into())
     }
     pub fn ResizeList<T>(
-        list: quest_hook::libil2cpp::Gc<T>,
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -78,15 +78,15 @@ impl crate::UnityEngine::NoAllocHelpers {
             .invoke("ResizeList", (list, _cordl_size))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SafeLength_Gc0(
+    pub fn SafeLength_Array0(
         values: quest_hook::libil2cpp::Gc<crate::System::Array>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("SafeLength", (values))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SafeLength_Gc1<T>(
-        values: quest_hook::libil2cpp::Gc<T>,
+    pub fn SafeLength_List_1_1<T>(
+        values: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument

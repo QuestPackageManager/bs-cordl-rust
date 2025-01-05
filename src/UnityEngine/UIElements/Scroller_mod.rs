@@ -2,10 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Scroller {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::VisualElement,
-    >,
-    pub valueChanged: quest_hook::libil2cpp::Gc<f32>,
+    __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
+    pub valueChanged: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
     pub _slider_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::Slider,
     >,
@@ -23,9 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+Scroller")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Scroller {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::VisualElement,
-    >;
+    type Target = crate::UnityEngine::UIElements::VisualElement;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -62,10 +58,10 @@ impl crate::UnityEngine::UIElements::Scroller {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_f32_f32_Gc_SliderDirection1(
+    pub fn New_f32_f32_Action_1_SliderDirection1(
         lowValue: f32,
         highValue: f32,
-        valueChanged: quest_hook::libil2cpp::Gc<f32>,
+        valueChanged: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
         direction: crate::UnityEngine::UIElements::SliderDirection,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -76,7 +72,9 @@ impl crate::UnityEngine::UIElements::Scroller {
     }
     pub fn OnSliderValueChange(
         &mut self,
-        evt: quest_hook::libil2cpp::Gc<f32>,
+        evt: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ChangeEvent_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -137,11 +135,11 @@ impl crate::UnityEngine::UIElements::Scroller {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_f32_f32_Gc_SliderDirection1(
+    pub fn _ctor_f32_f32_Action_1_SliderDirection1(
         &mut self,
         lowValue: f32,
         highValue: f32,
-        valueChanged: quest_hook::libil2cpp::Gc<f32>,
+        valueChanged: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
         direction: crate::UnityEngine::UIElements::SliderDirection,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -153,7 +151,7 @@ impl crate::UnityEngine::UIElements::Scroller {
     }
     pub fn add_valueChanged(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<f32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -224,7 +222,7 @@ impl crate::UnityEngine::UIElements::Scroller {
     }
     pub fn remove_valueChanged(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<f32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -324,7 +322,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Scrol
 #[repr(C)]
 #[derive(Debug)]
 pub struct Scroller_ScrollerSlider {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Slider>,
+    __cordl_parent: crate::UnityEngine::UIElements::Slider,
 }
 #[cfg(feature = "UnityEngine+UIElements+Scroller+ScrollerSlider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -333,7 +331,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+Scroller+ScrollerSlider")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Scroller_ScrollerSlider {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Slider>;
+    type Target = crate::UnityEngine::UIElements::Slider;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -400,7 +398,7 @@ for crate::UnityEngine::UIElements::Scroller_ScrollerSlider {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Scroller_UxmlFactory {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Scroller>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Scroller_UxmlTraits>,
     >,
@@ -412,7 +410,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+Scroller+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Scroller_UxmlFactory {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Scroller>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Scroller_UxmlTraits>,
     >;
@@ -460,9 +458,7 @@ for crate::UnityEngine::UIElements::Scroller_UxmlFactory {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Scroller_UxmlTraits {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
     pub m_LowValue: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
     >,
@@ -470,7 +466,9 @@ pub struct Scroller_UxmlTraits {
         crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
     >,
     pub m_Direction: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::SliderDirection,
+        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
+            crate::UnityEngine::UIElements::SliderDirection,
+        >,
     >,
     pub m_Value: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
@@ -483,9 +481,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+Scroller+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Scroller_UxmlTraits {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
-    >;
+    type Target = crate::UnityEngine::UIElements::VisualElement_UxmlTraits;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

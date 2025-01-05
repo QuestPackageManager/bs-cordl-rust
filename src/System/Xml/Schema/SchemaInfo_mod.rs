@@ -2,22 +2,30 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SchemaInfo {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub elementDecls: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+        >,
     >,
     pub undeclaredElementDecls: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+        >,
     >,
     pub generalEntities: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaEntity>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaEntity>,
+        >,
     >,
     pub parameterEntities: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaEntity>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaEntity>,
+        >,
     >,
     pub docTypeName: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub internalDtdSubset: quest_hook::libil2cpp::Gc<
@@ -26,22 +34,30 @@ pub struct SchemaInfo {
     pub hasNonCDataAttributes: bool,
     pub hasDefaultAttributes: bool,
     pub targetNamespaces: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        bool,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            bool,
+        >,
     >,
     pub attributeDecls: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaAttDef>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaAttDef>,
+        >,
     >,
     pub errorCount: i32,
     pub schemaType: crate::System::Xml::Schema::SchemaType,
     pub elementDeclsByType: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+        >,
     >,
     pub notations: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaNotation>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaNotation>,
+        >,
     >,
 }
 #[cfg(feature = "System+Xml+Schema+SchemaInfo")]
@@ -51,7 +67,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+SchemaInfo")]
 impl std::ops::Deref for crate::System::Xml::Schema::SchemaInfo {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -129,7 +145,7 @@ impl crate::System::Xml::Schema::SchemaInfo {
         > = __cordl_object.invoke("GetAttributeXsd", (ed, qname, skip))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAttributeXsd_Gc_ByRefMut0(
+    pub fn GetAttributeXsd_XmlSchemaObject_ByRefMut0(
         &mut self,
         ed: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
         qname: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
@@ -302,16 +318,20 @@ impl crate::System::Xml::Schema::SchemaInfo {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaAttDef>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaAttDef>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaAttDef>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaAttDef>,
+            >,
         > = __cordl_object.invoke("get_AttributeDecls", ())?;
         Ok(__cordl_ret.into())
     }
@@ -332,16 +352,20 @@ impl crate::System::Xml::Schema::SchemaInfo {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+            >,
         > = __cordl_object.invoke("get_ElementDecls", ())?;
         Ok(__cordl_ret.into())
     }
@@ -349,16 +373,20 @@ impl crate::System::Xml::Schema::SchemaInfo {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+            >,
         > = __cordl_object.invoke("get_ElementDeclsByType", ())?;
         Ok(__cordl_ret.into())
     }
@@ -373,16 +401,20 @@ impl crate::System::Xml::Schema::SchemaInfo {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaEntity>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaEntity>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaEntity>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaEntity>,
+            >,
         > = __cordl_object.invoke("get_GeneralEntities", ())?;
         Ok(__cordl_ret.into())
     }
@@ -390,16 +422,20 @@ impl crate::System::Xml::Schema::SchemaInfo {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaNotation>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaNotation>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaNotation>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaNotation>,
+            >,
         > = __cordl_object.invoke("get_Notations", ())?;
         Ok(__cordl_ret.into())
     }
@@ -407,16 +443,20 @@ impl crate::System::Xml::Schema::SchemaInfo {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaEntity>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaEntity>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaEntity>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaEntity>,
+            >,
         > = __cordl_object.invoke("get_ParameterEntities", ())?;
         Ok(__cordl_ret.into())
     }
@@ -434,16 +474,20 @@ impl crate::System::Xml::Schema::SchemaInfo {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            bool,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                bool,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            bool,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                bool,
+            >,
         > = __cordl_object.invoke("get_TargetNamespaces", ())?;
         Ok(__cordl_ret.into())
     }
@@ -451,16 +495,20 @@ impl crate::System::Xml::Schema::SchemaInfo {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+            >,
         > = __cordl_object.invoke("get_UndeclaredElementDecls", ())?;
         Ok(__cordl_ret.into())
     }
@@ -519,18 +567,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::SchemaInf
     }
 }
 #[cfg(feature = "System+Xml+Schema+SchemaInfo")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdInfo>>
-for crate::System::Xml::Schema::SchemaInfo {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdInfo> {
+impl AsRef<crate::System::Xml::IDtdInfo> for crate::System::Xml::Schema::SchemaInfo {
+    fn as_ref(&self) -> &crate::System::Xml::IDtdInfo {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+Schema+SchemaInfo")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdInfo>>
-for crate::System::Xml::Schema::SchemaInfo {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdInfo> {
+impl AsMut<crate::System::Xml::IDtdInfo> for crate::System::Xml::Schema::SchemaInfo {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IDtdInfo {
         unsafe { std::mem::transmute(self) }
     }
 }

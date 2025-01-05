@@ -2,8 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BezierSplineEvaluator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    pub _segments: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BezierCurve>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _segments: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::GlobalNamespace::BezierCurve>,
+    >,
     pub _currentSegmentIndex: i32,
 }
 #[cfg(feature = "BezierSplineEvaluator")]
@@ -13,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BezierSplineEvaluator")]
 impl std::ops::Deref for crate::GlobalNamespace::BezierSplineEvaluator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

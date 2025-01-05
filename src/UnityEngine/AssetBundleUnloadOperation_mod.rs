@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssetBundleUnloadOperation {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
+    __cordl_parent: crate::UnityEngine::AsyncOperation,
 }
 #[cfg(feature = "UnityEngine+AssetBundleUnloadOperation")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+AssetBundleUnloadOperation")]
 impl std::ops::Deref for crate::UnityEngine::AssetBundleUnloadOperation {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>;
+    type Target = crate::UnityEngine::AsyncOperation;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssetBundleExtensions {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "BGLib+UnityExtension+AssetBundleExtensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BGLib+UnityExtension+AssetBundleExtensions")]
 impl std::ops::Deref for crate::BGLib::UnityExtension::AssetBundleExtensions {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,7 +24,7 @@ impl std::ops::DerefMut for crate::BGLib::UnityExtension::AssetBundleExtensions 
 }
 #[cfg(feature = "BGLib+UnityExtension+AssetBundleExtensions")]
 impl crate::BGLib::UnityExtension::AssetBundleExtensions {
-    pub fn GetAwaiter_Gc0(
+    pub fn GetAwaiter_AssetBundleCreateRequest0(
         assetBundleCreateRequest: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::AssetBundleCreateRequest,
         >,
@@ -39,7 +39,7 @@ impl crate::BGLib::UnityExtension::AssetBundleExtensions {
             .invoke("GetAwaiter", (assetBundleCreateRequest))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAwaiter_Gc1(
+    pub fn GetAwaiter_ResourceRequest1(
         resourceRequest: quest_hook::libil2cpp::Gc<crate::UnityEngine::ResourceRequest>,
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Runtime::CompilerServices::TaskAwaiter_1<

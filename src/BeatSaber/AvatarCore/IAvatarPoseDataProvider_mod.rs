@@ -26,7 +26,9 @@ impl std::ops::DerefMut for crate::BeatSaber::AvatarCore::IAvatarPoseDataProvide
 impl crate::BeatSaber::AvatarCore::IAvatarPoseDataProvider {
     pub fn add_poseDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::AvatarPoseData>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::BeatSaber::AvatarCore::AvatarPoseData>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -52,7 +54,9 @@ impl crate::BeatSaber::AvatarCore::IAvatarPoseDataProvider {
     }
     pub fn remove_poseDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::AvatarPoseData>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::BeatSaber::AvatarCore::AvatarPoseData>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

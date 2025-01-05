@@ -1,16 +1,16 @@
-#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_367")]
+#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_188")]
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
-pub struct _PrivateImplementationDetails____StaticArrayInitTypeSize_367 {}
-#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_367")]
+pub struct _PrivateImplementationDetails____StaticArrayInitTypeSize_188 {}
+#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_188")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
     in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_367 => ""
-    ."<PrivateImplementationDetails>/__StaticArrayInitTypeSize=367"
+    ::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_188 => ""
+    ."<PrivateImplementationDetails>/__StaticArrayInitTypeSize=188"
 );
-#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_367")]
+#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_188")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_367 {
+for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_188 {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -19,21 +19,21 @@ for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitType
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_367")]
-impl crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_367 {}
-#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_847")]
+#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_188")]
+impl crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_188 {}
+#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_62")]
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
-pub struct _PrivateImplementationDetails____StaticArrayInitTypeSize_847 {}
-#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_847")]
+pub struct _PrivateImplementationDetails____StaticArrayInitTypeSize_62 {}
+#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_62")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
     in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_847 => ""
-    ."<PrivateImplementationDetails>/__StaticArrayInitTypeSize=847"
+    ::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_62 => ""
+    ."<PrivateImplementationDetails>/__StaticArrayInitTypeSize=62"
 );
-#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_847")]
+#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_62")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_847 {
+for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_62 {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -42,5 +42,5 @@ for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitType
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_847")]
-impl crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_847 {}
+#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_62")]
+impl crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_62 {}

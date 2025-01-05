@@ -2,20 +2,28 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AvatarSystemCollection {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _availableAvatarSystems: quest_hook::libil2cpp::Gc<
-        u32,
-        quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystem>,
+        crate::System::Collections::Generic::Dictionary_2<
+            u32,
+            quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystem>,
+        >,
     >,
     pub _availableUserSelectableAvatarSystems: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystem>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystem>,
+        >,
     >,
-    pub _supportedOptionalAvatarDataTypes: quest_hook::libil2cpp::Gc<u32>,
+    pub _supportedOptionalAvatarDataTypes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyCollection_1<u32>,
+    >,
     pub _fallbackAvatarSystem: quest_hook::libil2cpp::Gc<
         crate::BeatSaber::AvatarCore::IAvatarSystem,
     >,
     pub _availableAvatarSystemList: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystem>,
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystem>,
+        >,
     >,
 }
 #[cfg(feature = "BeatSaber+AvatarCore+AvatarSystemCollection")]
@@ -25,7 +33,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+AvatarCore+AvatarSystemCollection")]
 impl std::ops::Deref for crate::BeatSaber::AvatarCore::AvatarSystemCollection {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -77,7 +85,7 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
         > = __cordl_object.invoke("GetAvatarSystem", (avatarSystemIdentifier))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAvatarSystem_Gc0(
+    pub fn GetAvatarSystem_IAvatarSystemMetadata0(
         &mut self,
         avatarSystemMetadata: quest_hook::libil2cpp::Gc<
             crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
@@ -93,7 +101,7 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
         > = __cordl_object.invoke("GetAvatarSystem", (avatarSystemMetadata))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAvatarSystem_Gc2(
+    pub fn GetAvatarSystem_Il2CppString2(
         &mut self,
         avatarTypeIdentifier: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -151,13 +159,19 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
             quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerAvatarsData>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::MultiplayerAvatarsData,
+            >,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerAvatarsData,
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::MultiplayerAvatarsData,
+            >,
         > = __cordl_object
             .invoke("GetMultiplayerAvatarsData", (selectedAvatarTypeIdentifier))?;
         Ok(__cordl_ret.into())
@@ -175,7 +189,9 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
     }
     pub fn New(
         boundAvatarSystems: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystem>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystem>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -187,7 +203,9 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
     pub fn _ctor(
         &mut self,
         boundAvatarSystems: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystem>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystem>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -199,20 +217,25 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
     }
     pub fn get_anyAvatarCreated(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = __cordl_object
-            .invoke("get_anyAvatarCreated", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<bool>,
+        > = __cordl_object.invoke("get_anyAvatarCreated", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_availableAvatarSystems(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+                >,
             >,
         >,
     > {
@@ -220,8 +243,10 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+                >,
             >,
         > = __cordl_object.invoke("get_availableAvatarSystems", ())?;
         Ok(__cordl_ret.into())
@@ -230,8 +255,10 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+                >,
             >,
         >,
     > {
@@ -239,20 +266,27 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+                >,
             >,
         > = __cordl_object.invoke("get_selectableAvatarSystems", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_supportedOptionalAvatarDataType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<u32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyCollection_1<u32>,
+        >,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<u32> = __cordl_object
-            .invoke("get_supportedOptionalAvatarDataType", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyCollection_1<u32>,
+        > = __cordl_object.invoke("get_supportedOptionalAvatarDataType", ())?;
         Ok(__cordl_ret.into())
     }
 }

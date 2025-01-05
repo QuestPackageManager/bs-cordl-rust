@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LanguageSettingsController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::DropdownSettingsController,
-    >,
+    __cordl_parent: crate::GlobalNamespace::DropdownSettingsController,
     pub _settingsManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SettingsManager,
     >,
@@ -17,9 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LanguageSettingsController")]
 impl std::ops::Deref for crate::GlobalNamespace::LanguageSettingsController {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::DropdownSettingsController,
-    >;
+    type Target = crate::GlobalNamespace::DropdownSettingsController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

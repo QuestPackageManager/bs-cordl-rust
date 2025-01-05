@@ -141,7 +141,7 @@ impl crate::System::Xml::Schema::XsdDuration {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc3(
+    pub fn _ctor_Il2CppString3(
         &mut self,
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -152,7 +152,7 @@ impl crate::System::Xml::Schema::XsdDuration {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_XsdDuration_DurationType4(
+    pub fn _ctor_Il2CppString_XsdDuration_DurationType4(
         &mut self,
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         durationType: crate::System::Xml::Schema::XsdDuration_DurationType,

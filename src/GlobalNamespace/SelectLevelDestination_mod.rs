@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SelectLevelDestination {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MenuDestination>,
+    __cordl_parent: crate::GlobalNamespace::MenuDestination,
     pub beatmapLevelPack: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapLevelPack,
     >,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SelectLevelDestination")]
 impl std::ops::Deref for crate::GlobalNamespace::SelectLevelDestination {
-    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MenuDestination>;
+    type Target = crate::GlobalNamespace::MenuDestination;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

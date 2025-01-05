@@ -5,8 +5,10 @@ pub struct BasePopupField_2<
     TValueType: quest_hook::libil2cpp::Type,
     TValueChoice: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TValueType>,
-    pub m_Choices: quest_hook::libil2cpp::Gc<TValueChoice>,
+    __cordl_parent: crate::UnityEngine::UIElements::BaseField_1<TValueType>,
+    pub m_Choices: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<TValueChoice>,
+    >,
     pub m_TextElement: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::TextElement,
     >,
@@ -14,15 +16,21 @@ pub struct BasePopupField_2<
         crate::UnityEngine::UIElements::VisualElement,
     >,
     pub m_FormatSelectedValueCallback: quest_hook::libil2cpp::Gc<
-        TValueChoice,
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Func_2<
+            TValueChoice,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub m_FormatListItemCallback: quest_hook::libil2cpp::Gc<
-        TValueChoice,
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Func_2<
+            TValueChoice,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub createMenuCallback: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGenericMenu>,
+        crate::System::Func_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGenericMenu>,
+        >,
     >,
     __cordl_phantom_TValueType: std::marker::PhantomData<TValueType>,
     __cordl_phantom_TValueChoice: std::marker::PhantomData<TValueChoice>,
@@ -39,7 +47,7 @@ impl<
     TValueChoice: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::UnityEngine::UIElements::BasePopupField_2<TValueType, TValueChoice> {
-    type Target = quest_hook::libil2cpp::Gc<TValueType>;
+    type Target = crate::UnityEngine::UIElements::BaseField_1<TValueType>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -206,7 +214,9 @@ impl<
     }
     pub fn ProcessPointerDown<T>(
         &mut self,
-        evt: quest_hook::libil2cpp::Gc<T>,
+        evt: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::PointerEventBase_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -310,7 +320,9 @@ impl<
     }
     pub fn set_choices(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<TValueChoice>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<TValueChoice>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -346,9 +358,7 @@ pub struct BasePopupField_2_PopupTextElement<
     TValueType: quest_hook::libil2cpp::Type,
     TValueChoice: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::TextElement,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::TextElement,
     __cordl_phantom_TValueType: std::marker::PhantomData<TValueType>,
     __cordl_phantom_TValueChoice: std::marker::PhantomData<TValueChoice>,
 }
@@ -368,7 +378,7 @@ for crate::UnityEngine::UIElements::BasePopupField_2_PopupTextElement<
     TValueType,
     TValueChoice,
 > {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextElement>;
+    type Target = crate::UnityEngine::UIElements::TextElement;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

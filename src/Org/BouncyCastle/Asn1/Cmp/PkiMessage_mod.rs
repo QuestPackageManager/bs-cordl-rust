@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PkiMessage {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub header: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::Cmp::PkiHeader,
     >,
@@ -23,9 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+PkiMessage")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Cmp::PkiMessage {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -43,9 +39,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiMessage {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
-                >,
+                *mut crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
             >,
         >,
     > {
@@ -54,9 +48,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiMessage {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
-                >,
+                *mut crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
             >,
         > = __cordl_object.invoke("GetExtraCerts", ())?;
         Ok(__cordl_ret.into())
@@ -71,7 +63,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiMessage {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_Asn1Sequence0(
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -80,7 +72,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiMessage {
             .invoke_void(".ctor", (seq))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc3(
+    pub fn New_PkiHeader_PkiBody3(
         header: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cmp::PkiHeader,
         >,
@@ -92,7 +84,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiMessage {
             .invoke_void(".ctor", (header, body))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc2(
+    pub fn New_PkiHeader_PkiBody_DerBitString2(
         header: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cmp::PkiHeader,
         >,
@@ -107,7 +99,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiMessage {
             .invoke_void(".ctor", (header, body, protection))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc_Gc1(
+    pub fn New_PkiHeader_PkiBody_DerBitString_Il2CppArray1(
         header: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cmp::PkiHeader,
         >,
@@ -117,9 +109,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiMessage {
         >,
         extraCerts: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
-                >,
+                *mut crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -142,7 +132,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiMessage {
         > = __cordl_object.invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Asn1Sequence0(
         &mut self,
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -153,7 +143,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiMessage {
             .invoke(".ctor", (seq))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc3(
+    pub fn _ctor_PkiHeader_PkiBody3(
         &mut self,
         header: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cmp::PkiHeader,
@@ -167,7 +157,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiMessage {
             .invoke(".ctor", (header, body))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc2(
+    pub fn _ctor_PkiHeader_PkiBody_DerBitString2(
         &mut self,
         header: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cmp::PkiHeader,
@@ -184,7 +174,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiMessage {
             .invoke(".ctor", (header, body, protection))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_Gc1(
+    pub fn _ctor_PkiHeader_PkiBody_DerBitString_Il2CppArray1(
         &mut self,
         header: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cmp::PkiHeader,
@@ -195,9 +185,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiMessage {
         >,
         extraCerts: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
-                >,
+                *mut crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

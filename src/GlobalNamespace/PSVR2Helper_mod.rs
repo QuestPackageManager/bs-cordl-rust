@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PSVR2Helper {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _leftController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::UnityXRController_Configuration,
     >,
@@ -14,13 +14,17 @@ pub struct PSVR2Helper {
     >,
     pub _defaultPose: crate::UnityEngine::Pose,
     pub _controllers: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::XR::XRNode,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UnityXRController>,
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::XR::XRNode,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UnityXRController>,
+        >,
     >,
     pub _controllersWithRumble: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::XR::XRNode,
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::XR::XRControllerWithRumble,
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::XR::XRNode,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::InputSystem::XR::XRControllerWithRumble,
+            >,
         >,
     >,
     pub _pauseGameAction: quest_hook::libil2cpp::Gc<
@@ -32,7 +36,9 @@ pub struct PSVR2Helper {
     pub _menuButtonDown: bool,
     pub _menuButtonDownThisFrame: bool,
     pub _maximumHapticFrequencyLimits: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PSVR2Helper_HeadsetHapticFrequencyLimit,
+        crate::System::Collections::Generic::List_1<
+            crate::GlobalNamespace::PSVR2Helper_HeadsetHapticFrequencyLimit,
+        >,
     >,
     pub controllersDidChangeReferenceEvent: quest_hook::libil2cpp::Gc<
         crate::System::Action,
@@ -55,7 +61,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PSVR2Helper")]
 impl std::ops::Deref for crate::GlobalNamespace::PSVR2Helper {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -626,20 +632,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PSVR2Helper {
     }
 }
 #[cfg(feature = "PSVR2Helper")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRPlatformHelper>>
+impl AsRef<crate::GlobalNamespace::IVRPlatformHelper>
 for crate::GlobalNamespace::PSVR2Helper {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRPlatformHelper> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IVRPlatformHelper {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "PSVR2Helper")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRPlatformHelper>>
+impl AsMut<crate::GlobalNamespace::IVRPlatformHelper>
 for crate::GlobalNamespace::PSVR2Helper {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRPlatformHelper> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IVRPlatformHelper {
         unsafe { std::mem::transmute(self) }
     }
 }

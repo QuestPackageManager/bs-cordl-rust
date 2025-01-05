@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DigestUtilities {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+Security+DigestUtilities")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Security+DigestUtilities")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Security::DigestUtilities {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Security::DigestUtilities 
 impl crate::Org::BouncyCastle::Security::DigestUtilities {
     #[cfg(feature = "Org+BouncyCastle+Security+DigestUtilities+DigestAlgorithm")]
     pub type DigestAlgorithm = crate::Org::BouncyCastle::Security::DigestUtilities_DigestAlgorithm;
-    pub fn CalculateDigest_Gc_Gc0(
+    pub fn CalculateDigest_DerObjectIdentifier0(
         id: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
@@ -40,7 +40,7 @@ impl crate::Org::BouncyCastle::Security::DigestUtilities {
             .invoke("CalculateDigest", (id, input))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CalculateDigest_Gc_Gc1(
+    pub fn CalculateDigest_Il2CppString1(
         algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
@@ -52,7 +52,7 @@ impl crate::Org::BouncyCastle::Security::DigestUtilities {
             .invoke("CalculateDigest", (algorithm, input))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DoFinal_Gc0(
+    pub fn DoFinal_IDigest0(
         digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -62,7 +62,7 @@ impl crate::Org::BouncyCastle::Security::DigestUtilities {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("DoFinal", (digest))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DoFinal_Gc1(
+    pub fn DoFinal_Il2CppArray1(
         digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
@@ -87,7 +87,7 @@ impl crate::Org::BouncyCastle::Security::DigestUtilities {
             .invoke("GetAlgorithmName", (oid))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetDigest_Gc0(
+    pub fn GetDigest_DerObjectIdentifier0(
         id: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
@@ -99,7 +99,7 @@ impl crate::Org::BouncyCastle::Security::DigestUtilities {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetDigest", (id))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetDigest_Gc1(
+    pub fn GetDigest_Il2CppString1(
         algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,

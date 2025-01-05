@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlLoader {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub doc: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDocument>,
     pub reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
     pub preserveWhitespace: bool,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlLoader")]
 impl std::ops::Deref for crate::System::Xml::XmlLoader {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -272,7 +272,7 @@ impl crate::System::Xml::XmlLoader {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn ParseDocumentType_Gc0(
+    pub fn ParseDocumentType_XmlDocumentType0(
         &mut self,
         dtNode: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDocumentType>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -283,7 +283,7 @@ impl crate::System::Xml::XmlLoader {
             .invoke("ParseDocumentType", (dtNode))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ParseDocumentType__cordl_bool_Gc1(
+    pub fn ParseDocumentType__cordl_bool_XmlResolver1(
         &mut self,
         dtNode: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDocumentType>,
         bUseResolver: bool,

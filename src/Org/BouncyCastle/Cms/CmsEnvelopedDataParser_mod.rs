@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CmsEnvelopedDataParser {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Cms::CmsContentInfoParser,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Cms::CmsContentInfoParser,
     pub recipientInfoStore: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Cms::RecipientInformationStore,
     >,
@@ -26,9 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsEnvelopedDataParser")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::CmsEnvelopedDataParser {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Cms::CmsContentInfoParser,
-    >;
+    type Target = crate::Org::BouncyCastle::Cms::CmsContentInfoParser;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -69,7 +65,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedDataParser {
         > = __cordl_object.invoke("GetUnprotectedAttributes", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_Il2CppArray0(
         envelopedData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -78,7 +74,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedDataParser {
             .invoke_void(".ctor", (envelopedData))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Stream1(
         envelopedData: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -87,7 +83,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedDataParser {
             .invoke_void(".ctor", (envelopedData))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Il2CppArray0(
         &mut self,
         envelopedData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -98,7 +94,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedDataParser {
             .invoke(".ctor", (envelopedData))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Stream1(
         &mut self,
         envelopedData: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

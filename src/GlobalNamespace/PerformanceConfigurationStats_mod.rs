@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PerformanceConfigurationStats {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub processorFrequency: crate::GlobalNamespace::PerformanceConfigurationStats_IntStats,
     pub batteryStatus: crate::GlobalNamespace::PerformanceConfigurationStats_EnumStats_1<
         crate::UnityEngine::BatteryStatus,
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PerformanceConfigurationStats")]
 impl std::ops::Deref for crate::GlobalNamespace::PerformanceConfigurationStats {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Application {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+Application")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Application")]
 impl std::ops::Deref for crate::UnityEngine::Application {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -50,7 +50,7 @@ impl crate::UnityEngine::Application {
             .invoke("CallLowMemory", (usage))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CanStreamedLevelBeLoaded_Gc1(
+    pub fn CanStreamedLevelBeLoaded_Il2CppString1(
         levelName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
@@ -143,7 +143,7 @@ impl crate::UnityEngine::Application {
         Ok(__cordl_ret.into())
     }
     pub fn add_focusChanged(
-        value: quest_hook::libil2cpp::Gc<bool>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("add_focusChanged", (value))?;
@@ -348,7 +348,7 @@ impl crate::UnityEngine::Application {
         Ok(__cordl_ret.into())
     }
     pub fn remove_focusChanged(
-        value: quest_hook::libil2cpp::Gc<bool>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("remove_focusChanged", (value))?;
@@ -410,7 +410,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Application {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Application_LogCallback {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "UnityEngine+Application+LogCallback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -419,7 +419,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Application+LogCallback")]
 impl std::ops::Deref for crate::UnityEngine::Application_LogCallback {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -481,7 +481,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Application_LogCa
 #[repr(C)]
 #[derive(Debug)]
 pub struct Application_LowMemoryCallback {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "UnityEngine+Application+LowMemoryCallback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -490,7 +490,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Application+LowMemoryCallback")]
 impl std::ops::Deref for crate::UnityEngine::Application_LowMemoryCallback {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -550,7 +550,7 @@ for crate::UnityEngine::Application_LowMemoryCallback {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Application_MemoryUsageChangedCallback {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "UnityEngine+Application+MemoryUsageChangedCallback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -560,7 +560,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Application+MemoryUsageChangedCallback")]
 impl std::ops::Deref for crate::UnityEngine::Application_MemoryUsageChangedCallback {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityXRHelper {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _leftControllerConfiguration: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::UnityXRController_Configuration,
     >,
@@ -62,7 +62,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityXRHelper")]
 impl std::ops::Deref for crate::GlobalNamespace::UnityXRHelper {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -714,38 +714,30 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::UnityXRHelper
     }
 }
 #[cfg(feature = "UnityXRHelper")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRPlatformHelper>>
+impl AsRef<crate::GlobalNamespace::IVRPlatformHelper>
 for crate::GlobalNamespace::UnityXRHelper {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRPlatformHelper> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IVRPlatformHelper {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityXRHelper")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRPlatformHelper>>
+impl AsMut<crate::GlobalNamespace::IVRPlatformHelper>
 for crate::GlobalNamespace::UnityXRHelper {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRPlatformHelper> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IVRPlatformHelper {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityXRHelper")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVerboseLogger>>
+impl AsRef<crate::GlobalNamespace::IVerboseLogger>
 for crate::GlobalNamespace::UnityXRHelper {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVerboseLogger> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IVerboseLogger {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityXRHelper")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVerboseLogger>>
+impl AsMut<crate::GlobalNamespace::IVerboseLogger>
 for crate::GlobalNamespace::UnityXRHelper {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVerboseLogger> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IVerboseLogger {
         unsafe { std::mem::transmute(self) }
     }
 }

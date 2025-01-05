@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StablePriorityQueueNode {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Priority_Queue::FastPriorityQueueNode,
-    >,
+    __cordl_parent: crate::Priority_Queue::FastPriorityQueueNode,
     pub _InsertionIndex_k__BackingField: i64,
 }
 #[cfg(feature = "Priority_Queue+StablePriorityQueueNode")]
@@ -14,9 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Priority_Queue+StablePriorityQueueNode")]
 impl std::ops::Deref for crate::Priority_Queue::StablePriorityQueueNode {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Priority_Queue::FastPriorityQueueNode,
-    >;
+    type Target = crate::Priority_Queue::FastPriorityQueueNode;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

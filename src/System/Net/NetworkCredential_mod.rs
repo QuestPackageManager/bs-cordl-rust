@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetworkCredential {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_domain: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_password: quest_hook::libil2cpp::Gc<crate::System::Security::SecureString>,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+NetworkCredential")]
 impl std::ops::Deref for crate::System::Net::NetworkCredential {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -81,7 +81,7 @@ impl crate::System::Net::NetworkCredential {
         > = __cordl_object.invoke("InternalGetUserName", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Il2CppString1(
         userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         domain: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -92,7 +92,7 @@ impl crate::System::Net::NetworkCredential {
             .invoke_void(".ctor", (userName, password, domain))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc0(
+    pub fn New_Il2CppString_Il2CppString0(
         userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -102,7 +102,7 @@ impl crate::System::Net::NetworkCredential {
             .invoke_void(".ctor", (userName, password))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
         userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -115,7 +115,7 @@ impl crate::System::Net::NetworkCredential {
             .invoke(".ctor", (userName, password, domain))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc0(
+    pub fn _ctor_Il2CppString_Il2CppString0(
         &mut self,
         userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -210,18 +210,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::NetworkCredential
     }
 }
 #[cfg(feature = "System+Net+NetworkCredential")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>>
-for crate::System::Net::NetworkCredential {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials> {
+impl AsRef<crate::System::Net::ICredentials> for crate::System::Net::NetworkCredential {
+    fn as_ref(&self) -> &crate::System::Net::ICredentials {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Net+NetworkCredential")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>>
-for crate::System::Net::NetworkCredential {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials> {
+impl AsMut<crate::System::Net::ICredentials> for crate::System::Net::NetworkCredential {
+    fn as_mut(&mut self) -> &mut crate::System::Net::ICredentials {
         unsafe { std::mem::transmute(self) }
     }
 }

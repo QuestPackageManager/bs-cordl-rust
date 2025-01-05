@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ShaderPropertyIDFromPropertyAttribute {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::BGLib::UnityExtension::ShaderPropertyIDFromRendererAttribute,
-    >,
+    __cordl_parent: crate::BGLib::UnityExtension::ShaderPropertyIDFromRendererAttribute,
     pub nestedPropertyName: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
@@ -18,9 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BGLib+UnityExtension+ShaderPropertyIDFromPropertyAttribute")]
 impl std::ops::Deref
 for crate::BGLib::UnityExtension::ShaderPropertyIDFromPropertyAttribute {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::BGLib::UnityExtension::ShaderPropertyIDFromRendererAttribute,
-    >;
+    type Target = crate::BGLib::UnityExtension::ShaderPropertyIDFromRendererAttribute;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,9 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsyncOpHandlesCacheKey {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Handles: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+        crate::System::Collections::Generic::HashSet_1<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+AsyncOpHandlesCacheKey")]
@@ -16,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+AsyncOpHandlesCacheKey")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::Util::AsyncOpHandlesCacheKey {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,29 +32,7 @@ for crate::UnityEngine::ResourceManagement::Util::AsyncOpHandlesCacheKey {
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+AsyncOpHandlesCacheKey")]
 impl crate::UnityEngine::ResourceManagement::Util::AsyncOpHandlesCacheKey {
-    pub fn Equals_Gc0(
-        &mut self,
-        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Equals_Gc1(
-        &mut self,
-        other: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Equals_Gc2(
+    pub fn Equals_AsyncOpHandlesCacheKey2(
         &mut self,
         other: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::Util::AsyncOpHandlesCacheKey,
@@ -64,6 +44,28 @@ impl crate::UnityEngine::ResourceManagement::Util::AsyncOpHandlesCacheKey {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Equals_IOperationCacheKey1(
+        &mut self,
+        other: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Equals_Il2CppObject0(
+        &mut self,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -73,7 +75,9 @@ impl crate::UnityEngine::ResourceManagement::Util::AsyncOpHandlesCacheKey {
     }
     pub fn New(
         handles: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+            crate::System::Collections::Generic::IList_1<
+                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -85,7 +89,9 @@ impl crate::UnityEngine::ResourceManagement::Util::AsyncOpHandlesCacheKey {
     pub fn _ctor(
         &mut self,
         handles: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+            crate::System::Collections::Generic::IList_1<
+                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -108,35 +114,7 @@ for crate::UnityEngine::ResourceManagement::Util::AsyncOpHandlesCacheKey {
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+AsyncOpHandlesCacheKey")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
-    >,
-> for crate::UnityEngine::ResourceManagement::Util::AsyncOpHandlesCacheKey {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+AsyncOpHandlesCacheKey")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
-    >,
-> for crate::UnityEngine::ResourceManagement::Util::AsyncOpHandlesCacheKey {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+AsyncOpHandlesCacheKey")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
         >,
@@ -144,7 +122,7 @@ impl AsRef<
 > for crate::UnityEngine::ResourceManagement::Util::AsyncOpHandlesCacheKey {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
         >,
@@ -154,7 +132,7 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+AsyncOpHandlesCacheKey")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
         >,
@@ -162,11 +140,29 @@ impl AsMut<
 > for crate::UnityEngine::ResourceManagement::Util::AsyncOpHandlesCacheKey {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
         >,
     > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+AsyncOpHandlesCacheKey")]
+impl AsRef<crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey>
+for crate::UnityEngine::ResourceManagement::Util::AsyncOpHandlesCacheKey {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+AsyncOpHandlesCacheKey")]
+impl AsMut<crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey>
+for crate::UnityEngine::ResourceManagement::Util::AsyncOpHandlesCacheKey {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey {
         unsafe { std::mem::transmute(self) }
     }
 }

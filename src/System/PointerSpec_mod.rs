@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointerSpec {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub pointer_level: i32,
 }
 #[cfg(feature = "System+PointerSpec")]
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+PointerSpec")]
 impl std::ops::Deref for crate::System::PointerSpec {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -92,16 +92,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::PointerSpec {
     }
 }
 #[cfg(feature = "System+PointerSpec")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ModifierSpec>>
-for crate::System::PointerSpec {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ModifierSpec> {
+impl AsRef<crate::System::ModifierSpec> for crate::System::PointerSpec {
+    fn as_ref(&self) -> &crate::System::ModifierSpec {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+PointerSpec")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ModifierSpec>>
-for crate::System::PointerSpec {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::ModifierSpec> {
+impl AsMut<crate::System::ModifierSpec> for crate::System::PointerSpec {
+    fn as_mut(&mut self) -> &mut crate::System::ModifierSpec {
         unsafe { std::mem::transmute(self) }
     }
 }

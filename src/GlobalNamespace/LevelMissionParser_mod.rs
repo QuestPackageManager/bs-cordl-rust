@@ -2,11 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LevelMissionParser {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _functions: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LevelMissionParser_ParserFunction,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LevelMissionParser_ParserFunction,
+            >,
         >,
     >,
 }
@@ -17,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LevelMissionParser")]
 impl std::ops::Deref for crate::GlobalNamespace::LevelMissionParser {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -66,7 +68,7 @@ impl crate::GlobalNamespace::LevelMissionParser {
             .invoke("ParseFunction", (s, start, length))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Parse_Gc0(
+    pub fn Parse_Il2CppString0(
         &mut self,
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -112,7 +114,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LevelMissionP
 #[repr(C)]
 #[derive(Debug)]
 pub struct LevelMissionParser_ParserFunction {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "LevelMissionParser+ParserFunction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -122,7 +124,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LevelMissionParser+ParserFunction")]
 impl std::ops::Deref for crate::GlobalNamespace::LevelMissionParser_ParserFunction {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

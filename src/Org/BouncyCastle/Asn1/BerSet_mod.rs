@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BerSet {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerSet>,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::DerSet,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerSet")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerSet")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::BerSet {
-    type Target = quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerSet>;
+    type Target = crate::Org::BouncyCastle::Asn1::DerSet;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,7 +37,7 @@ impl crate::Org::BouncyCastle::Asn1::BerSet {
             .invoke("Encode", (derOut))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FromVector_Gc0(
+    pub fn FromVector_Asn1EncodableVector0(
         elementVector: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
         >,
@@ -71,7 +71,7 @@ impl crate::Org::BouncyCastle::Asn1::BerSet {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Asn1Encodable1(
         element: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -80,7 +80,7 @@ impl crate::Org::BouncyCastle::Asn1::BerSet {
             .invoke_void(".ctor", (element))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc2(
+    pub fn New_Asn1EncodableVector2(
         elementVector: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
         >,
@@ -91,7 +91,7 @@ impl crate::Org::BouncyCastle::Asn1::BerSet {
             .invoke_void(".ctor", (elementVector))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc__cordl_bool3(
+    pub fn New_Asn1EncodableVector__cordl_bool3(
         elementVector: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
         >,
@@ -113,7 +113,7 @@ impl crate::Org::BouncyCastle::Asn1::BerSet {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Asn1Encodable1(
         &mut self,
         element: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -124,7 +124,7 @@ impl crate::Org::BouncyCastle::Asn1::BerSet {
             .invoke(".ctor", (element))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_Asn1EncodableVector2(
         &mut self,
         elementVector: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
@@ -137,7 +137,7 @@ impl crate::Org::BouncyCastle::Asn1::BerSet {
             .invoke(".ctor", (elementVector))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc__cordl_bool3(
+    pub fn _ctor_Asn1EncodableVector__cordl_bool3(
         &mut self,
         elementVector: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,

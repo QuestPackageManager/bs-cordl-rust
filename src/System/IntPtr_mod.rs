@@ -116,7 +116,7 @@ impl crate::System::IntPtr {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Gc1(
+    pub fn ToString_Il2CppString1(
         &mut self,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -127,7 +127,7 @@ impl crate::System::IntPtr {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", (format))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_Il2CppObject2(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -138,7 +138,7 @@ impl crate::System::IntPtr {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_StreamingContext3(
+    pub fn _ctor_SerializationInfo_StreamingContext3(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -195,7 +195,7 @@ impl crate::System::IntPtr {
             .invoke("op_Equality", (value1, value2))?;
         Ok(__cordl_ret.into())
     }
-    pub fn op_Explicit_Gc2(
+    pub fn op_Explicit_Il2CppObject2(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
@@ -259,38 +259,30 @@ impl crate::System::IntPtr {
     }
 }
 #[cfg(feature = "System+IntPtr")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IntPtr>> for crate::System::IntPtr {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IntPtr> {
+impl AsRef<crate::System::IEquatable_1<crate::System::IntPtr>>
+for crate::System::IntPtr {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::System::IntPtr> {
         todo!()
     }
 }
 #[cfg(feature = "System+IntPtr")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IntPtr>> for crate::System::IntPtr {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IntPtr> {
+impl AsMut<crate::System::IEquatable_1<crate::System::IntPtr>>
+for crate::System::IntPtr {
+    fn as_mut(&mut self) -> &mut crate::System::IEquatable_1<crate::System::IntPtr> {
         todo!()
     }
 }
 #[cfg(feature = "System+IntPtr")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::IntPtr {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::IntPtr {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
         todo!()
     }
 }
 #[cfg(feature = "System+IntPtr")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::IntPtr {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::IntPtr {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
         todo!()
     }
 }

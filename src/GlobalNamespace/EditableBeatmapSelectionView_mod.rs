@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EditableBeatmapSelectionView {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BeatmapSelectionView,
-    >,
+    __cordl_parent: crate::GlobalNamespace::BeatmapSelectionView,
     pub _editButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _clearButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _levelBarCanvasGroup: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
@@ -18,9 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "EditableBeatmapSelectionView")]
 impl std::ops::Deref for crate::GlobalNamespace::EditableBeatmapSelectionView {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BeatmapSelectionView,
-    >;
+    type Target = crate::GlobalNamespace::BeatmapSelectionView;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

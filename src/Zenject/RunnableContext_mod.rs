@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RunnableContext {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::Context>,
+    __cordl_parent: crate::Zenject::Context,
     pub _autoRun: bool,
     pub _Initialized_k__BackingField: bool,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+RunnableContext")]
 impl std::ops::Deref for crate::Zenject::RunnableContext {
-    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::Context>;
+    type Target = crate::Zenject::Context;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

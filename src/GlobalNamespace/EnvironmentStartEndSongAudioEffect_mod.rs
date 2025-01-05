@@ -2,26 +2,20 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentStartEndSongAudioEffect {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _playStartSongForNonZeroStartSongTime: bool,
     pub _songFinishedAheadTime: f32,
     pub _songStartAudioClipVolume: f32,
     pub _songFinishedAudioClipVolume: f32,
     pub _songFailedAudioClipVolume: f32,
     pub _songStartAudioClips: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::AudioClip>,
     >,
     pub _songFinishedAudioClips: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::AudioClip>,
     >,
     pub _songFailedAudioClips: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::AudioClip>,
     >,
     pub _levelEndActions: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::ILevelEndActions,
@@ -45,7 +39,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "EnvironmentStartEndSongAudioEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::EnvironmentStartEndSongAudioEffect {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

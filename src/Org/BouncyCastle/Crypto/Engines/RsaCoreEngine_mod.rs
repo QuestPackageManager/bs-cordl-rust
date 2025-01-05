@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RsaCoreEngine {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub key: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters,
     >,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+RsaCoreEngine")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Engines::RsaCoreEngine {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -141,20 +141,16 @@ for crate::Org::BouncyCastle::Crypto::Engines::RsaCoreEngine {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+RsaCoreEngine")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IRsa>>
+impl AsRef<crate::Org::BouncyCastle::Crypto::IRsa>
 for crate::Org::BouncyCastle::Crypto::Engines::RsaCoreEngine {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IRsa> {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IRsa {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+RsaCoreEngine")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IRsa>>
+impl AsMut<crate::Org::BouncyCastle::Crypto::IRsa>
 for crate::Org::BouncyCastle::Crypto::Engines::RsaCoreEngine {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IRsa> {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IRsa {
         unsafe { std::mem::transmute(self) }
     }
 }

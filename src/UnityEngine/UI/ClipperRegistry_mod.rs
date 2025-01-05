@@ -2,9 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ClipperRegistry {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Clippers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IClipper>,
+        crate::UnityEngine::UI::Collections::IndexedSet_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IClipper>,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UI+ClipperRegistry")]
@@ -14,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+ClipperRegistry")]
 impl std::ops::Deref for crate::UnityEngine::UI::ClipperRegistry {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

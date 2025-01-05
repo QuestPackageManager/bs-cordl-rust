@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConnectedPlayerAvatarVisualDataProvider {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _connectedPlayer: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IConnectedPlayer,
     >,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatSaber+AvatarCore+ConnectedPlayerAvatarVisualDataProvider")]
 impl std::ops::Deref
 for crate::BeatSaber::AvatarCore::ConnectedPlayerAvatarVisualDataProvider {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -76,26 +76,18 @@ for crate::BeatSaber::AvatarCore::ConnectedPlayerAvatarVisualDataProvider {
     }
 }
 #[cfg(feature = "BeatSaber+AvatarCore+ConnectedPlayerAvatarVisualDataProvider")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarVisualDataProvider>,
-> for crate::BeatSaber::AvatarCore::ConnectedPlayerAvatarVisualDataProvider {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::BeatSaber::AvatarCore::IAvatarVisualDataProvider,
-    > {
+impl AsRef<crate::BeatSaber::AvatarCore::IAvatarVisualDataProvider>
+for crate::BeatSaber::AvatarCore::ConnectedPlayerAvatarVisualDataProvider {
+    fn as_ref(&self) -> &crate::BeatSaber::AvatarCore::IAvatarVisualDataProvider {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BeatSaber+AvatarCore+ConnectedPlayerAvatarVisualDataProvider")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarVisualDataProvider>,
-> for crate::BeatSaber::AvatarCore::ConnectedPlayerAvatarVisualDataProvider {
+impl AsMut<crate::BeatSaber::AvatarCore::IAvatarVisualDataProvider>
+for crate::BeatSaber::AvatarCore::ConnectedPlayerAvatarVisualDataProvider {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::BeatSaber::AvatarCore::IAvatarVisualDataProvider,
-    > {
+    ) -> &mut crate::BeatSaber::AvatarCore::IAvatarVisualDataProvider {
         unsafe { std::mem::transmute(self) }
     }
 }

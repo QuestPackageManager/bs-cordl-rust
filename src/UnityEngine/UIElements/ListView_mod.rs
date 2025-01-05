@@ -2,22 +2,28 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ListView {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::BaseListView,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::BaseListView,
     pub m_MakeItem: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        crate::System::Func_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        >,
     >,
     pub m_BindItem: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-        i32,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            i32,
+        >,
     >,
     pub _unbindItem_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-        i32,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            i32,
+        >,
     >,
     pub _destroyItem_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+ListView")]
@@ -27,9 +33,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+ListView")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ListView {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::BaseListView,
-    >;
+    type Target = crate::UnityEngine::UIElements::BaseListView;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -89,16 +93,20 @@ impl crate::UnityEngine::UIElements::ListView {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-            i32,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+                i32,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-            i32,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+                i32,
+            >,
         > = __cordl_object.invoke("get_bindItem", ())?;
         Ok(__cordl_ret.into())
     }
@@ -106,14 +114,18 @@ impl crate::UnityEngine::UIElements::ListView {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            >,
         > = __cordl_object.invoke("get_destroyItem", ())?;
         Ok(__cordl_ret.into())
     }
@@ -121,14 +133,18 @@ impl crate::UnityEngine::UIElements::ListView {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            crate::System::Func_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            crate::System::Func_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            >,
         > = __cordl_object.invoke("get_makeItem", ())?;
         Ok(__cordl_ret.into())
     }
@@ -136,16 +152,20 @@ impl crate::UnityEngine::UIElements::ListView {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-            i32,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+                i32,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-            i32,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+                i32,
+            >,
         > = __cordl_object.invoke("get_unbindItem", ())?;
         Ok(__cordl_ret.into())
     }
@@ -163,7 +183,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::ListV
 #[repr(C)]
 #[derive(Debug)]
 pub struct ListView_UxmlFactory {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ListView>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ListView_UxmlTraits>,
     >,
@@ -175,7 +195,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+ListView+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ListView_UxmlFactory {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ListView>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ListView_UxmlTraits>,
     >;
@@ -223,9 +243,7 @@ for crate::UnityEngine::UIElements::ListView_UxmlFactory {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ListView_UxmlTraits {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::BaseListView_UxmlTraits,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::BaseListView_UxmlTraits,
 }
 #[cfg(feature = "UnityEngine+UIElements+ListView+UxmlTraits")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -234,9 +252,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+ListView+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ListView_UxmlTraits {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::BaseListView_UxmlTraits,
-    >;
+    type Target = crate::UnityEngine::UIElements::BaseListView_UxmlTraits;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NameNode {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,
+    __cordl_parent: crate::System::Data::ExpressionNode,
     pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _found: bool,
     pub _column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+NameNode")]
 impl std::ops::Deref for crate::System::Data::NameNode {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>;
+    type Target = crate::System::Data::ExpressionNode;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,7 +31,9 @@ impl crate::System::Data::NameNode {
         &mut self,
         table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         list: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -64,21 +66,7 @@ impl crate::System::Data::NameNode {
         > = __cordl_object.invoke("Eval", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Eval_Gc2(
-        &mut self,
-        records: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object.invoke("Eval", (records))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Eval_Gc_DataRowVersion1(
+    pub fn Eval_DataRow_DataRowVersion1(
         &mut self,
         row: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
         version: crate::System::Data::DataRowVersion,
@@ -91,6 +79,20 @@ impl crate::System::Data::NameNode {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("Eval", (row, version))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Eval_Il2CppArray2(
+        &mut self,
+        records: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("Eval", (records))?;
         Ok(__cordl_ret.into())
     }
     pub fn HasLocalAggregate(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -121,17 +123,7 @@ impl crate::System::Data::NameNode {
         let __cordl_ret: bool = __cordl_object.invoke("IsTableConstant", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc_Gc1(
-        table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
-        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (table, name))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_i32_i32_0(
+    pub fn New_Il2CppArray_i32_i32_0(
         table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         start: i32,
@@ -141,6 +133,16 @@ impl crate::System::Data::NameNode {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (table, text, start, pos))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Il2CppString1(
+        table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (table, name))?;
         Ok(__cordl_object.into())
     }
     pub fn Optimize(
@@ -169,19 +171,7 @@ impl crate::System::Data::NameNode {
             .invoke("ParseName", (text, start, pos))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc1(
-        &mut self,
-        table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
-        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (table, name))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_i32_i32_0(
+    pub fn _ctor_Il2CppArray_i32_i32_0(
         &mut self,
         table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
@@ -193,6 +183,18 @@ impl crate::System::Data::NameNode {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (table, text, start, pos))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppString1(
+        &mut self,
+        table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (table, name))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_IsSqlColumn(&mut self) -> quest_hook::libil2cpp::Result<bool> {

@@ -2,13 +2,15 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ClaimsPrincipal {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_serializedClaimsIdentities: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
     pub m_identities: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Security::Claims::ClaimsIdentity>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::System::Security::Claims::ClaimsIdentity>,
+        >,
     >,
 }
 #[cfg(feature = "System+Security+Claims+ClaimsPrincipal")]
@@ -18,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+Claims+ClaimsPrincipal")]
 impl std::ops::Deref for crate::System::Security::Claims::ClaimsPrincipal {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -63,7 +65,7 @@ impl crate::System::Security::Claims::ClaimsPrincipal {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_StreamingContext1(
+    pub fn New_SerializationInfo_StreamingContext1(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -99,7 +101,11 @@ impl crate::System::Security::Claims::ClaimsPrincipal {
     }
     pub fn SelectPrimaryIdentity(
         identities: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Security::Claims::ClaimsIdentity>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Security::Claims::ClaimsIdentity,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Security::Claims::ClaimsIdentity>,
@@ -133,7 +139,7 @@ impl crate::System::Security::Claims::ClaimsPrincipal {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_StreamingContext1(
+    pub fn _ctor_SerializationInfo_StreamingContext1(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -149,11 +155,19 @@ impl crate::System::Security::Claims::ClaimsPrincipal {
     }
     pub fn get_ClaimsPrincipalSelector() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Security::Claims::ClaimsPrincipal>,
+            crate::System::Func_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Security::Claims::ClaimsPrincipal,
+                >,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Security::Claims::ClaimsPrincipal>,
+            crate::System::Func_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Security::Claims::ClaimsPrincipal,
+                >,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("get_ClaimsPrincipalSelector", ())?;
         Ok(__cordl_ret.into())
@@ -170,20 +184,16 @@ for crate::System::Security::Claims::ClaimsPrincipal {
     }
 }
 #[cfg(feature = "System+Security+Claims+ClaimsPrincipal")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Security::Principal::IPrincipal>>
+impl AsRef<crate::System::Security::Principal::IPrincipal>
 for crate::System::Security::Claims::ClaimsPrincipal {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Security::Principal::IPrincipal> {
+    fn as_ref(&self) -> &crate::System::Security::Principal::IPrincipal {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Security+Claims+ClaimsPrincipal")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Security::Principal::IPrincipal>>
+impl AsMut<crate::System::Security::Principal::IPrincipal>
 for crate::System::Security::Claims::ClaimsPrincipal {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Security::Principal::IPrincipal> {
+    fn as_mut(&mut self) -> &mut crate::System::Security::Principal::IPrincipal {
         unsafe { std::mem::transmute(self) }
     }
 }

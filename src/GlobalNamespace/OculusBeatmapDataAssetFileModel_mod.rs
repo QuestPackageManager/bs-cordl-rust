@@ -2,25 +2,33 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusBeatmapDataAssetFileModel {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub levelDataAssetDownloadUpdateEvent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LevelDataAssetDownloadUpdate,
+        crate::System::Action_1<crate::GlobalNamespace::LevelDataAssetDownloadUpdate>,
     >,
     pub _downloadedAssetBundleFiles: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
-    pub _downloadingAssetBundlesQueue: quest_hook::libil2cpp::Gc<u64, f32>,
+    pub _downloadingAssetBundlesQueue: quest_hook::libil2cpp::Gc<
+        crate::Priority_Queue::SimplePriorityQueue_2<u64, f32>,
+    >,
     pub _assetIdToDownloadingData: quest_hook::libil2cpp::Gc<
-        u64,
-        crate::GlobalNamespace::OculusBeatmapDataAssetFileModel_AssetBundleDownloadingData,
+        crate::System::Collections::Generic::Dictionary_2<
+            u64,
+            crate::GlobalNamespace::OculusBeatmapDataAssetFileModel_AssetBundleDownloadingData,
+        >,
     >,
     pub _reloadAssetDetailsSemaphoreSlim: quest_hook::libil2cpp::Gc<
         crate::System::Threading::SemaphoreSlim,
     >,
     pub _assetFileToAssetDetails: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AssetDetails>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AssetDetails>,
+        >,
     >,
     pub _oculusPlatformAdditionalContentModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::OculusPlatformAdditionalContentModel,
@@ -33,7 +41,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OculusBeatmapDataAssetFileModel")]
 impl std::ops::Deref for crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -66,13 +74,19 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
         beatmapLevelDataVersion: crate::GlobalNamespace::BeatmapLevelDataVersion,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GetAssetBundleFileResult>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::GetAssetBundleFileResult,
+            >,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::GetAssetBundleFileResult,
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::GetAssetBundleFileResult,
+            >,
         > = __cordl_object
             .invoke(
                 "GetAssetBundleFileForBeatmapLevelAsync",
@@ -88,13 +102,19 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
         >,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GetAssetBundleFileResult>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::GetAssetBundleFileResult,
+            >,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::GetAssetBundleFileResult,
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::GetAssetBundleFileResult,
+            >,
         > = __cordl_object
             .invoke(
                 "GetDownloadAssetBundleFileAsync",
@@ -105,8 +125,10 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
     pub fn HandleAssetFileDownloadUpdate(
         &mut self,
         msg: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::AssetFileDownloadUpdate,
+            crate::Oculus::Platform::Message_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::AssetFileDownloadUpdate,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -144,11 +166,15 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
     pub fn ReloadAssetDetailsForAllLevelsAsync(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<bool>,
+        > = __cordl_object
             .invoke("ReloadAssetDetailsForAllLevelsAsync", (cancellationToken))?;
         Ok(__cordl_ret.into())
     }
@@ -178,11 +204,15 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         beatmapLevelDataVersion: crate::GlobalNamespace::BeatmapLevelDataVersion,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<bool>,
+        > = __cordl_object
             .invoke(
                 "TryDeleteAssetBundleFileForBeatmapLevelAsync",
                 (beatmapLevel, beatmapLevelDataVersion, cancellationToken),
@@ -216,7 +246,7 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
     pub fn add_levelDataAssetDownloadUpdateEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LevelDataAssetDownloadUpdate,
+            crate::System::Action_1<crate::GlobalNamespace::LevelDataAssetDownloadUpdate>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -229,7 +259,7 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
     pub fn remove_levelDataAssetDownloadUpdateEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LevelDataAssetDownloadUpdate,
+            crate::System::Action_1<crate::GlobalNamespace::LevelDataAssetDownloadUpdate>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -251,36 +281,30 @@ for crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
     }
 }
 #[cfg(feature = "OculusBeatmapDataAssetFileModel")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapDataAssetFileModel>>
+impl AsRef<crate::GlobalNamespace::IBeatmapDataAssetFileModel>
 for crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapDataAssetFileModel> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IBeatmapDataAssetFileModel {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OculusBeatmapDataAssetFileModel")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapDataAssetFileModel>>
+impl AsMut<crate::GlobalNamespace::IBeatmapDataAssetFileModel>
 for crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IBeatmapDataAssetFileModel,
-    > {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IBeatmapDataAssetFileModel {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OculusBeatmapDataAssetFileModel")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::ITickable>>
+impl AsRef<crate::Zenject::ITickable>
 for crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::ITickable> {
+    fn as_ref(&self) -> &crate::Zenject::ITickable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OculusBeatmapDataAssetFileModel")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::ITickable>>
+impl AsMut<crate::Zenject::ITickable>
 for crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::ITickable> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::ITickable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -291,7 +315,9 @@ pub struct OculusBeatmapDataAssetFileModel_AssetBundleDownloadingData {
     pub levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub assetBundlePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub downloadAssetBundleFileTCS: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::GetAssetBundleFileResult,
+        crate::System::Threading::Tasks::TaskCompletionSource_1<
+            crate::GlobalNamespace::GetAssetBundleFileResult,
+        >,
     >,
 }
 #[cfg(feature = "OculusBeatmapDataAssetFileModel+AssetBundleDownloadingData")]

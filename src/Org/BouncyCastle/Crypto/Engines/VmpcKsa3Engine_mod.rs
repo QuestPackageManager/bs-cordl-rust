@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct VmpcKsa3Engine {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Engines::VmpcEngine,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Crypto::Engines::VmpcEngine,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+VmpcKsa3Engine")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -14,9 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+VmpcKsa3Engine")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Engines::VmpcKsa3Engine {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Engines::VmpcEngine,
-    >;
+    type Target = crate::Org::BouncyCastle::Crypto::Engines::VmpcEngine;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

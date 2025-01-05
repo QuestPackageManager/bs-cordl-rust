@@ -2,10 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Debouncer_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    pub _callback: quest_hook::libil2cpp::Gc<T>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _callback: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
     pub _debounceDelaySeconds: f32,
-    pub _debounceQueue: quest_hook::libil2cpp::Gc<T>,
+    pub _debounceQueue: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Queue_1<T>,
+    >,
     pub _nextCallbackTime: f32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -17,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BGLib+UnityExtension+Debouncer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::BGLib::UnityExtension::Debouncer_1<T> {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -72,7 +74,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::BGLib::UnityExtension::Debouncer_1<T
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        callback: quest_hook::libil2cpp::Gc<T>,
+        callback: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
         debounceDelaySeconds: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
@@ -99,7 +101,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::BGLib::UnityExtension::Debouncer_1<T
     }
     pub fn _ctor(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<T>,
+        callback: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
         debounceDelaySeconds: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -125,20 +127,16 @@ for crate::BGLib::UnityExtension::Debouncer_1<T> {
     }
 }
 #[cfg(feature = "BGLib+UnityExtension+Debouncer_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
 for crate::BGLib::UnityExtension::Debouncer_1<T> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BGLib+UnityExtension+Debouncer_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
 for crate::BGLib::UnityExtension::Debouncer_1<T> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }

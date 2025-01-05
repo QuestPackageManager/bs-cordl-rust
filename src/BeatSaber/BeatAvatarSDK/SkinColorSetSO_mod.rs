@@ -2,12 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SkinColorSetSO {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PersistentScriptableObject,
-    >,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _colors: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::SkinColorSO>,
+            *mut crate::BeatSaber::BeatAvatarSDK::SkinColorSO,
         >,
     >,
 }
@@ -18,9 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+SkinColorSetSO")]
 impl std::ops::Deref for crate::BeatSaber::BeatAvatarSDK::SkinColorSetSO {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PersistentScriptableObject,
-    >;
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -55,7 +51,7 @@ impl crate::BeatSaber::BeatAvatarSDK::SkinColorSetSO {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::SkinColorSO>,
+                *mut crate::BeatSaber::BeatAvatarSDK::SkinColorSO,
             >,
         >,
     > {
@@ -64,7 +60,7 @@ impl crate::BeatSaber::BeatAvatarSDK::SkinColorSetSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::SkinColorSO>,
+                *mut crate::BeatSaber::BeatAvatarSDK::SkinColorSO,
             >,
         > = __cordl_object.invoke("get_colors", ())?;
         Ok(__cordl_ret.into())

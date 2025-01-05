@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLocalInactivePlayerSongSyncController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _audioSource: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::CrossFadeAudioSource,
     >,
@@ -39,7 +39,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MultiplayerLocalInactivePlayerSongSyncController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -234,22 +234,16 @@ for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
     }
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerSongSyncController")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IStartSeekSongController>>
+impl AsRef<crate::GlobalNamespace::IStartSeekSongController>
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IStartSeekSongController> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IStartSeekSongController {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerSongSyncController")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IStartSeekSongController>>
+impl AsMut<crate::GlobalNamespace::IStartSeekSongController>
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IStartSeekSongController,
-    > {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IStartSeekSongController {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -257,7 +251,7 @@ for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLocalInactivePlayerSongSyncController_InitData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub audioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
     pub startSongTime: f32,
     pub songTimeOffset: f32,
@@ -272,7 +266,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MultiplayerLocalInactivePlayerSongSyncController+InitData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController_InitData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

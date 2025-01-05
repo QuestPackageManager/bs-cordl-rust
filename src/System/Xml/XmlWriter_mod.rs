@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlWriter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub writeNodeBuffer: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<char>,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlWriter")]
 impl std::ops::Deref for crate::System::Xml::XmlWriter {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,7 +37,7 @@ impl crate::System::Xml::XmlWriter {
             .invoke("Close", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Create_Gc_Gc0(
+    pub fn Create_Stream0(
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         settings: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriterSettings>,
     ) -> quest_hook::libil2cpp::Result<
@@ -47,7 +47,7 @@ impl crate::System::Xml::XmlWriter {
             .invoke("Create", (output, settings))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Create_Gc_Gc1(
+    pub fn Create_TextWriter1(
         output: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
         settings: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriterSettings>,
     ) -> quest_hook::libil2cpp::Result<
@@ -109,7 +109,7 @@ impl crate::System::Xml::XmlWriter {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn WriteAttributeString_Gc0(
+    pub fn WriteAttributeString_Il2CppString0(
         &mut self,
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -122,7 +122,7 @@ impl crate::System::Xml::XmlWriter {
             .invoke("WriteAttributeString", (localName, ns, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteAttributeString_Gc_Gc1(
+    pub fn WriteAttributeString_Il2CppString_Il2CppString1(
         &mut self,
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -134,7 +134,7 @@ impl crate::System::Xml::XmlWriter {
             .invoke("WriteAttributeString", (localName, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteAttributeString_Gc_Gc2(
+    pub fn WriteAttributeString_Il2CppString_Il2CppString2(
         &mut self,
         prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -334,18 +334,7 @@ impl crate::System::Xml::XmlWriter {
             .invoke("WriteProcessingInstruction", (name, text))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteRaw_Gc1(
-        &mut self,
-        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteRaw", (data))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn WriteRaw_i32_i32_0(
+    pub fn WriteRaw_Il2CppArray_i32_i32_0(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         index: i32,
@@ -356,6 +345,17 @@ impl crate::System::Xml::XmlWriter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteRaw", (buffer, index, count))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteRaw_Il2CppString1(
+        &mut self,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteRaw", (data))?;
         Ok(__cordl_ret.into())
     }
     pub fn WriteStartAttribute(
@@ -392,7 +392,7 @@ impl crate::System::Xml::XmlWriter {
             .invoke("WriteStartDocument", (standalone))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteStartElement_Gc1(
+    pub fn WriteStartElement_Il2CppString1(
         &mut self,
         prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -405,7 +405,7 @@ impl crate::System::Xml::XmlWriter {
             .invoke("WriteStartElement", (prefix, localName, ns))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteStartElement_Gc_Gc0(
+    pub fn WriteStartElement_Il2CppString_Il2CppString0(
         &mut self,
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -493,16 +493,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlWriter {
     }
 }
 #[cfg(feature = "System+Xml+XmlWriter")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::System::Xml::XmlWriter {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsRef<crate::System::IDisposable> for crate::System::Xml::XmlWriter {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+XmlWriter")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::System::Xml::XmlWriter {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsMut<crate::System::IDisposable> for crate::System::Xml::XmlWriter {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }

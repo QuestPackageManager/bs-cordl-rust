@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultTlsClient {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsClient,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsClient,
     pub mDHVerifier: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Tls::TlsDHVerifier,
     >,
@@ -16,9 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsClient")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsClient {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsClient,
-    >;
+    type Target = crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsClient;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -133,7 +129,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsClient {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_TlsCipherFactory1(
         cipherFactory: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsCipherFactory,
         >,
@@ -144,7 +140,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsClient {
             .invoke_void(".ctor", (cipherFactory))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc2(
+    pub fn New_TlsCipherFactory_TlsDHVerifier2(
         cipherFactory: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsCipherFactory,
         >,
@@ -168,7 +164,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsClient {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_TlsCipherFactory1(
         &mut self,
         cipherFactory: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsCipherFactory,
@@ -181,7 +177,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsClient {
             .invoke(".ctor", (cipherFactory))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc2(
+    pub fn _ctor_TlsCipherFactory_TlsDHVerifier2(
         &mut self,
         cipherFactory: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsCipherFactory,

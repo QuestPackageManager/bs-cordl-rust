@@ -264,20 +264,16 @@ for crate::Org::BouncyCastle::Crypto::Tls::TlsClient {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsClient")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsPeer>>
+impl AsRef<crate::Org::BouncyCastle::Crypto::Tls::TlsPeer>
 for crate::Org::BouncyCastle::Crypto::Tls::TlsClient {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsPeer> {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Tls::TlsPeer {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsClient")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsPeer>>
+impl AsMut<crate::Org::BouncyCastle::Crypto::Tls::TlsPeer>
 for crate::Org::BouncyCastle::Crypto::Tls::TlsClient {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsPeer> {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::Tls::TlsPeer {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Sensor {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::InputDevice,
-    >,
+    __cordl_parent: crate::UnityEngine::InputSystem::InputDevice,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Sensor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+Sensor")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Sensor {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::InputDevice,
-    >;
+    type Target = crate::UnityEngine::InputSystem::InputDevice;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

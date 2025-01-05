@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundSpriteRenderer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BloomPrePassBackgroundNonLightRendererCore,
-    >,
+    __cordl_parent: crate::GlobalNamespace::BloomPrePassBackgroundNonLightRendererCore,
     pub _spriteRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::SpriteRenderer>,
 }
 #[cfg(feature = "BloomPrePassBackgroundSpriteRenderer")]
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BloomPrePassBackgroundSpriteRenderer")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassBackgroundSpriteRenderer {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BloomPrePassBackgroundNonLightRendererCore,
-    >;
+    type Target = crate::GlobalNamespace::BloomPrePassBackgroundNonLightRendererCore;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

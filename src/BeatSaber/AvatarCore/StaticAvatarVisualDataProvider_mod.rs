@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StaticAvatarVisualDataProvider {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _avatarsData: crate::GlobalNamespace::MultiplayerAvatarsData,
 }
 #[cfg(feature = "BeatSaber+AvatarCore+StaticAvatarVisualDataProvider")]
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+AvatarCore+StaticAvatarVisualDataProvider")]
 impl std::ops::Deref for crate::BeatSaber::AvatarCore::StaticAvatarVisualDataProvider {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -69,26 +69,18 @@ for crate::BeatSaber::AvatarCore::StaticAvatarVisualDataProvider {
     }
 }
 #[cfg(feature = "BeatSaber+AvatarCore+StaticAvatarVisualDataProvider")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarVisualDataProvider>,
-> for crate::BeatSaber::AvatarCore::StaticAvatarVisualDataProvider {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::BeatSaber::AvatarCore::IAvatarVisualDataProvider,
-    > {
+impl AsRef<crate::BeatSaber::AvatarCore::IAvatarVisualDataProvider>
+for crate::BeatSaber::AvatarCore::StaticAvatarVisualDataProvider {
+    fn as_ref(&self) -> &crate::BeatSaber::AvatarCore::IAvatarVisualDataProvider {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BeatSaber+AvatarCore+StaticAvatarVisualDataProvider")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarVisualDataProvider>,
-> for crate::BeatSaber::AvatarCore::StaticAvatarVisualDataProvider {
+impl AsMut<crate::BeatSaber::AvatarCore::IAvatarVisualDataProvider>
+for crate::BeatSaber::AvatarCore::StaticAvatarVisualDataProvider {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::BeatSaber::AvatarCore::IAvatarVisualDataProvider,
-    > {
+    ) -> &mut crate::BeatSaber::AvatarCore::IAvatarVisualDataProvider {
         unsafe { std::mem::transmute(self) }
     }
 }

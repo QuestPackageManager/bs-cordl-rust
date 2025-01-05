@@ -37,12 +37,14 @@ impl crate::UnityEngine::UIElements::TreeViewItemWrapper {
     }
     pub fn get_childrenIds(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_childrenIds",
-            (),
-        )?;
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_childrenIds", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_hasChildren(&mut self) -> quest_hook::libil2cpp::Result<bool> {

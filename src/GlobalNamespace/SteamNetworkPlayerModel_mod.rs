@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SteamNetworkPlayerModel {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PlatformNetworkPlayerModel,
-    >,
+    __cordl_parent: crate::GlobalNamespace::PlatformNetworkPlayerModel,
 }
 #[cfg(feature = "SteamNetworkPlayerModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SteamNetworkPlayerModel")]
 impl std::ops::Deref for crate::GlobalNamespace::SteamNetworkPlayerModel {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PlatformNetworkPlayerModel,
-    >;
+    type Target = crate::GlobalNamespace::PlatformNetworkPlayerModel;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -57,20 +53,16 @@ for crate::GlobalNamespace::SteamNetworkPlayerModel {
     }
 }
 #[cfg(feature = "SteamNetworkPlayerModel")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayerModel>>
+impl AsRef<crate::GlobalNamespace::INetworkPlayerModel>
 for crate::GlobalNamespace::SteamNetworkPlayerModel {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayerModel> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::INetworkPlayerModel {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "SteamNetworkPlayerModel")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayerModel>>
+impl AsMut<crate::GlobalNamespace::INetworkPlayerModel>
 for crate::GlobalNamespace::SteamNetworkPlayerModel {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayerModel> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::INetworkPlayerModel {
         unsafe { std::mem::transmute(self) }
     }
 }

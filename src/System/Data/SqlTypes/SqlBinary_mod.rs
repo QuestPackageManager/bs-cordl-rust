@@ -22,7 +22,7 @@ for crate::System::Data::SqlTypes::SqlBinary {
 }
 #[cfg(feature = "System+Data+SqlTypes+SqlBinary")]
 impl crate::System::Data::SqlTypes::SqlBinary {
-    pub fn CompareTo_Gc0(
+    pub fn CompareTo_Il2CppObject0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -136,7 +136,7 @@ impl crate::System::Data::SqlTypes::SqlBinary {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Il2CppArray1(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -209,58 +209,42 @@ impl crate::System::Data::SqlTypes::SqlBinary {
     }
 }
 #[cfg(feature = "System+Data+SqlTypes+SqlBinary")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Data::SqlTypes::INullable>>
+impl AsRef<crate::System::Data::SqlTypes::INullable>
 for crate::System::Data::SqlTypes::SqlBinary {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Data::SqlTypes::INullable> {
+    fn as_ref(&self) -> &crate::System::Data::SqlTypes::INullable {
         todo!()
     }
 }
 #[cfg(feature = "System+Data+SqlTypes+SqlBinary")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Data::SqlTypes::INullable>>
+impl AsMut<crate::System::Data::SqlTypes::INullable>
 for crate::System::Data::SqlTypes::SqlBinary {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Data::SqlTypes::INullable> {
+    fn as_mut(&mut self) -> &mut crate::System::Data::SqlTypes::INullable {
         todo!()
     }
 }
 #[cfg(feature = "System+Data+SqlTypes+SqlBinary")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
+impl AsRef<crate::System::IComparable> for crate::System::Data::SqlTypes::SqlBinary {
+    fn as_ref(&self) -> &crate::System::IComparable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Data+SqlTypes+SqlBinary")]
+impl AsMut<crate::System::IComparable> for crate::System::Data::SqlTypes::SqlBinary {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Data+SqlTypes+SqlBinary")]
+impl AsRef<crate::System::Xml::Serialization::IXmlSerializable>
 for crate::System::Data::SqlTypes::SqlBinary {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IComparable> {
+    fn as_ref(&self) -> &crate::System::Xml::Serialization::IXmlSerializable {
         todo!()
     }
 }
 #[cfg(feature = "System+Data+SqlTypes+SqlBinary")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
+impl AsMut<crate::System::Xml::Serialization::IXmlSerializable>
 for crate::System::Data::SqlTypes::SqlBinary {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IComparable> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Data+SqlTypes+SqlBinary")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::IXmlSerializable>,
-> for crate::System::Data::SqlTypes::SqlBinary {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Serialization::IXmlSerializable,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Data+SqlTypes+SqlBinary")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::IXmlSerializable>,
-> for crate::System::Data::SqlTypes::SqlBinary {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Serialization::IXmlSerializable,
-    > {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::Serialization::IXmlSerializable {
         todo!()
     }
 }

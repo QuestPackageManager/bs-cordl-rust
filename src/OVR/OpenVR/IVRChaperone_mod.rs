@@ -65,7 +65,7 @@ impl crate::OVR::OpenVR::IVRChaperone {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRChaperone__AreBoundsVisible {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRChaperone+_AreBoundsVisible")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -74,7 +74,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRChaperone+_AreBoundsVisible")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRChaperone__AreBoundsVisible {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -155,7 +155,7 @@ for crate::OVR::OpenVR::IVRChaperone__AreBoundsVisible {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRChaperone__ForceBoundsVisible {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRChaperone+_ForceBoundsVisible")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -164,7 +164,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRChaperone+_ForceBoundsVisible")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRChaperone__ForceBoundsVisible {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -251,7 +251,7 @@ for crate::OVR::OpenVR::IVRChaperone__ForceBoundsVisible {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRChaperone__GetBoundsColor {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRChaperone+_GetBoundsColor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -260,7 +260,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRChaperone+_GetBoundsColor")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRChaperone__GetBoundsColor {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -385,7 +385,7 @@ for crate::OVR::OpenVR::IVRChaperone__GetBoundsColor {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRChaperone__GetCalibrationState {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRChaperone+_GetCalibrationState")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -394,7 +394,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRChaperone+_GetCalibrationState")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRChaperone__GetCalibrationState {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -479,7 +479,7 @@ for crate::OVR::OpenVR::IVRChaperone__GetCalibrationState {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRChaperone__GetPlayAreaRect {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRChaperone+_GetPlayAreaRect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -488,7 +488,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRChaperone+_GetPlayAreaRect")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRChaperone__GetPlayAreaRect {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -574,7 +574,7 @@ for crate::OVR::OpenVR::IVRChaperone__GetPlayAreaRect {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRChaperone__GetPlayAreaSize {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRChaperone+_GetPlayAreaSize")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -583,7 +583,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRChaperone+_GetPlayAreaSize")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRChaperone__GetPlayAreaSize {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -673,7 +673,7 @@ for crate::OVR::OpenVR::IVRChaperone__GetPlayAreaSize {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRChaperone__ReloadInfo {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRChaperone+_ReloadInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -682,7 +682,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRChaperone+_ReloadInfo")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRChaperone__ReloadInfo {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -766,7 +766,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRChaperone__Rel
 #[repr(C)]
 #[derive(Debug)]
 pub struct IVRChaperone__SetSceneColor {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "OVR+OpenVR+IVRChaperone+_SetSceneColor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -775,7 +775,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+IVRChaperone+_SetSceneColor")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRChaperone__SetSceneColor {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConstructorStringExtensions {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "ConstructorStringExtensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ConstructorStringExtensions")]
 impl std::ops::Deref for crate::GlobalNamespace::ConstructorStringExtensions {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,8 +24,8 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ConstructorStringExtensions 
 }
 #[cfg(feature = "ConstructorStringExtensions")]
 impl crate::GlobalNamespace::ConstructorStringExtensions {
-    pub fn ToConstructorString_Gc3<T>(
-        list: quest_hook::libil2cpp::Gc<T>,
+    pub fn ToConstructorString_List_1_3<T>(
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >

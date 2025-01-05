@@ -2,12 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SelectLevelCategoryViewController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+    __cordl_parent: crate::HMUI::ViewController,
     pub _allLevelCategoryInfos: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategoryInfo,
-            >,
+            *mut crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategoryInfo,
         >,
     >,
     pub _levelFilterCategoryIconSegmentedControl: quest_hook::libil2cpp::Gc<
@@ -17,17 +15,17 @@ pub struct SelectLevelCategoryViewController {
         crate::GlobalNamespace::IAnalyticsModel,
     >,
     pub didSelectLevelCategoryEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::SelectLevelCategoryViewController,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SelectLevelCategoryViewController,
+            >,
+            crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
         >,
-        crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
     >,
     pub _prevSelectedLevelCategory: crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
     pub _levelCategoryInfos: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategoryInfo,
-            >,
+            *mut crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategoryInfo,
         >,
     >,
 }
@@ -39,7 +37,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SelectLevelCategoryViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::SelectLevelCategoryViewController {
-    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>;
+    type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -135,10 +133,12 @@ impl crate::GlobalNamespace::SelectLevelCategoryViewController {
     pub fn add_didSelectLevelCategoryEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::SelectLevelCategoryViewController,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::SelectLevelCategoryViewController,
+                >,
+                crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
             >,
-            crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -163,10 +163,12 @@ impl crate::GlobalNamespace::SelectLevelCategoryViewController {
     pub fn remove_didSelectLevelCategoryEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::SelectLevelCategoryViewController,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::SelectLevelCategoryViewController,
+                >,
+                crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
             >,
-            crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -208,7 +210,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct SelectLevelCategoryViewController_LevelCategoryInfo {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub levelCategory: crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
     pub localizedKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub categoryIcon: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
@@ -222,7 +224,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "SelectLevelCategoryViewController+LevelCategoryInfo")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategoryInfo {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

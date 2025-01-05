@@ -2,27 +2,35 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimelinePlayable {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Playables::PlayableBehaviour,
-    >,
+    __cordl_parent: crate::UnityEngine::Playables::PlayableBehaviour,
     pub m_IntervalTree: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::RuntimeElement>,
+        crate::UnityEngine::Timeline::IntervalTree_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::RuntimeElement>,
+        >,
     >,
     pub m_ActiveClips: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::RuntimeElement>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::RuntimeElement>,
+        >,
     >,
     pub m_CurrentListOfActiveClips: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::RuntimeElement>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::RuntimeElement>,
+        >,
     >,
     pub m_ActiveBit: i32,
     pub m_EvaluateCallbacks: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Timeline::ITimelineEvaluateCallback,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::Timeline::ITimelineEvaluateCallback,
+            >,
         >,
     >,
     pub m_PlayableCache: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
-        crate::UnityEngine::Playables::Playable,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
+            crate::UnityEngine::Playables::Playable,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelinePlayable")]
@@ -32,9 +40,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Timeline+TimelinePlayable")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::TimelinePlayable {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Playables::PlayableBehaviour,
-    >;
+    type Target = crate::UnityEngine::Playables::PlayableBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -66,7 +72,9 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
         graph: crate::UnityEngine::Playables::PlayableGraph,
         timelinePlayable: crate::UnityEngine::Playables::Playable,
         tracks: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
+            >,
         >,
         go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         autoRebalance: bool,
@@ -87,7 +95,9 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
         graph: crate::UnityEngine::Playables::PlayableGraph,
         timelinePlayable: crate::UnityEngine::Playables::Playable,
         tracks: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
+            >,
         >,
         go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         createOutputs: bool,
@@ -105,7 +115,9 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
     pub fn Create(
         graph: crate::UnityEngine::Playables::PlayableGraph,
         tracks: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
+            >,
         >,
         go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         autoRebalance: bool,

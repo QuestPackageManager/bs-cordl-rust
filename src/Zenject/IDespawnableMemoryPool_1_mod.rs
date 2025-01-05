@@ -61,20 +61,16 @@ for crate::Zenject::IDespawnableMemoryPool_1<TValue> {
     }
 }
 #[cfg(feature = "Zenject+IDespawnableMemoryPool_1")]
-impl<
-    TValue: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool>>
+impl<TValue: quest_hook::libil2cpp::Type> AsRef<crate::Zenject::IMemoryPool>
 for crate::Zenject::IDespawnableMemoryPool_1<TValue> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool> {
+    fn as_ref(&self) -> &crate::Zenject::IMemoryPool {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+IDespawnableMemoryPool_1")]
-impl<
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool>>
+impl<TValue: quest_hook::libil2cpp::Type> AsMut<crate::Zenject::IMemoryPool>
 for crate::Zenject::IDespawnableMemoryPool_1<TValue> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IMemoryPool {
         unsafe { std::mem::transmute(self) }
     }
 }

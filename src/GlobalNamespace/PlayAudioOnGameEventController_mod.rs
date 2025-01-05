@@ -2,15 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayAudioOnGameEventController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _audioClipQueue: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::AudioClipQueue,
     >,
     pub _eventAudioBindings: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::PlayAudioOnGameEventController_EventAudioBinding,
-            >,
+            *mut crate::GlobalNamespace::PlayAudioOnGameEventController_EventAudioBinding,
         >,
     >,
 }
@@ -21,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PlayAudioOnGameEventController")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayAudioOnGameEventController {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -88,19 +86,21 @@ for crate::GlobalNamespace::PlayAudioOnGameEventController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayAudioOnGameEventController_EventAudioBinding {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _signal: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,
     pub _delay: f32,
     pub _localizedAudioClips: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LocalizedAudioClipSO>,
+            *mut crate::GlobalNamespace::LocalizedAudioClipSO,
         >,
     >,
     pub _audioClipQueue: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::AudioClipQueue,
     >,
     pub _randomObjectPicker: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LocalizedAudioClipSO>,
+        crate::GlobalNamespace::RandomObjectPicker_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LocalizedAudioClipSO>,
+        >,
     >,
 }
 #[cfg(feature = "PlayAudioOnGameEventController+EventAudioBinding")]
@@ -112,7 +112,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "PlayAudioOnGameEventController+EventAudioBinding")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PlayAudioOnGameEventController_EventAudioBinding {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetworkStream {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    __cordl_parent: crate::System::IO::Stream,
     pub _streamSocket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
     pub _ownsSocket: bool,
     pub _readable: bool,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Sockets+NetworkStream")]
 impl std::ops::Deref for crate::System::Net::Sockets::NetworkStream {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::IO::Stream>;
+    type Target = crate::System::IO::Stream;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -154,7 +154,7 @@ impl crate::System::Net::Sockets::NetworkStream {
             .invoke_void(".ctor", (socket, access, ownsSocket))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc0(
+    pub fn New_Socket0(
         socket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -173,17 +173,21 @@ impl crate::System::Net::Sockets::NetworkStream {
             .invoke_void(".ctor", (socket, ownsSocket))?;
         Ok(__cordl_object.into())
     }
-    pub fn ReadAsync_Gc_i32_i32_CancellationToken0(
+    pub fn ReadAsync_Il2CppArray_i32_i32_CancellationToken0(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
         _cordl_size: i32,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<i32>,
+        > = __cordl_object
             .invoke("ReadAsync", (buffer, offset, _cordl_size, cancellationToken))?;
         Ok(__cordl_ret.into())
     }
@@ -208,7 +212,7 @@ impl crate::System::Net::Sockets::NetworkStream {
         let __cordl_ret: i32 = __cordl_object.invoke("ReadByte", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Read_Gc_i32_i32_0(
+    pub fn Read_Il2CppArray_i32_i32_0(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
@@ -266,7 +270,7 @@ impl crate::System::Net::Sockets::NetworkStream {
             .invoke("SetSocketTimeoutOption", (mode, timeout, silent))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteAsync_Gc_i32_i32_CancellationToken0(
+    pub fn WriteAsync_Il2CppArray_i32_i32_CancellationToken0(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
@@ -307,7 +311,7 @@ impl crate::System::Net::Sockets::NetworkStream {
             .invoke("WriteByte", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Write_Gc_i32_i32_0(
+    pub fn Write_Il2CppArray_i32_i32_0(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
@@ -344,7 +348,7 @@ impl crate::System::Net::Sockets::NetworkStream {
             .invoke(".ctor", (socket, access, ownsSocket))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Socket0(
         &mut self,
         socket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

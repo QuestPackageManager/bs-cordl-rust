@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UINumericFieldsUtils {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+UINumericFieldsUtils")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UINumericFieldsUtils")]
 impl std::ops::Deref for crate::UnityEngine::UINumericFieldsUtils {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,7 +35,7 @@ impl crate::UnityEngine::UINumericFieldsUtils {
             .invoke("TryConvertStringToDouble", (str, value, expr))?;
         Ok(__cordl_ret.into())
     }
-    pub fn TryConvertStringToDouble_Gc1(
+    pub fn TryConvertStringToDouble_Il2CppString1(
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         initialValueAsString: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -79,7 +79,7 @@ impl crate::UnityEngine::UINumericFieldsUtils {
             .invoke("TryConvertStringToLong", (str, value, expr))?;
         Ok(__cordl_ret.into())
     }
-    pub fn TryConvertStringToLong_Gc1(
+    pub fn TryConvertStringToLong_Il2CppString1(
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         initialValueAsString: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -112,7 +112,7 @@ impl crate::UnityEngine::UINumericFieldsUtils {
             .invoke("TryConvertStringToULong", (str, value, expr))?;
         Ok(__cordl_ret.into())
     }
-    pub fn TryConvertStringToULong_Gc1(
+    pub fn TryConvertStringToULong_Il2CppString1(
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         initialValueAsString: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,

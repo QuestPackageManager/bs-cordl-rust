@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ByteArrayNetSerializable {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _length: i32,
     pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ByteArrayNetSerializable")]
 impl std::ops::Deref for crate::GlobalNamespace::ByteArrayNetSerializable {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -52,7 +52,7 @@ impl crate::GlobalNamespace::ByteArrayNetSerializable {
             .invoke("CopyTo", (destination, length))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CopyTo_Gc0(
+    pub fn CopyTo_Il2CppArray0(
         &mut self,
         destination: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -133,7 +133,7 @@ impl crate::GlobalNamespace::ByteArrayNetSerializable {
             .invoke("Serialize", (writer))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetData_Gc0(
+    pub fn SetData_Il2CppArray0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -240,20 +240,16 @@ for crate::GlobalNamespace::ByteArrayNetSerializable {
     }
 }
 #[cfg(feature = "ByteArrayNetSerializable")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable>>
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
 for crate::GlobalNamespace::ByteArrayNetSerializable {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable> {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "ByteArrayNetSerializable")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable>>
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
 for crate::GlobalNamespace::ByteArrayNetSerializable {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable> {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
         unsafe { std::mem::transmute(self) }
     }
 }

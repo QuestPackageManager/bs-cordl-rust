@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AspTypePropertyAttribute {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+    __cordl_parent: crate::System::Attribute,
     pub _CreateConstructorReferences_k__BackingField: bool,
 }
 #[cfg(feature = "JetBrains+Annotations+AspTypePropertyAttribute")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "JetBrains+Annotations+AspTypePropertyAttribute")]
 impl std::ops::Deref for crate::JetBrains::Annotations::AspTypePropertyAttribute {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Attribute>;
+    type Target = crate::System::Attribute;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

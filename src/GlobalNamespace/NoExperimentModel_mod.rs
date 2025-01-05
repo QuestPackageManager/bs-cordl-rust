@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoExperimentModel {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "NoExperimentModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "NoExperimentModel")]
 impl std::ops::Deref for crate::GlobalNamespace::NoExperimentModel {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -26,23 +26,29 @@ impl std::ops::DerefMut for crate::GlobalNamespace::NoExperimentModel {
 impl crate::GlobalNamespace::NoExperimentModel {
     pub fn IsEmployee(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = __cordl_object
-            .invoke("IsEmployee", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<bool>,
+        > = __cordl_object.invoke("IsEmployee", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn IsInTest(
         &mut self,
         data: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IExperimentData>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = __cordl_object
-            .invoke("IsInTest", (data))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<bool>,
+        > = __cordl_object.invoke("IsInTest", (data))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -73,20 +79,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoExperimentM
     }
 }
 #[cfg(feature = "NoExperimentModel")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IExperimentModel>>
+impl AsRef<crate::GlobalNamespace::IExperimentModel>
 for crate::GlobalNamespace::NoExperimentModel {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IExperimentModel> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IExperimentModel {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "NoExperimentModel")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IExperimentModel>>
+impl AsMut<crate::GlobalNamespace::IExperimentModel>
 for crate::GlobalNamespace::NoExperimentModel {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IExperimentModel> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IExperimentModel {
         unsafe { std::mem::transmute(self) }
     }
 }

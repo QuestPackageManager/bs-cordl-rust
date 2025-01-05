@@ -2,9 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRSemanticClassification {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _labels: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
 }
 #[cfg(feature = "OVRSemanticClassification")]
@@ -14,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRSemanticClassification")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSemanticClassification {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -90,14 +92,18 @@ impl crate::GlobalNamespace::OVRSemanticClassification {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = __cordl_object.invoke("get_Labels", ())?;
         Ok(__cordl_ret.into())
     }
@@ -113,20 +119,16 @@ for crate::GlobalNamespace::OVRSemanticClassification {
     }
 }
 #[cfg(feature = "OVRSemanticClassification")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IOVRSceneComponent>>
+impl AsRef<crate::GlobalNamespace::IOVRSceneComponent>
 for crate::GlobalNamespace::OVRSemanticClassification {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IOVRSceneComponent> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IOVRSceneComponent {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OVRSemanticClassification")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IOVRSceneComponent>>
+impl AsMut<crate::GlobalNamespace::IOVRSceneComponent>
 for crate::GlobalNamespace::OVRSemanticClassification {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IOVRSceneComponent> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IOVRSceneComponent {
         unsafe { std::mem::transmute(self) }
     }
 }

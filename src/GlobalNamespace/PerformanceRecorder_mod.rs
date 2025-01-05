@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PerformanceRecorder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub minFpsWindow: f32,
     pub _StartEnabled_k__BackingField: bool,
     pub _GamePause_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -21,7 +21,9 @@ pub struct PerformanceRecorder {
     pub _RrecPlayState_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::RecPlayBehaviour_State,
     >,
-    pub _frameTimes: quest_hook::libil2cpp::Gc<f32>,
+    pub _frameTimes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<f32>,
+    >,
     pub _configChecks: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PerformanceConfigurationChecks,
     >,
@@ -43,7 +45,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PerformanceRecorder")]
 impl std::ops::Deref for crate::GlobalNamespace::PerformanceRecorder {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

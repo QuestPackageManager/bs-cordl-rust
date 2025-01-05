@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointerMoveLinkTagEvent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::PointerEventBase_1<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::Experimental::PointerMoveLinkTagEvent,
         >,
@@ -23,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+Experimental+PointerMoveLinkTagEvent")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::Experimental::PointerMoveLinkTagEvent {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::PointerEventBase_1<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::Experimental::PointerMoveLinkTagEvent,
         >,

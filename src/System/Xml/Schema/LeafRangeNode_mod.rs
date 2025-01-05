@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LeafRangeNode {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::LeafNode>,
+    __cordl_parent: crate::System::Xml::Schema::LeafNode,
     pub min: crate::System::Decimal,
     pub max: crate::System::Decimal,
     pub nextIteration: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+LeafRangeNode")]
 impl std::ops::Deref for crate::System::Xml::Schema::LeafRangeNode {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::LeafNode>;
+    type Target = crate::System::Xml::Schema::LeafNode;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

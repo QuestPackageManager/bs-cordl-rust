@@ -2,12 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapCharacteristicsViewController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+    __cordl_parent: crate::HMUI::ViewController,
     pub _beatmapCharacteristicsTableView: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapCharacteristicsTableView,
     >,
     pub didSelectBeatmapCharacteristicEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
+        >,
     >,
     pub _beatmapCharacteristicCollection: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapCharacteristicCollection,
@@ -22,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapCharacteristicsViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapCharacteristicsViewController {
-    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>;
+    type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -117,7 +119,11 @@ impl crate::GlobalNamespace::BeatmapCharacteristicsViewController {
     pub fn add_didSelectBeatmapCharacteristicEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapCharacteristicSO,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -158,7 +164,11 @@ impl crate::GlobalNamespace::BeatmapCharacteristicsViewController {
     pub fn remove_didSelectBeatmapCharacteristicEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapCharacteristicSO,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

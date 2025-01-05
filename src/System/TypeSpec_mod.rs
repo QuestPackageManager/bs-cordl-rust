@@ -2,17 +2,23 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeSpec {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub name: quest_hook::libil2cpp::Gc<crate::System::TypeIdentifier>,
     pub assembly_name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub nested: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::TypeIdentifier>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::System::TypeIdentifier>,
+        >,
     >,
     pub generic_params: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::TypeSpec>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::System::TypeSpec>,
+        >,
     >,
     pub modifier_spec: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::ModifierSpec>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::System::ModifierSpec>,
+        >,
     >,
     pub is_byref: bool,
     pub display_fullname: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -23,7 +29,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+TypeSpec")]
 impl std::ops::Deref for crate::System::TypeSpec {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -114,7 +120,7 @@ impl crate::System::TypeSpec {
             .invoke("Parse", (name, p, is_recurse, allow_aqn))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Parse_Gc0(
+    pub fn Parse_Il2CppString0(
         typeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::TypeSpec>,
@@ -135,14 +141,18 @@ impl crate::System::TypeSpec {
     pub fn Resolve(
         &mut self,
         assemblyResolver: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Reflection::AssemblyName>,
-            quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::AssemblyName>,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+            >,
         >,
         typeResolver: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            bool,
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            crate::System::Func_4<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                bool,
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
         throwOnError: bool,
         ignoreCase: bool,

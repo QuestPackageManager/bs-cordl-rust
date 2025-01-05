@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlWriterSettings {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub useAsync: bool,
     pub encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
     pub omitXmlDecl: bool,
@@ -18,7 +18,9 @@ pub struct XmlWriterSettings {
     pub writeEndDocumentOnClose: bool,
     pub outputMethod: crate::System::Xml::XmlOutputMethod,
     pub cdataSections: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+        >,
     >,
     pub doNotEscapeUriAttributes: bool,
     pub mergeCDataSections: bool,
@@ -36,7 +38,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlWriterSettings")]
 impl std::ops::Deref for crate::System::Xml::XmlWriterSettings {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -73,7 +75,7 @@ impl crate::System::Xml::XmlWriterSettings {
         > = __cordl_object.invoke("Clone", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateWriter_Gc0(
+    pub fn CreateWriter_Stream0(
         &mut self,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<
@@ -86,7 +88,7 @@ impl crate::System::Xml::XmlWriterSettings {
             .invoke("CreateWriter", (output))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateWriter_Gc1(
+    pub fn CreateWriter_TextWriter1(
         &mut self,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
     ) -> quest_hook::libil2cpp::Result<
@@ -144,14 +146,18 @@ impl crate::System::Xml::XmlWriterSettings {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+            >,
         > = __cordl_object.invoke("get_CDataSectionElements", ())?;
         Ok(__cordl_ret.into())
     }

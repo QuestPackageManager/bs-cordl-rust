@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_ScriptParameterExample {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _evergreenGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _evergreenAsset: quest_hook::libil2cpp::Gc<
         crate::HoudiniEngineUnity::HEU_HoudiniAsset,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HEU_ScriptParameterExample")]
 impl std::ops::Deref for crate::GlobalNamespace::HEU_ScriptParameterExample {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

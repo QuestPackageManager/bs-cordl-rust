@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Task_1<TResult: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    __cordl_parent: crate::System::Threading::Tasks::Task,
     pub m_result: TResult,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Threading+Tasks+Task_1")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Threading::Tasks::Task_1<TResult> {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>;
+    type Target = crate::System::Threading::Tasks::Task;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -52,38 +52,14 @@ impl<
         > = __cordl_object.invoke("ConfigureAwait", (continueOnCapturedContext))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ContinueWith_CancellationToken_TaskContinuationOptions_Gc4<TNewResult>(
-        &mut self,
-        continuationFunction: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<TResult>,
-            TNewResult,
-        >,
-        cancellationToken: crate::System::Threading::CancellationToken,
-        continuationOptions: crate::System::Threading::Tasks::TaskContinuationOptions,
-        scheduler: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::TaskScheduler,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TNewResult>>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TNewResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TNewResult> = __cordl_object
-            .invoke(
-                "ContinueWith",
-                (continuationFunction, cancellationToken, continuationOptions, scheduler),
-            )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ContinueWith_Gc0(
+    pub fn ContinueWith_Action_1_TaskScheduler0(
         &mut self,
         continuationAction: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<TResult>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<TResult>,
+                >,
+            >,
         >,
         scheduler: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::TaskScheduler,
@@ -103,30 +79,14 @@ impl<
         > = __cordl_object.invoke("ContinueWith", (continuationAction, scheduler))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ContinueWith_Gc2<TNewResult>(
-        &mut self,
-        continuationFunction: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<TResult>,
-            TNewResult,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TNewResult>>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TNewResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TNewResult> = __cordl_object
-            .invoke("ContinueWith", (continuationFunction))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ContinueWith_Gc_CancellationToken_TaskContinuationOptions1(
+    pub fn ContinueWith_Action_1_TaskScheduler_CancellationToken_TaskContinuationOptions1(
         &mut self,
         continuationAction: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<TResult>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<TResult>,
+                >,
+            >,
         >,
         scheduler: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::TaskScheduler,
@@ -152,18 +112,120 @@ impl<
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn ContinueWith_Gc_CancellationToken_TaskContinuationOptions5<TNewResult>(
+    pub fn ContinueWith_Func_2_2<TNewResult>(
         &mut self,
         continuationFunction: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<TResult>,
-            TNewResult,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<TResult>,
+                >,
+                TNewResult,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TNewResult>>,
+    >
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TNewResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<TNewResult>,
+        > = __cordl_object.invoke("ContinueWith", (continuationFunction))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ContinueWith_Func_2_CancellationToken_TaskContinuationOptions_TaskScheduler4<
+        TNewResult,
+    >(
+        &mut self,
+        continuationFunction: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<TResult>,
+                >,
+                TNewResult,
+            >,
+        >,
+        cancellationToken: crate::System::Threading::CancellationToken,
+        continuationOptions: crate::System::Threading::Tasks::TaskContinuationOptions,
+        scheduler: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::TaskScheduler,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TNewResult>>,
+    >
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TNewResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<TNewResult>,
+        > = __cordl_object
+            .invoke(
+                "ContinueWith",
+                (continuationFunction, cancellationToken, continuationOptions, scheduler),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ContinueWith_Func_2_TaskContinuationOptions3<TNewResult>(
+        &mut self,
+        continuationFunction: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<TResult>,
+                >,
+                TNewResult,
+            >,
+        >,
+        continuationOptions: crate::System::Threading::Tasks::TaskContinuationOptions,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TNewResult>>,
+    >
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TNewResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<TNewResult>,
+        > = __cordl_object
+            .invoke("ContinueWith", (continuationFunction, continuationOptions))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ContinueWith_Func_2_TaskScheduler_CancellationToken_TaskContinuationOptions5<
+        TNewResult,
+    >(
+        &mut self,
+        continuationFunction: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<TResult>,
+                >,
+                TNewResult,
+            >,
         >,
         scheduler: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::TaskScheduler,
         >,
         cancellationToken: crate::System::Threading::CancellationToken,
         continuationOptions: crate::System::Threading::Tasks::TaskContinuationOptions,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TNewResult>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TNewResult>>,
+    >
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -173,32 +235,13 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TNewResult> = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<TNewResult>,
+        > = __cordl_object
             .invoke(
                 "ContinueWith",
                 (continuationFunction, scheduler, cancellationToken, continuationOptions),
             )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ContinueWith_TaskContinuationOptions3<TNewResult>(
-        &mut self,
-        continuationFunction: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<TResult>,
-            TNewResult,
-        >,
-        continuationOptions: crate::System::Threading::Tasks::TaskContinuationOptions,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TNewResult>>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TNewResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TNewResult> = __cordl_object
-            .invoke("ContinueWith", (continuationFunction, continuationOptions))?;
         Ok(__cordl_ret.into())
     }
     pub fn DangerousSetResult(
@@ -273,73 +316,7 @@ impl<
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_CancellationToken4(
-        function: quest_hook::libil2cpp::Gc<TResult>,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (function, cancellationToken))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_Gc_CancellationToken_TaskCreationOptions5(
-        function: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            TResult,
-        >,
-        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        cancellationToken: crate::System::Threading::CancellationToken,
-        creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (function, state, cancellationToken, creationOptions),
-            )?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_Gc_CancellationToken_TaskCreationOptions_InternalTaskOptions_Gc6(
-        valueSelector: quest_hook::libil2cpp::Gc<TResult>,
-        parent: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
-        cancellationToken: crate::System::Threading::CancellationToken,
-        creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
-        internalOptions: crate::System::Threading::Tasks::InternalTaskOptions,
-        scheduler: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::TaskScheduler,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    valueSelector,
-                    parent,
-                    cancellationToken,
-                    creationOptions,
-                    internalOptions,
-                    scheduler,
-                ),
-            )?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_Gc_Gc_CancellationToken_TaskCreationOptions_InternalTaskOptions_Gc7(
+    pub fn New_Delegate_Il2CppObject_Task_CancellationToken_TaskCreationOptions_InternalTaskOptions_TaskScheduler7(
         valueSelector: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         parent: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -371,7 +348,75 @@ impl<
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_TaskCreationOptions1(
+    pub fn New_Func_1_CancellationToken4(
+        function: quest_hook::libil2cpp::Gc<crate::System::Func_1<TResult>>,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (function, cancellationToken))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Func_1_Task_CancellationToken_TaskCreationOptions_InternalTaskOptions_TaskScheduler6(
+        valueSelector: quest_hook::libil2cpp::Gc<crate::System::Func_1<TResult>>,
+        parent: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+        cancellationToken: crate::System::Threading::CancellationToken,
+        creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
+        internalOptions: crate::System::Threading::Tasks::InternalTaskOptions,
+        scheduler: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::TaskScheduler,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    valueSelector,
+                    parent,
+                    cancellationToken,
+                    creationOptions,
+                    internalOptions,
+                    scheduler,
+                ),
+            )?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Func_2_Il2CppObject_CancellationToken_TaskCreationOptions5(
+        function: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                TResult,
+            >,
+        >,
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        cancellationToken: crate::System::Threading::CancellationToken,
+        creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (function, state, cancellationToken, creationOptions),
+            )?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Il2CppObject_TaskCreationOptions1(
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         options: crate::System::Threading::Tasks::TaskCreationOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
@@ -414,21 +459,25 @@ impl<
             .invoke_void(".ctor", (canceled, result, creationOptions, ct))?;
         Ok(__cordl_object.into())
     }
-    pub fn StartNew_CancellationToken_TaskCreationOptions_InternalTaskOptions_Gc0(
+    pub fn StartNew_Func_1_CancellationToken_TaskCreationOptions_InternalTaskOptions_TaskScheduler0(
         parent: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
-        function: quest_hook::libil2cpp::Gc<TResult>,
+        function: quest_hook::libil2cpp::Gc<crate::System::Func_1<TResult>>,
         cancellationToken: crate::System::Threading::CancellationToken,
         creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
         internalOptions: crate::System::Threading::Tasks::InternalTaskOptions,
         scheduler: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::TaskScheduler,
         >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TResult>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TResult>>,
+    >
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TResult> = <Self as quest_hook::libil2cpp::Type>::class()
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<TResult>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
                 "StartNew",
                 (
@@ -442,11 +491,13 @@ impl<
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn StartNew_Gc_CancellationToken_TaskCreationOptions_InternalTaskOptions_Gc1(
+    pub fn StartNew_Func_2_Il2CppObject_CancellationToken_TaskCreationOptions_InternalTaskOptions_TaskScheduler1(
         parent: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
         function: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            TResult,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                TResult,
+            >,
         >,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         cancellationToken: crate::System::Threading::CancellationToken,
@@ -455,12 +506,16 @@ impl<
         scheduler: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::TaskScheduler,
         >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TResult>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TResult>>,
+    >
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TResult> = <Self as quest_hook::libil2cpp::Type>::class()
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<TResult>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
                 "StartNew",
                 (
@@ -503,76 +558,7 @@ impl<
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_CancellationToken4(
-        &mut self,
-        function: quest_hook::libil2cpp::Gc<TResult>,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (function, cancellationToken))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_Gc_CancellationToken_TaskCreationOptions5(
-        &mut self,
-        function: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            TResult,
-        >,
-        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        cancellationToken: crate::System::Threading::CancellationToken,
-        creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (function, state, cancellationToken, creationOptions))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_Gc_CancellationToken_TaskCreationOptions_InternalTaskOptions_Gc6(
-        &mut self,
-        valueSelector: quest_hook::libil2cpp::Gc<TResult>,
-        parent: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
-        cancellationToken: crate::System::Threading::CancellationToken,
-        creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
-        internalOptions: crate::System::Threading::Tasks::InternalTaskOptions,
-        scheduler: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::TaskScheduler,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
-                (
-                    valueSelector,
-                    parent,
-                    cancellationToken,
-                    creationOptions,
-                    internalOptions,
-                    scheduler,
-                ),
-            )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_Gc_Gc_CancellationToken_TaskCreationOptions_InternalTaskOptions_Gc7(
+    pub fn _ctor_Delegate_Il2CppObject_Task_CancellationToken_TaskCreationOptions_InternalTaskOptions_TaskScheduler7(
         &mut self,
         valueSelector: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -606,7 +592,78 @@ impl<
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_TaskCreationOptions1(
+    pub fn _ctor_Func_1_CancellationToken4(
+        &mut self,
+        function: quest_hook::libil2cpp::Gc<crate::System::Func_1<TResult>>,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (function, cancellationToken))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Func_1_Task_CancellationToken_TaskCreationOptions_InternalTaskOptions_TaskScheduler6(
+        &mut self,
+        valueSelector: quest_hook::libil2cpp::Gc<crate::System::Func_1<TResult>>,
+        parent: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+        cancellationToken: crate::System::Threading::CancellationToken,
+        creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
+        internalOptions: crate::System::Threading::Tasks::InternalTaskOptions,
+        scheduler: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::TaskScheduler,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                ".ctor",
+                (
+                    valueSelector,
+                    parent,
+                    cancellationToken,
+                    creationOptions,
+                    internalOptions,
+                    scheduler,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Func_2_Il2CppObject_CancellationToken_TaskCreationOptions5(
+        &mut self,
+        function: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                TResult,
+            >,
+        >,
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        cancellationToken: crate::System::Threading::CancellationToken,
+        creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (function, state, cancellationToken, creationOptions))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppObject_TaskCreationOptions1(
         &mut self,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         options: crate::System::Threading::Tasks::TaskCreationOptions,
@@ -656,14 +713,17 @@ impl<
         Ok(__cordl_ret.into())
     }
     pub fn get_Factory() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<TResult>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::TaskFactory_1<TResult>,
+        >,
     >
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TResult> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_Factory", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::TaskFactory_1<TResult>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Factory", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_Result(&mut self) -> quest_hook::libil2cpp::Result<TResult>
@@ -703,7 +763,7 @@ for crate::System::Threading::Tasks::Task_1<TResult> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Task_1_TaskWhenAnyCast<TResult: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
 #[cfg(feature = "System+Threading+Tasks+Task_1+TaskWhenAnyCast")]
@@ -714,7 +774,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Threading+Tasks+Task_1+TaskWhenAnyCast")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Threading::Tasks::Task_1_TaskWhenAnyCast<TResult> {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

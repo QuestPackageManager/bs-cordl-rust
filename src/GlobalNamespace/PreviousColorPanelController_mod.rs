@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PreviousColorPanelController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _graphics: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::UI::Graphic>,
     >,
     pub _button: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
-    pub colorWasSelectedEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
+    pub colorWasSelectedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::UnityEngine::Color>,
+    >,
     pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
     pub _color: crate::UnityEngine::Color,
     pub _graphicsColor: crate::UnityEngine::Color,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PreviousColorPanelController")]
 impl std::ops::Deref for crate::GlobalNamespace::PreviousColorPanelController {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -105,7 +105,9 @@ impl crate::GlobalNamespace::PreviousColorPanelController {
     }
     pub fn add_colorWasSelectedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::UnityEngine::Color>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -116,7 +118,9 @@ impl crate::GlobalNamespace::PreviousColorPanelController {
     }
     pub fn remove_colorWasSelectedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::UnityEngine::Color>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

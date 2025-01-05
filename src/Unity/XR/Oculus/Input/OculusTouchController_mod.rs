@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusTouchController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::XR::XRControllerWithRumble,
-    >,
+    __cordl_parent: crate::UnityEngine::InputSystem::XR::XRControllerWithRumble,
     pub _thumbstick_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Controls::Vector2Control,
     >,
@@ -76,9 +74,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+XR+Oculus+Input+OculusTouchController")]
 impl std::ops::Deref for crate::Unity::XR::Oculus::Input::OculusTouchController {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::XR::XRControllerWithRumble,
-    >;
+    type Target = crate::UnityEngine::InputSystem::XR::XRControllerWithRumble;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

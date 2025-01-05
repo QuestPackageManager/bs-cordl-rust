@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HtmlUtf8RawTextWriterIndent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::HtmlUtf8RawTextWriter>,
+    __cordl_parent: crate::System::Xml::HtmlUtf8RawTextWriter,
     pub indentLevel: i32,
     pub endBlockPos: i32,
     pub indentChars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+HtmlUtf8RawTextWriterIndent")]
 impl std::ops::Deref for crate::System::Xml::HtmlUtf8RawTextWriterIndent {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::HtmlUtf8RawTextWriter>;
+    type Target = crate::System::Xml::HtmlUtf8RawTextWriter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

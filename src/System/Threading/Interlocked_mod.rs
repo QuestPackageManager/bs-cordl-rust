@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Interlocked {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Threading+Interlocked")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+Interlocked")]
 impl std::ops::Deref for crate::System::Threading::Interlocked {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -58,7 +58,7 @@ impl crate::System::Threading::Interlocked {
             .invoke("CompareExchange", (location1, value, comparand, result))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CompareExchange_Gc_Gc3(
+    pub fn CompareExchange_Il2CppObject_Il2CppObject3(
         location1: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
@@ -170,7 +170,7 @@ impl crate::System::Threading::Interlocked {
             .invoke("Exchange", (location1, value, result))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Exchange_Gc2(
+    pub fn Exchange_Il2CppObject2(
         location1: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Datatype_List {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::Datatype_anySimpleType,
-    >,
+    __cordl_parent: crate::System::Xml::Schema::Datatype_anySimpleType,
     pub itemType: quest_hook::libil2cpp::Gc<
         crate::System::Xml::Schema::DatatypeImplementation,
     >,
@@ -17,9 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+Datatype_List")]
 impl std::ops::Deref for crate::System::Xml::Schema::Datatype_List {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::Datatype_anySimpleType,
-    >;
+    type Target = crate::System::Xml::Schema::Datatype_anySimpleType;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -69,7 +65,7 @@ impl crate::System::Xml::Schema::Datatype_List {
             .invoke_void(".ctor", (_cordl_type, minListSize))?;
         Ok(__cordl_object.into())
     }
-    pub fn TryParseValue_Gc_Gc_Gc_ByRefMut0(
+    pub fn TryParseValue_Il2CppObject0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
@@ -89,7 +85,7 @@ impl crate::System::Xml::Schema::Datatype_List {
             .invoke("TryParseValue", (value, nameTable, namespaceResolver, typedValue))?;
         Ok(__cordl_ret.into())
     }
-    pub fn TryParseValue_Gc_Gc_Gc_ByRefMut1(
+    pub fn TryParseValue_Il2CppString1(
         &mut self,
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RequestStream {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    __cordl_parent: crate::System::IO::Stream,
     pub buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub offset: i32,
     pub length: i32,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+RequestStream")]
 impl std::ops::Deref for crate::System::Net::RequestStream {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::IO::Stream>;
+    type Target = crate::System::IO::Stream;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -118,7 +118,7 @@ impl crate::System::Net::RequestStream {
             .invoke("Flush", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc_Gc_i32_i32_0(
+    pub fn New_Stream_Il2CppArray_i32_i32_0(
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
@@ -192,7 +192,7 @@ impl crate::System::Net::RequestStream {
             .invoke("Write", (buffer, offset, count))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_i32_i32_0(
+    pub fn _ctor_Stream_Il2CppArray_i32_i32_0(
         &mut self,
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

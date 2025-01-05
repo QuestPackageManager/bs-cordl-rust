@@ -2,14 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ByRefMethodInfoCallInstruction {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::MethodInfoCallInstruction,
-    >,
+    __cordl_parent: crate::System::Linq::Expressions::Interpreter::MethodInfoCallInstruction,
     pub _byrefArgs: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::Interpreter::ByRefUpdater,
-            >,
+            *mut crate::System::Linq::Expressions::Interpreter::ByRefUpdater,
         >,
     >,
 }
@@ -22,9 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Interpreter+ByRefMethodInfoCallInstruction")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::ByRefMethodInfoCallInstruction {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::MethodInfoCallInstruction,
-    >;
+    type Target = crate::System::Linq::Expressions::Interpreter::MethodInfoCallInstruction;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -43,9 +37,7 @@ impl crate::System::Linq::Expressions::Interpreter::ByRefMethodInfoCallInstructi
         argumentCount: i32,
         byrefArgs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Linq::Expressions::Interpreter::ByRefUpdater,
-                >,
+                *mut crate::System::Linq::Expressions::Interpreter::ByRefUpdater,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -73,9 +65,7 @@ impl crate::System::Linq::Expressions::Interpreter::ByRefMethodInfoCallInstructi
         argumentCount: i32,
         byrefArgs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Linq::Expressions::Interpreter::ByRefUpdater,
-                >,
+                *mut crate::System::Linq::Expressions::Interpreter::ByRefUpdater,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

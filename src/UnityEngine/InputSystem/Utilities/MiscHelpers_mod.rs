@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MiscHelpers {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+MiscHelpers")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+MiscHelpers")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Utilities::MiscHelpers {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -25,20 +25,30 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Utilities::MiscHelp
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+MiscHelpers")]
 impl crate::UnityEngine::InputSystem::Utilities::MiscHelpers {
     pub fn EveryNth<TValue>(
-        enumerable: quest_hook::libil2cpp::Gc<TValue>,
+        enumerable: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TValue>,
+        >,
         n: i32,
         start: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TValue>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TValue>,
+        >,
+    >
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TValue> = <Self as quest_hook::libil2cpp::Type>::class()
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TValue>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("EveryNth", (enumerable, n, start))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetValueOrDefault<TKey, TValue>(
-        dictionary: quest_hook::libil2cpp::Gc<TKey, TValue>,
+        dictionary: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
+        >,
         key: TKey,
     ) -> quest_hook::libil2cpp::Result<TValue>
     where
@@ -52,7 +62,9 @@ impl crate::UnityEngine::InputSystem::Utilities::MiscHelpers {
         Ok(__cordl_ret.into())
     }
     pub fn IndexOf<TValue>(
-        enumerable: quest_hook::libil2cpp::Gc<TValue>,
+        enumerable: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TValue>,
+        >,
         value: TValue,
     ) -> quest_hook::libil2cpp::Result<i32>
     where

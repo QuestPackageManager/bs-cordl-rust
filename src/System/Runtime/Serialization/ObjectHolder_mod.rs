@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObjectHolder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_id: i64,
     pub m_missingElementsRemaining: i32,
@@ -39,7 +39,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+Serialization+ObjectHolder")]
 impl std::ops::Deref for crate::System::Runtime::Serialization::ObjectHolder {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -113,7 +113,7 @@ impl crate::System::Runtime::Serialization::ObjectHolder {
             .invoke("MarkForCompletionWhenAvailable", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc_i64_Gc_Gc_i64_Gc_Gc1(
+    pub fn New_Il2CppObject_i64_SerializationInfo_ISerializationSurrogate_i64_FieldInfo_Il2CppArray1(
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         objID: i64,
         info: quest_hook::libil2cpp::Gc<
@@ -135,7 +135,7 @@ impl crate::System::Runtime::Serialization::ObjectHolder {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_i64_Gc_Gc_i64_Gc_Gc2(
+    pub fn New_Il2CppString_i64_SerializationInfo_ISerializationSurrogate_i64_FieldInfo_Il2CppArray2(
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         objID: i64,
         info: quest_hook::libil2cpp::Gc<
@@ -241,7 +241,7 @@ impl crate::System::Runtime::Serialization::ObjectHolder {
             .invoke("UpdateDescendentDependencyChain", (amount, manager))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_i64_Gc_Gc_i64_Gc_Gc1(
+    pub fn _ctor_Il2CppObject_i64_SerializationInfo_ISerializationSurrogate_i64_FieldInfo_Il2CppArray1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         objID: i64,
@@ -265,7 +265,7 @@ impl crate::System::Runtime::Serialization::ObjectHolder {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_i64_Gc_Gc_i64_Gc_Gc2(
+    pub fn _ctor_Il2CppString_i64_SerializationInfo_ISerializationSurrogate_i64_FieldInfo_Il2CppArray2(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         objID: i64,

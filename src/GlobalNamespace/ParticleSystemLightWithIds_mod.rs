@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ParticleSystemLightWithIds {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::RuntimeLightWithIds,
-    >,
+    __cordl_parent: crate::GlobalNamespace::RuntimeLightWithIds,
     pub _particleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
     pub _setOnlyOnce: bool,
     pub _setColorOnly: bool,
@@ -21,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ParticleSystemLightWithIds")]
 impl std::ops::Deref for crate::GlobalNamespace::ParticleSystemLightWithIds {
-    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::RuntimeLightWithIds>;
+    type Target = crate::GlobalNamespace::RuntimeLightWithIds;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

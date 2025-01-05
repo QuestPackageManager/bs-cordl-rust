@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Nat320 {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+Raw+Nat320")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Math+Raw+Nat320")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::Raw::Nat320 {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,7 +24,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::Raw::Nat320 {
 }
 #[cfg(feature = "Org+BouncyCastle+Math+Raw+Nat320")]
 impl crate::Org::BouncyCastle::Math::Raw::Nat320 {
-    pub fn Copy64_Gc0(
+    pub fn Copy64_Il2CppArray0(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -32,7 +32,7 @@ impl crate::Org::BouncyCastle::Math::Raw::Nat320 {
             .invoke("Copy64", (x, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Copy64_i32_Gc_i32_1(
+    pub fn Copy64_i32_Il2CppArray_i32_1(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
         xOff: i32,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,

@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LeaderboardIdsSO {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PersistentScriptableObject,
-    >,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _leaderboardIds: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData,
+            >,
         >,
     >,
 }
@@ -18,9 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LeaderboardIdsSO")]
 impl std::ops::Deref for crate::GlobalNamespace::LeaderboardIdsSO {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PersistentScriptableObject,
-    >;
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -55,14 +53,18 @@ impl crate::GlobalNamespace::LeaderboardIdsSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILeaderboardIdData>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILeaderboardIdData>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILeaderboardIdData>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILeaderboardIdData>,
+            >,
         > = __cordl_object.invoke("ILeaderboardIdContainer.get_leaderboardIds", ())?;
         Ok(__cordl_ret.into())
     }
@@ -87,8 +89,10 @@ impl crate::GlobalNamespace::LeaderboardIdsSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData,
+                >,
             >,
         >,
     > {
@@ -96,8 +100,10 @@ impl crate::GlobalNamespace::LeaderboardIdsSO {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData,
+                >,
             >,
         > = __cordl_object.invoke("get_leaderboardIds", ())?;
         Ok(__cordl_ret.into())
@@ -105,8 +111,10 @@ impl crate::GlobalNamespace::LeaderboardIdsSO {
     pub fn set_leaderboardIds(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -128,22 +136,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LeaderboardId
     }
 }
 #[cfg(feature = "LeaderboardIdsSO")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILeaderboardIdContainer>>
+impl AsRef<crate::GlobalNamespace::ILeaderboardIdContainer>
 for crate::GlobalNamespace::LeaderboardIdsSO {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILeaderboardIdContainer> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ILeaderboardIdContainer {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LeaderboardIdsSO")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILeaderboardIdContainer>>
+impl AsMut<crate::GlobalNamespace::ILeaderboardIdContainer>
 for crate::GlobalNamespace::LeaderboardIdsSO {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::ILeaderboardIdContainer,
-    > {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILeaderboardIdContainer {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -151,7 +153,7 @@ for crate::GlobalNamespace::LeaderboardIdsSO {
 #[repr(C)]
 #[derive(Debug)]
 pub struct LeaderboardIdsSO_LeaderboardIdData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _difficultyBeatmapId: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
@@ -167,7 +169,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LeaderboardIdsSO+LeaderboardIdData")]
 impl std::ops::Deref for crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -248,20 +250,16 @@ for crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData {
     }
 }
 #[cfg(feature = "LeaderboardIdsSO+LeaderboardIdData")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILeaderboardIdData>>
+impl AsRef<crate::GlobalNamespace::ILeaderboardIdData>
 for crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILeaderboardIdData> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ILeaderboardIdData {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LeaderboardIdsSO+LeaderboardIdData")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILeaderboardIdData>>
+impl AsMut<crate::GlobalNamespace::ILeaderboardIdData>
 for crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILeaderboardIdData> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILeaderboardIdData {
         unsafe { std::mem::transmute(self) }
     }
 }

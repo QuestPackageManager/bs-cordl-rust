@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InteriorNode {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::SyntaxTreeNode,
-    >,
+    __cordl_parent: crate::System::Xml::Schema::SyntaxTreeNode,
     pub leftChild: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SyntaxTreeNode>,
     pub rightChild: quest_hook::libil2cpp::Gc<
         crate::System::Xml::Schema::SyntaxTreeNode,
@@ -17,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+InteriorNode")]
 impl std::ops::Deref for crate::System::Xml::Schema::InteriorNode {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SyntaxTreeNode>;
+    type Target = crate::System::Xml::Schema::SyntaxTreeNode;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

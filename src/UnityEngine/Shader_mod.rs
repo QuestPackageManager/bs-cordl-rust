@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Shader {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    __cordl_parent: crate::UnityEngine::Object,
 }
 #[cfg(feature = "UnityEngine+Shader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Shader")]
 impl std::ops::Deref for crate::UnityEngine::Shader {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>;
+    type Target = crate::UnityEngine::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -56,7 +56,7 @@ impl crate::UnityEngine::Shader {
             .invoke("DisableKeyword", (keyword))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DisableKeyword_Gc0(
+    pub fn DisableKeyword_Il2CppString0(
         keyword: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -88,7 +88,7 @@ impl crate::UnityEngine::Shader {
             .invoke("EnableKeyword", (keyword))?;
         Ok(__cordl_ret.into())
     }
-    pub fn EnableKeyword_Gc0(
+    pub fn EnableKeyword_Il2CppString0(
         keyword: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -97,7 +97,9 @@ impl crate::UnityEngine::Shader {
     }
     pub fn ExtractGlobalFloatArray(
         name: i32,
-        values: quest_hook::libil2cpp::Gc<f32>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ExtractGlobalFloatArray", (name, values))?;
@@ -115,7 +117,9 @@ impl crate::UnityEngine::Shader {
     }
     pub fn ExtractGlobalMatrixArray(
         name: i32,
-        values: quest_hook::libil2cpp::Gc<crate::UnityEngine::Matrix4x4>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Matrix4x4>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ExtractGlobalMatrixArray", (name, values))?;
@@ -135,7 +139,9 @@ impl crate::UnityEngine::Shader {
     }
     pub fn ExtractGlobalVectorArray(
         name: i32,
-        values: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ExtractGlobalVectorArray", (name, values))?;
@@ -289,7 +295,7 @@ impl crate::UnityEngine::Shader {
             .invoke("GetEnabledGlobalKeywords", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetGlobalColor_Gc0(
+    pub fn GetGlobalColor_Il2CppString0(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
         let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
@@ -321,7 +327,7 @@ impl crate::UnityEngine::Shader {
             .invoke("GetGlobalFloatArrayImpl", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetGlobalFloatArray_Gc0(
+    pub fn GetGlobalFloatArray_Il2CppString0(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
@@ -332,9 +338,11 @@ impl crate::UnityEngine::Shader {
             .invoke("GetGlobalFloatArray", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetGlobalFloatArray_Gc_Gc2(
+    pub fn GetGlobalFloatArray_Il2CppString_List_1_2(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        values: quest_hook::libil2cpp::Gc<f32>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetGlobalFloatArray", (name, values))?;
@@ -351,9 +359,11 @@ impl crate::UnityEngine::Shader {
             .invoke("GetGlobalFloatArray", (nameID))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetGlobalFloatArray_i32_Gc3(
+    pub fn GetGlobalFloatArray_i32_List_1_3(
         nameID: i32,
-        values: quest_hook::libil2cpp::Gc<f32>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetGlobalFloatArray", (nameID, values))?;
@@ -364,7 +374,7 @@ impl crate::UnityEngine::Shader {
             .invoke("GetGlobalFloatImpl", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetGlobalFloat_Gc0(
+    pub fn GetGlobalFloat_Il2CppString0(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -381,7 +391,7 @@ impl crate::UnityEngine::Shader {
             .invoke("GetGlobalIntImpl", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetGlobalInt_Gc0(
+    pub fn GetGlobalInt_Il2CppString0(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -393,7 +403,7 @@ impl crate::UnityEngine::Shader {
             .invoke("GetGlobalInt", (nameID))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetGlobalInteger_Gc0(
+    pub fn GetGlobalInteger_Il2CppString0(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -425,7 +435,7 @@ impl crate::UnityEngine::Shader {
             .invoke("GetGlobalMatrixArrayImpl", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetGlobalMatrixArray_Gc0(
+    pub fn GetGlobalMatrixArray_Il2CppString0(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -438,9 +448,11 @@ impl crate::UnityEngine::Shader {
             .invoke("GetGlobalMatrixArray", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetGlobalMatrixArray_Gc_Gc2(
+    pub fn GetGlobalMatrixArray_Il2CppString_List_1_2(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        values: quest_hook::libil2cpp::Gc<crate::UnityEngine::Matrix4x4>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Matrix4x4>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetGlobalMatrixArray", (name, values))?;
@@ -459,9 +471,11 @@ impl crate::UnityEngine::Shader {
             .invoke("GetGlobalMatrixArray", (nameID))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetGlobalMatrixArray_i32_Gc3(
+    pub fn GetGlobalMatrixArray_i32_List_1_3(
         nameID: i32,
-        values: quest_hook::libil2cpp::Gc<crate::UnityEngine::Matrix4x4>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Matrix4x4>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetGlobalMatrixArray", (nameID, values))?;
@@ -482,7 +496,7 @@ impl crate::UnityEngine::Shader {
             .invoke("GetGlobalMatrixImpl_Injected", (name, ret))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetGlobalMatrix_Gc0(
+    pub fn GetGlobalMatrix_Il2CppString0(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
         let __cordl_ret: crate::UnityEngine::Matrix4x4 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -505,7 +519,7 @@ impl crate::UnityEngine::Shader {
             .invoke("GetGlobalTextureImpl", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetGlobalTexture_Gc0(
+    pub fn GetGlobalTexture_Il2CppString0(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
@@ -543,7 +557,7 @@ impl crate::UnityEngine::Shader {
             .invoke("GetGlobalVectorArrayImpl", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetGlobalVectorArray_Gc0(
+    pub fn GetGlobalVectorArray_Il2CppString0(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -556,9 +570,11 @@ impl crate::UnityEngine::Shader {
             .invoke("GetGlobalVectorArray", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetGlobalVectorArray_Gc_Gc2(
+    pub fn GetGlobalVectorArray_Il2CppString_List_1_2(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        values: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetGlobalVectorArray", (name, values))?;
@@ -577,9 +593,11 @@ impl crate::UnityEngine::Shader {
             .invoke("GetGlobalVectorArray", (nameID))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetGlobalVectorArray_i32_Gc3(
+    pub fn GetGlobalVectorArray_i32_List_1_3(
         nameID: i32,
-        values: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetGlobalVectorArray", (nameID, values))?;
@@ -600,7 +618,7 @@ impl crate::UnityEngine::Shader {
             .invoke("GetGlobalVectorImpl_Injected", (name, ret))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetGlobalVector_Gc0(
+    pub fn GetGlobalVector_Il2CppString0(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
         let __cordl_ret: crate::UnityEngine::Vector4 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -625,20 +643,16 @@ impl crate::UnityEngine::Shader {
             .invoke("GetPassCountInSubshader", (subshaderIndex))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetPropertyAttributes_Gc_i32_0(
+    pub fn GetPropertyAttributes_Shader_i32_0(
         shader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
         propertyIndex: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetPropertyAttributes", (shader, propertyIndex))?;
         Ok(__cordl_ret.into())
@@ -648,18 +662,14 @@ impl crate::UnityEngine::Shader {
         propertyIndex: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("GetPropertyAttributes", (propertyIndex))?;
         Ok(__cordl_ret.into())
     }
@@ -681,7 +691,7 @@ impl crate::UnityEngine::Shader {
             .invoke("GetPropertyDefaultFloatValue", (propertyIndex))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetPropertyDefaultIntValue_Gc_i32_0(
+    pub fn GetPropertyDefaultIntValue_Shader_i32_0(
         shader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
         propertyIndex: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -728,7 +738,7 @@ impl crate::UnityEngine::Shader {
             .invoke("GetPropertyDefaultVectorValue", (propertyIndex))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetPropertyDescription_Gc_i32_0(
+    pub fn GetPropertyDescription_Shader_i32_0(
         shader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
         propertyIndex: i32,
     ) -> quest_hook::libil2cpp::Result<
@@ -754,7 +764,7 @@ impl crate::UnityEngine::Shader {
         > = __cordl_object.invoke("GetPropertyDescription", (propertyIndex))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetPropertyFlags_Gc_i32_0(
+    pub fn GetPropertyFlags_Shader_i32_0(
         shader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
         propertyIndex: i32,
     ) -> quest_hook::libil2cpp::Result<
@@ -777,7 +787,7 @@ impl crate::UnityEngine::Shader {
             .invoke("GetPropertyFlags", (propertyIndex))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetPropertyNameId_Gc_i32_0(
+    pub fn GetPropertyNameId_Shader_i32_0(
         shader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
         propertyIndex: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -796,7 +806,7 @@ impl crate::UnityEngine::Shader {
             .invoke("GetPropertyNameId", (propertyIndex))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetPropertyName_Gc_i32_0(
+    pub fn GetPropertyName_Shader_i32_0(
         shader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
         propertyIndex: i32,
     ) -> quest_hook::libil2cpp::Result<
@@ -833,7 +843,7 @@ impl crate::UnityEngine::Shader {
             .invoke("GetPropertyRangeLimits", (propertyIndex))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetPropertyTextureDefaultName_Gc_i32_0(
+    pub fn GetPropertyTextureDefaultName_Shader_i32_0(
         shader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
         propertyIndex: i32,
     ) -> quest_hook::libil2cpp::Result<
@@ -859,7 +869,7 @@ impl crate::UnityEngine::Shader {
         > = __cordl_object.invoke("GetPropertyTextureDefaultName", (propertyIndex))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetPropertyTextureDimension_Gc_i32_0(
+    pub fn GetPropertyTextureDimension_Shader_i32_0(
         shader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
         propertyIndex: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::TextureDimension> {
@@ -878,7 +888,7 @@ impl crate::UnityEngine::Shader {
             .invoke("GetPropertyTextureDimension", (propertyIndex))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetPropertyType_Gc_i32_0(
+    pub fn GetPropertyType_Shader_i32_0(
         shader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
         propertyIndex: i32,
     ) -> quest_hook::libil2cpp::Result<
@@ -976,7 +986,7 @@ impl crate::UnityEngine::Shader {
             .invoke("IsKeywordEnabled", (keyword))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsKeywordEnabled_Gc0(
+    pub fn IsKeywordEnabled_Il2CppString0(
         keyword: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
@@ -1005,7 +1015,7 @@ impl crate::UnityEngine::Shader {
             .invoke("SetGlobalBufferImpl", (name, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetGlobalBuffer_Gc0(
+    pub fn SetGlobalBuffer_Il2CppString_ComputeBuffer0(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1013,7 +1023,7 @@ impl crate::UnityEngine::Shader {
             .invoke("SetGlobalBuffer", (name, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetGlobalBuffer_Gc2(
+    pub fn SetGlobalBuffer_Il2CppString_GraphicsBuffer2(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1021,7 +1031,7 @@ impl crate::UnityEngine::Shader {
             .invoke("SetGlobalBuffer", (name, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetGlobalBuffer_i32_1(
+    pub fn SetGlobalBuffer_i32_ComputeBuffer1(
         nameID: i32,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1029,7 +1039,7 @@ impl crate::UnityEngine::Shader {
             .invoke("SetGlobalBuffer", (nameID, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetGlobalBuffer_i32_3(
+    pub fn SetGlobalBuffer_i32_GraphicsBuffer3(
         nameID: i32,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1037,7 +1047,7 @@ impl crate::UnityEngine::Shader {
             .invoke("SetGlobalBuffer", (nameID, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetGlobalColor_Gc0(
+    pub fn SetGlobalColor_Il2CppString0(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1063,7 +1073,7 @@ impl crate::UnityEngine::Shader {
             .invoke("SetGlobalConstantBufferImpl", (name, value, offset, _cordl_size))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetGlobalConstantBuffer_Gc0(
+    pub fn SetGlobalConstantBuffer_Il2CppString_ComputeBuffer0(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
         offset: i32,
@@ -1073,7 +1083,7 @@ impl crate::UnityEngine::Shader {
             .invoke("SetGlobalConstantBuffer", (name, value, offset, _cordl_size))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetGlobalConstantBuffer_Gc2(
+    pub fn SetGlobalConstantBuffer_Il2CppString_GraphicsBuffer2(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
         offset: i32,
@@ -1083,7 +1093,7 @@ impl crate::UnityEngine::Shader {
             .invoke("SetGlobalConstantBuffer", (name, value, offset, _cordl_size))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetGlobalConstantBuffer_i32_1(
+    pub fn SetGlobalConstantBuffer_i32_ComputeBuffer1(
         nameID: i32,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
         offset: i32,
@@ -1093,7 +1103,7 @@ impl crate::UnityEngine::Shader {
             .invoke("SetGlobalConstantBuffer", (nameID, value, offset, _cordl_size))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetGlobalConstantBuffer_i32_3(
+    pub fn SetGlobalConstantBuffer_i32_GraphicsBuffer3(
         nameID: i32,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
         offset: i32,
@@ -1125,15 +1135,7 @@ impl crate::UnityEngine::Shader {
             .invoke("SetGlobalFloatArrayImpl", (name, values, count))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetGlobalFloatArray_Gc1(
-        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        values: quest_hook::libil2cpp::Gc<f32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetGlobalFloatArray", (name, values))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetGlobalFloatArray_Gc3(
+    pub fn SetGlobalFloatArray_Il2CppString_Il2CppArray3(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1141,15 +1143,17 @@ impl crate::UnityEngine::Shader {
             .invoke("SetGlobalFloatArray", (name, values))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetGlobalFloatArray_i32_2(
-        nameID: i32,
-        values: quest_hook::libil2cpp::Gc<f32>,
+    pub fn SetGlobalFloatArray_Il2CppString_List_1_1(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetGlobalFloatArray", (nameID, values))?;
+            .invoke("SetGlobalFloatArray", (name, values))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetGlobalFloatArray_i32_4(
+    pub fn SetGlobalFloatArray_i32_Il2CppArray4(
         nameID: i32,
         values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1157,13 +1161,23 @@ impl crate::UnityEngine::Shader {
             .invoke("SetGlobalFloatArray", (nameID, values))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetGlobalFloatArray_i32_i32_0(
+    pub fn SetGlobalFloatArray_i32_Il2CppArray_i32_0(
         name: i32,
         values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("SetGlobalFloatArray", (name, values, count))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetGlobalFloatArray_i32_List_1_2(
+        nameID: i32,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetGlobalFloatArray", (nameID, values))?;
         Ok(__cordl_ret.into())
     }
     pub fn SetGlobalFloatImpl(
@@ -1174,7 +1188,7 @@ impl crate::UnityEngine::Shader {
             .invoke("SetGlobalFloatImpl", (name, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetGlobalFloat_Gc0(
+    pub fn SetGlobalFloat_Il2CppString0(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1206,7 +1220,7 @@ impl crate::UnityEngine::Shader {
             .invoke("SetGlobalIntImpl", (name, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetGlobalInt_Gc0(
+    pub fn SetGlobalInt_Il2CppString0(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1222,7 +1236,7 @@ impl crate::UnityEngine::Shader {
             .invoke("SetGlobalInt", (nameID, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetGlobalInteger_Gc0(
+    pub fn SetGlobalInteger_Il2CppString0(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1249,15 +1263,7 @@ impl crate::UnityEngine::Shader {
             .invoke("SetGlobalMatrixArrayImpl", (name, values, count))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetGlobalMatrixArray_Gc1(
-        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        values: quest_hook::libil2cpp::Gc<crate::UnityEngine::Matrix4x4>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetGlobalMatrixArray", (name, values))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetGlobalMatrixArray_Gc3(
+    pub fn SetGlobalMatrixArray_Il2CppString_Il2CppArray3(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         values: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
@@ -1267,15 +1273,17 @@ impl crate::UnityEngine::Shader {
             .invoke("SetGlobalMatrixArray", (name, values))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetGlobalMatrixArray_i32_2(
-        nameID: i32,
-        values: quest_hook::libil2cpp::Gc<crate::UnityEngine::Matrix4x4>,
+    pub fn SetGlobalMatrixArray_Il2CppString_List_1_1(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Matrix4x4>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetGlobalMatrixArray", (nameID, values))?;
+            .invoke("SetGlobalMatrixArray", (name, values))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetGlobalMatrixArray_i32_4(
+    pub fn SetGlobalMatrixArray_i32_Il2CppArray4(
         nameID: i32,
         values: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
@@ -1285,7 +1293,7 @@ impl crate::UnityEngine::Shader {
             .invoke("SetGlobalMatrixArray", (nameID, values))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetGlobalMatrixArray_i32_i32_0(
+    pub fn SetGlobalMatrixArray_i32_Il2CppArray_i32_0(
         name: i32,
         values: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
@@ -1294,6 +1302,16 @@ impl crate::UnityEngine::Shader {
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("SetGlobalMatrixArray", (name, values, count))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetGlobalMatrixArray_i32_List_1_2(
+        nameID: i32,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Matrix4x4>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetGlobalMatrixArray", (nameID, values))?;
         Ok(__cordl_ret.into())
     }
     pub fn SetGlobalMatrixImpl(
@@ -1312,7 +1330,7 @@ impl crate::UnityEngine::Shader {
             .invoke("SetGlobalMatrixImpl_Injected", (name, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetGlobalMatrix_Gc0(
+    pub fn SetGlobalMatrix_Il2CppString0(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: crate::UnityEngine::Matrix4x4,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1345,15 +1363,7 @@ impl crate::UnityEngine::Shader {
             .invoke("SetGlobalTextureImpl", (name, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetGlobalTexture_Gc0(
-        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetGlobalTexture", (name, value))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetGlobalTexture_Gc_RenderTextureSubElement2(
+    pub fn SetGlobalTexture_Il2CppString_RenderTexture_RenderTextureSubElement2(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
         element: crate::UnityEngine::Rendering::RenderTextureSubElement,
@@ -1362,21 +1372,29 @@ impl crate::UnityEngine::Shader {
             .invoke("SetGlobalTexture", (name, value, element))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetGlobalTexture_i32_1(
-        nameID: i32,
+    pub fn SetGlobalTexture_Il2CppString_Texture0(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetGlobalTexture", (nameID, value))?;
+            .invoke("SetGlobalTexture", (name, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetGlobalTexture_i32_RenderTextureSubElement3(
+    pub fn SetGlobalTexture_i32_RenderTexture_RenderTextureSubElement3(
         nameID: i32,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
         element: crate::UnityEngine::Rendering::RenderTextureSubElement,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("SetGlobalTexture", (nameID, value, element))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetGlobalTexture_i32_Texture1(
+        nameID: i32,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetGlobalTexture", (nameID, value))?;
         Ok(__cordl_ret.into())
     }
     pub fn SetGlobalVectorArrayImpl(
@@ -1390,15 +1408,7 @@ impl crate::UnityEngine::Shader {
             .invoke("SetGlobalVectorArrayImpl", (name, values, count))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetGlobalVectorArray_Gc1(
-        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        values: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetGlobalVectorArray", (name, values))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetGlobalVectorArray_Gc3(
+    pub fn SetGlobalVectorArray_Il2CppString_Il2CppArray3(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         values: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
@@ -1408,15 +1418,17 @@ impl crate::UnityEngine::Shader {
             .invoke("SetGlobalVectorArray", (name, values))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetGlobalVectorArray_i32_2(
-        nameID: i32,
-        values: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+    pub fn SetGlobalVectorArray_Il2CppString_List_1_1(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetGlobalVectorArray", (nameID, values))?;
+            .invoke("SetGlobalVectorArray", (name, values))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetGlobalVectorArray_i32_4(
+    pub fn SetGlobalVectorArray_i32_Il2CppArray4(
         nameID: i32,
         values: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
@@ -1426,7 +1438,7 @@ impl crate::UnityEngine::Shader {
             .invoke("SetGlobalVectorArray", (nameID, values))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetGlobalVectorArray_i32_i32_0(
+    pub fn SetGlobalVectorArray_i32_Il2CppArray_i32_0(
         name: i32,
         values: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
@@ -1435,6 +1447,16 @@ impl crate::UnityEngine::Shader {
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("SetGlobalVectorArray", (name, values, count))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetGlobalVectorArray_i32_List_1_2(
+        nameID: i32,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetGlobalVectorArray", (nameID, values))?;
         Ok(__cordl_ret.into())
     }
     pub fn SetGlobalVectorImpl(
@@ -1453,7 +1475,7 @@ impl crate::UnityEngine::Shader {
             .invoke("SetGlobalVectorImpl_Injected", (name, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetGlobalVector_Gc0(
+    pub fn SetGlobalVector_Il2CppString0(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: crate::UnityEngine::Vector4,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UxmlTemplateTraits {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UxmlTraits,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::UxmlTraits,
     pub m_Name: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
     >,
@@ -22,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UxmlTemplateTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UxmlTemplateTraits {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UxmlTraits>;
+    type Target = crate::UnityEngine::UIElements::UxmlTraits;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

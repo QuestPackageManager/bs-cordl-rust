@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightTranslationGroup {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::GlobalNamespace::LightTransformGroup_3<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::LightGroupTranslationXTransform,
         >,
@@ -27,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LightTranslationGroup")]
 impl std::ops::Deref for crate::GlobalNamespace::LightTranslationGroup {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::GlobalNamespace::LightTransformGroup_3<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::LightGroupTranslationXTransform,
         >,
@@ -146,20 +146,16 @@ for crate::GlobalNamespace::LightTranslationGroup {
     }
 }
 #[cfg(feature = "LightTranslationGroup")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEditTimeValidated>>
+impl AsRef<crate::GlobalNamespace::IEditTimeValidated>
 for crate::GlobalNamespace::LightTranslationGroup {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEditTimeValidated> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IEditTimeValidated {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LightTranslationGroup")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEditTimeValidated>>
+impl AsMut<crate::GlobalNamespace::IEditTimeValidated>
 for crate::GlobalNamespace::LightTranslationGroup {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEditTimeValidated> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IEditTimeValidated {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MirroredDisappearingArrowController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::GlobalNamespace::DisappearingArrowControllerBase_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredGameNoteController>,
     >,
     pub _mirroredGameNoteController: quest_hook::libil2cpp::Gc<
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MirroredDisappearingArrowController")]
 impl std::ops::Deref for crate::GlobalNamespace::MirroredDisappearingArrowController {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::GlobalNamespace::DisappearingArrowControllerBase_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredGameNoteController>,
     >;
     fn deref(&self) -> &Self::Target {

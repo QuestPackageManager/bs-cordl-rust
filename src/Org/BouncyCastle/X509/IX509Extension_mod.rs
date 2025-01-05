@@ -37,9 +37,11 @@ impl crate::Org::BouncyCastle::X509::IX509Extension {
         > = __cordl_object.invoke("GetCriticalExtensionOids", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetExtensionValue_Gc0(
+    pub fn GetExtensionValue_DerObjectIdentifier1(
         &mut self,
-        oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        oid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1OctetString>,
     > {
@@ -51,11 +53,9 @@ impl crate::Org::BouncyCastle::X509::IX509Extension {
         > = __cordl_object.invoke("GetExtensionValue", (oid))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetExtensionValue_Gc1(
+    pub fn GetExtensionValue_Il2CppString0(
         &mut self,
-        oid: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-        >,
+        oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1OctetString>,
     > {

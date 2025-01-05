@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RecipientInformationStore {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub all: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     pub table: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
 }
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Cms+RecipientInformationStore")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::RecipientInformationStore {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -54,7 +54,7 @@ impl crate::Org::BouncyCastle::Cms::RecipientInformationStore {
         > = __cordl_object.invoke("GetRecipients", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetRecipients_Gc1(
+    pub fn GetRecipients_RecipientID1(
         &mut self,
         selector: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::RecipientID>,
     ) -> quest_hook::libil2cpp::Result<

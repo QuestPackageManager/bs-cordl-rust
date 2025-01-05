@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NativeTypeAttribute {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+    __cordl_parent: crate::System::Attribute,
     pub _Header_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Bindings+NativeTypeAttribute")]
 impl std::ops::Deref for crate::UnityEngine::Bindings::NativeTypeAttribute {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Attribute>;
+    type Target = crate::System::Attribute;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -47,7 +47,7 @@ impl crate::UnityEngine::Bindings::NativeTypeAttribute {
             .invoke_void(".ctor", (codegenOptions))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_CodegenOptions_Gc3(
+    pub fn New_CodegenOptions_Il2CppString3(
         codegenOptions: crate::UnityEngine::Bindings::CodegenOptions,
         intermediateStructName: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -59,7 +59,7 @@ impl crate::UnityEngine::Bindings::NativeTypeAttribute {
             .invoke_void(".ctor", (codegenOptions, intermediateStructName))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc2(
+    pub fn New_Il2CppString2(
         header: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -89,7 +89,7 @@ impl crate::UnityEngine::Bindings::NativeTypeAttribute {
             .invoke(".ctor", (codegenOptions))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_CodegenOptions_Gc3(
+    pub fn _ctor_CodegenOptions_Il2CppString3(
         &mut self,
         codegenOptions: crate::UnityEngine::Bindings::CodegenOptions,
         intermediateStructName: quest_hook::libil2cpp::Gc<
@@ -103,7 +103,7 @@ impl crate::UnityEngine::Bindings::NativeTypeAttribute {
             .invoke(".ctor", (codegenOptions, intermediateStructName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_Il2CppString2(
         &mut self,
         header: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LayoutUtility {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+UI+LayoutUtility")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+LayoutUtility")]
 impl std::ops::Deref for crate::UnityEngine::UI::LayoutUtility {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -49,8 +49,10 @@ impl crate::UnityEngine::UI::LayoutUtility {
     pub fn GetLayoutProperty_ByRefMut1(
         rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
         property: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement>,
-            f32,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement>,
+                f32,
+            >,
         >,
         defaultValue: f32,
         source: quest_hook::libil2cpp::ByRefMut<
@@ -61,11 +63,13 @@ impl crate::UnityEngine::UI::LayoutUtility {
             .invoke("GetLayoutProperty", (rect, property, defaultValue, source))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetLayoutProperty_Gc_Gc_f32_0(
+    pub fn GetLayoutProperty_RectTransform_Func_2_f32_0(
         rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
         property: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement>,
-            f32,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement>,
+                f32,
+            >,
         >,
         defaultValue: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {

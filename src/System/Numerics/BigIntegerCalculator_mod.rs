@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BigIntegerCalculator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Numerics+BigIntegerCalculator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Numerics+BigIntegerCalculator")]
 impl std::ops::Deref for crate::System::Numerics::BigIntegerCalculator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,7 +44,7 @@ impl crate::System::Numerics::BigIntegerCalculator {
             .invoke("AddSelf", (left, leftLength, right, rightLength))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Add_Gc1(
+    pub fn Add_Il2CppArray_Il2CppArray1(
         left: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         right: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     ) -> quest_hook::libil2cpp::Result<
@@ -55,7 +55,18 @@ impl crate::System::Numerics::BigIntegerCalculator {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Add", (left, right))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Add_i32_Gc_i32_Gc_i32_2(
+    pub fn Add_Il2CppArray_u32_0(
+        left: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        right: u32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u32>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Add", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Add_Il2CppObject_i32_Il2CppObject_i32_Il2CppObject_i32_2(
         left: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         leftLength: i32,
         right: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -65,17 +76,6 @@ impl crate::System::Numerics::BigIntegerCalculator {
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Add", (left, leftLength, right, rightLength, bits, bitsLength))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Add_u32_0(
-        left: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
-        right: u32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u32>,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Add", (left, right))?;
         Ok(__cordl_ret.into())
     }
     pub fn Compare(
@@ -108,7 +108,7 @@ impl crate::System::Numerics::BigIntegerCalculator {
             .invoke("DivideGuessTooBig", (q, valHi, valLo, divHi, divLo))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Divide_Gc1(
+    pub fn Divide_Il2CppArray_Il2CppArray1(
         left: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         right: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     ) -> quest_hook::libil2cpp::Result<
@@ -120,19 +120,7 @@ impl crate::System::Numerics::BigIntegerCalculator {
             .invoke("Divide", (left, right))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Divide_i32_Gc_i32_Gc_i32_2(
-        left: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        leftLength: i32,
-        right: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        rightLength: i32,
-        bits: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        bitsLength: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Divide", (left, leftLength, right, rightLength, bits, bitsLength))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Divide_u32_0(
+    pub fn Divide_Il2CppArray_u32_0(
         left: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         right: u32,
     ) -> quest_hook::libil2cpp::Result<
@@ -144,12 +132,24 @@ impl crate::System::Numerics::BigIntegerCalculator {
             .invoke("Divide", (left, right))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Divide_Il2CppObject_i32_Il2CppObject_i32_Il2CppObject_i32_2(
+        left: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        leftLength: i32,
+        right: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        rightLength: i32,
+        bits: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        bitsLength: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Divide", (left, leftLength, right, rightLength, bits, bitsLength))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn LeadingZeros(value: u32) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("LeadingZeros", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Multiply_Gc1(
+    pub fn Multiply_Il2CppArray_Il2CppArray1(
         left: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         right: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     ) -> quest_hook::libil2cpp::Result<
@@ -161,7 +161,19 @@ impl crate::System::Numerics::BigIntegerCalculator {
             .invoke("Multiply", (left, right))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Multiply_i32_Gc_i32_Gc_i32_2(
+    pub fn Multiply_Il2CppArray_u32_0(
+        left: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        right: u32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u32>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Multiply", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Multiply_Il2CppObject_i32_Il2CppObject_i32_Il2CppObject_i32_2(
         left: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         leftLength: i32,
         right: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -176,19 +188,7 @@ impl crate::System::Numerics::BigIntegerCalculator {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Multiply_u32_0(
-        left: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
-        right: u32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u32>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Multiply", (left, right))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Remainder_Gc1(
+    pub fn Remainder_Il2CppArray1(
         left: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         right: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     ) -> quest_hook::libil2cpp::Result<
@@ -208,7 +208,7 @@ impl crate::System::Numerics::BigIntegerCalculator {
             .invoke("Remainder", (left, right))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Square_Gc0(
+    pub fn Square_Il2CppArray0(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -218,7 +218,7 @@ impl crate::System::Numerics::BigIntegerCalculator {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Square", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Square_i32_Gc_i32_1(
+    pub fn Square_Il2CppObject_i32_Il2CppObject_i32_1(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         valueLength: i32,
         bits: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -254,7 +254,7 @@ impl crate::System::Numerics::BigIntegerCalculator {
             .invoke("SubtractDivisor", (left, leftLength, right, rightLength, q))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Subtract_Gc1(
+    pub fn Subtract_Il2CppArray_Il2CppArray1(
         left: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         right: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     ) -> quest_hook::libil2cpp::Result<
@@ -266,7 +266,19 @@ impl crate::System::Numerics::BigIntegerCalculator {
             .invoke("Subtract", (left, right))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Subtract_i32_Gc_i32_Gc_i32_2(
+    pub fn Subtract_Il2CppArray_u32_0(
+        left: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        right: u32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u32>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Subtract", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Subtract_Il2CppObject_i32_Il2CppObject_i32_Il2CppObject_i32_2(
         left: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         leftLength: i32,
         right: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -279,18 +291,6 @@ impl crate::System::Numerics::BigIntegerCalculator {
                 "Subtract",
                 (left, leftLength, right, rightLength, bits, bitsLength),
             )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Subtract_u32_0(
-        left: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
-        right: u32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<u32>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Subtract", (left, right))?;
         Ok(__cordl_ret.into())
     }
 }

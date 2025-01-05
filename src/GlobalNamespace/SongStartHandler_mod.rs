@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SongStartHandler {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IMultiplayerSessionManager,
     >,
@@ -13,11 +13,15 @@ pub struct SongStartHandler {
         crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel,
     >,
     pub _readyPlayers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::HashSet_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _started: bool,
     pub _startTime: i64,
-    pub setSongStartSyncTimeEvent: quest_hook::libil2cpp::Gc<i64>,
+    pub setSongStartSyncTimeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<i64>,
+    >,
 }
 #[cfg(feature = "SongStartHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -26,7 +30,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SongStartHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::SongStartHandler {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -170,7 +174,7 @@ impl crate::GlobalNamespace::SongStartHandler {
     }
     pub fn add_setSongStartSyncTimeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<i64>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i64>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -188,7 +192,7 @@ impl crate::GlobalNamespace::SongStartHandler {
     }
     pub fn remove_setSongStartSyncTimeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<i64>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i64>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -208,16 +212,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SongStartHand
     }
 }
 #[cfg(feature = "SongStartHandler")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::GlobalNamespace::SongStartHandler {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsRef<crate::System::IDisposable> for crate::GlobalNamespace::SongStartHandler {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "SongStartHandler")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::GlobalNamespace::SongStartHandler {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::SongStartHandler {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -184,16 +184,14 @@ impl crate::Unity::Profiling::ProfilerRecorder {
     }
 }
 #[cfg(feature = "Unity+Profiling+ProfilerRecorder")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::Unity::Profiling::ProfilerRecorder {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsRef<crate::System::IDisposable> for crate::Unity::Profiling::ProfilerRecorder {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         todo!()
     }
 }
 #[cfg(feature = "Unity+Profiling+ProfilerRecorder")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::Unity::Profiling::ProfilerRecorder {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsMut<crate::System::IDisposable> for crate::Unity::Profiling::ProfilerRecorder {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         todo!()
     }
 }

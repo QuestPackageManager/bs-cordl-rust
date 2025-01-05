@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AeadParameters {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub associatedText: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<u8>,
     >,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+AeadParameters")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Parameters::AeadParameters {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -60,7 +60,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::AeadParameters {
         > = __cordl_object.invoke("GetNonce", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Il2CppArray1(
         key: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
         >,
@@ -74,7 +74,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::AeadParameters {
             .invoke_void(".ctor", (key, macSize, nonce, associatedText))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_i32_Gc0(
+    pub fn New_KeyParameter_i32_Il2CppArray0(
         key: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
         >,
@@ -87,7 +87,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::AeadParameters {
             .invoke_void(".ctor", (key, macSize, nonce))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Il2CppArray1(
         &mut self,
         key: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
@@ -103,7 +103,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::AeadParameters {
             .invoke(".ctor", (key, macSize, nonce, associatedText))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_i32_Gc0(
+    pub fn _ctor_KeyParameter_i32_Il2CppArray0(
         &mut self,
         key: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
@@ -152,26 +152,16 @@ for crate::Org::BouncyCastle::Crypto::Parameters::AeadParameters {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+AeadParameters")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
-> for crate::Org::BouncyCastle::Crypto::Parameters::AeadParameters {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::ICipherParameters,
-    > {
+impl AsRef<crate::Org::BouncyCastle::Crypto::ICipherParameters>
+for crate::Org::BouncyCastle::Crypto::Parameters::AeadParameters {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::ICipherParameters {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+AeadParameters")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
-> for crate::Org::BouncyCastle::Crypto::Parameters::AeadParameters {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::ICipherParameters,
-    > {
+impl AsMut<crate::Org::BouncyCastle::Crypto::ICipherParameters>
+for crate::Org::BouncyCastle::Crypto::Parameters::AeadParameters {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::ICipherParameters {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HMac {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     pub digestSize: i32,
     pub blockLength: i32,
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Macs+HMac")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Macs::HMac {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -168,20 +168,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Crypto::Mac
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Macs+HMac")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>>
+impl AsRef<crate::Org::BouncyCastle::Crypto::IMac>
 for crate::Org::BouncyCastle::Crypto::Macs::HMac {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac> {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IMac {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Macs+HMac")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>>
+impl AsMut<crate::Org::BouncyCastle::Crypto::IMac>
 for crate::Org::BouncyCastle::Crypto::Macs::HMac {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac> {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IMac {
         unsafe { std::mem::transmute(self) }
     }
 }

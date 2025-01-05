@@ -2,9 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_PDGSession {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _pdgAssets: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_PDGAssetLink>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_PDGAssetLink>,
+        >,
     >,
     pub _pdgMaxProcessEvents: i32,
     pub _pdgQueryEvents: quest_hook::libil2cpp::Gc<
@@ -19,9 +21,7 @@ pub struct HEU_PDGSession {
     pub _pdgState: crate::HoudiniEngineUnity::HAPI_PDG_State,
     pub _pdgEventMessages: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     pub _eventMessageColorCode: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_PDGSession")]
@@ -31,7 +31,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_PDGSession")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_PDGSession {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

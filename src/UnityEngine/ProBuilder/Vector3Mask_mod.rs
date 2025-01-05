@@ -25,7 +25,7 @@ impl crate::UnityEngine::ProBuilder::Vector3Mask {
     pub const X: u8 = 1u8;
     pub const Y: u8 = 2u8;
     pub const Z: u8 = 4u8;
-    pub fn Equals_Gc1(
+    pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -220,20 +220,20 @@ impl crate::UnityEngine::ProBuilder::Vector3Mask {
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Vector3Mask")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vector3Mask>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Vector3Mask>>
 for crate::UnityEngine::ProBuilder::Vector3Mask {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vector3Mask> {
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Vector3Mask> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Vector3Mask")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vector3Mask>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Vector3Mask>>
 for crate::UnityEngine::ProBuilder::Vector3Mask {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vector3Mask> {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Vector3Mask> {
         todo!()
     }
 }

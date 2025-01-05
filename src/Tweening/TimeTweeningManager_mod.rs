@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimeTweeningManager {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Tweening::TweeningManager>,
+    __cordl_parent: crate::Tweening::TweeningManager,
 }
 #[cfg(feature = "Tweening+TimeTweeningManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Tweening+TimeTweeningManager")]
 impl std::ops::Deref for crate::Tweening::TimeTweeningManager {
-    type Target = quest_hook::libil2cpp::Gc<crate::Tweening::TweeningManager>;
+    type Target = crate::Tweening::TweeningManager;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

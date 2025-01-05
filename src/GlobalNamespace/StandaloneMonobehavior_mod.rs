@@ -2,8 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StandaloneMonobehavior {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
-    pub _readyTcs: quest_hook::libil2cpp::Gc<bool>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    pub _readyTcs: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::TaskCompletionSource_1<bool>,
+    >,
     pub _isRunning: bool,
     pub _startTime: f32,
     pub _lastFrameTimings: quest_hook::libil2cpp::Gc<
@@ -18,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "StandaloneMonobehavior")]
 impl std::ops::Deref for crate::GlobalNamespace::StandaloneMonobehavior {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -104,7 +106,9 @@ impl crate::GlobalNamespace::StandaloneMonobehavior {
     }
     pub fn RunAsyncCoroutine(
         &mut self,
-        tcs: quest_hook::libil2cpp::Gc<bool>,
+        tcs: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::TaskCompletionSource_1<bool>,
+        >,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
@@ -161,7 +165,9 @@ impl crate::GlobalNamespace::StandaloneMonobehavior {
     pub fn WhenReadyAsync(
         &mut self,
         action: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+            crate::System::Func_1<
+                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -231,22 +237,16 @@ for crate::GlobalNamespace::StandaloneMonobehavior {
     }
 }
 #[cfg(feature = "StandaloneMonobehavior")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IStandaloneMonobehavior>>
+impl AsRef<crate::GlobalNamespace::IStandaloneMonobehavior>
 for crate::GlobalNamespace::StandaloneMonobehavior {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IStandaloneMonobehavior> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IStandaloneMonobehavior {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "StandaloneMonobehavior")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IStandaloneMonobehavior>>
+impl AsMut<crate::GlobalNamespace::IStandaloneMonobehavior>
 for crate::GlobalNamespace::StandaloneMonobehavior {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IStandaloneMonobehavior,
-    > {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IStandaloneMonobehavior {
         unsafe { std::mem::transmute(self) }
     }
 }

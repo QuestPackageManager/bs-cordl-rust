@@ -2,15 +2,15 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TryExpression {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Expression,
-    >,
+    __cordl_parent: crate::System::Linq::Expressions::Expression,
     pub _Type_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _Body_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::System::Linq::Expressions::Expression,
     >,
     pub _Handlers_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::CatchBlock>,
+        crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::CatchBlock>,
+        >,
     >,
     pub _Finally_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::System::Linq::Expressions::Expression,
@@ -26,9 +26,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Linq+Expressions+TryExpression")]
 impl std::ops::Deref for crate::System::Linq::Expressions::TryExpression {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Expression,
-    >;
+    type Target = crate::System::Linq::Expressions::Expression;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -63,7 +61,9 @@ impl crate::System::Linq::Expressions::TryExpression {
         finally: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
         fault: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
         handlers: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::CatchBlock>,
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::CatchBlock>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -76,7 +76,9 @@ impl crate::System::Linq::Expressions::TryExpression {
         &mut self,
         body: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
         handlers: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::CatchBlock>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::CatchBlock>,
+            >,
         >,
         finally: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
         fault: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
@@ -98,7 +100,9 @@ impl crate::System::Linq::Expressions::TryExpression {
         finally: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
         fault: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
         handlers: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::CatchBlock>,
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::CatchBlock>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -151,14 +155,18 @@ impl crate::System::Linq::Expressions::TryExpression {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::CatchBlock>,
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::CatchBlock>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::CatchBlock>,
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::CatchBlock>,
+            >,
         > = __cordl_object.invoke("get_Handlers", ())?;
         Ok(__cordl_ret.into())
     }

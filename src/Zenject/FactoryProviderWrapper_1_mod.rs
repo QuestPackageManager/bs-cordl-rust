@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FactoryProviderWrapper_1<TContract: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _provider: quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
     pub _injectContext: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
     __cordl_phantom_TContract: std::marker::PhantomData<TContract>,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Zenject+FactoryProviderWrapper_1")]
 impl<TContract: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::FactoryProviderWrapper_1<TContract> {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -58,9 +58,7 @@ impl<
     }
     pub fn __zenCreate(
         P_0: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -113,34 +111,30 @@ for crate::Zenject::FactoryProviderWrapper_1<TContract> {
     }
 }
 #[cfg(feature = "Zenject+FactoryProviderWrapper_1")]
-impl<TContract: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<TContract>>
+impl<TContract: quest_hook::libil2cpp::Type> AsRef<crate::Zenject::IFactory>
 for crate::Zenject::FactoryProviderWrapper_1<TContract> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TContract> {
+    fn as_ref(&self) -> &crate::Zenject::IFactory {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+FactoryProviderWrapper_1")]
-impl<TContract: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<TContract>>
+impl<TContract: quest_hook::libil2cpp::Type> AsMut<crate::Zenject::IFactory>
 for crate::Zenject::FactoryProviderWrapper_1<TContract> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TContract> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IFactory {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+FactoryProviderWrapper_1")]
-impl<
-    TContract: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::IFactory>>
+impl<TContract: quest_hook::libil2cpp::Type> AsRef<crate::Zenject::IFactory_1<TContract>>
 for crate::Zenject::FactoryProviderWrapper_1<TContract> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::IFactory> {
+    fn as_ref(&self) -> &crate::Zenject::IFactory_1<TContract> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+FactoryProviderWrapper_1")]
-impl<
-    TContract: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::IFactory>>
+impl<TContract: quest_hook::libil2cpp::Type> AsMut<crate::Zenject::IFactory_1<TContract>>
 for crate::Zenject::FactoryProviderWrapper_1<TContract> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::IFactory> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IFactory_1<TContract> {
         unsafe { std::mem::transmute(self) }
     }
 }

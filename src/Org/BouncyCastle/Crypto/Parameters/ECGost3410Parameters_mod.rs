@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ECGost3410Parameters {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Parameters::ECNamedDomainParameters,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Crypto::Parameters::ECNamedDomainParameters,
     pub _publicKeyParamSet: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
     >,
@@ -24,9 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+ECGost3410Parameters")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Parameters::ECGost3410Parameters {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Parameters::ECNamedDomainParameters,
-    >;
+    type Target = crate::Org::BouncyCastle::Crypto::Parameters::ECNamedDomainParameters;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,30 +36,7 @@ for crate::Org::BouncyCastle::Crypto::Parameters::ECGost3410Parameters {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+ECGost3410Parameters")]
 impl crate::Org::BouncyCastle::Crypto::Parameters::ECGost3410Parameters {
-    pub fn New_Gc_Gc_Gc_Gc0(
-        dp: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::Parameters::ECNamedDomainParameters,
-        >,
-        publicKeyParamSet: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-        >,
-        digestParamSet: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-        >,
-        encryptionParamSet: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (dp, publicKeyParamSet, digestParamSet, encryptionParamSet),
-            )?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_Gc_Gc_Gc1(
+    pub fn New_ECDomainParameters1(
         dp: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters,
         >,
@@ -86,10 +59,33 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::ECGost3410Parameters {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc_Gc_Gc_Gc0(
-        &mut self,
+    pub fn New_ECNamedDomainParameters0(
         dp: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::ECNamedDomainParameters,
+        >,
+        publicKeyParamSet: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+        digestParamSet: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+        encryptionParamSet: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (dp, publicKeyParamSet, digestParamSet, encryptionParamSet),
+            )?;
+        Ok(__cordl_object.into())
+    }
+    pub fn _ctor_ECDomainParameters1(
+        &mut self,
+        dp: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters,
         >,
         publicKeyParamSet: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
@@ -111,10 +107,10 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::ECGost3410Parameters {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_Gc_Gc1(
+    pub fn _ctor_ECNamedDomainParameters0(
         &mut self,
         dp: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters,
+            crate::Org::BouncyCastle::Crypto::Parameters::ECNamedDomainParameters,
         >,
         publicKeyParamSet: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,

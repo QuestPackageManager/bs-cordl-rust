@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerOutroAnimationController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _outroPlayableDirector: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Playables::PlayableDirector,
     >,
@@ -10,23 +10,17 @@ pub struct MultiplayerOutroAnimationController {
         quest_hook::libil2cpp::Il2CppString,
     >,
     pub _playerTimelineTrackNames: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _ringTimelineTrackNames: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _localPlayerTimelinePropertyName: crate::UnityEngine::PropertyName,
     pub _playerTimelinePropertyNames: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::PropertyName>,
     >,
     pub _resultsTimelineTrackNames: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _resultsTimelinePropertyNames: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::PropertyName>,
@@ -34,9 +28,7 @@ pub struct MultiplayerOutroAnimationController {
     pub _badgeStartTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _badgeMidTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _badgeTimelineTrackNames: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _badgeTimelinePropertyNames: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::PropertyName>,
@@ -75,7 +67,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplayerOutroAnimationController")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerOutroAnimationController {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -115,9 +107,7 @@ impl crate::GlobalNamespace::MultiplayerOutroAnimationController {
     pub fn BindRingsAndAudio(
         &mut self,
         rings: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
         >,
         isMock: bool,
         isDuel: bool,

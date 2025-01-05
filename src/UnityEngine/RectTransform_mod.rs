@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RectTransform {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    __cordl_parent: crate::UnityEngine::Transform,
 }
 #[cfg(feature = "UnityEngine+RectTransform")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+RectTransform")]
 impl std::ops::Deref for crate::UnityEngine::RectTransform {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>;
+    type Target = crate::UnityEngine::Transform;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -538,7 +538,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct RectTransform_ReapplyDrivenProperties {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "UnityEngine+RectTransform+ReapplyDrivenProperties")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -548,7 +548,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+RectTransform+ReapplyDrivenProperties")]
 impl std::ops::Deref for crate::UnityEngine::RectTransform_ReapplyDrivenProperties {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

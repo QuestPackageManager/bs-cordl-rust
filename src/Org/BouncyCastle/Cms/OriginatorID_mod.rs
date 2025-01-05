@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OriginatorID {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::X509::Store::X509CertStoreSelector,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::X509::Store::X509CertStoreSelector,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+OriginatorID")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Cms+OriginatorID")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::OriginatorID {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::X509::Store::X509CertStoreSelector,
-    >;
+    type Target = crate::Org::BouncyCastle::X509::Store::X509CertStoreSelector;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

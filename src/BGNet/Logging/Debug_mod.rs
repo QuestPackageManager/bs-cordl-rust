@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Debug {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "BGNet+Logging+Debug")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BGNet+Logging+Debug")]
 impl std::ops::Deref for crate::BGNet::Logging::Debug {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -177,7 +177,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::BGNet::Logging::Debug_ILogger 
 #[repr(C)]
 #[derive(Debug)]
 pub struct Debug_LoggerLinkedList {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub logger: quest_hook::libil2cpp::Gc<crate::BGNet::Logging::Debug_ILogger>,
     pub next: quest_hook::libil2cpp::Gc<crate::BGNet::Logging::Debug_LoggerLinkedList>,
 }
@@ -188,7 +188,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BGNet+Logging+Debug+LoggerLinkedList")]
 impl std::ops::Deref for crate::BGNet::Logging::Debug_LoggerLinkedList {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

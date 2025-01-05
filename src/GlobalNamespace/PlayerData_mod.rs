@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _playerId_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
@@ -38,17 +38,25 @@ pub struct PlayerData {
         crate::GlobalNamespace::PlayerAllOverallStatsData,
     >,
     pub _levelsStatsData_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BeatmapKey,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerLevelStatsData>,
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::GlobalNamespace::BeatmapKey,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerLevelStatsData>,
+        >,
     >,
     pub _missionsStatsData_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerMissionStatsData>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerMissionStatsData>,
+        >,
     >,
     pub _showedMissionHelpIds_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _guestPlayerNames_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _colorSchemesSettings_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::ColorSchemesSettings,
@@ -57,7 +65,9 @@ pub struct PlayerData {
         crate::GlobalNamespace::OverrideEnvironmentSettings,
     >,
     pub _favoritesLevelIds_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::HashSet_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _multiplayerModeSettings_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MultiplayerModeSettings,
@@ -81,7 +91,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PlayerData")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -149,7 +159,7 @@ impl crate::GlobalNamespace::PlayerData {
         > = __cordl_object.invoke("GetOrCreatePlayerLevelStatsData", (beatmapKey))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetOrCreatePlayerLevelStatsData_Gc_BeatmapDifficulty_Gc1(
+    pub fn GetOrCreatePlayerLevelStatsData_Il2CppString_BeatmapDifficulty_BeatmapCharacteristicSO1(
         &mut self,
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         difficulty: crate::GlobalNamespace::BeatmapDifficulty,
@@ -310,7 +320,7 @@ impl crate::GlobalNamespace::PlayerData {
             .invoke("MissionHelpWasShowed", (missionHelp))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc_Gc_Gc0(
+    pub fn New_BeatmapCharacteristicSO_ColorSchemesSettings_OverrideEnvironmentSettings0(
         playerId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         playerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         lastSelectedBeatmapCharacteristic: quest_hook::libil2cpp::Gc<
@@ -338,7 +348,7 @@ impl crate::GlobalNamespace::PlayerData {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New__cordl_bool__cordl_bool__cordl_bool__cordl_bool__cordl_bool_i32_Gc_Gc_BeatmapDifficulty_Gc_Gc_Gc_Gc_Gc_Gc_Gc_Gc_Gc_Gc_Gc_Gc_Gc_i32_Gc_UserAgeCategory_PlayerSensitivityFlag1(
+    pub fn New__cordl_bool__cordl_bool__cordl_bool__cordl_bool__cordl_bool_i32_Il2CppString_PlayerAgreements_BeatmapDifficulty_BeatmapCharacteristicSO_GameplayModifiers_PlayerSpecificSettings_PracticeSettings_PlayerAllOverallStatsData_List_1_List_1_List_1_List_1_ColorSchemesSettings_OverrideEnvironmentSettings_List_1_MultiplayerModeSettings_i32_Il2CppString_UserAgeCategory_PlayerSensitivityFlag1(
         playerId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         playerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         shouldShowTutorialPrompt: bool,
@@ -370,16 +380,24 @@ impl crate::GlobalNamespace::PlayerData {
             crate::GlobalNamespace::PlayerAllOverallStatsData,
         >,
         levelsStatsData: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerLevelStatsData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerLevelStatsData>,
+            >,
         >,
         missionsStatsData: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerMissionStatsData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerMissionStatsData>,
+            >,
         >,
         showedMissionHelpIds: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         guestPlayerNames: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         colorSchemesSettings: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ColorSchemesSettings,
@@ -388,7 +406,9 @@ impl crate::GlobalNamespace::PlayerData {
             crate::GlobalNamespace::OverrideEnvironmentSettings,
         >,
         favoritesLevelIds: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         multiplayerModeSettings: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerModeSettings,
@@ -581,7 +601,7 @@ impl crate::GlobalNamespace::PlayerData {
             .invoke("WasMissionHelpShowed", (missionHelp))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_Gc0(
+    pub fn _ctor_BeatmapCharacteristicSO_ColorSchemesSettings_OverrideEnvironmentSettings0(
         &mut self,
         playerId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         playerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -611,7 +631,7 @@ impl crate::GlobalNamespace::PlayerData {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor__cordl_bool__cordl_bool__cordl_bool__cordl_bool__cordl_bool_i32_Gc_Gc_BeatmapDifficulty_Gc_Gc_Gc_Gc_Gc_Gc_Gc_Gc_Gc_Gc_Gc_Gc_Gc_i32_Gc_UserAgeCategory_PlayerSensitivityFlag1(
+    pub fn _ctor__cordl_bool__cordl_bool__cordl_bool__cordl_bool__cordl_bool_i32_Il2CppString_PlayerAgreements_BeatmapDifficulty_BeatmapCharacteristicSO_GameplayModifiers_PlayerSpecificSettings_PracticeSettings_PlayerAllOverallStatsData_List_1_List_1_List_1_List_1_ColorSchemesSettings_OverrideEnvironmentSettings_List_1_MultiplayerModeSettings_i32_Il2CppString_UserAgeCategory_PlayerSensitivityFlag1(
         &mut self,
         playerId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         playerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -644,16 +664,24 @@ impl crate::GlobalNamespace::PlayerData {
             crate::GlobalNamespace::PlayerAllOverallStatsData,
         >,
         levelsStatsData: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerLevelStatsData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerLevelStatsData>,
+            >,
         >,
         missionsStatsData: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerMissionStatsData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerMissionStatsData>,
+            >,
         >,
         showedMissionHelpIds: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         guestPlayerNames: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         colorSchemesSettings: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ColorSchemesSettings,
@@ -662,7 +690,9 @@ impl crate::GlobalNamespace::PlayerData {
             crate::GlobalNamespace::OverrideEnvironmentSettings,
         >,
         favoritesLevelIds: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         multiplayerModeSettings: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerModeSettings,
@@ -816,14 +846,18 @@ impl crate::GlobalNamespace::PlayerData {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::HashSet_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::HashSet_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = __cordl_object.invoke("get_favoritesLevelIds", ())?;
         Ok(__cordl_ret.into())
     }
@@ -844,14 +878,18 @@ impl crate::GlobalNamespace::PlayerData {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = __cordl_object.invoke("get_guestPlayerNames", ())?;
         Ok(__cordl_ret.into())
     }
@@ -882,16 +920,20 @@ impl crate::GlobalNamespace::PlayerData {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapKey,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerLevelStatsData>,
+            crate::System::Collections::Generic::Dictionary_2<
+                crate::GlobalNamespace::BeatmapKey,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerLevelStatsData>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapKey,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerLevelStatsData>,
+            crate::System::Collections::Generic::Dictionary_2<
+                crate::GlobalNamespace::BeatmapKey,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerLevelStatsData>,
+            >,
         > = __cordl_object.invoke("get_levelsStatsData", ())?;
         Ok(__cordl_ret.into())
     }
@@ -899,14 +941,18 @@ impl crate::GlobalNamespace::PlayerData {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerMissionStatsData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerMissionStatsData>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerMissionStatsData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerMissionStatsData>,
+            >,
         > = __cordl_object.invoke("get_missionsStatsData", ())?;
         Ok(__cordl_ret.into())
     }
@@ -1048,14 +1094,18 @@ impl crate::GlobalNamespace::PlayerData {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = __cordl_object.invoke("get_showedMissionHelpIds", ())?;
         Ok(__cordl_ret.into())
     }
@@ -1182,7 +1232,9 @@ impl crate::GlobalNamespace::PlayerData {
     pub fn set_favoritesLevelIds(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::HashSet_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1206,7 +1258,9 @@ impl crate::GlobalNamespace::PlayerData {
     pub fn set_guestPlayerNames(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1241,8 +1295,10 @@ impl crate::GlobalNamespace::PlayerData {
     pub fn set_levelsStatsData(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapKey,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerLevelStatsData>,
+            crate::System::Collections::Generic::Dictionary_2<
+                crate::GlobalNamespace::BeatmapKey,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerLevelStatsData>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1255,7 +1311,9 @@ impl crate::GlobalNamespace::PlayerData {
     pub fn set_missionsStatsData(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerMissionStatsData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerMissionStatsData>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1393,7 +1451,9 @@ impl crate::GlobalNamespace::PlayerData {
     pub fn set_showedMissionHelpIds(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

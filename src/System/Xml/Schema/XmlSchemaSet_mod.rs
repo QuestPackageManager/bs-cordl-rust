@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaSet {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
     pub schemaNames: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaNames>,
     pub schemas: quest_hook::libil2cpp::Gc<crate::System::Collections::SortedList>,
@@ -59,7 +59,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlSchemaSet")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaSet {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -98,32 +98,22 @@ impl crate::System::Xml::Schema::XmlSchemaSet {
             .invoke("AddToTable", (table, qname, item))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Add_Gc0(
+    pub fn Add_Il2CppString_XmlReader_Hashtable3(
         &mut self,
-        schemas: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
+        targetNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
+        validatedNamespaces: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Hashtable,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Add", (schemas))?;
+            .invoke("Add", (targetNamespace, reader, validatedNamespaces))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Add_Gc1(
-        &mut self,
-        schema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchema,
-        > = __cordl_object.invoke("Add", (schema))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Add_Gc2(
+    pub fn Add_Il2CppString_XmlSchema2(
         &mut self,
         targetNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         schema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
@@ -138,19 +128,29 @@ impl crate::System::Xml::Schema::XmlSchemaSet {
         > = __cordl_object.invoke("Add", (targetNamespace, schema))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Add_Gc_Gc3(
+    pub fn Add_XmlSchema1(
         &mut self,
-        targetNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
-        validatedNamespaces: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Hashtable,
-        >,
+        schema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchema,
+        > = __cordl_object.invoke("Add", (schema))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Add_XmlSchemaSet0(
+        &mut self,
+        schemas: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Add", (targetNamespace, reader, validatedNamespaces))?;
+            .invoke("Add", (schemas))?;
         Ok(__cordl_ret.into())
     }
     pub fn ClearTables(
@@ -198,7 +198,7 @@ impl crate::System::Xml::Schema::XmlSchemaSet {
         &mut self,
         schemas: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
+                *mut crate::System::Xml::Schema::XmlSchema,
             >,
         >,
         index: i32,
@@ -332,7 +332,7 @@ impl crate::System::Xml::Schema::XmlSchemaSet {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_XmlNameTable1(
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -475,7 +475,7 @@ impl crate::System::Xml::Schema::XmlSchemaSet {
         > = __cordl_object.invoke("Schemas", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Schemas_Gc1(
+    pub fn Schemas_Il2CppString1(
         &mut self,
         targetNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -521,7 +521,7 @@ impl crate::System::Xml::Schema::XmlSchemaSet {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_XmlNameTable1(
         &mut self,
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

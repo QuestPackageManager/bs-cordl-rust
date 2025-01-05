@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CacheInitialization {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+Initialization+CacheInitialization")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+AddressableAssets+Initialization+CacheInitialization")]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -99,30 +99,20 @@ for crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization {
     }
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+Initialization+CacheInitialization")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ResourceManagement::Util::IInitializableObject,
-    >,
-> for crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization {
+impl AsRef<crate::UnityEngine::ResourceManagement::Util::IInitializableObject>
+for crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ResourceManagement::Util::IInitializableObject,
-    > {
+    ) -> &crate::UnityEngine::ResourceManagement::Util::IInitializableObject {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+Initialization+CacheInitialization")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ResourceManagement::Util::IInitializableObject,
-    >,
-> for crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization {
+impl AsMut<crate::UnityEngine::ResourceManagement::Util::IInitializableObject>
+for crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ResourceManagement::Util::IInitializableObject,
-    > {
+    ) -> &mut crate::UnityEngine::ResourceManagement::Util::IInitializableObject {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -132,8 +122,10 @@ impl AsMut<
 #[repr(C)]
 #[derive(Debug)]
 pub struct CacheInitialization_CacheInitOp {
-    __cordl_parent: quest_hook::libil2cpp::Gc<bool>,
-    pub m_Callback: quest_hook::libil2cpp::Gc<bool>,
+    __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
+        bool,
+    >,
+    pub m_Callback: quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,
     pub m_UpdateRequired: bool,
 }
 #[cfg(
@@ -149,7 +141,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization_CacheInitOp {
-    type Target = quest_hook::libil2cpp::Gc<bool>;
+    type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
+        bool,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -179,7 +173,7 @@ impl crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization_
     }
     pub fn Init(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<bool>,
+        callback: quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -239,30 +233,20 @@ for crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization_C
 #[cfg(
     feature = "UnityEngine+AddressableAssets+Initialization+CacheInitialization+CacheInitOp"
 )]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::ResourceManagement::IUpdateReceiver>,
->
+impl AsRef<crate::UnityEngine::ResourceManagement::IUpdateReceiver>
 for crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization_CacheInitOp {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ResourceManagement::IUpdateReceiver,
-    > {
+    fn as_ref(&self) -> &crate::UnityEngine::ResourceManagement::IUpdateReceiver {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(
     feature = "UnityEngine+AddressableAssets+Initialization+CacheInitialization+CacheInitOp"
 )]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::ResourceManagement::IUpdateReceiver>,
->
+impl AsMut<crate::UnityEngine::ResourceManagement::IUpdateReceiver>
 for crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization_CacheInitOp {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ResourceManagement::IUpdateReceiver,
-    > {
+    ) -> &mut crate::UnityEngine::ResourceManagement::IUpdateReceiver {
         unsafe { std::mem::transmute(self) }
     }
 }

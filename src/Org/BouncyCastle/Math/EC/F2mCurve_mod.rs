@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct F2mCurve {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Math::EC::AbstractF2mCurve,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Math::EC::AbstractF2mCurve,
     pub m: i32,
     pub k1: i32,
     pub k2: i32,
@@ -20,9 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Math+EC+F2mCurve")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::F2mCurve {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Math::EC::AbstractF2mCurve,
-    >;
+    type Target = crate::Org::BouncyCastle::Math::EC::AbstractF2mCurve;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -55,7 +51,7 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
         &mut self,
         points: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
+                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
             >,
         >,
         off: i32,
@@ -86,15 +82,13 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
         > = __cordl_object.invoke("CreateDefaultMultiplier", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateRawPoint_Gc__cordl_bool1(
+    pub fn CreateRawPoint_Il2CppArray__cordl_bool1(
         &mut self,
         x: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECFieldElement>,
         y: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECFieldElement>,
         zs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-                >,
+                *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
             >,
         >,
         withCompression: bool,
@@ -146,7 +140,7 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
         let __cordl_ret: bool = __cordl_object.invoke("IsTrinomial", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc_Gc0(
+    pub fn New_BigInteger_BigInteger0(
         m: i32,
         k: i32,
         a: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -158,7 +152,7 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
             .invoke_void(".ctor", (m, k, a, b))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc_Gc_Gc1(
+    pub fn New_BigInteger_BigInteger_BigInteger_BigInteger1(
         m: i32,
         k: i32,
         a: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -172,7 +166,7 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
             .invoke_void(".ctor", (m, k, a, b, order, cofactor))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_i32_Gc_Gc2(
+    pub fn New_i32_i32_BigInteger_BigInteger2(
         m: i32,
         k1: i32,
         k2: i32,
@@ -186,7 +180,7 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
             .invoke_void(".ctor", (m, k1, k2, k3, a, b))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_i32_Gc_Gc_Gc_Gc3(
+    pub fn New_i32_i32_BigInteger_BigInteger_BigInteger_BigInteger3(
         m: i32,
         k1: i32,
         k2: i32,
@@ -202,7 +196,7 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
             .invoke_void(".ctor", (m, k1, k2, k3, a, b, order, cofactor))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_i32_Gc_Gc_Gc_Gc4(
+    pub fn New_i32_i32_ECFieldElement_ECFieldElement_BigInteger_BigInteger4(
         m: i32,
         k1: i32,
         k2: i32,
@@ -229,7 +223,7 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
             .invoke("SupportsCoordinateSystem", (coord))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc0(
+    pub fn _ctor_BigInteger_BigInteger0(
         &mut self,
         m: i32,
         k: i32,
@@ -243,7 +237,7 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
             .invoke(".ctor", (m, k, a, b))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_Gc_Gc1(
+    pub fn _ctor_BigInteger_BigInteger_BigInteger_BigInteger1(
         &mut self,
         m: i32,
         k: i32,
@@ -259,7 +253,7 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
             .invoke(".ctor", (m, k, a, b, order, cofactor))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_i32_Gc_Gc2(
+    pub fn _ctor_i32_i32_BigInteger_BigInteger2(
         &mut self,
         m: i32,
         k1: i32,
@@ -275,7 +269,7 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
             .invoke(".ctor", (m, k1, k2, k3, a, b))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_i32_Gc_Gc_Gc_Gc3(
+    pub fn _ctor_i32_i32_BigInteger_BigInteger_BigInteger_BigInteger3(
         &mut self,
         m: i32,
         k1: i32,
@@ -293,7 +287,7 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
             .invoke(".ctor", (m, k1, k2, k3, a, b, order, cofactor))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_i32_Gc_Gc_Gc_Gc4(
+    pub fn _ctor_i32_i32_ECFieldElement_ECFieldElement_BigInteger_BigInteger4(
         &mut self,
         m: i32,
         k1: i32,
@@ -373,9 +367,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Math::EC::F
 #[repr(C)]
 #[derive(Debug)]
 pub struct F2mCurve_DefaultF2mLookupTable {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable,
     pub m_outer: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::F2mCurve>,
     pub m_table: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
     pub m_size: i32,
@@ -389,9 +381,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Math+EC+F2mCurve+DefaultF2mLookupTable")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable,
-    >;
+    type Target = crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

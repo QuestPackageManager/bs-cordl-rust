@@ -2,17 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusLevelProductPacksSO {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PersistentScriptableObject,
-    >,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _levelPackProductData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackProductData,
     >,
     pub _levelPackRedirectionData: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackRedirectionData,
-            >,
+            *mut crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackRedirectionData,
         >,
     >,
 }
@@ -23,9 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OculusLevelProductPacksSO")]
 impl std::ops::Deref for crate::GlobalNamespace::OculusLevelProductPacksSO {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PersistentScriptableObject,
-    >;
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -90,8 +84,10 @@ impl crate::GlobalNamespace::OculusLevelProductPacksSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackRedirectionData,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackRedirectionData,
+                >,
             >,
         >,
     > {
@@ -99,8 +95,10 @@ impl crate::GlobalNamespace::OculusLevelProductPacksSO {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackRedirectionData,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackRedirectionData,
+                >,
             >,
         > = __cordl_object.invoke("get_levelPackRedirectionData", ())?;
         Ok(__cordl_ret.into())
@@ -118,7 +116,7 @@ for crate::GlobalNamespace::OculusLevelProductPacksSO {
 }
 #[cfg(feature = "OculusLevelProductPacksSO")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::GlobalNamespace::ILevelPackProductDataContainer_2<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackProductData,
         >,
@@ -129,7 +127,7 @@ impl AsRef<
 > for crate::GlobalNamespace::OculusLevelProductPacksSO {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::GlobalNamespace::ILevelPackProductDataContainer_2<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackProductData,
         >,
@@ -142,7 +140,7 @@ impl AsRef<
 }
 #[cfg(feature = "OculusLevelProductPacksSO")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::GlobalNamespace::ILevelPackProductDataContainer_2<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackProductData,
         >,
@@ -153,7 +151,7 @@ impl AsMut<
 > for crate::GlobalNamespace::OculusLevelProductPacksSO {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::GlobalNamespace::ILevelPackProductDataContainer_2<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackProductData,
         >,

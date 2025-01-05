@@ -9,7 +9,7 @@ pub struct PoolableMemoryPool_6<
     TParam5: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Zenject::MemoryPool_6<
         TParam1,
         TParam2,
         TParam3,
@@ -47,7 +47,7 @@ for crate::Zenject::PoolableMemoryPool_6<
     TParam5,
     TValue,
 > {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Zenject::MemoryPool_6<
         TParam1,
         TParam2,
         TParam3,
@@ -174,9 +174,7 @@ impl<
     }
     pub fn __zenCreate(
         P_0: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

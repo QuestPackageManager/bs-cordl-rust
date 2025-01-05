@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CrossAppDomainChannel {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainChannel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainChannel")]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Channels::CrossAppDomainChannel {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -127,78 +127,48 @@ for crate::System::Runtime::Remoting::Channels::CrossAppDomainChannel {
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainChannel")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Channels::IChannel>,
-> for crate::System::Runtime::Remoting::Channels::CrossAppDomainChannel {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Remoting::Channels::IChannel,
-    > {
+impl AsRef<crate::System::Runtime::Remoting::Channels::IChannel>
+for crate::System::Runtime::Remoting::Channels::CrossAppDomainChannel {
+    fn as_ref(&self) -> &crate::System::Runtime::Remoting::Channels::IChannel {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainChannel")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Channels::IChannel>,
-> for crate::System::Runtime::Remoting::Channels::CrossAppDomainChannel {
+impl AsMut<crate::System::Runtime::Remoting::Channels::IChannel>
+for crate::System::Runtime::Remoting::Channels::CrossAppDomainChannel {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Remoting::Channels::IChannel {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainChannel")]
+impl AsRef<crate::System::Runtime::Remoting::Channels::IChannelReceiver>
+for crate::System::Runtime::Remoting::Channels::CrossAppDomainChannel {
+    fn as_ref(&self) -> &crate::System::Runtime::Remoting::Channels::IChannelReceiver {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainChannel")]
+impl AsMut<crate::System::Runtime::Remoting::Channels::IChannelReceiver>
+for crate::System::Runtime::Remoting::Channels::CrossAppDomainChannel {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Remoting::Channels::IChannel,
-    > {
+    ) -> &mut crate::System::Runtime::Remoting::Channels::IChannelReceiver {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainChannel")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Remoting::Channels::IChannelReceiver,
-    >,
-> for crate::System::Runtime::Remoting::Channels::CrossAppDomainChannel {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Remoting::Channels::IChannelReceiver,
-    > {
+impl AsRef<crate::System::Runtime::Remoting::Channels::IChannelSender>
+for crate::System::Runtime::Remoting::Channels::CrossAppDomainChannel {
+    fn as_ref(&self) -> &crate::System::Runtime::Remoting::Channels::IChannelSender {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainChannel")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Remoting::Channels::IChannelReceiver,
-    >,
-> for crate::System::Runtime::Remoting::Channels::CrossAppDomainChannel {
+impl AsMut<crate::System::Runtime::Remoting::Channels::IChannelSender>
+for crate::System::Runtime::Remoting::Channels::CrossAppDomainChannel {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Remoting::Channels::IChannelReceiver,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainChannel")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Channels::IChannelSender>,
-> for crate::System::Runtime::Remoting::Channels::CrossAppDomainChannel {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Remoting::Channels::IChannelSender,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainChannel")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Channels::IChannelSender>,
-> for crate::System::Runtime::Remoting::Channels::CrossAppDomainChannel {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Remoting::Channels::IChannelSender,
-    > {
+    ) -> &mut crate::System::Runtime::Remoting::Channels::IChannelSender {
         unsafe { std::mem::transmute(self) }
     }
 }

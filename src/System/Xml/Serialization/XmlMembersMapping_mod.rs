@@ -2,15 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlMembersMapping {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Serialization::XmlMapping,
-    >,
+    __cordl_parent: crate::System::Xml::Serialization::XmlMapping,
     pub _hasWrapperElement: bool,
     pub _mapping: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Xml::Serialization::XmlMemberMapping,
-            >,
+            *mut crate::System::Xml::Serialization::XmlMemberMapping,
         >,
     >,
 }
@@ -21,9 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Serialization+XmlMembersMapping")]
 impl std::ops::Deref for crate::System::Xml::Serialization::XmlMembersMapping {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Serialization::XmlMapping,
-    >;
+    type Target = crate::System::Xml::Serialization::XmlMapping;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

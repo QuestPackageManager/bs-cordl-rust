@@ -2,9 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SpecialEventsFilter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _eventTypesToFilter: quest_hook::libil2cpp::Gc<
-        crate::BeatmapSaveDataCommon::BeatmapEventType,
+        crate::System::Collections::Generic::HashSet_1<
+            crate::BeatmapSaveDataCommon::BeatmapEventType,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion4+SpecialEventsFilter")]
@@ -14,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapDataLoaderVersion4+SpecialEventsFilter")]
 impl std::ops::Deref for crate::BeatmapDataLoaderVersion4::SpecialEventsFilter {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

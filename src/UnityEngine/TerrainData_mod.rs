@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TerrainData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    __cordl_parent: crate::UnityEngine::Object,
 }
 #[cfg(feature = "UnityEngine+TerrainData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+TerrainData")]
 impl std::ops::Deref for crate::UnityEngine::TerrainData {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>;
+    type Target = crate::UnityEngine::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -383,18 +383,14 @@ impl crate::UnityEngine::TerrainData {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainLayer>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::TerrainLayer>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainLayer>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::TerrainLayer>,
         > = __cordl_object.invoke("get_terrainLayers", ())?;
         Ok(__cordl_ret.into())
     }
@@ -417,18 +413,14 @@ impl crate::UnityEngine::TerrainData {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::TreePrototype>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::TreePrototype>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::TreePrototype>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::TreePrototype>,
         > = __cordl_object.invoke("get_treePrototypes", ())?;
         Ok(__cordl_ret.into())
     }
@@ -436,18 +428,14 @@ impl crate::UnityEngine::TerrainData {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Terrain>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Terrain>,
         > = __cordl_object.invoke("get_users", ())?;
         Ok(__cordl_ret.into())
     }
@@ -476,9 +464,7 @@ impl crate::UnityEngine::TerrainData {
     pub fn set_detailPrototypes(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::DetailPrototype>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::DetailPrototype>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -535,9 +521,7 @@ impl crate::UnityEngine::TerrainData {
     pub fn set_terrainLayers(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainLayer>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::TerrainLayer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -550,9 +534,7 @@ impl crate::UnityEngine::TerrainData {
     pub fn set_treePrototypes(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::TreePrototype>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::TreePrototype>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

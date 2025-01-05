@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Lexer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub pos: i32,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Http+Headers+Lexer")]
 impl std::ops::Deref for crate::System::Net::Http::Headers::Lexer {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -158,7 +158,7 @@ impl crate::System::Net::Http::Headers::Lexer {
             .invoke("ScanCommentOptional", (value, readToken))?;
         Ok(__cordl_ret.into())
     }
-    pub fn TryGetDateValue_Gc1(
+    pub fn TryGetDateValue_Il2CppString1(
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::ByRefMut<crate::System::DateTimeOffset>,
     ) -> quest_hook::libil2cpp::Result<bool> {

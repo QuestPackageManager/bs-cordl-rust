@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SceneManager {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+SceneManagement+SceneManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+SceneManagement+SceneManager")]
 impl std::ops::Deref for crate::UnityEngine::SceneManagement::SceneManager {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -118,7 +118,7 @@ impl crate::UnityEngine::SceneManagement::SceneManager {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn LoadSceneAsync_Gc3(
+    pub fn LoadSceneAsync_Il2CppString3(
         sceneName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
@@ -127,7 +127,7 @@ impl crate::UnityEngine::SceneManagement::SceneManager {
             .invoke("LoadSceneAsync", (sceneName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn LoadSceneAsync_Gc_LoadSceneMode2(
+    pub fn LoadSceneAsync_Il2CppString_LoadSceneMode2(
         sceneName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         mode: crate::UnityEngine::SceneManagement::LoadSceneMode,
     ) -> quest_hook::libil2cpp::Result<
@@ -137,7 +137,7 @@ impl crate::UnityEngine::SceneManagement::SceneManager {
             .invoke("LoadSceneAsync", (sceneName, mode))?;
         Ok(__cordl_ret.into())
     }
-    pub fn LoadSceneAsync_Gc_LoadSceneParameters4(
+    pub fn LoadSceneAsync_Il2CppString_LoadSceneParameters4(
         sceneName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         parameters: crate::UnityEngine::SceneManagement::LoadSceneParameters,
     ) -> quest_hook::libil2cpp::Result<
@@ -167,14 +167,14 @@ impl crate::UnityEngine::SceneManagement::SceneManager {
             .invoke("LoadSceneAsync", (sceneBuildIndex, parameters))?;
         Ok(__cordl_ret.into())
     }
-    pub fn LoadScene_Gc1(
+    pub fn LoadScene_Il2CppString1(
         sceneName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("LoadScene", (sceneName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn LoadScene_Gc_LoadSceneMode0(
+    pub fn LoadScene_Il2CppString_LoadSceneMode0(
         sceneName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         mode: crate::UnityEngine::SceneManagement::LoadSceneMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -182,7 +182,7 @@ impl crate::UnityEngine::SceneManagement::SceneManager {
             .invoke("LoadScene", (sceneName, mode))?;
         Ok(__cordl_ret.into())
     }
-    pub fn LoadScene_Gc_LoadSceneParameters2(
+    pub fn LoadScene_Il2CppString_LoadSceneParameters2(
         sceneName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         parameters: crate::UnityEngine::SceneManagement::LoadSceneParameters,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::SceneManagement::Scene> {
@@ -283,8 +283,10 @@ impl crate::UnityEngine::SceneManagement::SceneManager {
     }
     pub fn add_sceneLoaded(
         value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::SceneManagement::Scene,
-            crate::UnityEngine::SceneManagement::LoadSceneMode,
+            crate::UnityEngine::Events::UnityAction_2<
+                crate::UnityEngine::SceneManagement::Scene,
+                crate::UnityEngine::SceneManagement::LoadSceneMode,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -292,7 +294,11 @@ impl crate::UnityEngine::SceneManagement::SceneManager {
         Ok(__cordl_ret.into())
     }
     pub fn add_sceneUnloaded(
-        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::SceneManagement::Scene>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Events::UnityAction_1<
+                crate::UnityEngine::SceneManagement::Scene,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("add_sceneUnloaded", (value))?;
@@ -310,8 +316,10 @@ impl crate::UnityEngine::SceneManagement::SceneManager {
     }
     pub fn remove_sceneLoaded(
         value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::SceneManagement::Scene,
-            crate::UnityEngine::SceneManagement::LoadSceneMode,
+            crate::UnityEngine::Events::UnityAction_2<
+                crate::UnityEngine::SceneManagement::Scene,
+                crate::UnityEngine::SceneManagement::LoadSceneMode,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -319,7 +327,11 @@ impl crate::UnityEngine::SceneManagement::SceneManager {
         Ok(__cordl_ret.into())
     }
     pub fn remove_sceneUnloaded(
-        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::SceneManagement::Scene>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Events::UnityAction_1<
+                crate::UnityEngine::SceneManagement::Scene,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("remove_sceneUnloaded", (value))?;

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_SessionBase {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _sessionData: quest_hook::libil2cpp::Gc<
         crate::HoudiniEngineUnity::HEU_SessionData,
     >,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_SessionBase")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_SessionBase {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -721,7 +721,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         attributeNames: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    *mut quest_hook::libil2cpp::Il2CppString,
                 >,
             >,
         >,
@@ -2471,9 +2471,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             crate::HoudiniEngineUnity::HAPI_AttributeInfo,
         >,
         data: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
         start: i32,
         length: i32,
@@ -2741,7 +2739,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             .invoke("SetParamNodeValue", (nodeID, paramName, nodeValueID))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetParamStringValue_Gc1(
+    pub fn SetParamStringValue_Il2CppString1(
         &mut self,
         nodeID: i32,
         parmName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

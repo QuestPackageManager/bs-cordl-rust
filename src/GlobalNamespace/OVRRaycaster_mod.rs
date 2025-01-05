@@ -2,12 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRRaycaster {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::GraphicRaycaster>,
+    __cordl_parent: crate::UnityEngine::UI::GraphicRaycaster,
     pub pointer: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub sortOrder: i32,
     pub m_Canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
     pub m_RaycastResults: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRRaycaster_RaycastHit,
+        crate::System::Collections::Generic::List_1<
+            crate::GlobalNamespace::OVRRaycaster_RaycastHit,
+        >,
     >,
 }
 #[cfg(feature = "OVRRaycaster")]
@@ -17,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRRaycaster")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRRaycaster {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::GraphicRaycaster>;
+    type Target = crate::UnityEngine::UI::GraphicRaycaster;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -48,7 +50,9 @@ impl crate::GlobalNamespace::OVRRaycaster {
         canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
         ray: crate::UnityEngine::Ray,
         results: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::OVRRaycaster_RaycastHit,
+            crate::System::Collections::Generic::List_1<
+                crate::GlobalNamespace::OVRRaycaster_RaycastHit,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -98,7 +102,9 @@ impl crate::GlobalNamespace::OVRRaycaster {
             crate::UnityEngine::EventSystems::PointerEventData,
         >,
         resultAppendList: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::RaycastResult,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::EventSystems::RaycastResult,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -108,13 +114,15 @@ impl crate::GlobalNamespace::OVRRaycaster {
             .invoke("RaycastPointer", (eventData, resultAppendList))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Raycast_Gc_Gc1(
+    pub fn Raycast_PointerEventData_List_1_1(
         &mut self,
         eventData: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::EventSystems::PointerEventData,
         >,
         resultAppendList: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::RaycastResult,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::EventSystems::RaycastResult,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -130,7 +138,9 @@ impl crate::GlobalNamespace::OVRRaycaster {
             crate::UnityEngine::EventSystems::PointerEventData,
         >,
         resultAppendList: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::RaycastResult,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::EventSystems::RaycastResult,
+            >,
         >,
         ray: crate::UnityEngine::Ray,
         checkForBlocking: bool,
@@ -204,50 +214,30 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRRaycaster 
     }
 }
 #[cfg(feature = "OVRRaycaster")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
-> for crate::GlobalNamespace::OVRRaycaster {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IEventSystemHandler,
-    > {
+impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::GlobalNamespace::OVRRaycaster {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OVRRaycaster")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
-> for crate::GlobalNamespace::OVRRaycaster {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IEventSystemHandler,
-    > {
+impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::GlobalNamespace::OVRRaycaster {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OVRRaycaster")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerEnterHandler>,
-> for crate::GlobalNamespace::OVRRaycaster {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerEnterHandler,
-    > {
+impl AsRef<crate::UnityEngine::EventSystems::IPointerEnterHandler>
+for crate::GlobalNamespace::OVRRaycaster {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerEnterHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OVRRaycaster")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerEnterHandler>,
-> for crate::GlobalNamespace::OVRRaycaster {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerEnterHandler,
-    > {
+impl AsMut<crate::UnityEngine::EventSystems::IPointerEnterHandler>
+for crate::GlobalNamespace::OVRRaycaster {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerEnterHandler {
         unsafe { std::mem::transmute(self) }
     }
 }

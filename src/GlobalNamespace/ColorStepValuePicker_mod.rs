@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorStepValuePicker {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _decButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _incButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _valueImage: quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ColorStepValuePicker")]
 impl std::ops::Deref for crate::GlobalNamespace::ColorStepValuePicker {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

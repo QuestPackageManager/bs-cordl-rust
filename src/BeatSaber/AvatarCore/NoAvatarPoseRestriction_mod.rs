@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoAvatarPoseRestriction {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "BeatSaber+AvatarCore+NoAvatarPoseRestriction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+AvatarCore+NoAvatarPoseRestriction")]
 impl std::ops::Deref for crate::BeatSaber::AvatarCore::NoAvatarPoseRestriction {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -85,26 +85,16 @@ for crate::BeatSaber::AvatarCore::NoAvatarPoseRestriction {
     }
 }
 #[cfg(feature = "BeatSaber+AvatarCore+NoAvatarPoseRestriction")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarPoseRestriction>,
-> for crate::BeatSaber::AvatarCore::NoAvatarPoseRestriction {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::BeatSaber::AvatarCore::IAvatarPoseRestriction,
-    > {
+impl AsRef<crate::BeatSaber::AvatarCore::IAvatarPoseRestriction>
+for crate::BeatSaber::AvatarCore::NoAvatarPoseRestriction {
+    fn as_ref(&self) -> &crate::BeatSaber::AvatarCore::IAvatarPoseRestriction {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BeatSaber+AvatarCore+NoAvatarPoseRestriction")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarPoseRestriction>,
-> for crate::BeatSaber::AvatarCore::NoAvatarPoseRestriction {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::BeatSaber::AvatarCore::IAvatarPoseRestriction,
-    > {
+impl AsMut<crate::BeatSaber::AvatarCore::IAvatarPoseRestriction>
+for crate::BeatSaber::AvatarCore::NoAvatarPoseRestriction {
+    fn as_mut(&mut self) -> &mut crate::BeatSaber::AvatarCore::IAvatarPoseRestriction {
         unsafe { std::mem::transmute(self) }
     }
 }

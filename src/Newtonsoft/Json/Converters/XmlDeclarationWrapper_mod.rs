@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlDeclarationWrapper {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Converters::XmlNodeWrapper,
-    >,
+    __cordl_parent: crate::Newtonsoft::Json::Converters::XmlNodeWrapper,
     pub _declaration: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDeclaration>,
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+XmlDeclarationWrapper")]
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Converters+XmlDeclarationWrapper")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Converters::XmlDeclarationWrapper {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Converters::XmlNodeWrapper,
-    >;
+    type Target = crate::Newtonsoft::Json::Converters::XmlNodeWrapper;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -123,44 +119,30 @@ for crate::Newtonsoft::Json::Converters::XmlDeclarationWrapper {
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+XmlDeclarationWrapper")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlDeclaration>,
-> for crate::Newtonsoft::Json::Converters::XmlDeclarationWrapper {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Converters::IXmlDeclaration,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Converters+XmlDeclarationWrapper")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlDeclaration>,
-> for crate::Newtonsoft::Json::Converters::XmlDeclarationWrapper {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Converters::IXmlDeclaration,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Converters+XmlDeclarationWrapper")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>>
+impl AsRef<crate::Newtonsoft::Json::Converters::IXmlDeclaration>
 for crate::Newtonsoft::Json::Converters::XmlDeclarationWrapper {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode> {
+    fn as_ref(&self) -> &crate::Newtonsoft::Json::Converters::IXmlDeclaration {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+XmlDeclarationWrapper")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>>
+impl AsMut<crate::Newtonsoft::Json::Converters::IXmlDeclaration>
 for crate::Newtonsoft::Json::Converters::XmlDeclarationWrapper {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode> {
+    fn as_mut(&mut self) -> &mut crate::Newtonsoft::Json::Converters::IXmlDeclaration {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Converters+XmlDeclarationWrapper")]
+impl AsRef<crate::Newtonsoft::Json::Converters::IXmlNode>
+for crate::Newtonsoft::Json::Converters::XmlDeclarationWrapper {
+    fn as_ref(&self) -> &crate::Newtonsoft::Json::Converters::IXmlNode {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Converters+XmlDeclarationWrapper")]
+impl AsMut<crate::Newtonsoft::Json::Converters::IXmlNode>
+for crate::Newtonsoft::Json::Converters::XmlDeclarationWrapper {
+    fn as_mut(&mut self) -> &mut crate::Newtonsoft::Json::Converters::IXmlNode {
         unsafe { std::mem::transmute(self) }
     }
 }

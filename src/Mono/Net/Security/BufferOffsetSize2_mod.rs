@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BufferOffsetSize2 {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Mono::Net::Security::BufferOffsetSize,
-    >,
+    __cordl_parent: crate::Mono::Net::Security::BufferOffsetSize,
     pub InitialSize: i32,
 }
 #[cfg(feature = "Mono+Net+Security+BufferOffsetSize2")]
@@ -14,9 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Net+Security+BufferOffsetSize2")]
 impl std::ops::Deref for crate::Mono::Net::Security::BufferOffsetSize2 {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Mono::Net::Security::BufferOffsetSize,
-    >;
+    type Target = crate::Mono::Net::Security::BufferOffsetSize;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

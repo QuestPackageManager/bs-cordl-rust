@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Character {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::TextCore::Text::TextElement,
-    >,
+    __cordl_parent: crate::UnityEngine::TextCore::Text::TextElement,
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+Character")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+TextCore+Text+Character")]
 impl std::ops::Deref for crate::UnityEngine::TextCore::Text::Character {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::TextCore::Text::TextElement,
-    >;
+    type Target = crate::UnityEngine::TextCore::Text::TextElement;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,7 +31,7 @@ impl crate::UnityEngine::TextCore::Text::Character {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_u32_Gc_Gc1(
+    pub fn New_u32_FontAsset_Glyph1(
         unicode: u32,
         fontAsset: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::TextCore::Text::FontAsset,
@@ -68,7 +64,7 @@ impl crate::UnityEngine::TextCore::Text::Character {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_u32_Gc_Gc1(
+    pub fn _ctor_u32_FontAsset_Glyph1(
         &mut self,
         unicode: u32,
         fontAsset: quest_hook::libil2cpp::Gc<

@@ -2,13 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Asn1StreamParser {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _in: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub _limit: i32,
     pub tmpBuffers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppArray<u8>>,
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Asn1StreamParser")]
@@ -18,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+Asn1StreamParser")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Asn1StreamParser {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,16 +29,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Asn1StreamParser {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Asn1StreamParser")]
 impl crate::Org::BouncyCastle::Asn1::Asn1StreamParser {
-    pub fn New_Gc0(
-        inStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (inStream))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc2(
+    pub fn New_Il2CppArray2(
         encoding: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -49,7 +38,16 @@ impl crate::Org::BouncyCastle::Asn1::Asn1StreamParser {
             .invoke_void(".ctor", (encoding))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_1(
+    pub fn New_Stream0(
+        inStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (inStream))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Stream_i32_1(
         inStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         limit: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -140,18 +138,7 @@ impl crate::Org::BouncyCastle::Asn1::Asn1StreamParser {
             .invoke("Set00Check", (enabled))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
-        &mut self,
-        inStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (inStream))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_Il2CppArray2(
         &mut self,
         encoding: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -162,7 +149,18 @@ impl crate::Org::BouncyCastle::Asn1::Asn1StreamParser {
             .invoke(".ctor", (encoding))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_1(
+    pub fn _ctor_Stream0(
+        &mut self,
+        inStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (inStream))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Stream_i32_1(
         &mut self,
         inStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         limit: i32,

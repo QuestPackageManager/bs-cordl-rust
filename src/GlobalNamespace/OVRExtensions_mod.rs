@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRExtensions {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRExtensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRExtensions")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRExtensions {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -192,14 +192,6 @@ impl crate::GlobalNamespace::OVRExtensions {
             .invoke("ToFrustum", (f))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToHeadSpacePose_Gc_Gc1(
-        transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-        camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPose> {
-        let __cordl_ret: crate::GlobalNamespace::OVRPose = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToHeadSpacePose", (transform, camera))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn ToHeadSpacePose_OVRPose0(
         trackingSpacePose: crate::GlobalNamespace::OVRPose,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPose> {
@@ -207,8 +199,18 @@ impl crate::GlobalNamespace::OVRExtensions {
             .invoke("ToHeadSpacePose", (trackingSpacePose))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ToHeadSpacePose_Transform_Camera1(
+        transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+        camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPose> {
+        let __cordl_ret: crate::GlobalNamespace::OVRPose = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToHeadSpacePose", (transform, camera))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToNativeArray<T>(
-        enumerable: quest_hook::libil2cpp::Gc<T>,
+        enumerable: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<T>,
+        >,
         allocator: crate::Unity::Collections::Allocator,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::NativeArray_1<T>>
     where
@@ -220,7 +222,9 @@ impl crate::GlobalNamespace::OVRExtensions {
         Ok(__cordl_ret.into())
     }
     pub fn ToNonAlloc<T>(
-        enumerable: quest_hook::libil2cpp::Gc<T>,
+        enumerable: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVREnumerable_1<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -230,19 +234,19 @@ impl crate::GlobalNamespace::OVRExtensions {
             .invoke("ToNonAlloc", (enumerable))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToOVRPose_Gc__cordl_bool0(
-        t: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-        isLocal: bool,
-    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPose> {
-        let __cordl_ret: crate::GlobalNamespace::OVRPose = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToOVRPose", (t, isLocal))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn ToOVRPose_OVRPlugin_Posef1(
         p: crate::GlobalNamespace::OVRPlugin_Posef,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPose> {
         let __cordl_ret: crate::GlobalNamespace::OVRPose = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ToOVRPose", (p))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToOVRPose_Transform__cordl_bool0(
+        t: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+        isLocal: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPose> {
+        let __cordl_ret: crate::GlobalNamespace::OVRPose = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToOVRPose", (t, isLocal))?;
         Ok(__cordl_ret.into())
     }
     pub fn ToQuatf(
@@ -304,7 +308,7 @@ impl crate::GlobalNamespace::OVRExtensions {
             .invoke("ToVector4f", (v))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToWorldSpacePose_Gc1(
+    pub fn ToWorldSpacePose_Camera1(
         trackingSpacePose: crate::GlobalNamespace::OVRPose,
         mainCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPose> {

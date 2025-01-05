@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ImageAttrib {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Bcpg::UserAttributeSubpacket,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Bcpg::UserAttributeSubpacket,
     pub hdrLength: i32,
     pub _version: i32,
     pub _encoding: i32,
@@ -17,9 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Bcpg+Attr+ImageAttrib")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::Attr::ImageAttrib {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Bcpg::UserAttributeSubpacket,
-    >;
+    type Target = crate::Org::BouncyCastle::Bcpg::UserAttributeSubpacket;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -47,7 +43,7 @@ impl crate::Org::BouncyCastle::Bcpg::Attr::ImageAttrib {
         > = __cordl_object.invoke("GetImageData", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_Il2CppArray0(
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -56,7 +52,7 @@ impl crate::Org::BouncyCastle::Bcpg::Attr::ImageAttrib {
             .invoke_void(".ctor", (data))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_ImageAttrib_Format_Gc2(
+    pub fn New_ImageAttrib_Format_Il2CppArray2(
         imageType: crate::Org::BouncyCastle::Bcpg::Attr::ImageAttrib_Format,
         imageData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -66,7 +62,7 @@ impl crate::Org::BouncyCastle::Bcpg::Attr::ImageAttrib {
             .invoke_void(".ctor", (imageType, imageData))?;
         Ok(__cordl_object.into())
     }
-    pub fn New__cordl_bool_Gc1(
+    pub fn New__cordl_bool_Il2CppArray1(
         forceLongLength: bool,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -88,7 +84,7 @@ impl crate::Org::BouncyCastle::Bcpg::Attr::ImageAttrib {
             .invoke("ToByteArray", (imageType, imageData))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Il2CppArray0(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -99,7 +95,7 @@ impl crate::Org::BouncyCastle::Bcpg::Attr::ImageAttrib {
             .invoke(".ctor", (data))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_ImageAttrib_Format_Gc2(
+    pub fn _ctor_ImageAttrib_Format_Il2CppArray2(
         &mut self,
         imageType: crate::Org::BouncyCastle::Bcpg::Attr::ImageAttrib_Format,
         imageData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -111,7 +107,7 @@ impl crate::Org::BouncyCastle::Bcpg::Attr::ImageAttrib {
             .invoke(".ctor", (imageType, imageData))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor__cordl_bool_Gc1(
+    pub fn _ctor__cordl_bool_Il2CppArray1(
         &mut self,
         forceLongLength: bool,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

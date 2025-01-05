@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PrivilegeNotHeldException {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::UnauthorizedAccessException,
-    >,
+    __cordl_parent: crate::System::UnauthorizedAccessException,
     pub _privilegeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Security+AccessControl+PrivilegeNotHeldException")]
@@ -16,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Security+AccessControl+PrivilegeNotHeldException")]
 impl std::ops::Deref
 for crate::System::Security::AccessControl::PrivilegeNotHeldException {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::UnauthorizedAccessException>;
+    type Target = crate::System::UnauthorizedAccessException;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -51,7 +49,7 @@ impl crate::System::Security::AccessControl::PrivilegeNotHeldException {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_StreamingContext1(
+    pub fn New_SerializationInfo_StreamingContext1(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -73,7 +71,7 @@ impl crate::System::Security::AccessControl::PrivilegeNotHeldException {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_StreamingContext1(
+    pub fn _ctor_SerializationInfo_StreamingContext1(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -99,26 +97,16 @@ for crate::System::Security::AccessControl::PrivilegeNotHeldException {
     }
 }
 #[cfg(feature = "System+Security+AccessControl+PrivilegeNotHeldException")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::Security::AccessControl::PrivilegeNotHeldException {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Security::AccessControl::PrivilegeNotHeldException {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Security+AccessControl+PrivilegeNotHeldException")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::Security::AccessControl::PrivilegeNotHeldException {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Security::AccessControl::PrivilegeNotHeldException {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }

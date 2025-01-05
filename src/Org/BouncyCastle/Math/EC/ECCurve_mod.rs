@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ECCurve {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_field: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Math::Field::IFiniteField,
     >,
@@ -31,7 +31,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::ECCurve {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -67,11 +67,11 @@ impl crate::Org::BouncyCastle::Math::EC::ECCurve {
             .invoke("CheckPoint", (point))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CheckPoints_Gc0(
+    pub fn CheckPoints_Il2CppArray0(
         &mut self,
         points: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
+                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -86,7 +86,7 @@ impl crate::Org::BouncyCastle::Math::EC::ECCurve {
         &mut self,
         points: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
+                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
             >,
         >,
         off: i32,
@@ -129,7 +129,7 @@ impl crate::Org::BouncyCastle::Math::EC::ECCurve {
         &mut self,
         points: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
+                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
             >,
         >,
         off: i32,
@@ -160,7 +160,7 @@ impl crate::Org::BouncyCastle::Math::EC::ECCurve {
         > = __cordl_object.invoke("CreateDefaultMultiplier", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreatePoint_Gc_Gc0(
+    pub fn CreatePoint_BigInteger_BigInteger0(
         &mut self,
         x: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         y: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -191,15 +191,13 @@ impl crate::Org::BouncyCastle::Math::EC::ECCurve {
         > = __cordl_object.invoke("CreatePoint", (x, y, withCompression))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateRawPoint_Gc__cordl_bool1(
+    pub fn CreateRawPoint_Il2CppArray__cordl_bool1(
         &mut self,
         x: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECFieldElement>,
         y: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECFieldElement>,
         zs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-                >,
+                *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
             >,
         >,
         withCompression: bool,
@@ -259,7 +257,7 @@ impl crate::Org::BouncyCastle::Math::EC::ECCurve {
         > = __cordl_object.invoke("DecompressPoint", (yTilde, X1))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Gc0(
+    pub fn Equals_ECCurve0(
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -269,7 +267,7 @@ impl crate::Org::BouncyCastle::Math::EC::ECCurve {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Gc1(
+    pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -391,11 +389,11 @@ impl crate::Org::BouncyCastle::Math::EC::ECCurve {
             .invoke_void(".ctor", (field))?;
         Ok(__cordl_object.into())
     }
-    pub fn NormalizeAll_Gc0(
+    pub fn NormalizeAll_Il2CppArray0(
         &mut self,
         points: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
+                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -406,11 +404,11 @@ impl crate::Org::BouncyCastle::Math::EC::ECCurve {
             .invoke("NormalizeAll", (points))?;
         Ok(__cordl_ret.into())
     }
-    pub fn NormalizeAll_i32_i32_Gc1(
+    pub fn NormalizeAll_i32_i32_ECFieldElement1(
         &mut self,
         points: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
+                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
             >,
         >,
         off: i32,
@@ -485,7 +483,7 @@ impl crate::Org::BouncyCastle::Math::EC::ECCurve {
             .invoke("SupportsCoordinateSystem", (coord))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ValidatePoint_Gc_Gc0(
+    pub fn ValidatePoint_BigInteger_BigInteger0(
         &mut self,
         x: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         y: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -635,7 +633,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Math::EC::E
 #[repr(C)]
 #[derive(Debug)]
 pub struct ECCurve_Config {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub outer: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,
     pub coord: i32,
     pub endomorphism: quest_hook::libil2cpp::Gc<
@@ -652,7 +650,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve+Config")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::ECCurve_Config {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -773,9 +771,7 @@ for crate::Org::BouncyCastle::Math::EC::ECCurve_Config {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ECCurve_DefaultLookupTable {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable,
     pub m_outer: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,
     pub m_table: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub m_size: i32,
@@ -788,9 +784,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve+DefaultLookupTable")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::ECCurve_DefaultLookupTable {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable,
-    >;
+    type Target = crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

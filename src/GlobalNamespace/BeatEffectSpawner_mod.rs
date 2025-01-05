@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatEffectSpawner {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _effectDuration: f32,
     pub _bombColorEffect: crate::UnityEngine::Color,
     pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
@@ -20,7 +20,9 @@ pub struct BeatEffectSpawner {
         crate::GlobalNamespace::SongController,
     >,
     pub _beatEffectPoolContainer: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatEffect>,
+        crate::GlobalNamespace::MemoryPoolContainer_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatEffect>,
+        >,
     >,
 }
 #[cfg(feature = "BeatEffectSpawner")]
@@ -30,7 +32,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatEffectSpawner")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatEffectSpawner {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -138,22 +140,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatEffectSpa
     }
 }
 #[cfg(feature = "BeatEffectSpawner")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatEffectDidFinishEvent>>
+impl AsRef<crate::GlobalNamespace::IBeatEffectDidFinishEvent>
 for crate::GlobalNamespace::BeatEffectSpawner {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatEffectDidFinishEvent> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IBeatEffectDidFinishEvent {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BeatEffectSpawner")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatEffectDidFinishEvent>>
+impl AsMut<crate::GlobalNamespace::IBeatEffectDidFinishEvent>
 for crate::GlobalNamespace::BeatEffectSpawner {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IBeatEffectDidFinishEvent,
-    > {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IBeatEffectDidFinishEvent {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -161,7 +157,7 @@ for crate::GlobalNamespace::BeatEffectSpawner {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatEffectSpawner_InitData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub hideNoteSpawnEffect: bool,
 }
 #[cfg(feature = "BeatEffectSpawner+InitData")]
@@ -171,7 +167,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatEffectSpawner+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatEffectSpawner_InitData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

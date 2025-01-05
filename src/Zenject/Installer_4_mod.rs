@@ -7,7 +7,7 @@ pub struct Installer_4<
     TParam3: quest_hook::libil2cpp::Type,
     TDerived: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::InstallerBase>,
+    __cordl_parent: crate::Zenject::InstallerBase,
     __cordl_phantom_TParam1: std::marker::PhantomData<TParam1>,
     __cordl_phantom_TParam2: std::marker::PhantomData<TParam2>,
     __cordl_phantom_TParam3: std::marker::PhantomData<TParam3>,
@@ -26,7 +26,7 @@ impl<
     TParam3: quest_hook::libil2cpp::Type,
     TDerived: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::Zenject::Installer_4<TParam1, TParam2, TParam3, TDerived> {
-    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::InstallerBase>;
+    type Target = crate::Zenject::InstallerBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

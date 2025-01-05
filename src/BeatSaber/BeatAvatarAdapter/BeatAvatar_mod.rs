@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatAvatar {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::Avatar>,
+    __cordl_parent: crate::BeatSaber::AvatarCore::Avatar,
     pub _avatarVisualController: quest_hook::libil2cpp::Gc<
         crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController,
     >,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+BeatAvatarAdapter+BeatAvatar")]
 impl std::ops::Deref for crate::BeatSaber::BeatAvatarAdapter::BeatAvatar {
-    type Target = quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::Avatar>;
+    type Target = crate::BeatSaber::AvatarCore::Avatar;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

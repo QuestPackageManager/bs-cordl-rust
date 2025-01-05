@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Button {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
+    __cordl_parent: crate::UnityEngine::UI::Selectable,
     pub m_OnClick: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UI::Button_ButtonClickedEvent,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+Button")]
 impl std::ops::Deref for crate::UnityEngine::UI::Button {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>;
+    type Target = crate::UnityEngine::UI::Selectable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -132,70 +132,44 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Button {
     }
 }
 #[cfg(feature = "UnityEngine+UI+Button")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
-> for crate::UnityEngine::UI::Button {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IEventSystemHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UI+Button")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
-> for crate::UnityEngine::UI::Button {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IEventSystemHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UI+Button")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerClickHandler>,
-> for crate::UnityEngine::UI::Button {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerClickHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UI+Button")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerClickHandler>,
-> for crate::UnityEngine::UI::Button {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerClickHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UI+Button")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISubmitHandler>>
+impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
 for crate::UnityEngine::UI::Button {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISubmitHandler> {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Button")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISubmitHandler>>
+impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
 for crate::UnityEngine::UI::Button {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::ISubmitHandler,
-    > {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Button")]
+impl AsRef<crate::UnityEngine::EventSystems::IPointerClickHandler>
+for crate::UnityEngine::UI::Button {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerClickHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Button")]
+impl AsMut<crate::UnityEngine::EventSystems::IPointerClickHandler>
+for crate::UnityEngine::UI::Button {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerClickHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Button")]
+impl AsRef<crate::UnityEngine::EventSystems::ISubmitHandler>
+for crate::UnityEngine::UI::Button {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::ISubmitHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Button")]
+impl AsMut<crate::UnityEngine::EventSystems::ISubmitHandler>
+for crate::UnityEngine::UI::Button {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::ISubmitHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -203,7 +177,7 @@ for crate::UnityEngine::UI::Button {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Button_ButtonClickedEvent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityEvent>,
+    __cordl_parent: crate::UnityEngine::Events::UnityEvent,
 }
 #[cfg(feature = "UnityEngine+UI+Button+ButtonClickedEvent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -212,7 +186,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+Button+ButtonClickedEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::Button_ButtonClickedEvent {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityEvent>;
+    type Target = crate::UnityEngine::Events::UnityEvent;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

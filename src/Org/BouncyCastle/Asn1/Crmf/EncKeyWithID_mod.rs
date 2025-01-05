@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EncKeyWithID {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub privKeyInfo: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo,
     >,
@@ -19,9 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+Crmf+EncKeyWithID")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Crmf::EncKeyWithID {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,7 +40,7 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::EncKeyWithID {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_Asn1Sequence0(
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -53,7 +49,7 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::EncKeyWithID {
             .invoke_void(".ctor", (seq))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_PrivateKeyInfo1(
         privKeyInfo: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo,
         >,
@@ -64,7 +60,7 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::EncKeyWithID {
             .invoke_void(".ctor", (privKeyInfo))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc2(
+    pub fn New_PrivateKeyInfo_DerUtf8String2(
         privKeyInfo: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo,
         >,
@@ -76,7 +72,7 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::EncKeyWithID {
             .invoke_void(".ctor", (privKeyInfo, str))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc3(
+    pub fn New_PrivateKeyInfo_GeneralName3(
         privKeyInfo: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo,
         >,
@@ -103,7 +99,7 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::EncKeyWithID {
         > = __cordl_object.invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Asn1Sequence0(
         &mut self,
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -114,7 +110,7 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::EncKeyWithID {
             .invoke(".ctor", (seq))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_PrivateKeyInfo1(
         &mut self,
         privKeyInfo: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo,
@@ -127,7 +123,7 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::EncKeyWithID {
             .invoke(".ctor", (privKeyInfo))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_PrivateKeyInfo_DerUtf8String2(
         &mut self,
         privKeyInfo: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo,
@@ -141,7 +137,7 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::EncKeyWithID {
             .invoke(".ctor", (privKeyInfo, str))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc3(
+    pub fn _ctor_PrivateKeyInfo_GeneralName3(
         &mut self,
         privKeyInfo: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo,

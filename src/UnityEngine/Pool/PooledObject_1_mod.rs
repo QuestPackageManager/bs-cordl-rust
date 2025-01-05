@@ -3,7 +3,7 @@
 #[derive(Debug, Clone, Default)]
 pub struct PooledObject_1<T: quest_hook::libil2cpp::Type> {
     pub m_ToReturn: T,
-    pub m_Pool: quest_hook::libil2cpp::Gc<T>,
+    pub m_Pool: quest_hook::libil2cpp::Gc<crate::UnityEngine::Pool::IObjectPool_1<T>>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "UnityEngine+Pool+PooledObject_1")]
@@ -41,7 +41,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Pool::PooledObject_1<T>
     pub fn _ctor(
         &mut self,
         value: T,
-        pool: quest_hook::libil2cpp::Gc<T>,
+        pool: quest_hook::libil2cpp::Gc<crate::UnityEngine::Pool::IObjectPool_1<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -56,20 +56,16 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Pool::PooledObject_1<T>
     }
 }
 #[cfg(feature = "UnityEngine+Pool+PooledObject_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
 for crate::UnityEngine::Pool::PooledObject_1<T> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Pool+PooledObject_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
 for crate::UnityEngine::Pool::PooledObject_1<T> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         todo!()
     }
 }

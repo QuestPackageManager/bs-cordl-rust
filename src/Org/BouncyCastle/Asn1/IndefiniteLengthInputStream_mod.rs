@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct IndefiniteLengthInputStream {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::LimitedInputStream,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::LimitedInputStream,
     pub _lookAhead: i32,
     pub _eofOn00: bool,
 }
@@ -16,9 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+IndefiniteLengthInputStream")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::IndefiniteLengthInputStream {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::LimitedInputStream,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::LimitedInputStream;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

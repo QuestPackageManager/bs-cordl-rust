@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReusableListViewItem {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::ReusableCollectionItem,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::ReusableCollectionItem,
     pub m_Container: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualElement,
     >,
@@ -22,9 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+ReusableListViewItem")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ReusableListViewItem {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::ReusableCollectionItem,
-    >;
+    type Target = crate::UnityEngine::UIElements::ReusableCollectionItem;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

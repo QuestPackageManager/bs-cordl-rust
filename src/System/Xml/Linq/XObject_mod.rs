@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XObject {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XContainer>,
     pub annotations: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Linq+XObject")]
 impl std::ops::Deref for crate::System::Xml::Linq::XObject {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -224,18 +224,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Linq::XObject {
     }
 }
 #[cfg(feature = "System+Xml+Linq+XObject")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlLineInfo>>
-for crate::System::Xml::Linq::XObject {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlLineInfo> {
+impl AsRef<crate::System::Xml::IXmlLineInfo> for crate::System::Xml::Linq::XObject {
+    fn as_ref(&self) -> &crate::System::Xml::IXmlLineInfo {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+Linq+XObject")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlLineInfo>>
-for crate::System::Xml::Linq::XObject {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlLineInfo> {
+impl AsMut<crate::System::Xml::IXmlLineInfo> for crate::System::Xml::Linq::XObject {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IXmlLineInfo {
         unsafe { std::mem::transmute(self) }
     }
 }

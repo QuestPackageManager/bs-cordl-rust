@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FtpDataStream {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    __cordl_parent: crate::System::IO::Stream,
     pub _request: quest_hook::libil2cpp::Gc<crate::System::Net::FtpWebRequest>,
     pub _networkStream: quest_hook::libil2cpp::Gc<
         crate::System::Net::Sockets::NetworkStream,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+FtpDataStream")]
 impl std::ops::Deref for crate::System::Net::FtpDataStream {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::IO::Stream>;
+    type Target = crate::System::IO::Stream;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -327,18 +327,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::FtpDataStream {
     }
 }
 #[cfg(feature = "System+Net+FtpDataStream")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Net::ICloseEx>>
-for crate::System::Net::FtpDataStream {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Net::ICloseEx> {
+impl AsRef<crate::System::Net::ICloseEx> for crate::System::Net::FtpDataStream {
+    fn as_ref(&self) -> &crate::System::Net::ICloseEx {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Net+FtpDataStream")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Net::ICloseEx>>
-for crate::System::Net::FtpDataStream {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Net::ICloseEx> {
+impl AsMut<crate::System::Net::ICloseEx> for crate::System::Net::FtpDataStream {
+    fn as_mut(&mut self) -> &mut crate::System::Net::ICloseEx {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SP800SecureRandom {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Security::SecureRandom,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Security::SecureRandom,
     pub mDrbgProvider: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider,
     >,
@@ -27,9 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandom")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandom {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Security::SecureRandom,
-    >;
+    type Target = crate::Org::BouncyCastle::Security::SecureRandom;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -77,7 +73,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandom {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn NextBytes_Gc0(
+    pub fn NextBytes_Il2CppArray0(
         &mut self,
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -114,7 +110,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandom {
             .invoke("Reseed", (additionalInput))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetSeed_Gc0(
+    pub fn SetSeed_Il2CppArray0(
         &mut self,
         seed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

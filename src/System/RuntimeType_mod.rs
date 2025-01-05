@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RuntimeType {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Reflection::TypeInfo>,
+    __cordl_parent: crate::System::Reflection::TypeInfo,
     pub type_info: quest_hook::libil2cpp::Gc<crate::System::MonoTypeInfo>,
     pub GenericCache: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_serializationCtor: quest_hook::libil2cpp::Gc<
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+RuntimeType")]
 impl std::ops::Deref for crate::System::RuntimeType {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Reflection::TypeInfo>;
+    type Target = crate::System::Reflection::TypeInfo;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -119,15 +119,11 @@ impl crate::System::RuntimeType {
         bindingAttr: crate::System::Reflection::BindingFlags,
         binder: quest_hook::libil2cpp::Gc<crate::System::Reflection::Binder>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
         activationAttributes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
         stackMark: quest_hook::libil2cpp::ByRefMut<
             crate::System::Threading::StackCrawlMark,
@@ -235,9 +231,7 @@ impl crate::System::RuntimeType {
         bindingFlags: crate::System::Reflection::BindingFlags,
         callConv: crate::System::Reflection::CallingConventions,
         argumentTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
@@ -253,9 +247,7 @@ impl crate::System::RuntimeType {
         bindingFlags: crate::System::Reflection::BindingFlags,
         callConv: crate::System::Reflection::CallingConventions,
         argumentTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
@@ -270,9 +262,7 @@ impl crate::System::RuntimeType {
         bindingFlags: crate::System::Reflection::BindingFlags,
         callConv: crate::System::Reflection::CallingConventions,
         argumentTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
@@ -417,9 +407,7 @@ impl crate::System::RuntimeType {
         bindingAttr: crate::System::Reflection::BindingFlags,
         callConv: crate::System::Reflection::CallingConventions,
         types: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         >,
         allowPrefixLookup: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -445,9 +433,7 @@ impl crate::System::RuntimeType {
         binder: quest_hook::libil2cpp::Gc<crate::System::Reflection::Binder>,
         callConvention: crate::System::Reflection::CallingConventions,
         types: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         >,
         modifiers: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -475,7 +461,7 @@ impl crate::System::RuntimeType {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::ConstructorInfo>,
+                *mut crate::System::Reflection::ConstructorInfo,
             >,
         >,
     > {
@@ -484,7 +470,7 @@ impl crate::System::RuntimeType {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::ConstructorInfo>,
+                *mut crate::System::Reflection::ConstructorInfo,
             >,
         > = __cordl_object.invoke("GetConstructors", (bindingAttr))?;
         Ok(__cordl_ret.into())
@@ -496,9 +482,7 @@ impl crate::System::RuntimeType {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Reflection::RuntimeConstructorInfo,
-                >,
+                *mut crate::System::Reflection::RuntimeConstructorInfo,
             >,
         >,
     > {
@@ -507,9 +491,7 @@ impl crate::System::RuntimeType {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Reflection::RuntimeConstructorInfo,
-                >,
+                *mut crate::System::Reflection::RuntimeConstructorInfo,
             >,
         > = __cordl_object
             .invoke("GetConstructors_internal", (bindingAttr, reflectedType))?;
@@ -526,24 +508,20 @@ impl crate::System::RuntimeType {
             .invoke("GetConstructors_native", (bindingAttr))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetCustomAttributes_Gc__cordl_bool1(
+    pub fn GetCustomAttributes_Type__cordl_bool1(
         &mut self,
         attributeType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         inherit: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         > = __cordl_object.invoke("GetCustomAttributes", (attributeType, inherit))?;
         Ok(__cordl_ret.into())
     }
@@ -552,18 +530,14 @@ impl crate::System::RuntimeType {
         inherit: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         > = __cordl_object.invoke("GetCustomAttributes", (inherit))?;
         Ok(__cordl_ret.into())
     }
@@ -621,18 +595,14 @@ impl crate::System::RuntimeType {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("GetEnumNames", ())?;
         Ok(__cordl_ret.into())
     }
@@ -695,18 +665,14 @@ impl crate::System::RuntimeType {
         bindingAttr: crate::System::Reflection::BindingFlags,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::EventInfo>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::EventInfo>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::EventInfo>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::EventInfo>,
         > = __cordl_object.invoke("GetEvents", (bindingAttr))?;
         Ok(__cordl_ret.into())
     }
@@ -719,7 +685,7 @@ impl crate::System::RuntimeType {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::RuntimeEventInfo>,
+                *mut crate::System::Reflection::RuntimeEventInfo,
             >,
         >,
     > {
@@ -728,7 +694,7 @@ impl crate::System::RuntimeType {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::RuntimeEventInfo>,
+                *mut crate::System::Reflection::RuntimeEventInfo,
             >,
         > = __cordl_object
             .invoke("GetEvents_internal", (name, bindingAttr, listType, reflectedType))?;
@@ -785,18 +751,14 @@ impl crate::System::RuntimeType {
         bindingAttr: crate::System::Reflection::BindingFlags,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::FieldInfo>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::FieldInfo>,
         > = __cordl_object.invoke("GetFields", (bindingAttr))?;
         Ok(__cordl_ret.into())
     }
@@ -809,7 +771,7 @@ impl crate::System::RuntimeType {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::RuntimeFieldInfo>,
+                *mut crate::System::Reflection::RuntimeFieldInfo,
             >,
         >,
     > {
@@ -818,7 +780,7 @@ impl crate::System::RuntimeType {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::RuntimeFieldInfo>,
+                *mut crate::System::Reflection::RuntimeFieldInfo,
             >,
         > = __cordl_object
             .invoke("GetFields_internal", (name, bindingAttr, listType, reflectedType))?;
@@ -849,18 +811,14 @@ impl crate::System::RuntimeType {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         > = __cordl_object.invoke("GetGenericArguments", ())?;
         Ok(__cordl_ret.into())
     }
@@ -868,18 +826,14 @@ impl crate::System::RuntimeType {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::RuntimeType>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::RuntimeType>,
         > = __cordl_object.invoke("GetGenericArgumentsInternal", ())?;
         Ok(__cordl_ret.into())
     }
@@ -888,18 +842,14 @@ impl crate::System::RuntimeType {
         runtimeArray: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         > = __cordl_object.invoke("GetGenericArgumentsInternal", (runtimeArray))?;
         Ok(__cordl_ret.into())
     }
@@ -919,18 +869,14 @@ impl crate::System::RuntimeType {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         > = __cordl_object.invoke("GetGenericParameterConstraints", ())?;
         Ok(__cordl_ret.into())
     }
@@ -962,18 +908,14 @@ impl crate::System::RuntimeType {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         > = __cordl_object.invoke("GetInterfaces", ())?;
         Ok(__cordl_ret.into())
     }
@@ -985,7 +927,7 @@ impl crate::System::RuntimeType {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+                *mut crate::System::Reflection::MemberInfo,
             >,
         >,
     > {
@@ -994,7 +936,7 @@ impl crate::System::RuntimeType {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+                *mut crate::System::Reflection::MemberInfo,
             >,
         > = __cordl_object.invoke("GetMember", (name, _cordl_type, bindingAttr))?;
         Ok(__cordl_ret.into())
@@ -1005,7 +947,7 @@ impl crate::System::RuntimeType {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+                *mut crate::System::Reflection::MemberInfo,
             >,
         >,
     > {
@@ -1014,20 +956,18 @@ impl crate::System::RuntimeType {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+                *mut crate::System::Reflection::MemberInfo,
             >,
         > = __cordl_object.invoke("GetMembers", (bindingAttr))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetMethodCandidates_BindingFlags_CallingConventions_Gc_i32_0(
+    pub fn GetMethodCandidates_BindingFlags_CallingConventions_Il2CppArray_i32_0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         bindingAttr: crate::System::Reflection::BindingFlags,
         callConv: crate::System::Reflection::CallingConventions,
         types: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         >,
         genericParamCount: i32,
         allowPrefixLookup: bool,
@@ -1055,16 +995,14 @@ impl crate::System::RuntimeType {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetMethodCandidates_i32_BindingFlags_CallingConventions_Gc1(
+    pub fn GetMethodCandidates_i32_BindingFlags_CallingConventions_Il2CppArray1(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         genericParameterCount: i32,
         bindingAttr: crate::System::Reflection::BindingFlags,
         callConv: crate::System::Reflection::CallingConventions,
         types: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         >,
         allowPrefixLookup: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -1098,9 +1036,7 @@ impl crate::System::RuntimeType {
         binder: quest_hook::libil2cpp::Gc<crate::System::Reflection::Binder>,
         callConv: crate::System::Reflection::CallingConventions,
         types: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         >,
         modifiers: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -1130,9 +1066,7 @@ impl crate::System::RuntimeType {
         binder: quest_hook::libil2cpp::Gc<crate::System::Reflection::Binder>,
         callConv: crate::System::Reflection::CallingConventions,
         types: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         >,
         modifiers: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -1168,7 +1102,7 @@ impl crate::System::RuntimeType {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+                *mut crate::System::Reflection::MethodInfo,
             >,
         >,
     > {
@@ -1177,7 +1111,7 @@ impl crate::System::RuntimeType {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+                *mut crate::System::Reflection::MethodInfo,
             >,
         > = __cordl_object.invoke("GetMethods", (bindingAttr))?;
         Ok(__cordl_ret.into())
@@ -1191,7 +1125,7 @@ impl crate::System::RuntimeType {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::RuntimeMethodInfo>,
+                *mut crate::System::Reflection::RuntimeMethodInfo,
             >,
         >,
     > {
@@ -1200,7 +1134,7 @@ impl crate::System::RuntimeType {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::RuntimeMethodInfo>,
+                *mut crate::System::Reflection::RuntimeMethodInfo,
             >,
         > = __cordl_object
             .invoke("GetMethodsByName", (name, bindingAttr, listType, reflectedType))?;
@@ -1260,18 +1194,14 @@ impl crate::System::RuntimeType {
         listType: crate::System::RuntimeType_MemberListType,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::RuntimeType>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::RuntimeType>,
         > = __cordl_object
             .invoke("GetNestedTypes_internal", (displayName, bindingAttr, listType))?;
         Ok(__cordl_ret.into())
@@ -1309,7 +1239,7 @@ impl crate::System::RuntimeType {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+                *mut crate::System::Reflection::PropertyInfo,
             >,
         >,
     > {
@@ -1318,7 +1248,7 @@ impl crate::System::RuntimeType {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+                *mut crate::System::Reflection::PropertyInfo,
             >,
         > = __cordl_object.invoke("GetProperties", (bindingAttr))?;
         Ok(__cordl_ret.into())
@@ -1332,7 +1262,7 @@ impl crate::System::RuntimeType {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::RuntimePropertyInfo>,
+                *mut crate::System::Reflection::RuntimePropertyInfo,
             >,
         >,
     > {
@@ -1341,7 +1271,7 @@ impl crate::System::RuntimeType {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::RuntimePropertyInfo>,
+                *mut crate::System::Reflection::RuntimePropertyInfo,
             >,
         > = __cordl_object
             .invoke(
@@ -1368,9 +1298,7 @@ impl crate::System::RuntimeType {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         bindingAttr: crate::System::Reflection::BindingFlags,
         types: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         >,
         allowPrefixLookup: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -1397,9 +1325,7 @@ impl crate::System::RuntimeType {
         binder: quest_hook::libil2cpp::Gc<crate::System::Reflection::Binder>,
         returnType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         types: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         >,
         modifiers: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -1518,9 +1444,7 @@ impl crate::System::RuntimeType {
         binder: quest_hook::libil2cpp::Gc<crate::System::Reflection::Binder>,
         target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         providedArgs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
         modifiers: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -1529,9 +1453,7 @@ impl crate::System::RuntimeType {
         >,
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
         namedParams: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -1718,12 +1640,10 @@ impl crate::System::RuntimeType {
             .invoke("MakeByRefType", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn MakeGenericType_Gc0(
+    pub fn MakeGenericType_Il2CppArray0(
         &mut self,
         instantiation: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1733,12 +1653,10 @@ impl crate::System::RuntimeType {
             .invoke("MakeGenericType", (instantiation))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MakeGenericType_Gc1(
+    pub fn MakeGenericType_Type_Il2CppArray1(
         gt: quest_hook::libil2cpp::Gc<crate::System::Type>,
         types: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = <Self as quest_hook::libil2cpp::Type>::class()
@@ -1755,7 +1673,7 @@ impl crate::System::RuntimeType {
             .invoke("MakePointerType", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn MakePointerType_Gc0(
+    pub fn MakePointerType_Type0(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = <Self as quest_hook::libil2cpp::Type>::class()
@@ -1771,14 +1689,10 @@ impl crate::System::RuntimeType {
     }
     pub fn SanityCheckGenericArguments(
         genericArguments: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::RuntimeType>,
         >,
         genericParamters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::RuntimeType>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -2160,40 +2074,28 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::RuntimeType {
     }
 }
 #[cfg(feature = "System+RuntimeType")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
+impl AsRef<crate::System::ICloneable> for crate::System::RuntimeType {
+    fn as_ref(&self) -> &crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+RuntimeType")]
+impl AsMut<crate::System::ICloneable> for crate::System::RuntimeType {
+    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+RuntimeType")]
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
 for crate::System::RuntimeType {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+RuntimeType")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
 for crate::System::RuntimeType {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+RuntimeType")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::RuntimeType {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+RuntimeType")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::RuntimeType {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -2243,9 +2145,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::RuntimeType_ListBuilder_1<T>
     pub fn CopyTo(
         &mut self,
         array: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>

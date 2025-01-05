@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Texture3D {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+    __cordl_parent: crate::UnityEngine::Texture,
 }
 #[cfg(feature = "UnityEngine+Texture3D")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Texture3D")]
 impl std::ops::Deref for crate::UnityEngine::Texture3D {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>;
+    type Target = crate::UnityEngine::Texture;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -251,7 +251,7 @@ impl crate::UnityEngine::Texture3D {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn SetPixels32_Gc1(
+    pub fn SetPixels32_Il2CppArray1(
         &mut self,
         colors: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,

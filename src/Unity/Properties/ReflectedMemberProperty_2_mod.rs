@@ -5,13 +5,33 @@ pub struct ReflectedMemberProperty_2<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TContainer, TValue>,
+    __cordl_parent: crate::Unity::Properties::Property_2<TContainer, TValue>,
     pub m_Info: quest_hook::libil2cpp::Gc<crate::Unity::Properties::IMemberInfo>,
     pub m_IsStructContainerType: bool,
-    pub m_GetStructValueAction: quest_hook::libil2cpp::Gc<TContainer, TValue>,
-    pub m_SetStructValueAction: quest_hook::libil2cpp::Gc<TContainer, TValue>,
-    pub m_GetClassValueAction: quest_hook::libil2cpp::Gc<TContainer, TValue>,
-    pub m_SetClassValueAction: quest_hook::libil2cpp::Gc<TContainer, TValue>,
+    pub m_GetStructValueAction: quest_hook::libil2cpp::Gc<
+        crate::Unity::Properties::ReflectedMemberProperty_2_GetStructValueAction<
+            TContainer,
+            TValue,
+        >,
+    >,
+    pub m_SetStructValueAction: quest_hook::libil2cpp::Gc<
+        crate::Unity::Properties::ReflectedMemberProperty_2_SetStructValueAction<
+            TContainer,
+            TValue,
+        >,
+    >,
+    pub m_GetClassValueAction: quest_hook::libil2cpp::Gc<
+        crate::Unity::Properties::ReflectedMemberProperty_2_GetClassValueAction<
+            TContainer,
+            TValue,
+        >,
+    >,
+    pub m_SetClassValueAction: quest_hook::libil2cpp::Gc<
+        crate::Unity::Properties::ReflectedMemberProperty_2_SetClassValueAction<
+            TContainer,
+            TValue,
+        >,
+    >,
     pub _Name_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
@@ -31,7 +51,7 @@ impl<
     TValue: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::Unity::Properties::ReflectedMemberProperty_2<TContainer, TValue> {
-    type Target = quest_hook::libil2cpp::Gc<TContainer, TValue>;
+    type Target = crate::Unity::Properties::Property_2<TContainer, TValue>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -145,7 +165,7 @@ pub struct ReflectedMemberProperty_2_GetClassValueAction<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_TContainer: std::marker::PhantomData<TContainer>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
@@ -165,7 +185,7 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_GetClassValueAction<
     TContainer,
     TValue,
 > {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -265,7 +285,7 @@ pub struct ReflectedMemberProperty_2_GetStructValueAction<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_TContainer: std::marker::PhantomData<TContainer>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
@@ -285,7 +305,7 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_GetStructValueAction<
     TContainer,
     TValue,
 > {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -385,7 +405,7 @@ pub struct ReflectedMemberProperty_2_SetClassValueAction<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_TContainer: std::marker::PhantomData<TContainer>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
@@ -405,7 +425,7 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_SetClassValueAction<
     TContainer,
     TValue,
 > {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -507,7 +527,7 @@ pub struct ReflectedMemberProperty_2_SetStructValueAction<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_TContainer: std::marker::PhantomData<TContainer>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
@@ -527,7 +547,7 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_SetStructValueAction<
     TContainer,
     TValue,
 > {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

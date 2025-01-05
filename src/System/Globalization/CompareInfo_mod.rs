@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CompareInfo {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _sortName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_SortVersion: quest_hook::libil2cpp::Gc<
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Globalization+CompareInfo")]
 impl std::ops::Deref for crate::System::Globalization::CompareInfo {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -45,7 +45,7 @@ impl crate::System::Globalization::CompareInfo {
             .invoke("CompareOptionIgnoreCase", (string1, string2))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CompareOrdinalIgnoreCase_Gc_i32_i32_Gc_i32_i32_0(
+    pub fn CompareOrdinalIgnoreCase_Il2CppString_i32_i32_Il2CppString_i32_i32_0(
         strA: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         indexA: i32,
         lengthA: i32,
@@ -81,7 +81,7 @@ impl crate::System::Globalization::CompareInfo {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn CompareString_Gc0(
+    pub fn CompareString_Il2CppString0(
         &mut self,
         string1: crate::System::ReadOnlySpan_1<char>,
         string2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -107,7 +107,7 @@ impl crate::System::Globalization::CompareInfo {
             .invoke("CompareString", (string1, string2, options))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Compare_Gc_Gc0(
+    pub fn Compare_Il2CppString_Il2CppString0(
         &mut self,
         string1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         string2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -118,7 +118,7 @@ impl crate::System::Globalization::CompareInfo {
         let __cordl_ret: i32 = __cordl_object.invoke("Compare", (string1, string2))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Compare_Gc_Gc_CompareOptions1(
+    pub fn Compare_Il2CppString_Il2CppString_CompareOptions1(
         &mut self,
         string1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         string2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -131,7 +131,7 @@ impl crate::System::Globalization::CompareInfo {
             .invoke("Compare", (string1, string2, options))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Compare_Gc_i32_i32_Gc_i32_i32_CompareOptions3(
+    pub fn Compare_Il2CppString_i32_i32_Il2CppString_i32_i32_CompareOptions3(
         &mut self,
         string1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         offset1: i32,
@@ -151,7 +151,7 @@ impl crate::System::Globalization::CompareInfo {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Compare_ReadOnlySpan_1_Gc_CompareOptions2(
+    pub fn Compare_ReadOnlySpan_1_Il2CppString_CompareOptions2(
         &mut self,
         string1: crate::System::ReadOnlySpan_1<char>,
         string2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -194,7 +194,7 @@ impl crate::System::Globalization::CompareInfo {
         > = __cordl_object.invoke("CreateSortKeyCore", (source, options))?;
         Ok(__cordl_ret.into())
     }
-    pub fn EndsWith_Gc_Gc0(
+    pub fn EndsWith_Il2CppString_Il2CppString0(
         &mut self,
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         suffix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -285,7 +285,7 @@ impl crate::System::Globalization::CompareInfo {
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetHashCode_Gc_CompareOptions1(
+    pub fn GetHashCode_Il2CppString_CompareOptions1(
         &mut self,
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         options: crate::System::Globalization::CompareOptions,
@@ -478,7 +478,7 @@ impl crate::System::Globalization::CompareInfo {
             .invoke("IsPrefix", (source, prefix, options))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsSuffix_Gc_Gc0(
+    pub fn IsSuffix_Il2CppString_Il2CppString0(
         &mut self,
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         suffix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -586,7 +586,7 @@ impl crate::System::Globalization::CompareInfo {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc0(
+    pub fn New_CultureInfo0(
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -688,7 +688,7 @@ impl crate::System::Globalization::CompareInfo {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_CultureInfo0(
         &mut self,
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -853,30 +853,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::Compare
     }
 }
 #[cfg(feature = "System+Globalization+CompareInfo")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IDeserializationCallback,
-    >,
-> for crate::System::Globalization::CompareInfo {
+impl AsRef<crate::System::Runtime::Serialization::IDeserializationCallback>
+for crate::System::Globalization::CompareInfo {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IDeserializationCallback,
-    > {
+    ) -> &crate::System::Runtime::Serialization::IDeserializationCallback {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Globalization+CompareInfo")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IDeserializationCallback,
-    >,
-> for crate::System::Globalization::CompareInfo {
+impl AsMut<crate::System::Runtime::Serialization::IDeserializationCallback>
+for crate::System::Globalization::CompareInfo {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IDeserializationCallback,
-    > {
+    ) -> &mut crate::System::Runtime::Serialization::IDeserializationCallback {
         unsafe { std::mem::transmute(self) }
     }
 }

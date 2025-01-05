@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_SessionHAPI {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::HoudiniEngineUnity::HEU_SessionBase,
-    >,
+    __cordl_parent: crate::HoudiniEngineUnity::HEU_SessionBase,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_SessionHAPI")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_SessionHAPI")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_SessionHAPI {
-    type Target = quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>;
+    type Target = crate::HoudiniEngineUnity::HEU_SessionBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

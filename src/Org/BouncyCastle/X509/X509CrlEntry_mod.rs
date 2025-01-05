@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509CrlEntry {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::X509::X509ExtensionBase,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::X509::X509ExtensionBase,
     pub c: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::CrlEntry>,
     pub isIndirect: bool,
     pub previousCertificateIssuer: quest_hook::libil2cpp::Gc<
@@ -23,9 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+X509+X509CrlEntry")]
 impl std::ops::Deref for crate::Org::BouncyCastle::X509::X509CrlEntry {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::X509::X509ExtensionBase,
-    >;
+    type Target = crate::Org::BouncyCastle::X509::X509ExtensionBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -94,7 +90,7 @@ impl crate::Org::BouncyCastle::X509::X509CrlEntry {
         > = __cordl_object.invoke("GetX509Extensions", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_CrlEntry0(
         c: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::CrlEntry>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -103,7 +99,7 @@ impl crate::Org::BouncyCastle::X509::X509CrlEntry {
             .invoke_void(".ctor", (c))?;
         Ok(__cordl_object.into())
     }
-    pub fn New__cordl_bool_Gc1(
+    pub fn New__cordl_bool_X509Name1(
         c: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::CrlEntry>,
         isIndirect: bool,
         previousCertificateIssuer: quest_hook::libil2cpp::Gc<
@@ -129,7 +125,7 @@ impl crate::Org::BouncyCastle::X509::X509CrlEntry {
         > = __cordl_object.invoke("ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_CrlEntry0(
         &mut self,
         c: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::CrlEntry>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -140,7 +136,7 @@ impl crate::Org::BouncyCastle::X509::X509CrlEntry {
             .invoke(".ctor", (c))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor__cordl_bool_Gc1(
+    pub fn _ctor__cordl_bool_X509Name1(
         &mut self,
         c: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::CrlEntry>,
         isIndirect: bool,

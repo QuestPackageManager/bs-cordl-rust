@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AnimatedSwitchView {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _knobRectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub _backgroundImage: quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
     pub _knobImage: quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
@@ -41,7 +41,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+AnimatedSwitchView")]
 impl std::ops::Deref for crate::HMUI::AnimatedSwitchView {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -225,7 +225,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct AnimatedSwitchView_ColorBlock {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub knobColor: crate::UnityEngine::Color,
     pub knobColor0: crate::UnityEngine::Color,
     pub knobColor1: crate::UnityEngine::Color,
@@ -240,7 +240,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+AnimatedSwitchView+ColorBlock")]
 impl std::ops::Deref for crate::HMUI::AnimatedSwitchView_ColorBlock {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -284,7 +284,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::AnimatedSwitchView_Color
 #[repr(C)]
 #[derive(Debug)]
 pub struct AnimatedSwitchView_GetColorDelegate {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "HMUI+AnimatedSwitchView+GetColorDelegate")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -293,7 +293,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+AnimatedSwitchView+GetColorDelegate")]
 impl std::ops::Deref for crate::HMUI::AnimatedSwitchView_GetColorDelegate {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

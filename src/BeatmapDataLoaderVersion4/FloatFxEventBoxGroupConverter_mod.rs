@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatFxEventBoxGroupConverter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::BeatmapDataLoaderVersion4::EventBoxGroupConverter,
-    >,
+    __cordl_parent: crate::BeatmapDataLoaderVersion4::EventBoxGroupConverter,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion4+FloatFxEventBoxGroupConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatmapDataLoaderVersion4+FloatFxEventBoxGroupConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion4::FloatFxEventBoxGroupConverter {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::BeatmapDataLoaderVersion4::EventBoxGroupConverter,
-    >;
+    type Target = crate::BeatmapDataLoaderVersion4::EventBoxGroupConverter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

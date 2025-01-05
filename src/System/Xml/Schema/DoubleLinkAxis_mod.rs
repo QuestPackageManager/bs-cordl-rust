@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DoubleLinkAxis {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::Axis>,
+    __cordl_parent: crate::MS::Internal::Xml::XPath::Axis,
     pub next: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::Axis>,
 }
 #[cfg(feature = "System+Xml+Schema+DoubleLinkAxis")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+DoubleLinkAxis")]
 impl std::ops::Deref for crate::System::Xml::Schema::DoubleLinkAxis {
-    type Target = quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::Axis>;
+    type Target = crate::MS::Internal::Xml::XPath::Axis;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

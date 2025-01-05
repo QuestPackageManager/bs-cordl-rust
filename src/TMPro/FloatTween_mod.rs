@@ -28,7 +28,9 @@ impl crate::TMPro::FloatTween {
     pub type FloatTweenCallback = crate::TMPro::FloatTween_FloatTweenCallback;
     pub fn AddOnChangedCallback(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<f32>,
+        callback: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Events::UnityAction_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -150,16 +152,14 @@ impl crate::TMPro::FloatTween {
     }
 }
 #[cfg(feature = "TMPro+FloatTween")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::TMPro::ITweenValue>>
-for crate::TMPro::FloatTween {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::TMPro::ITweenValue> {
+impl AsRef<crate::TMPro::ITweenValue> for crate::TMPro::FloatTween {
+    fn as_ref(&self) -> &crate::TMPro::ITweenValue {
         todo!()
     }
 }
 #[cfg(feature = "TMPro+FloatTween")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::TMPro::ITweenValue>>
-for crate::TMPro::FloatTween {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::TMPro::ITweenValue> {
+impl AsMut<crate::TMPro::ITweenValue> for crate::TMPro::FloatTween {
+    fn as_mut(&mut self) -> &mut crate::TMPro::ITweenValue {
         todo!()
     }
 }
@@ -167,7 +167,7 @@ for crate::TMPro::FloatTween {
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatTween_FloatTweenCallback {
-    __cordl_parent: quest_hook::libil2cpp::Gc<f32>,
+    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<f32>,
 }
 #[cfg(feature = "TMPro+FloatTween+FloatTweenCallback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -176,7 +176,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+FloatTween+FloatTweenCallback")]
 impl std::ops::Deref for crate::TMPro::FloatTween_FloatTweenCallback {
-    type Target = quest_hook::libil2cpp::Gc<f32>;
+    type Target = crate::UnityEngine::Events::UnityEvent_1<f32>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

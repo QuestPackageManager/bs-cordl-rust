@@ -39,7 +39,7 @@ impl crate::UnityEngine::Color32 {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Gc_Gc1(
+    pub fn ToString_Il2CppString_IFormatProvider1(
         &mut self,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
@@ -93,16 +93,14 @@ impl crate::UnityEngine::Color32 {
     }
 }
 #[cfg(feature = "UnityEngine+Color32")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
-for crate::UnityEngine::Color32 {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
+impl AsRef<crate::System::IFormattable> for crate::UnityEngine::Color32 {
+    fn as_ref(&self) -> &crate::System::IFormattable {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Color32")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
-for crate::UnityEngine::Color32 {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
+impl AsMut<crate::System::IFormattable> for crate::UnityEngine::Color32 {
+    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
         todo!()
     }
 }

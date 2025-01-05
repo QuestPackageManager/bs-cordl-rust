@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Operand {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
+    __cordl_parent: crate::MS::Internal::Xml::XPath::AstNode,
     pub _type: crate::System::Xml::XPath::XPathResultType,
     pub _val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MS+Internal+Xml+XPath+Operand")]
 impl std::ops::Deref for crate::MS::Internal::Xml::XPath::Operand {
-    type Target = quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>;
+    type Target = crate::MS::Internal::Xml::XPath::AstNode;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::MS::Internal::Xml::XPath::Operand {
 }
 #[cfg(feature = "MS+Internal+Xml+XPath+Operand")]
 impl crate::MS::Internal::Xml::XPath::Operand {
-    pub fn New_Gc0(
+    pub fn New_Il2CppString0(
         val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -44,7 +44,7 @@ impl crate::MS::Internal::Xml::XPath::Operand {
             .invoke_void(".ctor", (val))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Il2CppString0(
         &mut self,
         val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

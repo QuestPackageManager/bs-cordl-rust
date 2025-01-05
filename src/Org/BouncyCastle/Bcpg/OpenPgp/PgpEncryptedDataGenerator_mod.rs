@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PgpEncryptedDataGenerator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub pOut: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Bcpg::BcpgOutputStream,
     >,
@@ -30,7 +30,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedDataGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -85,7 +85,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator {
             .invoke("AddMethodUtf8", (passPhrase, s2kDigest))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddMethod_Gc0(
+    pub fn AddMethod_Il2CppArray0(
         &mut self,
         passPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -96,7 +96,19 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator {
             .invoke("AddMethod", (passPhrase))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddMethod_Gc2(
+    pub fn AddMethod_Il2CppArray_HashAlgorithmTag1(
+        &mut self,
+        passPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        s2kDigest: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddMethod", (passPhrase, s2kDigest))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddMethod_PgpPublicKey2(
         &mut self,
         key: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
@@ -109,19 +121,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator {
             .invoke("AddMethod", (key))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddMethod_HashAlgorithmTag1(
-        &mut self,
-        passPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
-        s2kDigest: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddMethod", (passPhrase, s2kDigest))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn AddMethod__cordl_bool3(
+    pub fn AddMethod_PgpPublicKey__cordl_bool3(
         &mut self,
         key: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
@@ -175,7 +175,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator {
             .invoke("DoAddMethod", (rawPassPhrase, clearPassPhrase, s2kDigest))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc2(
+    pub fn New_SecureRandom2(
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         _cordl_rand: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Security::SecureRandom,
@@ -187,7 +187,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator {
             .invoke_void(".ctor", (encAlgorithm, _cordl_rand))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc__cordl_bool4(
+    pub fn New_SecureRandom__cordl_bool4(
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         _cordl_rand: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Security::SecureRandom,
@@ -219,7 +219,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator {
             .invoke_void(".ctor", (encAlgorithm, withIntegrityPacket))?;
         Ok(__cordl_object.into())
     }
-    pub fn New__cordl_bool_Gc3(
+    pub fn New__cordl_bool_SecureRandom3(
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         withIntegrityPacket: bool,
         _cordl_rand: quest_hook::libil2cpp::Gc<
@@ -232,7 +232,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator {
             .invoke_void(".ctor", (encAlgorithm, withIntegrityPacket, _cordl_rand))?;
         Ok(__cordl_object.into())
     }
-    pub fn Open_Gc2(
+    pub fn Open_Il2CppArray2(
         &mut self,
         outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -260,7 +260,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator {
             .invoke("Open", (outStr, length))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Open_i64_Gc0(
+    pub fn Open_i64_Il2CppArray0(
         &mut self,
         outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         length: i64,
@@ -275,7 +275,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator {
             .invoke("Open", (outStr, length, buffer))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_SecureRandom2(
         &mut self,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         _cordl_rand: quest_hook::libil2cpp::Gc<
@@ -289,7 +289,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator {
             .invoke(".ctor", (encAlgorithm, _cordl_rand))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc__cordl_bool4(
+    pub fn _ctor_SecureRandom__cordl_bool4(
         &mut self,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         _cordl_rand: quest_hook::libil2cpp::Gc<
@@ -327,7 +327,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator {
             .invoke(".ctor", (encAlgorithm, withIntegrityPacket))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor__cordl_bool_Gc3(
+    pub fn _ctor__cordl_bool_SecureRandom3(
         &mut self,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         withIntegrityPacket: bool,
@@ -354,26 +354,18 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedDataGenerator")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator>,
-> for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator,
-    > {
+impl AsRef<crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator>
+for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedDataGenerator")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator>,
-> for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator {
+impl AsMut<crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator>
+for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator,
-    > {
+    ) -> &mut crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -381,9 +373,7 @@ impl AsMut<
 #[repr(C)]
 #[derive(Debug)]
 pub struct PgpEncryptedDataGenerator_EncMethod {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Bcpg::ContainedPacket,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Bcpg::ContainedPacket,
     pub sessionInfo: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
     pub key: quest_hook::libil2cpp::Gc<
@@ -399,9 +389,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedDataGenerator+EncMethod")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator_EncMethod {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Bcpg::ContainedPacket,
-    >;
+    type Target = crate::Org::BouncyCastle::Bcpg::ContainedPacket;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -461,9 +449,7 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator_EncMethod
 #[repr(C)]
 #[derive(Debug)]
 pub struct PgpEncryptedDataGenerator_PbeMethod {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator_EncMethod,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator_EncMethod,
     pub s2k: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::S2k>,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedDataGenerator+PbeMethod")]
@@ -475,9 +461,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedDataGenerator+PbeMethod")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator_PbeMethod {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator_EncMethod,
-    >;
+    type Target = crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator_EncMethod;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -574,17 +558,13 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator_PbeMethod
 #[repr(C)]
 #[derive(Debug)]
 pub struct PgpEncryptedDataGenerator_PubMethod {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator_EncMethod,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator_EncMethod,
     pub pubKey: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
     >,
     pub sessionKeyObfuscation: bool,
     pub data: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppArray<u8>>,
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedDataGenerator+PubMethod")]
@@ -596,9 +576,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedDataGenerator+PubMethod")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator_PubMethod {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator_EncMethod,
-    >;
+    type Target = crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator_EncMethod;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -690,7 +668,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator_PubMetho
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
             >,
         >,
     > {
@@ -699,7 +677,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator_PubMetho
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
             >,
         > = __cordl_object.invoke("ProcessSessionInfo", (encryptedSessionInfo))?;
         Ok(__cordl_ret.into())

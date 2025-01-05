@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_AssetTask {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Task>,
+    __cordl_parent: crate::HoudiniEngineUnity::HEU_Task,
     pub _buildType: crate::HoudiniEngineUnity::HEU_AssetTask_BuildType,
     pub _asset: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
     pub _assetPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_AssetTask")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_AssetTask {
-    type Target = quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Task>;
+    type Target = crate::HoudiniEngineUnity::HEU_Task;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -43,7 +43,7 @@ impl crate::HoudiniEngineUnity::HEU_AssetTask {
             .invoke("CompleteTask", (result))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CookCompletedCallback_Gc1(
+    pub fn CookCompletedCallback_HEU_CookedEventData1(
         &mut self,
         cookedEventData: quest_hook::libil2cpp::Gc<
             crate::HoudiniEngineUnity::HEU_CookedEventData,
@@ -56,7 +56,24 @@ impl crate::HoudiniEngineUnity::HEU_AssetTask {
             .invoke("CookCompletedCallback", (cookedEventData))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CookCompletedCallback_Gc2(
+    pub fn CookCompletedCallback_HEU_HoudiniAsset__cordl_bool_List_1_0(
+        &mut self,
+        asset: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
+        bSuccess: bool,
+        outputs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CookCompletedCallback", (asset, bSuccess, outputs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CookCompletedCallback_HEU_ReloadEventData2(
         &mut self,
         reloadEventData: quest_hook::libil2cpp::Gc<
             crate::HoudiniEngineUnity::HEU_ReloadEventData,
@@ -67,21 +84,6 @@ impl crate::HoudiniEngineUnity::HEU_AssetTask {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CookCompletedCallback", (reloadEventData))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn CookCompletedCallback__cordl_bool_Gc0(
-        &mut self,
-        asset: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
-        bSuccess: bool,
-        outputs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CookCompletedCallback", (asset, bSuccess, outputs))?;
         Ok(__cordl_ret.into())
     }
     pub fn DoTask(

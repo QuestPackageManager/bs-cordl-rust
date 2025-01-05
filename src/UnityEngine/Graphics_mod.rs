@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Graphics {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+Graphics")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Graphics")]
 impl std::ops::Deref for crate::UnityEngine::Graphics {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -52,7 +52,7 @@ impl crate::UnityEngine::Graphics {
             .invoke("Blit4_Injected", (source, dest, scale, offset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Blit_Gc3(
+    pub fn Blit_Material3(
         source: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
         dest: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
         mat: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -61,15 +61,7 @@ impl crate::UnityEngine::Graphics {
             .invoke("Blit", (source, dest, mat))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Blit_Gc_Gc0(
-        source: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-        dest: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Blit", (source, dest))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Blit_Gc_i32_2(
+    pub fn Blit_Material_i32_2(
         source: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
         dest: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
         mat: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -77,6 +69,14 @@ impl crate::UnityEngine::Graphics {
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Blit", (source, dest, mat, pass))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Blit_Texture_RenderTexture0(
+        source: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+        dest: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Blit", (source, dest))?;
         Ok(__cordl_ret.into())
     }
     pub fn Blit_Vector2_Vector2_1(
@@ -97,14 +97,6 @@ impl crate::UnityEngine::Graphics {
             .invoke("CopyTexture_Full", (src, dst))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CopyTexture_Gc0(
-        src: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-        dst: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CopyTexture", (src, dst))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn CopyTexture_Slice(
         src: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
         srcElement: i32,
@@ -120,7 +112,15 @@ impl crate::UnityEngine::Graphics {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn CopyTexture_i32_i32_Gc_i32_i32_1(
+    pub fn CopyTexture_Texture0(
+        src: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+        dst: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CopyTexture", (src, dst))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CopyTexture_i32_i32_Texture_i32_i32_1(
         src: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
         srcElement: i32,
         srcMip: i32,
@@ -132,7 +132,7 @@ impl crate::UnityEngine::Graphics {
             .invoke("CopyTexture", (src, srcElement, srcMip, dst, dstElement, dstMip))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DrawMeshInstanced_Gc_LightProbeUsage_Gc0(
+    pub fn DrawMeshInstanced_Camera_LightProbeUsage_LightProbeProxyVolume0(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         submeshIndex: i32,
         material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -170,7 +170,7 @@ impl crate::UnityEngine::Graphics {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn DrawMeshInstanced_Gc_i32_Gc_Gc_i32_Gc_ShadowCastingMode__cordl_bool_i32_1(
+    pub fn DrawMeshInstanced_Mesh_i32_Material_Il2CppArray_i32_MaterialPropertyBlock_ShadowCastingMode__cordl_bool_i32_1(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         submeshIndex: i32,
         material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -209,7 +209,7 @@ impl crate::UnityEngine::Graphics {
             .invoke("DrawMeshNow", (mesh, matrix, materialIndex))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DrawMesh_ShadowCastingMode_Gc_LightProbeUsage_Gc1(
+    pub fn DrawMesh_ShadowCastingMode_Transform_LightProbeUsage_LightProbeProxyVolume1(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         matrix: crate::UnityEngine::Matrix4x4,
         material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -458,16 +458,6 @@ impl crate::UnityEngine::Graphics {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetRenderTargetImpl_Gc_i32_CubemapFace_i32_1(
-        rt: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
-        mipLevel: i32,
-        face: crate::UnityEngine::CubemapFace,
-        depthSlice: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetRenderTargetImpl", (rt, mipLevel, face, depthSlice))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn SetRenderTargetImpl_RenderBuffer_RenderBuffer_i32_CubemapFace_i32_0(
         colorBuffer: crate::UnityEngine::RenderBuffer,
         depthBuffer: crate::UnityEngine::RenderBuffer,
@@ -482,7 +472,17 @@ impl crate::UnityEngine::Graphics {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetRenderTarget_Gc1(
+    pub fn SetRenderTargetImpl_RenderTexture_i32_CubemapFace_i32_1(
+        rt: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+        mipLevel: i32,
+        face: crate::UnityEngine::CubemapFace,
+        depthSlice: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetRenderTargetImpl", (rt, mipLevel, face, depthSlice))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetRenderTarget_RenderTexture1(
         rt: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()

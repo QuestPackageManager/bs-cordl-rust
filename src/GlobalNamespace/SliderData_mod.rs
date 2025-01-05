@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SliderData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapObjectData>,
+    __cordl_parent: crate::GlobalNamespace::BeatmapObjectData,
     pub _colorType_k__BackingField: crate::GlobalNamespace::ColorType,
     pub _sliderType_k__BackingField: crate::GlobalNamespace::SliderData_Type,
     pub _hasHeadNote_k__BackingField: bool,
@@ -31,7 +31,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SliderData")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderData {
-    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapObjectData>;
+    type Target = crate::GlobalNamespace::BeatmapObjectData;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

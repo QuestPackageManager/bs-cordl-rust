@@ -2,10 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NtpRequest {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _socket: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetSocket>,
     pub _onRequestComplete: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NtpPacket>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NtpPacket>,
+        >,
     >,
     pub _ntpEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
 }
@@ -16,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LiteNetLib+Utils+NtpRequest")]
 impl std::ops::Deref for crate::LiteNetLib::Utils::NtpRequest {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,24 +42,12 @@ impl crate::LiteNetLib::Utils::NtpRequest {
             .invoke("Close", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Create_Gc0(
-        endPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
-        onRequestComplete: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NtpPacket>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NtpRequest>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::LiteNetLib::Utils::NtpRequest,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Create", (endPoint, onRequestComplete))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Create_Gc1(
+    pub fn Create_IPAddress_Action_1_1(
         ipAddress: quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
         onRequestComplete: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NtpPacket>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NtpPacket>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NtpRequest>,
@@ -68,10 +58,28 @@ impl crate::LiteNetLib::Utils::NtpRequest {
             .invoke("Create", (ipAddress, onRequestComplete))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Create_Gc3(
+    pub fn Create_IPEndPoint_Action_1_0(
+        endPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+        onRequestComplete: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NtpPacket>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NtpRequest>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::LiteNetLib::Utils::NtpRequest,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (endPoint, onRequestComplete))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_Il2CppString_Action_1_3(
         ntpServerAddress: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         onRequestComplete: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NtpPacket>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NtpPacket>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NtpRequest>,
@@ -82,11 +90,13 @@ impl crate::LiteNetLib::Utils::NtpRequest {
             .invoke("Create", (ntpServerAddress, onRequestComplete))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Create_i32_Gc2(
+    pub fn Create_Il2CppString_i32_Action_1_2(
         ntpServerAddress: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         port: i32,
         onRequestComplete: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NtpPacket>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NtpPacket>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NtpRequest>,
@@ -117,7 +127,9 @@ impl crate::LiteNetLib::Utils::NtpRequest {
     pub fn New(
         endPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
         onRequestComplete: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NtpPacket>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NtpPacket>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -140,7 +152,9 @@ impl crate::LiteNetLib::Utils::NtpRequest {
         &mut self,
         endPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
         onRequestComplete: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NtpPacket>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NtpPacket>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -161,20 +175,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::Utils::NtpRequest 
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NtpRequest")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::LiteNetLib::INetSocketListener>>
+impl AsRef<crate::LiteNetLib::INetSocketListener>
 for crate::LiteNetLib::Utils::NtpRequest {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::LiteNetLib::INetSocketListener> {
+    fn as_ref(&self) -> &crate::LiteNetLib::INetSocketListener {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NtpRequest")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::LiteNetLib::INetSocketListener>>
+impl AsMut<crate::LiteNetLib::INetSocketListener>
 for crate::LiteNetLib::Utils::NtpRequest {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::LiteNetLib::INetSocketListener> {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::INetSocketListener {
         unsafe { std::mem::transmute(self) }
     }
 }

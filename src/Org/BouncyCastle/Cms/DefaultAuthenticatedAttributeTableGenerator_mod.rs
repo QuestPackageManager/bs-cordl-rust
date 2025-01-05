@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultAuthenticatedAttributeTableGenerator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub table: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+DefaultAuthenticatedAttributeTableGenerator")]
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Cms+DefaultAuthenticatedAttributeTableGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::DefaultAuthenticatedAttributeTableGenerator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -63,7 +63,7 @@ impl crate::Org::BouncyCastle::Cms::DefaultAuthenticatedAttributeTableGenerator 
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_AttributeTable1(
         attributeTable: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
         >,
@@ -84,7 +84,7 @@ impl crate::Org::BouncyCastle::Cms::DefaultAuthenticatedAttributeTableGenerator 
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_AttributeTable1(
         &mut self,
         attributeTable: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
@@ -109,26 +109,18 @@ for crate::Org::BouncyCastle::Cms::DefaultAuthenticatedAttributeTableGenerator {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+DefaultAuthenticatedAttributeTableGenerator")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator>,
-> for crate::Org::BouncyCastle::Cms::DefaultAuthenticatedAttributeTableGenerator {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
-    > {
+impl AsRef<crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator>
+for crate::Org::BouncyCastle::Cms::DefaultAuthenticatedAttributeTableGenerator {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+DefaultAuthenticatedAttributeTableGenerator")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator>,
-> for crate::Org::BouncyCastle::Cms::DefaultAuthenticatedAttributeTableGenerator {
+impl AsMut<crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator>
+for crate::Org::BouncyCastle::Cms::DefaultAuthenticatedAttributeTableGenerator {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
-    > {
+    ) -> &mut crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator {
         unsafe { std::mem::transmute(self) }
     }
 }

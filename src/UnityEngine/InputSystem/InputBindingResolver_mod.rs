@@ -7,12 +7,12 @@ pub struct InputBindingResolver {
     pub totalInteractionCount: i32,
     pub maps: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionMap>,
+            *mut crate::UnityEngine::InputSystem::InputActionMap,
         >,
     >,
     pub controls: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+            *mut crate::UnityEngine::InputSystem::InputControl,
         >,
     >,
     pub memory: crate::UnityEngine::InputSystem::InputActionState_UnmanagedMemory,
@@ -21,14 +21,12 @@ pub struct InputBindingResolver {
     >,
     pub processors: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputProcessor>,
+            *mut crate::UnityEngine::InputSystem::InputProcessor,
         >,
     >,
     pub composites: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::InputSystem::InputBindingComposite,
-            >,
+            *mut crate::UnityEngine::InputSystem::InputBindingComposite,
         >,
     >,
     pub bindingMask: crate::System::Nullable_1<
@@ -36,7 +34,9 @@ pub struct InputBindingResolver {
     >,
     pub m_IsControlOnlyResolve: bool,
     pub m_Parameters: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Utilities::NameAndParameters,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::InputSystem::Utilities::NameAndParameters,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputBindingResolver")]
@@ -216,16 +216,16 @@ impl crate::UnityEngine::InputSystem::InputBindingResolver {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputBindingResolver")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsRef<crate::System::IDisposable>
 for crate::UnityEngine::InputSystem::InputBindingResolver {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputBindingResolver")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsMut<crate::System::IDisposable>
 for crate::UnityEngine::InputSystem::InputBindingResolver {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         todo!()
     }
 }

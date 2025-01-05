@@ -2,10 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TriangulationPoint {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Edges_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint,
+            >,
         >,
     >,
     pub X: f64,
@@ -20,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+TriangulationPoint")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -90,8 +92,10 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint,
+                >,
             >,
         >,
     > {
@@ -99,8 +103,10 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint,
+                >,
             >,
         > = __cordl_object.invoke("get_Edges", ())?;
         Ok(__cordl_ret.into())
@@ -129,8 +135,10 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint {
     pub fn set_Edges(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

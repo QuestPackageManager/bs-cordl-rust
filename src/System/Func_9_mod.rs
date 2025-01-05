@@ -12,7 +12,7 @@ pub struct Func_9<
     T8: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_T1: std::marker::PhantomData<T1>,
     __cordl_phantom_T2: std::marker::PhantomData<T2>,
     __cordl_phantom_T3: std::marker::PhantomData<T3>,
@@ -40,7 +40,7 @@ impl<
     T8: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::System::Func_9<T1, T2, T3, T4, T5, T6, T7, T8, TResult> {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

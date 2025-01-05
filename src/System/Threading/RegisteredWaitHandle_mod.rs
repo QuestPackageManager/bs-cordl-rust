@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RegisteredWaitHandle {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>,
+    __cordl_parent: crate::System::MarshalByRefObject,
     pub _waitObject: quest_hook::libil2cpp::Gc<crate::System::Threading::WaitHandle>,
     pub _callback: quest_hook::libil2cpp::Gc<
         crate::System::Threading::WaitOrTimerCallback,
@@ -24,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+RegisteredWaitHandle")]
 impl std::ops::Deref for crate::System::Threading::RegisteredWaitHandle {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>;
+    type Target = crate::System::MarshalByRefObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

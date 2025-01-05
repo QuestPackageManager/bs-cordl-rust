@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FullConditionalExpression {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::ConditionalExpression,
-    >,
+    __cordl_parent: crate::System::Linq::Expressions::ConditionalExpression,
     pub _false: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
 }
 #[cfg(feature = "System+Linq+Expressions+FullConditionalExpression")]
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Linq+Expressions+FullConditionalExpression")]
 impl std::ops::Deref for crate::System::Linq::Expressions::FullConditionalExpression {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::ConditionalExpression,
-    >;
+    type Target = crate::System::Linq::Expressions::ConditionalExpression;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

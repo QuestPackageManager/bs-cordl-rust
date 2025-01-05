@@ -2,15 +2,23 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputFieldDataBinder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _bindings: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::InputField>,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IObservableChange>,
+        crate::System::Collections::Generic::List_1<
             quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                crate::System::Tuple_4<
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::InputField>,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IObservableChange>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::Events::UnityAction_1<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::Action>,
+                >,
             >,
-            quest_hook::libil2cpp::Gc<crate::System::Action>,
         >,
     >,
 }
@@ -21,7 +29,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+InputFieldDataBinder")]
 impl std::ops::Deref for crate::HMUI::InputFieldDataBinder {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,16 +45,28 @@ impl crate::HMUI::InputFieldDataBinder {
     pub fn AddBindings<T0, T1>(
         &mut self,
         bindingData: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::InputField>,
-                T0,
+            crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    T1,
-                >,
-                quest_hook::libil2cpp::Gc<
-                    T1,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Tuple_4<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::InputField>,
+                        T0,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Func_2<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                                T1,
+                            >,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Func_2<
+                                T1,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                            >,
+                        >,
+                    >,
                 >,
             >,
         >,
@@ -67,9 +87,13 @@ impl crate::HMUI::InputFieldDataBinder {
     pub fn AddStringBindings<T>(
         &mut self,
         bindingData: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::InputField>,
-                T,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Tuple_2<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::InputField>,
+                        T,
+                    >,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>

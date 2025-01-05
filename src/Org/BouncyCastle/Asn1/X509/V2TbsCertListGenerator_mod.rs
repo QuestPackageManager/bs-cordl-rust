@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct V2TbsCertListGenerator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub version: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
     pub signature: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
@@ -29,7 +29,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+V2TbsCertListGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::X509::V2TbsCertListGenerator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -43,7 +43,7 @@ for crate::Org::BouncyCastle::Asn1::X509::V2TbsCertListGenerator {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+V2TbsCertListGenerator")]
 impl crate::Org::BouncyCastle::Asn1::X509::V2TbsCertListGenerator {
-    pub fn AddCrlEntry_Gc0(
+    pub fn AddCrlEntry_Asn1Sequence0(
         &mut self,
         crlEntry: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -54,7 +54,24 @@ impl crate::Org::BouncyCastle::Asn1::X509::V2TbsCertListGenerator {
             .invoke("AddCrlEntry", (crlEntry))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddCrlEntry_Gc_Gc4(
+    pub fn AddCrlEntry_DerInteger_DerUtcTime_i32_1(
+        &mut self,
+        userCertificate: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerInteger,
+        >,
+        revocationDate: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerUtcTime,
+        >,
+        reason: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddCrlEntry", (userCertificate, revocationDate, reason))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddCrlEntry_DerInteger_Time_X509Extensions4(
         &mut self,
         userCertificate: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerInteger,
@@ -73,24 +90,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::V2TbsCertListGenerator {
             .invoke("AddCrlEntry", (userCertificate, revocationDate, extensions))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddCrlEntry_Gc_i32_1(
-        &mut self,
-        userCertificate: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::DerInteger,
-        >,
-        revocationDate: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::DerUtcTime,
-        >,
-        reason: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddCrlEntry", (userCertificate, revocationDate, reason))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn AddCrlEntry_Gc_i32_2(
+    pub fn AddCrlEntry_DerInteger_Time_i32_2(
         &mut self,
         userCertificate: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerInteger,
@@ -107,7 +107,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::V2TbsCertListGenerator {
             .invoke("AddCrlEntry", (userCertificate, revocationDate, reason))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddCrlEntry_Gc_i32_Gc3(
+    pub fn AddCrlEntry_DerInteger_Time_i32_DerGeneralizedTime3(
         &mut self,
         userCertificate: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerInteger,
@@ -176,7 +176,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::V2TbsCertListGenerator {
             .invoke("SetIssuer", (issuer))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetNextUpdate_Gc0(
+    pub fn SetNextUpdate_DerUtcTime0(
         &mut self,
         nextUpdate: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerUtcTime>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -187,7 +187,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::V2TbsCertListGenerator {
             .invoke("SetNextUpdate", (nextUpdate))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetNextUpdate_Gc1(
+    pub fn SetNextUpdate_Time1(
         &mut self,
         nextUpdate: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::Time>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -211,7 +211,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::V2TbsCertListGenerator {
             .invoke("SetSignature", (signature))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetThisUpdate_Gc0(
+    pub fn SetThisUpdate_DerUtcTime0(
         &mut self,
         thisUpdate: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerUtcTime>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -222,7 +222,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::V2TbsCertListGenerator {
             .invoke("SetThisUpdate", (thisUpdate))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetThisUpdate_Gc1(
+    pub fn SetThisUpdate_Time1(
         &mut self,
         thisUpdate: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::Time>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

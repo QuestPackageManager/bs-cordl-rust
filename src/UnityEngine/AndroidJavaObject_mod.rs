@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AndroidJavaObject {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_jobject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GlobalJavaObjectRef>,
     pub m_jclass: quest_hook::libil2cpp::Gc<crate::UnityEngine::GlobalJavaObjectRef>,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+AndroidJavaObject")]
 impl std::ops::Deref for crate::UnityEngine::AndroidJavaObject {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -48,7 +48,7 @@ impl crate::UnityEngine::AndroidJavaObject {
             .invoke("AndroidJavaObjectDeleteLocalRef", (jobject))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CallStatic_Gc0<T>(
+    pub fn CallStatic_Il2CppString0<T>(
         &mut self,
         methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
@@ -64,13 +64,11 @@ impl crate::UnityEngine::AndroidJavaObject {
             .invoke("CallStatic", (methodName, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CallStatic_Gc2(
+    pub fn CallStatic_Il2CppString2(
         &mut self,
         methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -80,7 +78,7 @@ impl crate::UnityEngine::AndroidJavaObject {
             .invoke("CallStatic", (methodName, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CallStatic_Gc4<ReturnType, T>(
+    pub fn CallStatic_Il2CppString4<ReturnType, T>(
         &mut self,
         methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
@@ -98,13 +96,11 @@ impl crate::UnityEngine::AndroidJavaObject {
             .invoke("CallStatic", (methodName, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CallStatic_Gc6<ReturnType>(
+    pub fn CallStatic_Il2CppString6<ReturnType>(
         &mut self,
         methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<ReturnType>
     where
@@ -138,9 +134,7 @@ impl crate::UnityEngine::AndroidJavaObject {
         &mut self,
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -172,9 +166,7 @@ impl crate::UnityEngine::AndroidJavaObject {
         &mut self,
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<ReturnType>
     where
@@ -188,7 +180,7 @@ impl crate::UnityEngine::AndroidJavaObject {
             .invoke("CallStatic", (methodID, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Call_Gc0<T>(
+    pub fn Call_Il2CppString0<T>(
         &mut self,
         methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
@@ -204,13 +196,11 @@ impl crate::UnityEngine::AndroidJavaObject {
             .invoke("Call", (methodName, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Call_Gc2(
+    pub fn Call_Il2CppString2(
         &mut self,
         methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -220,7 +210,7 @@ impl crate::UnityEngine::AndroidJavaObject {
             .invoke("Call", (methodName, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Call_Gc4<ReturnType, T>(
+    pub fn Call_Il2CppString4<ReturnType, T>(
         &mut self,
         methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
@@ -237,13 +227,11 @@ impl crate::UnityEngine::AndroidJavaObject {
         let __cordl_ret: ReturnType = __cordl_object.invoke("Call", (methodName, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Call_Gc6<ReturnType>(
+    pub fn Call_Il2CppString6<ReturnType>(
         &mut self,
         methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<ReturnType>
     where
@@ -276,9 +264,7 @@ impl crate::UnityEngine::AndroidJavaObject {
         &mut self,
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -309,9 +295,7 @@ impl crate::UnityEngine::AndroidJavaObject {
         &mut self,
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<ReturnType>
     where
@@ -337,7 +321,7 @@ impl crate::UnityEngine::AndroidJavaObject {
         > = __cordl_object.invoke("CloneReference", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn DebugPrint_Gc0(
+    pub fn DebugPrint_Il2CppString0(
         &mut self,
         msg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -348,15 +332,13 @@ impl crate::UnityEngine::AndroidJavaObject {
             .invoke("DebugPrint", (msg))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DebugPrint_Gc_Gc_Gc1(
+    pub fn DebugPrint_Il2CppString_Il2CppString_Il2CppArray1(
         &mut self,
         call: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -428,7 +410,7 @@ impl crate::UnityEngine::AndroidJavaObject {
             .invoke("GetRawObject", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetStatic_Gc0<FieldType>(
+    pub fn GetStatic_Il2CppString0<FieldType>(
         &mut self,
         fieldName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<FieldType>
@@ -456,7 +438,7 @@ impl crate::UnityEngine::AndroidJavaObject {
         let __cordl_ret: FieldType = __cordl_object.invoke("GetStatic", (fieldID))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Get_Gc0<FieldType>(
+    pub fn Get_Il2CppString0<FieldType>(
         &mut self,
         fieldName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<FieldType>
@@ -491,11 +473,23 @@ impl crate::UnityEngine::AndroidJavaObject {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc0(
+    pub fn New_Il2CppString_Il2CppArray0(
+        className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (className, args))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Il2CppString_Il2CppArray1(
         className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                *mut crate::UnityEngine::AndroidJavaObject,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -505,11 +499,35 @@ impl crate::UnityEngine::AndroidJavaObject {
             .invoke_void(".ctor", (className, args))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc1(
+    pub fn New_Il2CppString_Il2CppArray2(
+        className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::AndroidJavaClass>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (className, args))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Il2CppString_Il2CppArray3(
+        className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::AndroidJavaProxy>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (className, args))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Il2CppString_Il2CppArray4(
         className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaObject>,
+                *mut crate::UnityEngine::AndroidJavaRunnable,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -519,54 +537,10 @@ impl crate::UnityEngine::AndroidJavaObject {
             .invoke_void(".ctor", (className, args))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc2(
+    pub fn New_Il2CppString_Il2CppArray5(
         className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaClass>,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (className, args))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_Gc3(
-        className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaProxy>,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (className, args))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_Gc4(
-        className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaRunnable>,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (className, args))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_Gc5(
-        className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -584,13 +558,11 @@ impl crate::UnityEngine::AndroidJavaObject {
             .invoke_void(".ctor", (jobject))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_IntPtr_IntPtr_Gc7(
+    pub fn New_IntPtr_IntPtr_Il2CppArray7(
         clazz: crate::System::IntPtr,
         constructorID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -599,7 +571,7 @@ impl crate::UnityEngine::AndroidJavaObject {
             .invoke_void(".ctor", (clazz, constructorID, args))?;
         Ok(__cordl_object.into())
     }
-    pub fn SetStatic_Gc0<FieldType>(
+    pub fn SetStatic_Il2CppString0<FieldType>(
         &mut self,
         fieldName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         val: FieldType,
@@ -631,7 +603,7 @@ impl crate::UnityEngine::AndroidJavaObject {
             .invoke("SetStatic", (fieldID, val))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Set_Gc0<FieldType>(
+    pub fn Set_Il2CppString0<FieldType>(
         &mut self,
         fieldName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         val: FieldType,
@@ -663,13 +635,11 @@ impl crate::UnityEngine::AndroidJavaObject {
             .invoke("Set", (fieldID, val))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _AndroidJavaObject_Gc0(
+    pub fn _AndroidJavaObject_Il2CppString0(
         &mut self,
         className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -683,9 +653,7 @@ impl crate::UnityEngine::AndroidJavaObject {
         &mut self,
         constructorID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -695,13 +663,11 @@ impl crate::UnityEngine::AndroidJavaObject {
             .invoke("_AndroidJavaObject", (constructorID, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _CallStatic_Gc0(
+    pub fn _CallStatic_Il2CppString0(
         &mut self,
         methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -711,13 +677,11 @@ impl crate::UnityEngine::AndroidJavaObject {
             .invoke("_CallStatic", (methodName, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _CallStatic_Gc2<ReturnType>(
+    pub fn _CallStatic_Il2CppString2<ReturnType>(
         &mut self,
         methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<ReturnType>
     where
@@ -735,9 +699,7 @@ impl crate::UnityEngine::AndroidJavaObject {
         &mut self,
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -751,9 +713,7 @@ impl crate::UnityEngine::AndroidJavaObject {
         &mut self,
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<ReturnType>
     where
@@ -767,13 +727,11 @@ impl crate::UnityEngine::AndroidJavaObject {
             .invoke("_CallStatic", (methodID, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _Call_Gc0(
+    pub fn _Call_Il2CppString0(
         &mut self,
         methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -783,13 +741,11 @@ impl crate::UnityEngine::AndroidJavaObject {
             .invoke("_Call", (methodName, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _Call_Gc2<ReturnType>(
+    pub fn _Call_Il2CppString2<ReturnType>(
         &mut self,
         methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<ReturnType>
     where
@@ -807,9 +763,7 @@ impl crate::UnityEngine::AndroidJavaObject {
         &mut self,
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -823,9 +777,7 @@ impl crate::UnityEngine::AndroidJavaObject {
         &mut self,
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<ReturnType>
     where
@@ -858,7 +810,7 @@ impl crate::UnityEngine::AndroidJavaObject {
             .invoke("_GetRawObject", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _GetStatic_Gc0<FieldType>(
+    pub fn _GetStatic_Il2CppString0<FieldType>(
         &mut self,
         fieldName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<FieldType>
@@ -886,7 +838,7 @@ impl crate::UnityEngine::AndroidJavaObject {
         let __cordl_ret: FieldType = __cordl_object.invoke("_GetStatic", (fieldID))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _Get_Gc0<FieldType>(
+    pub fn _Get_Il2CppString0<FieldType>(
         &mut self,
         fieldName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<FieldType>
@@ -914,7 +866,7 @@ impl crate::UnityEngine::AndroidJavaObject {
         let __cordl_ret: FieldType = __cordl_object.invoke("_Get", (fieldID))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _SetStatic_Gc0<FieldType>(
+    pub fn _SetStatic_Il2CppString0<FieldType>(
         &mut self,
         fieldName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         val: FieldType,
@@ -946,7 +898,7 @@ impl crate::UnityEngine::AndroidJavaObject {
             .invoke("_SetStatic", (fieldID, val))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _Set_Gc0<FieldType>(
+    pub fn _Set_Il2CppString0<FieldType>(
         &mut self,
         fieldName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         val: FieldType,
@@ -988,12 +940,26 @@ impl crate::UnityEngine::AndroidJavaObject {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc0(
+    pub fn _ctor_Il2CppString_Il2CppArray0(
+        &mut self,
+        className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (className, args))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppString_Il2CppArray1(
         &mut self,
         className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                *mut crate::UnityEngine::AndroidJavaObject,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1004,12 +970,40 @@ impl crate::UnityEngine::AndroidJavaObject {
             .invoke(".ctor", (className, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc1(
+    pub fn _ctor_Il2CppString_Il2CppArray2(
+        &mut self,
+        className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::AndroidJavaClass>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (className, args))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppString_Il2CppArray3(
+        &mut self,
+        className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::AndroidJavaProxy>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (className, args))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppString_Il2CppArray4(
         &mut self,
         className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaObject>,
+                *mut crate::UnityEngine::AndroidJavaRunnable,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1020,61 +1014,11 @@ impl crate::UnityEngine::AndroidJavaObject {
             .invoke(".ctor", (className, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc2(
+    pub fn _ctor_Il2CppString_Il2CppArray5(
         &mut self,
         className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaClass>,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (className, args))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_Gc3(
-        &mut self,
-        className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaProxy>,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (className, args))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_Gc4(
-        &mut self,
-        className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaRunnable>,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (className, args))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_Gc5(
-        &mut self,
-        className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1095,14 +1039,12 @@ impl crate::UnityEngine::AndroidJavaObject {
             .invoke(".ctor", (jobject))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IntPtr_IntPtr_Gc7(
+    pub fn _ctor_IntPtr_IntPtr_Il2CppArray7(
         &mut self,
         clazz: crate::System::IntPtr,
         constructorID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1123,16 +1065,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::AndroidJavaObject
     }
 }
 #[cfg(feature = "UnityEngine+AndroidJavaObject")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::UnityEngine::AndroidJavaObject {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsRef<crate::System::IDisposable> for crate::UnityEngine::AndroidJavaObject {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+AndroidJavaObject")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::UnityEngine::AndroidJavaObject {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsMut<crate::System::IDisposable> for crate::UnityEngine::AndroidJavaObject {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }

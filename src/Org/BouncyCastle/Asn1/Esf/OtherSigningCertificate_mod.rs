@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OtherSigningCertificate {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub certs: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     pub policies: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::Asn1Sequence,
@@ -18,9 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+Esf+OtherSigningCertificate")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Esf::OtherSigningCertificate {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -39,9 +35,7 @@ impl crate::Org::BouncyCastle::Asn1::Esf::OtherSigningCertificate {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Asn1::Esf::OtherCertID,
-                >,
+                *mut crate::Org::BouncyCastle::Asn1::Esf::OtherCertID,
             >,
         >,
     > {
@@ -50,9 +44,7 @@ impl crate::Org::BouncyCastle::Asn1::Esf::OtherSigningCertificate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Asn1::Esf::OtherCertID,
-                >,
+                *mut crate::Org::BouncyCastle::Asn1::Esf::OtherCertID,
             >,
         > = __cordl_object.invoke("GetCerts", ())?;
         Ok(__cordl_ret.into())
@@ -74,9 +66,7 @@ impl crate::Org::BouncyCastle::Asn1::Esf::OtherSigningCertificate {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
-                >,
+                *mut crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
             >,
         >,
     > {
@@ -85,14 +75,12 @@ impl crate::Org::BouncyCastle::Asn1::Esf::OtherSigningCertificate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
-                >,
+                *mut crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
             >,
         > = __cordl_object.invoke("GetPolicies", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_Asn1Sequence0(
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -101,14 +89,8 @@ impl crate::Org::BouncyCastle::Asn1::Esf::OtherSigningCertificate {
             .invoke_void(".ctor", (seq))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
-        certs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Asn1::Esf::OtherCertID,
-                >,
-            >,
-        >,
+    pub fn New_IEnumerable3(
+        certs: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -116,21 +98,9 @@ impl crate::Org::BouncyCastle::Asn1::Esf::OtherSigningCertificate {
             .invoke_void(".ctor", (certs))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc2(
-        certs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Asn1::Esf::OtherCertID,
-                >,
-            >,
-        >,
-        policies: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
-                >,
-            >,
-        >,
+    pub fn New_IEnumerable_IEnumerable4(
+        certs: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
+        policies: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -138,8 +108,12 @@ impl crate::Org::BouncyCastle::Asn1::Esf::OtherSigningCertificate {
             .invoke_void(".ctor", (certs, policies))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc3(
-        certs: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
+    pub fn New_Il2CppArray1(
+        certs: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Asn1::Esf::OtherCertID,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -147,9 +121,17 @@ impl crate::Org::BouncyCastle::Asn1::Esf::OtherSigningCertificate {
             .invoke_void(".ctor", (certs))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc4(
-        certs: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
-        policies: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
+    pub fn New_Il2CppArray_Il2CppArray2(
+        certs: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Asn1::Esf::OtherCertID,
+            >,
+        >,
+        policies: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -170,7 +152,7 @@ impl crate::Org::BouncyCastle::Asn1::Esf::OtherSigningCertificate {
         > = __cordl_object.invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Asn1Sequence0(
         &mut self,
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -181,15 +163,9 @@ impl crate::Org::BouncyCastle::Asn1::Esf::OtherSigningCertificate {
             .invoke(".ctor", (seq))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_IEnumerable3(
         &mut self,
-        certs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Asn1::Esf::OtherCertID,
-                >,
-            >,
-        >,
+        certs: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -198,22 +174,10 @@ impl crate::Org::BouncyCastle::Asn1::Esf::OtherSigningCertificate {
             .invoke(".ctor", (certs))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_IEnumerable_IEnumerable4(
         &mut self,
-        certs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Asn1::Esf::OtherCertID,
-                >,
-            >,
-        >,
-        policies: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
-                >,
-            >,
-        >,
+        certs: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
+        policies: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -222,9 +186,13 @@ impl crate::Org::BouncyCastle::Asn1::Esf::OtherSigningCertificate {
             .invoke(".ctor", (certs, policies))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc3(
+    pub fn _ctor_Il2CppArray1(
         &mut self,
-        certs: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
+        certs: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Asn1::Esf::OtherCertID,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -233,10 +201,18 @@ impl crate::Org::BouncyCastle::Asn1::Esf::OtherSigningCertificate {
             .invoke(".ctor", (certs))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc4(
+    pub fn _ctor_Il2CppArray_Il2CppArray2(
         &mut self,
-        certs: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
-        policies: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
+        certs: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Asn1::Esf::OtherCertID,
+            >,
+        >,
+        policies: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

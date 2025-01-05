@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_InputMeshUtility {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputMeshUtility")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputMeshUtility")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_InputMeshUtility {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -42,15 +42,13 @@ impl crate::HoudiniEngineUnity::HEU_InputMeshUtility {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetMeshPointAttribute_Gc_ByRefMut3(
+    pub fn SetMeshPointAttribute_Il2CppArray_ByRefMut3(
         session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
         geoID: i32,
         partID: i32,
         attrName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         data: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
         partInfo: quest_hook::libil2cpp::ByRefMut<
             crate::HoudiniEngineUnity::HAPI_PartInfo,
@@ -63,7 +61,7 @@ impl crate::HoudiniEngineUnity::HEU_InputMeshUtility {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetMeshPointAttribute_i32_Gc_ByRefMut1(
+    pub fn SetMeshPointAttribute_i32_Il2CppArray_ByRefMut1(
         session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
         geoID: i32,
         partID: i32,
@@ -81,7 +79,7 @@ impl crate::HoudiniEngineUnity::HEU_InputMeshUtility {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetMeshPointAttribute_i32_Gc_ByRefMut2(
+    pub fn SetMeshPointAttribute_i32_Il2CppArray_ByRefMut2(
         session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
         geoID: i32,
         partID: i32,
@@ -101,7 +99,7 @@ impl crate::HoudiniEngineUnity::HEU_InputMeshUtility {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetMeshPointAttribute_i32_Gc_ByRefMut__cordl_bool0(
+    pub fn SetMeshPointAttribute_i32_Il2CppArray_ByRefMut__cordl_bool0(
         session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
         geoID: i32,
         partID: i32,

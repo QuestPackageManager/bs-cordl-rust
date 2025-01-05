@@ -2,20 +2,22 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Allocator2D {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_MinSize: crate::UnityEngine::Vector2Int,
     pub m_MaxSize: crate::UnityEngine::Vector2Int,
     pub m_MaxAllocSize: crate::UnityEngine::Vector2Int,
     pub m_RowHeightBias: i32,
     pub m_Rows: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
-            >,
+            *mut crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
         >,
     >,
     pub m_Areas: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Allocator2D_Area>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::UIR::Allocator2D_Area,
+            >,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D")]
@@ -25,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::Allocator2D {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -46,8 +48,10 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D {
     pub type Row = crate::UnityEngine::UIElements::UIR::Allocator2D_Row;
     pub fn BuildAreas(
         areas: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::UIR::Allocator2D_Area,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::UIR::Allocator2D_Area,
+                >,
             >,
         >,
         minSize: crate::UnityEngine::Vector2Int,
@@ -63,17 +67,13 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
-                >,
+                *mut crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
-                >,
+                *mut crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("BuildRowArray", (maxRowHeight, rowHeightBias))?;
@@ -81,8 +81,10 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D {
     }
     pub fn ComputeMaxAllocSize(
         areas: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::UIR::Allocator2D_Area,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::UIR::Allocator2D_Area,
+                >,
             >,
         >,
         rowHeightBias: i32,
@@ -202,7 +204,7 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Allocator2D_Area {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub rect: crate::UnityEngine::RectInt,
     pub allocator: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UIR::BestFitAllocator,
@@ -215,7 +217,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Area")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::Allocator2D_Area {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -263,7 +265,7 @@ for crate::UnityEngine::UIElements::UIR::Allocator2D_Area {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Allocator2D_Row {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::UIR::LinkedPoolItem_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Allocator2D_Row>,
     >,
     pub rect: crate::UnityEngine::RectInt,
@@ -285,7 +287,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Row")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::Allocator2D_Row {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::UIR::LinkedPoolItem_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Allocator2D_Row>,
     >;
     fn deref(&self) -> &Self::Target {

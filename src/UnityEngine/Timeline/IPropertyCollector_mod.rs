@@ -24,7 +24,7 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::IPropertyCollector {
 }
 #[cfg(feature = "UnityEngine+Timeline+IPropertyCollector")]
 impl crate::UnityEngine::Timeline::IPropertyCollector {
-    pub fn AddFromClip_Gc0(
+    pub fn AddFromClip_AnimationClip0(
         &mut self,
         clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -35,7 +35,7 @@ impl crate::UnityEngine::Timeline::IPropertyCollector {
             .invoke("AddFromClip", (clip))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddFromClip_Gc1(
+    pub fn AddFromClip_GameObject_AnimationClip1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
@@ -47,24 +47,13 @@ impl crate::UnityEngine::Timeline::IPropertyCollector {
             .invoke("AddFromClip", (obj, clip))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddFromClips_Gc0(
-        &mut self,
-        clips: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddFromClips", (clips))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn AddFromClips_Gc1(
+    pub fn AddFromClips_GameObject_IEnumerable_1_1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         clips: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -72,6 +61,21 @@ impl crate::UnityEngine::Timeline::IPropertyCollector {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddFromClips", (obj, clips))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddFromClips_IEnumerable_1_0(
+        &mut self,
+        clips: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddFromClips", (clips))?;
         Ok(__cordl_ret.into())
     }
     pub fn AddFromComponent(
@@ -86,61 +90,7 @@ impl crate::UnityEngine::Timeline::IPropertyCollector {
             .invoke("AddFromComponent", (obj, component))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddFromName_Gc0<T>(
-        &mut self,
-        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddFromName", (name))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn AddFromName_Gc1(
-        &mut self,
-        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddFromName", (name))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn AddFromName_Gc2<T>(
-        &mut self,
-        obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddFromName", (obj, name))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn AddFromName_Gc3(
-        &mut self,
-        obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddFromName", (obj, name))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn AddFromName_Gc4(
+    pub fn AddFromName_Component_Il2CppString4(
         &mut self,
         component: quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -150,6 +100,60 @@ impl crate::UnityEngine::Timeline::IPropertyCollector {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddFromName", (component, name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddFromName_GameObject_Il2CppString2<T>(
+        &mut self,
+        obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddFromName", (obj, name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddFromName_GameObject_Il2CppString3(
+        &mut self,
+        obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddFromName", (obj, name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddFromName_Il2CppString0<T>(
+        &mut self,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddFromName", (name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddFromName_Il2CppString1(
+        &mut self,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddFromName", (name))?;
         Ok(__cordl_ret.into())
     }
     pub fn AddObjectProperties(

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HttpContent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub buffer: quest_hook::libil2cpp::Gc<
         crate::System::Net::Http::HttpContent_FixedMemoryStream,
     >,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Http+HttpContent")]
 impl std::ops::Deref for crate::System::Net::Http::HttpContent {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -33,7 +33,7 @@ impl std::ops::DerefMut for crate::System::Net::Http::HttpContent {
 impl crate::System::Net::Http::HttpContent {
     #[cfg(feature = "System+Net+Http+HttpContent+FixedMemoryStream")]
     pub type FixedMemoryStream = crate::System::Net::Http::HttpContent_FixedMemoryStream;
-    pub fn CopyToAsync_Gc0(
+    pub fn CopyToAsync_Stream0(
         &mut self,
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<
@@ -47,7 +47,7 @@ impl crate::System::Net::Http::HttpContent {
         > = __cordl_object.invoke("CopyToAsync", (stream))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CopyToAsync_Gc1(
+    pub fn CopyToAsync_TransportContext1(
         &mut self,
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         context: quest_hook::libil2cpp::Gc<crate::System::Net::TransportContext>,
@@ -145,14 +145,18 @@ impl crate::System::Net::Http::HttpContent {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = __cordl_object.invoke("ReadAsStringAsync", ())?;
         Ok(__cordl_ret.into())
     }
@@ -234,16 +238,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::Http::HttpContent
     }
 }
 #[cfg(feature = "System+Net+Http+HttpContent")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::System::Net::Http::HttpContent {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsRef<crate::System::IDisposable> for crate::System::Net::Http::HttpContent {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Net+Http+HttpContent")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::System::Net::Http::HttpContent {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsMut<crate::System::IDisposable> for crate::System::Net::Http::HttpContent {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -251,7 +253,7 @@ for crate::System::Net::Http::HttpContent {
 #[repr(C)]
 #[derive(Debug)]
 pub struct HttpContent_FixedMemoryStream {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>,
+    __cordl_parent: crate::System::IO::MemoryStream,
     pub maxSize: i64,
 }
 #[cfg(feature = "System+Net+Http+HttpContent+FixedMemoryStream")]
@@ -261,7 +263,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Http+HttpContent+FixedMemoryStream")]
 impl std::ops::Deref for crate::System::Net::Http::HttpContent_FixedMemoryStream {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>;
+    type Target = crate::System::IO::MemoryStream;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

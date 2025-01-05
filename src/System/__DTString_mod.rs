@@ -132,9 +132,7 @@ impl crate::System::__DTString {
     pub fn MatchLongestWords(
         &mut self,
         words: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
         maxMatchStrLen: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -169,7 +167,7 @@ impl crate::System::__DTString {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Match_Gc0(
+    pub fn Match_Il2CppString0(
         &mut self,
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -239,7 +237,7 @@ impl crate::System::__DTString {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_ReadOnlySpan_1_Gc1(
+    pub fn _ctor_ReadOnlySpan_1_DateTimeFormatInfo1(
         &mut self,
         str: crate::System::ReadOnlySpan_1<char>,
         dtfi: quest_hook::libil2cpp::Gc<crate::System::Globalization::DateTimeFormatInfo>,

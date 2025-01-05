@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PropertyDescriptor {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::ComponentModel::MemberDescriptor,
-    >,
+    __cordl_parent: crate::System::ComponentModel::MemberDescriptor,
     pub _converter: quest_hook::libil2cpp::Gc<
         crate::System::ComponentModel::TypeConverter,
     >,
@@ -12,14 +10,10 @@ pub struct PropertyDescriptor {
         crate::System::Collections::Hashtable,
     >,
     pub _editors: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
     pub _editorTypes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
     >,
     pub _editorCount: i32,
 }
@@ -30,9 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+ComponentModel+PropertyDescriptor")]
 impl std::ops::Deref for crate::System::ComponentModel::PropertyDescriptor {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::ComponentModel::MemberDescriptor,
-    >;
+    type Target = crate::System::ComponentModel::MemberDescriptor;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -137,12 +129,10 @@ impl crate::System::ComponentModel::PropertyDescriptor {
         > = __cordl_object.invoke("GetValue", (component))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc_Gc0(
+    pub fn New_Il2CppString0(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         attrs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -151,14 +141,12 @@ impl crate::System::ComponentModel::PropertyDescriptor {
             .invoke_void(".ctor", (name, attrs))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc1(
+    pub fn New_MemberDescriptor1(
         descr: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::MemberDescriptor,
         >,
         attrs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -213,13 +201,11 @@ impl crate::System::ComponentModel::PropertyDescriptor {
             .invoke("ShouldSerializeValue", (component))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc0(
+    pub fn _ctor_Il2CppString0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         attrs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -229,15 +215,13 @@ impl crate::System::ComponentModel::PropertyDescriptor {
             .invoke(".ctor", (name, attrs))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc1(
+    pub fn _ctor_MemberDescriptor1(
         &mut self,
         descr: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::MemberDescriptor,
         >,
         attrs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

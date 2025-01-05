@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AbstractF2mFieldElement {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Math::EC::ECFieldElement,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+AbstractF2mFieldElement")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -14,9 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Math+EC+AbstractF2mFieldElement")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::AbstractF2mFieldElement {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-    >;
+    type Target = crate::Org::BouncyCastle::Math::EC::ECFieldElement;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

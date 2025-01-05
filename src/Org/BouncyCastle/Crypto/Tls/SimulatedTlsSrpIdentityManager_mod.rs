@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SimulatedTlsSrpIdentityManager {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mGroup: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Parameters::Srp6GroupParameters,
     >,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SimulatedTlsSrpIdentityManager")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -110,30 +110,18 @@ for crate::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SimulatedTlsSrpIdentityManager")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::TlsSrpIdentityManager,
-    >,
-> for crate::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::TlsSrpIdentityManager,
-    > {
+impl AsRef<crate::Org::BouncyCastle::Crypto::Tls::TlsSrpIdentityManager>
+for crate::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Tls::TlsSrpIdentityManager {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SimulatedTlsSrpIdentityManager")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::TlsSrpIdentityManager,
-    >,
-> for crate::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager {
+impl AsMut<crate::Org::BouncyCastle::Crypto::Tls::TlsSrpIdentityManager>
+for crate::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::TlsSrpIdentityManager,
-    > {
+    ) -> &mut crate::Org::BouncyCastle::Crypto::Tls::TlsSrpIdentityManager {
         unsafe { std::mem::transmute(self) }
     }
 }

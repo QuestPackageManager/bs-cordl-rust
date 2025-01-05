@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Lease {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>,
+    __cordl_parent: crate::System::MarshalByRefObject,
     pub _leaseExpireTime: crate::System::DateTime,
     pub _currentState: crate::System::Runtime::Remoting::Lifetime::LeaseState,
     pub _initialLeaseTime: crate::System::TimeSpan,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+Remoting+Lifetime+Lease")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Lifetime::Lease {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>;
+    type Target = crate::System::MarshalByRefObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -163,22 +163,16 @@ for crate::System::Runtime::Remoting::Lifetime::Lease {
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Lifetime+Lease")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Lifetime::ILease>>
+impl AsRef<crate::System::Runtime::Remoting::Lifetime::ILease>
 for crate::System::Runtime::Remoting::Lifetime::Lease {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Lifetime::ILease> {
+    fn as_ref(&self) -> &crate::System::Runtime::Remoting::Lifetime::ILease {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Lifetime+Lease")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Lifetime::ILease>>
+impl AsMut<crate::System::Runtime::Remoting::Lifetime::ILease>
 for crate::System::Runtime::Remoting::Lifetime::Lease {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Remoting::Lifetime::ILease,
-    > {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Remoting::Lifetime::ILease {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -186,7 +180,7 @@ for crate::System::Runtime::Remoting::Lifetime::Lease {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Lease_RenewalDelegate {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "System+Runtime+Remoting+Lifetime+Lease+RenewalDelegate")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -197,7 +191,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+Remoting+Lifetime+Lease+RenewalDelegate")]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Lifetime::Lease_RenewalDelegate {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

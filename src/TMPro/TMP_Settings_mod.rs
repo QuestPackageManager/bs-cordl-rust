@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_Settings {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+    __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub m_enableWordWrapping: bool,
     pub m_enableKerning: bool,
     pub m_enableExtraPadding: bool,
@@ -24,7 +24,9 @@ pub struct TMP_Settings {
     pub m_autoSizeTextContainer: bool,
     pub m_IsTextObjectScaleStatic: bool,
     pub m_fallbackFontAssets: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+        >,
     >,
     pub m_matchMaterialPreset: bool,
     pub m_defaultSpriteAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
@@ -53,7 +55,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+TMP_Settings")]
 impl std::ops::Deref for crate::TMPro::TMP_Settings {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>;
+    type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -70,8 +72,14 @@ impl crate::TMPro::TMP_Settings {
     pub type LineBreakingTable = crate::TMPro::TMP_Settings_LineBreakingTable;
     pub fn GetCharacters(
         file: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32, char>> {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32, char> = <Self as quest_hook::libil2cpp::Type>::class()
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<i32, char>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<i32, char>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetCharacters", (file))?;
         Ok(__cordl_ret.into())
     }
@@ -252,10 +260,16 @@ impl crate::TMPro::TMP_Settings {
         Ok(__cordl_ret.into())
     }
     pub fn get_fallbackFontAssets() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+            >,
+        >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("get_fallbackFontAssets", ())?;
         Ok(__cordl_ret.into())
@@ -393,9 +407,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Settings {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_Settings_LineBreakingTable {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    pub leadingCharacters: quest_hook::libil2cpp::Gc<i32, char>,
-    pub followingCharacters: quest_hook::libil2cpp::Gc<i32, char>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub leadingCharacters: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<i32, char>,
+    >,
+    pub followingCharacters: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<i32, char>,
+    >,
 }
 #[cfg(feature = "TMPro+TMP_Settings+LineBreakingTable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -404,7 +422,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+TMP_Settings+LineBreakingTable")]
 impl std::ops::Deref for crate::TMPro::TMP_Settings_LineBreakingTable {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

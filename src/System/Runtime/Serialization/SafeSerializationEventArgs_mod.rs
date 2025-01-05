@@ -2,10 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SafeSerializationEventArgs {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::EventArgs>,
+    __cordl_parent: crate::System::EventArgs,
     pub m_streamingContext: crate::System::Runtime::Serialization::StreamingContext,
     pub m_serializedStates: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
 }
 #[cfg(feature = "System+Runtime+Serialization+SafeSerializationEventArgs")]
@@ -17,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+Serialization+SafeSerializationEventArgs")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::SafeSerializationEventArgs {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::EventArgs>;
+    type Target = crate::System::EventArgs;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -55,14 +57,18 @@ impl crate::System::Runtime::Serialization::SafeSerializationEventArgs {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         > = __cordl_object.invoke("get_SerializedStates", ())?;
         Ok(__cordl_ret.into())
     }

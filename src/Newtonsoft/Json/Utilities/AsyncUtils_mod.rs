@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsyncUtils {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+AsyncUtils")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Utilities+AsyncUtils")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Utilities::AsyncUtils {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,12 +37,16 @@ impl crate::Newtonsoft::Json::Utilities::AsyncUtils {
     }
     pub fn CancelIfRequestedAsync_CancellationToken1<T>(
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = <Self as quest_hook::libil2cpp::Type>::class()
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("CancelIfRequestedAsync", (cancellationToken))?;
         Ok(__cordl_ret.into())
     }
@@ -59,12 +63,16 @@ impl crate::Newtonsoft::Json::Utilities::AsyncUtils {
     }
     pub fn FromCanceled_CancellationToken1<T>(
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = <Self as quest_hook::libil2cpp::Type>::class()
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("FromCanceled", (cancellationToken))?;
         Ok(__cordl_ret.into())
     }
@@ -81,32 +89,26 @@ impl crate::Newtonsoft::Json::Utilities::AsyncUtils {
         index: i32,
         count: i32,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = <Self as quest_hook::libil2cpp::Type>::class()
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<i32>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ReadAsync", (reader, buffer, index, count, cancellationToken))?;
         Ok(__cordl_ret.into())
     }
     pub fn ToAsync(
         value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToAsync", (value))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn WriteAsync_Gc_CancellationToken1(
-        writer: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("WriteAsync", (writer, value, cancellationToken))?;
+            crate::System::Threading::Tasks::Task_1<bool>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ToAsync", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteAsync_Gc_i32_i32_CancellationToken2(
+    pub fn WriteAsync_Il2CppArray_i32_i32_CancellationToken2(
         writer: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         start: i32,
@@ -119,6 +121,19 @@ impl crate::Newtonsoft::Json::Utilities::AsyncUtils {
             crate::System::Threading::Tasks::Task,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("WriteAsync", (writer, value, start, count, cancellationToken))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteAsync_Il2CppString_CancellationToken1(
+        writer: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteAsync", (writer, value, cancellationToken))?;
         Ok(__cordl_ret.into())
     }
     pub fn WriteAsync__cordl_char_CancellationToken0(

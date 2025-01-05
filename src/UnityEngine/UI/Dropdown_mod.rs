@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Dropdown {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
+    __cordl_parent: crate::UnityEngine::UI::Selectable,
     pub m_Template: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub m_CaptionText: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
     pub m_CaptionImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
@@ -19,10 +19,14 @@ pub struct Dropdown {
     pub m_Dropdown: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub m_Blocker: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub m_Items: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_DropdownItem>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_DropdownItem>,
+        >,
     >,
     pub m_AlphaTweenRunner: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UI::CoroutineTween::FloatTween,
+        crate::UnityEngine::UI::CoroutineTween::TweenRunner_1<
+            crate::UnityEngine::UI::CoroutineTween::FloatTween,
+        >,
     >,
     pub validTemplate: bool,
 }
@@ -33,7 +37,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+Dropdown")]
 impl std::ops::Deref for crate::UnityEngine::UI::Dropdown {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>;
+    type Target = crate::UnityEngine::UI::Selectable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -63,7 +67,9 @@ impl crate::UnityEngine::UI::Dropdown {
             crate::UnityEngine::UI::Dropdown_DropdownItem,
         >,
         items: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_DropdownItem>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_DropdownItem>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_DropdownItem>,
@@ -76,10 +82,12 @@ impl crate::UnityEngine::UI::Dropdown {
         > = __cordl_object.invoke("AddItem", (data, selected, itemTemplate, items))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddOptions_Gc0(
+    pub fn AddOptions_List_1_0(
         &mut self,
         options: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_OptionData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_OptionData>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -89,10 +97,12 @@ impl crate::UnityEngine::UI::Dropdown {
             .invoke("AddOptions", (options))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddOptions_Gc1(
+    pub fn AddOptions_List_1_1(
         &mut self,
         options: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -102,10 +112,12 @@ impl crate::UnityEngine::UI::Dropdown {
             .invoke("AddOptions", (options))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddOptions_Gc2(
+    pub fn AddOptions_List_1_2(
         &mut self,
         options: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -504,14 +516,18 @@ impl crate::UnityEngine::UI::Dropdown {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_OptionData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_OptionData>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_OptionData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_OptionData>,
+            >,
         > = __cordl_object.invoke("get_options", ())?;
         Ok(__cordl_ret.into())
     }
@@ -603,7 +619,9 @@ impl crate::UnityEngine::UI::Dropdown {
     pub fn set_options(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_OptionData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_OptionData>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -646,90 +664,58 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Dropdown {
     }
 }
 #[cfg(feature = "UnityEngine+UI+Dropdown")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ICancelHandler>>
+impl AsRef<crate::UnityEngine::EventSystems::ICancelHandler>
 for crate::UnityEngine::UI::Dropdown {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ICancelHandler> {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::ICancelHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Dropdown")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ICancelHandler>>
+impl AsMut<crate::UnityEngine::EventSystems::ICancelHandler>
 for crate::UnityEngine::UI::Dropdown {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::ICancelHandler,
-    > {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::ICancelHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Dropdown")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
-> for crate::UnityEngine::UI::Dropdown {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IEventSystemHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UI+Dropdown")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
-> for crate::UnityEngine::UI::Dropdown {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IEventSystemHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UI+Dropdown")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerClickHandler>,
-> for crate::UnityEngine::UI::Dropdown {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerClickHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UI+Dropdown")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerClickHandler>,
-> for crate::UnityEngine::UI::Dropdown {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerClickHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UI+Dropdown")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISubmitHandler>>
+impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
 for crate::UnityEngine::UI::Dropdown {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISubmitHandler> {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Dropdown")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISubmitHandler>>
+impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
 for crate::UnityEngine::UI::Dropdown {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::ISubmitHandler,
-    > {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Dropdown")]
+impl AsRef<crate::UnityEngine::EventSystems::IPointerClickHandler>
+for crate::UnityEngine::UI::Dropdown {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerClickHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Dropdown")]
+impl AsMut<crate::UnityEngine::EventSystems::IPointerClickHandler>
+for crate::UnityEngine::UI::Dropdown {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerClickHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Dropdown")]
+impl AsRef<crate::UnityEngine::EventSystems::ISubmitHandler>
+for crate::UnityEngine::UI::Dropdown {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::ISubmitHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Dropdown")]
+impl AsMut<crate::UnityEngine::EventSystems::ISubmitHandler>
+for crate::UnityEngine::UI::Dropdown {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::ISubmitHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -737,7 +723,7 @@ for crate::UnityEngine::UI::Dropdown {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Dropdown_DropdownEvent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<i32>,
+    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<i32>,
 }
 #[cfg(feature = "UnityEngine+UI+Dropdown+DropdownEvent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -746,7 +732,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+Dropdown+DropdownEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::Dropdown_DropdownEvent {
-    type Target = quest_hook::libil2cpp::Gc<i32>;
+    type Target = crate::UnityEngine::Events::UnityEvent_1<i32>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -791,7 +777,7 @@ for crate::UnityEngine::UI::Dropdown_DropdownEvent {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Dropdown_DropdownItem {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_Text: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
     pub m_Image: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
     pub m_RectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -804,7 +790,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+Dropdown+DropdownItem")]
 impl std::ops::Deref for crate::UnityEngine::UI::Dropdown_DropdownItem {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -964,70 +950,44 @@ for crate::UnityEngine::UI::Dropdown_DropdownItem {
     }
 }
 #[cfg(feature = "UnityEngine+UI+Dropdown+DropdownItem")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ICancelHandler>>
+impl AsRef<crate::UnityEngine::EventSystems::ICancelHandler>
 for crate::UnityEngine::UI::Dropdown_DropdownItem {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ICancelHandler> {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::ICancelHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Dropdown+DropdownItem")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ICancelHandler>>
+impl AsMut<crate::UnityEngine::EventSystems::ICancelHandler>
 for crate::UnityEngine::UI::Dropdown_DropdownItem {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::ICancelHandler,
-    > {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::ICancelHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Dropdown+DropdownItem")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
-> for crate::UnityEngine::UI::Dropdown_DropdownItem {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IEventSystemHandler,
-    > {
+impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::UnityEngine::UI::Dropdown_DropdownItem {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Dropdown+DropdownItem")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
-> for crate::UnityEngine::UI::Dropdown_DropdownItem {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IEventSystemHandler,
-    > {
+impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::UnityEngine::UI::Dropdown_DropdownItem {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Dropdown+DropdownItem")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerEnterHandler>,
-> for crate::UnityEngine::UI::Dropdown_DropdownItem {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerEnterHandler,
-    > {
+impl AsRef<crate::UnityEngine::EventSystems::IPointerEnterHandler>
+for crate::UnityEngine::UI::Dropdown_DropdownItem {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerEnterHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Dropdown+DropdownItem")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerEnterHandler>,
-> for crate::UnityEngine::UI::Dropdown_DropdownItem {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerEnterHandler,
-    > {
+impl AsMut<crate::UnityEngine::EventSystems::IPointerEnterHandler>
+for crate::UnityEngine::UI::Dropdown_DropdownItem {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerEnterHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -1035,7 +995,7 @@ impl AsMut<
 #[repr(C)]
 #[derive(Debug)]
 pub struct Dropdown_OptionData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Image: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
 }
@@ -1046,7 +1006,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+Dropdown+OptionData")]
 impl std::ops::Deref for crate::UnityEngine::UI::Dropdown_OptionData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1066,7 +1026,7 @@ impl crate::UnityEngine::UI::Dropdown_OptionData {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Il2CppString1(
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -1075,16 +1035,7 @@ impl crate::UnityEngine::UI::Dropdown_OptionData {
             .invoke_void(".ctor", (text))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc2(
-        image: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (image))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_Gc3(
+    pub fn New_Il2CppString_Sprite3(
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         image: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -1092,6 +1043,15 @@ impl crate::UnityEngine::UI::Dropdown_OptionData {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (text, image))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Sprite2(
+        image: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (image))?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor_0(
@@ -1104,7 +1064,7 @@ impl crate::UnityEngine::UI::Dropdown_OptionData {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1115,18 +1075,7 @@ impl crate::UnityEngine::UI::Dropdown_OptionData {
             .invoke(".ctor", (text))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
-        &mut self,
-        image: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (image))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_Gc3(
+    pub fn _ctor_Il2CppString_Sprite3(
         &mut self,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         image: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
@@ -1136,6 +1085,17 @@ impl crate::UnityEngine::UI::Dropdown_OptionData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (text, image))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Sprite2(
+        &mut self,
+        image: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (image))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_image(
@@ -1199,9 +1159,11 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Dropdown_Opti
 #[repr(C)]
 #[derive(Debug)]
 pub struct Dropdown_OptionDataList {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Options: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_OptionData>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_OptionData>,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UI+Dropdown+OptionDataList")]
@@ -1211,7 +1173,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+Dropdown+OptionDataList")]
 impl std::ops::Deref for crate::UnityEngine::UI::Dropdown_OptionDataList {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1245,21 +1207,27 @@ impl crate::UnityEngine::UI::Dropdown_OptionDataList {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_OptionData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_OptionData>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_OptionData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_OptionData>,
+            >,
         > = __cordl_object.invoke("get_options", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn set_options(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_OptionData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_OptionData>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

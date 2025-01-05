@@ -102,20 +102,16 @@ for crate::Newtonsoft::Json::Converters::IXmlDeclaration {
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+IXmlDeclaration")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>>
+impl AsRef<crate::Newtonsoft::Json::Converters::IXmlNode>
 for crate::Newtonsoft::Json::Converters::IXmlDeclaration {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode> {
+    fn as_ref(&self) -> &crate::Newtonsoft::Json::Converters::IXmlNode {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+IXmlDeclaration")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>>
+impl AsMut<crate::Newtonsoft::Json::Converters::IXmlNode>
 for crate::Newtonsoft::Json::Converters::IXmlDeclaration {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode> {
+    fn as_mut(&mut self) -> &mut crate::Newtonsoft::Json::Converters::IXmlNode {
         unsafe { std::mem::transmute(self) }
     }
 }

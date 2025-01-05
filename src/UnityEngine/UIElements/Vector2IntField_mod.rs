@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Vector2IntField {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::BaseCompositeField_3<
         crate::UnityEngine::Vector2Int,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IntegerField>,
         i32,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+Vector2IntField")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Vector2IntField {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::BaseCompositeField_3<
         crate::UnityEngine::Vector2Int,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IntegerField>,
         i32,
@@ -74,7 +74,7 @@ impl crate::UnityEngine::UIElements::Vector2IntField {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Il2CppString1(
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -93,7 +93,7 @@ impl crate::UnityEngine::UIElements::Vector2IntField {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -119,7 +119,7 @@ for crate::UnityEngine::UIElements::Vector2IntField {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Vector2IntField_UxmlFactory {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Vector2IntField>,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::Vector2IntField_UxmlTraits,
@@ -134,7 +134,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+Vector2IntField+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Vector2IntField_UxmlFactory {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Vector2IntField>,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::Vector2IntField_UxmlTraits,
@@ -184,7 +184,9 @@ for crate::UnityEngine::UIElements::Vector2IntField_UxmlFactory {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Vector2IntField_UxmlTraits {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2Int>,
+    __cordl_parent: crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
+        crate::UnityEngine::Vector2Int,
+    >,
     pub m_XValue: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
     >,
@@ -200,7 +202,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+Vector2IntField+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Vector2IntField_UxmlTraits {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2Int>;
+    type Target = crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
+        crate::UnityEngine::Vector2Int,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

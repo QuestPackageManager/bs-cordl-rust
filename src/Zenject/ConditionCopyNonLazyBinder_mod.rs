@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConditionCopyNonLazyBinder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::CopyNonLazyBinder>,
+    __cordl_parent: crate::Zenject::CopyNonLazyBinder,
 }
 #[cfg(feature = "Zenject+ConditionCopyNonLazyBinder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+ConditionCopyNonLazyBinder")]
 impl std::ops::Deref for crate::Zenject::ConditionCopyNonLazyBinder {
-    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::CopyNonLazyBinder>;
+    type Target = crate::Zenject::CopyNonLazyBinder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -75,12 +75,10 @@ impl crate::Zenject::ConditionCopyNonLazyBinder {
             .invoke("WhenInjectedInto", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn WhenInjectedInto_Gc0(
+    pub fn WhenInjectedInto_Il2CppArray0(
         &mut self,
         targets: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::CopyNonLazyBinder>,

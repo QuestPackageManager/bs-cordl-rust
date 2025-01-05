@@ -47,13 +47,13 @@ impl crate::UnityEngine::Experimental::Playables::CameraPlayable {
 }
 #[cfg(feature = "UnityEngine+Experimental+Playables+CameraPlayable")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         crate::UnityEngine::Experimental::Playables::CameraPlayable,
     >,
 > for crate::UnityEngine::Experimental::Playables::CameraPlayable {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         crate::UnityEngine::Experimental::Playables::CameraPlayable,
     > {
         todo!()
@@ -61,33 +61,29 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+Experimental+Playables+CameraPlayable")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         crate::UnityEngine::Experimental::Playables::CameraPlayable,
     >,
 > for crate::UnityEngine::Experimental::Playables::CameraPlayable {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         crate::UnityEngine::Experimental::Playables::CameraPlayable,
     > {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Experimental+Playables+CameraPlayable")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::IPlayable>>
+impl AsRef<crate::UnityEngine::Playables::IPlayable>
 for crate::UnityEngine::Experimental::Playables::CameraPlayable {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::IPlayable> {
+    fn as_ref(&self) -> &crate::UnityEngine::Playables::IPlayable {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Experimental+Playables+CameraPlayable")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::IPlayable>>
+impl AsMut<crate::UnityEngine::Playables::IPlayable>
 for crate::UnityEngine::Experimental::Playables::CameraPlayable {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::IPlayable> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::IPlayable {
         todo!()
     }
 }

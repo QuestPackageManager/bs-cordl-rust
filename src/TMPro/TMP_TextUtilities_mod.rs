@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_TextUtilities {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "TMPro+TMP_TextUtilities")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+TMP_TextUtilities")]
 impl std::ops::Deref for crate::TMPro::TMP_TextUtilities {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -138,7 +138,7 @@ impl crate::TMPro::TMP_TextUtilities {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetCursorIndexFromPosition_Gc_Vector3_Gc0(
+    pub fn GetCursorIndexFromPosition_TMP_Text_Vector3_Camera0(
         textComponent: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
         position: crate::UnityEngine::Vector3,
         camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,

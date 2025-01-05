@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRHand {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub HandType: crate::GlobalNamespace::OVRHand_Hand,
     pub _pointerPoseRoot: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub m_showState: crate::GlobalNamespace::OVRInput_InputDeviceShowState,
@@ -26,7 +26,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRHand")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRHand {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -408,110 +408,68 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRHand {
     }
 }
 #[cfg(feature = "OVRHand")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRMeshRenderer_IOVRMeshRendererDataProvider,
-    >,
-> for crate::GlobalNamespace::OVRHand {
+impl AsRef<crate::GlobalNamespace::OVRMeshRenderer_IOVRMeshRendererDataProvider>
+for crate::GlobalNamespace::OVRHand {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRMeshRenderer_IOVRMeshRendererDataProvider,
-    > {
+    ) -> &crate::GlobalNamespace::OVRMeshRenderer_IOVRMeshRendererDataProvider {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OVRHand")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRMeshRenderer_IOVRMeshRendererDataProvider,
-    >,
-> for crate::GlobalNamespace::OVRHand {
+impl AsMut<crate::GlobalNamespace::OVRMeshRenderer_IOVRMeshRendererDataProvider>
+for crate::GlobalNamespace::OVRHand {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRMeshRenderer_IOVRMeshRendererDataProvider,
-    > {
+    ) -> &mut crate::GlobalNamespace::OVRMeshRenderer_IOVRMeshRendererDataProvider {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OVRHand")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRMesh_IOVRMeshDataProvider>,
-> for crate::GlobalNamespace::OVRHand {
+impl AsRef<crate::GlobalNamespace::OVRMesh_IOVRMeshDataProvider>
+for crate::GlobalNamespace::OVRHand {
+    fn as_ref(&self) -> &crate::GlobalNamespace::OVRMesh_IOVRMeshDataProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OVRHand")]
+impl AsMut<crate::GlobalNamespace::OVRMesh_IOVRMeshDataProvider>
+for crate::GlobalNamespace::OVRHand {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::OVRMesh_IOVRMeshDataProvider {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OVRHand")]
+impl AsRef<crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider>
+for crate::GlobalNamespace::OVRHand {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRMesh_IOVRMeshDataProvider,
-    > {
+    ) -> &crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OVRHand")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRMesh_IOVRMeshDataProvider>,
-> for crate::GlobalNamespace::OVRHand {
+impl AsMut<crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider>
+for crate::GlobalNamespace::OVRHand {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRMesh_IOVRMeshDataProvider,
-    > {
+    ) -> &mut crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OVRHand")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider,
-    >,
-> for crate::GlobalNamespace::OVRHand {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider,
-    > {
+impl AsRef<crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider>
+for crate::GlobalNamespace::OVRHand {
+    fn as_ref(&self) -> &crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OVRHand")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider,
-    >,
-> for crate::GlobalNamespace::OVRHand {
+impl AsMut<crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider>
+for crate::GlobalNamespace::OVRHand {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "OVRHand")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider,
-    >,
-> for crate::GlobalNamespace::OVRHand {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "OVRHand")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider,
-    >,
-> for crate::GlobalNamespace::OVRHand {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider,
-    > {
+    ) -> &mut crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider {
         unsafe { std::mem::transmute(self) }
     }
 }

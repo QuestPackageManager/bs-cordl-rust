@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LevelBar {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _songArtworkImageView: quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
     pub _songNameText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _authorNameText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
@@ -37,7 +37,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LevelBar")]
 impl std::ops::Deref for crate::GlobalNamespace::LevelBar {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -100,7 +100,7 @@ impl crate::GlobalNamespace::LevelBar {
             .invoke("Setup", (beatmapKey))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Setup_Gc_BeatmapDifficulty_Gc1(
+    pub fn Setup_BeatmapLevel_BeatmapDifficulty_BeatmapCharacteristicSO1(
         &mut self,
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,

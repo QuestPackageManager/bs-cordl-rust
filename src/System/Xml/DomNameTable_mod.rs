@@ -2,11 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DomNameTable {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub entries: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlName>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::XmlName>,
     >,
     pub count: i32,
     pub mask: i32,
@@ -20,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+DomNameTable")]
 impl std::ops::Deref for crate::System::Xml::DomNameTable {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

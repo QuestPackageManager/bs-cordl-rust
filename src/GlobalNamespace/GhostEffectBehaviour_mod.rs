@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GhostEffectBehaviour {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Playables::PlayableBehaviour,
-    >,
+    __cordl_parent: crate::UnityEngine::Playables::PlayableBehaviour,
     pub alphaCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
     pub sizeCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
     pub distanceCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
@@ -19,14 +17,10 @@ pub struct GhostEffectBehaviour {
     pub _endBehavior: crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior,
     pub progress: f32,
     pub textMeshPros: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshPro>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::TMPro::TextMeshPro>,
     >,
     pub _canvasGroups: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::CanvasGroup>,
     >,
     pub _ghostEffectType: crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType,
     pub _ghostEffectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -40,9 +34,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "GhostEffectBehaviour")]
 impl std::ops::Deref for crate::GlobalNamespace::GhostEffectBehaviour {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Playables::PlayableBehaviour,
-    >;
+    type Target = crate::UnityEngine::Playables::PlayableBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

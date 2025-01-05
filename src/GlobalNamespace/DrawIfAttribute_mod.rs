@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DrawIfAttribute {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::PropertyAttribute>,
+    __cordl_parent: crate::UnityEngine::PropertyAttribute,
     pub propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub orValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "DrawIfAttribute")]
 impl std::ops::Deref for crate::GlobalNamespace::DrawIfAttribute {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::PropertyAttribute>;
+    type Target = crate::UnityEngine::PropertyAttribute;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -41,7 +41,7 @@ impl crate::GlobalNamespace::DrawIfAttribute {
             .invoke_void(".ctor", (propertyName, value, disablingType))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_DrawIfAttribute_DisablingType1(
+    pub fn New_Il2CppObject_DrawIfAttribute_DisablingType1(
         propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         orValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -66,7 +66,7 @@ impl crate::GlobalNamespace::DrawIfAttribute {
             .invoke(".ctor", (propertyName, value, disablingType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_DrawIfAttribute_DisablingType1(
+    pub fn _ctor_Il2CppObject_DrawIfAttribute_DisablingType1(
         &mut self,
         propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

@@ -2,11 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SqlBytesStorage {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Data::Common::DataStorage>,
+    __cordl_parent: crate::System::Data::Common::DataStorage,
     pub _values: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::System::Data::SqlTypes::SqlBytes>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::SqlTypes::SqlBytes>,
     >,
 }
 #[cfg(feature = "System+Data+Common+SqlBytesStorage")]
@@ -16,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+Common+SqlBytesStorage")]
 impl std::ops::Deref for crate::System::Data::Common::SqlBytesStorage {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Data::Common::DataStorage>;
+    type Target = crate::System::Data::Common::DataStorage;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

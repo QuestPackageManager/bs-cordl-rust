@@ -4,9 +4,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NegateCheckedInstruction_NegateCheckedInt16 {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::NegateCheckedInstruction,
-    >,
+    __cordl_parent: crate::System::Linq::Expressions::Interpreter::NegateCheckedInstruction,
 }
 #[cfg(
     feature = "System+Linq+Expressions+Interpreter+NegateCheckedInstruction+NegateCheckedInt16"
@@ -21,9 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::NegateCheckedInstruction_NegateCheckedInt16 {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::NegateCheckedInstruction,
-    >;
+    type Target = crate::System::Linq::Expressions::Interpreter::NegateCheckedInstruction;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

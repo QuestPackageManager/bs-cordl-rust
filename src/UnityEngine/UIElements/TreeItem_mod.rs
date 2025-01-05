@@ -4,7 +4,9 @@
 pub struct TreeItem {
     pub _id_k__BackingField: i32,
     pub _parentId_k__BackingField: i32,
-    pub _childrenIds_k__BackingField: quest_hook::libil2cpp::Gc<i32>,
+    pub _childrenIds_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEnumerable_1<i32>,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+TreeItem")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -28,7 +30,9 @@ impl crate::UnityEngine::UIElements::TreeItem {
         &mut self,
         id: i32,
         parentId: i32,
-        childrenIds: quest_hook::libil2cpp::Gc<i32>,
+        childrenIds: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -39,12 +43,14 @@ impl crate::UnityEngine::UIElements::TreeItem {
     }
     pub fn get_childrenIds(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_childrenIds",
-            (),
-        )?;
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_childrenIds", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_hasChildren(&mut self) -> quest_hook::libil2cpp::Result<bool> {

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RuntimePropertyInfo {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+    __cordl_parent: crate::System::Reflection::PropertyInfo,
     pub klass: crate::System::IntPtr,
     pub prop: crate::System::IntPtr,
     pub info: crate::System::Reflection::MonoPropertyInfo,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Reflection+RuntimePropertyInfo")]
 impl std::ops::Deref for crate::System::Reflection::RuntimePropertyInfo {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>;
+    type Target = crate::System::Reflection::PropertyInfo;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -67,24 +67,20 @@ impl crate::System::Reflection::RuntimePropertyInfo {
         > = __cordl_object.invoke("FormatNameAndSig", (serialization))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetCustomAttributes_Gc__cordl_bool1(
+    pub fn GetCustomAttributes_Type__cordl_bool1(
         &mut self,
         attributeType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         inherit: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         > = __cordl_object.invoke("GetCustomAttributes", (attributeType, inherit))?;
         Ok(__cordl_ret.into())
     }
@@ -93,18 +89,14 @@ impl crate::System::Reflection::RuntimePropertyInfo {
         inherit: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         > = __cordl_object.invoke("GetCustomAttributes", (inherit))?;
         Ok(__cordl_ret.into())
     }
@@ -139,7 +131,7 @@ impl crate::System::Reflection::RuntimePropertyInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
+                *mut crate::System::Reflection::ParameterInfo,
             >,
         >,
     > {
@@ -148,7 +140,7 @@ impl crate::System::Reflection::RuntimePropertyInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
+                *mut crate::System::Reflection::ParameterInfo,
             >,
         > = __cordl_object.invoke("GetIndexParameters", ())?;
         Ok(__cordl_ret.into())
@@ -206,15 +198,13 @@ impl crate::System::Reflection::RuntimePropertyInfo {
         > = __cordl_object.invoke("GetSetMethod", (nonPublic))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetValue_BindingFlags_Gc_Gc_Gc1(
+    pub fn GetValue_BindingFlags_Binder_Il2CppArray_CultureInfo1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         invokeAttr: crate::System::Reflection::BindingFlags,
         binder: quest_hook::libil2cpp::Gc<crate::System::Reflection::Binder>,
         index: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
     ) -> quest_hook::libil2cpp::Result<
@@ -229,13 +219,11 @@ impl crate::System::Reflection::RuntimePropertyInfo {
             .invoke("GetValue", (obj, invokeAttr, binder, index, culture))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetValue_Gc0(
+    pub fn GetValue_Il2CppArray0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         index: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -249,7 +237,9 @@ impl crate::System::Reflection::RuntimePropertyInfo {
         Ok(__cordl_ret.into())
     }
     pub fn GetterAdapterFrame<T, R>(
-        getter: quest_hook::libil2cpp::Gc<T, R>,
+        getter: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::RuntimePropertyInfo_Getter_2<T, R>,
+        >,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -305,9 +295,7 @@ impl crate::System::Reflection::RuntimePropertyInfo {
         invokeAttr: crate::System::Reflection::BindingFlags,
         binder: quest_hook::libil2cpp::Gc<crate::System::Reflection::Binder>,
         index: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -319,7 +307,9 @@ impl crate::System::Reflection::RuntimePropertyInfo {
         Ok(__cordl_ret.into())
     }
     pub fn StaticGetterAdapterFrame<R>(
-        getter: quest_hook::libil2cpp::Gc<R>,
+        getter: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::RuntimePropertyInfo_StaticGetter_1<R>,
+        >,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -499,26 +489,16 @@ for crate::System::Reflection::RuntimePropertyInfo {
     }
 }
 #[cfg(feature = "System+Reflection+RuntimePropertyInfo")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::Reflection::RuntimePropertyInfo {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Reflection::RuntimePropertyInfo {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Reflection+RuntimePropertyInfo")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::Reflection::RuntimePropertyInfo {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Reflection::RuntimePropertyInfo {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -526,7 +506,7 @@ impl AsMut<
 #[repr(C)]
 #[derive(Debug)]
 pub struct RuntimePropertyInfo_GetterAdapter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "System+Reflection+RuntimePropertyInfo+GetterAdapter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -536,7 +516,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Reflection+RuntimePropertyInfo+GetterAdapter")]
 impl std::ops::Deref for crate::System::Reflection::RuntimePropertyInfo_GetterAdapter {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -604,7 +584,7 @@ pub struct RuntimePropertyInfo_Getter_2<
     T: quest_hook::libil2cpp::Type,
     R: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_T: std::marker::PhantomData<T>,
     __cordl_phantom_R: std::marker::PhantomData<R>,
 }
@@ -616,7 +596,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Reflection+RuntimePropertyInfo+Getter_2")]
 impl<T: quest_hook::libil2cpp::Type, R: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Reflection::RuntimePropertyInfo_Getter_2<T, R> {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -698,7 +678,7 @@ for crate::System::Reflection::RuntimePropertyInfo_Getter_2<T, R> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct RuntimePropertyInfo_StaticGetter_1<R: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_R: std::marker::PhantomData<R>,
 }
 #[cfg(feature = "System+Reflection+RuntimePropertyInfo+StaticGetter_1")]
@@ -710,7 +690,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Reflection+RuntimePropertyInfo+StaticGetter_1")]
 impl<R: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Reflection::RuntimePropertyInfo_StaticGetter_1<R> {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

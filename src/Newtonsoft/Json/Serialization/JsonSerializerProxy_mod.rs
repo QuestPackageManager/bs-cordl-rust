@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonSerializerProxy {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>,
+    __cordl_parent: crate::Newtonsoft::Json::JsonSerializer,
     pub _serializerReader: quest_hook::libil2cpp::Gc<
         crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader,
     >,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerProxy")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Serialization::JsonSerializerProxy {
-    type Target = quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>;
+    type Target = crate::Newtonsoft::Json::JsonSerializer;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -62,7 +62,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerProxy {
         > = __cordl_object.invoke("GetInternalSerializer", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_JsonSerializerInternalReader0(
         serializerReader: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader,
         >,
@@ -73,7 +73,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerProxy {
             .invoke_void(".ctor", (serializerReader))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_JsonSerializerInternalWriter1(
         serializerWriter: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter,
         >,
@@ -109,7 +109,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerProxy {
             .invoke("SerializeInternal", (jsonWriter, value, rootType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_JsonSerializerInternalReader0(
         &mut self,
         serializerReader: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader,
@@ -122,7 +122,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerProxy {
             .invoke(".ctor", (serializerReader))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_JsonSerializerInternalWriter1(
         &mut self,
         serializerWriter: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter,
@@ -138,8 +138,10 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerProxy {
     pub fn add_Error(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Newtonsoft::Json::Serialization::ErrorEventArgs,
+            crate::System::EventHandler_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Serialization::ErrorEventArgs,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -495,8 +497,10 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerProxy {
     pub fn remove_Error(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Newtonsoft::Json::Serialization::ErrorEventArgs,
+            crate::System::EventHandler_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Serialization::ErrorEventArgs,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

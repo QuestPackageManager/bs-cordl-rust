@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerAvatarPoseController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _leftSaberTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _rightSaberTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _headTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -15,7 +15,9 @@ pub struct MultiplayerAvatarPoseController {
     pub _connectedPlayer: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IConnectedPlayer,
     >,
-    pub didUpdatePoseEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+    pub didUpdatePoseEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::UnityEngine::Vector3>,
+    >,
 }
 #[cfg(feature = "BeatSaber+AvatarCore+MultiplayerAvatarPoseController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -25,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+AvatarCore+MultiplayerAvatarPoseController")]
 impl std::ops::Deref for crate::BeatSaber::AvatarCore::MultiplayerAvatarPoseController {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -78,7 +80,9 @@ impl crate::BeatSaber::AvatarCore::MultiplayerAvatarPoseController {
     }
     pub fn add_didUpdatePoseEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::UnityEngine::Vector3>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -89,7 +93,9 @@ impl crate::BeatSaber::AvatarCore::MultiplayerAvatarPoseController {
     }
     pub fn remove_didUpdatePoseEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::UnityEngine::Vector3>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

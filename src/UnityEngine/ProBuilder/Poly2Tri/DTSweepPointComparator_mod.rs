@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DTSweepPointComparator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DTSweepPointComparator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DTSweepPointComparator")]
 impl std::ops::Deref
 for crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepPointComparator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -72,7 +72,7 @@ for crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepPointComparator {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DTSweepPointComparator")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IComparer_1<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
         >,
@@ -80,7 +80,7 @@ impl AsRef<
 > for crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepPointComparator {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::Collections::Generic::IComparer_1<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
         >,
@@ -90,7 +90,7 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DTSweepPointComparator")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IComparer_1<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
         >,
@@ -98,7 +98,7 @@ impl AsMut<
 > for crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepPointComparator {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::Collections::Generic::IComparer_1<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
         >,

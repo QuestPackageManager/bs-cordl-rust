@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusVRHelper {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub inputFocusWasCapturedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub inputFocusWasReleasedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub vrFocusWasCapturedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -28,7 +28,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OculusVRHelper")]
 impl std::ops::Deref for crate::GlobalNamespace::OculusVRHelper {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -511,38 +511,30 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OculusVRHelpe
     }
 }
 #[cfg(feature = "OculusVRHelper")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRPlatformHelper>>
+impl AsRef<crate::GlobalNamespace::IVRPlatformHelper>
 for crate::GlobalNamespace::OculusVRHelper {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRPlatformHelper> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IVRPlatformHelper {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OculusVRHelper")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRPlatformHelper>>
+impl AsMut<crate::GlobalNamespace::IVRPlatformHelper>
 for crate::GlobalNamespace::OculusVRHelper {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRPlatformHelper> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IVRPlatformHelper {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OculusVRHelper")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVerboseLogger>>
+impl AsRef<crate::GlobalNamespace::IVerboseLogger>
 for crate::GlobalNamespace::OculusVRHelper {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVerboseLogger> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IVerboseLogger {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OculusVRHelper")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVerboseLogger>>
+impl AsMut<crate::GlobalNamespace::IVerboseLogger>
 for crate::GlobalNamespace::OculusVRHelper {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVerboseLogger> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IVerboseLogger {
         unsafe { std::mem::transmute(self) }
     }
 }

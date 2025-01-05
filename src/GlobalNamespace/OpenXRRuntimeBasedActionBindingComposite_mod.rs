@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OpenXRRuntimeBasedActionBindingComposite {
-    __cordl_parent: quest_hook::libil2cpp::Gc<f32>,
+    __cordl_parent: crate::UnityEngine::InputSystem::InputBindingComposite_1<f32>,
     pub oculusRuntime: i32,
     pub otherRuntimes: i32,
 }
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OpenXRRuntimeBasedActionBindingComposite")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OpenXRRuntimeBasedActionBindingComposite {
-    type Target = quest_hook::libil2cpp::Gc<f32>;
+    type Target = crate::UnityEngine::InputSystem::InputBindingComposite_1<f32>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

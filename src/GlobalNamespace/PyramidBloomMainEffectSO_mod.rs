@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PyramidBloomMainEffectSO {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MainEffectSO>,
+    __cordl_parent: crate::GlobalNamespace::MainEffectSO,
     pub _bloomRenderer: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PyramidBloomRendererSO,
     >,
@@ -32,7 +32,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PyramidBloomMainEffectSO")]
 impl std::ops::Deref for crate::GlobalNamespace::PyramidBloomMainEffectSO {
-    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MainEffectSO>;
+    type Target = crate::GlobalNamespace::MainEffectSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

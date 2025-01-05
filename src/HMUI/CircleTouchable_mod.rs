@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CircleTouchable {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::Touchable>,
+    __cordl_parent: crate::HMUI::Touchable,
     pub _minRadius: f32,
     pub _maxRadius: f32,
     pub _containerRect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+CircleTouchable")]
 impl std::ops::Deref for crate::HMUI::CircleTouchable {
-    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::Touchable>;
+    type Target = crate::HMUI::Touchable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

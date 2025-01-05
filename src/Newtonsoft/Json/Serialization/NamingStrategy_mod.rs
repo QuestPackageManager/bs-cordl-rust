@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NamingStrategy {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _ProcessDictionaryKeys_k__BackingField: bool,
     pub _ProcessExtensionDataNames_k__BackingField: bool,
     pub _OverrideSpecifiedNames_k__BackingField: bool,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Serialization+NamingStrategy")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Serialization::NamingStrategy {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -27,7 +27,7 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Serialization::NamingStrate
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+NamingStrategy")]
 impl crate::Newtonsoft::Json::Serialization::NamingStrategy {
-    pub fn Equals_Gc0(
+    pub fn Equals_Il2CppObject0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -37,7 +37,7 @@ impl crate::Newtonsoft::Json::Serialization::NamingStrategy {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Gc1(
+    pub fn Equals_NamingStrategy1(
         &mut self,
         other: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Serialization::NamingStrategy,

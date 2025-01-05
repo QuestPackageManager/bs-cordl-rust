@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SpawnRotationChevronManager {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _fadeInTime: f32,
     pub _fadeOutTime: f32,
     pub _jumpStartOffsetTime: f32,
@@ -35,15 +35,23 @@ pub struct SpawnRotationChevronManager {
         crate::GlobalNamespace::BeatmapDataCallbackWrapper,
     >,
     pub _directionToDataDictionary: quest_hook::libil2cpp::Gc<
-        i32,
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::SpawnRotationChevronManager_DirectionData,
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SpawnRotationChevronManager_DirectionData,
+            >,
         >,
     >,
-    pub _activeDirections: quest_hook::libil2cpp::Gc<i32>,
-    pub _reusableDirectionsList: quest_hook::libil2cpp::Gc<i32>,
+    pub _activeDirections: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<i32>,
+    >,
+    pub _reusableDirectionsList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
+    >,
     pub _queuedDirectionData: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::SpawnRotationChevronManager_QueuedDirectionData,
+        crate::System::Collections::Generic::Queue_1<
+            crate::GlobalNamespace::SpawnRotationChevronManager_QueuedDirectionData,
+        >,
     >,
     pub _currentSpawnRotation: f32,
 }
@@ -54,7 +62,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SpawnRotationChevronManager")]
 impl std::ops::Deref for crate::GlobalNamespace::SpawnRotationChevronManager {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -169,7 +177,7 @@ for crate::GlobalNamespace::SpawnRotationChevronManager {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SpawnRotationChevronManager_DirectionData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub chevron: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SpawnRotationChevron>,
     pub fullyLit: bool,
     pub fadeOutStartTime: f32,
@@ -184,7 +192,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "SpawnRotationChevronManager+DirectionData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SpawnRotationChevronManager_DirectionData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

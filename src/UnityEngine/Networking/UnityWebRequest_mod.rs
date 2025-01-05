@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityWebRequest {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Ptr: crate::System::IntPtr,
     pub m_DownloadHandler: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Networking::DownloadHandler,
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Networking+UnityWebRequest")]
 impl std::ops::Deref for crate::UnityEngine::Networking::UnityWebRequest {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -100,17 +100,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             .invoke("DisposeHandlers", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn EscapeURL_Gc0(
-        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("EscapeURL", (s))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn EscapeURL_Gc1(
+    pub fn EscapeURL_Encoding1(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         e: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
     ) -> quest_hook::libil2cpp::Result<
@@ -119,6 +109,16 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("EscapeURL", (s, e))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EscapeURL_Il2CppString0(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("EscapeURL", (s))?;
         Ok(__cordl_ret.into())
     }
     pub fn Finalize(
@@ -280,7 +280,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             .invoke("InternalSetUrl", (url))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc_Gc0(
+    pub fn New_Il2CppString0(
         url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         method: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -290,7 +290,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             .invoke_void(".ctor", (url, method))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc1(
+    pub fn New_Il2CppString_DownloadHandler_UploadHandler1(
         url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         method: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         downloadHandler: quest_hook::libil2cpp::Gc<
@@ -306,7 +306,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             .invoke_void(".ctor", (url, method, downloadHandler, uploadHandler))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc2(
+    pub fn New_Uri_DownloadHandler_UploadHandler2(
         uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
         method: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         downloadHandler: quest_hook::libil2cpp::Gc<
@@ -449,7 +449,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             .invoke("SetUrl", (url))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc0(
+    pub fn _ctor_Il2CppString0(
         &mut self,
         url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         method: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -461,7 +461,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             .invoke(".ctor", (url, method))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc1(
+    pub fn _ctor_Il2CppString_DownloadHandler_UploadHandler1(
         &mut self,
         url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         method: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -479,7 +479,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             .invoke(".ctor", (url, method, downloadHandler, uploadHandler))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc2(
+    pub fn _ctor_Uri_DownloadHandler_UploadHandler2(
         &mut self,
         uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
         method: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -780,16 +780,16 @@ for crate::UnityEngine::Networking::UnityWebRequest {
     }
 }
 #[cfg(feature = "UnityEngine+Networking+UnityWebRequest")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsRef<crate::System::IDisposable>
 for crate::UnityEngine::Networking::UnityWebRequest {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Networking+UnityWebRequest")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsMut<crate::System::IDisposable>
 for crate::UnityEngine::Networking::UnityWebRequest {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }

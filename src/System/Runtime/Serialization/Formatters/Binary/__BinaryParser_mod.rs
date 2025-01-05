@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct __BinaryParser {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub objectReader: quest_hook::libil2cpp::Gc<
         crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader,
     >,
@@ -70,7 +70,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+__BinaryParser")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::__BinaryParser {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -183,7 +183,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::__BinaryParser {
         let __cordl_ret: u8 = __cordl_object.invoke("ReadByte", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadBytes_Gc_i32_i32_1(
+    pub fn ReadBytes_Il2CppArray_i32_i32_1(
         &mut self,
         byteA: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
@@ -382,7 +382,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::__BinaryParser {
             .invoke("ReadObjectWithMapTyped", (binaryHeaderEnum))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadObjectWithMapTyped_Gc1(
+    pub fn ReadObjectWithMapTyped_BinaryObjectWithMapTyped1(
         &mut self,
         record: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::Formatters::Binary::BinaryObjectWithMapTyped,
@@ -406,7 +406,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::__BinaryParser {
             .invoke("ReadObjectWithMap", (binaryHeaderEnum))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadObjectWithMap_Gc1(
+    pub fn ReadObjectWithMap_BinaryObjectWithMap1(
         &mut self,
         record: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::Formatters::Binary::BinaryObjectWithMap,

@@ -6,7 +6,7 @@ pub struct EventBox {
     pub e: i32,
     pub l: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion4::BeatIndex>,
+            *mut crate::BeatmapSaveDataVersion4::BeatIndex,
         >,
     >,
 }

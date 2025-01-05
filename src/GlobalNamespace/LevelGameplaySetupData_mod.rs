@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LevelGameplaySetupData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _beatmapKey: crate::GlobalNamespace::BeatmapKey,
     pub _gameplayModifiers: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::GameplayModifiers,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LevelGameplaySetupData")]
 impl std::ops::Deref for crate::GlobalNamespace::LevelGameplaySetupData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -45,7 +45,7 @@ impl crate::GlobalNamespace::LevelGameplaySetupData {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_ByRefMut_Gc1(
+    pub fn New_ByRefMut_GameplayModifiers1(
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         gameplayModifiers: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::GameplayModifiers,
@@ -91,7 +91,7 @@ impl crate::GlobalNamespace::LevelGameplaySetupData {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_ByRefMut_Gc1(
+    pub fn _ctor_ByRefMut_GameplayModifiers1(
         &mut self,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         gameplayModifiers: quest_hook::libil2cpp::Gc<
@@ -140,22 +140,16 @@ for crate::GlobalNamespace::LevelGameplaySetupData {
     }
 }
 #[cfg(feature = "LevelGameplaySetupData")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelGameplaySetupData>>
+impl AsRef<crate::GlobalNamespace::ILevelGameplaySetupData>
 for crate::GlobalNamespace::LevelGameplaySetupData {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelGameplaySetupData> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::ILevelGameplaySetupData {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LevelGameplaySetupData")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelGameplaySetupData>>
+impl AsMut<crate::GlobalNamespace::ILevelGameplaySetupData>
 for crate::GlobalNamespace::LevelGameplaySetupData {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::ILevelGameplaySetupData,
-    > {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ILevelGameplaySetupData {
         unsafe { std::mem::transmute(self) }
     }
 }

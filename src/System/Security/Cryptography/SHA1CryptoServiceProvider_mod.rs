@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SHA1CryptoServiceProvider {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Security::Cryptography::SHA1,
-    >,
+    __cordl_parent: crate::System::Security::Cryptography::SHA1,
     pub sha: quest_hook::libil2cpp::Gc<
         crate::System::Security::Cryptography::SHA1Internal,
     >,
@@ -18,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Security+Cryptography+SHA1CryptoServiceProvider")]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::SHA1CryptoServiceProvider {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::SHA1>;
+    type Target = crate::System::Security::Cryptography::SHA1;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

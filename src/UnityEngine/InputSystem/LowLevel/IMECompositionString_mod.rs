@@ -31,12 +31,14 @@ impl crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
     pub type _buffer_e__FixedBuffer = crate::UnityEngine::InputSystem::LowLevel::IMECompositionString__buffer_e__FixedBuffer;
     pub fn GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<char>> {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<char> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetEnumerator",
-            (),
-        )?;
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<char>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<char>,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "GetEnumerator", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerable_GetEnumerator(
@@ -92,34 +94,32 @@ impl crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString")]
-impl AsRef<quest_hook::libil2cpp::Gc<char>>
+impl AsRef<crate::System::Collections::Generic::IEnumerable_1<char>>
 for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<char> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<char> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString")]
-impl AsMut<quest_hook::libil2cpp::Gc<char>>
-for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<char> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
-for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+impl AsMut<crate::System::Collections::Generic::IEnumerable_1<char>>
 for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<char> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
         todo!()
     }
 }
@@ -213,48 +213,46 @@ impl crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator 
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
-impl AsRef<quest_hook::libil2cpp::Gc<char>>
+impl AsRef<crate::System::Collections::Generic::IEnumerator_1<char>>
 for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<char> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerator_1<char> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
-impl AsMut<quest_hook::libil2cpp::Gc<char>>
-for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<char> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
-for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
+impl AsMut<crate::System::Collections::Generic::IEnumerator_1<char>>
 for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
+    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<char> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsRef<crate::System::Collections::IEnumerator>
 for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsMut<crate::System::Collections::IEnumerator>
 for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
+impl AsRef<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
+impl AsMut<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         todo!()
     }
 }

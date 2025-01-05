@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CommandEventBase_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<T>,
+    __cordl_parent: crate::UnityEngine::UIElements::EventBase_1<T>,
     pub m_CommandName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+CommandEventBase_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::CommandEventBase_1<T> {
-    type Target = quest_hook::libil2cpp::Gc<T>;
+    type Target = crate::UnityEngine::UIElements::EventBase_1<T>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,7 +30,7 @@ for crate::UnityEngine::UIElements::CommandEventBase_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::UIElements::CommandEventBase_1<T> {
-    pub fn GetPooled_Gc0(
+    pub fn GetPooled_Event0(
         systemEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -41,7 +41,7 @@ impl<
             .invoke("GetPooled", (systemEvent))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetPooled_Gc1(
+    pub fn GetPooled_Il2CppString1(
         commandName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -145,24 +145,16 @@ for crate::UnityEngine::UIElements::CommandEventBase_1<T> {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+CommandEventBase_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ICommandEvent>>
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::UnityEngine::UIElements::ICommandEvent>
 for crate::UnityEngine::UIElements::CommandEventBase_1<T> {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ICommandEvent> {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::ICommandEvent {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+CommandEventBase_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ICommandEvent>>
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::UnityEngine::UIElements::ICommandEvent>
 for crate::UnityEngine::UIElements::CommandEventBase_1<T> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ICommandEvent> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::ICommandEvent {
         unsafe { std::mem::transmute(self) }
     }
 }

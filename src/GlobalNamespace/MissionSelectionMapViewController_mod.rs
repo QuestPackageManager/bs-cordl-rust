@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionSelectionMapViewController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+    __cordl_parent: crate::HMUI::ViewController,
     pub _mapScrollView: quest_hook::libil2cpp::Gc<crate::HMUI::ScrollView>,
     pub _missionNodeSelectionManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MissionNodeSelectionManager,
@@ -23,10 +23,12 @@ pub struct MissionSelectionMapViewController {
         crate::GlobalNamespace::BeatmapLevelsModel,
     >,
     pub didSelectMissionLevelEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MissionSelectionMapViewController,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MissionSelectionMapViewController,
+            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
         >,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
     >,
     pub _selectedMissionNode: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MissionNode,
@@ -40,7 +42,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MissionSelectionMapViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionSelectionMapViewController {
-    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>;
+    type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -149,10 +151,12 @@ impl crate::GlobalNamespace::MissionSelectionMapViewController {
     pub fn add_didSelectMissionLevelEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MissionSelectionMapViewController,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MissionSelectionMapViewController,
+                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
             >,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -175,10 +179,12 @@ impl crate::GlobalNamespace::MissionSelectionMapViewController {
     pub fn remove_didSelectMissionLevelEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MissionSelectionMapViewController,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MissionSelectionMapViewController,
+                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
             >,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

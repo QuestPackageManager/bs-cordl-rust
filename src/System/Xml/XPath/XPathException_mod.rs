@@ -2,12 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XPathException {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::SystemException>,
+    __cordl_parent: crate::System::SystemException,
     pub res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub args: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
@@ -18,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XPath+XPathException")]
 impl std::ops::Deref for crate::System::Xml::XPath::XPathException {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::SystemException>;
+    type Target = crate::System::SystemException;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,9 +32,7 @@ impl crate::System::Xml::XPath::XPathException {
     pub fn CreateMessage(
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -47,7 +43,7 @@ impl crate::System::Xml::XPath::XPathException {
             .invoke("CreateMessage", (res, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Create_Gc0(
+    pub fn Create_Il2CppString0(
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::XPath::XPathException>,
@@ -57,7 +53,7 @@ impl crate::System::Xml::XPath::XPathException {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Create", (res))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Create_Gc1(
+    pub fn Create_Il2CppString1(
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -68,7 +64,7 @@ impl crate::System::Xml::XPath::XPathException {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Create", (res, arg))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Create_Gc_Gc2(
+    pub fn Create_Il2CppString_Il2CppString2(
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -102,7 +98,7 @@ impl crate::System::Xml::XPath::XPathException {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc2(
+    pub fn New_Il2CppString_Exception2(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -112,12 +108,10 @@ impl crate::System::Xml::XPath::XPathException {
             .invoke_void(".ctor", (message, innerException))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc3(
+    pub fn New_Il2CppString_Il2CppArray3(
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -126,12 +120,10 @@ impl crate::System::Xml::XPath::XPathException {
             .invoke_void(".ctor", (res, args))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc_Gc4(
+    pub fn New_Il2CppString_Il2CppArray_Exception4(
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
         inner: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -141,7 +133,7 @@ impl crate::System::Xml::XPath::XPathException {
             .invoke_void(".ctor", (res, args, inner))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_StreamingContext0(
+    pub fn New_SerializationInfo_StreamingContext0(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -163,7 +155,7 @@ impl crate::System::Xml::XPath::XPathException {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc2(
+    pub fn _ctor_Il2CppString_Exception2(
         &mut self,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
@@ -175,13 +167,11 @@ impl crate::System::Xml::XPath::XPathException {
             .invoke(".ctor", (message, innerException))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc3(
+    pub fn _ctor_Il2CppString_Il2CppArray3(
         &mut self,
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -191,13 +181,11 @@ impl crate::System::Xml::XPath::XPathException {
             .invoke(".ctor", (res, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_Gc4(
+    pub fn _ctor_Il2CppString_Il2CppArray_Exception4(
         &mut self,
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
         inner: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -208,7 +196,7 @@ impl crate::System::Xml::XPath::XPathException {
             .invoke(".ctor", (res, args, inner))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_StreamingContext0(
+    pub fn _ctor_SerializationInfo_StreamingContext0(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,

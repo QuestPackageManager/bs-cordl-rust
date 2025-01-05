@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct IgnoranceClient {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ConnectAddress: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub ConnectPort: i32,
     pub ExpectedChannels: i32,
@@ -18,22 +18,34 @@ pub struct IgnoranceClient {
     >,
     pub RootCertificate: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Incoming: quest_hook::libil2cpp::Gc<
-        crate::IgnoranceCore::IgnoranceIncomingPacket,
+        crate::IgnoranceThirdparty::RingBuffer_1<
+            crate::IgnoranceCore::IgnoranceIncomingPacket,
+        >,
     >,
     pub Outgoing: quest_hook::libil2cpp::Gc<
-        crate::IgnoranceCore::IgnoranceOutgoingPacket,
+        crate::IgnoranceThirdparty::RingBuffer_1<
+            crate::IgnoranceCore::IgnoranceOutgoingPacket,
+        >,
     >,
     pub Commands: quest_hook::libil2cpp::Gc<
-        crate::IgnoranceCore::IgnoranceCommandPacket,
+        crate::IgnoranceThirdparty::RingBuffer_1<
+            crate::IgnoranceCore::IgnoranceCommandPacket,
+        >,
     >,
     pub ConnectionEvents: quest_hook::libil2cpp::Gc<
-        crate::IgnoranceCore::IgnoranceConnectionEvent,
+        crate::IgnoranceThirdparty::RingBuffer_1<
+            crate::IgnoranceCore::IgnoranceConnectionEvent,
+        >,
     >,
     pub DisconnectionEvents: quest_hook::libil2cpp::Gc<
-        crate::IgnoranceCore::IgnoranceConnectionEvent,
+        crate::IgnoranceThirdparty::RingBuffer_1<
+            crate::IgnoranceCore::IgnoranceConnectionEvent,
+        >,
     >,
     pub StatusUpdates: quest_hook::libil2cpp::Gc<
-        crate::IgnoranceCore::IgnoranceClientStats,
+        crate::IgnoranceThirdparty::RingBuffer_1<
+            crate::IgnoranceCore::IgnoranceClientStats,
+        >,
     >,
     pub CeaseOperation: bool,
     pub WorkerThread: quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,
@@ -45,7 +57,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "IgnoranceCore+IgnoranceClient")]
 impl std::ops::Deref for crate::IgnoranceCore::IgnoranceClient {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

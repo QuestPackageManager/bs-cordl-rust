@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LongArray {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ints: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+LongArray")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Math+EC+LongArray")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::LongArray {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -101,7 +101,7 @@ impl crate::Org::BouncyCastle::Math::EC::LongArray {
             .invoke("AddShiftedUp", (x, xOff, y, yOff, count, shift))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Add_Gc_i32_i32_1(
+    pub fn Add_Il2CppArray_i32_i32_1(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
         xOff: i32,
         y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
@@ -180,7 +180,7 @@ impl crate::Org::BouncyCastle::Math::EC::LongArray {
             .invoke("Distribute", (x, src, dst1, dst2, count))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Gc0(
+    pub fn Equals_Il2CppObject0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -190,7 +190,7 @@ impl crate::Org::BouncyCastle::Math::EC::LongArray {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Gc1(
+    pub fn Equals_LongArray1(
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::LongArray>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -272,7 +272,7 @@ impl crate::Org::BouncyCastle::Math::EC::LongArray {
             .invoke("Interleave2_32to64", (x))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Interleave2_n_Gc_Gc_i32_i32_i32_0(
+    pub fn Interleave2_n_Il2CppArray_Il2CppArray_i32_i32_i32_0(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
         xOff: i32,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
@@ -302,7 +302,7 @@ impl crate::Org::BouncyCastle::Math::EC::LongArray {
             .invoke("Interleave3_21to63", (x))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Interleave3_Gc_i32_Gc_i32_i32_0(
+    pub fn Interleave3_Il2CppArray_i32_Il2CppArray_i32_i32_0(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
         xOff: i32,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
@@ -323,7 +323,7 @@ impl crate::Org::BouncyCastle::Math::EC::LongArray {
             .invoke("Interleave4_16to64", (x))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Interleave5_Gc_i32_Gc_i32_i32_0(
+    pub fn Interleave5_Il2CppArray_i32_Il2CppArray_i32_i32_0(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
         xOff: i32,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
@@ -339,7 +339,7 @@ impl crate::Org::BouncyCastle::Math::EC::LongArray {
             .invoke("Interleave5", (x))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Interleave7_Gc_i32_Gc_i32_i32_0(
+    pub fn Interleave7_Il2CppArray_i32_Il2CppArray_i32_i32_0(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
         xOff: i32,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
@@ -505,16 +505,7 @@ impl crate::Org::BouncyCastle::Math::EC::LongArray {
             .invoke("MultiplyWord", (a, b, bLen, c, cOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc1(
-        ints: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (ints))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc3(
+    pub fn New_BigInteger3(
         bigInt: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -523,7 +514,16 @@ impl crate::Org::BouncyCastle::Math::EC::LongArray {
             .invoke_void(".ctor", (bigInt))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_i32_i32_2(
+    pub fn New_Il2CppArray1(
+        ints: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (ints))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Il2CppArray_i32_i32_2(
         ints: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
         off: i32,
         len: i32,
@@ -653,7 +653,7 @@ impl crate::Org::BouncyCastle::Math::EC::LongArray {
         > = __cordl_object.invoke("ResizedInts", (newLen))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ShiftUp_Gc_i32_i32_1(
+    pub fn ShiftUp_Il2CppArray_i32_i32_1(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
         xOff: i32,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
@@ -742,18 +742,7 @@ impl crate::Org::BouncyCastle::Math::EC::LongArray {
         > = __cordl_object.invoke("ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
-        &mut self,
-        ints: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (ints))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc3(
+    pub fn _ctor_BigInteger3(
         &mut self,
         bigInt: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -764,7 +753,18 @@ impl crate::Org::BouncyCastle::Math::EC::LongArray {
             .invoke(".ctor", (bigInt))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_i32_i32_2(
+    pub fn _ctor_Il2CppArray1(
+        &mut self,
+        ints: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (ints))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppArray_i32_i32_2(
         &mut self,
         ints: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
         off: i32,

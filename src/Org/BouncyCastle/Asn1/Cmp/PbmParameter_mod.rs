@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PbmParameter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub salt: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1OctetString>,
     pub owf: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
@@ -23,9 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+PbmParameter")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Cmp::PbmParameter {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -48,16 +44,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PbmParameter {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
-        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seq))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_Gc_Gc2(
+    pub fn New_Asn1OctetString_AlgorithmIdentifier_DerInteger_AlgorithmIdentifier2(
         salt: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1OctetString>,
         owf: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
@@ -75,7 +62,16 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PbmParameter {
             .invoke_void(".ctor", (salt, owf, iterationCount, mac))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_i32_Gc1(
+    pub fn New_Asn1Sequence0(
+        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (seq))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Il2CppArray_AlgorithmIdentifier_i32_AlgorithmIdentifier1(
         salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         owf: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
@@ -104,18 +100,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PbmParameter {
         > = __cordl_object.invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
-        &mut self,
-        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (seq))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_Gc_Gc2(
+    pub fn _ctor_Asn1OctetString_AlgorithmIdentifier_DerInteger_AlgorithmIdentifier2(
         &mut self,
         salt: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1OctetString>,
         owf: quest_hook::libil2cpp::Gc<
@@ -135,7 +120,18 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PbmParameter {
             .invoke(".ctor", (salt, owf, iterationCount, mac))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_i32_Gc1(
+    pub fn _ctor_Asn1Sequence0(
+        &mut self,
+        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (seq))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppArray_AlgorithmIdentifier_i32_AlgorithmIdentifier1(
         &mut self,
         salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         owf: quest_hook::libil2cpp::Gc<

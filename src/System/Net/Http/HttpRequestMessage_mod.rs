@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HttpRequestMessage {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub headers: quest_hook::libil2cpp::Gc<
         crate::System::Net::Http::Headers::HttpRequestHeaders,
     >,
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Http+HttpRequestMessage")]
 impl std::ops::Deref for crate::System::Net::Http::HttpRequestMessage {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -70,7 +70,7 @@ impl crate::System::Net::Http::HttpRequestMessage {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc1(
+    pub fn New_HttpMethod_Uri1(
         method: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpMethod>,
         requestUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -110,7 +110,7 @@ impl crate::System::Net::Http::HttpRequestMessage {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc1(
+    pub fn _ctor_HttpMethod_Uri1(
         &mut self,
         method: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpMethod>,
         requestUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
@@ -227,16 +227,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::Http::HttpRequest
     }
 }
 #[cfg(feature = "System+Net+Http+HttpRequestMessage")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::System::Net::Http::HttpRequestMessage {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsRef<crate::System::IDisposable> for crate::System::Net::Http::HttpRequestMessage {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Net+Http+HttpRequestMessage")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::System::Net::Http::HttpRequestMessage {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsMut<crate::System::IDisposable> for crate::System::Net::Http::HttpRequestMessage {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }

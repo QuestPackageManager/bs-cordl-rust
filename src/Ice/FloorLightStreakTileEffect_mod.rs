@@ -2,16 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloorLightStreakTileEffect {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AbstractPoolContainer,
-    >,
+    __cordl_parent: crate::GlobalNamespace::AbstractPoolContainer,
     pub _stayOnTileDuration: f32,
     pub _floorLightTilesGrid: quest_hook::libil2cpp::Gc<crate::Ice::FloorLightTilesGrid>,
     pub _audioTimeSource: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IAudioTimeSource,
     >,
     pub _elementsPool: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Ice::FloorLightStreakTileEffect_Element>,
+        crate::GlobalNamespace::SimpleMemoryPool_1<
+            quest_hook::libil2cpp::Gc<crate::Ice::FloorLightStreakTileEffect_Element>,
+        >,
     >,
 }
 #[cfg(feature = "Ice+FloorLightStreakTileEffect")]
@@ -21,9 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Ice+FloorLightStreakTileEffect")]
 impl std::ops::Deref for crate::Ice::FloorLightStreakTileEffect {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AbstractPoolContainer,
-    >;
+    type Target = crate::GlobalNamespace::AbstractPoolContainer;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -139,9 +137,11 @@ impl quest_hook::libil2cpp::ObjectType for crate::Ice::FloorLightStreakTileEffec
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloorLightStreakTileEffect_Element {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub didMoveToNextTile: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Ice::FloorLightStreakTileEffect_Element>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::Ice::FloorLightStreakTileEffect_Element>,
+        >,
     >,
     pub _currentTileY: i32,
     pub _lineIndex: i32,
@@ -156,7 +156,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Ice+FloorLightStreakTileEffect+Element")]
 impl std::ops::Deref for crate::Ice::FloorLightStreakTileEffect_Element {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

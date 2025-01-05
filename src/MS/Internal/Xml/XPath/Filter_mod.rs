@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Filter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
+    __cordl_parent: crate::MS::Internal::Xml::XPath::AstNode,
     pub _input: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
     pub _condition: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MS+Internal+Xml+XPath+Filter")]
 impl std::ops::Deref for crate::MS::Internal::Xml::XPath::Filter {
-    type Target = quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>;
+    type Target = crate::MS::Internal::Xml::XPath::AstNode;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

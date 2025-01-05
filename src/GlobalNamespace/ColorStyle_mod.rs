@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorStyle {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _useScriptableObjectColor: bool,
     pub _color: crate::UnityEngine::Color,
     pub _colorSo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ColorStyle")]
 impl std::ops::Deref for crate::GlobalNamespace::ColorStyle {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -214,20 +214,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ColorStyle {
     }
 }
 #[cfg(feature = "ColorStyle")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadOnlyColorStyle>>
+impl AsRef<crate::GlobalNamespace::IReadOnlyColorStyle>
 for crate::GlobalNamespace::ColorStyle {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadOnlyColorStyle> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IReadOnlyColorStyle {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "ColorStyle")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadOnlyColorStyle>>
+impl AsMut<crate::GlobalNamespace::IReadOnlyColorStyle>
 for crate::GlobalNamespace::ColorStyle {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadOnlyColorStyle> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IReadOnlyColorStyle {
         unsafe { std::mem::transmute(self) }
     }
 }

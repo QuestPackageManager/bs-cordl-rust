@@ -73,9 +73,9 @@ impl<
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<TValue>>
+> AsRef<crate::Zenject::IDespawnableMemoryPool_1<TValue>>
 for crate::Zenject::IMemoryPool_2<TParam1, TValue> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TValue> {
+    fn as_ref(&self) -> &crate::Zenject::IDespawnableMemoryPool_1<TValue> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -83,9 +83,9 @@ for crate::Zenject::IMemoryPool_2<TParam1, TValue> {
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<TValue>>
+> AsMut<crate::Zenject::IDespawnableMemoryPool_1<TValue>>
 for crate::Zenject::IMemoryPool_2<TParam1, TValue> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TValue> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IDespawnableMemoryPool_1<TValue> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -93,9 +93,8 @@ for crate::Zenject::IMemoryPool_2<TParam1, TValue> {
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool>>
-for crate::Zenject::IMemoryPool_2<TParam1, TValue> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool> {
+> AsRef<crate::Zenject::IMemoryPool> for crate::Zenject::IMemoryPool_2<TParam1, TValue> {
+    fn as_ref(&self) -> &crate::Zenject::IMemoryPool {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -103,9 +102,8 @@ for crate::Zenject::IMemoryPool_2<TParam1, TValue> {
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool>>
-for crate::Zenject::IMemoryPool_2<TParam1, TValue> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool> {
+> AsMut<crate::Zenject::IMemoryPool> for crate::Zenject::IMemoryPool_2<TParam1, TValue> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IMemoryPool {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,17 +2,25 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GraphicRegistry {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Graphics: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UI::Collections::IndexedSet_1<
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+                >,
+            >,
         >,
     >,
     pub m_RaycastableGraphics: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UI::Collections::IndexedSet_1<
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+                >,
+            >,
         >,
     >,
 }
@@ -23,7 +31,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+GraphicRegistry")]
 impl std::ops::Deref for crate::UnityEngine::UI::GraphicRegistry {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -56,11 +64,15 @@ impl crate::UnityEngine::UI::GraphicRegistry {
         canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetGraphicsForCanvas", (canvas))?;
         Ok(__cordl_ret.into())
@@ -69,11 +81,15 @@ impl crate::UnityEngine::UI::GraphicRegistry {
         canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetRaycastableGraphicsForCanvas", (canvas))?;
         Ok(__cordl_ret.into())

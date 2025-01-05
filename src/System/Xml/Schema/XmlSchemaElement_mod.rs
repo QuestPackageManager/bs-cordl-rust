@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaElement {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::XmlSchemaParticle,
-    >,
+    __cordl_parent: crate::System::Xml::Schema::XmlSchemaParticle,
     pub isAbstract: bool,
     pub hasAbstractAttribute: bool,
     pub isNillable: bool,
@@ -44,9 +42,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlSchemaElement")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaElement {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::XmlSchemaParticle,
-    >;
+    type Target = crate::System::Xml::Schema::XmlSchemaParticle;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -72,7 +68,7 @@ impl crate::System::Xml::Schema::XmlSchemaElement {
         > = __cordl_object.invoke("Clone", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Clone_Gc1(
+    pub fn Clone_XmlSchema1(
         &mut self,
         parentSchema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
     ) -> quest_hook::libil2cpp::Result<

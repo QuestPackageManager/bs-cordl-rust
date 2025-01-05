@@ -9,7 +9,7 @@ pub struct PoolableStaticMemoryPool_6<
     TParam5: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Zenject::StaticMemoryPool_6<
         TParam1,
         TParam2,
         TParam3,
@@ -47,7 +47,7 @@ for crate::Zenject::PoolableStaticMemoryPool_6<
     TParam5,
     TValue,
 > {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Zenject::StaticMemoryPool_6<
         TParam1,
         TParam2,
         TParam3,

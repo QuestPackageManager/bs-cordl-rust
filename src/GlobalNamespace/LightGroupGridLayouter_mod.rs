@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightGroupGridLayouter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LightGroupSubsystem,
-    >,
+    __cordl_parent: crate::GlobalNamespace::LightGroupSubsystem,
     pub _columns: i32,
     pub _columnStep: crate::UnityEngine::Vector3,
     pub _columnsFromCenter: bool,
@@ -21,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LightGroupGridLayouter")]
 impl std::ops::Deref for crate::GlobalNamespace::LightGroupGridLayouter {
-    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSubsystem>;
+    type Target = crate::GlobalNamespace::LightGroupSubsystem;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

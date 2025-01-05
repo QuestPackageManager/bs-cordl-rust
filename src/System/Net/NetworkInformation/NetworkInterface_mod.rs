@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetworkInterface {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Net+NetworkInformation+NetworkInterface")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+NetworkInformation+NetworkInterface")]
 impl std::ops::Deref for crate::System::Net::NetworkInformation::NetworkInterface {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,17 +28,13 @@ impl crate::System::Net::NetworkInformation::NetworkInterface {
     pub fn GetAllNetworkInterfaces() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Net::NetworkInformation::NetworkInterface,
-                >,
+                *mut crate::System::Net::NetworkInformation::NetworkInterface,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Net::NetworkInformation::NetworkInterface,
-                >,
+                *mut crate::System::Net::NetworkInformation::NetworkInterface,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetAllNetworkInterfaces", ())?;

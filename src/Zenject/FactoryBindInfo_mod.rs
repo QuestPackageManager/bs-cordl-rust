@@ -2,14 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FactoryBindInfo {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _FactoryType_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _ProviderFunc_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-        quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+        crate::System::Func_2<
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+        >,
     >,
     pub _Arguments_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::Zenject::TypeValuePair,
+        crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
     >,
 }
 #[cfg(feature = "Zenject+FactoryBindInfo")]
@@ -19,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+FactoryBindInfo")]
 impl std::ops::Deref for crate::Zenject::FactoryBindInfo {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -55,13 +57,16 @@ impl crate::Zenject::FactoryBindInfo {
     pub fn get_Arguments(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair> = __cordl_object
-            .invoke("get_Arguments", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        > = __cordl_object.invoke("get_Arguments", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_FactoryType(
@@ -78,22 +83,28 @@ impl crate::Zenject::FactoryBindInfo {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+            >,
         > = __cordl_object.invoke("get_ProviderFunc", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn set_Arguments(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -116,8 +127,10 @@ impl crate::Zenject::FactoryBindInfo {
     pub fn set_ProviderFunc(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

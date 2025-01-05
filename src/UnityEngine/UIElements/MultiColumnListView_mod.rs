@@ -2,23 +2,27 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiColumnListView {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::BaseListView,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::BaseListView,
     pub m_Columns: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Columns>,
     pub m_SortingEnabled: bool,
     pub m_SortColumnDescriptions: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::SortColumnDescriptions,
     >,
     pub m_SortedColumns: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::SortColumnDescription>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::SortColumnDescription,
+            >,
+        >,
     >,
     pub columnSortingChanged: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub headerContextMenuPopulateEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
         >,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+MultiColumnListView")]
@@ -28,9 +32,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+MultiColumnListView")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::MultiColumnListView {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::BaseListView,
-    >;
+    type Target = crate::UnityEngine::UIElements::BaseListView;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -79,7 +81,7 @@ impl crate::UnityEngine::UIElements::MultiColumnListView {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Columns1(
         columns: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Columns>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -135,7 +137,7 @@ impl crate::UnityEngine::UIElements::MultiColumnListView {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Columns1(
         &mut self,
         columns: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Columns>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -237,7 +239,7 @@ for crate::UnityEngine::UIElements::MultiColumnListView {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiColumnListView_UxmlFactory {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MultiColumnListView>,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::MultiColumnListView_UxmlTraits,
@@ -253,7 +255,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+MultiColumnListView+UxmlFactory")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::MultiColumnListView_UxmlFactory {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MultiColumnListView>,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::MultiColumnListView_UxmlTraits,
@@ -304,17 +306,21 @@ for crate::UnityEngine::UIElements::MultiColumnListView_UxmlFactory {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiColumnListView_UxmlTraits {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::BaseListView_UxmlTraits,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::BaseListView_UxmlTraits,
     pub m_SortingEnabled: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
     >,
     pub m_Columns: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Columns>,
+        crate::UnityEngine::UIElements::UxmlObjectAttributeDescription_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Columns>,
+        >,
     >,
     pub m_SortColumnDescriptions: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::SortColumnDescriptions>,
+        crate::UnityEngine::UIElements::UxmlObjectAttributeDescription_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::SortColumnDescriptions,
+            >,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+MultiColumnListView+UxmlTraits")]
@@ -325,9 +331,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+MultiColumnListView+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::MultiColumnListView_UxmlTraits {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::BaseListView_UxmlTraits,
-    >;
+    type Target = crate::UnityEngine::UIElements::BaseListView_UxmlTraits;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

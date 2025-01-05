@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MockPlayerInstance {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -28,7 +28,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MockPlayerInstance")]
 impl std::ops::Deref for crate::GlobalNamespace::MockPlayerInstance {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -43,7 +43,9 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MockPlayerInstance {
 impl crate::GlobalNamespace::MockPlayerInstance {
     pub fn ConnectToServer<T>(
         &mut self,
-        connectionInitParams: quest_hook::libil2cpp::Gc<T>,
+        connectionInitParams: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IConnectionInitParams_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -149,7 +151,9 @@ impl crate::GlobalNamespace::MockPlayerInstance {
     pub fn WhenReadyAsync(
         &mut self,
         action: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+            crate::System::Func_1<
+                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -268,36 +272,28 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MockPlayerIns
     }
 }
 #[cfg(feature = "MockPlayerInstance")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IStandaloneMonobehavior>>
+impl AsRef<crate::GlobalNamespace::IStandaloneMonobehavior>
 for crate::GlobalNamespace::MockPlayerInstance {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IStandaloneMonobehavior> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IStandaloneMonobehavior {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MockPlayerInstance")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IStandaloneMonobehavior>>
+impl AsMut<crate::GlobalNamespace::IStandaloneMonobehavior>
 for crate::GlobalNamespace::MockPlayerInstance {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IStandaloneMonobehavior,
-    > {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IStandaloneMonobehavior {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MockPlayerInstance")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::GlobalNamespace::MockPlayerInstance {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsRef<crate::System::IDisposable> for crate::GlobalNamespace::MockPlayerInstance {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MockPlayerInstance")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::GlobalNamespace::MockPlayerInstance {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::MockPlayerInstance {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }

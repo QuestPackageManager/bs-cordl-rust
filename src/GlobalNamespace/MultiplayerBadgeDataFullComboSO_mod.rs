@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerBadgeDataFullComboSO {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MultiplayerBadgeDataSO,
-    >,
+    __cordl_parent: crate::GlobalNamespace::MultiplayerBadgeDataSO,
     pub _weight: f32,
 }
 #[cfg(feature = "MultiplayerBadgeDataFullComboSO")]
@@ -14,9 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplayerBadgeDataFullComboSO")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerBadgeDataFullComboSO {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MultiplayerBadgeDataSO,
-    >;
+    type Target = crate::GlobalNamespace::MultiplayerBadgeDataSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,8 +28,10 @@ impl crate::GlobalNamespace::MultiplayerBadgeDataFullComboSO {
     pub fn CalculateBadgeData(
         &mut self,
         resultsData: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerPlayerResultsData,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MultiplayerPlayerResultsData,
+                >,
             >,
         >,
         playerDataModel: quest_hook::libil2cpp::Gc<

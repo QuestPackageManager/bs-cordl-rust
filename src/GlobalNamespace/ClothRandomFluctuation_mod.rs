@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ClothRandomFluctuation {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _cloth: quest_hook::libil2cpp::Gc<crate::UnityEngine::Cloth>,
     pub _useLocalExternalFluctuations: bool,
     pub _externalFluctuations: crate::UnityEngine::Vector3,
@@ -10,8 +10,10 @@ pub struct ClothRandomFluctuation {
     pub _minFluctuations: crate::UnityEngine::Vector3,
     pub _maxFluctuations: crate::UnityEngine::Vector3,
     pub _compoundSins: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ClothRandomFluctuation_SineLayer,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::ClothRandomFluctuation_SineLayer,
+            >,
         >,
     >,
     pub _speed: f32,
@@ -23,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ClothRandomFluctuation")]
 impl std::ops::Deref for crate::GlobalNamespace::ClothRandomFluctuation {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -102,7 +104,7 @@ for crate::GlobalNamespace::ClothRandomFluctuation {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ClothRandomFluctuation_SineLayer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub multiplier: f32,
     pub offset: f32,
 }
@@ -114,7 +116,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ClothRandomFluctuation+SineLayer")]
 impl std::ops::Deref for crate::GlobalNamespace::ClothRandomFluctuation_SineLayer {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

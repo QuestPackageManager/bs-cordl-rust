@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExecutionContext {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _syncContext: quest_hook::libil2cpp::Gc<
         crate::System::Threading::SynchronizationContext,
     >,
@@ -17,11 +17,15 @@ pub struct ExecutionContext {
     >,
     pub _flags: crate::System::Threading::ExecutionContext_Flags,
     pub _localValues: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::IAsyncLocal>,
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::System::Threading::IAsyncLocal>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub _localChangeNotifications: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::IAsyncLocal>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::System::Threading::IAsyncLocal>,
+        >,
     >,
 }
 #[cfg(feature = "System+Threading+ExecutionContext")]
@@ -31,7 +35,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+ExecutionContext")]
 impl std::ops::Deref for crate::System::Threading::ExecutionContext {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -117,7 +121,7 @@ impl crate::System::Threading::ExecutionContext {
             .invoke("EstablishCopyOnWriteScope", (ecsw))?;
         Ok(__cordl_ret.into())
     }
-    pub fn EstablishCopyOnWriteScope_Gc__cordl_bool_ByRefMut1(
+    pub fn EstablishCopyOnWriteScope_Thread__cordl_bool_ByRefMut1(
         currentThread: quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,
         knownNullWindowsIdentity: bool,
         ecsw: quest_hook::libil2cpp::ByRefMut<
@@ -176,7 +180,7 @@ impl crate::System::Threading::ExecutionContext {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_StreamingContext2(
+    pub fn New_SerializationInfo_StreamingContext2(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -205,7 +209,7 @@ impl crate::System::Threading::ExecutionContext {
             .invoke("OnAsyncLocalContextChanged", (previous, current))?;
         Ok(__cordl_ret.into())
     }
-    pub fn RunInternal_Gc_Gc_Gc0(
+    pub fn RunInternal_ExecutionContext_ContextCallback_Il2CppObject0(
         executionContext: quest_hook::libil2cpp::Gc<
             crate::System::Threading::ExecutionContext,
         >,
@@ -231,7 +235,7 @@ impl crate::System::Threading::ExecutionContext {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Run_Gc_Gc_Gc0(
+    pub fn Run_ExecutionContext_ContextCallback_Il2CppObject0(
         executionContext: quest_hook::libil2cpp::Gc<
             crate::System::Threading::ExecutionContext,
         >,
@@ -285,7 +289,7 @@ impl crate::System::Threading::ExecutionContext {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_StreamingContext2(
+    pub fn _ctor_SerializationInfo_StreamingContext2(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -472,40 +476,28 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::ExecutionCo
     }
 }
 #[cfg(feature = "System+Threading+ExecutionContext")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsRef<crate::System::IDisposable> for crate::System::Threading::ExecutionContext {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Threading+ExecutionContext")]
+impl AsMut<crate::System::IDisposable> for crate::System::Threading::ExecutionContext {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Threading+ExecutionContext")]
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
 for crate::System::Threading::ExecutionContext {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Threading+ExecutionContext")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
 for crate::System::Threading::ExecutionContext {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Threading+ExecutionContext")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::Threading::ExecutionContext {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Threading+ExecutionContext")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::Threading::ExecutionContext {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }

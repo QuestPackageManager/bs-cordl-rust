@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CmsProcessableByteArray {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_type: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
     >,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsProcessableByteArray")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::CmsProcessableByteArray {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -53,16 +53,7 @@ impl crate::Org::BouncyCastle::Cms::CmsProcessableByteArray {
             .invoke("GetInputStream", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
-        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (bytes))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc1(
+    pub fn New_DerObjectIdentifier_Il2CppArray1(
         _cordl_type: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
@@ -72,6 +63,15 @@ impl crate::Org::BouncyCastle::Cms::CmsProcessableByteArray {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (_cordl_type, bytes))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Il2CppArray0(
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (bytes))?;
         Ok(__cordl_object.into())
     }
     pub fn Write(
@@ -85,18 +85,7 @@ impl crate::Org::BouncyCastle::Cms::CmsProcessableByteArray {
             .invoke("Write", (zOut))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
-        &mut self,
-        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (bytes))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_DerObjectIdentifier_Il2CppArray1(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
@@ -108,6 +97,17 @@ impl crate::Org::BouncyCastle::Cms::CmsProcessableByteArray {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (_cordl_type, bytes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppArray0(
+        &mut self,
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (bytes))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_Type(
@@ -135,38 +135,30 @@ for crate::Org::BouncyCastle::Cms::CmsProcessableByteArray {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsProcessableByteArray")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsProcessable>>
+impl AsRef<crate::Org::BouncyCastle::Cms::CmsProcessable>
 for crate::Org::BouncyCastle::Cms::CmsProcessableByteArray {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsProcessable> {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Cms::CmsProcessable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsProcessableByteArray")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsProcessable>>
+impl AsMut<crate::Org::BouncyCastle::Cms::CmsProcessable>
 for crate::Org::BouncyCastle::Cms::CmsProcessableByteArray {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsProcessable> {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Cms::CmsProcessable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsProcessableByteArray")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsReadable>>
+impl AsRef<crate::Org::BouncyCastle::Cms::CmsReadable>
 for crate::Org::BouncyCastle::Cms::CmsProcessableByteArray {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsReadable> {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Cms::CmsReadable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsProcessableByteArray")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsReadable>>
+impl AsMut<crate::Org::BouncyCastle::Cms::CmsReadable>
 for crate::Org::BouncyCastle::Cms::CmsProcessableByteArray {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsReadable> {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Cms::CmsReadable {
         unsafe { std::mem::transmute(self) }
     }
 }

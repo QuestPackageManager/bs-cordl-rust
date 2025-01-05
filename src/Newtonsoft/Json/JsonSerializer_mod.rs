@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonSerializer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _typeNameHandling: crate::Newtonsoft::Json::TypeNameHandling,
     pub _typeNameAssemblyFormatHandling: crate::Newtonsoft::Json::TypeNameAssemblyFormatHandling,
     pub _preserveReferencesHandling: crate::Newtonsoft::Json::PreserveReferencesHandling,
@@ -60,7 +60,11 @@ pub struct JsonSerializer {
     >,
     pub _dateFormatStringSet: bool,
     pub Error: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Serialization::ErrorEventArgs>,
+        crate::System::EventHandler_1<
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Serialization::ErrorEventArgs,
+            >,
+        >,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+JsonSerializer")]
@@ -70,7 +74,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+JsonSerializer")]
 impl std::ops::Deref for crate::Newtonsoft::Json::JsonSerializer {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -101,7 +105,7 @@ impl crate::Newtonsoft::Json::JsonSerializer {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("CreateDefault", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateDefault_Gc1(
+    pub fn CreateDefault_JsonSerializerSettings1(
         settings: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::JsonSerializerSettings,
         >,
@@ -138,7 +142,7 @@ impl crate::Newtonsoft::Json::JsonSerializer {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Create", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Create_Gc1(
+    pub fn Create_JsonSerializerSettings1(
         settings: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::JsonSerializerSettings,
         >,
@@ -165,7 +169,7 @@ impl crate::Newtonsoft::Json::JsonSerializer {
         > = __cordl_object.invoke("DeserializeInternal", (reader, objectType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Deserialize_Gc0(
+    pub fn Deserialize_JsonReader0(
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
     ) -> quest_hook::libil2cpp::Result<
@@ -179,7 +183,36 @@ impl crate::Newtonsoft::Json::JsonSerializer {
         > = __cordl_object.invoke("Deserialize", (reader))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Deserialize_Gc1(
+    pub fn Deserialize_JsonReader2<T>(
+        &mut self,
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: T = __cordl_object.invoke("Deserialize", (reader))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Deserialize_JsonReader_Type3(
+        &mut self,
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("Deserialize", (reader, objectType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Deserialize_TextReader_Type1(
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
         objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -194,36 +227,23 @@ impl crate::Newtonsoft::Json::JsonSerializer {
         > = __cordl_object.invoke("Deserialize", (reader, objectType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Deserialize_Gc2<T>(
-        &mut self,
-        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
-    ) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: T = __cordl_object.invoke("Deserialize", (reader))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Deserialize_Gc3(
-        &mut self,
-        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+    pub fn GetMatchingConverter_IList_1_Type1(
+        converters: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
+            >,
+        >,
         objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object.invoke("Deserialize", (reader, objectType))?;
+            crate::Newtonsoft::Json::JsonConverter,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMatchingConverter", (converters, objectType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetMatchingConverter_Gc0(
+    pub fn GetMatchingConverter_Type0(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
@@ -235,20 +255,6 @@ impl crate::Newtonsoft::Json::JsonSerializer {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::JsonConverter,
         > = __cordl_object.invoke("GetMatchingConverter", (_cordl_type))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetMatchingConverter_Gc1(
-        converters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
-        >,
-        objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::JsonConverter,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetMatchingConverter", (converters, objectType))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetReferenceResolver(
@@ -308,9 +314,9 @@ impl crate::Newtonsoft::Json::JsonSerializer {
             .invoke("PopulateInternal", (reader, target))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Populate_Gc_Gc0(
+    pub fn Populate_JsonReader1(
         &mut self,
-        reader: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
         target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -320,9 +326,9 @@ impl crate::Newtonsoft::Json::JsonSerializer {
             .invoke("Populate", (reader, target))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Populate_Gc_Gc1(
+    pub fn Populate_TextReader0(
         &mut self,
-        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        reader: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
         target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -383,7 +389,19 @@ impl crate::Newtonsoft::Json::JsonSerializer {
             .invoke("SerializeInternal", (jsonWriter, value, objectType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Serialize_Gc1(
+    pub fn Serialize_JsonWriter3(
+        &mut self,
+        jsonWriter: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Serialize", (jsonWriter, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Serialize_JsonWriter_Type1(
         &mut self,
         jsonWriter: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -396,20 +414,7 @@ impl crate::Newtonsoft::Json::JsonSerializer {
             .invoke("Serialize", (jsonWriter, value, objectType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Serialize_Gc2(
-        &mut self,
-        textWriter: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Serialize", (textWriter, value, objectType))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Serialize_Gc_Gc0(
+    pub fn Serialize_TextWriter0(
         &mut self,
         textWriter: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -421,16 +426,17 @@ impl crate::Newtonsoft::Json::JsonSerializer {
             .invoke("Serialize", (textWriter, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Serialize_Gc_Gc3(
+    pub fn Serialize_TextWriter_Type2(
         &mut self,
-        jsonWriter: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+        textWriter: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Serialize", (jsonWriter, value))?;
+            .invoke("Serialize", (textWriter, value, objectType))?;
         Ok(__cordl_ret.into())
     }
     pub fn SetupReader(
@@ -486,8 +492,10 @@ impl crate::Newtonsoft::Json::JsonSerializer {
     pub fn add_Error(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Newtonsoft::Json::Serialization::ErrorEventArgs,
+            crate::System::EventHandler_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Serialization::ErrorEventArgs,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -843,8 +851,10 @@ impl crate::Newtonsoft::Json::JsonSerializer {
     pub fn remove_Error(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Newtonsoft::Json::Serialization::ErrorEventArgs,
+            crate::System::EventHandler_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Serialization::ErrorEventArgs,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

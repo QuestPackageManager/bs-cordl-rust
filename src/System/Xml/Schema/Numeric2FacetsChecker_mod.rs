@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Numeric2FacetsChecker {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::FacetsChecker>,
+    __cordl_parent: crate::System::Xml::Schema::FacetsChecker,
 }
 #[cfg(feature = "System+Xml+Schema+Numeric2FacetsChecker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+Numeric2FacetsChecker")]
 impl std::ops::Deref for crate::System::Xml::Schema::Numeric2FacetsChecker {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::FacetsChecker>;
+    type Target = crate::System::Xml::Schema::FacetsChecker;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,7 +24,7 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::Numeric2FacetsChecker {
 }
 #[cfg(feature = "System+Xml+Schema+Numeric2FacetsChecker")]
 impl crate::System::Xml::Schema::Numeric2FacetsChecker {
-    pub fn CheckValueFacets_Gc0(
+    pub fn CheckValueFacets_Il2CppObject0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         datatype: quest_hook::libil2cpp::Gc<
@@ -72,7 +72,7 @@ impl crate::System::Xml::Schema::Numeric2FacetsChecker {
             .invoke("CheckValueFacets", (value, datatype))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MatchEnumeration_Gc0(
+    pub fn MatchEnumeration_Il2CppObject_XmlSchemaDatatype0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         enumeration: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
@@ -87,7 +87,7 @@ impl crate::System::Xml::Schema::Numeric2FacetsChecker {
             .invoke("MatchEnumeration", (value, enumeration, datatype))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MatchEnumeration_f64_1(
+    pub fn MatchEnumeration_f64_XmlValueConverter1(
         &mut self,
         value: f64,
         enumeration: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,

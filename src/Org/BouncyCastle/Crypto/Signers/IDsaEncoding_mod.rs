@@ -31,7 +31,7 @@ impl crate::Org::BouncyCastle::Crypto::Signers::IDsaEncoding {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                *mut crate::Org::BouncyCastle::Math::BigInteger,
             >,
         >,
     > {
@@ -40,7 +40,7 @@ impl crate::Org::BouncyCastle::Crypto::Signers::IDsaEncoding {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                *mut crate::Org::BouncyCastle::Math::BigInteger,
             >,
         > = __cordl_object.invoke("Decode", (n, encoding))?;
         Ok(__cordl_ret.into())

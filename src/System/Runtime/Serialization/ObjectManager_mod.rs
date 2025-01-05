@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObjectManager {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_onDeserializationHandler: quest_hook::libil2cpp::Gc<
         crate::System::Runtime::Serialization::DeserializationEventHandler,
     >,
@@ -11,9 +11,7 @@ pub struct ObjectManager {
     >,
     pub m_objects: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Runtime::Serialization::ObjectHolder,
-            >,
+            *mut crate::System::Runtime::Serialization::ObjectHolder,
         >,
     >,
     pub m_topObject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -33,7 +31,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+Serialization+ObjectManager")]
 impl std::ops::Deref for crate::System::Runtime::Serialization::ObjectManager {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

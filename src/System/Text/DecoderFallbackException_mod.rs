@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DecoderFallbackException {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::ArgumentException>,
+    __cordl_parent: crate::System::ArgumentException,
     pub _bytesUnknown: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _index: i32,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Text+DecoderFallbackException")]
 impl std::ops::Deref for crate::System::Text::DecoderFallbackException {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::ArgumentException>;
+    type Target = crate::System::ArgumentException;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -33,7 +33,7 @@ impl crate::System::Text::DecoderFallbackException {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc_i32_1(
+    pub fn New_Il2CppString_Il2CppArray_i32_1(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         bytesUnknown: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         index: i32,
@@ -44,7 +44,7 @@ impl crate::System::Text::DecoderFallbackException {
             .invoke_void(".ctor", (message, bytesUnknown, index))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_StreamingContext2(
+    pub fn New_SerializationInfo_StreamingContext2(
         serializationInfo: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -66,7 +66,7 @@ impl crate::System::Text::DecoderFallbackException {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_i32_1(
+    pub fn _ctor_Il2CppString_Il2CppArray_i32_1(
         &mut self,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         bytesUnknown: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -79,7 +79,7 @@ impl crate::System::Text::DecoderFallbackException {
             .invoke(".ctor", (message, bytesUnknown, index))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_StreamingContext2(
+    pub fn _ctor_SerializationInfo_StreamingContext2(
         &mut self,
         serializationInfo: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,

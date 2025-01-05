@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HttpRequestHeaders {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Net::Http::Headers::HttpHeaders,
-    >,
+    __cordl_parent: crate::System::Net::Http::Headers::HttpHeaders,
     pub expectContinue: crate::System::Nullable_1<bool>,
 }
 #[cfg(feature = "System+Net+Http+Headers+HttpRequestHeaders")]
@@ -14,9 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Http+Headers+HttpRequestHeaders")]
 impl std::ops::Deref for crate::System::Net::Http::Headers::HttpRequestHeaders {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Net::Http::Headers::HttpHeaders,
-    >;
+    type Target = crate::System::Net::Http::Headers::HttpHeaders;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -63,14 +59,18 @@ impl crate::System::Net::Http::Headers::HttpRequestHeaders {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Net::Http::Headers::HttpHeaderValueCollection_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Net::Http::Headers::HttpHeaderValueCollection_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = __cordl_object.invoke("get_Connection", ())?;
         Ok(__cordl_ret.into())
     }
@@ -111,8 +111,10 @@ impl crate::System::Net::Http::Headers::HttpRequestHeaders {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Net::Http::Headers::TransferCodingHeaderValue,
+            crate::System::Net::Http::Headers::HttpHeaderValueCollection_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Net::Http::Headers::TransferCodingHeaderValue,
+                >,
             >,
         >,
     > {
@@ -120,8 +122,10 @@ impl crate::System::Net::Http::Headers::HttpRequestHeaders {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Net::Http::Headers::TransferCodingHeaderValue,
+            crate::System::Net::Http::Headers::HttpHeaderValueCollection_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Net::Http::Headers::TransferCodingHeaderValue,
+                >,
             >,
         > = __cordl_object.invoke("get_TransferEncoding", ())?;
         Ok(__cordl_ret.into())

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteBigCuttableColliderSize {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _noteController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::NoteController,
     >,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "NoteBigCuttableColliderSize")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteBigCuttableColliderSize {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -91,26 +91,16 @@ for crate::GlobalNamespace::NoteBigCuttableColliderSize {
     }
 }
 #[cfg(feature = "NoteBigCuttableColliderSize")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INoteControllerDidInitEvent>,
-> for crate::GlobalNamespace::NoteBigCuttableColliderSize {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::INoteControllerDidInitEvent,
-    > {
+impl AsRef<crate::GlobalNamespace::INoteControllerDidInitEvent>
+for crate::GlobalNamespace::NoteBigCuttableColliderSize {
+    fn as_ref(&self) -> &crate::GlobalNamespace::INoteControllerDidInitEvent {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "NoteBigCuttableColliderSize")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INoteControllerDidInitEvent>,
-> for crate::GlobalNamespace::NoteBigCuttableColliderSize {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::INoteControllerDidInitEvent,
-    > {
+impl AsMut<crate::GlobalNamespace::INoteControllerDidInitEvent>
+for crate::GlobalNamespace::NoteBigCuttableColliderSize {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::INoteControllerDidInitEvent {
         unsafe { std::mem::transmute(self) }
     }
 }

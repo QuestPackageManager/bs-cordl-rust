@@ -4,9 +4,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EqualInstruction_EqualSingleLiftedToNull {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::EqualInstruction,
-    >,
+    __cordl_parent: crate::System::Linq::Expressions::Interpreter::EqualInstruction,
 }
 #[cfg(
     feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualSingleLiftedToNull"
@@ -21,9 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::EqualInstruction_EqualSingleLiftedToNull {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::EqualInstruction,
-    >;
+    type Target = crate::System::Linq::Expressions::Interpreter::EqualInstruction;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,14 +2,18 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AveragingValueRecorder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _averageWindowDuration: f32,
     pub _historyValuesPerSecond: f32,
     pub _historyValuesCount: i32,
     pub _averageWindowValues: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AveragingValueRecorder_AverageValueData,
+        crate::System::Collections::Generic::Queue_1<
+            crate::GlobalNamespace::AveragingValueRecorder_AverageValueData,
+        >,
     >,
-    pub _historyValues: quest_hook::libil2cpp::Gc<f32>,
+    pub _historyValues: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Queue_1<f32>,
+    >,
     pub _time: f32,
     pub _historyTime: f32,
     pub _averageValue: f32,
@@ -23,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "AveragingValueRecorder")]
 impl std::ops::Deref for crate::GlobalNamespace::AveragingValueRecorder {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -47,12 +51,15 @@ impl crate::GlobalNamespace::AveragingValueRecorder {
     }
     pub fn GetHistoryValues(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<f32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::Queue_1<f32>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<f32> = __cordl_object
-            .invoke("GetHistoryValues", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Queue_1<f32>,
+        > = __cordl_object.invoke("GetHistoryValues", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn GetLastValue(&mut self) -> quest_hook::libil2cpp::Result<f32> {

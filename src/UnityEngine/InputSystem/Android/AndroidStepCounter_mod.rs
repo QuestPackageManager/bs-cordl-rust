@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AndroidStepCounter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::StepCounter,
-    >,
+    __cordl_parent: crate::UnityEngine::InputSystem::StepCounter,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Android+AndroidStepCounter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -14,9 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+Android+AndroidStepCounter")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Android::AndroidStepCounter {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::StepCounter,
-    >;
+    type Target = crate::UnityEngine::InputSystem::StepCounter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

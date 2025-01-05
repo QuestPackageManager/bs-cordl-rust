@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaImport {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::XmlSchemaExternal,
-    >,
+    __cordl_parent: crate::System::Xml::Schema::XmlSchemaExternal,
     pub ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub annotation: quest_hook::libil2cpp::Gc<
         crate::System::Xml::Schema::XmlSchemaAnnotation,
@@ -17,9 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlSchemaImport")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaImport {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::XmlSchemaExternal,
-    >;
+    type Target = crate::System::Xml::Schema::XmlSchemaExternal;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

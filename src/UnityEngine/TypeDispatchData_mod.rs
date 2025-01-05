@@ -3,9 +3,7 @@
 #[derive(Debug, Clone, Default)]
 pub struct TypeDispatchData {
     pub changed: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
     >,
     pub changedID: crate::Unity::Collections::NativeArray_1<i32>,
     pub destroyedID: crate::Unity::Collections::NativeArray_1<i32>,
@@ -40,16 +38,14 @@ impl crate::UnityEngine::TypeDispatchData {
     }
 }
 #[cfg(feature = "UnityEngine+TypeDispatchData")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::UnityEngine::TypeDispatchData {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsRef<crate::System::IDisposable> for crate::UnityEngine::TypeDispatchData {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+TypeDispatchData")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::UnityEngine::TypeDispatchData {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsMut<crate::System::IDisposable> for crate::UnityEngine::TypeDispatchData {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         todo!()
     }
 }

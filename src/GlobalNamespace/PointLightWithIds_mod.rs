@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointLightWithIds {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::RuntimeLightWithIds,
-    >,
+    __cordl_parent: crate::GlobalNamespace::RuntimeLightWithIds,
     pub _pointLight: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PointLight>,
 }
 #[cfg(feature = "PointLightWithIds")]
@@ -14,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PointLightWithIds")]
 impl std::ops::Deref for crate::GlobalNamespace::PointLightWithIds {
-    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::RuntimeLightWithIds>;
+    type Target = crate::GlobalNamespace::RuntimeLightWithIds;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UriParser_BuiltInUriParser {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::UriParser>,
+    __cordl_parent: crate::System::UriParser,
 }
 #[cfg(feature = "System+UriParser+BuiltInUriParser")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+UriParser+BuiltInUriParser")]
 impl std::ops::Deref for crate::GlobalNamespace::UriParser_BuiltInUriParser {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::UriParser>;
+    type Target = crate::System::UriParser;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

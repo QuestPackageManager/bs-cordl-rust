@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DecoratorToChoiceFromBinder_1<TContract: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _bindContainer: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub _bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
     pub _factoryBindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo>,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Zenject+DecoratorToChoiceFromBinder_1")]
 impl<TContract: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::DecoratorToChoiceFromBinder_1<TContract> {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -49,7 +49,11 @@ impl<
     }
     pub fn With<TConcrete>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TContract, TConcrete>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryFromBinder_2<TContract, TConcrete>,
+        >,
+    >
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -59,8 +63,9 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TContract, TConcrete> = __cordl_object
-            .invoke("With", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryFromBinder_2<TContract, TConcrete>,
+        > = __cordl_object.invoke("With", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

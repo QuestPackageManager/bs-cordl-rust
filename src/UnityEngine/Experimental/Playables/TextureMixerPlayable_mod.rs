@@ -47,13 +47,13 @@ impl crate::UnityEngine::Experimental::Playables::TextureMixerPlayable {
 }
 #[cfg(feature = "UnityEngine+Experimental+Playables+TextureMixerPlayable")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         crate::UnityEngine::Experimental::Playables::TextureMixerPlayable,
     >,
 > for crate::UnityEngine::Experimental::Playables::TextureMixerPlayable {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         crate::UnityEngine::Experimental::Playables::TextureMixerPlayable,
     > {
         todo!()
@@ -61,33 +61,29 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+Experimental+Playables+TextureMixerPlayable")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         crate::UnityEngine::Experimental::Playables::TextureMixerPlayable,
     >,
 > for crate::UnityEngine::Experimental::Playables::TextureMixerPlayable {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         crate::UnityEngine::Experimental::Playables::TextureMixerPlayable,
     > {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Experimental+Playables+TextureMixerPlayable")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::IPlayable>>
+impl AsRef<crate::UnityEngine::Playables::IPlayable>
 for crate::UnityEngine::Experimental::Playables::TextureMixerPlayable {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::IPlayable> {
+    fn as_ref(&self) -> &crate::UnityEngine::Playables::IPlayable {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Experimental+Playables+TextureMixerPlayable")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::IPlayable>>
+impl AsMut<crate::UnityEngine::Playables::IPlayable>
 for crate::UnityEngine::Experimental::Playables::TextureMixerPlayable {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::IPlayable> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::IPlayable {
         todo!()
     }
 }

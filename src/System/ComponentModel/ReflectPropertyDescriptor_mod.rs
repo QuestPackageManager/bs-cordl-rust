@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectPropertyDescriptor {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::ComponentModel::PropertyDescriptor,
-    >,
+    __cordl_parent: crate::System::ComponentModel::PropertyDescriptor,
     pub state: crate::System::Collections::Specialized::BitVector32,
     pub componentClass: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -30,9 +28,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+ComponentModel+ReflectPropertyDescriptor")]
 impl std::ops::Deref for crate::System::ComponentModel::ReflectPropertyDescriptor {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::ComponentModel::PropertyDescriptor,
-    >;
+    type Target = crate::System::ComponentModel::PropertyDescriptor;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -183,7 +179,21 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
         > = __cordl_object.invoke("GetValue", (component))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc_Gc_Gc1(
+    pub fn New_Il2CppArray0(
+        componentClass: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        attributes: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (componentClass, name, _cordl_type, attributes))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_PropertyInfo_MethodInfo_MethodInfo_Il2CppArray1(
         componentClass: quest_hook::libil2cpp::Gc<crate::System::Type>,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -191,9 +201,7 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
         getMethod: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
         setMethod: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
         attrs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -213,7 +221,7 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc_Gc2(
+    pub fn New_Type_MethodInfo_MethodInfo_Il2CppArray2(
         componentClass: quest_hook::libil2cpp::Gc<crate::System::Type>,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -221,9 +229,7 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
         getMethod: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
         setMethod: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
         attrs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -241,22 +247,6 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
                     attrs,
                 ),
             )?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_Gc_Gc_Gc0(
-        componentClass: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        attributes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (componentClass, name, _cordl_type, attributes))?;
         Ok(__cordl_object.into())
     }
     pub fn OnValueChanged(
@@ -305,7 +295,23 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             .invoke("ShouldSerializeValue", (component))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_Gc1(
+    pub fn _ctor_Il2CppArray0(
+        &mut self,
+        componentClass: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        attributes: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (componentClass, name, _cordl_type, attributes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_PropertyInfo_MethodInfo_MethodInfo_Il2CppArray1(
         &mut self,
         componentClass: quest_hook::libil2cpp::Gc<crate::System::Type>,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -314,9 +320,7 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
         getMethod: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
         setMethod: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
         attrs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -337,7 +341,7 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_Gc2(
+    pub fn _ctor_Type_MethodInfo_MethodInfo_Il2CppArray2(
         &mut self,
         componentClass: quest_hook::libil2cpp::Gc<crate::System::Type>,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -346,9 +350,7 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
         getMethod: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
         setMethod: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
         attrs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -367,24 +369,6 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
                     attrs,
                 ),
             )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_Gc_Gc_Gc0(
-        &mut self,
-        componentClass: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        attributes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (componentClass, name, _cordl_type, attributes))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_AmbientValue(

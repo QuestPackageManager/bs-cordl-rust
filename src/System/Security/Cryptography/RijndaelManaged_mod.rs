@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RijndaelManaged {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Security::Cryptography::Rijndael,
-    >,
+    __cordl_parent: crate::System::Security::Cryptography::Rijndael,
 }
 #[cfg(feature = "System+Security+Cryptography+RijndaelManaged")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+Cryptography+RijndaelManaged")]
 impl std::ops::Deref for crate::System::Security::Cryptography::RijndaelManaged {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Security::Cryptography::Rijndael,
-    >;
+    type Target = crate::System::Security::Cryptography::Rijndael;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

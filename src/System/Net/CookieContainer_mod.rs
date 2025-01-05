@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CookieContainer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_domainTable: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub m_maxCookieSize: i32,
     pub m_maxCookies: i32,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+CookieContainer")]
 impl std::ops::Deref for crate::System::Net::CookieContainer {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -71,7 +71,9 @@ impl crate::System::Net::CookieContainer {
         port: i32,
         cookies: quest_hook::libil2cpp::Gc<crate::System::Net::CookieCollection>,
         domainAttribute: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         matchOnlyPlainCookie: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -130,7 +132,7 @@ impl crate::System::Net::CookieContainer {
         > = __cordl_object.invoke("GetCookieHeader", (uri, optCookie2))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetCookieHeader_Gc0(
+    pub fn GetCookieHeader_Uri0(
         &mut self,
         uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
     ) -> quest_hook::libil2cpp::Result<

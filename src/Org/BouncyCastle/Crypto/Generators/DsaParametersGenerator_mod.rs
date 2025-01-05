@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DsaParametersGenerator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     pub L: i32,
     pub N: i32,
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+DsaParametersGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Generators::DsaParametersGenerator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -154,7 +154,7 @@ impl crate::Org::BouncyCastle::Crypto::Generators::DsaParametersGenerator {
             .invoke("Inc", (buf))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Init_Gc1(
+    pub fn Init_DsaParameterGenerationParameters1(
         &mut self,
         parameters: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::DsaParameterGenerationParameters,
@@ -167,7 +167,7 @@ impl crate::Org::BouncyCastle::Crypto::Generators::DsaParametersGenerator {
             .invoke("Init", (parameters))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Init_i32_i32_Gc0(
+    pub fn Init_i32_i32_SecureRandom0(
         &mut self,
         _cordl_size: i32,
         certainty: i32,
@@ -194,7 +194,7 @@ impl crate::Org::BouncyCastle::Crypto::Generators::DsaParametersGenerator {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_IDigest1(
         digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -213,7 +213,7 @@ impl crate::Org::BouncyCastle::Crypto::Generators::DsaParametersGenerator {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_IDigest1(
         &mut self,
         digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

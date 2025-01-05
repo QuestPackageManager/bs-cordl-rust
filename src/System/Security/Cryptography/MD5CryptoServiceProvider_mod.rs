@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MD5CryptoServiceProvider {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Security::Cryptography::MD5,
-    >,
+    __cordl_parent: crate::System::Security::Cryptography::MD5,
     pub _H: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     pub buff: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     pub count: u64,
@@ -22,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Security+Cryptography+MD5CryptoServiceProvider")]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::MD5CryptoServiceProvider {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::MD5>;
+    type Target = crate::System::Security::Cryptography::MD5;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,12 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObjectPool_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_IsDisposed: bool,
-    pub m_Pool: quest_hook::libil2cpp::Gc<T>,
+    pub m_Pool: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Queue_1<T>,
+    >,
     pub desiredSize: i32,
-    pub constructor: quest_hook::libil2cpp::Gc<T>,
-    pub destructor: quest_hook::libil2cpp::Gc<T>,
+    pub constructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+    pub destructor: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+ObjectPool_1")]
@@ -18,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+ProBuilder+ObjectPool_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::ProBuilder::ObjectPool_1<T> {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -102,8 +104,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::ProBuilder::ObjectPool_
     pub fn New(
         initialSize: i32,
         desiredSize: i32,
-        constructor: quest_hook::libil2cpp::Gc<T>,
-        destructor: quest_hook::libil2cpp::Gc<T>,
+        constructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+        destructor: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
         lazyInitialization: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
@@ -123,8 +125,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::ProBuilder::ObjectPool_
         &mut self,
         initialSize: i32,
         desiredSize: i32,
-        constructor: quest_hook::libil2cpp::Gc<T>,
-        destructor: quest_hook::libil2cpp::Gc<T>,
+        constructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+        destructor: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
         lazyInitialization: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -153,20 +155,16 @@ for crate::UnityEngine::ProBuilder::ObjectPool_1<T> {
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+ObjectPool_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
 for crate::UnityEngine::ProBuilder::ObjectPool_1<T> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+ObjectPool_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
 for crate::UnityEngine::ProBuilder::ObjectPool_1<T> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -4,9 +4,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509Certificate2Collection {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
-    >,
+    __cordl_parent: crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
 }
 #[cfg(
     feature = "System+Security+Cryptography+X509Certificates+X509Certificate2Collection"
@@ -21,9 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X509Certificate2Collection {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
-    >;
+    type Target = crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -134,7 +130,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate2Co
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_X509Certificate2Collection1(
         certificates: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509Certificate2Collection,
         >,
@@ -155,7 +151,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate2Co
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_X509Certificate2Collection1(
         &mut self,
         certificates: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509Certificate2Collection,

@@ -74,7 +74,7 @@ impl crate::System::UIntPtr {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_Il2CppObject2(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -158,40 +158,30 @@ impl crate::System::UIntPtr {
     }
 }
 #[cfg(feature = "System+UIntPtr")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::UIntPtr {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "System+UIntPtr")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::UIntPtr {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "System+UIntPtr")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::UIntPtr>>
+impl AsRef<crate::System::IEquatable_1<crate::System::UIntPtr>>
 for crate::System::UIntPtr {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::UIntPtr> {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::System::UIntPtr> {
         todo!()
     }
 }
 #[cfg(feature = "System+UIntPtr")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::UIntPtr>>
+impl AsMut<crate::System::IEquatable_1<crate::System::UIntPtr>>
 for crate::System::UIntPtr {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::UIntPtr> {
+    fn as_mut(&mut self) -> &mut crate::System::IEquatable_1<crate::System::UIntPtr> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+UIntPtr")]
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::UIntPtr {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+UIntPtr")]
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::UIntPtr {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
         todo!()
     }
 }

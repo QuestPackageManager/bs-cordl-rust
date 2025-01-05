@@ -3,7 +3,9 @@
 #[derive(Debug, Clone, Default)]
 pub struct TouchHistory {
     pub m_History: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::TouchState,
+        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1<
+            crate::UnityEngine::InputSystem::LowLevel::TouchState,
+        >,
     >,
     pub m_Finger: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
@@ -46,10 +48,16 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::EnhancedTouch::Touch>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
+            >,
+        >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
+            >,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "GetEnumerator", ())?;
         Ok(__cordl_ret.into())
     }
@@ -73,7 +81,9 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
             crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
         >,
         history: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::LowLevel::TouchState,
+            crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1<
+                crate::UnityEngine::InputSystem::LowLevel::TouchState,
+            >,
         >,
         startIndex: i32,
         count: i32,
@@ -108,92 +118,100 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
+    >,
+> for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
+    >,
+> for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
+impl AsRef<
+    crate::System::Collections::Generic::IReadOnlyCollection_1<
+        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
+    >,
+> for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IReadOnlyCollection_1<
+        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
+impl AsMut<
+    crate::System::Collections::Generic::IReadOnlyCollection_1<
+        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
+    >,
+> for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IReadOnlyCollection_1<
+        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
+impl AsRef<
+    crate::System::Collections::Generic::IReadOnlyList_1<
+        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
+    >,
+> for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IReadOnlyList_1<
+        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
+impl AsMut<
+    crate::System::Collections::Generic::IReadOnlyList_1<
+        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
+    >,
+> for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IReadOnlyList_1<
+        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
+impl AsRef<crate::System::Collections::IEnumerable>
 for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+impl AsMut<crate::System::Collections::IEnumerable>
 for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::EnhancedTouch::Touch>,
-> for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::EnhancedTouch::Touch>,
-> for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::EnhancedTouch::Touch>,
-> for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::EnhancedTouch::Touch>,
-> for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::EnhancedTouch::Touch>,
-> for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::EnhancedTouch::Touch>,
-> for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
-    > {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
         todo!()
     }
 }
@@ -201,7 +219,7 @@ impl AsMut<
 #[repr(C)]
 #[derive(Debug)]
 pub struct TouchHistory_Enumerator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Owner: crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory,
     pub m_Index: i32,
 }
@@ -214,7 +232,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -312,44 +330,14 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
-for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
-for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::EnhancedTouch::Touch>,
+    crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
+    >,
 > for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::Collections::Generic::IEnumerator_1<
         crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
     > {
         unsafe { std::mem::transmute(self) }
@@ -357,13 +345,43 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::EnhancedTouch::Touch>,
+    crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
+    >,
 > for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<
         crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
     > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator")]
+impl AsRef<crate::System::Collections::IEnumerator>
+for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator")]
+impl AsMut<crate::System::Collections::IEnumerator>
+for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator")]
+impl AsRef<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator")]
+impl AsMut<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }

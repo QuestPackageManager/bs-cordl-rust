@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UQuery {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+UIElements+UQuery")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UQuery")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UQuery {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -50,9 +50,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::UQuer
 #[repr(C)]
 #[derive(Debug)]
 pub struct UQuery_FirstQueryMatcher {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UQuery_SingleQueryMatcher,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::UQuery_SingleQueryMatcher,
 }
 #[cfg(feature = "UnityEngine+UIElements+UQuery+FirstQueryMatcher")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -62,9 +60,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UQuery+FirstQueryMatcher")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UQuery_FirstQueryMatcher {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UQuery_SingleQueryMatcher,
-    >;
+    type Target = crate::UnityEngine::UIElements::UQuery_SingleQueryMatcher;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -190,7 +186,7 @@ for crate::UnityEngine::UIElements::UQuery_IVisualPredicateWrapper {
 #[repr(C)]
 #[derive(Debug)]
 pub struct UQuery_IsOfType_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "UnityEngine+UIElements+UQuery+IsOfType_1")]
@@ -201,7 +197,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+UQuery+IsOfType_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::UQuery_IsOfType_1<T> {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -268,32 +264,20 @@ for crate::UnityEngine::UIElements::UQuery_IsOfType_1<T> {
 #[cfg(feature = "UnityEngine+UIElements+UQuery+IsOfType_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UQuery_IVisualPredicateWrapper,
-    >,
-> for crate::UnityEngine::UIElements::UQuery_IsOfType_1<T> {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UQuery_IVisualPredicateWrapper,
-    > {
+> AsRef<crate::UnityEngine::UIElements::UQuery_IVisualPredicateWrapper>
+for crate::UnityEngine::UIElements::UQuery_IsOfType_1<T> {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::UQuery_IVisualPredicateWrapper {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UQuery+IsOfType_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UQuery_IVisualPredicateWrapper,
-    >,
-> for crate::UnityEngine::UIElements::UQuery_IsOfType_1<T> {
+> AsMut<crate::UnityEngine::UIElements::UQuery_IVisualPredicateWrapper>
+for crate::UnityEngine::UIElements::UQuery_IsOfType_1<T> {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UQuery_IVisualPredicateWrapper,
-    > {
+    ) -> &mut crate::UnityEngine::UIElements::UQuery_IVisualPredicateWrapper {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -301,9 +285,7 @@ impl<
 #[repr(C)]
 #[derive(Debug)]
 pub struct UQuery_SingleQueryMatcher {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UQuery_UQueryMatcher,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::UQuery_UQueryMatcher,
     pub _match_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualElement,
     >,
@@ -316,9 +298,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UQuery+SingleQueryMatcher")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UQuery_SingleQueryMatcher {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UQuery_UQueryMatcher,
-    >;
+    type Target = crate::UnityEngine::UIElements::UQuery_UQueryMatcher;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -363,7 +343,11 @@ impl crate::UnityEngine::UIElements::UQuery_SingleQueryMatcher {
     pub fn Run(
         &mut self,
         root: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-        matchers: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RuleMatcher>,
+        matchers: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::RuleMatcher,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -421,11 +405,11 @@ for crate::UnityEngine::UIElements::UQuery_SingleQueryMatcher {
 #[repr(C)]
 #[derive(Debug)]
 pub struct UQuery_UQueryMatcher {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::StyleSheets::HierarchyTraversal,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::StyleSheets::HierarchyTraversal,
     pub m_Matchers: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::RuleMatcher,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::RuleMatcher,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UQuery+UQueryMatcher")]
@@ -435,9 +419,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UQuery+UQueryMatcher")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UQuery_UQueryMatcher {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::StyleSheets::HierarchyTraversal,
-    >;
+    type Target = crate::UnityEngine::UIElements::StyleSheets::HierarchyTraversal;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -480,7 +462,11 @@ impl crate::UnityEngine::UIElements::UQuery_UQueryMatcher {
     pub fn Run(
         &mut self,
         root: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-        matchers: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RuleMatcher>,
+        matchers: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::RuleMatcher,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

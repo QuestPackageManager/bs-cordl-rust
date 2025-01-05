@@ -183,19 +183,13 @@ impl<
 )]
 impl<
     TResult: quest_hook::libil2cpp::Type,
-> AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion,
-    >,
->
+> AsRef<crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion>
 for crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable_1_ConfiguredValueTaskAwaiter<
     TResult,
 > {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion,
-    > {
+    ) -> &crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion {
         todo!()
     }
 }
@@ -204,19 +198,13 @@ for crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable_1_Con
 )]
 impl<
     TResult: quest_hook::libil2cpp::Type,
-> AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion,
-    >,
->
+> AsMut<crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion>
 for crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable_1_ConfiguredValueTaskAwaiter<
     TResult,
 > {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion,
-    > {
+    ) -> &mut crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion {
         todo!()
     }
 }
@@ -225,19 +213,11 @@ for crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable_1_Con
 )]
 impl<
     TResult: quest_hook::libil2cpp::Type,
-> AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::CompilerServices::INotifyCompletion,
-    >,
->
+> AsRef<crate::System::Runtime::CompilerServices::INotifyCompletion>
 for crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable_1_ConfiguredValueTaskAwaiter<
     TResult,
 > {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::CompilerServices::INotifyCompletion,
-    > {
+    fn as_ref(&self) -> &crate::System::Runtime::CompilerServices::INotifyCompletion {
         todo!()
     }
 }
@@ -246,19 +226,13 @@ for crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable_1_Con
 )]
 impl<
     TResult: quest_hook::libil2cpp::Type,
-> AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::CompilerServices::INotifyCompletion,
-    >,
->
+> AsMut<crate::System::Runtime::CompilerServices::INotifyCompletion>
 for crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable_1_ConfiguredValueTaskAwaiter<
     TResult,
 > {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::CompilerServices::INotifyCompletion,
-    > {
+    ) -> &mut crate::System::Runtime::CompilerServices::INotifyCompletion {
         todo!()
     }
 }

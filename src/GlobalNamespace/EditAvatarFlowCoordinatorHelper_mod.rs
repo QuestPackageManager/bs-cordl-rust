@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EditAvatarFlowCoordinatorHelper {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _avatarSystemSelectionFlowCoordinator: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator,
     >,
@@ -14,8 +14,10 @@ pub struct EditAvatarFlowCoordinatorHelper {
     >,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
-        crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
+            crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction,
+        >,
     >,
     pub _parentFlowCoordinator: quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
     pub _singleAvatarEditorFlowCoordinator: quest_hook::libil2cpp::Gc<
@@ -29,7 +31,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "EditAvatarFlowCoordinatorHelper")]
 impl std::ops::Deref for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -159,8 +161,10 @@ impl crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
-            crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
+                crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -183,8 +187,10 @@ impl crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
-            crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
+                crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

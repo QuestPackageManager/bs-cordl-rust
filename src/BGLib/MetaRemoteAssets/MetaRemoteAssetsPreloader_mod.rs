@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MetaRemoteAssetsPreloader {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::BGLib::AppFlow::Initialization::AsyncPreloader,
-    >,
+    __cordl_parent: crate::BGLib::AppFlow::Initialization::AsyncPreloader,
 }
 #[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsPreloader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -14,9 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsPreloader")]
 impl std::ops::Deref for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsPreloader {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::BGLib::AppFlow::Initialization::AsyncPreloader,
-    >;
+    type Target = crate::BGLib::AppFlow::Initialization::AsyncPreloader;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_SelectionCaret {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::MaskableGraphic>,
+    __cordl_parent: crate::UnityEngine::UI::MaskableGraphic,
 }
 #[cfg(feature = "TMPro+TMP_SelectionCaret")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+TMP_SelectionCaret")]
 impl std::ops::Deref for crate::TMPro::TMP_SelectionCaret {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::MaskableGraphic>;
+    type Target = crate::UnityEngine::UI::MaskableGraphic;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

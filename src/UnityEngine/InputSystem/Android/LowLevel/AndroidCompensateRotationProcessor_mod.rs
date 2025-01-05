@@ -4,9 +4,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AndroidCompensateRotationProcessor {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Processors::CompensateRotationProcessor,
-    >,
+    __cordl_parent: crate::UnityEngine::InputSystem::Processors::CompensateRotationProcessor,
 }
 #[cfg(
     feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidCompensateRotationProcessor"
@@ -21,9 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidCompensateRotationProcessor {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Processors::CompensateRotationProcessor,
-    >;
+    type Target = crate::UnityEngine::InputSystem::Processors::CompensateRotationProcessor;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

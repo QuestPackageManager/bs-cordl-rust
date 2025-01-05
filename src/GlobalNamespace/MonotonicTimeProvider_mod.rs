@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MonotonicTimeProvider {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _timeSpanTicksPerStopwatchTick: f64,
     pub _startTicks: i64,
     pub _stopwatch: quest_hook::libil2cpp::Gc<crate::System::Diagnostics::Stopwatch>,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MonotonicTimeProvider")]
 impl std::ops::Deref for crate::GlobalNamespace::MonotonicTimeProvider {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -70,18 +70,16 @@ for crate::GlobalNamespace::MonotonicTimeProvider {
     }
 }
 #[cfg(feature = "MonotonicTimeProvider")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITimeProvider>>
+impl AsRef<crate::BGNet::Core::ITimeProvider>
 for crate::GlobalNamespace::MonotonicTimeProvider {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITimeProvider> {
+    fn as_ref(&self) -> &crate::BGNet::Core::ITimeProvider {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MonotonicTimeProvider")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITimeProvider>>
+impl AsMut<crate::BGNet::Core::ITimeProvider>
 for crate::GlobalNamespace::MonotonicTimeProvider {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITimeProvider> {
+    fn as_mut(&mut self) -> &mut crate::BGNet::Core::ITimeProvider {
         unsafe { std::mem::transmute(self) }
     }
 }

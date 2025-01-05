@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Face {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Indexes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub m_SmoothingGroup: i32,
     pub m_Uv: crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+Face")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::Face {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -91,9 +91,13 @@ impl crate::UnityEngine::ProBuilder::Face {
     }
     pub fn GetDistinctIndices(
         faces: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            >,
         >,
-        indices: quest_hook::libil2cpp::Gc<i32>,
+        indices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetDistinctIndices", (faces, indices))?;
@@ -101,9 +105,13 @@ impl crate::UnityEngine::ProBuilder::Face {
     }
     pub fn GetIndices(
         faces: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            >,
         >,
-        indices: quest_hook::libil2cpp::Gc<i32>,
+        indices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetIndices", (faces, indices))?;
@@ -133,16 +141,7 @@ impl crate::UnityEngine::ProBuilder::Face {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
-        indices: quest_hook::libil2cpp::Gc<i32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (indices))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc4(
+    pub fn New_Face4(
         other: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -151,7 +150,38 @@ impl crate::UnityEngine::ProBuilder::Face {
             .invoke_void(".ctor", (other))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc_AutoUnwrapSettings_i32_i32_i32__cordl_bool2(
+    pub fn New_IEnumerable_1_1(
+        indices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (indices))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_IEnumerable_1_i32_AutoUnwrapSettings_i32_i32_i32__cordl_bool3(
+        triangles: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
+        submeshIndex: i32,
+        u: crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
+        smoothing: i32,
+        texture: i32,
+        element: i32,
+        manualUVs: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (triangles, submeshIndex, u, smoothing, texture, element, manualUVs),
+            )?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Il2CppArray_Material_AutoUnwrapSettings_i32_i32_i32__cordl_bool2(
         triangles: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         m: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         u: crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
@@ -169,24 +199,6 @@ impl crate::UnityEngine::ProBuilder::Face {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_i32_AutoUnwrapSettings_i32_i32_i32__cordl_bool3(
-        triangles: quest_hook::libil2cpp::Gc<i32>,
-        submeshIndex: i32,
-        u: crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
-        smoothing: i32,
-        texture: i32,
-        element: i32,
-        manualUVs: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (triangles, submeshIndex, u, smoothing, texture, element, manualUVs),
-            )?;
-        Ok(__cordl_object.into())
-    }
     pub fn Reverse(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -199,7 +211,9 @@ impl crate::UnityEngine::ProBuilder::Face {
     }
     pub fn SetIndexes(
         &mut self,
-        indices: quest_hook::libil2cpp::Gc<i32>,
+        indices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -286,18 +300,7 @@ impl crate::UnityEngine::ProBuilder::Face {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
-        &mut self,
-        indices: quest_hook::libil2cpp::Gc<i32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (indices))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc4(
+    pub fn _ctor_Face4(
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -308,26 +311,24 @@ impl crate::UnityEngine::ProBuilder::Face {
             .invoke(".ctor", (other))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_AutoUnwrapSettings_i32_i32_i32__cordl_bool2(
+    pub fn _ctor_IEnumerable_1_1(
         &mut self,
-        triangles: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
-        m: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-        u: crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
-        smoothing: i32,
-        texture: i32,
-        element: i32,
-        manualUVs: bool,
+        indices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (triangles, m, u, smoothing, texture, element, manualUVs))?;
+            .invoke(".ctor", (indices))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_i32_AutoUnwrapSettings_i32_i32_i32__cordl_bool3(
+    pub fn _ctor_IEnumerable_1_i32_AutoUnwrapSettings_i32_i32_i32__cordl_bool3(
         &mut self,
-        triangles: quest_hook::libil2cpp::Gc<i32>,
+        triangles: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
         submeshIndex: i32,
         u: crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
         smoothing: i32,
@@ -345,6 +346,23 @@ impl crate::UnityEngine::ProBuilder::Face {
             )?;
         Ok(__cordl_ret.into())
     }
+    pub fn _ctor_Il2CppArray_Material_AutoUnwrapSettings_i32_i32_i32__cordl_bool2(
+        &mut self,
+        triangles: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        m: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        u: crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
+        smoothing: i32,
+        texture: i32,
+        element: i32,
+        manualUVs: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (triangles, m, u, smoothing, texture, element, manualUVs))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_Item(&mut self, i: i32) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -354,12 +372,17 @@ impl crate::UnityEngine::ProBuilder::Face {
     }
     pub fn get_distinctIndexes(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<i32>,
+        >,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = __cordl_object
-            .invoke("get_distinctIndexes", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<i32>,
+        > = __cordl_object.invoke("get_distinctIndexes", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_distinctIndexesInternal(
@@ -378,13 +401,19 @@ impl crate::UnityEngine::ProBuilder::Face {
     pub fn get_edges(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                crate::UnityEngine::ProBuilder::Edge,
+            >,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::Edge,
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                crate::UnityEngine::ProBuilder::Edge,
+            >,
         > = __cordl_object.invoke("get_edges", ())?;
         Ok(__cordl_ret.into())
     }
@@ -405,12 +434,17 @@ impl crate::UnityEngine::ProBuilder::Face {
     }
     pub fn get_indexes(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<i32>,
+        >,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = __cordl_object
-            .invoke("get_indexes", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<i32>,
+        > = __cordl_object.invoke("get_indexes", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_indexesInternal(

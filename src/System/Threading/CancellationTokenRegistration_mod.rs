@@ -58,7 +58,7 @@ impl crate::System::Threading::CancellationTokenRegistration {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Gc0(
+    pub fn Equals_Il2CppObject0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -103,42 +103,40 @@ impl crate::System::Threading::CancellationTokenRegistration {
     }
 }
 #[cfg(feature = "System+Threading+CancellationTokenRegistration")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IAsyncDisposable>>
+impl AsRef<crate::System::IAsyncDisposable>
 for crate::System::Threading::CancellationTokenRegistration {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IAsyncDisposable> {
+    fn as_ref(&self) -> &crate::System::IAsyncDisposable {
         todo!()
     }
 }
 #[cfg(feature = "System+Threading+CancellationTokenRegistration")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IAsyncDisposable>>
+impl AsMut<crate::System::IAsyncDisposable>
 for crate::System::Threading::CancellationTokenRegistration {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::IAsyncDisposable> {
+    fn as_mut(&mut self) -> &mut crate::System::IAsyncDisposable {
         todo!()
     }
 }
 #[cfg(feature = "System+Threading+CancellationTokenRegistration")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsRef<crate::System::IDisposable>
 for crate::System::Threading::CancellationTokenRegistration {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         todo!()
     }
 }
 #[cfg(feature = "System+Threading+CancellationTokenRegistration")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsMut<crate::System::IDisposable>
 for crate::System::Threading::CancellationTokenRegistration {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         todo!()
     }
 }
 #[cfg(feature = "System+Threading+CancellationTokenRegistration")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Threading::CancellationTokenRegistration>,
+    crate::System::IEquatable_1<crate::System::Threading::CancellationTokenRegistration>,
 > for crate::System::Threading::CancellationTokenRegistration {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         crate::System::Threading::CancellationTokenRegistration,
     > {
         todo!()
@@ -146,11 +144,11 @@ impl AsRef<
 }
 #[cfg(feature = "System+Threading+CancellationTokenRegistration")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Threading::CancellationTokenRegistration>,
+    crate::System::IEquatable_1<crate::System::Threading::CancellationTokenRegistration>,
 > for crate::System::Threading::CancellationTokenRegistration {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         crate::System::Threading::CancellationTokenRegistration,
     > {
         todo!()

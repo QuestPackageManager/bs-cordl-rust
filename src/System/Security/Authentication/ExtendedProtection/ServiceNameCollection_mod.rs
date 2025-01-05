@@ -4,9 +4,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ServiceNameCollection {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::ReadOnlyCollectionBase,
-    >,
+    __cordl_parent: crate::System::Collections::ReadOnlyCollectionBase,
 }
 #[cfg(
     feature = "System+Security+Authentication+ExtendedProtection+ServiceNameCollection"
@@ -21,9 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::System::Security::Authentication::ExtendedProtection::ServiceNameCollection {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Collections::ReadOnlyCollectionBase,
-    >;
+    type Target = crate::System::Collections::ReadOnlyCollectionBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

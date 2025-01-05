@@ -2,12 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_LoadBufferVolume {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::HoudiniEngineUnity::HEU_LoadBufferBase,
-    >,
+    __cordl_parent: crate::HoudiniEngineUnity::HEU_LoadBufferBase,
     pub _tileIndex: i32,
     pub _splatLayers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_LoadBufferVolumeLayer>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::HoudiniEngineUnity::HEU_LoadBufferVolumeLayer,
+            >,
+        >,
     >,
     pub _heightMapWidth: i32,
     pub _heightMapHeight: i32,
@@ -25,10 +27,14 @@ pub struct HEU_LoadBufferVolume {
         crate::HoudiniEngineUnity::HEU_VolumeScatterTrees,
     >,
     pub _detailPrototypes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_DetailPrototype>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_DetailPrototype>,
+        >,
     >,
     pub _detailMaps: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub _detailProperties: quest_hook::libil2cpp::Gc<
         crate::HoudiniEngineUnity::HEU_DetailProperties,
@@ -44,9 +50,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_LoadBufferVolume")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_LoadBufferVolume {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::HoudiniEngineUnity::HEU_LoadBufferBase,
-    >;
+    type Target = crate::HoudiniEngineUnity::HEU_LoadBufferBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

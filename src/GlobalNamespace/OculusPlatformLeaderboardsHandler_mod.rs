@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusPlatformLeaderboardsHandler {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PlatformLeaderboardsHandler,
-    >,
+    __cordl_parent: crate::GlobalNamespace::PlatformLeaderboardsHandler,
     pub _leaderboardIdsModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::LeaderboardIdsModel,
     >,
-    pub _oculusRequestIds: quest_hook::libil2cpp::Gc<u64>,
+    pub _oculusRequestIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<u64>,
+    >,
     pub _gameplayModifiersModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::GameplayModifiersModelSO,
     >,
@@ -21,9 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OculusPlatformLeaderboardsHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::OculusPlatformLeaderboardsHandler {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PlatformLeaderboardsHandler,
-    >;
+    type Target = crate::GlobalNamespace::PlatformLeaderboardsHandler;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

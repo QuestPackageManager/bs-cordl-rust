@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLevelCompletionResults {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _playerLevelEndState: crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState,
     pub _playerLevelEndReason: crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason,
     pub _levelCompletionResults: quest_hook::libil2cpp::Gc<
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplayerLevelCompletionResults")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLevelCompletionResults {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -74,7 +74,7 @@ impl crate::GlobalNamespace::MultiplayerLevelCompletionResults {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState_MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason_Gc1(
+    pub fn New_MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState_MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason_LevelCompletionResults1(
         playerLevelEndState: crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState,
         playerLevelEndReason: crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason,
         levelCompletionResults: quest_hook::libil2cpp::Gc<
@@ -111,7 +111,7 @@ impl crate::GlobalNamespace::MultiplayerLevelCompletionResults {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState_MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason_Gc1(
+    pub fn _ctor_MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState_MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason_LevelCompletionResults1(
         &mut self,
         playerLevelEndState: crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState,
         playerLevelEndReason: crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason,
@@ -192,22 +192,8 @@ for crate::GlobalNamespace::MultiplayerLevelCompletionResults {
     }
 }
 #[cfg(feature = "MultiplayerLevelCompletionResults")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
-for crate::GlobalNamespace::MultiplayerLevelCompletionResults {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IComparable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "MultiplayerLevelCompletionResults")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
-for crate::GlobalNamespace::MultiplayerLevelCompletionResults {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IComparable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "MultiplayerLevelCompletionResults")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         >,
@@ -215,7 +201,7 @@ impl AsRef<
 > for crate::GlobalNamespace::MultiplayerLevelCompletionResults {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::LiteNetLib::Utils::INetImmutableSerializable_1<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         >,
@@ -225,7 +211,7 @@ impl AsRef<
 }
 #[cfg(feature = "MultiplayerLevelCompletionResults")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         >,
@@ -233,11 +219,25 @@ impl AsMut<
 > for crate::GlobalNamespace::MultiplayerLevelCompletionResults {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::LiteNetLib::Utils::INetImmutableSerializable_1<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         >,
     > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MultiplayerLevelCompletionResults")]
+impl AsRef<crate::System::IComparable>
+for crate::GlobalNamespace::MultiplayerLevelCompletionResults {
+    fn as_ref(&self) -> &crate::System::IComparable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MultiplayerLevelCompletionResults")]
+impl AsMut<crate::System::IComparable>
+for crate::GlobalNamespace::MultiplayerLevelCompletionResults {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable {
         unsafe { std::mem::transmute(self) }
     }
 }

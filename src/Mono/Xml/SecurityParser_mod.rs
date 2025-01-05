@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SecurityParser {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Mono::Xml::SmallXmlParser>,
+    __cordl_parent: crate::Mono::Xml::SmallXmlParser,
     pub root: quest_hook::libil2cpp::Gc<crate::System::Security::SecurityElement>,
     pub current: quest_hook::libil2cpp::Gc<crate::System::Security::SecurityElement>,
     pub stack: quest_hook::libil2cpp::Gc<crate::System::Collections::Stack>,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Xml+SecurityParser")]
 impl std::ops::Deref for crate::Mono::Xml::SecurityParser {
-    type Target = quest_hook::libil2cpp::Gc<crate::Mono::Xml::SmallXmlParser>;
+    type Target = crate::Mono::Xml::SmallXmlParser;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -158,22 +158,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Xml::SecurityParser {
     }
 }
 #[cfg(feature = "Mono+Xml+SecurityParser")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Mono::Xml::SmallXmlParser_IContentHandler>>
+impl AsRef<crate::Mono::Xml::SmallXmlParser_IContentHandler>
 for crate::Mono::Xml::SecurityParser {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Mono::Xml::SmallXmlParser_IContentHandler> {
+    fn as_ref(&self) -> &crate::Mono::Xml::SmallXmlParser_IContentHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Mono+Xml+SecurityParser")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Mono::Xml::SmallXmlParser_IContentHandler>>
+impl AsMut<crate::Mono::Xml::SmallXmlParser_IContentHandler>
 for crate::Mono::Xml::SecurityParser {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Mono::Xml::SmallXmlParser_IContentHandler,
-    > {
+    fn as_mut(&mut self) -> &mut crate::Mono::Xml::SmallXmlParser_IContentHandler {
         unsafe { std::mem::transmute(self) }
     }
 }

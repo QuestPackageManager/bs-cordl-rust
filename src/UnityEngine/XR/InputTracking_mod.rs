@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputTracking {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+XR+InputTracking")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+XR+InputTracking")]
 impl std::ops::Deref for crate::UnityEngine::XR::InputTracking {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,14 +34,22 @@ impl crate::UnityEngine::XR::InputTracking {
         Ok(__cordl_ret.into())
     }
     pub fn GetNodeStates(
-        nodeStates: quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::XRNodeState>,
+        nodeStates: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::XR::XRNodeState,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetNodeStates", (nodeStates))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetNodeStates_Internal(
-        nodeStates: quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::XRNodeState>,
+        nodeStates: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::XR::XRNodeState,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetNodeStates_Internal", (nodeStates))?;
@@ -58,28 +66,36 @@ impl crate::UnityEngine::XR::InputTracking {
         Ok(__cordl_ret.into())
     }
     pub fn add_nodeAdded(
-        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::XRNodeState>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::UnityEngine::XR::XRNodeState>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("add_nodeAdded", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn add_nodeRemoved(
-        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::XRNodeState>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::UnityEngine::XR::XRNodeState>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("add_nodeRemoved", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn remove_nodeAdded(
-        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::XRNodeState>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::UnityEngine::XR::XRNodeState>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("remove_nodeAdded", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn remove_nodeRemoved(
-        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::XRNodeState>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::UnityEngine::XR::XRNodeState>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("remove_nodeRemoved", (value))?;

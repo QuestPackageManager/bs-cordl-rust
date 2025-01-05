@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TreeViewReorderableDragAndDropController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::BaseReorderableDragAndDropController,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::BaseReorderableDragAndDropController,
     pub m_DropData: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController_DropData,
     >,
@@ -25,9 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+TreeViewReorderableDragAndDropController")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::BaseReorderableDragAndDropController,
-    >;
+    type Target = crate::UnityEngine::UIElements::BaseReorderableDragAndDropController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -137,7 +133,7 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
     }
     pub fn RestoreExpanded(
         &mut self,
-        ids: quest_hook::libil2cpp::Gc<i32>,
+        ids: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -148,7 +144,9 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
     }
     pub fn SetupDragAndDrop(
         &mut self,
-        itemIds: quest_hook::libil2cpp::Gc<i32>,
+        itemIds: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
         skipText: bool,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StartDragArgs> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -186,7 +184,7 @@ for crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TreeViewReorderableDragAndDropController_DropData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub expandedIdsBeforeDrag: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<i32>,
     >,
@@ -208,7 +206,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController_DropData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

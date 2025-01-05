@@ -31,7 +31,9 @@ impl<
 > crate::GlobalNamespace::ISortedListItemProcessor_1<T> {
     pub fn ProcessBeforeDeleteData(
         &mut self,
-        nodeToDelete: quest_hook::libil2cpp::Gc<T>,
+        nodeToDelete: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -46,7 +48,9 @@ impl<
     }
     pub fn ProcessInsertedData(
         &mut self,
-        insertedNode: quest_hook::libil2cpp::Gc<T>,
+        insertedNode: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

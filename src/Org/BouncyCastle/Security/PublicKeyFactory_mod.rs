@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PublicKeyFactory {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+Security+PublicKeyFactory")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Security+PublicKeyFactory")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Security::PublicKeyFactory {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,7 +24,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Security::PublicKeyFactory
 }
 #[cfg(feature = "Org+BouncyCastle+Security+PublicKeyFactory")]
 impl crate::Org::BouncyCastle::Security::PublicKeyFactory {
-    pub fn CreateKey_Gc0(
+    pub fn CreateKey_Il2CppArray0(
         keyInfoData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -37,7 +37,7 @@ impl crate::Org::BouncyCastle::Security::PublicKeyFactory {
             .invoke("CreateKey", (keyInfoData))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateKey_Gc1(
+    pub fn CreateKey_Stream1(
         inStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -49,7 +49,7 @@ impl crate::Org::BouncyCastle::Security::PublicKeyFactory {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("CreateKey", (inStr))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateKey_Gc2(
+    pub fn CreateKey_SubjectPublicKeyInfo2(
         keyInfo: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
         >,

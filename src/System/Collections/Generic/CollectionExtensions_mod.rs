@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CollectionExtensions {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Collections+Generic+CollectionExtensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+Generic+CollectionExtensions")]
 impl std::ops::Deref for crate::System::Collections::Generic::CollectionExtensions {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -25,8 +25,10 @@ impl std::ops::DerefMut for crate::System::Collections::Generic::CollectionExten
 }
 #[cfg(feature = "System+Collections+Generic+CollectionExtensions")]
 impl crate::System::Collections::Generic::CollectionExtensions {
-    pub fn GetValueOrDefault_Gc_TKey0<TKey, TValue>(
-        dictionary: quest_hook::libil2cpp::Gc<TKey, TValue>,
+    pub fn GetValueOrDefault_IReadOnlyDictionary_2_TKey0<TKey, TValue>(
+        dictionary: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyDictionary_2<TKey, TValue>,
+        >,
         key: TKey,
     ) -> quest_hook::libil2cpp::Result<TValue>
     where
@@ -40,7 +42,9 @@ impl crate::System::Collections::Generic::CollectionExtensions {
         Ok(__cordl_ret.into())
     }
     pub fn GetValueOrDefault_TValue1<TKey, TValue>(
-        dictionary: quest_hook::libil2cpp::Gc<TKey, TValue>,
+        dictionary: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyDictionary_2<TKey, TValue>,
+        >,
         key: TKey,
         defaultValue: TValue,
     ) -> quest_hook::libil2cpp::Result<TValue>

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SystemDependencyProvider {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _CertificateProvider_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::Mono::SystemCertificateProvider,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+SystemDependencyProvider")]
 impl std::ops::Deref for crate::Mono::SystemDependencyProvider {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -107,20 +107,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::SystemDependencyProvider
     }
 }
 #[cfg(feature = "Mono+SystemDependencyProvider")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Mono::ISystemDependencyProvider>>
+impl AsRef<crate::Mono::ISystemDependencyProvider>
 for crate::Mono::SystemDependencyProvider {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Mono::ISystemDependencyProvider> {
+    fn as_ref(&self) -> &crate::Mono::ISystemDependencyProvider {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Mono+SystemDependencyProvider")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Mono::ISystemDependencyProvider>>
+impl AsMut<crate::Mono::ISystemDependencyProvider>
 for crate::Mono::SystemDependencyProvider {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Mono::ISystemDependencyProvider> {
+    fn as_mut(&mut self) -> &mut crate::Mono::ISystemDependencyProvider {
         unsafe { std::mem::transmute(self) }
     }
 }

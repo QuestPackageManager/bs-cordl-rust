@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BasicLevelParamsPanel {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _durationText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _bpmText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BasicLevelParamsPanel")]
 impl std::ops::Deref for crate::GlobalNamespace::BasicLevelParamsPanel {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AbstractTlsAgreementCredentials {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsCredentials,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsCredentials,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsAgreementCredentials")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsAgreementCredentials")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsAgreementCredentials {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsCredentials,
-    >;
+    type Target = crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsCredentials;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -76,54 +72,32 @@ for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsAgreementCredentials {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsAgreementCredentials")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::TlsAgreementCredentials,
-    >,
-> for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsAgreementCredentials {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::TlsAgreementCredentials,
-    > {
+impl AsRef<crate::Org::BouncyCastle::Crypto::Tls::TlsAgreementCredentials>
+for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsAgreementCredentials {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Tls::TlsAgreementCredentials {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsAgreementCredentials")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::TlsAgreementCredentials,
-    >,
-> for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsAgreementCredentials {
+impl AsMut<crate::Org::BouncyCastle::Crypto::Tls::TlsAgreementCredentials>
+for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsAgreementCredentials {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::TlsAgreementCredentials,
-    > {
+    ) -> &mut crate::Org::BouncyCastle::Crypto::Tls::TlsAgreementCredentials {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsAgreementCredentials")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials>,
-> for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsAgreementCredentials {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials,
-    > {
+impl AsRef<crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials>
+for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsAgreementCredentials {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsAgreementCredentials")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials>,
-> for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsAgreementCredentials {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials,
-    > {
+impl AsMut<crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials>
+for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsAgreementCredentials {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials {
         unsafe { std::mem::transmute(self) }
     }
 }

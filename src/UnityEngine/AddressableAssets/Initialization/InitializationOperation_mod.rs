@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InitializationOperation {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
         >,
@@ -37,7 +37,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+AddressableAssets+Initialization+InitializationOperation")]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::Initialization::InitializationOperation {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
         >,
@@ -101,8 +101,10 @@ impl crate::UnityEngine::AddressableAssets::Initialization::InitializationOperat
     pub fn LoadContentCatalogInternal(
         &mut self,
         catalogs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+                >,
             >,
         >,
         index: i32,
@@ -133,7 +135,7 @@ impl crate::UnityEngine::AddressableAssets::Initialization::InitializationOperat
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn LoadContentCatalog_Gc0(
+    pub fn LoadContentCatalog_AddressablesImpl_IResourceLocation_Il2CppString_IResourceLocation0(
         addressables: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::AddressableAssets::AddressablesImpl,
         >,
@@ -162,7 +164,7 @@ impl crate::UnityEngine::AddressableAssets::Initialization::InitializationOperat
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn LoadContentCatalog_Gc_Gc_Gc1(
+    pub fn LoadContentCatalog_IResourceLocation_Il2CppString_IResourceLocation1(
         &mut self,
         loc: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
@@ -197,8 +199,10 @@ impl crate::UnityEngine::AddressableAssets::Initialization::InitializationOperat
             >,
         >,
         catalogs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+                >,
             >,
         >,
         locMap: quest_hook::libil2cpp::Gc<

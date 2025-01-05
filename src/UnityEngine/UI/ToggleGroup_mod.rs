@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ToggleGroup {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::UIBehaviour,
-    >,
+    __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
     pub m_AllowSwitchOff: bool,
     pub m_Toggles: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UI+ToggleGroup")]
@@ -17,9 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+ToggleGroup")]
 impl std::ops::Deref for crate::UnityEngine::UI::ToggleGroup {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::UIBehaviour,
-    >;
+    type Target = crate::UnityEngine::EventSystems::UIBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -36,14 +34,18 @@ impl crate::UnityEngine::UI::ToggleGroup {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+            >,
         > = __cordl_object.invoke("ActiveToggles", ())?;
         Ok(__cordl_ret.into())
     }

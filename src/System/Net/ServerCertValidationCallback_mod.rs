@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ServerCertValidationCallback {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ValidationCallback: quest_hook::libil2cpp::Gc<
         crate::System::Net::Security::RemoteCertificateValidationCallback,
     >,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+ServerCertValidationCallback")]
 impl std::ops::Deref for crate::System::Net::ServerCertValidationCallback {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -113,7 +113,7 @@ for crate::System::Net::ServerCertValidationCallback {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ServerCertValidationCallback_CallbackContext {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub request: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub certificate: quest_hook::libil2cpp::Gc<
         crate::System::Security::Cryptography::X509Certificates::X509Certificate,
@@ -133,7 +133,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Net+ServerCertValidationCallback+CallbackContext")]
 impl std::ops::Deref
 for crate::System::Net::ServerCertValidationCallback_CallbackContext {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

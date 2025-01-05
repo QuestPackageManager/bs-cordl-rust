@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StaticPacketPoolProvider {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "StaticPacketPoolProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "StaticPacketPoolProvider")]
 impl std::ops::Deref for crate::GlobalNamespace::StaticPacketPoolProvider {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -25,14 +25,15 @@ impl std::ops::DerefMut for crate::GlobalNamespace::StaticPacketPoolProvider {
 #[cfg(feature = "StaticPacketPoolProvider")]
 impl crate::GlobalNamespace::StaticPacketPoolProvider {
     pub fn GetPacketPool<T>() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<T>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PacketPool_1<T>>,
     >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetPacketPool", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PacketPool_1<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetPacketPool", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn TryGetPacketPool(

@@ -67,13 +67,13 @@ impl crate::System::Reflection::MonoMethodInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
+                *mut crate::System::Reflection::ParameterInfo,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
+                *mut crate::System::Reflection::ParameterInfo,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetParametersInfo", (handle, member))?;
@@ -118,13 +118,13 @@ impl crate::System::Reflection::MonoMethodInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
+                *mut crate::System::Reflection::ParameterInfo,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
+                *mut crate::System::Reflection::ParameterInfo,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("get_parameter_info", (handle, member))?;

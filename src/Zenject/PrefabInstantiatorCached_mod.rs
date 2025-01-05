@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PrefabInstantiatorCached {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _subInstantiator: quest_hook::libil2cpp::Gc<crate::Zenject::IPrefabInstantiator>,
     pub _gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+PrefabInstantiatorCached")]
 impl std::ops::Deref for crate::Zenject::PrefabInstantiatorCached {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -41,7 +41,9 @@ impl crate::Zenject::PrefabInstantiatorCached {
     pub fn Instantiate(
         &mut self,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-        args: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        args: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
         injectAction: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<crate::System::Action>,
         >,
@@ -88,13 +90,16 @@ impl crate::Zenject::PrefabInstantiatorCached {
     pub fn get_ExtraArguments(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair> = __cordl_object
-            .invoke("get_ExtraArguments", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        > = __cordl_object.invoke("get_ExtraArguments", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_GameObjectCreationParameters(
@@ -121,18 +126,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::PrefabInstantiatorCac
     }
 }
 #[cfg(feature = "Zenject+PrefabInstantiatorCached")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::IPrefabInstantiator>>
+impl AsRef<crate::Zenject::IPrefabInstantiator>
 for crate::Zenject::PrefabInstantiatorCached {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::IPrefabInstantiator> {
+    fn as_ref(&self) -> &crate::Zenject::IPrefabInstantiator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+PrefabInstantiatorCached")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::IPrefabInstantiator>>
+impl AsMut<crate::Zenject::IPrefabInstantiator>
 for crate::Zenject::PrefabInstantiatorCached {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::IPrefabInstantiator> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IPrefabInstantiator {
         unsafe { std::mem::transmute(self) }
     }
 }

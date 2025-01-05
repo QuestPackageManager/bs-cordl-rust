@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScoreController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _gameplayModifiersModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::GameplayModifiersModelSO,
     >,
@@ -33,16 +33,26 @@ pub struct ScoreController {
     pub _playerHeadAndObstacleInteraction: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PlayerHeadAndObstacleInteraction,
     >,
-    pub scoreDidChangeEvent: quest_hook::libil2cpp::Gc<i32, i32>,
-    pub multiplierDidChangeEvent: quest_hook::libil2cpp::Gc<i32, f32>,
+    pub scoreDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<i32, i32>,
+    >,
+    pub multiplierDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<i32, f32>,
+    >,
     pub scoringForNoteStartedEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+        >,
     >,
     pub scoringForNoteFinishedEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+        >,
     >,
     pub _gameplayModifierParams: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
+        >,
     >,
     pub _modifiedScore: i32,
     pub _immediateMaxPossibleModifiedScore: i32,
@@ -56,15 +66,23 @@ pub struct ScoreController {
     pub _scoreMultiplierCounter: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::ScoreMultiplierCounter,
     >,
-    pub _sortedNoteTimesWithoutScoringElements: quest_hook::libil2cpp::Gc<f32>,
+    pub _sortedNoteTimesWithoutScoringElements: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<f32>,
+    >,
     pub _sortedScoringElementsWithoutMultiplier: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+        >,
     >,
     pub _scoringElementsWithMultiplier: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+        >,
     >,
     pub _scoringElementsToRemove: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+        >,
     >,
 }
 #[cfg(feature = "ScoreController")]
@@ -74,7 +92,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ScoreController")]
 impl std::ops::Deref for crate::GlobalNamespace::ScoreController {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -204,7 +222,7 @@ impl crate::GlobalNamespace::ScoreController {
     }
     pub fn add_multiplierDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<i32, f32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -215,7 +233,7 @@ impl crate::GlobalNamespace::ScoreController {
     }
     pub fn add_scoreDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<i32, i32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -227,7 +245,9 @@ impl crate::GlobalNamespace::ScoreController {
     pub fn add_scoringForNoteFinishedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -240,7 +260,9 @@ impl crate::GlobalNamespace::ScoreController {
     pub fn add_scoringForNoteStartedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -293,7 +315,7 @@ impl crate::GlobalNamespace::ScoreController {
     }
     pub fn remove_multiplierDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<i32, f32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -304,7 +326,7 @@ impl crate::GlobalNamespace::ScoreController {
     }
     pub fn remove_scoreDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<i32, i32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -316,7 +338,9 @@ impl crate::GlobalNamespace::ScoreController {
     pub fn remove_scoringForNoteFinishedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -329,7 +353,9 @@ impl crate::GlobalNamespace::ScoreController {
     pub fn remove_scoringForNoteStartedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -350,20 +376,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScoreControll
     }
 }
 #[cfg(feature = "ScoreController")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IScoreController>>
+impl AsRef<crate::GlobalNamespace::IScoreController>
 for crate::GlobalNamespace::ScoreController {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IScoreController> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IScoreController {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "ScoreController")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IScoreController>>
+impl AsMut<crate::GlobalNamespace::IScoreController>
 for crate::GlobalNamespace::ScoreController {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IScoreController> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IScoreController {
         unsafe { std::mem::transmute(self) }
     }
 }

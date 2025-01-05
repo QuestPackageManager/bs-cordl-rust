@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Buffer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Buffer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Buffer")]
 impl std::ops::Deref for crate::System::Buffer {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -74,7 +74,7 @@ impl crate::System::Buffer {
             .invoke("InternalMemcpy", (dest, src, count))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Memcpy_Gc_i32_1(
+    pub fn Memcpy_Il2CppObject_i32_1(
         dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         src: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         len: i32,
@@ -83,7 +83,7 @@ impl crate::System::Buffer {
             .invoke("Memcpy", (dest, src, len))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Memcpy_i32_Gc_i32_i32_0(
+    pub fn Memcpy_i32_Il2CppArray_i32_i32_0(
         pDest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         destIndex: i32,
         src: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -107,7 +107,7 @@ impl crate::System::Buffer {
             .invoke("Memmove", (destination, source, elementCount))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Memmove_Gc_Gc_u32_0(
+    pub fn Memmove_Il2CppObject_Il2CppObject_u32_0(
         dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         src: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         len: u32,

@@ -25,7 +25,7 @@ for crate::UnityEngine::UIElements::StylePropertyName {
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyName")]
 impl crate::UnityEngine::UIElements::StylePropertyName {
-    pub fn Equals_Gc0(
+    pub fn Equals_Il2CppObject0(
         &mut self,
         other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -74,7 +74,7 @@ impl crate::UnityEngine::UIElements::StylePropertyName {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -145,20 +145,24 @@ impl crate::UnityEngine::UIElements::StylePropertyName {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyName")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StylePropertyName>>
-for crate::UnityEngine::UIElements::StylePropertyName {
+impl AsRef<
+    crate::System::IEquatable_1<crate::UnityEngine::UIElements::StylePropertyName>,
+> for crate::UnityEngine::UIElements::StylePropertyName {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StylePropertyName> {
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::StylePropertyName,
+    > {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyName")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StylePropertyName>>
-for crate::UnityEngine::UIElements::StylePropertyName {
+impl AsMut<
+    crate::System::IEquatable_1<crate::UnityEngine::UIElements::StylePropertyName>,
+> for crate::UnityEngine::UIElements::StylePropertyName {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         crate::UnityEngine::UIElements::StylePropertyName,
     > {
         todo!()

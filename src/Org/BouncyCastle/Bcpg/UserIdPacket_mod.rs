@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UserIdPacket {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Bcpg::ContainedPacket,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Bcpg::ContainedPacket,
     pub idData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+UserIdPacket")]
@@ -14,9 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Bcpg+UserIdPacket")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::UserIdPacket {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Bcpg::ContainedPacket,
-    >;
+    type Target = crate::Org::BouncyCastle::Bcpg::ContainedPacket;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -55,7 +51,7 @@ impl crate::Org::BouncyCastle::Bcpg::UserIdPacket {
         > = __cordl_object.invoke("GetId", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_BcpgInputStream0(
         bcpgIn: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
         >,
@@ -66,7 +62,7 @@ impl crate::Org::BouncyCastle::Bcpg::UserIdPacket {
             .invoke_void(".ctor", (bcpgIn))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Il2CppString1(
         id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -75,7 +71,7 @@ impl crate::Org::BouncyCastle::Bcpg::UserIdPacket {
             .invoke_void(".ctor", (id))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_BcpgInputStream0(
         &mut self,
         bcpgIn: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
@@ -88,7 +84,7 @@ impl crate::Org::BouncyCastle::Bcpg::UserIdPacket {
             .invoke(".ctor", (bcpgIn))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
         id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

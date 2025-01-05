@@ -2,15 +2,15 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_GeneratedOutputData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _renderMaterials: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
     >,
     pub _colliders: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+        >,
     >,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeneratedOutputData")]
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeneratedOutputData")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_GeneratedOutputData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -75,13 +75,13 @@ for crate::HoudiniEngineUnity::HEU_GeneratedOutputData {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeneratedOutputData")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeneratedOutputData>,
     >,
 > for crate::HoudiniEngineUnity::HEU_GeneratedOutputData {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeneratedOutputData>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -89,13 +89,13 @@ impl AsRef<
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeneratedOutputData")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeneratedOutputData>,
     >,
 > for crate::HoudiniEngineUnity::HEU_GeneratedOutputData {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeneratedOutputData>,
     > {
         unsafe { std::mem::transmute(self) }

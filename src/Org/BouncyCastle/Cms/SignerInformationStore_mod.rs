@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignerInformationStore {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub all: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     pub table: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Cms+SignerInformationStore")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::SignerInformationStore {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -53,7 +53,7 @@ impl crate::Org::BouncyCastle::Cms::SignerInformationStore {
         > = __cordl_object.invoke("GetSigners", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetSigners_Gc1(
+    pub fn GetSigners_SignerID1(
         &mut self,
         selector: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::SignerID>,
     ) -> quest_hook::libil2cpp::Result<
@@ -67,7 +67,16 @@ impl crate::Org::BouncyCastle::Cms::SignerInformationStore {
         > = __cordl_object.invoke("GetSigners", (selector))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_ICollection1(
+        signerInfos: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (signerInfos))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_SignerInformation0(
         signerInfo: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cms::SignerInformation,
         >,
@@ -78,16 +87,18 @@ impl crate::Org::BouncyCastle::Cms::SignerInformationStore {
             .invoke_void(".ctor", (signerInfo))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn _ctor_ICollection1(
+        &mut self,
         signerInfos: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (signerInfos))?;
-        Ok(__cordl_object.into())
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (signerInfos))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_SignerInformation0(
         &mut self,
         signerInfo: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cms::SignerInformation,
@@ -98,17 +109,6 @@ impl crate::Org::BouncyCastle::Cms::SignerInformationStore {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (signerInfo))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc1(
-        &mut self,
-        signerInfos: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (signerInfos))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {

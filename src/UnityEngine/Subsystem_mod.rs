@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Subsystem {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+Subsystem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Subsystem")]
 impl std::ops::Deref for crate::UnityEngine::Subsystem {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -92,18 +92,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Subsystem {
     }
 }
 #[cfg(feature = "UnityEngine+Subsystem")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::ISubsystem>>
-for crate::UnityEngine::Subsystem {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::ISubsystem> {
+impl AsRef<crate::UnityEngine::ISubsystem> for crate::UnityEngine::Subsystem {
+    fn as_ref(&self) -> &crate::UnityEngine::ISubsystem {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Subsystem")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::ISubsystem>>
-for crate::UnityEngine::Subsystem {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::ISubsystem> {
+impl AsMut<crate::UnityEngine::ISubsystem> for crate::UnityEngine::Subsystem {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ISubsystem {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BpmEventConverter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BeatToTimeConverter,
-    >,
+    __cordl_parent: crate::GlobalNamespace::BeatToTimeConverter,
     pub _songFrequency: i32,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion4+BpmEventConverter")]
@@ -14,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapDataLoaderVersion4+BpmEventConverter")]
 impl std::ops::Deref for crate::BeatmapDataLoaderVersion4::BpmEventConverter {
-    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatToTimeConverter>;
+    type Target = crate::GlobalNamespace::BeatToTimeConverter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

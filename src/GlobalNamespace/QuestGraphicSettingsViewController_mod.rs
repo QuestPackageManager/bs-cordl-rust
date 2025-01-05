@@ -2,17 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct QuestGraphicSettingsViewController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::GraphicSettingsViewController,
-    >,
+    __cordl_parent: crate::GlobalNamespace::GraphicSettingsViewController,
     pub _mirror: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PresetsSettingsController,
     >,
     pub _120HzMode: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
     pub _stinsonOnlyEntries: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
     >,
 }
 #[cfg(feature = "QuestGraphicSettingsViewController")]
@@ -23,9 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "QuestGraphicSettingsViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::QuestGraphicSettingsViewController {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::GraphicSettingsViewController,
-    >;
+    type Target = crate::GlobalNamespace::GraphicSettingsViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

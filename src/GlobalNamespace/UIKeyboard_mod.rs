@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UIKeyboard {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _keyButtonPrefab: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::TextMeshProButton,
     >,
-    pub textKeyWasPressedEvent: quest_hook::libil2cpp::Gc<char>,
+    pub textKeyWasPressedEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<char>>,
     pub deleteButtonWasPressedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub okButtonWasPressedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub cancelButtonWasPressedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UIKeyboard")]
 impl std::ops::Deref for crate::GlobalNamespace::UIKeyboard {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -136,7 +136,7 @@ impl crate::GlobalNamespace::UIKeyboard {
     }
     pub fn add_textKeyWasPressedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<char>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<char>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -180,7 +180,7 @@ impl crate::GlobalNamespace::UIKeyboard {
     }
     pub fn remove_textKeyWasPressedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<char>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<char>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

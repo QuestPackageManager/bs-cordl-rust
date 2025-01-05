@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArcBeatIndex {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub hb: f32,
     pub hi: i32,
     pub hr: i32,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapSaveDataVersion4+ArcBeatIndex")]
 impl std::ops::Deref for crate::BeatmapSaveDataVersion4::ArcBeatIndex {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -66,30 +66,28 @@ impl quest_hook::libil2cpp::ObjectType for crate::BeatmapSaveDataVersion4::ArcBe
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion4+ArcBeatIndex")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataCommon::IBeat>>
+impl AsRef<crate::BeatmapSaveDataCommon::IBeat>
 for crate::BeatmapSaveDataVersion4::ArcBeatIndex {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataCommon::IBeat> {
+    fn as_ref(&self) -> &crate::BeatmapSaveDataCommon::IBeat {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion4+ArcBeatIndex")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataCommon::IBeat>>
+impl AsMut<crate::BeatmapSaveDataCommon::IBeat>
 for crate::BeatmapSaveDataVersion4::ArcBeatIndex {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataCommon::IBeat> {
+    fn as_mut(&mut self) -> &mut crate::BeatmapSaveDataCommon::IBeat {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion4+ArcBeatIndex")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IComparable_1<
         quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataCommon::IBeat>,
     >,
 > for crate::BeatmapSaveDataVersion4::ArcBeatIndex {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IComparable_1<
         quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataCommon::IBeat>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -97,13 +95,13 @@ impl AsRef<
 }
 #[cfg(feature = "BeatmapSaveDataVersion4+ArcBeatIndex")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IComparable_1<
         quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataCommon::IBeat>,
     >,
 > for crate::BeatmapSaveDataVersion4::ArcBeatIndex {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IComparable_1<
         quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataCommon::IBeat>,
     > {
         unsafe { std::mem::transmute(self) }

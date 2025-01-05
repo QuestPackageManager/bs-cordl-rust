@@ -2,10 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextInputBaseField_1<TValueType: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TValueType>,
+    __cordl_parent: crate::UnityEngine::UIElements::BaseField_1<TValueType>,
     pub m_VisualInputTabIndex: i32,
-    pub m_TextInputBase: quest_hook::libil2cpp::Gc<TValueType>,
-    pub onIsReadOnlyChanged: quest_hook::libil2cpp::Gc<bool>,
+    pub m_TextInputBase: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::TextInputBaseField_1_TextInputBase<TValueType>,
+    >,
+    pub onIsReadOnlyChanged: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
     __cordl_phantom_TValueType: std::marker::PhantomData<TValueType>,
 }
 #[cfg(feature = "UnityEngine+UIElements+TextInputBaseField_1")]
@@ -16,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+TextInputBaseField_1")]
 impl<TValueType: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::TextInputBaseField_1<TValueType> {
-    type Target = quest_hook::libil2cpp::Gc<TValueType>;
+    type Target = crate::UnityEngine::UIElements::BaseField_1<TValueType>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -59,7 +61,11 @@ impl<
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         maxLength: i32,
         maskChar: char,
-        textInputBase: quest_hook::libil2cpp::Gc<TValueType>,
+        textInputBase: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::TextInputBaseField_1_TextInputBase<
+                TValueType,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -167,7 +173,11 @@ impl<
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         maxLength: i32,
         maskChar: char,
-        textInputBase: quest_hook::libil2cpp::Gc<TValueType>,
+        textInputBase: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::TextInputBaseField_1_TextInputBase<
+                TValueType,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -182,7 +192,7 @@ impl<
     }
     pub fn add_onIsReadOnlyChanged(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<bool>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -253,7 +263,13 @@ impl<
     }
     pub fn get_textInputBase(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TValueType>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::TextInputBaseField_1_TextInputBase<
+                TValueType,
+            >,
+        >,
+    >
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -261,13 +277,16 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TValueType> = __cordl_object
-            .invoke("get_textInputBase", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::TextInputBaseField_1_TextInputBase<
+                TValueType,
+            >,
+        > = __cordl_object.invoke("get_textInputBase", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn remove_onIsReadOnlyChanged(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<bool>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -430,9 +449,7 @@ for crate::UnityEngine::UIElements::TextInputBaseField_1<TValueType> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextInputBaseField_1_TextInputBase<TValueType: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::VisualElement,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
     pub _textElement_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::TextElement,
     >,
@@ -458,9 +475,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+TextInputBaseField_1+TextInputBase")]
 impl<TValueType: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::TextInputBaseField_1_TextInputBase<TValueType> {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::VisualElement,
-    >;
+    type Target = crate::UnityEngine::UIElements::VisualElement;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -511,7 +526,9 @@ impl<
     }
     pub fn MakeSureScrollViewDoesNotLeakEvents(
         &mut self,
-        evt: quest_hook::libil2cpp::Gc<f32>,
+        evt: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ChangeEvent_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1009,7 +1026,7 @@ for crate::UnityEngine::UIElements::TextInputBaseField_1_TextInputBase<TValueTyp
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextInputBaseField_1_UxmlTraits<TValueType: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::BaseFieldTraits_2<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
@@ -1034,7 +1051,9 @@ pub struct TextInputBaseField_1_UxmlTraits<TValueType: quest_hook::libil2cpp::Ty
         crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
     >,
     pub m_KeyboardType: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::TouchScreenKeyboardType,
+        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
+            crate::UnityEngine::TouchScreenKeyboardType,
+        >,
     >,
     pub m_AutoCorrection: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
@@ -1050,7 +1069,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+TextInputBaseField_1+UxmlTraits")]
 impl<TValueType: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::TextInputBaseField_1_UxmlTraits<TValueType> {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::BaseFieldTraits_2<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::UxmlStringAttributeDescription,

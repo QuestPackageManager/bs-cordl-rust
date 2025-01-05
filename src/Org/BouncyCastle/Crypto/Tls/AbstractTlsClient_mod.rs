@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AbstractTlsClient {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsPeer,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsPeer,
     pub mCipherFactory: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Tls::TlsCipherFactory,
     >,
@@ -32,9 +30,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsClient")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsClient {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsPeer,
-    >;
+    type Target = crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsPeer;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -214,7 +210,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsClient {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_TlsCipherFactory1(
         cipherFactory: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsCipherFactory,
         >,
@@ -320,7 +316,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsClient {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_TlsCipherFactory1(
         &mut self,
         cipherFactory: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsCipherFactory,
@@ -391,40 +387,30 @@ for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsClient {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsClient")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsClient>>
+impl AsRef<crate::Org::BouncyCastle::Crypto::Tls::TlsClient>
 for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsClient {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsClient> {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Tls::TlsClient {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsClient")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsClient>>
+impl AsMut<crate::Org::BouncyCastle::Crypto::Tls::TlsClient>
 for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsClient {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::TlsClient,
-    > {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::Tls::TlsClient {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsClient")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsPeer>>
+impl AsRef<crate::Org::BouncyCastle::Crypto::Tls::TlsPeer>
 for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsClient {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsPeer> {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Tls::TlsPeer {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsClient")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsPeer>>
+impl AsMut<crate::Org::BouncyCastle::Crypto::Tls::TlsPeer>
 for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsClient {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsPeer> {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::Tls::TlsPeer {
         unsafe { std::mem::transmute(self) }
     }
 }

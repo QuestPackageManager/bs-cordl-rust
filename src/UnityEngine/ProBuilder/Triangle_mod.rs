@@ -35,7 +35,7 @@ impl crate::UnityEngine::ProBuilder::Triangle {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Gc1(
+    pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -115,30 +115,32 @@ impl crate::UnityEngine::ProBuilder::Triangle {
     }
     pub fn get_indices(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_indices",
-            (),
-        )?;
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_indices", ())?;
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Triangle")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Triangle>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Triangle>>
 for crate::UnityEngine::ProBuilder::Triangle {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Triangle> {
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Triangle> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Triangle")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Triangle>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Triangle>>
 for crate::UnityEngine::ProBuilder::Triangle {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Triangle> {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Triangle> {
         todo!()
     }
 }

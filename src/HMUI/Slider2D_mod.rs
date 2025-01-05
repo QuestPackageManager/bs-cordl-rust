@@ -2,12 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Slider2D {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
+    __cordl_parent: crate::UnityEngine::UI::Selectable,
     pub _handleRect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub _normalizedValue: crate::UnityEngine::Vector2,
     pub normalizedValueDidChangeEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HMUI::Slider2D>,
-        crate::UnityEngine::Vector2,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<crate::HMUI::Slider2D>,
+            crate::UnityEngine::Vector2,
+        >,
     >,
     pub _containerRect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub _handleGraphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
@@ -19,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+Slider2D")]
 impl std::ops::Deref for crate::HMUI::Slider2D {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>;
+    type Target = crate::UnityEngine::UI::Selectable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -270,8 +272,10 @@ impl crate::HMUI::Slider2D {
     pub fn add_normalizedValueDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::Slider2D>,
-            crate::UnityEngine::Vector2,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::HMUI::Slider2D>,
+                crate::UnityEngine::Vector2,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -306,8 +310,10 @@ impl crate::HMUI::Slider2D {
     pub fn remove_normalizedValueDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::Slider2D>,
-            crate::UnityEngine::Vector2,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::HMUI::Slider2D>,
+                crate::UnityEngine::Vector2,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -361,114 +367,72 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::Slider2D {
     }
 }
 #[cfg(feature = "HMUI+Slider2D")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IBeginDragHandler>,
-> for crate::HMUI::Slider2D {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IBeginDragHandler,
-    > {
+impl AsRef<crate::UnityEngine::EventSystems::IBeginDragHandler>
+for crate::HMUI::Slider2D {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IBeginDragHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HMUI+Slider2D")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IBeginDragHandler>,
-> for crate::HMUI::Slider2D {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IBeginDragHandler,
-    > {
+impl AsMut<crate::UnityEngine::EventSystems::IBeginDragHandler>
+for crate::HMUI::Slider2D {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IBeginDragHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HMUI+Slider2D")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDragHandler>>
+impl AsRef<crate::UnityEngine::EventSystems::IDragHandler> for crate::HMUI::Slider2D {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HMUI+Slider2D")]
+impl AsMut<crate::UnityEngine::EventSystems::IDragHandler> for crate::HMUI::Slider2D {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HMUI+Slider2D")]
+impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::HMUI::Slider2D {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HMUI+Slider2D")]
+impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::HMUI::Slider2D {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HMUI+Slider2D")]
+impl AsRef<crate::UnityEngine::EventSystems::IInitializePotentialDragHandler>
 for crate::HMUI::Slider2D {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDragHandler> {
+    ) -> &crate::UnityEngine::EventSystems::IInitializePotentialDragHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HMUI+Slider2D")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDragHandler>>
+impl AsMut<crate::UnityEngine::EventSystems::IInitializePotentialDragHandler>
 for crate::HMUI::Slider2D {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDragHandler> {
+    ) -> &mut crate::UnityEngine::EventSystems::IInitializePotentialDragHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HMUI+Slider2D")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
-> for crate::HMUI::Slider2D {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IEventSystemHandler,
-    > {
+impl AsRef<crate::UnityEngine::UI::ICanvasElement> for crate::HMUI::Slider2D {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::ICanvasElement {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HMUI+Slider2D")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
-> for crate::HMUI::Slider2D {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IEventSystemHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "HMUI+Slider2D")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IInitializePotentialDragHandler,
-    >,
-> for crate::HMUI::Slider2D {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IInitializePotentialDragHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "HMUI+Slider2D")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IInitializePotentialDragHandler,
-    >,
-> for crate::HMUI::Slider2D {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IInitializePotentialDragHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "HMUI+Slider2D")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>>
-for crate::HMUI::Slider2D {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "HMUI+Slider2D")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>>
-for crate::HMUI::Slider2D {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement> {
+impl AsMut<crate::UnityEngine::UI::ICanvasElement> for crate::HMUI::Slider2D {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ICanvasElement {
         unsafe { std::mem::transmute(self) }
     }
 }

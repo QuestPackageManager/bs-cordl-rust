@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TutorialNoteController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
+    __cordl_parent: crate::GlobalNamespace::NoteController,
     pub _cuttableBySaberCore: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BoxCuttableBySaber,
     >,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TutorialNoteController")]
 impl std::ops::Deref for crate::GlobalNamespace::TutorialNoteController {
-    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>;
+    type Target = crate::GlobalNamespace::NoteController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -199,38 +199,30 @@ for crate::GlobalNamespace::TutorialNoteController {
     }
 }
 #[cfg(feature = "TutorialNoteController")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGameNoteMirrorable>>
+impl AsRef<crate::GlobalNamespace::IGameNoteMirrorable>
 for crate::GlobalNamespace::TutorialNoteController {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGameNoteMirrorable> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IGameNoteMirrorable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "TutorialNoteController")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGameNoteMirrorable>>
+impl AsMut<crate::GlobalNamespace::IGameNoteMirrorable>
 for crate::GlobalNamespace::TutorialNoteController {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGameNoteMirrorable> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IGameNoteMirrorable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "TutorialNoteController")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INoteMirrorable>>
+impl AsRef<crate::GlobalNamespace::INoteMirrorable>
 for crate::GlobalNamespace::TutorialNoteController {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INoteMirrorable> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::INoteMirrorable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "TutorialNoteController")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INoteMirrorable>>
+impl AsMut<crate::GlobalNamespace::INoteMirrorable>
 for crate::GlobalNamespace::TutorialNoteController {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INoteMirrorable> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::INoteMirrorable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -238,7 +230,7 @@ for crate::GlobalNamespace::TutorialNoteController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TutorialNoteController_Pool {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TutorialNoteController>,
     >,
 }
@@ -249,7 +241,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TutorialNoteController+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::TutorialNoteController_Pool {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TutorialNoteController>,
     >;
     fn deref(&self) -> &Self::Target {

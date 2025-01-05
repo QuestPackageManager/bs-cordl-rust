@@ -2,19 +2,23 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputStateHistory {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _onRecordAdded_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
+        crate::System::Action_1<
+            crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
+        >,
     >,
     pub _onShouldRecordStateChange_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
-        f64,
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-        bool,
+        crate::System::Func_4<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+            f64,
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            bool,
+        >,
     >,
     pub m_Controls: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+            *mut crate::UnityEngine::InputSystem::InputControl,
         >,
     >,
     pub m_ControlCount: i32,
@@ -38,7 +42,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -140,14 +144,18 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
+            >,
         > = __cordl_object.invoke("GetEnumerator", ())?;
         Ok(__cordl_ret.into())
     }
@@ -179,7 +187,20 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
         > = __cordl_object.invoke("GetRecordUnchecked", (index))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc1(
+    pub fn New_IEnumerable_1_3(
+        controls: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (controls))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Il2CppString1(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -188,24 +209,13 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
             .invoke_void(".ctor", (path))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc2(
+    pub fn New_InputControl2(
         control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (control))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc3(
-        controls: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (controls))?;
         Ok(__cordl_object.into())
     }
     pub fn New_i32_0(
@@ -255,7 +265,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
         let __cordl_ret: i32 = __cordl_object.invoke("RecordIndexToUserIndex", (index))?;
         Ok(__cordl_ret.into())
     }
-    pub fn RecordStateChange_Gc_f64_1(
+    pub fn RecordStateChange_Il2CppObject_f64_1(
         &mut self,
         control: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputControl,
@@ -369,7 +379,22 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
         let __cordl_ret: i32 = __cordl_object.invoke("UserIndexToRecordIndex", (index))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_IEnumerable_1_3(
+        &mut self,
+        controls: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (controls))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppString1(
         &mut self,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -380,7 +405,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
             .invoke(".ctor", (path))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_InputControl2(
         &mut self,
         control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -389,19 +414,6 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (control))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc3(
-        &mut self,
-        controls: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (controls))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_0(
@@ -475,14 +487,18 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
+            >,
         > = __cordl_object.invoke("get_onRecordAdded", ())?;
         Ok(__cordl_ret.into())
     }
@@ -490,20 +506,24 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
-            f64,
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-            bool,
+            crate::System::Func_4<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+                f64,
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                bool,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
-            f64,
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-            bool,
+            crate::System::Func_4<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+                f64,
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                bool,
+            >,
         > = __cordl_object.invoke("get_onShouldRecordStateChange", ())?;
         Ok(__cordl_ret.into())
     }
@@ -563,7 +583,9 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
     pub fn set_onRecordAdded(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -576,10 +598,12 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
     pub fn set_onShouldRecordStateChange(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
-            f64,
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-            bool,
+            crate::System::Func_4<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+                f64,
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                bool,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -612,74 +636,14 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
-for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
-for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor,
-    >,
-> for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor,
-    >,
-> for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IEnumerable_1<
         crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
     >,
 > for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
         crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
     > {
         unsafe { std::mem::transmute(self) }
@@ -687,15 +651,61 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IEnumerable_1<
         crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
     >,
 > for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
         crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
     > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory")]
+impl AsRef<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory")]
+impl AsMut<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory")]
+impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor>
+for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory")]
+impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor>
+for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -796,46 +806,14 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
-for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
-for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IEnumerator_1<
         crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
     >,
 > for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::Collections::Generic::IEnumerator_1<
         crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
     > {
         todo!()
@@ -843,15 +821,43 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IEnumerator_1<
         crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
     >,
 > for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<
         crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
     > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator")]
+impl AsRef<crate::System::Collections::IEnumerator>
+for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator")]
+impl AsMut<crate::System::Collections::IEnumerator>
+for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator")]
+impl AsRef<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator")]
+impl AsMut<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         todo!()
     }
 }
@@ -905,7 +911,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Gc1(
+    pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -1133,13 +1139,13 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Record")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
     >,
 > for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
     > {
         todo!()
@@ -1147,13 +1153,13 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Record")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
     >,
 > for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
     > {
         todo!()

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FtpControlStream {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Net::CommandStream>,
+    __cordl_parent: crate::System::Net::CommandStream,
     pub _dataSocket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
     pub _passiveEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
     pub _tlsStream: quest_hook::libil2cpp::Gc<crate::System::Net::TlsStream>,
@@ -35,7 +35,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+FtpControlStream")]
 impl std::ops::Deref for crate::System::Net::FtpControlStream {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Net::CommandStream>;
+    type Target = crate::System::Net::CommandStream;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -73,9 +73,7 @@ impl crate::System::Net::FtpControlStream {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Net::CommandStream_PipelineEntry,
-                >,
+                *mut crate::System::Net::CommandStream_PipelineEntry,
             >,
         >,
     > {
@@ -84,9 +82,7 @@ impl crate::System::Net::FtpControlStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Net::CommandStream_PipelineEntry,
-                >,
+                *mut crate::System::Net::CommandStream_PipelineEntry,
             >,
         > = __cordl_object.invoke("BuildCommandsList", (req))?;
         Ok(__cordl_ret.into())

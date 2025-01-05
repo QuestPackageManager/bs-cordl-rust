@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AutoIncrementBigInteger {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Data::AutoIncrementValue>,
+    __cordl_parent: crate::System::Data::AutoIncrementValue,
     pub _current: crate::System::Numerics::BigInteger,
     pub _seed: i64,
     pub _step: crate::System::Numerics::BigInteger,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+AutoIncrementBigInteger")]
 impl std::ops::Deref for crate::System::Data::AutoIncrementBigInteger {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Data::AutoIncrementValue>;
+    type Target = crate::System::Data::AutoIncrementValue;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

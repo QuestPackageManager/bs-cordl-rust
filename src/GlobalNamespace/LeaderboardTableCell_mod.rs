@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LeaderboardTableCell {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
+    __cordl_parent: crate::HMUI::TableCell,
     pub _rankText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _playerNameText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _scoreText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LeaderboardTableCell")]
 impl std::ops::Deref for crate::GlobalNamespace::LeaderboardTableCell {
-    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>;
+    type Target = crate::HMUI::TableCell;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

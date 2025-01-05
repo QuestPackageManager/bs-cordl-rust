@@ -51,7 +51,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Memory_1<T> {
             .invoke("CombineHashCodes", (left, right))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Gc0(
+    pub fn Equals_Il2CppObject0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool>
@@ -166,7 +166,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Memory_1<T> {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Il2CppArray0(
         &mut self,
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -181,7 +181,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Memory_1<T> {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_i32_1(
+    pub fn _ctor_Il2CppArray_i32_i32_1(
         &mut self,
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         start: i32,
@@ -198,7 +198,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Memory_1<T> {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_i32_2(
+    pub fn _ctor_Il2CppObject_i32_i32_2(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         start: i32,
@@ -239,7 +239,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Memory_1<T> {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn op_Implicit_Gc0(
+    pub fn op_Implicit_Il2CppArray0(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Memory_1<T>>
     where
@@ -265,18 +265,20 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Memory_1<T> {
 #[cfg(feature = "System+Memory_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::System::Memory_1<T>>>
+> AsRef<crate::System::IEquatable_1<crate::System::Memory_1<T>>>
 for crate::System::Memory_1<T> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Memory_1<T>> {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::System::Memory_1<T>> {
         todo!()
     }
 }
 #[cfg(feature = "System+Memory_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::System::Memory_1<T>>>
+> AsMut<crate::System::IEquatable_1<crate::System::Memory_1<T>>>
 for crate::System::Memory_1<T> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::Memory_1<T>> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::System::Memory_1<T>> {
         todo!()
     }
 }

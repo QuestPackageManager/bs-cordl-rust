@@ -154,7 +154,7 @@ impl crate::System::Xml::Schema::XsdDateTime {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_XsdDateTimeFlags0(
+    pub fn _ctor_Il2CppString_XsdDateTimeFlags0(
         &mut self,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         kinds: crate::System::Xml::Schema::XsdDateTimeFlags,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Datatype_NCName {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::Datatype_Name>,
+    __cordl_parent: crate::System::Xml::Schema::Datatype_Name,
 }
 #[cfg(feature = "System+Xml+Schema+Datatype_NCName")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+Datatype_NCName")]
 impl std::ops::Deref for crate::System::Xml::Schema::Datatype_NCName {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::Datatype_Name>;
+    type Target = crate::System::Xml::Schema::Datatype_Name;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

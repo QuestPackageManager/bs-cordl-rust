@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PS5AppInit {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::BSAppInit>,
+    __cordl_parent: crate::BeatSaber::Init::BSAppInit,
     pub _mainSystemInit: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MainSystemInit,
     >,
@@ -25,7 +25,9 @@ pub struct PS5AppInit {
         crate::UnityEngine::GameObject,
     >,
     pub _playerDataModel: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerDataModel>,
+        crate::Zenject::LazyInject_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerDataModel>,
+        >,
     >,
     pub _backgroundExecutionHelper: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SonyBackgroundExecutionHelper,
@@ -38,7 +40,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PS5AppInit")]
 impl std::ops::Deref for crate::GlobalNamespace::PS5AppInit {
-    type Target = quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::BSAppInit>;
+    type Target = crate::BeatSaber::Init::BSAppInit;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

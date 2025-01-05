@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Dns {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Net+Dns")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Dns")]
 impl std::ops::Deref for crate::System::Net::Dns {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -45,15 +45,11 @@ impl crate::System::Net::Dns {
         asyncResult: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Net::IPAddress>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Net::IPAddress>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("EndGetHostAddresses", (asyncResult))?;
         Ok(__cordl_ret.into())
@@ -69,15 +65,11 @@ impl crate::System::Net::Dns {
         hostNameOrAddress: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Net::IPAddress>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Net::IPAddress>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetHostAddresses", (hostNameOrAddress))?;
         Ok(__cordl_ret.into())
@@ -86,17 +78,21 @@ impl crate::System::Net::Dns {
         hostNameOrAddress: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Il2CppArray<
-                    quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        *mut crate::System::Net::IPAddress,
+                    >,
                 >,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Il2CppArray<
-                    quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        *mut crate::System::Net::IPAddress,
+                    >,
                 >,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
@@ -111,14 +107,14 @@ impl crate::System::Net::Dns {
         h_aliases: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    *mut quest_hook::libil2cpp::Il2CppString,
                 >,
             >,
         >,
         h_addr_list: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    *mut quest_hook::libil2cpp::Il2CppString,
                 >,
             >,
         >,
@@ -158,14 +154,14 @@ impl crate::System::Net::Dns {
         h_aliases: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    *mut quest_hook::libil2cpp::Il2CppString,
                 >,
             >,
         >,
         h_addr_list: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    *mut quest_hook::libil2cpp::Il2CppString,
                 >,
             >,
         >,
@@ -178,22 +174,22 @@ impl crate::System::Net::Dns {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetHostEntry_Gc0(
-        hostNameOrAddress: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Net::IPHostEntry>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::IPHostEntry> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetHostEntry", (hostNameOrAddress))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetHostEntry_Gc1(
+    pub fn GetHostEntry_IPAddress1(
         address: quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::IPHostEntry>,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::IPHostEntry> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetHostEntry", (address))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetHostEntry_Il2CppString0(
+        hostNameOrAddress: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::IPHostEntry>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::IPHostEntry> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetHostEntry", (hostNameOrAddress))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetHostName() -> quest_hook::libil2cpp::Result<
@@ -217,14 +213,10 @@ impl crate::System::Net::Dns {
         originalHostName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         h_name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         h_aliases: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
         h_addrlist: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::IPHostEntry>,
@@ -250,7 +242,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::Dns {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Dns_GetHostAddressesCallback {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "System+Net+Dns+GetHostAddressesCallback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -259,7 +251,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Dns+GetHostAddressesCallback")]
 impl std::ops::Deref for crate::System::Net::Dns_GetHostAddressesCallback {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -292,18 +284,14 @@ impl crate::System::Net::Dns_GetHostAddressesCallback {
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Net::IPAddress>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Net::IPAddress>,
         > = __cordl_object.invoke("EndInvoke", (result))?;
         Ok(__cordl_ret.into())
     }
@@ -312,18 +300,14 @@ impl crate::System::Net::Dns_GetHostAddressesCallback {
         hostName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Net::IPAddress>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Net::IPAddress>,
         > = __cordl_object.invoke("Invoke", (hostName))?;
         Ok(__cordl_ret.into())
     }

@@ -2,11 +2,19 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DetachedAllocator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    pub m_VertsPool: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Vertex>,
-    pub m_IndexPool: quest_hook::libil2cpp::Gc<u16>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub m_VertsPool: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::TempAllocator_1<
+            crate::UnityEngine::UIElements::Vertex,
+        >,
+    >,
+    pub m_IndexPool: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::TempAllocator_1<u16>,
+    >,
     pub m_MeshWriteDataPool: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MeshWriteData>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MeshWriteData>,
+        >,
     >,
     pub m_MeshWriteDataCount: i32,
     pub m_Disposed: bool,
@@ -18,7 +26,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UIR+DetachedAllocator")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::DetachedAllocator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

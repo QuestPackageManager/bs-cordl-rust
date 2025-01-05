@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StickDeadzoneProcessor {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
+    __cordl_parent: crate::UnityEngine::InputSystem::InputProcessor_1<
+        crate::UnityEngine::Vector2,
+    >,
     pub min: f32,
     pub max: f32,
 }
@@ -15,7 +17,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+InputSystem+Processors+StickDeadzoneProcessor")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Processors::StickDeadzoneProcessor {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>;
+    type Target = crate::UnityEngine::InputSystem::InputProcessor_1<
+        crate::UnityEngine::Vector2,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

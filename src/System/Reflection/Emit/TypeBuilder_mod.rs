@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeBuilder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Reflection::TypeInfo>,
+    __cordl_parent: crate::System::Reflection::TypeInfo,
 }
 #[cfg(feature = "System+Reflection+Emit+TypeBuilder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Reflection+Emit+TypeBuilder")]
 impl std::ops::Deref for crate::System::Reflection::Emit::TypeBuilder {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Reflection::TypeInfo>;
+    type Target = crate::System::Reflection::TypeInfo;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -41,9 +41,7 @@ impl crate::System::Reflection::Emit::TypeBuilder {
         binder: quest_hook::libil2cpp::Gc<crate::System::Reflection::Binder>,
         callConvention: crate::System::Reflection::CallingConventions,
         types: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         >,
         modifiers: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -71,7 +69,7 @@ impl crate::System::Reflection::Emit::TypeBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::ConstructorInfo>,
+                *mut crate::System::Reflection::ConstructorInfo,
             >,
         >,
     > {
@@ -80,29 +78,25 @@ impl crate::System::Reflection::Emit::TypeBuilder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::ConstructorInfo>,
+                *mut crate::System::Reflection::ConstructorInfo,
             >,
         > = __cordl_object.invoke("GetConstructors", (bindingAttr))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetCustomAttributes_Gc__cordl_bool1(
+    pub fn GetCustomAttributes_Type__cordl_bool1(
         &mut self,
         attributeType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         inherit: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         > = __cordl_object.invoke("GetCustomAttributes", (attributeType, inherit))?;
         Ok(__cordl_ret.into())
     }
@@ -111,18 +105,14 @@ impl crate::System::Reflection::Emit::TypeBuilder {
         inherit: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         > = __cordl_object.invoke("GetCustomAttributes", (inherit))?;
         Ok(__cordl_ret.into())
     }
@@ -156,18 +146,14 @@ impl crate::System::Reflection::Emit::TypeBuilder {
         bindingAttr: crate::System::Reflection::BindingFlags,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::EventInfo>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::EventInfo>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::EventInfo>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::EventInfo>,
         > = __cordl_object.invoke("GetEvents", (bindingAttr))?;
         Ok(__cordl_ret.into())
     }
@@ -191,18 +177,14 @@ impl crate::System::Reflection::Emit::TypeBuilder {
         bindingAttr: crate::System::Reflection::BindingFlags,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::FieldInfo>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::FieldInfo>,
         > = __cordl_object.invoke("GetFields", (bindingAttr))?;
         Ok(__cordl_ret.into())
     }
@@ -210,18 +192,14 @@ impl crate::System::Reflection::Emit::TypeBuilder {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         > = __cordl_object.invoke("GetInterfaces", ())?;
         Ok(__cordl_ret.into())
     }
@@ -231,7 +209,7 @@ impl crate::System::Reflection::Emit::TypeBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+                *mut crate::System::Reflection::MemberInfo,
             >,
         >,
     > {
@@ -240,7 +218,7 @@ impl crate::System::Reflection::Emit::TypeBuilder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+                *mut crate::System::Reflection::MemberInfo,
             >,
         > = __cordl_object.invoke("GetMembers", (bindingAttr))?;
         Ok(__cordl_ret.into())
@@ -252,9 +230,7 @@ impl crate::System::Reflection::Emit::TypeBuilder {
         binder: quest_hook::libil2cpp::Gc<crate::System::Reflection::Binder>,
         callConvention: crate::System::Reflection::CallingConventions,
         types: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         >,
         modifiers: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -282,7 +258,7 @@ impl crate::System::Reflection::Emit::TypeBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+                *mut crate::System::Reflection::MethodInfo,
             >,
         >,
     > {
@@ -291,7 +267,7 @@ impl crate::System::Reflection::Emit::TypeBuilder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+                *mut crate::System::Reflection::MethodInfo,
             >,
         > = __cordl_object.invoke("GetMethods", (bindingAttr))?;
         Ok(__cordl_ret.into())
@@ -314,7 +290,7 @@ impl crate::System::Reflection::Emit::TypeBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+                *mut crate::System::Reflection::PropertyInfo,
             >,
         >,
     > {
@@ -323,7 +299,7 @@ impl crate::System::Reflection::Emit::TypeBuilder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+                *mut crate::System::Reflection::PropertyInfo,
             >,
         > = __cordl_object.invoke("GetProperties", (bindingAttr))?;
         Ok(__cordl_ret.into())
@@ -335,9 +311,7 @@ impl crate::System::Reflection::Emit::TypeBuilder {
         binder: quest_hook::libil2cpp::Gc<crate::System::Reflection::Binder>,
         returnType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         types: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         >,
         modifiers: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -373,9 +347,7 @@ impl crate::System::Reflection::Emit::TypeBuilder {
         binder: quest_hook::libil2cpp::Gc<crate::System::Reflection::Binder>,
         target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
         modifiers: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -384,9 +356,7 @@ impl crate::System::Reflection::Emit::TypeBuilder {
         >,
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
         namedParameters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

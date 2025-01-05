@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SimplePriorityQueue_1<TItem: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TItem, f32>,
+    __cordl_parent: crate::Priority_Queue::SimplePriorityQueue_2<TItem, f32>,
     __cordl_phantom_TItem: std::marker::PhantomData<TItem>,
 }
 #[cfg(feature = "Priority_Queue+SimplePriorityQueue_1")]
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Priority_Queue+SimplePriorityQueue_1")]
 impl<TItem: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Priority_Queue::SimplePriorityQueue_1<TItem> {
-    type Target = quest_hook::libil2cpp::Gc<TItem, f32>;
+    type Target = crate::Priority_Queue::SimplePriorityQueue_2<TItem, f32>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,8 +40,8 @@ impl<
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
-        comparer: quest_hook::libil2cpp::Gc<f32>,
+    pub fn New_Comparison_1_2(
+        comparer: quest_hook::libil2cpp::Gc<crate::System::Comparison_1<f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -53,8 +53,10 @@ impl<
             .invoke_void(".ctor", (comparer))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc2(
-        comparer: quest_hook::libil2cpp::Gc<f32>,
+    pub fn New_IComparer_1_1(
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IComparer_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -80,9 +82,9 @@ impl<
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Comparison_1_2(
         &mut self,
-        comparer: quest_hook::libil2cpp::Gc<f32>,
+        comparer: quest_hook::libil2cpp::Gc<crate::System::Comparison_1<f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -95,9 +97,11 @@ impl<
             .invoke(".ctor", (comparer))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_IComparer_1_1(
         &mut self,
-        comparer: quest_hook::libil2cpp::Gc<f32>,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IComparer_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

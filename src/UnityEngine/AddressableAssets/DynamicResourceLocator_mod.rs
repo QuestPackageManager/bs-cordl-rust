@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DynamicResourceLocator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Addressables: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::AddressableAssets::AddressablesImpl,
     >,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+AddressableAssets+DynamicResourceLocator")]
 impl std::ops::Deref for crate::UnityEngine::AddressableAssets::DynamicResourceLocator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -36,8 +36,10 @@ impl crate::UnityEngine::AddressableAssets::DynamicResourceLocator {
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         locations: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+                >,
             >,
         >,
         locName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -62,8 +64,10 @@ impl crate::UnityEngine::AddressableAssets::DynamicResourceLocator {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         locations: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+                crate::System::Collections::Generic::IList_1<
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+                    >,
                 >,
             >,
         >,
@@ -103,8 +107,10 @@ impl crate::UnityEngine::AddressableAssets::DynamicResourceLocator {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+                >,
             >,
         >,
     > {
@@ -112,8 +118,10 @@ impl crate::UnityEngine::AddressableAssets::DynamicResourceLocator {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+                >,
             >,
         > = __cordl_object.invoke("get_AllLocations", ())?;
         Ok(__cordl_ret.into())
@@ -135,14 +143,18 @@ impl crate::UnityEngine::AddressableAssets::DynamicResourceLocator {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         > = __cordl_object.invoke("get_Keys", ())?;
         Ok(__cordl_ret.into())
     }
@@ -171,30 +183,20 @@ for crate::UnityEngine::AddressableAssets::DynamicResourceLocator {
     }
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+DynamicResourceLocator")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
-    >,
-> for crate::UnityEngine::AddressableAssets::DynamicResourceLocator {
+impl AsRef<crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator>
+for crate::UnityEngine::AddressableAssets::DynamicResourceLocator {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
-    > {
+    ) -> &crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+DynamicResourceLocator")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
-    >,
-> for crate::UnityEngine::AddressableAssets::DynamicResourceLocator {
+impl AsMut<crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator>
+for crate::UnityEngine::AddressableAssets::DynamicResourceLocator {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
-    > {
+    ) -> &mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator {
         unsafe { std::mem::transmute(self) }
     }
 }

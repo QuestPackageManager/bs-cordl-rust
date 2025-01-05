@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GroupBox {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::BindableElement,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::BindableElement,
     pub m_TitleLabel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Label>,
 }
 #[cfg(feature = "UnityEngine+UIElements+GroupBox")]
@@ -14,9 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+GroupBox")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::GroupBox {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::BindableElement,
-    >;
+    type Target = crate::UnityEngine::UIElements::BindableElement;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,7 +36,7 @@ impl crate::UnityEngine::UIElements::GroupBox {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Il2CppString1(
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -85,7 +81,7 @@ impl crate::UnityEngine::UIElements::GroupBox {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -118,20 +114,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Group
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+GroupBox")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGroupBox>>
+impl AsRef<crate::UnityEngine::UIElements::IGroupBox>
 for crate::UnityEngine::UIElements::GroupBox {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGroupBox> {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IGroupBox {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+GroupBox")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGroupBox>>
+impl AsMut<crate::UnityEngine::UIElements::IGroupBox>
 for crate::UnityEngine::UIElements::GroupBox {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGroupBox> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IGroupBox {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -139,7 +131,7 @@ for crate::UnityEngine::UIElements::GroupBox {
 #[repr(C)]
 #[derive(Debug)]
 pub struct GroupBox_UxmlFactory {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::GroupBox>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::GroupBox_UxmlTraits>,
     >,
@@ -151,7 +143,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+GroupBox+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::GroupBox_UxmlFactory {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::GroupBox>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::GroupBox_UxmlTraits>,
     >;
@@ -199,9 +191,7 @@ for crate::UnityEngine::UIElements::GroupBox_UxmlFactory {
 #[repr(C)]
 #[derive(Debug)]
 pub struct GroupBox_UxmlTraits {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
     pub m_Text: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
     >,
@@ -213,9 +203,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+GroupBox+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::GroupBox_UxmlTraits {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
-    >;
+    type Target = crate::UnityEngine::UIElements::BindableElement_UxmlTraits;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

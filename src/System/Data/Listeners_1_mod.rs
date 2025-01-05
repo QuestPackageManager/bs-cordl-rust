@@ -2,9 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Listeners_1<TElem: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    pub _listeners: quest_hook::libil2cpp::Gc<TElem>,
-    pub _filter: quest_hook::libil2cpp::Gc<TElem, TElem, bool>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _listeners: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<TElem>,
+    >,
+    pub _filter: quest_hook::libil2cpp::Gc<
+        crate::System::Data::Listeners_1_Func_2<TElem, TElem, bool>,
+    >,
     pub _objectID: i32,
     pub _listenerReaderCount: i32,
     __cordl_phantom_TElem: std::marker::PhantomData<TElem>,
@@ -17,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Data+Listeners_1")]
 impl<TElem: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Data::Listeners_1<TElem> {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -74,7 +78,9 @@ impl<TElem: quest_hook::libil2cpp::Type> crate::System::Data::Listeners_1<TElem>
     }
     pub fn New(
         ObjectID: i32,
-        notifyFilter: quest_hook::libil2cpp::Gc<TElem, TElem, bool>,
+        notifyFilter: quest_hook::libil2cpp::Gc<
+            crate::System::Data::Listeners_1_Func_2<TElem, TElem, bool>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TElem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -91,7 +97,9 @@ impl<TElem: quest_hook::libil2cpp::Type> crate::System::Data::Listeners_1<TElem>
         arg1: T1,
         arg2: T2,
         arg3: T3,
-        action: quest_hook::libil2cpp::Gc<TElem, TElem, T1, T2, T3>,
+        action: quest_hook::libil2cpp::Gc<
+            crate::System::Data::Listeners_1_Action_4<TElem, TElem, T1, T2, T3>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TElem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -143,7 +151,9 @@ impl<TElem: quest_hook::libil2cpp::Type> crate::System::Data::Listeners_1<TElem>
     pub fn _ctor(
         &mut self,
         ObjectID: i32,
-        notifyFilter: quest_hook::libil2cpp::Gc<TElem, TElem, bool>,
+        notifyFilter: quest_hook::libil2cpp::Gc<
+            crate::System::Data::Listeners_1_Func_2<TElem, TElem, bool>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TElem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -188,7 +198,7 @@ pub struct Listeners_1_Action_4<
     T3: quest_hook::libil2cpp::Type,
     T4: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_TElem: std::marker::PhantomData<TElem>,
     __cordl_phantom_T1: std::marker::PhantomData<T1>,
     __cordl_phantom_T2: std::marker::PhantomData<T2>,
@@ -208,7 +218,7 @@ impl<
     T3: quest_hook::libil2cpp::Type,
     T4: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::System::Data::Listeners_1_Action_4<TElem, T1, T2, T3, T4> {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -331,7 +341,7 @@ pub struct Listeners_1_Func_2<
     T1: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_TElem: std::marker::PhantomData<TElem>,
     __cordl_phantom_T1: std::marker::PhantomData<T1>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
@@ -347,7 +357,7 @@ impl<
     T1: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::System::Data::Listeners_1_Func_2<TElem, T1, TResult> {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

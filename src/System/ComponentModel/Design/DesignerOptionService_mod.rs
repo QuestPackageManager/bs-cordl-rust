@@ -4,9 +4,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DesignerOptionCollection_DesignerOptionService_WrappedPropertyDescriptor {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::ComponentModel::PropertyDescriptor,
-    >,
+    __cordl_parent: crate::System::ComponentModel::PropertyDescriptor,
     pub target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub property: quest_hook::libil2cpp::Gc<
         crate::System::ComponentModel::PropertyDescriptor,
@@ -26,9 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::System::ComponentModel::Design::DesignerOptionCollection_DesignerOptionService_WrappedPropertyDescriptor {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::ComponentModel::PropertyDescriptor,
-    >;
+    type Target = crate::System::ComponentModel::PropertyDescriptor;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -189,9 +185,7 @@ for crate::System::ComponentModel::Design::DesignerOptionCollection_DesignerOpti
 #[repr(C)]
 #[derive(Debug)]
 pub struct DesignerOptionConverter_DesignerOptionService_OptionPropertyDescriptor {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::ComponentModel::PropertyDescriptor,
-    >,
+    __cordl_parent: crate::System::ComponentModel::PropertyDescriptor,
     pub _option: quest_hook::libil2cpp::Gc<
         crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionCollection,
     >,
@@ -210,9 +204,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::System::ComponentModel::Design::DesignerOptionConverter_DesignerOptionService_OptionPropertyDescriptor {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::ComponentModel::PropertyDescriptor,
-    >;
+    type Target = crate::System::ComponentModel::PropertyDescriptor;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -356,7 +348,7 @@ for crate::System::ComponentModel::Design::DesignerOptionConverter_DesignerOptio
 #[repr(C)]
 #[derive(Debug)]
 pub struct DesignerOptionService {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+ComponentModel+Design+DesignerOptionService")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -366,7 +358,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+ComponentModel+Design+DesignerOptionService")]
 impl std::ops::Deref for crate::System::ComponentModel::Design::DesignerOptionService {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -418,7 +410,7 @@ for crate::System::ComponentModel::Design::DesignerOptionService {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DesignerOptionService_DesignerOptionCollection {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _service: quest_hook::libil2cpp::Gc<
         crate::System::ComponentModel::Design::DesignerOptionService,
     >,
@@ -442,7 +434,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionCollection {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -573,22 +565,18 @@ for crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionC
 #[cfg(
     feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionCollection"
 )]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
+impl AsRef<crate::System::Collections::ICollection>
 for crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionCollection {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(
     feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionCollection"
 )]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
+impl AsMut<crate::System::Collections::ICollection>
 for crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionCollection {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -598,9 +586,7 @@ for crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionC
 #[repr(C)]
 #[derive(Debug)]
 pub struct DesignerOptionService_DesignerOptionConverter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::ComponentModel::TypeConverter,
-    >,
+    __cordl_parent: crate::System::ComponentModel::TypeConverter,
 }
 #[cfg(
     feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionConverter"
@@ -615,9 +601,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionConverter {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::ComponentModel::TypeConverter,
-    >;
+    type Target = crate::System::ComponentModel::TypeConverter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -665,9 +649,7 @@ impl crate::System::ComponentModel::Design::DesignerOptionService_DesignerOption
         >,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         attributes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<

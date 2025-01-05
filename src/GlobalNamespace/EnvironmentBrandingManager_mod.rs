@@ -2,16 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentBrandingManager {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _brandingObjects: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
     >,
     pub _replacementBrandingObjects: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
     >,
     pub _initData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::EnvironmentBrandingManager_InitData,
@@ -24,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "EnvironmentBrandingManager")]
 impl std::ops::Deref for crate::GlobalNamespace::EnvironmentBrandingManager {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -81,7 +77,7 @@ for crate::GlobalNamespace::EnvironmentBrandingManager {
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentBrandingManager_InitData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub hideBranding: bool,
 }
 #[cfg(feature = "EnvironmentBrandingManager+InitData")]
@@ -92,7 +88,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "EnvironmentBrandingManager+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::EnvironmentBrandingManager_InitData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

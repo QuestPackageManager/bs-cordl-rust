@@ -2,14 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PgpSignatureList {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpObject,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpObject,
     pub sigs: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature,
-            >,
+            *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature,
         >,
     >,
 }
@@ -21,9 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpSignatureList")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureList {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpObject,
-    >;
+    type Target = crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -50,12 +44,10 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureList {
         > = __cordl_object.invoke("Get", (index))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_Il2CppArray0(
         sigs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature,
-                >,
+                *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -65,7 +57,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureList {
             .invoke_void(".ctor", (sigs))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_PgpSignature1(
         sig: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature,
         >,
@@ -76,13 +68,11 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureList {
             .invoke_void(".ctor", (sig))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Il2CppArray0(
         &mut self,
         sigs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature,
-                >,
+                *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -93,7 +83,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureList {
             .invoke(".ctor", (sigs))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_PgpSignature1(
         &mut self,
         sig: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature,

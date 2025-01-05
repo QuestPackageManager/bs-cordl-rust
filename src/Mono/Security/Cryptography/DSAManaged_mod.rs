@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DSAManaged {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Security::Cryptography::DSA,
-    >,
+    __cordl_parent: crate::System::Security::Cryptography::DSA,
     pub keypairGenerated: bool,
     pub m_disposed: bool,
     pub p: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -30,7 +28,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Security+Cryptography+DSAManaged")]
 impl std::ops::Deref for crate::Mono::Security::Cryptography::DSAManaged {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::DSA>;
+    type Target = crate::System::Security::Cryptography::DSA;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -250,7 +248,7 @@ for crate::Mono::Security::Cryptography::DSAManaged {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DSAManaged_KeyGeneratedEventHandler {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "Mono+Security+Cryptography+DSAManaged+KeyGeneratedEventHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -261,7 +259,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Mono+Security+Cryptography+DSAManaged+KeyGeneratedEventHandler")]
 impl std::ops::Deref
 for crate::Mono::Security::Cryptography::DSAManaged_KeyGeneratedEventHandler {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

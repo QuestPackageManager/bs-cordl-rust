@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionToggle {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::UIBehaviour,
-    >,
+    __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
     pub _missionToggleWasPressedSignal: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::Signal,
     >,
@@ -19,7 +17,9 @@ pub struct MissionToggle {
     pub _invertColor: crate::UnityEngine::Color,
     pub _highlightColor: crate::UnityEngine::Color,
     pub selectionDidChangeEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionToggle>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionToggle>,
+        >,
     >,
     pub _selected: bool,
     pub _highlighted: bool,
@@ -33,9 +33,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MissionToggle")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionToggle {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::UIBehaviour,
-    >;
+    type Target = crate::UnityEngine::EventSystems::UIBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -189,7 +187,9 @@ impl crate::GlobalNamespace::MissionToggle {
     pub fn add_selectionDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionToggle>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionToggle>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -223,7 +223,9 @@ impl crate::GlobalNamespace::MissionToggle {
     pub fn remove_selectionDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionToggle>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionToggle>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -277,118 +279,72 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MissionToggle
     }
 }
 #[cfg(feature = "MissionToggle")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
-> for crate::GlobalNamespace::MissionToggle {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IEventSystemHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "MissionToggle")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
-> for crate::GlobalNamespace::MissionToggle {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IEventSystemHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "MissionToggle")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerClickHandler>,
-> for crate::GlobalNamespace::MissionToggle {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerClickHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "MissionToggle")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerClickHandler>,
-> for crate::GlobalNamespace::MissionToggle {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerClickHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "MissionToggle")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerEnterHandler>,
-> for crate::GlobalNamespace::MissionToggle {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerEnterHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "MissionToggle")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerEnterHandler>,
-> for crate::GlobalNamespace::MissionToggle {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerEnterHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "MissionToggle")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerExitHandler>,
-> for crate::GlobalNamespace::MissionToggle {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerExitHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "MissionToggle")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerExitHandler>,
-> for crate::GlobalNamespace::MissionToggle {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerExitHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "MissionToggle")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISubmitHandler>>
+impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
 for crate::GlobalNamespace::MissionToggle {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISubmitHandler> {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MissionToggle")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISubmitHandler>>
+impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
 for crate::GlobalNamespace::MissionToggle {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::ISubmitHandler,
-    > {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MissionToggle")]
+impl AsRef<crate::UnityEngine::EventSystems::IPointerClickHandler>
+for crate::GlobalNamespace::MissionToggle {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerClickHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MissionToggle")]
+impl AsMut<crate::UnityEngine::EventSystems::IPointerClickHandler>
+for crate::GlobalNamespace::MissionToggle {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerClickHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MissionToggle")]
+impl AsRef<crate::UnityEngine::EventSystems::IPointerEnterHandler>
+for crate::GlobalNamespace::MissionToggle {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerEnterHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MissionToggle")]
+impl AsMut<crate::UnityEngine::EventSystems::IPointerEnterHandler>
+for crate::GlobalNamespace::MissionToggle {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerEnterHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MissionToggle")]
+impl AsRef<crate::UnityEngine::EventSystems::IPointerExitHandler>
+for crate::GlobalNamespace::MissionToggle {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerExitHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MissionToggle")]
+impl AsMut<crate::UnityEngine::EventSystems::IPointerExitHandler>
+for crate::GlobalNamespace::MissionToggle {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerExitHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MissionToggle")]
+impl AsRef<crate::UnityEngine::EventSystems::ISubmitHandler>
+for crate::GlobalNamespace::MissionToggle {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::ISubmitHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MissionToggle")]
+impl AsMut<crate::UnityEngine::EventSystems::ISubmitHandler>
+for crate::GlobalNamespace::MissionToggle {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::ISubmitHandler {
         unsafe { std::mem::transmute(self) }
     }
 }

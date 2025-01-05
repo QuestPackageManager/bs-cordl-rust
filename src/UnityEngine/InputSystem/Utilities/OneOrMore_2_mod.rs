@@ -43,18 +43,20 @@ impl<
     >;
     pub fn GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TValue>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<TValue>,
+        >,
+    >
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
         TList: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TValue> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetEnumerator",
-            (),
-        )?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<TValue>,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "GetEnumerator", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerable_GetEnumerator(
@@ -180,9 +182,9 @@ impl<
 impl<
     TValue: quest_hook::libil2cpp::Type,
     TList: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<TValue>>
+> AsRef<crate::System::Collections::Generic::IEnumerable_1<TValue>>
 for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2<TValue, TList> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TValue> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<TValue> {
         todo!()
     }
 }
@@ -190,73 +192,77 @@ for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2<TValue, TList> {
 impl<
     TValue: quest_hook::libil2cpp::Type,
     TList: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<TValue>>
-for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2<TValue, TList> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TValue> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2")]
-impl<
-    TValue: quest_hook::libil2cpp::Type,
-    TList: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<TValue>>
-for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2<TValue, TList> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TValue> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2")]
-impl<
-    TValue: quest_hook::libil2cpp::Type,
-    TList: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<TValue>>
-for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2<TValue, TList> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TValue> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2")]
-impl<
-    TValue: quest_hook::libil2cpp::Type,
-    TList: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<TValue>>
-for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2<TValue, TList> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TValue> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2")]
-impl<
-    TValue: quest_hook::libil2cpp::Type,
-    TList: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<TValue>>
-for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2<TValue, TList> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TValue> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2")]
-impl<
-    TValue: quest_hook::libil2cpp::Type,
-    TList: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
-for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2<TValue, TList> {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2")]
-impl<
-    TValue: quest_hook::libil2cpp::Type,
-    TList: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+> AsMut<crate::System::Collections::Generic::IEnumerable_1<TValue>>
 for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2<TValue, TList> {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<TValue> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2")]
+impl<
+    TValue: quest_hook::libil2cpp::Type,
+    TList: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IReadOnlyCollection_1<TValue>>
+for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2<TValue, TList> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IReadOnlyCollection_1<TValue> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2")]
+impl<
+    TValue: quest_hook::libil2cpp::Type,
+    TList: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IReadOnlyCollection_1<TValue>>
+for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2<TValue, TList> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IReadOnlyCollection_1<TValue> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2")]
+impl<
+    TValue: quest_hook::libil2cpp::Type,
+    TList: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IReadOnlyList_1<TValue>>
+for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2<TValue, TList> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IReadOnlyList_1<TValue> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2")]
+impl<
+    TValue: quest_hook::libil2cpp::Type,
+    TList: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IReadOnlyList_1<TValue>>
+for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2<TValue, TList> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IReadOnlyList_1<TValue> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2")]
+impl<
+    TValue: quest_hook::libil2cpp::Type,
+    TList: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::IEnumerable>
+for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2<TValue, TList> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2")]
+impl<
+    TValue: quest_hook::libil2cpp::Type,
+    TList: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::IEnumerable>
+for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2<TValue, TList> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
         todo!()
     }
 }
@@ -267,7 +273,7 @@ pub struct OneOrMore_2_Enumerator<
     TValue: quest_hook::libil2cpp::Type,
     TList: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Index: i32,
     pub m_List: crate::UnityEngine::InputSystem::Utilities::OneOrMore_2<TValue, TList>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
@@ -285,7 +291,7 @@ impl<
     TList: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2_Enumerator<TValue, TList> {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -425,9 +431,9 @@ for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2_Enumerator<TValue, T
 impl<
     TValue: quest_hook::libil2cpp::Type,
     TList: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<TValue>>
+> AsRef<crate::System::Collections::Generic::IEnumerator_1<TValue>>
 for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2_Enumerator<TValue, TList> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TValue> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerator_1<TValue> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -435,33 +441,11 @@ for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2_Enumerator<TValue, T
 impl<
     TValue: quest_hook::libil2cpp::Type,
     TList: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<TValue>>
-for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2_Enumerator<TValue, TList> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TValue> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2+Enumerator")]
-impl<
-    TValue: quest_hook::libil2cpp::Type,
-    TList: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
-for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2_Enumerator<TValue, TList> {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2+Enumerator")]
-impl<
-    TValue: quest_hook::libil2cpp::Type,
-    TList: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
+> AsMut<crate::System::Collections::Generic::IEnumerator_1<TValue>>
 for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2_Enumerator<TValue, TList> {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
+    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<TValue> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -469,9 +453,9 @@ for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2_Enumerator<TValue, T
 impl<
     TValue: quest_hook::libil2cpp::Type,
     TList: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+> AsRef<crate::System::Collections::IEnumerator>
 for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2_Enumerator<TValue, TList> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -479,9 +463,29 @@ for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2_Enumerator<TValue, T
 impl<
     TValue: quest_hook::libil2cpp::Type,
     TList: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+> AsMut<crate::System::Collections::IEnumerator>
 for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2_Enumerator<TValue, TList> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2+Enumerator")]
+impl<
+    TValue: quest_hook::libil2cpp::Type,
+    TList: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2_Enumerator<TValue, TList> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2+Enumerator")]
+impl<
+    TValue: quest_hook::libil2cpp::Type,
+    TList: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2_Enumerator<TValue, TList> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }

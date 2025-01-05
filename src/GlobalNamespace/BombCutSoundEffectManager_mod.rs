@@ -2,12 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BombCutSoundEffectManager {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _volume: f32,
     pub _bombExplosionAudioClips: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::AudioClip>,
     >,
     pub _beatmapObjectManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapObjectManager,
@@ -17,7 +15,9 @@ pub struct BombCutSoundEffectManager {
         crate::GlobalNamespace::BombCutSoundEffect_Pool,
     >,
     pub _randomSoundPicker: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+        crate::GlobalNamespace::RandomObjectPicker_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+        >,
     >,
 }
 #[cfg(feature = "BombCutSoundEffectManager")]
@@ -27,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BombCutSoundEffectManager")]
 impl std::ops::Deref for crate::GlobalNamespace::BombCutSoundEffectManager {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

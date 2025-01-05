@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SqlChars {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _rgchBuf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     pub _lCurLen: i64,
     pub _stream: quest_hook::libil2cpp::Gc<
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+SqlTypes+SqlChars")]
 impl std::ops::Deref for crate::System::Data::SqlTypes::SqlChars {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -68,7 +68,7 @@ impl crate::System::Data::SqlTypes::SqlChars {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Il2CppArray1(
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -170,7 +170,7 @@ impl crate::System::Data::SqlTypes::SqlChars {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Il2CppArray1(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -251,68 +251,44 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::SqlTypes::SqlCha
     }
 }
 #[cfg(feature = "System+Data+SqlTypes+SqlChars")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Data::SqlTypes::INullable>>
+impl AsRef<crate::System::Data::SqlTypes::INullable>
 for crate::System::Data::SqlTypes::SqlChars {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Data::SqlTypes::INullable> {
+    fn as_ref(&self) -> &crate::System::Data::SqlTypes::INullable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Data+SqlTypes+SqlChars")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Data::SqlTypes::INullable>>
+impl AsMut<crate::System::Data::SqlTypes::INullable>
 for crate::System::Data::SqlTypes::SqlChars {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Data::SqlTypes::INullable> {
+    fn as_mut(&mut self) -> &mut crate::System::Data::SqlTypes::INullable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Data+SqlTypes+SqlChars")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::Data::SqlTypes::SqlChars {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Data::SqlTypes::SqlChars {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Data+SqlTypes+SqlChars")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::Data::SqlTypes::SqlChars {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Data::SqlTypes::SqlChars {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Data+SqlTypes+SqlChars")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::IXmlSerializable>,
-> for crate::System::Data::SqlTypes::SqlChars {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Serialization::IXmlSerializable,
-    > {
+impl AsRef<crate::System::Xml::Serialization::IXmlSerializable>
+for crate::System::Data::SqlTypes::SqlChars {
+    fn as_ref(&self) -> &crate::System::Xml::Serialization::IXmlSerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Data+SqlTypes+SqlChars")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::IXmlSerializable>,
-> for crate::System::Data::SqlTypes::SqlChars {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Serialization::IXmlSerializable,
-    > {
+impl AsMut<crate::System::Xml::Serialization::IXmlSerializable>
+for crate::System::Data::SqlTypes::SqlChars {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::Serialization::IXmlSerializable {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusAdvancedHapticFeedbackPlayer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IVRPlatformHelper,
     >,
@@ -10,12 +10,16 @@ pub struct OculusAdvancedHapticFeedbackPlayer {
         crate::GlobalNamespace::OculusVRHelper,
     >,
     pub _hapticPlayerStatesDictionary: quest_hook::libil2cpp::Gc<
-        crate::System::ValueTuple_2<
-            quest_hook::libil2cpp::Gc<crate::Libraries::HM::HMLib::VR::HapticPresetSO>,
-            crate::UnityEngine::XR::XRNode,
-        >,
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer_HapticPlayerState,
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::System::ValueTuple_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::Libraries::HM::HMLib::VR::HapticPresetSO,
+                >,
+                crate::UnityEngine::XR::XRNode,
+            >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer_HapticPlayerState,
+            >,
         >,
     >,
     pub _hasAtLeastOneLoopingClipPlaying: bool,
@@ -30,7 +34,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OculusAdvancedHapticFeedbackPlayer")]
 impl std::ops::Deref for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -158,64 +162,58 @@ for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
     }
 }
 #[cfg(feature = "OculusAdvancedHapticFeedbackPlayer")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IHapticFeedbackPlayer>>
+impl AsRef<crate::GlobalNamespace::IHapticFeedbackPlayer>
 for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IHapticFeedbackPlayer> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IHapticFeedbackPlayer {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OculusAdvancedHapticFeedbackPlayer")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IHapticFeedbackPlayer>>
+impl AsMut<crate::GlobalNamespace::IHapticFeedbackPlayer>
 for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IHapticFeedbackPlayer> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IHapticFeedbackPlayer {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OculusAdvancedHapticFeedbackPlayer")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsRef<crate::System::IDisposable>
 for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OculusAdvancedHapticFeedbackPlayer")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsMut<crate::System::IDisposable>
 for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OculusAdvancedHapticFeedbackPlayer")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>>
+impl AsRef<crate::Zenject::IInitializable>
 for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable> {
+    fn as_ref(&self) -> &crate::Zenject::IInitializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OculusAdvancedHapticFeedbackPlayer")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>>
+impl AsMut<crate::Zenject::IInitializable>
 for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IInitializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OculusAdvancedHapticFeedbackPlayer")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::ITickable>>
+impl AsRef<crate::Zenject::ITickable>
 for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::ITickable> {
+    fn as_ref(&self) -> &crate::Zenject::ITickable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OculusAdvancedHapticFeedbackPlayer")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::ITickable>>
+impl AsMut<crate::Zenject::ITickable>
 for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::ITickable> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::ITickable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -223,7 +221,7 @@ for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusAdvancedHapticFeedbackPlayer_HapticPlayerState {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub player: quest_hook::libil2cpp::Gc<crate::Oculus::Haptics::HapticClipPlayer>,
     pub lastFrameTriggered: i32,
     pub isPlayingLoopingClip: bool,
@@ -237,7 +235,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OculusAdvancedHapticFeedbackPlayer+HapticPlayerState")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer_HapticPlayerState {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

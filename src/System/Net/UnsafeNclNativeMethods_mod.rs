@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HttpApi_UnsafeNclNativeMethods_HTTP_REQUEST_HEADER_ID {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Net+UnsafeNclNativeMethods+HttpApi+HTTP_REQUEST_HEADER_ID")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Net+UnsafeNclNativeMethods+HttpApi+HTTP_REQUEST_HEADER_ID")]
 impl std::ops::Deref
 for crate::System::Net::HttpApi_UnsafeNclNativeMethods_HTTP_REQUEST_HEADER_ID {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -53,7 +53,7 @@ for crate::System::Net::HttpApi_UnsafeNclNativeMethods_HTTP_REQUEST_HEADER_ID {
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnsafeNclNativeMethods {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Net+UnsafeNclNativeMethods")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -62,7 +62,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+UnsafeNclNativeMethods")]
 impl std::ops::Deref for crate::System::Net::UnsafeNclNativeMethods {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -93,7 +93,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::UnsafeNclNativeMe
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnsafeNclNativeMethods_HttpApi {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Net+UnsafeNclNativeMethods+HttpApi")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -102,7 +102,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+UnsafeNclNativeMethods+HttpApi")]
 impl std::ops::Deref for crate::System::Net::UnsafeNclNativeMethods_HttpApi {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -132,7 +132,7 @@ for crate::System::Net::UnsafeNclNativeMethods_HttpApi {
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnsafeNclNativeMethods_SecureStringHelper {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Net+UnsafeNclNativeMethods+SecureStringHelper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -142,7 +142,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+UnsafeNclNativeMethods+SecureStringHelper")]
 impl std::ops::Deref for crate::System::Net::UnsafeNclNativeMethods_SecureStringHelper {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

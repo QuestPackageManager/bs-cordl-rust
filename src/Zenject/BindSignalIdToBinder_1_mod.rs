@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BindSignalIdToBinder_1<TSignal: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TSignal>,
+    __cordl_parent: crate::Zenject::BindSignalToBinder_1<TSignal>,
     __cordl_phantom_TSignal: std::marker::PhantomData<TSignal>,
 }
 #[cfg(feature = "Zenject+BindSignalIdToBinder_1")]
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Zenject+BindSignalIdToBinder_1")]
 impl<TSignal: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::BindSignalIdToBinder_1<TSignal> {
-    type Target = quest_hook::libil2cpp::Gc<TSignal>;
+    type Target = crate::Zenject::BindSignalToBinder_1<TSignal>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -46,7 +46,9 @@ impl<
     pub fn WithId(
         &mut self,
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TSignal>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::BindSignalToBinder_1<TSignal>>,
+    >
     where
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -54,15 +56,14 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TSignal> = __cordl_object
-            .invoke("WithId", (identifier))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::BindSignalToBinder_1<TSignal>,
+        > = __cordl_object.invoke("WithId", (identifier))?;
         Ok(__cordl_ret.into())
     }
     pub fn __zenCreate(
         P_0: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

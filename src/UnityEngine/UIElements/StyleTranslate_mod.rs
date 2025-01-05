@@ -23,7 +23,7 @@ for crate::UnityEngine::UIElements::StyleTranslate {
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleTranslate")]
 impl crate::UnityEngine::UIElements::StyleTranslate {
-    pub fn Equals_Gc1(
+    pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -141,38 +141,50 @@ impl crate::UnityEngine::UIElements::StyleTranslate {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleTranslate")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleTranslate>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleTranslate>>
 for crate::UnityEngine::UIElements::StyleTranslate {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleTranslate> {
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleTranslate> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleTranslate")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleTranslate>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleTranslate>>
 for crate::UnityEngine::UIElements::StyleTranslate {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleTranslate> {
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::StyleTranslate,
+    > {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleTranslate")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Translate>>
-for crate::UnityEngine::UIElements::StyleTranslate {
+impl AsRef<
+    crate::UnityEngine::UIElements::IStyleValue_1<
+        crate::UnityEngine::UIElements::Translate,
+    >,
+> for crate::UnityEngine::UIElements::StyleTranslate {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Translate> {
+    ) -> &crate::UnityEngine::UIElements::IStyleValue_1<
+        crate::UnityEngine::UIElements::Translate,
+    > {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleTranslate")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Translate>>
-for crate::UnityEngine::UIElements::StyleTranslate {
+impl AsMut<
+    crate::UnityEngine::UIElements::IStyleValue_1<
+        crate::UnityEngine::UIElements::Translate,
+    >,
+> for crate::UnityEngine::UIElements::StyleTranslate {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Translate> {
+    ) -> &mut crate::UnityEngine::UIElements::IStyleValue_1<
+        crate::UnityEngine::UIElements::Translate,
+    > {
         todo!()
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ViewControllerBase {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub didActivateEvent: quest_hook::libil2cpp::Gc<
         crate::HMUI::ViewControllerBase_DidActivateDelegate,
     >,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+ViewControllerBase")]
 impl std::ops::Deref for crate::HMUI::ViewControllerBase {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -145,7 +145,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::ViewControllerBase {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ViewControllerBase_DidActivateDelegate {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "HMUI+ViewControllerBase+DidActivateDelegate")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -154,7 +154,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+ViewControllerBase+DidActivateDelegate")]
 impl std::ops::Deref for crate::HMUI::ViewControllerBase_DidActivateDelegate {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -257,7 +257,7 @@ for crate::HMUI::ViewControllerBase_DidActivateDelegate {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ViewControllerBase_DidDeactivateDelegate {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "HMUI+ViewControllerBase+DidDeactivateDelegate")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -266,7 +266,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+ViewControllerBase+DidDeactivateDelegate")]
 impl std::ops::Deref for crate::HMUI::ViewControllerBase_DidDeactivateDelegate {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ContextMenu {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+    __cordl_parent: crate::System::Attribute,
     pub menuItem: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub validate: bool,
     pub priority: i32,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ContextMenu")]
 impl std::ops::Deref for crate::UnityEngine::ContextMenu {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Attribute>;
+    type Target = crate::System::Attribute;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -27,7 +27,7 @@ impl std::ops::DerefMut for crate::UnityEngine::ContextMenu {
 }
 #[cfg(feature = "UnityEngine+ContextMenu")]
 impl crate::UnityEngine::ContextMenu {
-    pub fn New_Gc0(
+    pub fn New_Il2CppString0(
         itemName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -57,7 +57,7 @@ impl crate::UnityEngine::ContextMenu {
             .invoke_void(".ctor", (itemName, isValidateFunction, priority))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Il2CppString0(
         &mut self,
         itemName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

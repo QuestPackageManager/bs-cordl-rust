@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseSlider_1<TValueType: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TValueType>,
+    __cordl_parent: crate::UnityEngine::UIElements::BaseField_1<TValueType>,
     pub _dragContainer_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualElement,
     >,
@@ -24,7 +24,9 @@ pub struct BaseSlider_1<TValueType: quest_hook::libil2cpp::Type> {
     pub m_PageSize: f32,
     pub m_ShowInputField: bool,
     pub _clamped_k__BackingField: bool,
-    pub _clampedDragger_k__BackingField: quest_hook::libil2cpp::Gc<TValueType>,
+    pub _clampedDragger_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::ClampedDragger_1<TValueType>,
+    >,
     pub m_DragElementStartPos: crate::UnityEngine::Rect,
     pub m_Direction: crate::UnityEngine::UIElements::SliderDirection,
     pub m_Inverted: bool,
@@ -38,7 +40,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+BaseSlider_1")]
 impl<TValueType: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::BaseSlider_1<TValueType> {
-    type Target = quest_hook::libil2cpp::Gc<TValueType>;
+    type Target = crate::UnityEngine::UIElements::BaseField_1<TValueType>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -320,7 +322,9 @@ impl<
     pub fn OnTextFieldValueChange(
         &mut self,
         evt: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::UnityEngine::UIElements::ChangeEvent_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -571,7 +575,7 @@ impl<
             .invoke("UpdateDragElementPosition", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn UpdateDragElementPosition_Gc0(
+    pub fn UpdateDragElementPosition_GeometryChangedEvent0(
         &mut self,
         evt: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::GeometryChangedEvent,
@@ -662,7 +666,11 @@ impl<
     }
     pub fn get_clampedDragger(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TValueType>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ClampedDragger_1<TValueType>,
+        >,
+    >
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -670,8 +678,9 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TValueType> = __cordl_object
-            .invoke("get_clampedDragger", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ClampedDragger_1<TValueType>,
+        > = __cordl_object.invoke("get_clampedDragger", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_direction(
@@ -856,7 +865,9 @@ impl<
     }
     pub fn set_clampedDragger(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<TValueType>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ClampedDragger_1<TValueType>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1063,18 +1074,20 @@ for crate::UnityEngine::UIElements::BaseSlider_1<TValueType> {
 #[cfg(feature = "UnityEngine+UIElements+BaseSlider_1")]
 impl<
     TValueType: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<TValueType>>
+> AsRef<crate::UnityEngine::UIElements::IValueField_1<TValueType>>
 for crate::UnityEngine::UIElements::BaseSlider_1<TValueType> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TValueType> {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IValueField_1<TValueType> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseSlider_1")]
 impl<
     TValueType: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<TValueType>>
+> AsMut<crate::UnityEngine::UIElements::IValueField_1<TValueType>>
 for crate::UnityEngine::UIElements::BaseSlider_1<TValueType> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TValueType> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::UIElements::IValueField_1<TValueType> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -1100,7 +1113,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseSlider_1_UxmlTraits<TValueType: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TValueType>,
+    __cordl_parent: crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<TValueType>,
     __cordl_phantom_TValueType: std::marker::PhantomData<TValueType>,
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseSlider_1+UxmlTraits")]
@@ -1111,7 +1124,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+BaseSlider_1+UxmlTraits")]
 impl<TValueType: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::BaseSlider_1_UxmlTraits<TValueType> {
-    type Target = quest_hook::libil2cpp::Gc<TValueType>;
+    type Target = crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<TValueType>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

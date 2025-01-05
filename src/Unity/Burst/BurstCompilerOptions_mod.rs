@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BurstCompilerOptions {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _enableBurstCompilation: bool,
     pub _enableBurstCompileSynchronously: bool,
     pub _enableBurstSafetyChecks: bool,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Burst+BurstCompilerOptions")]
 impl std::ops::Deref for crate::Unity::Burst::BurstCompilerOptions {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -170,12 +170,12 @@ impl crate::Unity::Burst::BurstCompilerOptions {
         crate::System::ValueTuple_3<
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    *mut quest_hook::libil2cpp::Il2CppString,
                 >,
             >,
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    *mut quest_hook::libil2cpp::Il2CppString,
                 >,
             >,
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -184,12 +184,12 @@ impl crate::Unity::Burst::BurstCompilerOptions {
         let __cordl_ret: crate::System::ValueTuple_3<
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    *mut quest_hook::libil2cpp::Il2CppString,
                 >,
             >,
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    *mut quest_hook::libil2cpp::Il2CppString,
                 >,
             >,
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -294,14 +294,10 @@ impl crate::Unity::Burst::BurstCompilerOptions {
     }
     pub fn SerialiseCompilationOptionsSafe(
         roots: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
         folders: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
         options: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -313,17 +309,7 @@ impl crate::Unity::Burst::BurstCompilerOptions {
             .invoke("SerialiseCompilationOptionsSafe", (roots, folders, options))?;
         Ok(__cordl_ret.into())
     }
-    pub fn TryGetAttribute_Gc_ByRefMut0(
-        member: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
-        attribute: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<crate::Unity::Burst::BurstCompileAttribute>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryGetAttribute", (member, attribute))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn TryGetAttribute_Gc_ByRefMut1(
+    pub fn TryGetAttribute_Assembly1(
         assembly: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
         attribute: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<crate::Unity::Burst::BurstCompileAttribute>,
@@ -331,6 +317,16 @@ impl crate::Unity::Burst::BurstCompilerOptions {
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("TryGetAttribute", (assembly, attribute))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryGetAttribute_MemberInfo0(
+        member: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+        attribute: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::Unity::Burst::BurstCompileAttribute>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryGetAttribute", (member, attribute))?;
         Ok(__cordl_ret.into())
     }
     pub fn TryGetOptions(

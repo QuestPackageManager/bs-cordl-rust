@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonUtility {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+JsonUtility")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+JsonUtility")]
 impl std::ops::Deref for crate::UnityEngine::JsonUtility {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -47,7 +47,7 @@ impl crate::UnityEngine::JsonUtility {
             .invoke("FromJsonOverwrite", (json, objectToOverwrite))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FromJson_Gc0<T>(
+    pub fn FromJson_Il2CppString0<T>(
         json: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -58,7 +58,7 @@ impl crate::UnityEngine::JsonUtility {
             .invoke("FromJson", (json))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FromJson_Gc1(
+    pub fn FromJson_Type1(
         json: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
@@ -82,7 +82,7 @@ impl crate::UnityEngine::JsonUtility {
             .invoke("ToJsonInternal", (obj, prettyPrint))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToJson_Gc0(
+    pub fn ToJson_Il2CppObject0(
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

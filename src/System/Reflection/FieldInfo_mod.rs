@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FieldInfo {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+    __cordl_parent: crate::System::Reflection::MemberInfo,
 }
 #[cfg(feature = "System+Reflection+FieldInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Reflection+FieldInfo")]
 impl std::ops::Deref for crate::System::Reflection::FieldInfo {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>;
+    type Target = crate::System::Reflection::MemberInfo;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -75,18 +75,14 @@ impl crate::System::Reflection::FieldInfo {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         > = __cordl_object.invoke("GetPseudoCustomAttributes", ())?;
         Ok(__cordl_ret.into())
     }
@@ -95,7 +91,7 @@ impl crate::System::Reflection::FieldInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
+                *mut crate::System::Reflection::CustomAttributeData,
             >,
         >,
     > {
@@ -104,7 +100,7 @@ impl crate::System::Reflection::FieldInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
+                *mut crate::System::Reflection::CustomAttributeData,
             >,
         > = __cordl_object.invoke("GetPseudoCustomAttributesData", ())?;
         Ok(__cordl_ret.into())
@@ -155,7 +151,7 @@ impl crate::System::Reflection::FieldInfo {
             .invoke("SetValueDirect", (obj, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetValue_BindingFlags_Gc_Gc1(
+    pub fn SetValue_BindingFlags_Binder_CultureInfo1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -170,7 +166,7 @@ impl crate::System::Reflection::FieldInfo {
             .invoke("SetValue", (obj, value, invokeAttr, binder, culture))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetValue_Gc_Gc0(
+    pub fn SetValue_Il2CppObject_Il2CppObject0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

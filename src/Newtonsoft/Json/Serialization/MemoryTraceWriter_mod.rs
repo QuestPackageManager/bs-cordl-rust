@@ -2,9 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MemoryTraceWriter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _traceMessages: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::Queue_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _lock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _LevelFilter_k__BackingField: crate::System::Diagnostics::TraceLevel,
@@ -17,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Serialization+MemoryTraceWriter")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Serialization::MemoryTraceWriter {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,14 +36,18 @@ impl crate::Newtonsoft::Json::Serialization::MemoryTraceWriter {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = __cordl_object.invoke("GetTraceMessages", ())?;
         Ok(__cordl_ret.into())
     }
@@ -121,26 +127,16 @@ for crate::Newtonsoft::Json::Serialization::MemoryTraceWriter {
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+MemoryTraceWriter")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Serialization::ITraceWriter>,
-> for crate::Newtonsoft::Json::Serialization::MemoryTraceWriter {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Serialization::ITraceWriter,
-    > {
+impl AsRef<crate::Newtonsoft::Json::Serialization::ITraceWriter>
+for crate::Newtonsoft::Json::Serialization::MemoryTraceWriter {
+    fn as_ref(&self) -> &crate::Newtonsoft::Json::Serialization::ITraceWriter {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+MemoryTraceWriter")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Serialization::ITraceWriter>,
-> for crate::Newtonsoft::Json::Serialization::MemoryTraceWriter {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Serialization::ITraceWriter,
-    > {
+impl AsMut<crate::Newtonsoft::Json::Serialization::ITraceWriter>
+for crate::Newtonsoft::Json::Serialization::MemoryTraceWriter {
+    fn as_mut(&mut self) -> &mut crate::Newtonsoft::Json::Serialization::ITraceWriter {
         unsafe { std::mem::transmute(self) }
     }
 }

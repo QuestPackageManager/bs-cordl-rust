@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Asn1KeyWrapper {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub wrapper: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::IKeyWrapper,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+Asn1KeyWrapper")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Operators::Asn1KeyWrapper {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -90,20 +90,16 @@ for crate::Org::BouncyCastle::Crypto::Operators::Asn1KeyWrapper {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+Asn1KeyWrapper")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IKeyWrapper>>
+impl AsRef<crate::Org::BouncyCastle::Crypto::IKeyWrapper>
 for crate::Org::BouncyCastle::Crypto::Operators::Asn1KeyWrapper {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IKeyWrapper> {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IKeyWrapper {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+Asn1KeyWrapper")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IKeyWrapper>>
+impl AsMut<crate::Org::BouncyCastle::Crypto::IKeyWrapper>
 for crate::Org::BouncyCastle::Crypto::Operators::Asn1KeyWrapper {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IKeyWrapper> {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IKeyWrapper {
         unsafe { std::mem::transmute(self) }
     }
 }

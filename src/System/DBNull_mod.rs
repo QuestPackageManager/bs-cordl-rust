@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DBNull {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+DBNull")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+DBNull")]
 impl std::ops::Deref for crate::System::DBNull {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -54,7 +54,7 @@ impl crate::System::DBNull {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_StreamingContext1(
+    pub fn New_SerializationInfo_StreamingContext1(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -249,7 +249,7 @@ impl crate::System::DBNull {
         > = __cordl_object.invoke("ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Gc1(
+    pub fn ToString_IFormatProvider1(
         &mut self,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<
@@ -273,7 +273,7 @@ impl crate::System::DBNull {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_StreamingContext1(
+    pub fn _ctor_SerializationInfo_StreamingContext1(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -298,40 +298,28 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::DBNull {
     }
 }
 #[cfg(feature = "System+DBNull")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IConvertible>>
+impl AsRef<crate::System::IConvertible> for crate::System::DBNull {
+    fn as_ref(&self) -> &crate::System::IConvertible {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+DBNull")]
+impl AsMut<crate::System::IConvertible> for crate::System::DBNull {
+    fn as_mut(&mut self) -> &mut crate::System::IConvertible {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+DBNull")]
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
 for crate::System::DBNull {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IConvertible> {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+DBNull")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IConvertible>>
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
 for crate::System::DBNull {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IConvertible> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+DBNull")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::DBNull {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+DBNull")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::DBNull {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }

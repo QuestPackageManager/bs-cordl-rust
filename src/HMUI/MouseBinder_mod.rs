@@ -2,14 +2,20 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MouseBinder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _enabled_k__BackingField: bool,
-    pub _scrollBindings: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<f32>>,
+    pub _scrollBindings: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction_1<f32>>,
+        >,
+    >,
     pub _buttonBindings: quest_hook::libil2cpp::Gc<
-        crate::System::ValueTuple_3<
-            crate::HMUI::MouseBinder_ButtonType,
-            crate::HMUI::MouseBinder_MouseEventType,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction>,
+        crate::System::Collections::Generic::List_1<
+            crate::System::ValueTuple_3<
+                crate::HMUI::MouseBinder_ButtonType,
+                crate::HMUI::MouseBinder_MouseEventType,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction>,
+            >,
         >,
     >,
 }
@@ -19,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+MouseBinder")]
 impl std::ops::Deref for crate::HMUI::MouseBinder {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -52,10 +58,16 @@ impl crate::HMUI::MouseBinder {
     pub fn AddButtonBindings(
         &mut self,
         bindingData: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::HMUI::MouseBinder_ButtonType,
-                crate::HMUI::MouseBinder_MouseEventType,
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Tuple_3<
+                        crate::HMUI::MouseBinder_ButtonType,
+                        crate::HMUI::MouseBinder_MouseEventType,
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Events::UnityAction,
+                        >,
+                    >,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -68,7 +80,7 @@ impl crate::HMUI::MouseBinder {
     }
     pub fn AddScrollBinding(
         &mut self,
-        action: quest_hook::libil2cpp::Gc<f32>,
+        action: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction_1<f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -79,7 +91,11 @@ impl crate::HMUI::MouseBinder {
     }
     pub fn AddScrollBindings(
         &mut self,
-        bindingData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<f32>>,
+        bindingData: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction_1<f32>>,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -140,7 +156,7 @@ impl crate::HMUI::MouseBinder {
     }
     pub fn RemoveScrollBinding(
         &mut self,
-        action: quest_hook::libil2cpp::Gc<f32>,
+        action: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction_1<f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

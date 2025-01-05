@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TubeBloomPrePassLight {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassLight>,
+    __cordl_parent: crate::GlobalNamespace::BloomPrePassLight,
     pub _mainEffectPostProcessEnabled: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BoolSO,
     >,
@@ -70,7 +70,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TubeBloomPrePassLight")]
 impl std::ops::Deref for crate::GlobalNamespace::TubeBloomPrePassLight {
-    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassLight>;
+    type Target = crate::GlobalNamespace::BloomPrePassLight;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

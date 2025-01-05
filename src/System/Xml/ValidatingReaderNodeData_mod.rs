@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ValidatingReaderNodeData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub namespaceUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -26,7 +26,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+ValidatingReaderNodeData")]
 impl std::ops::Deref for crate::System::Xml::ValidatingReaderNodeData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -80,7 +80,7 @@ impl crate::System::Xml::ValidatingReaderNodeData {
             .invoke_void(".ctor", (nodeType))?;
         Ok(__cordl_object.into())
     }
-    pub fn SetItemData_Gc1(
+    pub fn SetItemData_Il2CppString1(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -91,7 +91,7 @@ impl crate::System::Xml::ValidatingReaderNodeData {
             .invoke("SetItemData", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetItemData_Gc2(
+    pub fn SetItemData_Il2CppString2(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         originalStringValue: quest_hook::libil2cpp::Gc<
@@ -105,7 +105,7 @@ impl crate::System::Xml::ValidatingReaderNodeData {
             .invoke("SetItemData", (value, originalStringValue))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetItemData_Gc_Gc_i32_0(
+    pub fn SetItemData_Il2CppString_Il2CppString_i32_0(
         &mut self,
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -119,7 +119,7 @@ impl crate::System::Xml::ValidatingReaderNodeData {
             .invoke("SetItemData", (localName, prefix, ns, depth))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetLineInfo_Gc1(
+    pub fn SetLineInfo_IXmlLineInfo1(
         &mut self,
         lineInfo: quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlLineInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -2,12 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_GeneratedOutput {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _outputData: quest_hook::libil2cpp::Gc<
         crate::HoudiniEngineUnity::HEU_GeneratedOutputData,
     >,
     pub _childOutputs: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeneratedOutputData>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeneratedOutputData>,
+        >,
     >,
     pub isInstancer: bool,
 }
@@ -18,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeneratedOutput")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_GeneratedOutput {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -56,14 +58,10 @@ impl crate::HoudiniEngineUnity::HEU_GeneratedOutput {
     }
     pub fn ClearMaterialsNoLongerUsed(
         materialsToCheck: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
         >,
         materialsInUse: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -129,15 +127,11 @@ impl crate::HoudiniEngineUnity::HEU_GeneratedOutput {
         inGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetGeneratedMaterialsForGameObject", (output, inGameObject))?;
         Ok(__cordl_ret.into())
@@ -184,14 +178,14 @@ impl crate::HoudiniEngineUnity::HEU_GeneratedOutput {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn ResetMaterialOverrides_Gc0(
+    pub fn ResetMaterialOverrides_HEU_GeneratedOutput0(
         output: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeneratedOutput>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ResetMaterialOverrides", (output))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ResetMaterialOverrides_Gc1(
+    pub fn ResetMaterialOverrides_HEU_GeneratedOutputData1(
         outputData: quest_hook::libil2cpp::Gc<
             crate::HoudiniEngineUnity::HEU_GeneratedOutputData,
         >,
@@ -257,13 +251,13 @@ for crate::HoudiniEngineUnity::HEU_GeneratedOutput {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeneratedOutput")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeneratedOutput>,
     >,
 > for crate::HoudiniEngineUnity::HEU_GeneratedOutput {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeneratedOutput>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -271,13 +265,13 @@ impl AsRef<
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeneratedOutput")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeneratedOutput>,
     >,
 > for crate::HoudiniEngineUnity::HEU_GeneratedOutput {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeneratedOutput>,
     > {
         unsafe { std::mem::transmute(self) }

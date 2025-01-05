@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Mask {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::UIBehaviour,
-    >,
+    __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
     pub m_RectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub m_ShowMaskGraphic: bool,
     pub m_Graphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
@@ -17,9 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+Mask")]
 impl std::ops::Deref for crate::UnityEngine::UI::Mask {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::UIBehaviour,
-    >;
+    type Target = crate::UnityEngine::EventSystems::UIBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -164,38 +160,26 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Mask {
     }
 }
 #[cfg(feature = "UnityEngine+UI+Mask")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::ICanvasRaycastFilter>>
-for crate::UnityEngine::UI::Mask {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::ICanvasRaycastFilter> {
+impl AsRef<crate::UnityEngine::ICanvasRaycastFilter> for crate::UnityEngine::UI::Mask {
+    fn as_ref(&self) -> &crate::UnityEngine::ICanvasRaycastFilter {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Mask")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::ICanvasRaycastFilter>>
-for crate::UnityEngine::UI::Mask {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::ICanvasRaycastFilter> {
+impl AsMut<crate::UnityEngine::ICanvasRaycastFilter> for crate::UnityEngine::UI::Mask {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ICanvasRaycastFilter {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Mask")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IMaterialModifier>>
-for crate::UnityEngine::UI::Mask {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IMaterialModifier> {
+impl AsRef<crate::UnityEngine::UI::IMaterialModifier> for crate::UnityEngine::UI::Mask {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::IMaterialModifier {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Mask")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IMaterialModifier>>
-for crate::UnityEngine::UI::Mask {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IMaterialModifier> {
+impl AsMut<crate::UnityEngine::UI::IMaterialModifier> for crate::UnityEngine::UI::Mask {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::IMaterialModifier {
         unsafe { std::mem::transmute(self) }
     }
 }

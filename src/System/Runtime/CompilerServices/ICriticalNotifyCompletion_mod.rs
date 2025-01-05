@@ -55,30 +55,18 @@ for crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion {
     }
 }
 #[cfg(feature = "System+Runtime+CompilerServices+ICriticalNotifyCompletion")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::CompilerServices::INotifyCompletion,
-    >,
-> for crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::CompilerServices::INotifyCompletion,
-    > {
+impl AsRef<crate::System::Runtime::CompilerServices::INotifyCompletion>
+for crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion {
+    fn as_ref(&self) -> &crate::System::Runtime::CompilerServices::INotifyCompletion {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Runtime+CompilerServices+ICriticalNotifyCompletion")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::CompilerServices::INotifyCompletion,
-    >,
-> for crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion {
+impl AsMut<crate::System::Runtime::CompilerServices::INotifyCompletion>
+for crate::System::Runtime::CompilerServices::ICriticalNotifyCompletion {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::CompilerServices::INotifyCompletion,
-    > {
+    ) -> &mut crate::System::Runtime::CompilerServices::INotifyCompletion {
         unsafe { std::mem::transmute(self) }
     }
 }

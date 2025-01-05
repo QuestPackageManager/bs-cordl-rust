@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CubemapArray {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+    __cordl_parent: crate::UnityEngine::Texture,
 }
 #[cfg(feature = "UnityEngine+CubemapArray")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+CubemapArray")]
 impl std::ops::Deref for crate::UnityEngine::CubemapArray {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>;
+    type Target = crate::UnityEngine::Texture;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

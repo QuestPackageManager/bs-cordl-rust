@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct QuadUtility {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+QuadUtility")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+QuadUtility")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::MeshOperations::QuadUtility {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,8 +28,10 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::QuadUtility {
     pub fn GetBestQuadConnection(
         wing: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
         connections: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::EdgeLookup,
-            f32,
+            crate::System::Collections::Generic::Dictionary_2<
+                crate::UnityEngine::ProBuilder::EdgeLookup,
+                f32,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
@@ -53,16 +55,22 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::QuadUtility {
     pub fn ToQuads(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         faces: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            >,
         >,
         smoothing: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ToQuads", (mesh, faces, smoothing))?;
         Ok(__cordl_ret.into())

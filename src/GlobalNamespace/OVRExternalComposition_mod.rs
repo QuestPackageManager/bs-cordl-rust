@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRExternalComposition {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRComposition>,
+    __cordl_parent: crate::GlobalNamespace::OVRComposition,
     pub previousMainCameraObject: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::GameObject,
     >,
@@ -21,16 +21,12 @@ pub struct OVRExternalComposition {
     pub audioListener: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioListener>,
     pub audioFilter: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRMRAudioFilter>,
     pub mrcRenderTextureArray: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::RenderTexture>,
     >,
     pub frameIndex: i32,
     pub lastMrcEncodeFrameSyncId: i32,
     pub mrcForegroundRenderTextureArray: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::RenderTexture>,
     >,
     pub cameraPoseTimeArray: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<f64>,
@@ -39,7 +35,9 @@ pub struct OVRExternalComposition {
         quest_hook::libil2cpp::Il2CppArray<f32>,
     >,
     pub audioDataLock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    pub cachedAudioData: quest_hook::libil2cpp::Gc<f32>,
+    pub cachedAudioData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<f32>,
+    >,
     pub cachedChannels: i32,
 }
 #[cfg(feature = "OVRExternalComposition")]
@@ -49,7 +47,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRExternalComposition")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRExternalComposition {
-    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRComposition>;
+    type Target = crate::GlobalNamespace::OVRComposition;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

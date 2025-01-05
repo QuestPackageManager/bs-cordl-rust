@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RC4 {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Security::Cryptography::SymmetricAlgorithm,
-    >,
+    __cordl_parent: crate::System::Security::Cryptography::SymmetricAlgorithm,
 }
 #[cfg(feature = "Mono+Security+Cryptography+RC4")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Security+Cryptography+RC4")]
 impl std::ops::Deref for crate::Mono::Security::Cryptography::RC4 {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Security::Cryptography::SymmetricAlgorithm,
-    >;
+    type Target = crate::System::Security::Cryptography::SymmetricAlgorithm;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Pkcs1Encoding {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub random: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Security::SecureRandom,
     >,
@@ -24,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Encodings+Pkcs1Encoding")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Encodings::Pkcs1Encoding {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -149,7 +149,7 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::Pkcs1Encoding {
             .invoke("Init", (forEncryption, parameters))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_IAsymmetricBlockCipher0(
         cipher: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
         >,
@@ -160,7 +160,7 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::Pkcs1Encoding {
             .invoke_void(".ctor", (cipher))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc2(
+    pub fn New_Il2CppArray2(
         cipher: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
         >,
@@ -200,7 +200,7 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::Pkcs1Encoding {
         > = __cordl_object.invoke("ProcessBlock", (input, inOff, length))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_IAsymmetricBlockCipher0(
         &mut self,
         cipher: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
@@ -213,7 +213,7 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::Pkcs1Encoding {
             .invoke(".ctor", (cipher))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_Il2CppArray2(
         &mut self,
         cipher: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
@@ -278,26 +278,18 @@ for crate::Org::BouncyCastle::Crypto::Encodings::Pkcs1Encoding {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Encodings+Pkcs1Encoding")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher>,
-> for crate::Org::BouncyCastle::Crypto::Encodings::Pkcs1Encoding {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
-    > {
+impl AsRef<crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher>
+for crate::Org::BouncyCastle::Crypto::Encodings::Pkcs1Encoding {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Encodings+Pkcs1Encoding")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher>,
-> for crate::Org::BouncyCastle::Crypto::Encodings::Pkcs1Encoding {
+impl AsMut<crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher>
+for crate::Org::BouncyCastle::Crypto::Encodings::Pkcs1Encoding {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
-    > {
+    ) -> &mut crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher {
         unsafe { std::mem::transmute(self) }
     }
 }

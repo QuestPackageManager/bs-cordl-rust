@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InstancedMaterialLightWithId {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LightWithIdMonoBehaviour,
-    >,
+    __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
     pub _materialPropertyBlockColorSetter: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MaterialPropertyBlockColorSetter,
     >,
@@ -24,9 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "InstancedMaterialLightWithId")]
 impl std::ops::Deref for crate::GlobalNamespace::InstancedMaterialLightWithId {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LightWithIdMonoBehaviour,
-    >;
+    type Target = crate::GlobalNamespace::LightWithIdMonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

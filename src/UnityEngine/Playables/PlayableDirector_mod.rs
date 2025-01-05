@@ -2,15 +2,21 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayableDirector {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Behaviour>,
+    __cordl_parent: crate::UnityEngine::Behaviour,
     pub played: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableDirector>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableDirector>,
+        >,
     >,
     pub paused: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableDirector>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableDirector>,
+        >,
     >,
     pub stopped: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableDirector>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableDirector>,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+Playables+PlayableDirector")]
@@ -20,7 +26,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Playables+PlayableDirector")]
 impl std::ops::Deref for crate::UnityEngine::Playables::PlayableDirector {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Behaviour>;
+    type Target = crate::UnityEngine::Behaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -284,7 +290,7 @@ impl crate::UnityEngine::Playables::PlayableDirector {
             .invoke("Play", (frameRate))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Play_Gc1(
+    pub fn Play_PlayableAsset1(
         &mut self,
         asset: quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableAsset>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -295,7 +301,7 @@ impl crate::UnityEngine::Playables::PlayableDirector {
             .invoke("Play", (asset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Play_Gc_DirectorWrapMode2(
+    pub fn Play_PlayableAsset_DirectorWrapMode2(
         &mut self,
         asset: quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableAsset>,
         mode: crate::UnityEngine::Playables::DirectorWrapMode,
@@ -476,7 +482,11 @@ impl crate::UnityEngine::Playables::PlayableDirector {
     pub fn add_paused(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableDirector>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::Playables::PlayableDirector,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -489,7 +499,11 @@ impl crate::UnityEngine::Playables::PlayableDirector {
     pub fn add_played(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableDirector>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::Playables::PlayableDirector,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -502,7 +516,11 @@ impl crate::UnityEngine::Playables::PlayableDirector {
     pub fn add_stopped(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableDirector>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::Playables::PlayableDirector,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -598,7 +616,11 @@ impl crate::UnityEngine::Playables::PlayableDirector {
     pub fn remove_paused(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableDirector>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::Playables::PlayableDirector,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -611,7 +633,11 @@ impl crate::UnityEngine::Playables::PlayableDirector {
     pub fn remove_played(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableDirector>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::Playables::PlayableDirector,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -624,7 +650,11 @@ impl crate::UnityEngine::Playables::PlayableDirector {
     pub fn remove_stopped(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableDirector>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::Playables::PlayableDirector,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -712,20 +742,16 @@ for crate::UnityEngine::Playables::PlayableDirector {
     }
 }
 #[cfg(feature = "UnityEngine+Playables+PlayableDirector")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::IExposedPropertyTable>>
+impl AsRef<crate::UnityEngine::IExposedPropertyTable>
 for crate::UnityEngine::Playables::PlayableDirector {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::IExposedPropertyTable> {
+    fn as_ref(&self) -> &crate::UnityEngine::IExposedPropertyTable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Playables+PlayableDirector")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::IExposedPropertyTable>>
+impl AsMut<crate::UnityEngine::IExposedPropertyTable>
 for crate::UnityEngine::Playables::PlayableDirector {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::IExposedPropertyTable> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::IExposedPropertyTable {
         unsafe { std::mem::transmute(self) }
     }
 }

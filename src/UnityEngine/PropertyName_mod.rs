@@ -21,7 +21,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Property
 }
 #[cfg(feature = "UnityEngine+PropertyName")]
 impl crate::UnityEngine::PropertyName {
-    pub fn Equals_Gc0(
+    pub fn Equals_Il2CppObject0(
         &mut self,
         other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -68,7 +68,7 @@ impl crate::UnityEngine::PropertyName {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Il2CppString0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -107,18 +107,18 @@ impl crate::UnityEngine::PropertyName {
     }
 }
 #[cfg(feature = "UnityEngine+PropertyName")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::PropertyName>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::PropertyName>>
 for crate::UnityEngine::PropertyName {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::PropertyName> {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::PropertyName> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+PropertyName")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::PropertyName>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::PropertyName>>
 for crate::UnityEngine::PropertyName {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::PropertyName> {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::PropertyName> {
         todo!()
     }
 }

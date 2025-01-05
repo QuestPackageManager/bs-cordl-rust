@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PS5AdvancedHapticsPlayerController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _hapticsPlayerPool: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::HapticsAudioClipPlayer_Pool,
     >,
@@ -10,11 +10,15 @@ pub struct PS5AdvancedHapticsPlayerController {
         crate::GlobalNamespace::ICoroutineStarter,
     >,
     pub _activePlayers: quest_hook::libil2cpp::Gc<
-        crate::System::ValueTuple_2<
-            crate::UnityEngine::XR::XRNode,
-            quest_hook::libil2cpp::Gc<crate::Libraries::HM::HMLib::VR::HapticPresetSO>,
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::System::ValueTuple_2<
+                crate::UnityEngine::XR::XRNode,
+                quest_hook::libil2cpp::Gc<
+                    crate::Libraries::HM::HMLib::VR::HapticPresetSO,
+                >,
+            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HapticsAudioClipPlayer>,
         >,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HapticsAudioClipPlayer>,
     >,
 }
 #[cfg(feature = "PS5AdvancedHapticsPlayerController")]
@@ -25,7 +29,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PS5AdvancedHapticsPlayerController")]
 impl std::ops::Deref for crate::GlobalNamespace::PS5AdvancedHapticsPlayerController {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -144,36 +148,30 @@ for crate::GlobalNamespace::PS5AdvancedHapticsPlayerController {
     }
 }
 #[cfg(feature = "PS5AdvancedHapticsPlayerController")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IHapticFeedbackPlayer>>
+impl AsRef<crate::GlobalNamespace::IHapticFeedbackPlayer>
 for crate::GlobalNamespace::PS5AdvancedHapticsPlayerController {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IHapticFeedbackPlayer> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IHapticFeedbackPlayer {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "PS5AdvancedHapticsPlayerController")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IHapticFeedbackPlayer>>
+impl AsMut<crate::GlobalNamespace::IHapticFeedbackPlayer>
 for crate::GlobalNamespace::PS5AdvancedHapticsPlayerController {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IHapticFeedbackPlayer> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IHapticFeedbackPlayer {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "PS5AdvancedHapticsPlayerController")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>>
+impl AsRef<crate::Zenject::IInitializable>
 for crate::GlobalNamespace::PS5AdvancedHapticsPlayerController {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable> {
+    fn as_ref(&self) -> &crate::Zenject::IInitializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "PS5AdvancedHapticsPlayerController")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>>
+impl AsMut<crate::Zenject::IInitializable>
 for crate::GlobalNamespace::PS5AdvancedHapticsPlayerController {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IInitializable {
         unsafe { std::mem::transmute(self) }
     }
 }

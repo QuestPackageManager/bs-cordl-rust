@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlAsyncCheckReaderWithLineInfoNSSchema {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::XmlAsyncCheckReaderWithLineInfoNS,
-    >,
+    __cordl_parent: crate::System::Xml::XmlAsyncCheckReaderWithLineInfoNS,
     pub readerAsIXmlSchemaInfo: quest_hook::libil2cpp::Gc<
         crate::System::Xml::Schema::IXmlSchemaInfo,
     >,
@@ -17,9 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlAsyncCheckReaderWithLineInfoNSSchema")]
 impl std::ops::Deref for crate::System::Xml::XmlAsyncCheckReaderWithLineInfoNSSchema {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Xml::XmlAsyncCheckReaderWithLineInfoNS,
-    >;
+    type Target = crate::System::Xml::XmlAsyncCheckReaderWithLineInfoNS;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -150,20 +146,16 @@ for crate::System::Xml::XmlAsyncCheckReaderWithLineInfoNSSchema {
     }
 }
 #[cfg(feature = "System+Xml+XmlAsyncCheckReaderWithLineInfoNSSchema")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::IXmlSchemaInfo>>
+impl AsRef<crate::System::Xml::Schema::IXmlSchemaInfo>
 for crate::System::Xml::XmlAsyncCheckReaderWithLineInfoNSSchema {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::IXmlSchemaInfo> {
+    fn as_ref(&self) -> &crate::System::Xml::Schema::IXmlSchemaInfo {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+XmlAsyncCheckReaderWithLineInfoNSSchema")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::IXmlSchemaInfo>>
+impl AsMut<crate::System::Xml::Schema::IXmlSchemaInfo>
 for crate::System::Xml::XmlAsyncCheckReaderWithLineInfoNSSchema {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::IXmlSchemaInfo> {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::Schema::IXmlSchemaInfo {
         unsafe { std::mem::transmute(self) }
     }
 }

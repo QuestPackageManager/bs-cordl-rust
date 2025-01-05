@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Kernel {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _tickableManager: quest_hook::libil2cpp::Gc<crate::Zenject::TickableManager>,
     pub _initializableManager: quest_hook::libil2cpp::Gc<
         crate::Zenject::InitializableManager,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+Kernel")]
 impl std::ops::Deref for crate::Zenject::Kernel {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -99,9 +99,7 @@ impl crate::Zenject::Kernel {
     }
     pub fn __zenCreate(
         P_0: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -163,94 +161,74 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::Kernel {
     }
 }
 #[cfg(feature = "Zenject+Kernel")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::Zenject::Kernel {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsRef<crate::System::IDisposable> for crate::Zenject::Kernel {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+Kernel")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::Zenject::Kernel {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsMut<crate::System::IDisposable> for crate::Zenject::Kernel {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+Kernel")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::IFixedTickable>>
-for crate::Zenject::Kernel {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::IFixedTickable> {
+impl AsRef<crate::Zenject::IFixedTickable> for crate::Zenject::Kernel {
+    fn as_ref(&self) -> &crate::Zenject::IFixedTickable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+Kernel")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::IFixedTickable>>
-for crate::Zenject::Kernel {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::IFixedTickable> {
+impl AsMut<crate::Zenject::IFixedTickable> for crate::Zenject::Kernel {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IFixedTickable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+Kernel")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>>
-for crate::Zenject::Kernel {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable> {
+impl AsRef<crate::Zenject::IInitializable> for crate::Zenject::Kernel {
+    fn as_ref(&self) -> &crate::Zenject::IInitializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+Kernel")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>>
-for crate::Zenject::Kernel {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable> {
+impl AsMut<crate::Zenject::IInitializable> for crate::Zenject::Kernel {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IInitializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+Kernel")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::ILateDisposable>>
-for crate::Zenject::Kernel {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::ILateDisposable> {
+impl AsRef<crate::Zenject::ILateDisposable> for crate::Zenject::Kernel {
+    fn as_ref(&self) -> &crate::Zenject::ILateDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+Kernel")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::ILateDisposable>>
-for crate::Zenject::Kernel {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::ILateDisposable> {
+impl AsMut<crate::Zenject::ILateDisposable> for crate::Zenject::Kernel {
+    fn as_mut(&mut self) -> &mut crate::Zenject::ILateDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+Kernel")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::ILateTickable>>
-for crate::Zenject::Kernel {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::ILateTickable> {
+impl AsRef<crate::Zenject::ILateTickable> for crate::Zenject::Kernel {
+    fn as_ref(&self) -> &crate::Zenject::ILateTickable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+Kernel")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::ILateTickable>>
-for crate::Zenject::Kernel {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::ILateTickable> {
+impl AsMut<crate::Zenject::ILateTickable> for crate::Zenject::Kernel {
+    fn as_mut(&mut self) -> &mut crate::Zenject::ILateTickable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+Kernel")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::ITickable>>
-for crate::Zenject::Kernel {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::ITickable> {
+impl AsRef<crate::Zenject::ITickable> for crate::Zenject::Kernel {
+    fn as_ref(&self) -> &crate::Zenject::ITickable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+Kernel")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::ITickable>>
-for crate::Zenject::Kernel {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::ITickable> {
+impl AsMut<crate::Zenject::ITickable> for crate::Zenject::Kernel {
+    fn as_mut(&mut self) -> &mut crate::Zenject::ITickable {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CertificateHelper {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Net+Security+CertificateHelper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Security+CertificateHelper")]
 impl std::ops::Deref for crate::System::Net::Security::CertificateHelper {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,9 +35,9 @@ impl crate::System::Net::Security::CertificateHelper {
             .invoke("GetEligibleClientCertificate", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetEligibleClientCertificate_Gc0(
+    pub fn GetEligibleClientCertificate_X509Certificate2Collection1(
         candidateCerts: quest_hook::libil2cpp::Gc<
-            crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate2Collection,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -50,9 +50,9 @@ impl crate::System::Net::Security::CertificateHelper {
             .invoke("GetEligibleClientCertificate", (candidateCerts))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetEligibleClientCertificate_Gc1(
+    pub fn GetEligibleClientCertificate_X509CertificateCollection0(
         candidateCerts: quest_hook::libil2cpp::Gc<
-            crate::System::Security::Cryptography::X509Certificates::X509Certificate2Collection,
+            crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<

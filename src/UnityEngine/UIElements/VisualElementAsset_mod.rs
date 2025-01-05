@@ -2,21 +2,23 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct VisualElementAsset {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UxmlAsset>,
+    __cordl_parent: crate::UnityEngine::UIElements::UxmlAsset,
     pub m_Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_RuleIndex: i32,
     pub m_Text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_PickingMode: crate::UnityEngine::UIElements::PickingMode,
     pub m_Classes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+    >,
+    pub m_StylesheetPaths: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     >,
-    pub m_StylesheetPaths: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    >,
     pub m_Stylesheets: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
+        >,
     >,
     pub m_SkipClone: bool,
 }
@@ -27,7 +29,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+VisualElementAsset")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::VisualElementAsset {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UxmlAsset>;
+    type Target = crate::UnityEngine::UIElements::UxmlAsset;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -64,18 +66,14 @@ impl crate::UnityEngine::UIElements::VisualElementAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("get_classes", ())?;
         Ok(__cordl_ret.into())
     }
@@ -111,14 +109,18 @@ impl crate::UnityEngine::UIElements::VisualElementAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = __cordl_object.invoke("get_stylesheetPaths", ())?;
         Ok(__cordl_ret.into())
     }
@@ -126,14 +128,18 @@ impl crate::UnityEngine::UIElements::VisualElementAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
+            >,
         > = __cordl_object.invoke("get_stylesheets", ())?;
         Ok(__cordl_ret.into())
     }
@@ -149,22 +155,16 @@ for crate::UnityEngine::UIElements::VisualElementAsset {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElementAsset")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver>>
+impl AsRef<crate::UnityEngine::ISerializationCallbackReceiver>
 for crate::UnityEngine::UIElements::VisualElementAsset {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver> {
+    fn as_ref(&self) -> &crate::UnityEngine::ISerializationCallbackReceiver {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElementAsset")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver>>
+impl AsMut<crate::UnityEngine::ISerializationCallbackReceiver>
 for crate::UnityEngine::UIElements::VisualElementAsset {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ISerializationCallbackReceiver,
-    > {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ISerializationCallbackReceiver {
         unsafe { std::mem::transmute(self) }
     }
 }

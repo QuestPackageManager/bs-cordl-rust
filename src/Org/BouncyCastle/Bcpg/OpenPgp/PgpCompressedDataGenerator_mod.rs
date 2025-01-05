@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PgpCompressedDataGenerator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub algorithm: crate::Org::BouncyCastle::Bcpg::CompressionAlgorithmTag,
     pub compression: i32,
     pub dOut: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpCompressedDataGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpCompressedDataGenerator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -70,20 +70,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpCompressedDataGenerator {
             .invoke_void(".ctor", (algorithm, compression))?;
         Ok(__cordl_object.into())
     }
-    pub fn Open_Gc0(
-        &mut self,
-        outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::Stream> = __cordl_object
-            .invoke("Open", (outStr))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Open_Gc1(
+    pub fn Open_Il2CppArray1(
         &mut self,
         outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -95,6 +82,19 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpCompressedDataGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::Stream> = __cordl_object
             .invoke("Open", (outStr, buffer))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Open_Stream0(
+        &mut self,
+        outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::Stream> = __cordl_object
+            .invoke("Open", (outStr))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_CompressionAlgorithmTag0(
@@ -142,26 +142,18 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpCompressedDataGenerator {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpCompressedDataGenerator")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator>,
-> for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpCompressedDataGenerator {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator,
-    > {
+impl AsRef<crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator>
+for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpCompressedDataGenerator {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpCompressedDataGenerator")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator>,
-> for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpCompressedDataGenerator {
+impl AsMut<crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator>
+for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpCompressedDataGenerator {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator,
-    > {
+    ) -> &mut crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -171,9 +163,7 @@ impl AsMut<
 #[repr(C)]
 #[derive(Debug)]
 pub struct PgpCompressedDataGenerator_SafeCBZip2OutputStream {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream,
 }
 #[cfg(
     feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpCompressedDataGenerator+SafeCBZip2OutputStream"
@@ -189,9 +179,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpCompressedDataGenerator_SafeCBZip2OutputStream {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream,
-    >;
+    type Target = crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -258,9 +246,7 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpCompressedDataGenerator_SafeCBZi
 #[repr(C)]
 #[derive(Debug)]
 pub struct PgpCompressedDataGenerator_SafeZOutputStream {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Utilities::Zlib::ZOutputStream,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Utilities::Zlib::ZOutputStream,
 }
 #[cfg(
     feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpCompressedDataGenerator+SafeZOutputStream"
@@ -275,9 +261,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpCompressedDataGenerator_SafeZOutputStream {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Utilities::Zlib::ZOutputStream,
-    >;
+    type Target = crate::Org::BouncyCastle::Utilities::Zlib::ZOutputStream;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

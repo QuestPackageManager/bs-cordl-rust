@@ -2,12 +2,18 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DisposableManager {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _disposables: quest_hook::libil2cpp::Gc<
-        crate::Zenject::DisposableManager_DisposableInfo,
+        crate::System::Collections::Generic::List_1<
+            crate::Zenject::DisposableManager_DisposableInfo,
+        >,
     >,
     pub _lateDisposables: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Zenject::DisposableManager_LateDisposableInfo>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::Zenject::DisposableManager_LateDisposableInfo,
+            >,
+        >,
     >,
     pub _disposed: bool,
     pub _lateDisposed: bool,
@@ -19,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+DisposableManager")]
 impl std::ops::Deref for crate::Zenject::DisposableManager {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -36,7 +42,7 @@ impl crate::Zenject::DisposableManager {
     pub type DisposableInfo = crate::Zenject::DisposableManager_DisposableInfo;
     #[cfg(feature = "Zenject+DisposableManager+LateDisposableInfo")]
     pub type LateDisposableInfo = crate::Zenject::DisposableManager_LateDisposableInfo;
-    pub fn AddLate_Gc0(
+    pub fn AddLate_ILateDisposable0(
         &mut self,
         disposable: quest_hook::libil2cpp::Gc<crate::Zenject::ILateDisposable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -59,7 +65,7 @@ impl crate::Zenject::DisposableManager {
             .invoke("AddLate", (disposable, priority))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Add_Gc0(
+    pub fn Add_IDisposable0(
         &mut self,
         disposable: quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -104,21 +110,33 @@ impl crate::Zenject::DisposableManager {
     }
     pub fn New(
         disposables: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
+            >,
         >,
         priorities: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-                i32,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::ModestTree::Util::ValuePair_2<
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        i32,
+                    >,
+                >,
             >,
         >,
         lateDisposables: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::ILateDisposable>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::ILateDisposable>,
+            >,
         >,
         latePriorities: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-                i32,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::ModestTree::Util::ValuePair_2<
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        i32,
+                    >,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -144,9 +162,7 @@ impl crate::Zenject::DisposableManager {
     }
     pub fn __zenCreate(
         P_0: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -166,21 +182,33 @@ impl crate::Zenject::DisposableManager {
     pub fn _ctor(
         &mut self,
         disposables: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
+            >,
         >,
         priorities: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-                i32,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::ModestTree::Util::ValuePair_2<
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        i32,
+                    >,
+                >,
             >,
         >,
         lateDisposables: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::ILateDisposable>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::ILateDisposable>,
+            >,
         >,
         latePriorities: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-                i32,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::ModestTree::Util::ValuePair_2<
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        i32,
+                    >,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -205,16 +233,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::DisposableManager {
     }
 }
 #[cfg(feature = "Zenject+DisposableManager")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::Zenject::DisposableManager {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsRef<crate::System::IDisposable> for crate::Zenject::DisposableManager {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+DisposableManager")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::Zenject::DisposableManager {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsMut<crate::System::IDisposable> for crate::Zenject::DisposableManager {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -260,7 +286,7 @@ impl crate::Zenject::DisposableManager_DisposableInfo {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DisposableManager_LateDisposableInfo {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub LateDisposable: quest_hook::libil2cpp::Gc<crate::Zenject::ILateDisposable>,
     pub Priority: i32,
 }
@@ -271,7 +297,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+DisposableManager+LateDisposableInfo")]
 impl std::ops::Deref for crate::Zenject::DisposableManager_LateDisposableInfo {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -296,9 +322,7 @@ impl crate::Zenject::DisposableManager_LateDisposableInfo {
     }
     pub fn __zenCreate(
         P_0: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

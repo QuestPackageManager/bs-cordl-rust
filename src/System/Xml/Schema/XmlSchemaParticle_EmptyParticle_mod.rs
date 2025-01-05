@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaParticle_EmptyParticle {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::XmlSchemaParticle,
-    >,
+    __cordl_parent: crate::System::Xml::Schema::XmlSchemaParticle,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaParticle+EmptyParticle")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlSchemaParticle+EmptyParticle")]
 impl std::ops::Deref for crate::GlobalNamespace::XmlSchemaParticle_EmptyParticle {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::XmlSchemaParticle,
-    >;
+    type Target = crate::System::Xml::Schema::XmlSchemaParticle;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

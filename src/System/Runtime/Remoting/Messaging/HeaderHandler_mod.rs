@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HeaderHandler {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+HeaderHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+Remoting+Messaging+HeaderHandler")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Messaging::HeaderHandler {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,9 +29,7 @@ impl crate::System::Runtime::Remoting::Messaging::HeaderHandler {
         &mut self,
         headers: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Runtime::Remoting::Messaging::Header,
-                >,
+                *mut crate::System::Runtime::Remoting::Messaging::Header,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<

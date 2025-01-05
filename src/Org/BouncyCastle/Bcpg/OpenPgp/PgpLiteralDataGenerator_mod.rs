@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PgpLiteralDataGenerator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub pkOut: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Bcpg::BcpgOutputStream,
     >,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpLiteralDataGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpLiteralDataGenerator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -61,7 +61,22 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpLiteralDataGenerator {
             .invoke_void(".ctor", (oldFormat))?;
         Ok(__cordl_object.into())
     }
-    pub fn Open_DateTime_Gc1(
+    pub fn Open_FileInfo2(
+        &mut self,
+        outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        format: char,
+        file: quest_hook::libil2cpp::Gc<crate::System::IO::FileInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::Stream> = __cordl_object
+            .invoke("Open", (outStr, format, file))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Open_Il2CppString_DateTime_Il2CppArray1(
         &mut self,
         outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         format: char,
@@ -78,22 +93,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpLiteralDataGenerator {
             .invoke("Open", (outStr, format, name, modificationTime, buffer))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Open_Gc__cordl_char_Gc2(
-        &mut self,
-        outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-        format: char,
-        file: quest_hook::libil2cpp::Gc<crate::System::IO::FileInfo>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::Stream> = __cordl_object
-            .invoke("Open", (outStr, format, file))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Open_i64_DateTime0(
+    pub fn Open_Il2CppString_i64_DateTime0(
         &mut self,
         outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         format: char,
@@ -159,26 +159,18 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpLiteralDataGenerator {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpLiteralDataGenerator")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator>,
-> for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpLiteralDataGenerator {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator,
-    > {
+impl AsRef<crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator>
+for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpLiteralDataGenerator {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpLiteralDataGenerator")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator>,
-> for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpLiteralDataGenerator {
+impl AsMut<crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator>
+for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpLiteralDataGenerator {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator,
-    > {
+    ) -> &mut crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator {
         unsafe { std::mem::transmute(self) }
     }
 }

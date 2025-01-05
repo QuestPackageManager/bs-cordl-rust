@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataStorage {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
     pub _table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     pub _dataType: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+Common+DataStorage")]
 impl std::ops::Deref for crate::System::Data::Common::DataStorage {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -99,7 +99,7 @@ impl crate::System::Data::Common::DataStorage {
             .invoke("CompareValueTo", (recordNo1, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ConvertObjectToXml_Gc0(
+    pub fn ConvertObjectToXml_Il2CppObject0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
@@ -113,7 +113,7 @@ impl crate::System::Data::Common::DataStorage {
         > = __cordl_object.invoke("ConvertObjectToXml", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ConvertObjectToXml_Gc_Gc1(
+    pub fn ConvertObjectToXml_XmlWriter_XmlRootAttribute1(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         xmlWriter: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
@@ -142,7 +142,7 @@ impl crate::System::Data::Common::DataStorage {
         > = __cordl_object.invoke("ConvertValue", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ConvertXmlToObject_Gc0(
+    pub fn ConvertXmlToObject_Il2CppString0(
         &mut self,
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -156,7 +156,7 @@ impl crate::System::Data::Common::DataStorage {
         > = __cordl_object.invoke("ConvertXmlToObject", (s))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ConvertXmlToObject_Gc1(
+    pub fn ConvertXmlToObject_XmlReader_XmlRootAttribute1(
         &mut self,
         xmlReader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
         xmlAttrib: quest_hook::libil2cpp::Gc<
@@ -386,9 +386,11 @@ impl crate::System::Data::Common::DataStorage {
     pub fn InspectTypeForInterfaces(
         dataType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<bool, bool, bool, bool>,
+        quest_hook::libil2cpp::Gc<crate::System::Tuple_4<bool, bool, bool, bool>>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<bool, bool, bool, bool> = <Self as quest_hook::libil2cpp::Type>::class()
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Tuple_4<bool, bool, bool, bool>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("InspectTypeForInterfaces", (dataType))?;
         Ok(__cordl_ret.into())
     }
@@ -413,13 +415,6 @@ impl crate::System::Data::Common::DataStorage {
             .invoke("IsObjectSqlNull", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsSqlType_Gc1(
-        dataType: quest_hook::libil2cpp::Gc<crate::System::Type>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsSqlType", (dataType))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn IsSqlType_StorageType0(
         storageType: crate::System::Data::Common::StorageType,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -427,11 +422,11 @@ impl crate::System::Data::Common::DataStorage {
             .invoke("IsSqlType", (storageType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsTypeCustomType_Gc0(
-        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub fn IsSqlType_Type1(
+        dataType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsTypeCustomType", (_cordl_type))?;
+            .invoke("IsSqlType", (dataType))?;
         Ok(__cordl_ret.into())
     }
     pub fn IsTypeCustomType_StorageType1(
@@ -441,7 +436,14 @@ impl crate::System::Data::Common::DataStorage {
             .invoke("IsTypeCustomType", (typeCode))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc_StorageType1(
+    pub fn IsTypeCustomType_Type0(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsTypeCustomType", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn New_Il2CppObject_StorageType1(
         column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         defaultValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -457,7 +459,7 @@ impl crate::System::Data::Common::DataStorage {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc__cordl_bool_StorageType2(
+    pub fn New_Il2CppObject__cordl_bool_StorageType2(
         column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         defaultValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -556,7 +558,7 @@ impl crate::System::Data::Common::DataStorage {
             .invoke("SetStorageInternal", (store, nullbits))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_StorageType1(
+    pub fn _ctor_Il2CppObject_StorageType1(
         &mut self,
         column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -574,7 +576,7 @@ impl crate::System::Data::Common::DataStorage {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc__cordl_bool_StorageType2(
+    pub fn _ctor_Il2CppObject__cordl_bool_StorageType2(
         &mut self,
         column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,

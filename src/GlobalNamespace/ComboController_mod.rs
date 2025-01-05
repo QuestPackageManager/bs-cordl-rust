@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ComboController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _playerHeadAndObstacleInteraction: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PlayerHeadAndObstacleInteraction,
     >,
     pub _beatmapObjectManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapObjectManager,
     >,
-    pub comboDidChangeEvent: quest_hook::libil2cpp::Gc<i32>,
+    pub comboDidChangeEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
     pub comboBreakingEventHappenedEvent: quest_hook::libil2cpp::Gc<
         crate::System::Action,
     >,
@@ -23,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ComboController")]
 impl std::ops::Deref for crate::GlobalNamespace::ComboController {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -121,7 +121,7 @@ impl crate::GlobalNamespace::ComboController {
     }
     pub fn add_comboDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<i32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -150,7 +150,7 @@ impl crate::GlobalNamespace::ComboController {
     }
     pub fn remove_comboDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<i32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -170,20 +170,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ComboControll
     }
 }
 #[cfg(feature = "ComboController")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IComboController>>
+impl AsRef<crate::GlobalNamespace::IComboController>
 for crate::GlobalNamespace::ComboController {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IComboController> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IComboController {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "ComboController")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IComboController>>
+impl AsMut<crate::GlobalNamespace::IComboController>
 for crate::GlobalNamespace::ComboController {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IComboController> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IComboController {
         unsafe { std::mem::transmute(self) }
     }
 }

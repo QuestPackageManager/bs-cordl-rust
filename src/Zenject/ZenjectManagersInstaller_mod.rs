@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ZenjectManagersInstaller {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Zenject::Installer_1<
         quest_hook::libil2cpp::Gc<crate::Zenject::ZenjectManagersInstaller>,
     >,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+ZenjectManagersInstaller")]
 impl std::ops::Deref for crate::Zenject::ZenjectManagersInstaller {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Zenject::Installer_1<
         quest_hook::libil2cpp::Gc<crate::Zenject::ZenjectManagersInstaller>,
     >;
     fn deref(&self) -> &Self::Target {
@@ -47,9 +47,7 @@ impl crate::Zenject::ZenjectManagersInstaller {
     }
     pub fn __zenCreate(
         P_0: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Crc32cLayer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::LiteNetLib::Layers::PacketLayerBase,
-    >,
+    __cordl_parent: crate::LiteNetLib::Layers::PacketLayerBase,
 }
 #[cfg(feature = "LiteNetLib+Layers+Crc32cLayer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LiteNetLib+Layers+Crc32cLayer")]
 impl std::ops::Deref for crate::LiteNetLib::Layers::Crc32cLayer {
-    type Target = quest_hook::libil2cpp::Gc<crate::LiteNetLib::Layers::PacketLayerBase>;
+    type Target = crate::LiteNetLib::Layers::PacketLayerBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

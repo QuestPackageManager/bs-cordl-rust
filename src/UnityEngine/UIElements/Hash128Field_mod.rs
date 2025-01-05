@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Hash128Field {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Hash128>,
+    __cordl_parent: crate::UnityEngine::UIElements::TextInputBaseField_1<
+        crate::UnityEngine::Hash128,
+    >,
     pub m_UpdateTextFromValue: bool,
 }
 #[cfg(feature = "UnityEngine+UIElements+Hash128Field")]
@@ -12,7 +14,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+Hash128Field")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Hash128Field {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Hash128>;
+    type Target = crate::UnityEngine::UIElements::TextInputBaseField_1<
+        crate::UnityEngine::Hash128,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -49,7 +53,7 @@ impl crate::UnityEngine::UIElements::Hash128Field {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_i32_1(
+    pub fn New_Il2CppString_i32_1(
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         maxLength: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -125,7 +129,7 @@ impl crate::UnityEngine::UIElements::Hash128Field {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_i32_1(
+    pub fn _ctor_Il2CppString_i32_1(
         &mut self,
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         maxLength: i32,
@@ -172,7 +176,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Hash1
 #[repr(C)]
 #[derive(Debug)]
 pub struct Hash128Field_Hash128Input {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Hash128>,
+    __cordl_parent: crate::UnityEngine::UIElements::TextInputBaseField_1_TextInputBase<
+        crate::UnityEngine::Hash128,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+Hash128Field+Hash128Input")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -182,7 +188,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+Hash128Field+Hash128Input")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Hash128Field_Hash128Input {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Hash128>;
+    type Target = crate::UnityEngine::UIElements::TextInputBaseField_1_TextInputBase<
+        crate::UnityEngine::Hash128,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -265,7 +273,7 @@ for crate::UnityEngine::UIElements::Hash128Field_Hash128Input {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Hash128Field_UxmlFactory {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Hash128Field>,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::Hash128Field_UxmlTraits,
@@ -280,7 +288,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+Hash128Field+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Hash128Field_UxmlFactory {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Hash128Field>,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::Hash128Field_UxmlTraits,
@@ -330,7 +338,7 @@ for crate::UnityEngine::UIElements::Hash128Field_UxmlFactory {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Hash128Field_UxmlTraits {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::TextValueFieldTraits_2<
         crate::UnityEngine::Hash128,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::UxmlHash128AttributeDescription,
@@ -344,7 +352,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+Hash128Field+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Hash128Field_UxmlTraits {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::TextValueFieldTraits_2<
         crate::UnityEngine::Hash128,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::UxmlHash128AttributeDescription,

@@ -2,14 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AuthorityInformationAccess {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub descriptions: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
-            >,
+            *mut crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
         >,
     >,
 }
@@ -22,9 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+AuthorityInformationAccess")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X509::AuthorityInformationAccess {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -41,25 +35,19 @@ impl crate::Org::BouncyCastle::Asn1::X509::AuthorityInformationAccess {
     pub fn Copy(
         descriptions: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
-                >,
+                *mut crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
-                >,
+                *mut crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
-                >,
+                *mut crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Copy", (descriptions))?;
@@ -85,9 +73,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::AuthorityInformationAccess {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
-                >,
+                *mut crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
             >,
         >,
     > {
@@ -96,9 +82,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::AuthorityInformationAccess {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
-                >,
+                *mut crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
             >,
         > = __cordl_object.invoke("GetAccessDescriptions", ())?;
         Ok(__cordl_ret.into())
@@ -115,16 +99,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::AuthorityInformationAccess {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
-        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seq))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc1(
+    pub fn New_AccessDescription1(
         description: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
         >,
@@ -135,22 +110,16 @@ impl crate::Org::BouncyCastle::Asn1::X509::AuthorityInformationAccess {
             .invoke_void(".ctor", (description))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc2(
-        descriptions: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
-                >,
-            >,
-        >,
+    pub fn New_Asn1Sequence0(
+        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (descriptions))?;
+            .invoke_void(".ctor", (seq))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc3(
+    pub fn New_DerObjectIdentifier_GeneralName3(
         oid: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
@@ -162,6 +131,19 @@ impl crate::Org::BouncyCastle::Asn1::X509::AuthorityInformationAccess {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (oid, location))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Il2CppArray2(
+        descriptions: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (descriptions))?;
         Ok(__cordl_object.into())
     }
     pub fn ToAsn1Object(
@@ -190,18 +172,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::AuthorityInformationAccess {
         > = __cordl_object.invoke("ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
-        &mut self,
-        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (seq))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_AccessDescription1(
         &mut self,
         description: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
@@ -214,24 +185,18 @@ impl crate::Org::BouncyCastle::Asn1::X509::AuthorityInformationAccess {
             .invoke(".ctor", (description))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_Asn1Sequence0(
         &mut self,
-        descriptions: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
-                >,
-            >,
-        >,
+        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (descriptions))?;
+            .invoke(".ctor", (seq))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc3(
+    pub fn _ctor_DerObjectIdentifier_GeneralName3(
         &mut self,
         oid: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
@@ -245,6 +210,21 @@ impl crate::Org::BouncyCastle::Asn1::X509::AuthorityInformationAccess {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (oid, location))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppArray2(
+        &mut self,
+        descriptions: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (descriptions))?;
         Ok(__cordl_ret.into())
     }
 }

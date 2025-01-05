@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapObjectData>,
+    __cordl_parent: crate::GlobalNamespace::BeatmapObjectData,
     pub _gameplayType_k__BackingField: crate::GlobalNamespace::NoteData_GameplayType,
     pub _scoringType_k__BackingField: crate::GlobalNamespace::NoteData_ScoringType,
     pub _colorType_k__BackingField: crate::GlobalNamespace::ColorType,
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "NoteData")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteData {
-    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapObjectData>;
+    type Target = crate::GlobalNamespace::BeatmapObjectData;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

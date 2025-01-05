@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EraInfo {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub era: i32,
     pub ticks: i64,
     pub yearOffset: i32,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Globalization+EraInfo")]
 impl std::ops::Deref for crate::System::Globalization::EraInfo {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,7 +32,7 @@ impl std::ops::DerefMut for crate::System::Globalization::EraInfo {
 }
 #[cfg(feature = "System+Globalization+EraInfo")]
 impl crate::System::Globalization::EraInfo {
-    pub fn New_Gc_Gc_Gc1(
+    pub fn New_Il2CppString_Il2CppString_Il2CppString1(
         era: i32,
         startYear: i32,
         startMonth: i32,
@@ -90,7 +90,7 @@ impl crate::System::Globalization::EraInfo {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc_Gc_Gc1(
+    pub fn _ctor_Il2CppString_Il2CppString_Il2CppString1(
         &mut self,
         era: i32,
         startYear: i32,

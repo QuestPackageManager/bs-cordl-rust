@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UTF8Encoding_UTF8EncodingSealed {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Text::UTF8Encoding>,
+    __cordl_parent: crate::System::Text::UTF8Encoding,
 }
 #[cfg(feature = "System+Text+UTF8Encoding+UTF8EncodingSealed")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Text+UTF8Encoding+UTF8EncodingSealed")]
 impl std::ops::Deref for crate::GlobalNamespace::UTF8Encoding_UTF8EncodingSealed {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Text::UTF8Encoding>;
+    type Target = crate::System::Text::UTF8Encoding;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

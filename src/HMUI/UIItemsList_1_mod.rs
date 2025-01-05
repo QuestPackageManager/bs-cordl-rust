@@ -2,11 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UIItemsList_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _prefab: T,
     pub _itemsContainer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _insertInTheBeginning: bool,
-    pub _items: quest_hook::libil2cpp::Gc<T>,
+    pub _items: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<T>,
+    >,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -17,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+UIItemsList_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref for crate::HMUI::UIItemsList_1<T> {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -47,7 +49,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::UIItemsList_1<T> {
     pub fn SetData(
         &mut self,
         numberOfElements: i32,
-        dataCallback: quest_hook::libil2cpp::Gc<T>,
+        dataCallback: quest_hook::libil2cpp::Gc<
+            crate::HMUI::UIItemsList_1_DataCallback<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -74,7 +78,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::UIItemsList_1<T> {
     }
     pub fn get_items(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerable_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -82,8 +88,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::UIItemsList_1<T> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = __cordl_object
-            .invoke("get_items", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<T>,
+        > = __cordl_object.invoke("get_items", ())?;
         Ok(__cordl_ret.into())
     }
 }
@@ -101,7 +108,7 @@ for crate::HMUI::UIItemsList_1<T> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct UIItemsList_1_DataCallback<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "HMUI+UIItemsList_1+DataCallback")]
@@ -112,7 +119,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "HMUI+UIItemsList_1+DataCallback")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::HMUI::UIItemsList_1_DataCallback<T> {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

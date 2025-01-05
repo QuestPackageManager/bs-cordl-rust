@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PropertyChangingEventArgs {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::EventArgs>,
+    __cordl_parent: crate::System::EventArgs,
     pub _propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+ComponentModel+PropertyChangingEventArgs")]
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+ComponentModel+PropertyChangingEventArgs")]
 impl std::ops::Deref for crate::System::ComponentModel::PropertyChangingEventArgs {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::EventArgs>;
+    type Target = crate::System::EventArgs;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

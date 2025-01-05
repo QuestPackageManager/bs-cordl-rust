@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRTrackedKeyboard {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _CurrentKeyboardAngleFromUp_k__BackingField: f32,
     pub _TrackingState_k__BackingField: crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardState,
     pub _ActiveKeyboardInfo_k__BackingField: crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo,
@@ -24,15 +24,11 @@ pub struct OVRTrackedKeyboard {
         crate::GlobalNamespace::OVROverlay,
     >,
     pub activeKeyboardRenderers_: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::MeshRenderer>,
     >,
     pub activeKeyboardMesh_: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub keyboardMeshNodes_: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
     >,
     pub activeKeyboardMeshRenderer_: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::MeshRenderer,
@@ -53,10 +49,14 @@ pub struct OVRTrackedKeyboard {
         crate::GlobalNamespace::OVRPassthroughLayer,
     >,
     pub TrackedKeyboardActiveChanged: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardSetActiveEvent,
+        crate::System::Action_1<
+            crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardSetActiveEvent,
+        >,
     >,
     pub TrackedKeyboardVisibilityChanged: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardVisibilityChangedEvent,
+        crate::System::Action_1<
+            crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardVisibilityChangedEvent,
+        >,
     >,
     pub ActiveKeyboardTransform: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Transform,
@@ -81,7 +81,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRTrackedKeyboard")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRTrackedKeyboard {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

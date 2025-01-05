@@ -2,12 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AesEngine {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ROUNDS: i32,
     pub WorkingKey: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppArray<u32>>,
     >,
     pub C0: u32,
     pub C1: u32,
@@ -23,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+AesEngine")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Engines::AesEngine {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -46,7 +44,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::AesEngine {
         &mut self,
         KW: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+                *mut quest_hook::libil2cpp::Il2CppArray<u32>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -61,7 +59,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::AesEngine {
         &mut self,
         KW: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+                *mut quest_hook::libil2cpp::Il2CppArray<u32>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -89,7 +87,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::AesEngine {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+                *mut quest_hook::libil2cpp::Il2CppArray<u32>,
             >,
         >,
     > {
@@ -98,7 +96,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::AesEngine {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+                *mut quest_hook::libil2cpp::Il2CppArray<u32>,
             >,
         > = __cordl_object.invoke("GenerateWorkingKey", (key, forEncryption))?;
         Ok(__cordl_ret.into())
@@ -236,20 +234,16 @@ for crate::Org::BouncyCastle::Crypto::Engines::AesEngine {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+AesEngine")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockCipher>>
+impl AsRef<crate::Org::BouncyCastle::Crypto::IBlockCipher>
 for crate::Org::BouncyCastle::Crypto::Engines::AesEngine {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockCipher> {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IBlockCipher {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+AesEngine")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockCipher>>
+impl AsMut<crate::Org::BouncyCastle::Crypto::IBlockCipher>
 for crate::Org::BouncyCastle::Crypto::Engines::AesEngine {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockCipher> {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IBlockCipher {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,9 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DropdownMenu {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_MenuItems: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DropdownMenuItem>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DropdownMenuItem>,
+        >,
     >,
     pub m_DropdownMenuEventInfo: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::DropdownMenuEventInfo,
@@ -17,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+DropdownMenu")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DropdownMenu {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,7 +36,11 @@ impl crate::UnityEngine::UIElements::DropdownMenu {
         &mut self,
         actionName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         action: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DropdownMenuAction>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::DropdownMenuAction,
+                >,
+            >,
         >,
         status: crate::UnityEngine::UIElements::DropdownMenuAction_Status,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -45,17 +51,23 @@ impl crate::UnityEngine::UIElements::DropdownMenu {
             .invoke("AppendAction", (actionName, action, status))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AppendAction_Gc_Gc0(
+    pub fn AppendAction_Func_2_Il2CppObject0(
         &mut self,
         actionName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         action: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DropdownMenuAction>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::DropdownMenuAction,
+                >,
+            >,
         >,
         actionStatusCallback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::DropdownMenuAction,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::DropdownMenuAction,
+                >,
+                crate::UnityEngine::UIElements::DropdownMenuAction_Status,
             >,
-            crate::UnityEngine::UIElements::DropdownMenuAction_Status,
         >,
         userData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -96,14 +108,22 @@ impl crate::UnityEngine::UIElements::DropdownMenu {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DropdownMenuItem>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::DropdownMenuItem,
+                >,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DropdownMenuItem>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::DropdownMenuItem,
+                >,
+            >,
         > = __cordl_object.invoke("MenuItems", ())?;
         Ok(__cordl_ret.into())
     }

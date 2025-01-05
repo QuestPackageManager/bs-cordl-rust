@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Numeric10FacetsChecker {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::FacetsChecker>,
+    __cordl_parent: crate::System::Xml::Schema::FacetsChecker,
     pub maxValue: crate::System::Decimal,
     pub minValue: crate::System::Decimal,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+Numeric10FacetsChecker")]
 impl std::ops::Deref for crate::System::Xml::Schema::Numeric10FacetsChecker {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::FacetsChecker>;
+    type Target = crate::System::Xml::Schema::FacetsChecker;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -62,7 +62,7 @@ impl crate::System::Xml::Schema::Numeric10FacetsChecker {
             .invoke("CheckValueFacets", (value, datatype))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CheckValueFacets_Gc0(
+    pub fn CheckValueFacets_Il2CppObject0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         datatype: quest_hook::libil2cpp::Gc<
@@ -126,7 +126,7 @@ impl crate::System::Xml::Schema::Numeric10FacetsChecker {
             .invoke("CheckValueFacets", (value, datatype))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MatchEnumeration_Decimal1(
+    pub fn MatchEnumeration_Decimal_XmlValueConverter1(
         &mut self,
         value: crate::System::Decimal,
         enumeration: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
@@ -141,7 +141,7 @@ impl crate::System::Xml::Schema::Numeric10FacetsChecker {
             .invoke("MatchEnumeration", (value, enumeration, valueConverter))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MatchEnumeration_Gc0(
+    pub fn MatchEnumeration_Il2CppObject_XmlSchemaDatatype0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         enumeration: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,

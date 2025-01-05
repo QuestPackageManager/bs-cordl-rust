@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LoadStaticFieldInstruction {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::FieldInstruction,
-    >,
+    __cordl_parent: crate::System::Linq::Expressions::Interpreter::FieldInstruction,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LoadStaticFieldInstruction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LoadStaticFieldInstruction")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::LoadStaticFieldInstruction {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::FieldInstruction,
-    >;
+    type Target = crate::System::Linq::Expressions::Interpreter::FieldInstruction;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AddressablesLoader {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "BGLib+AsyncInitialization+AddressablesLoader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BGLib+AsyncInitialization+AddressablesLoader")]
 impl std::ops::Deref for crate::BGLib::AsyncInitialization::AddressablesLoader {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,14 +29,18 @@ impl crate::BGLib::AsyncInitialization::AddressablesLoader {
             crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
         >,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TReturn>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TReturn>>,
+    >
     where
         TInstantiate: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
         TReturn: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TReturn> = <Self as quest_hook::libil2cpp::Type>::class()
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<TReturn>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("InstantiateFromAddressableToContainer", (prefab, container))?;
         Ok(__cordl_ret.into())
     }

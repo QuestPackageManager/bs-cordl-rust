@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BigInteger {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub length: u32,
     pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Math+BigInteger")]
 impl std::ops::Deref for crate::Mono::Math::BigInteger {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -68,7 +68,7 @@ impl crate::Mono::Math::BigInteger {
             .invoke("GeneratePseudoPrime", (bits))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GenerateRandom_Gc0(
+    pub fn GenerateRandom_RandomNumberGenerator0(
         bits: i32,
         rng: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::RandomNumberGenerator,
@@ -153,6 +153,15 @@ impl crate::Mono::Math::BigInteger {
             .invoke("ModPow", (exp, n))?;
         Ok(__cordl_ret.into())
     }
+    pub fn New_BigInteger1(
+        bi: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (bi))?;
+        Ok(__cordl_object.into())
+    }
     pub fn New_BigInteger_Sign_u32_0(
         sign: crate::Mono::Math::BigInteger_Sign,
         len: u32,
@@ -163,25 +172,7 @@ impl crate::Mono::Math::BigInteger {
             .invoke_void(".ctor", (sign, len))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
-        bi: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (bi))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc3(
-        inData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (inData))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_u32_2(
+    pub fn New_BigInteger_u32_2(
         bi: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
         len: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -189,6 +180,15 @@ impl crate::Mono::Math::BigInteger {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (bi, len))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Il2CppArray3(
+        inData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (inData))?;
         Ok(__cordl_object.into())
     }
     pub fn New_u32_4(
@@ -267,7 +267,7 @@ impl crate::Mono::Math::BigInteger {
         > = __cordl_object.invoke("ToString", (radix))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_u32_Gc1(
+    pub fn ToString_u32_Il2CppString1(
         &mut self,
         radix: u32,
         characterSet: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -282,6 +282,17 @@ impl crate::Mono::Math::BigInteger {
         > = __cordl_object.invoke("ToString", (radix, characterSet))?;
         Ok(__cordl_ret.into())
     }
+    pub fn _ctor_BigInteger1(
+        &mut self,
+        bi: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (bi))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor_BigInteger_Sign_u32_0(
         &mut self,
         sign: crate::Mono::Math::BigInteger_Sign,
@@ -294,29 +305,7 @@ impl crate::Mono::Math::BigInteger {
             .invoke(".ctor", (sign, len))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
-        &mut self,
-        bi: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (bi))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc3(
-        &mut self,
-        inData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (inData))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_u32_2(
+    pub fn _ctor_BigInteger_u32_2(
         &mut self,
         bi: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
         len: u32,
@@ -326,6 +315,17 @@ impl crate::Mono::Math::BigInteger {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (bi, len))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppArray3(
+        &mut self,
+        inData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (inData))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_u32_4(
@@ -359,7 +359,7 @@ impl crate::Mono::Math::BigInteger {
             .invoke("op_Division", (bi1, bi2))?;
         Ok(__cordl_ret.into())
     }
-    pub fn op_Equality_Gc1(
+    pub fn op_Equality_BigInteger1(
         bi1: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
         bi2: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -409,7 +409,7 @@ impl crate::Mono::Math::BigInteger {
             .invoke("op_Implicit", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn op_Inequality_Gc1(
+    pub fn op_Inequality_BigInteger1(
         bi1: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
         bi2: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -451,7 +451,7 @@ impl crate::Mono::Math::BigInteger {
             .invoke("op_LessThanOrEqual", (bi1, bi2))?;
         Ok(__cordl_ret.into())
     }
-    pub fn op_Modulus_Gc1(
+    pub fn op_Modulus_BigInteger1(
         bi1: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
         bi2: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<
@@ -513,7 +513,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Math::BigInteger {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BigInteger_Kernel {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Mono+Math+BigInteger+Kernel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -522,7 +522,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Math+BigInteger+Kernel")]
 impl std::ops::Deref for crate::Mono::Math::BigInteger_Kernel {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -548,15 +548,11 @@ impl crate::Mono::Math::BigInteger_Kernel {
         d: u32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::Mono::Math::BigInteger>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::Mono::Math::BigInteger>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("DwordDivMod", (n, d))?;
         Ok(__cordl_ret.into())
@@ -655,7 +651,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
             .invoke("Subtract", (big, small))?;
         Ok(__cordl_ret.into())
     }
-    pub fn modInverse_Gc1(
+    pub fn modInverse_BigInteger1(
         bi: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
         modulus: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<
@@ -678,15 +674,11 @@ impl crate::Mono::Math::BigInteger_Kernel {
         bi2: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::Mono::Math::BigInteger>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::Mono::Math::BigInteger>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("multiByteDivide", (bi1, bi2))?;
         Ok(__cordl_ret.into())
@@ -705,7 +697,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Math::BigInteger_Kernel 
 #[repr(C)]
 #[derive(Debug)]
 pub struct BigInteger_ModulusRing {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_mod: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     pub constant: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
 }
@@ -716,7 +708,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Math+BigInteger+ModulusRing")]
 impl std::ops::Deref for crate::Mono::Math::BigInteger_ModulusRing {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -777,7 +769,7 @@ impl crate::Mono::Math::BigInteger_ModulusRing {
             .invoke_void(".ctor", (modulus))?;
         Ok(__cordl_object.into())
     }
-    pub fn Pow_Gc0(
+    pub fn Pow_BigInteger0(
         &mut self,
         a: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
         k: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,

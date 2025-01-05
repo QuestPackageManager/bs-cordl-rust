@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GUILayoutEntry {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub minWidth: f32,
     pub maxWidth: f32,
     pub minHeight: f32,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+GUILayoutEntry")]
 impl std::ops::Deref for crate::UnityEngine::GUILayoutEntry {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -36,9 +36,7 @@ impl crate::UnityEngine::GUILayoutEntry {
     pub fn ApplyOptions(
         &mut self,
         options: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::GUILayoutOption>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GUILayoutOption>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -79,16 +77,14 @@ impl crate::UnityEngine::GUILayoutEntry {
             .invoke("CalcWidth", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Il2CppArray1(
         _minWidth: f32,
         _maxWidth: f32,
         _minHeight: f32,
         _maxHeight: f32,
         _style: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
         options: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::GUILayoutOption>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GUILayoutOption>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -100,7 +96,7 @@ impl crate::UnityEngine::GUILayoutEntry {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_f32_f32_f32_f32_Gc0(
+    pub fn New_f32_f32_f32_f32_GUIStyle0(
         _minWidth: f32,
         _maxWidth: f32,
         _minHeight: f32,
@@ -153,7 +149,7 @@ impl crate::UnityEngine::GUILayoutEntry {
         > = __cordl_object.invoke("ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Il2CppArray1(
         &mut self,
         _minWidth: f32,
         _maxWidth: f32,
@@ -161,9 +157,7 @@ impl crate::UnityEngine::GUILayoutEntry {
         _maxHeight: f32,
         _style: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
         options: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::GUILayoutOption>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GUILayoutOption>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -176,7 +170,7 @@ impl crate::UnityEngine::GUILayoutEntry {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_f32_f32_f32_f32_Gc0(
+    pub fn _ctor_f32_f32_f32_f32_GUIStyle0(
         &mut self,
         _minWidth: f32,
         _maxWidth: f32,

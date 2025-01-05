@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConvertBinder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Dynamic::DynamicMetaObjectBinder,
-    >,
+    __cordl_parent: crate::System::Dynamic::DynamicMetaObjectBinder,
     pub _Type_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "System+Dynamic+ConvertBinder")]
@@ -14,9 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Dynamic+ConvertBinder")]
 impl std::ops::Deref for crate::System::Dynamic::ConvertBinder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Dynamic::DynamicMetaObjectBinder,
-    >;
+    type Target = crate::System::Dynamic::DynamicMetaObjectBinder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,7 +30,7 @@ impl crate::System::Dynamic::ConvertBinder {
         target: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
         args: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+                *mut crate::System::Dynamic::DynamicMetaObject,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -48,7 +44,7 @@ impl crate::System::Dynamic::ConvertBinder {
         > = __cordl_object.invoke("Bind", (target, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FallbackConvert_Gc0(
+    pub fn FallbackConvert_DynamicMetaObject0(
         &mut self,
         target: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     ) -> quest_hook::libil2cpp::Result<
@@ -62,7 +58,7 @@ impl crate::System::Dynamic::ConvertBinder {
         > = __cordl_object.invoke("FallbackConvert", (target))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FallbackConvert_Gc1(
+    pub fn FallbackConvert_DynamicMetaObject1(
         &mut self,
         target: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
         errorSuggestion: quest_hook::libil2cpp::Gc<

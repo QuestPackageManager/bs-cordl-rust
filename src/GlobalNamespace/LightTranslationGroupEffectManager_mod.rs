@@ -2,15 +2,19 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightTranslationGroupEffectManager {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _lightTranslationGroups: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightTranslationGroup>,
+            *mut crate::GlobalNamespace::LightTranslationGroup,
         >,
     >,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub _lightTranslationGroupEffects: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightTranslationGroupEffect>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LightTranslationGroupEffect,
+            >,
+        >,
     >,
 }
 #[cfg(feature = "LightTranslationGroupEffectManager")]
@@ -21,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LightTranslationGroupEffectManager")]
 impl std::ops::Deref for crate::GlobalNamespace::LightTranslationGroupEffectManager {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

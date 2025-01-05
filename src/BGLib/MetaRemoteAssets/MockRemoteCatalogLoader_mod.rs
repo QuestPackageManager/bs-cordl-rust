@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MockRemoteCatalogLoader {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "BGLib+MetaRemoteAssets+MockRemoteCatalogLoader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BGLib+MetaRemoteAssets+MockRemoteCatalogLoader")]
 impl std::ops::Deref for crate::BGLib::MetaRemoteAssets::MockRemoteCatalogLoader {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -27,12 +27,15 @@ impl crate::BGLib::MetaRemoteAssets::MockRemoteCatalogLoader {
     pub fn LoadRemoteCatalogAsync(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = __cordl_object
-            .invoke("LoadRemoteCatalogAsync", (cancellationToken))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<bool>,
+        > = __cordl_object.invoke("LoadRemoteCatalogAsync", (cancellationToken))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -64,26 +67,16 @@ for crate::BGLib::MetaRemoteAssets::MockRemoteCatalogLoader {
     }
 }
 #[cfg(feature = "BGLib+MetaRemoteAssets+MockRemoteCatalogLoader")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::BGLib::MetaRemoteAssets::IRemoteCatalogLoader>,
-> for crate::BGLib::MetaRemoteAssets::MockRemoteCatalogLoader {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::BGLib::MetaRemoteAssets::IRemoteCatalogLoader,
-    > {
+impl AsRef<crate::BGLib::MetaRemoteAssets::IRemoteCatalogLoader>
+for crate::BGLib::MetaRemoteAssets::MockRemoteCatalogLoader {
+    fn as_ref(&self) -> &crate::BGLib::MetaRemoteAssets::IRemoteCatalogLoader {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BGLib+MetaRemoteAssets+MockRemoteCatalogLoader")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::BGLib::MetaRemoteAssets::IRemoteCatalogLoader>,
-> for crate::BGLib::MetaRemoteAssets::MockRemoteCatalogLoader {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::BGLib::MetaRemoteAssets::IRemoteCatalogLoader,
-    > {
+impl AsMut<crate::BGLib::MetaRemoteAssets::IRemoteCatalogLoader>
+for crate::BGLib::MetaRemoteAssets::MockRemoteCatalogLoader {
+    fn as_mut(&mut self) -> &mut crate::BGLib::MetaRemoteAssets::IRemoteCatalogLoader {
         unsafe { std::mem::transmute(self) }
     }
 }

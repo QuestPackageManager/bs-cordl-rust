@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameSongController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SongController>,
+    __cordl_parent: crate::GlobalNamespace::SongController,
     pub _audioTimeSyncController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::AudioTimeSyncController,
     >,
@@ -24,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "GameSongController")]
 impl std::ops::Deref for crate::GlobalNamespace::GameSongController {
-    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SongController>;
+    type Target = crate::GlobalNamespace::SongController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -173,22 +173,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GameSongContr
     }
 }
 #[cfg(feature = "GameSongController")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IStartSeekSongController>>
+impl AsRef<crate::GlobalNamespace::IStartSeekSongController>
 for crate::GlobalNamespace::GameSongController {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IStartSeekSongController> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IStartSeekSongController {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "GameSongController")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IStartSeekSongController>>
+impl AsMut<crate::GlobalNamespace::IStartSeekSongController>
 for crate::GlobalNamespace::GameSongController {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IStartSeekSongController,
-    > {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IStartSeekSongController {
         unsafe { std::mem::transmute(self) }
     }
 }

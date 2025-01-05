@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RuntimeAssembly {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+    __cordl_parent: crate::System::Reflection::Assembly,
     pub _mono_assembly: crate::System::IntPtr,
     pub _evidence: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub resolve_event_holder: quest_hook::libil2cpp::Gc<
@@ -23,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Reflection+RuntimeAssembly")]
 impl std::ops::Deref for crate::System::Reflection::RuntimeAssembly {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>;
+    type Target = crate::System::Reflection::Assembly;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -73,24 +73,20 @@ impl crate::System::Reflection::RuntimeAssembly {
             .invoke("GetCodeBase", (a, escaped))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetCustomAttributes_Gc__cordl_bool1(
+    pub fn GetCustomAttributes_Type__cordl_bool1(
         &mut self,
         attributeType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         inherit: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         > = __cordl_object.invoke("GetCustomAttributes", (attributeType, inherit))?;
         Ok(__cordl_ret.into())
     }
@@ -99,18 +95,14 @@ impl crate::System::Reflection::RuntimeAssembly {
         inherit: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         > = __cordl_object.invoke("GetCustomAttributes", (inherit))?;
         Ok(__cordl_ret.into())
     }
@@ -154,18 +146,14 @@ impl crate::System::Reflection::RuntimeAssembly {
         getResourceModules: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::Module>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::Module>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::Module>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::Module>,
         > = __cordl_object.invoke("GetModules", (getResourceModules))?;
         Ok(__cordl_ret.into())
     }
@@ -173,18 +161,14 @@ impl crate::System::Reflection::RuntimeAssembly {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::Module>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::Module>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::Module>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::Module>,
         > = __cordl_object.invoke("GetModulesInternal", ())?;
         Ok(__cordl_ret.into())
     }
@@ -241,7 +225,24 @@ impl crate::System::Reflection::RuntimeAssembly {
             .invoke("IsDefined", (attributeType, inherit))?;
         Ok(__cordl_ret.into())
     }
-    pub fn LoadWithPartialNameInternal_Gc_Gc_ByRefMut0(
+    pub fn LoadWithPartialNameInternal_AssemblyName1(
+        an: quest_hook::libil2cpp::Gc<crate::System::Reflection::AssemblyName>,
+        securityEvidence: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Policy::Evidence,
+        >,
+        stackMark: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Threading::StackCrawlMark,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::RuntimeAssembly>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::RuntimeAssembly,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadWithPartialNameInternal", (an, securityEvidence, stackMark))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadWithPartialNameInternal_Il2CppString0(
         partialName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         securityEvidence: quest_hook::libil2cpp::Gc<
             crate::System::Security::Policy::Evidence,
@@ -259,23 +260,6 @@ impl crate::System::Reflection::RuntimeAssembly {
                 "LoadWithPartialNameInternal",
                 (partialName, securityEvidence, stackMark),
             )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn LoadWithPartialNameInternal_Gc_Gc_ByRefMut1(
-        an: quest_hook::libil2cpp::Gc<crate::System::Reflection::AssemblyName>,
-        securityEvidence: quest_hook::libil2cpp::Gc<
-            crate::System::Security::Policy::Evidence,
-        >,
-        stackMark: quest_hook::libil2cpp::ByRefMut<
-            crate::System::Threading::StackCrawlMark,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Reflection::RuntimeAssembly>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Reflection::RuntimeAssembly,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("LoadWithPartialNameInternal", (an, securityEvidence, stackMark))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

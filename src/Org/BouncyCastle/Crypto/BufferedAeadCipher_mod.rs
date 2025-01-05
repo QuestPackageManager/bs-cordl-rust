@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BufferedAeadCipher {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::BufferedCipherBase,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Crypto::BufferedCipherBase,
     pub cipher: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Modes::IAeadCipher,
     >,
@@ -16,9 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+BufferedAeadCipher")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::BufferedAeadCipher {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::BufferedCipherBase,
-    >;
+    type Target = crate::Org::BouncyCastle::Crypto::BufferedCipherBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,7 +40,7 @@ impl crate::Org::BouncyCastle::Crypto::BufferedAeadCipher {
         > = __cordl_object.invoke("DoFinal", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn DoFinal_Gc_i32_2(
+    pub fn DoFinal_Il2CppArray_i32_2(
         &mut self,
         output: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         outOff: i32,
@@ -55,7 +51,7 @@ impl crate::Org::BouncyCastle::Crypto::BufferedAeadCipher {
         let __cordl_ret: i32 = __cordl_object.invoke("DoFinal", (output, outOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DoFinal_Gc_i32_i32_1(
+    pub fn DoFinal_Il2CppArray_i32_i32_1(
         &mut self,
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         inOff: i32,
@@ -120,7 +116,7 @@ impl crate::Org::BouncyCastle::Crypto::BufferedAeadCipher {
             .invoke_void(".ctor", (cipher))?;
         Ok(__cordl_object.into())
     }
-    pub fn ProcessByte_Gc_i32_0(
+    pub fn ProcessByte_Il2CppArray_i32_0(
         &mut self,
         input: u8,
         output: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -147,7 +143,7 @@ impl crate::Org::BouncyCastle::Crypto::BufferedAeadCipher {
         > = __cordl_object.invoke("ProcessByte", (input))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ProcessBytes_Gc_i32_1(
+    pub fn ProcessBytes_Il2CppArray_i32_1(
         &mut self,
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         inOff: i32,
@@ -162,7 +158,7 @@ impl crate::Org::BouncyCastle::Crypto::BufferedAeadCipher {
             .invoke("ProcessBytes", (input, inOff, length, output, outOff))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ProcessBytes_Gc_i32_i32_0(
+    pub fn ProcessBytes_Il2CppArray_i32_i32_0(
         &mut self,
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         inOff: i32,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MediaAsyncLoader {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "MediaAsyncLoader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MediaAsyncLoader")]
 impl std::ops::Deref for crate::GlobalNamespace::MediaAsyncLoader {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,11 +29,15 @@ impl crate::GlobalNamespace::MediaAsyncLoader {
         streamAudio: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("LoadAudioClipAsync", (filePath, streamAudio))?;
         Ok(__cordl_ret.into())
@@ -43,14 +47,18 @@ impl crate::GlobalNamespace::MediaAsyncLoader {
         filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+            >,
         > = __cordl_object.invoke("LoadAudioClipFromFilePathAsync", (filePath))?;
         Ok(__cordl_ret.into())
     }
@@ -58,10 +66,16 @@ impl crate::GlobalNamespace::MediaAsyncLoader {
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+            >,
+        >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("LoadSpriteAsync", (path, cancellationToken))?;
         Ok(__cordl_ret.into())
@@ -71,11 +85,15 @@ impl crate::GlobalNamespace::MediaAsyncLoader {
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("LoadTextureAsync", (path, cancellationToken))?;
         Ok(__cordl_ret.into())
@@ -85,11 +103,15 @@ impl crate::GlobalNamespace::MediaAsyncLoader {
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("LoadWebpage", (uri, cancellationToken))?;
         Ok(__cordl_ret.into())
@@ -129,20 +151,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MediaAsyncLoa
     }
 }
 #[cfg(feature = "MediaAsyncLoader")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMediaAsyncLoader>>
+impl AsRef<crate::GlobalNamespace::IMediaAsyncLoader>
 for crate::GlobalNamespace::MediaAsyncLoader {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMediaAsyncLoader> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IMediaAsyncLoader {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MediaAsyncLoader")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMediaAsyncLoader>>
+impl AsMut<crate::GlobalNamespace::IMediaAsyncLoader>
 for crate::GlobalNamespace::MediaAsyncLoader {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMediaAsyncLoader> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IMediaAsyncLoader {
         unsafe { std::mem::transmute(self) }
     }
 }

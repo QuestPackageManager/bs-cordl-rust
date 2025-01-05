@@ -2,13 +2,15 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Index {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     pub _indexFields: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::System::Data::IndexField>,
     >,
     pub _comparison: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
+        crate::System::Comparison_1<
+            quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
+        >,
     >,
     pub _recordStates: crate::System::Data::DataViewRowState,
     pub _rowFilter: quest_hook::libil2cpp::Gc<crate::System::WeakReference>,
@@ -16,7 +18,9 @@ pub struct Index {
     pub _recordCount: i32,
     pub _refCount: i32,
     pub _listeners: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Data::DataViewListener>,
+        crate::System::Data::Listeners_1<
+            quest_hook::libil2cpp::Gc<crate::System::Data::DataViewListener>,
+        >,
     >,
     pub _suspendEvents: bool,
     pub _isSharable: bool,
@@ -29,7 +33,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+Index")]
 impl std::ops::Deref for crate::System::Data::Index {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,7 +48,7 @@ impl std::ops::DerefMut for crate::System::Data::Index {
 impl crate::System::Data::Index {
     #[cfg(feature = "System+Data+Index+IndexTree")]
     pub type IndexTree = crate::System::Data::Index_IndexTree;
-    pub fn AcceptRecord_Gc1(
+    pub fn AcceptRecord_IFilter1(
         &mut self,
         record: i32,
         filter: quest_hook::libil2cpp::Gc<crate::System::Data::IFilter>,
@@ -123,9 +127,7 @@ impl crate::System::Data::Index {
         &mut self,
         record1: i32,
         vals: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -219,9 +221,7 @@ impl crate::System::Data::Index {
     pub fn FindNodeByKeys(
         &mut self,
         originalKey: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -230,9 +230,11 @@ impl crate::System::Data::Index {
         let __cordl_ret: i32 = __cordl_object.invoke("FindNodeByKeys", (originalKey))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FindRecords_Gc0(
+    pub fn FindRecords_Il2CppArray1(
         &mut self,
-        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        key: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::Range> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -241,13 +243,9 @@ impl crate::System::Data::Index {
             .invoke("FindRecords", (key))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FindRecords_Gc1(
+    pub fn FindRecords_Il2CppObject0(
         &mut self,
-        key: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
-        >,
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::Range> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -361,27 +359,21 @@ impl crate::System::Data::Index {
             .invoke("GetRow", (i))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetRows_Gc0(
+    pub fn GetRows_Il2CppArray0(
         &mut self,
         values: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataRow>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataRow>,
         > = __cordl_object.invoke("GetRows", (values))?;
         Ok(__cordl_ret.into())
     }
@@ -390,18 +382,14 @@ impl crate::System::Data::Index {
         range: crate::System::Data::Range,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataRow>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataRow>,
         > = __cordl_object.invoke("GetRows", (range))?;
         Ok(__cordl_ret.into())
     }
@@ -409,27 +397,25 @@ impl crate::System::Data::Index {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         > = __cordl_object.invoke("GetUniqueKeyValues", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetUniqueKeyValues_Gc_i32_1(
+    pub fn GetUniqueKeyValues_List_1_i32_1(
         &mut self,
         list: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Il2CppArray<
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        *mut quest_hook::libil2cpp::Il2CppObject,
+                    >,
                 >,
             >,
         >,
@@ -443,7 +429,7 @@ impl crate::System::Data::Index {
         Ok(__cordl_ret.into())
     }
     pub fn IndexOfReference<T>(
-        list: quest_hook::libil2cpp::Gc<T>,
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
         item: T,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -487,9 +473,11 @@ impl crate::System::Data::Index {
         let __cordl_ret: i32 = __cordl_object.invoke("InsertRecordToIndex", (record))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsKeyInIndex_Gc0(
+    pub fn IsKeyInIndex_Il2CppArray1(
         &mut self,
-        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        key: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -497,13 +485,9 @@ impl crate::System::Data::Index {
         let __cordl_ret: bool = __cordl_object.invoke("IsKeyInIndex", (key))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsKeyInIndex_Gc1(
+    pub fn IsKeyInIndex_Il2CppObject0(
         &mut self,
-        key: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
-        >,
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -556,24 +540,12 @@ impl crate::System::Data::Index {
             .invoke("MaintainDataView", (changedType, record, trackAddRemove))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_DataViewRowState_Gc0(
-        table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
-        indexFields: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<crate::System::Data::IndexField>,
-        >,
-        recordStates: crate::System::Data::DataViewRowState,
-        rowFilter: quest_hook::libil2cpp::Gc<crate::System::Data::IFilter>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (table, indexFields, recordStates, rowFilter))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_DataViewRowState_Gc1(
+    pub fn New_Comparison_1_DataViewRowState_IFilter1(
         table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         comparison: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
+            crate::System::Comparison_1<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
+            >,
         >,
         recordStates: crate::System::Data::DataViewRowState,
         rowFilter: quest_hook::libil2cpp::Gc<crate::System::Data::IFilter>,
@@ -584,13 +556,15 @@ impl crate::System::Data::Index {
             .invoke_void(".ctor", (table, comparison, recordStates, rowFilter))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_DataViewRowState_Gc2(
+    pub fn New_Il2CppArray_Comparison_1_DataViewRowState_IFilter2(
         table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         indexFields: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::System::Data::IndexField>,
         >,
         comparison: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
+            crate::System::Comparison_1<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
+            >,
         >,
         recordStates: crate::System::Data::DataViewRowState,
         rowFilter: quest_hook::libil2cpp::Gc<crate::System::Data::IFilter>,
@@ -604,7 +578,21 @@ impl crate::System::Data::Index {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn OnListChanged_Gc2(
+    pub fn New_Il2CppArray_DataViewRowState_IFilter0(
+        table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+        indexFields: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::System::Data::IndexField>,
+        >,
+        recordStates: crate::System::Data::DataViewRowState,
+        rowFilter: quest_hook::libil2cpp::Gc<crate::System::Data::IFilter>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (table, indexFields, recordStates, rowFilter))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn OnListChanged_ListChangedEventArgs2(
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::System::ComponentModel::ListChangedEventArgs>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -719,7 +707,46 @@ impl crate::System::Data::Index {
             .invoke("Reset", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_DataViewRowState_Gc0(
+    pub fn _ctor_Comparison_1_DataViewRowState_IFilter1(
+        &mut self,
+        table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+        comparison: quest_hook::libil2cpp::Gc<
+            crate::System::Comparison_1<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
+            >,
+        >,
+        recordStates: crate::System::Data::DataViewRowState,
+        rowFilter: quest_hook::libil2cpp::Gc<crate::System::Data::IFilter>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (table, comparison, recordStates, rowFilter))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppArray_Comparison_1_DataViewRowState_IFilter2(
+        &mut self,
+        table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+        indexFields: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::System::Data::IndexField>,
+        >,
+        comparison: quest_hook::libil2cpp::Gc<
+            crate::System::Comparison_1<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
+            >,
+        >,
+        recordStates: crate::System::Data::DataViewRowState,
+        rowFilter: quest_hook::libil2cpp::Gc<crate::System::Data::IFilter>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (table, indexFields, comparison, recordStates, rowFilter))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppArray_DataViewRowState_IFilter0(
         &mut self,
         table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         indexFields: quest_hook::libil2cpp::Gc<
@@ -733,41 +760,6 @@ impl crate::System::Data::Index {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (table, indexFields, recordStates, rowFilter))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_DataViewRowState_Gc1(
-        &mut self,
-        table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
-        comparison: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
-        >,
-        recordStates: crate::System::Data::DataViewRowState,
-        rowFilter: quest_hook::libil2cpp::Gc<crate::System::Data::IFilter>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (table, comparison, recordStates, rowFilter))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_DataViewRowState_Gc2(
-        &mut self,
-        table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
-        indexFields: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<crate::System::Data::IndexField>,
-        >,
-        comparison: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
-        >,
-        recordStates: crate::System::Data::DataViewRowState,
-        rowFilter: quest_hook::libil2cpp::Gc<crate::System::Data::IFilter>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (table, indexFields, comparison, recordStates, rowFilter))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_DoListChanged(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -860,7 +852,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::Index {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Index_IndexTree {
-    __cordl_parent: quest_hook::libil2cpp::Gc<i32>,
+    __cordl_parent: crate::System::Data::RBTree_1<i32>,
     pub _index: quest_hook::libil2cpp::Gc<crate::System::Data::Index>,
 }
 #[cfg(feature = "System+Data+Index+IndexTree")]
@@ -870,7 +862,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+Index+IndexTree")]
 impl std::ops::Deref for crate::System::Data::Index_IndexTree {
-    type Target = quest_hook::libil2cpp::Gc<i32>;
+    type Target = crate::System::Data::RBTree_1<i32>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

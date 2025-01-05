@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JapaneseCalendar {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Globalization::Calendar>,
+    __cordl_parent: crate::System::Globalization::Calendar,
     pub helper: quest_hook::libil2cpp::Gc<
         crate::System::Globalization::GregorianCalendarHelper,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Globalization+JapaneseCalendar")]
 impl std::ops::Deref for crate::System::Globalization::JapaneseCalendar {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Globalization::Calendar>;
+    type Target = crate::System::Globalization::Calendar;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,30 +29,22 @@ impl std::ops::DerefMut for crate::System::Globalization::JapaneseCalendar {
 impl crate::System::Globalization::JapaneseCalendar {
     pub fn EnglishEraNames() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("EnglishEraNames", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn EraNames() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("EraNames", ())?;
         Ok(__cordl_ret.into())
     }
@@ -123,13 +115,13 @@ impl crate::System::Globalization::JapaneseCalendar {
     pub fn GetEraInfo() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Globalization::EraInfo>,
+                *mut crate::System::Globalization::EraInfo,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Globalization::EraInfo>,
+                *mut crate::System::Globalization::EraInfo,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetEraInfo", ())?;
         Ok(__cordl_ret.into())
@@ -137,13 +129,13 @@ impl crate::System::Globalization::JapaneseCalendar {
     pub fn GetErasFromRegistry() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Globalization::EraInfo>,
+                *mut crate::System::Globalization::EraInfo,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Globalization::EraInfo>,
+                *mut crate::System::Globalization::EraInfo,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetErasFromRegistry", ())?;

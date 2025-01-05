@@ -4,7 +4,9 @@
 pub struct ArticulationJacobian {
     pub rowsCount: i32,
     pub colsCount: i32,
-    pub matrixData: quest_hook::libil2cpp::Gc<f32>,
+    pub matrixData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<f32>,
+    >,
 }
 #[cfg(feature = "UnityEngine+ArticulationJacobian")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -58,12 +60,12 @@ impl crate::UnityEngine::ArticulationJacobian {
     }
     pub fn get_elements(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<f32>> {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<f32> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_elements",
-            (),
-        )?;
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<f32>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_elements", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_rows(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -100,7 +102,9 @@ impl crate::UnityEngine::ArticulationJacobian {
     }
     pub fn set_elements(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<f32>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

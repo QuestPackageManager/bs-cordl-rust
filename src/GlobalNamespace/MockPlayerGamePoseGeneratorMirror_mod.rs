@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MockPlayerGamePoseGeneratorMirror {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MockPlayerGamePoseGenerator,
-    >,
+    __cordl_parent: crate::GlobalNamespace::MockPlayerGamePoseGenerator,
     pub _nodePoseSyncStateManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::NodePoseSyncStateManager,
     >,
@@ -21,9 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MockPlayerGamePoseGeneratorMirror")]
 impl std::ops::Deref for crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MockPlayerGamePoseGenerator,
-    >;
+    type Target = crate::GlobalNamespace::MockPlayerGamePoseGenerator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

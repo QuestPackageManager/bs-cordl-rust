@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRSceneRoom {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _Floor_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::OVRScenePlane,
     >,
@@ -10,28 +10,37 @@ pub struct OVRSceneRoom {
         crate::GlobalNamespace::OVRScenePlane,
     >,
     pub _Walls_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::OVRScenePlane>,
+    >,
+    pub _walls: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
             quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScenePlane>,
         >,
     >,
-    pub _walls: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScenePlane>,
+    pub _orderedRoomGuids: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<crate::System::Guid, i32>,
     >,
-    pub _orderedRoomGuids: quest_hook::libil2cpp::Gc<crate::System::Guid, i32>,
     pub _wallOrderComparer: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScenePlane>,
+        crate::System::Comparison_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScenePlane>,
+        >,
     >,
     pub _sceneAnchor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSceneAnchor>,
     pub _sceneManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::OVRSceneManager,
     >,
-    pub _uuidToQuery: quest_hook::libil2cpp::Gc<crate::System::Guid>,
-    pub _roomAnchors: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor>,
+    pub _uuidToQuery: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<crate::System::Guid>,
+    >,
+    pub _roomAnchors: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::GlobalNamespace::OVRAnchor>,
+    >,
     pub _taskCount: i32,
-    pub _onFetchAnchorsCompleted: quest_hook::libil2cpp::Gc<bool>,
+    pub _onFetchAnchorsCompleted: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<bool>,
+    >,
     pub _onAnchorLocalizationCompleted: quest_hook::libil2cpp::Gc<
-        bool,
-        crate::GlobalNamespace::OVRAnchor,
+        crate::System::Action_2<bool, crate::GlobalNamespace::OVRAnchor>,
     >,
 }
 #[cfg(feature = "OVRSceneRoom")]
@@ -41,7 +50,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRSceneRoom")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSceneRoom {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -210,7 +219,7 @@ impl crate::GlobalNamespace::OVRSceneRoom {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScenePlane>,
+                *mut crate::GlobalNamespace::OVRScenePlane,
             >,
         >,
     > {
@@ -219,7 +228,7 @@ impl crate::GlobalNamespace::OVRSceneRoom {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScenePlane>,
+                *mut crate::GlobalNamespace::OVRScenePlane,
             >,
         > = __cordl_object.invoke("get_Walls", ())?;
         Ok(__cordl_ret.into())
@@ -250,7 +259,7 @@ impl crate::GlobalNamespace::OVRSceneRoom {
         &mut self,
         value: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScenePlane>,
+                *mut crate::GlobalNamespace::OVRScenePlane,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -272,20 +281,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSceneRoom 
     }
 }
 #[cfg(feature = "OVRSceneRoom")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IOVRSceneComponent>>
+impl AsRef<crate::GlobalNamespace::IOVRSceneComponent>
 for crate::GlobalNamespace::OVRSceneRoom {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IOVRSceneComponent> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IOVRSceneComponent {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OVRSceneRoom")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IOVRSceneComponent>>
+impl AsMut<crate::GlobalNamespace::IOVRSceneComponent>
 for crate::GlobalNamespace::OVRSceneRoom {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IOVRSceneComponent> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IOVRSceneComponent {
         unsafe { std::mem::transmute(self) }
     }
 }

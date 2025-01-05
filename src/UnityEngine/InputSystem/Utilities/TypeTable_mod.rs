@@ -3,8 +3,10 @@
 #[derive(Debug, Clone, Default)]
 pub struct TypeTable {
     pub table: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Utilities::InternedString,
-        quest_hook::libil2cpp::Gc<crate::System::Type>,
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::InputSystem::Utilities::InternedString,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+TypeTable")]
@@ -75,11 +77,15 @@ impl crate::UnityEngine::InputSystem::Utilities::TypeTable {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Utilities::InternedString,
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::InputSystem::Utilities::InternedString,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Utilities::InternedString,
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::InputSystem::Utilities::InternedString,
+            >,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_internedNames", ())?;
         Ok(__cordl_ret.into())
     }
@@ -87,11 +93,15 @@ impl crate::UnityEngine::InputSystem::Utilities::TypeTable {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_names", ())?;
         Ok(__cordl_ret.into())
     }

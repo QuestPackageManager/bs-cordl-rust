@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XPathNavigator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::XPath::XPathItem>,
+    __cordl_parent: crate::System::Xml::XPath::XPathItem,
 }
 #[cfg(feature = "System+Xml+XPath+XPathNavigator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XPath+XPathNavigator")]
 impl std::ops::Deref for crate::System::Xml::XPath::XPathNavigator {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::XPath::XPathItem>;
+    type Target = crate::System::Xml::XPath::XPathItem;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -42,16 +42,20 @@ impl crate::System::Xml::XPath::XPathNavigator {
         scope: crate::System::Xml::XmlNamespaceScope,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IDictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IDictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = __cordl_object.invoke("GetNamespacesInScope", (scope))?;
         Ok(__cordl_ret.into())
     }
@@ -369,34 +373,28 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XPath::XPathNavig
     }
 }
 #[cfg(feature = "System+Xml+XPath+XPathNavigator")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
-for crate::System::Xml::XPath::XPathNavigator {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
+impl AsRef<crate::System::ICloneable> for crate::System::Xml::XPath::XPathNavigator {
+    fn as_ref(&self) -> &crate::System::ICloneable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+XPath+XPathNavigator")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
-for crate::System::Xml::XPath::XPathNavigator {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
+impl AsMut<crate::System::ICloneable> for crate::System::Xml::XPath::XPathNavigator {
+    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+XPath+XPathNavigator")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver>>
+impl AsRef<crate::System::Xml::IXmlNamespaceResolver>
 for crate::System::Xml::XPath::XPathNavigator {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver> {
+    fn as_ref(&self) -> &crate::System::Xml::IXmlNamespaceResolver {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+XPath+XPathNavigator")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver>>
+impl AsMut<crate::System::Xml::IXmlNamespaceResolver>
 for crate::System::Xml::XPath::XPathNavigator {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver> {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IXmlNamespaceResolver {
         unsafe { std::mem::transmute(self) }
     }
 }

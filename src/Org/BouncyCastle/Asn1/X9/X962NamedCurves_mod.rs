@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X962NamedCurves {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -200,9 +200,7 @@ for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves {
 #[repr(C)]
 #[derive(Debug)]
 pub struct X962NamedCurves_C2pnb163v1Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb163v1Holder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -213,9 +211,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb163v1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb163v1Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -274,9 +270,7 @@ for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb163v1Holder {
 #[repr(C)]
 #[derive(Debug)]
 pub struct X962NamedCurves_C2pnb163v2Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb163v2Holder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -287,9 +281,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb163v2Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb163v2Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -348,9 +340,7 @@ for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb163v2Holder {
 #[repr(C)]
 #[derive(Debug)]
 pub struct X962NamedCurves_C2pnb163v3Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb163v3Holder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -361,9 +351,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb163v3Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb163v3Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -422,9 +410,7 @@ for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb163v3Holder {
 #[repr(C)]
 #[derive(Debug)]
 pub struct X962NamedCurves_C2pnb176w1Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb176w1Holder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -435,9 +421,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb176w1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb176w1Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -496,9 +480,7 @@ for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb176w1Holder {
 #[repr(C)]
 #[derive(Debug)]
 pub struct X962NamedCurves_C2pnb208w1Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb208w1Holder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -509,9 +491,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb208w1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb208w1Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -570,9 +550,7 @@ for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb208w1Holder {
 #[repr(C)]
 #[derive(Debug)]
 pub struct X962NamedCurves_C2pnb272w1Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb272w1Holder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -583,9 +561,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb272w1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb272w1Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -644,9 +620,7 @@ for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb272w1Holder {
 #[repr(C)]
 #[derive(Debug)]
 pub struct X962NamedCurves_C2pnb304w1Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb304w1Holder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -657,9 +631,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb304w1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb304w1Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -718,9 +690,7 @@ for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb304w1Holder {
 #[repr(C)]
 #[derive(Debug)]
 pub struct X962NamedCurves_C2pnb368w1Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb368w1Holder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -731,9 +701,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb368w1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb368w1Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -792,9 +760,7 @@ for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb368w1Holder {
 #[repr(C)]
 #[derive(Debug)]
 pub struct X962NamedCurves_C2tnb191v1Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb191v1Holder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -805,9 +771,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb191v1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb191v1Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -866,9 +830,7 @@ for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb191v1Holder {
 #[repr(C)]
 #[derive(Debug)]
 pub struct X962NamedCurves_C2tnb191v2Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb191v2Holder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -879,9 +841,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb191v2Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb191v2Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -940,9 +900,7 @@ for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb191v2Holder {
 #[repr(C)]
 #[derive(Debug)]
 pub struct X962NamedCurves_C2tnb191v3Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb191v3Holder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -953,9 +911,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb191v3Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb191v3Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1014,9 +970,7 @@ for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb191v3Holder {
 #[repr(C)]
 #[derive(Debug)]
 pub struct X962NamedCurves_C2tnb239v1Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb239v1Holder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1027,9 +981,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb239v1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb239v1Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1088,9 +1040,7 @@ for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb239v1Holder {
 #[repr(C)]
 #[derive(Debug)]
 pub struct X962NamedCurves_C2tnb239v2Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb239v2Holder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1101,9 +1051,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb239v2Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb239v2Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1162,9 +1110,7 @@ for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb239v2Holder {
 #[repr(C)]
 #[derive(Debug)]
 pub struct X962NamedCurves_C2tnb239v3Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb239v3Holder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1175,9 +1121,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb239v3Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb239v3Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1236,9 +1180,7 @@ for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb239v3Holder {
 #[repr(C)]
 #[derive(Debug)]
 pub struct X962NamedCurves_C2tnb359v1Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb359v1Holder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1249,9 +1191,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb359v1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb359v1Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1310,9 +1250,7 @@ for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb359v1Holder {
 #[repr(C)]
 #[derive(Debug)]
 pub struct X962NamedCurves_C2tnb431r1Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb431r1Holder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1323,9 +1261,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb431r1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb431r1Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1384,9 +1320,7 @@ for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb431r1Holder {
 #[repr(C)]
 #[derive(Debug)]
 pub struct X962NamedCurves_Prime192v1Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime192v1Holder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1397,9 +1331,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime192v1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime192v1Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1458,9 +1390,7 @@ for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime192v1Holder {
 #[repr(C)]
 #[derive(Debug)]
 pub struct X962NamedCurves_Prime192v2Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime192v2Holder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1471,9 +1401,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime192v2Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime192v2Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1532,9 +1460,7 @@ for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime192v2Holder {
 #[repr(C)]
 #[derive(Debug)]
 pub struct X962NamedCurves_Prime192v3Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime192v3Holder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1545,9 +1471,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime192v3Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime192v3Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1606,9 +1530,7 @@ for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime192v3Holder {
 #[repr(C)]
 #[derive(Debug)]
 pub struct X962NamedCurves_Prime239v1Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime239v1Holder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1619,9 +1541,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime239v1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime239v1Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1680,9 +1600,7 @@ for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime239v1Holder {
 #[repr(C)]
 #[derive(Debug)]
 pub struct X962NamedCurves_Prime239v2Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime239v2Holder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1693,9 +1611,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime239v2Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime239v2Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1754,9 +1670,7 @@ for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime239v2Holder {
 #[repr(C)]
 #[derive(Debug)]
 pub struct X962NamedCurves_Prime239v3Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime239v3Holder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1767,9 +1681,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime239v3Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime239v3Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1828,9 +1740,7 @@ for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime239v3Holder {
 #[repr(C)]
 #[derive(Debug)]
 pub struct X962NamedCurves_Prime256v1Holder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime256v1Holder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1841,9 +1751,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime256v1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime256v1Holder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

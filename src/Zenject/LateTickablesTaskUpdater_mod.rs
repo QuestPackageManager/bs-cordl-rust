@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LateTickablesTaskUpdater {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Zenject::TaskUpdater_1<
         quest_hook::libil2cpp::Gc<crate::Zenject::ILateTickable>,
     >,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+LateTickablesTaskUpdater")]
 impl std::ops::Deref for crate::Zenject::LateTickablesTaskUpdater {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Zenject::TaskUpdater_1<
         quest_hook::libil2cpp::Gc<crate::Zenject::ILateTickable>,
     >;
     fn deref(&self) -> &Self::Target {
@@ -48,9 +48,7 @@ impl crate::Zenject::LateTickablesTaskUpdater {
     }
     pub fn __zenCreate(
         P_0: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

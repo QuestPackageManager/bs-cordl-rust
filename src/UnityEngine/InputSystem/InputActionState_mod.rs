@@ -20,15 +20,15 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputActionState {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub maps: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionMap>,
+            *mut crate::UnityEngine::InputSystem::InputActionMap,
         >,
     >,
     pub controls: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+            *mut crate::UnityEngine::InputSystem::InputControl,
         >,
     >,
     pub interactions: quest_hook::libil2cpp::Gc<
@@ -36,14 +36,12 @@ pub struct InputActionState {
     >,
     pub processors: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputProcessor>,
+            *mut crate::UnityEngine::InputSystem::InputProcessor,
         >,
     >,
     pub composites: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::InputSystem::InputBindingComposite,
-            >,
+            *mut crate::UnityEngine::InputSystem::InputBindingComposite,
         >,
     >,
     pub totalProcessorCount: i32,
@@ -62,7 +60,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputActionState {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -102,7 +100,9 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         &mut self,
         bindingIndex: i32,
         value: TValue,
-        controlOfType: quest_hook::libil2cpp::Gc<TValue>,
+        controlOfType: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl_1<TValue>,
+        >,
     ) -> quest_hook::libil2cpp::Result<TValue>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -125,7 +125,9 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         listeners: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
                 quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+                    crate::System::Action_1<
+                        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+                    >,
                 >,
             >,
         >,
@@ -280,7 +282,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
             .invoke("DisableAllActions", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn DisableAllActions_Gc0(
+    pub fn DisableAllActions_InputActionMap0(
         &mut self,
         map: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionMap>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -291,18 +293,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
             .invoke("DisableAllActions", (map))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DisableControls_Gc0(
-        &mut self,
-        map: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionMap>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DisableControls", (map))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn DisableControls_Gc1(
+    pub fn DisableControls_InputAction1(
         &mut self,
         action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -311,6 +302,17 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DisableControls", (action))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DisableControls_InputActionMap0(
+        &mut self,
+        map: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionMap>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DisableControls", (map))?;
         Ok(__cordl_ret.into())
     }
     pub fn DisableControls_i32_i32_i32_2(
@@ -358,18 +360,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
             .invoke("EnableAllActions", (map))?;
         Ok(__cordl_ret.into())
     }
-    pub fn EnableControls_Gc0(
-        &mut self,
-        map: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionMap>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EnableControls", (map))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn EnableControls_Gc1(
+    pub fn EnableControls_InputAction1(
         &mut self,
         action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -378,6 +369,17 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("EnableControls", (action))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EnableControls_InputActionMap0(
+        &mut self,
+        map: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionMap>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EnableControls", (map))?;
         Ok(__cordl_ret.into())
     }
     pub fn EnableControls_i32_i32_i32_2(
@@ -457,7 +459,9 @@ impl crate::UnityEngine::InputSystem::InputActionState {
     }
     pub fn FindAllEnabledActions(
         result: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -806,7 +810,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn NotifyListenersOfActionChange_Gc1(
+    pub fn NotifyListenersOfActionChange_Il2CppObject1(
         change: crate::UnityEngine::InputSystem::InputActionChange,
         actionOrMapOrAsset: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
@@ -1037,7 +1041,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadValue_Gc_i32__cordl_bool0(
+    pub fn ReadValue_Il2CppObject_i32__cordl_bool0(
         &mut self,
         bindingIndex: i32,
         controlIndex: i32,
@@ -1179,7 +1183,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
             .invoke("SetControlEnabled", (controlIndex, state))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetInitialStateCheckPending_Gc1(
+    pub fn SetInitialStateCheckPending_Il2CppObject1(
         &mut self,
         bindingStatePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         value: bool,
@@ -1522,58 +1526,48 @@ for crate::UnityEngine::InputSystem::InputActionState {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
+impl AsRef<crate::System::ICloneable>
 for crate::UnityEngine::InputSystem::InputActionState {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
+    fn as_ref(&self) -> &crate::System::ICloneable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
+impl AsMut<crate::System::ICloneable>
 for crate::UnityEngine::InputSystem::InputActionState {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
+    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsRef<crate::System::IDisposable>
 for crate::UnityEngine::InputSystem::InputActionState {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsMut<crate::System::IDisposable>
 for crate::UnityEngine::InputSystem::InputActionState {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor,
-    >,
-> for crate::UnityEngine::InputSystem::InputActionState {
+impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor>
+for crate::UnityEngine::InputSystem::InputActionState {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor,
-    > {
+    ) -> &crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor,
-    >,
-> for crate::UnityEngine::InputSystem::InputActionState {
+impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor>
+for crate::UnityEngine::InputSystem::InputActionState {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor,
-    > {
+    ) -> &mut crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -2029,13 +2023,17 @@ pub struct InputActionState_GlobalState {
     >,
     pub onActionChange: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            crate::UnityEngine::InputSystem::InputActionChange,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                crate::UnityEngine::InputSystem::InputActionChange,
+            >,
         >,
     >,
     pub onActionControlsChanged: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     >,
 }
@@ -2867,16 +2865,16 @@ impl crate::UnityEngine::InputSystem::InputActionState_UnmanagedMemory {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+UnmanagedMemory")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsRef<crate::System::IDisposable>
 for crate::UnityEngine::InputSystem::InputActionState_UnmanagedMemory {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+UnmanagedMemory")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsMut<crate::System::IDisposable>
 for crate::UnityEngine::InputSystem::InputActionState_UnmanagedMemory {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         todo!()
     }
 }

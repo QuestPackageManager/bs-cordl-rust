@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsyncProtocolResult {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _UserResult_k__BackingField: i32,
     pub _Error_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Net+Security+AsyncProtocolResult")]
 impl std::ops::Deref for crate::Mono::Net::Security::AsyncProtocolResult {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,7 +28,7 @@ impl std::ops::DerefMut for crate::Mono::Net::Security::AsyncProtocolResult {
 }
 #[cfg(feature = "Mono+Net+Security+AsyncProtocolResult")]
 impl crate::Mono::Net::Security::AsyncProtocolResult {
-    pub fn New_Gc1(
+    pub fn New_ExceptionDispatchInfo1(
         error: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
         >,
@@ -48,7 +48,7 @@ impl crate::Mono::Net::Security::AsyncProtocolResult {
             .invoke_void(".ctor", (result))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_ExceptionDispatchInfo1(
         &mut self,
         error: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,

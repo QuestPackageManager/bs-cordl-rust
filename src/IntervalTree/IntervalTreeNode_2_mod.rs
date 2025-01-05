@@ -5,16 +5,22 @@ pub struct IntervalTreeNode_2<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub center: TKey,
-    pub leftNode: quest_hook::libil2cpp::Gc<TKey, TValue>,
-    pub rightNode: quest_hook::libil2cpp::Gc<TKey, TValue>,
+    pub leftNode: quest_hook::libil2cpp::Gc<
+        crate::IntervalTree::IntervalTreeNode_2<TKey, TValue>,
+    >,
+    pub rightNode: quest_hook::libil2cpp::Gc<
+        crate::IntervalTree::IntervalTreeNode_2<TKey, TValue>,
+    >,
     pub items: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
             crate::IntervalTree::RangeValuePair_2<TKey, TValue>,
         >,
     >,
-    pub comparer: quest_hook::libil2cpp::Gc<TKey>,
+    pub comparer: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IComparer_1<TKey>,
+    >,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
@@ -28,7 +34,7 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::IntervalTree::IntervalTreeNode_2<TKey, TValue> {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -50,7 +56,9 @@ impl<
     pub fn GetClosestNodeTo(
         &mut self,
         key: TKey,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TKey, TValue>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::IntervalTree::IntervalTreeNode_2<TKey, TValue>>,
+    >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -60,12 +68,15 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TKey, TValue> = __cordl_object
-            .invoke("GetClosestNodeTo", (key))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::IntervalTree::IntervalTreeNode_2<TKey, TValue>,
+        > = __cordl_object.invoke("GetClosestNodeTo", (key))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
-        comparer: quest_hook::libil2cpp::Gc<TKey>,
+    pub fn New_IComparer_1_0(
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IComparer_1<TKey>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -79,11 +90,15 @@ impl<
             .invoke_void(".ctor", (comparer))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_IList_1_IComparer_1_1(
         items: quest_hook::libil2cpp::Gc<
-            crate::IntervalTree::RangeValuePair_2<TKey, TValue>,
+            crate::System::Collections::Generic::IList_1<
+                crate::IntervalTree::RangeValuePair_2<TKey, TValue>,
+            >,
         >,
-        comparer: quest_hook::libil2cpp::Gc<TKey>,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IComparer_1<TKey>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -100,7 +115,11 @@ impl<
     pub fn QueryClosestPrev(
         &mut self,
         value: TKey,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TValue>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TValue>,
+        >,
+    >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -110,14 +129,19 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TValue> = __cordl_object
-            .invoke("QueryClosestPrev", (value))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TValue>,
+        > = __cordl_object.invoke("QueryClosestPrev", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn Query_TKey0(
         &mut self,
         value: TKey,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TValue>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TValue>,
+        >,
+    >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -127,15 +151,18 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TValue> = __cordl_object
-            .invoke("Query", (value))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TValue>,
+        > = __cordl_object.invoke("Query", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn Query_TKey1(
         &mut self,
         from: TKey,
         to: TKey,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TValue>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<TValue>>,
+    >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -145,8 +172,9 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TValue> = __cordl_object
-            .invoke("Query", (from, to))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<TValue>,
+        > = __cordl_object.invoke("Query", (from, to))?;
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Generic_IComparer_IntervalTree_RangeValuePair_TKey_TValue___Compare(
@@ -170,9 +198,11 @@ impl<
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_IComparer_1_0(
         &mut self,
-        comparer: quest_hook::libil2cpp::Gc<TKey>,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IComparer_1<TKey>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -187,12 +217,16 @@ impl<
             .invoke(".ctor", (comparer))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_IList_1_IComparer_1_1(
         &mut self,
         items: quest_hook::libil2cpp::Gc<
-            crate::IntervalTree::RangeValuePair_2<TKey, TValue>,
+            crate::System::Collections::Generic::IList_1<
+                crate::IntervalTree::RangeValuePair_2<TKey, TValue>,
+            >,
         >,
-        comparer: quest_hook::libil2cpp::Gc<TKey>,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IComparer_1<TKey>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -251,11 +285,14 @@ for crate::IntervalTree::IntervalTreeNode_2<TKey, TValue> {
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::IntervalTree::RangeValuePair_2<TKey, TValue>>>
-for crate::IntervalTree::IntervalTreeNode_2<TKey, TValue> {
+> AsRef<
+    crate::System::Collections::Generic::IComparer_1<
+        crate::IntervalTree::RangeValuePair_2<TKey, TValue>,
+    >,
+> for crate::IntervalTree::IntervalTreeNode_2<TKey, TValue> {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::Collections::Generic::IComparer_1<
         crate::IntervalTree::RangeValuePair_2<TKey, TValue>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -265,11 +302,14 @@ for crate::IntervalTree::IntervalTreeNode_2<TKey, TValue> {
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::IntervalTree::RangeValuePair_2<TKey, TValue>>>
-for crate::IntervalTree::IntervalTreeNode_2<TKey, TValue> {
+> AsMut<
+    crate::System::Collections::Generic::IComparer_1<
+        crate::IntervalTree::RangeValuePair_2<TKey, TValue>,
+    >,
+> for crate::IntervalTree::IntervalTreeNode_2<TKey, TValue> {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::Collections::Generic::IComparer_1<
         crate::IntervalTree::RangeValuePair_2<TKey, TValue>,
     > {
         unsafe { std::mem::transmute(self) }

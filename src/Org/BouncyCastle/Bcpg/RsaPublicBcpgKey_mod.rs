@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RsaPublicBcpgKey {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Bcpg::BcpgObject,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Bcpg::BcpgObject,
     pub n: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::MPInteger>,
     pub e: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::MPInteger>,
 }
@@ -15,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Bcpg+RsaPublicBcpgKey")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::RsaPublicBcpgKey {
-    type Target = quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::BcpgObject>;
+    type Target = crate::Org::BouncyCastle::Bcpg::BcpgObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -54,7 +52,7 @@ impl crate::Org::BouncyCastle::Bcpg::RsaPublicBcpgKey {
         > = __cordl_object.invoke("GetEncoded", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_BcpgInputStream0(
         bcpgIn: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
         >,
@@ -65,7 +63,7 @@ impl crate::Org::BouncyCastle::Bcpg::RsaPublicBcpgKey {
             .invoke_void(".ctor", (bcpgIn))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_BigInteger_BigInteger1(
         n: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         e: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -75,7 +73,7 @@ impl crate::Org::BouncyCastle::Bcpg::RsaPublicBcpgKey {
             .invoke_void(".ctor", (n, e))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_BcpgInputStream0(
         &mut self,
         bcpgIn: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
@@ -88,7 +86,7 @@ impl crate::Org::BouncyCastle::Bcpg::RsaPublicBcpgKey {
             .invoke(".ctor", (bcpgIn))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_BigInteger_BigInteger1(
         &mut self,
         n: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         e: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -151,20 +149,16 @@ for crate::Org::BouncyCastle::Bcpg::RsaPublicBcpgKey {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+RsaPublicBcpgKey")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::IBcpgKey>>
+impl AsRef<crate::Org::BouncyCastle::Bcpg::IBcpgKey>
 for crate::Org::BouncyCastle::Bcpg::RsaPublicBcpgKey {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::IBcpgKey> {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Bcpg::IBcpgKey {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+RsaPublicBcpgKey")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::IBcpgKey>>
+impl AsMut<crate::Org::BouncyCastle::Bcpg::IBcpgKey>
 for crate::Org::BouncyCastle::Bcpg::RsaPublicBcpgKey {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::IBcpgKey> {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Bcpg::IBcpgKey {
         unsafe { std::mem::transmute(self) }
     }
 }

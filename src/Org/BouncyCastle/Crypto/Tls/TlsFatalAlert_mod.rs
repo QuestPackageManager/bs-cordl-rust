@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TlsFatalAlert {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::TlsException,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::TlsException,
     pub alertDescription: u8,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsFatalAlert")]
@@ -14,9 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsFatalAlert")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::TlsFatalAlert {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::TlsException,
-    >;
+    type Target = crate::Org::BouncyCastle::Crypto::Tls::TlsException;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,7 +25,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::TlsFatalAlert
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsFatalAlert")]
 impl crate::Org::BouncyCastle::Crypto::Tls::TlsFatalAlert {
-    pub fn New_Gc1(
+    pub fn New_Exception1(
         alertDescription: u8,
         alertCause: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -48,7 +44,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsFatalAlert {
             .invoke_void(".ctor", (alertDescription))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Exception1(
         &mut self,
         alertDescription: u8,
         alertCause: quest_hook::libil2cpp::Gc<crate::System::Exception>,

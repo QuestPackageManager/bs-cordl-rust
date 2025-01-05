@@ -2,10 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_ObjectPool_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    pub m_Stack: quest_hook::libil2cpp::Gc<T>,
-    pub m_ActionOnGet: quest_hook::libil2cpp::Gc<T>,
-    pub m_ActionOnRelease: quest_hook::libil2cpp::Gc<T>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub m_Stack: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Stack_1<T>,
+    >,
+    pub m_ActionOnGet: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Events::UnityAction_1<T>,
+    >,
+    pub m_ActionOnRelease: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Events::UnityAction_1<T>,
+    >,
     pub _countAll_k__BackingField: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -17,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "TMPro+TMP_ObjectPool_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::TMPro::TMP_ObjectPool_1<T> {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -43,8 +49,12 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_ObjectPool_1<T> {
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        actionOnGet: quest_hook::libil2cpp::Gc<T>,
-        actionOnRelease: quest_hook::libil2cpp::Gc<T>,
+        actionOnGet: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Events::UnityAction_1<T>,
+        >,
+        actionOnRelease: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Events::UnityAction_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -73,8 +83,12 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_ObjectPool_1<T> {
     }
     pub fn _ctor(
         &mut self,
-        actionOnGet: quest_hook::libil2cpp::Gc<T>,
-        actionOnRelease: quest_hook::libil2cpp::Gc<T>,
+        actionOnGet: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Events::UnityAction_1<T>,
+        >,
+        actionOnRelease: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Events::UnityAction_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AddToExistingGameObjectComponentProviderGetter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Zenject::AddToGameObjectComponentProviderBase,
-    >,
+    __cordl_parent: crate::Zenject::AddToGameObjectComponentProviderBase,
     pub _gameObjectGetter: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        crate::System::Func_2<
+            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        >,
     >,
 }
 #[cfg(feature = "Zenject+AddToExistingGameObjectComponentProviderGetter")]
@@ -18,9 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+AddToExistingGameObjectComponentProviderGetter")]
 impl std::ops::Deref for crate::Zenject::AddToExistingGameObjectComponentProviderGetter {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Zenject::AddToGameObjectComponentProviderBase,
-    >;
+    type Target = crate::Zenject::AddToGameObjectComponentProviderBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -49,18 +47,24 @@ impl crate::Zenject::AddToExistingGameObjectComponentProviderGetter {
     }
     pub fn New(
         gameObjectGetter: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         >,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         componentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        extraArguments: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        extraArguments: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
         concreteIdentifier: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         >,
         instantiateCallback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -82,18 +86,24 @@ impl crate::Zenject::AddToExistingGameObjectComponentProviderGetter {
     pub fn _ctor(
         &mut self,
         gameObjectGetter: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         >,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         componentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        extraArguments: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        extraArguments: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
         concreteIdentifier: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         >,
         instantiateCallback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

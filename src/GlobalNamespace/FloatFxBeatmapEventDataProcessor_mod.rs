@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatFxBeatmapEventDataProcessor {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::GlobalNamespace::FxBeatmapEventDataProcessor_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxBeatmapEventData>,
     >,
 }
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "FloatFxBeatmapEventDataProcessor")]
 impl std::ops::Deref for crate::GlobalNamespace::FloatFxBeatmapEventDataProcessor {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::GlobalNamespace::FxBeatmapEventDataProcessor_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxBeatmapEventData>,
     >;
     fn deref(&self) -> &Self::Target {

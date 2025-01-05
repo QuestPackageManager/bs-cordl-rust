@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsyncInstantiateOperation_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::CustomYieldInstruction,
-    >,
+    __cordl_parent: crate::UnityEngine::CustomYieldInstruction,
     pub m_op: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncInstantiateOperation>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -16,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+AsyncInstantiateOperation_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::AsyncInstantiateOperation_1<T> {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::CustomYieldInstruction>;
+    type Target = crate::UnityEngine::CustomYieldInstruction;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

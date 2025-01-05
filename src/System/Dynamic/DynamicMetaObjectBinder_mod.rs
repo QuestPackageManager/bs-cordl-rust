@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DynamicMetaObjectBinder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::CompilerServices::CallSiteBinder,
-    >,
+    __cordl_parent: crate::System::Runtime::CompilerServices::CallSiteBinder,
 }
 #[cfg(feature = "System+Dynamic+DynamicMetaObjectBinder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Dynamic+DynamicMetaObjectBinder")]
 impl std::ops::Deref for crate::System::Dynamic::DynamicMetaObjectBinder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::CompilerServices::CallSiteBinder,
-    >;
+    type Target = crate::System::Runtime::CompilerServices::CallSiteBinder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,16 +24,35 @@ impl std::ops::DerefMut for crate::System::Dynamic::DynamicMetaObjectBinder {
 }
 #[cfg(feature = "System+Dynamic+DynamicMetaObjectBinder")]
 impl crate::System::Dynamic::DynamicMetaObjectBinder {
-    pub fn Bind_Gc0(
+    pub fn Bind_DynamicMetaObject_Il2CppArray1(
         &mut self,
+        target: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
         args: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                *mut crate::System::Dynamic::DynamicMetaObject,
             >,
         >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Dynamic::DynamicMetaObject,
+        > = __cordl_object.invoke("Bind", (target, args))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Bind_Il2CppArray_ReadOnlyCollection_1_LabelTarget0(
+        &mut self,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
         parameters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::ParameterExpression,
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::ParameterExpression,
+                >,
             >,
         >,
         returnLabel: quest_hook::libil2cpp::Gc<
@@ -54,46 +69,27 @@ impl crate::System::Dynamic::DynamicMetaObjectBinder {
         > = __cordl_object.invoke("Bind", (args, parameters, returnLabel))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Bind_Gc_Gc1(
-        &mut self,
-        target: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
-        args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Dynamic::DynamicMetaObject,
-        > = __cordl_object.invoke("Bind", (target, args))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn CreateArgumentMetaObjects(
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
         parameters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::ParameterExpression,
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::ParameterExpression,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+                *mut crate::System::Dynamic::DynamicMetaObject,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+                *mut crate::System::Dynamic::DynamicMetaObject,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("CreateArgumentMetaObjects", (args, parameters))?;

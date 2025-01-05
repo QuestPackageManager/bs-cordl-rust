@@ -2,18 +2,22 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScriptableObjectResourceProvider {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub _resourceType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _resourcePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    pub _extraArguments: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+    pub _extraArguments: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+    >,
     pub _createNew: bool,
     pub _concreteIdentifier: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppObject,
     >,
     pub _instantiateCallback: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
 }
 #[cfg(feature = "Zenject+ScriptableObjectResourceProvider")]
@@ -23,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+ScriptableObjectResourceProvider")]
 impl std::ops::Deref for crate::Zenject::ScriptableObjectResourceProvider {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -39,12 +43,16 @@ impl crate::Zenject::ScriptableObjectResourceProvider {
     pub fn GetAllInstancesWithInjectSplit(
         &mut self,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-        args: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        args: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
         injectAction: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<crate::System::Action>,
         >,
         buffer: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -72,14 +80,20 @@ impl crate::Zenject::ScriptableObjectResourceProvider {
         resourcePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         resourceType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-        extraArguments: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        extraArguments: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::Zenject::TypeValuePair,
+            >,
+        >,
         createNew: bool,
         concreteIdentifier: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         >,
         instantiateCallback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -104,14 +118,20 @@ impl crate::Zenject::ScriptableObjectResourceProvider {
         resourcePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         resourceType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-        extraArguments: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        extraArguments: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::Zenject::TypeValuePair,
+            >,
+        >,
         createNew: bool,
         concreteIdentifier: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         >,
         instantiateCallback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -161,16 +181,16 @@ for crate::Zenject::ScriptableObjectResourceProvider {
     }
 }
 #[cfg(feature = "Zenject+ScriptableObjectResourceProvider")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>>
+impl AsRef<crate::Zenject::IProvider>
 for crate::Zenject::ScriptableObjectResourceProvider {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::IProvider> {
+    fn as_ref(&self) -> &crate::Zenject::IProvider {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+ScriptableObjectResourceProvider")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>>
+impl AsMut<crate::Zenject::IProvider>
 for crate::Zenject::ScriptableObjectResourceProvider {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::IProvider> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IProvider {
         unsafe { std::mem::transmute(self) }
     }
 }

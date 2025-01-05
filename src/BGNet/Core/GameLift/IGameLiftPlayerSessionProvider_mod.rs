@@ -39,14 +39,22 @@ impl crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider {
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BGNet::Core::GameLift::PlayerSessionInfo>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BGNet::Core::GameLift::PlayerSessionInfo,
+                >,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BGNet::Core::GameLift::PlayerSessionInfo>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BGNet::Core::GameLift::PlayerSessionInfo,
+                >,
+            >,
         > = __cordl_object
             .invoke(
                 "GetGameLiftPlayerSessionInfo",
@@ -79,18 +87,16 @@ for crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider {
     }
 }
 #[cfg(feature = "BGNet+Core+GameLift+IGameLiftPlayerSessionProvider")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPollable>>
+impl AsRef<crate::GlobalNamespace::IPollable>
 for crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPollable> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPollable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BGNet+Core+GameLift+IGameLiftPlayerSessionProvider")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPollable>>
+impl AsMut<crate::GlobalNamespace::IPollable>
 for crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPollable> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPollable {
         unsafe { std::mem::transmute(self) }
     }
 }

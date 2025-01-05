@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HC256Engine {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub p: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     pub q: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     pub cnt: u32,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+HC256Engine")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Engines::HC256Engine {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -49,7 +49,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::HC256Engine {
             .invoke("Init", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Init__cordl_bool_Gc1(
+    pub fn Init__cordl_bool_ICipherParameters1(
         &mut self,
         forEncryption: bool,
         parameters: quest_hook::libil2cpp::Gc<
@@ -149,22 +149,16 @@ for crate::Org::BouncyCastle::Crypto::Engines::HC256Engine {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+HC256Engine")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IStreamCipher>>
+impl AsRef<crate::Org::BouncyCastle::Crypto::IStreamCipher>
 for crate::Org::BouncyCastle::Crypto::Engines::HC256Engine {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IStreamCipher> {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IStreamCipher {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+HC256Engine")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IStreamCipher>>
+impl AsMut<crate::Org::BouncyCastle::Crypto::IStreamCipher>
 for crate::Org::BouncyCastle::Crypto::Engines::HC256Engine {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::IStreamCipher,
-    > {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IStreamCipher {
         unsafe { std::mem::transmute(self) }
     }
 }

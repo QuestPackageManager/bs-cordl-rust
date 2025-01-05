@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PrivateKey {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub encrypted: bool,
     pub rsa: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
     pub weak: bool,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Security+Authenticode+PrivateKey")]
 impl std::ops::Deref for crate::Mono::Security::Authenticode::PrivateKey {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,7 +28,7 @@ impl std::ops::DerefMut for crate::Mono::Security::Authenticode::PrivateKey {
 }
 #[cfg(feature = "Mono+Security+Authenticode+PrivateKey")]
 impl crate::Mono::Security::Authenticode::PrivateKey {
-    pub fn CreateFromFile_Gc0(
+    pub fn CreateFromFile_Il2CppString0(
         filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Security::Authenticode::PrivateKey>,
@@ -39,7 +39,7 @@ impl crate::Mono::Security::Authenticode::PrivateKey {
             .invoke("CreateFromFile", (filename))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateFromFile_Gc1(
+    pub fn CreateFromFile_Il2CppString1(
         filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<

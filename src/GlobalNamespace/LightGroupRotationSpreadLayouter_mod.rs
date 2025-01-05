@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightGroupRotationSpreadLayouter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LightGroupSubsystem,
-    >,
+    __cordl_parent: crate::GlobalNamespace::LightGroupSubsystem,
     pub _rotationStep: crate::UnityEngine::Vector3,
     pub _startFromCenter: bool,
 }
@@ -16,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LightGroupRotationSpreadLayouter")]
 impl std::ops::Deref for crate::GlobalNamespace::LightGroupRotationSpreadLayouter {
-    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSubsystem>;
+    type Target = crate::GlobalNamespace::LightGroupSubsystem;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CuttableBySaber {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub wasCutBySaberEvent: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::CuttableBySaber_WasCutBySaberDelegate,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "CuttableBySaber")]
 impl std::ops::Deref for crate::GlobalNamespace::CuttableBySaber {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -142,7 +142,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CuttableBySab
 #[repr(C)]
 #[derive(Debug)]
 pub struct CuttableBySaber_WasCutBySaberDelegate {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "CuttableBySaber+WasCutBySaberDelegate")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -152,7 +152,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "CuttableBySaber+WasCutBySaberDelegate")]
 impl std::ops::Deref for crate::GlobalNamespace::CuttableBySaber_WasCutBySaberDelegate {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightTranslationBeatmapEventData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
+    __cordl_parent: crate::GlobalNamespace::BeatmapEventData,
     pub groupId: i32,
     pub elementId: i32,
     pub usePreviousEventValue: bool,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LightTranslationBeatmapEventData")]
 impl std::ops::Deref for crate::GlobalNamespace::LightTranslationBeatmapEventData {
-    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>;
+    type Target = crate::GlobalNamespace::BeatmapEventData;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

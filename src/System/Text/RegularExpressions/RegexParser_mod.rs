@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RegexParser {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _stack: quest_hook::libil2cpp::Gc<
         crate::System::Text::RegularExpressions::RegexNode,
     >,
@@ -29,11 +29,15 @@ pub struct RegexParser {
     pub _capnames: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub _capnumlist: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub _capnamelist: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _options: crate::System::Text::RegularExpressions::RegexOptions,
     pub _optionsStack: quest_hook::libil2cpp::Gc<
-        crate::System::Text::RegularExpressions::RegexOptions,
+        crate::System::Collections::Generic::List_1<
+            crate::System::Text::RegularExpressions::RegexOptions,
+        >,
     >,
     pub _ignoreNextParen: bool,
 }
@@ -44,7 +48,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Text+RegularExpressions+RegexParser")]
 impl std::ops::Deref for crate::System::Text::RegularExpressions::RegexParser {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

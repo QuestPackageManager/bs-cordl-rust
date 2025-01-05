@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TraceJsonReader {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+    __cordl_parent: crate::Newtonsoft::Json::JsonReader,
     pub _innerReader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
     pub _textWriter: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonTextWriter>,
     pub _sw: quest_hook::libil2cpp::Gc<crate::System::IO::StringWriter>,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Serialization+TraceJsonReader")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Serialization::TraceJsonReader {
-    type Target = quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>;
+    type Target = crate::Newtonsoft::Json::JsonReader;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -292,20 +292,16 @@ for crate::Newtonsoft::Json::Serialization::TraceJsonReader {
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+TraceJsonReader")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::IJsonLineInfo>>
+impl AsRef<crate::Newtonsoft::Json::IJsonLineInfo>
 for crate::Newtonsoft::Json::Serialization::TraceJsonReader {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::IJsonLineInfo> {
+    fn as_ref(&self) -> &crate::Newtonsoft::Json::IJsonLineInfo {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+TraceJsonReader")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::IJsonLineInfo>>
+impl AsMut<crate::Newtonsoft::Json::IJsonLineInfo>
 for crate::Newtonsoft::Json::Serialization::TraceJsonReader {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::IJsonLineInfo> {
+    fn as_mut(&mut self) -> &mut crate::Newtonsoft::Json::IJsonLineInfo {
         unsafe { std::mem::transmute(self) }
     }
 }

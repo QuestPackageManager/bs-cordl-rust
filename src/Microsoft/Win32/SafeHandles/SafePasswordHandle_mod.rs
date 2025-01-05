@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SafePasswordHandle {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::InteropServices::SafeHandle,
-    >,
+    __cordl_parent: crate::System::Runtime::InteropServices::SafeHandle,
 }
 #[cfg(feature = "Microsoft+Win32+SafeHandles+SafePasswordHandle")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -14,9 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Microsoft+Win32+SafeHandles+SafePasswordHandle")]
 impl std::ops::Deref for crate::Microsoft::Win32::SafeHandles::SafePasswordHandle {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::InteropServices::SafeHandle,
-    >;
+    type Target = crate::System::Runtime::InteropServices::SafeHandle;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

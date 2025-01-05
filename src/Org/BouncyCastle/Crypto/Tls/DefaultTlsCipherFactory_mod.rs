@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultTlsCipherFactory {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsCipherFactory,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsCipherFactory,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsCipherFactory")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -14,9 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsCipherFactory")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsCipherFactory {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsCipherFactory,
-    >;
+    type Target = crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsCipherFactory;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

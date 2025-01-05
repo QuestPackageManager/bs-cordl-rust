@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ContextLevelActivator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_NextActivator: quest_hook::libil2cpp::Gc<
         crate::System::Runtime::Remoting::Activation::IActivator,
     >,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+Remoting+Activation+ContextLevelActivator")]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Activation::ContextLevelActivator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -99,26 +99,18 @@ for crate::System::Runtime::Remoting::Activation::ContextLevelActivator {
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Activation+ContextLevelActivator")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Activation::IActivator>,
-> for crate::System::Runtime::Remoting::Activation::ContextLevelActivator {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Remoting::Activation::IActivator,
-    > {
+impl AsRef<crate::System::Runtime::Remoting::Activation::IActivator>
+for crate::System::Runtime::Remoting::Activation::ContextLevelActivator {
+    fn as_ref(&self) -> &crate::System::Runtime::Remoting::Activation::IActivator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Activation+ContextLevelActivator")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Activation::IActivator>,
-> for crate::System::Runtime::Remoting::Activation::ContextLevelActivator {
+impl AsMut<crate::System::Runtime::Remoting::Activation::IActivator>
+for crate::System::Runtime::Remoting::Activation::ContextLevelActivator {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Remoting::Activation::IActivator,
-    > {
+    ) -> &mut crate::System::Runtime::Remoting::Activation::IActivator {
         unsafe { std::mem::transmute(self) }
     }
 }

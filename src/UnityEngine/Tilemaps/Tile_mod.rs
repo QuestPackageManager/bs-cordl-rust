@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Tile {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Tilemaps::TileBase>,
+    __cordl_parent: crate::UnityEngine::Tilemaps::TileBase,
     pub m_Sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     pub m_Color: crate::UnityEngine::Color,
     pub m_Transform: crate::UnityEngine::Matrix4x4,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Tilemaps+Tile")]
 impl std::ops::Deref for crate::UnityEngine::Tilemaps::Tile {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Tilemaps::TileBase>;
+    type Target = crate::UnityEngine::Tilemaps::TileBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

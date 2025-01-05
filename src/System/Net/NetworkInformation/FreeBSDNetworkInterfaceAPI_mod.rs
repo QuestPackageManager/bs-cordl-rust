@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FreeBSDNetworkInterfaceAPI {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Net::NetworkInformation::MacOsNetworkInterfaceAPI,
-    >,
+    __cordl_parent: crate::System::Net::NetworkInformation::MacOsNetworkInterfaceAPI,
 }
 #[cfg(feature = "System+Net+NetworkInformation+FreeBSDNetworkInterfaceAPI")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Net+NetworkInformation+FreeBSDNetworkInterfaceAPI")]
 impl std::ops::Deref
 for crate::System::Net::NetworkInformation::FreeBSDNetworkInterfaceAPI {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Net::NetworkInformation::MacOsNetworkInterfaceAPI,
-    >;
+    type Target = crate::System::Net::NetworkInformation::MacOsNetworkInterfaceAPI;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

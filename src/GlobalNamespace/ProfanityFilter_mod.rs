@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProfanityFilter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _trie: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::ProfanityFilter_TrieNode,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ProfanityFilter")]
 impl std::ops::Deref for crate::GlobalNamespace::ProfanityFilter {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -36,8 +36,14 @@ impl crate::GlobalNamespace::ProfanityFilter {
     }
     pub fn GetLookalikeLetters(
         c: char,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<char>> {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<char> = <Self as quest_hook::libil2cpp::Type>::class()
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<char>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<char>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetLookalikeLetters", (c))?;
         Ok(__cordl_ret.into())
     }
@@ -53,7 +59,9 @@ impl crate::GlobalNamespace::ProfanityFilter {
     }
     pub fn New(
         wordList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -65,7 +73,9 @@ impl crate::GlobalNamespace::ProfanityFilter {
     pub fn _ctor(
         &mut self,
         wordList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -89,10 +99,12 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ProfanityFilt
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProfanityFilter_TrieNode {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _children: quest_hook::libil2cpp::Gc<
-        char,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ProfanityFilter_TrieNode>,
+        crate::System::Collections::Generic::Dictionary_2<
+            char,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ProfanityFilter_TrieNode>,
+        >,
     >,
     pub _shortestWord: i32,
 }
@@ -103,7 +115,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ProfanityFilter+TrieNode")]
 impl std::ops::Deref for crate::GlobalNamespace::ProfanityFilter_TrieNode {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

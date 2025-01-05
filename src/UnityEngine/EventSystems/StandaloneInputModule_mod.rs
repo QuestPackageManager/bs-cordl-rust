@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StandaloneInputModule {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::PointerInputModule,
-    >,
+    __cordl_parent: crate::UnityEngine::EventSystems::PointerInputModule,
     pub m_PrevActionTime: f32,
     pub m_LastMoveVector: crate::UnityEngine::Vector2,
     pub m_ConsecutiveMoveCount: i32,
@@ -31,9 +29,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+EventSystems+StandaloneInputModule")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::StandaloneInputModule {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::PointerInputModule,
-    >;
+    type Target = crate::UnityEngine::EventSystems::PointerInputModule;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

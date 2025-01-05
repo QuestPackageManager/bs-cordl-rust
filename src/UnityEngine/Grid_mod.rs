@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Grid {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::GridLayout>,
+    __cordl_parent: crate::UnityEngine::GridLayout,
 }
 #[cfg(feature = "UnityEngine+Grid")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Grid")]
 impl std::ops::Deref for crate::UnityEngine::Grid {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::GridLayout>;
+    type Target = crate::UnityEngine::GridLayout;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

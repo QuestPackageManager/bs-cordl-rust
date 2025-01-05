@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MockBeatmapProvider {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "MockBeatmapProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MockBeatmapProvider")]
 impl std::ops::Deref for crate::GlobalNamespace::MockBeatmapProvider {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -45,13 +45,19 @@ impl crate::GlobalNamespace::MockBeatmapProvider {
         &mut self,
         playerCount: i32,
         suggestedBeatmaps: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapKeyNetSerializable>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapKeyNetSerializable,
+                >,
+            >,
         >,
         selectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
         ownedSongPacks: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            crate::GlobalNamespace::SongPackMask,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                crate::GlobalNamespace::SongPackMask,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapKeyNetSerializable>,
@@ -106,20 +112,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MockBeatmapPr
     }
 }
 #[cfg(feature = "MockBeatmapProvider")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IServerBeatmapProvider>>
+impl AsRef<crate::GlobalNamespace::IServerBeatmapProvider>
 for crate::GlobalNamespace::MockBeatmapProvider {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IServerBeatmapProvider> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IServerBeatmapProvider {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MockBeatmapProvider")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IServerBeatmapProvider>>
+impl AsMut<crate::GlobalNamespace::IServerBeatmapProvider>
 for crate::GlobalNamespace::MockBeatmapProvider {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IServerBeatmapProvider> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IServerBeatmapProvider {
         unsafe { std::mem::transmute(self) }
     }
 }

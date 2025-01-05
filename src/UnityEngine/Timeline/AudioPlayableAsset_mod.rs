@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AudioPlayableAsset {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Playables::PlayableAsset,
-    >,
+    __cordl_parent: crate::UnityEngine::Playables::PlayableAsset,
     pub m_Clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
     pub m_Loop: bool,
     pub m_bufferingTime: f32,
@@ -19,9 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Timeline+AudioPlayableAsset")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::AudioPlayableAsset {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Playables::PlayableAsset,
-    >;
+    type Target = crate::UnityEngine::Playables::PlayableAsset;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -109,13 +105,19 @@ impl crate::UnityEngine::Timeline::AudioPlayableAsset {
     pub fn get_outputs(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableBinding>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::Playables::PlayableBinding,
+            >,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Playables::PlayableBinding,
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::Playables::PlayableBinding,
+            >,
         > = __cordl_object.invoke("get_outputs", ())?;
         Ok(__cordl_ret.into())
     }
@@ -164,22 +166,16 @@ for crate::UnityEngine::Timeline::AudioPlayableAsset {
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+AudioPlayableAsset")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::ITimelineClipAsset>>
+impl AsRef<crate::UnityEngine::Timeline::ITimelineClipAsset>
 for crate::UnityEngine::Timeline::AudioPlayableAsset {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::ITimelineClipAsset> {
+    fn as_ref(&self) -> &crate::UnityEngine::Timeline::ITimelineClipAsset {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+AudioPlayableAsset")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::ITimelineClipAsset>>
+impl AsMut<crate::UnityEngine::Timeline::ITimelineClipAsset>
 for crate::UnityEngine::Timeline::AudioPlayableAsset {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Timeline::ITimelineClipAsset,
-    > {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Timeline::ITimelineClipAsset {
         unsafe { std::mem::transmute(self) }
     }
 }

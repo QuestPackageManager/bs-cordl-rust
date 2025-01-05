@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatFxGroupEffect {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _tweeningManager: quest_hook::libil2cpp::Gc<
         crate::Tweening::SongTimeTweeningManager,
     >,
@@ -24,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "FloatFxGroupEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::FloatFxGroupEffect {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -126,7 +126,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FloatFxGroupE
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatFxGroupEffect_InitData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub groupId: i32,
     pub elementId: i32,
     pub target: quest_hook::libil2cpp::Gc<
@@ -140,7 +140,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "FloatFxGroupEffect+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::FloatFxGroupEffect_InitData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

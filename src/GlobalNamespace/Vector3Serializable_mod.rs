@@ -46,7 +46,7 @@ impl crate::GlobalNamespace::Vector3Serializable {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Gc1(
+    pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -105,7 +105,7 @@ impl crate::GlobalNamespace::Vector3Serializable {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_NetDataReader1(
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -159,38 +159,34 @@ impl crate::GlobalNamespace::Vector3Serializable {
     }
 }
 #[cfg(feature = "Vector3Serializable")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Vector3Serializable>>
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::Vector3Serializable {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "Vector3Serializable")]
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::Vector3Serializable {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "Vector3Serializable")]
+impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::Vector3Serializable>>
 for crate::GlobalNamespace::Vector3Serializable {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Vector3Serializable> {
+    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::Vector3Serializable> {
         todo!()
     }
 }
 #[cfg(feature = "Vector3Serializable")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Vector3Serializable>>
+impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::Vector3Serializable>>
 for crate::GlobalNamespace::Vector3Serializable {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Vector3Serializable> {
-        todo!()
-    }
-}
-#[cfg(feature = "Vector3Serializable")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable>>
-for crate::GlobalNamespace::Vector3Serializable {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable> {
-        todo!()
-    }
-}
-#[cfg(feature = "Vector3Serializable")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable>>
-for crate::GlobalNamespace::Vector3Serializable {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable> {
+    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::Vector3Serializable> {
         todo!()
     }
 }

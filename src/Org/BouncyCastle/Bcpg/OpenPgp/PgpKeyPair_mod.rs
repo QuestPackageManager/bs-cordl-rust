@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PgpKeyPair {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_pub: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
     >,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpKeyPair")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,7 +30,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair 
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpKeyPair")]
 impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair {
-    pub fn New_Gc2(
+    pub fn New_PgpPublicKey_PgpPrivateKey2(
         _cordl_pub: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
         >,
@@ -44,7 +44,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair {
             .invoke_void(".ctor", (_cordl_pub, _cordl_priv))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_PublicKeyAlgorithmTag_DateTime0(
+    pub fn New_PublicKeyAlgorithmTag_AsymmetricCipherKeyPair_DateTime0(
         algorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
         keyPair: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricCipherKeyPair,
@@ -57,7 +57,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair {
             .invoke_void(".ctor", (algorithm, keyPair, _cordl_time))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_PublicKeyAlgorithmTag_Gc_DateTime1(
+    pub fn New_PublicKeyAlgorithmTag_AsymmetricKeyParameter_AsymmetricKeyParameter_DateTime1(
         algorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
         pubKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
@@ -73,7 +73,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair {
             .invoke_void(".ctor", (algorithm, pubKey, privKey, _cordl_time))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_PgpPublicKey_PgpPrivateKey2(
         &mut self,
         _cordl_pub: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
@@ -89,7 +89,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair {
             .invoke(".ctor", (_cordl_pub, _cordl_priv))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_PublicKeyAlgorithmTag_DateTime0(
+    pub fn _ctor_PublicKeyAlgorithmTag_AsymmetricCipherKeyPair_DateTime0(
         &mut self,
         algorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
         keyPair: quest_hook::libil2cpp::Gc<
@@ -104,7 +104,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair {
             .invoke(".ctor", (algorithm, keyPair, _cordl_time))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_PublicKeyAlgorithmTag_Gc_DateTime1(
+    pub fn _ctor_PublicKeyAlgorithmTag_AsymmetricKeyParameter_AsymmetricKeyParameter_DateTime1(
         &mut self,
         algorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
         pubKey: quest_hook::libil2cpp::Gc<

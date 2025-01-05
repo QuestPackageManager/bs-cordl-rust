@@ -2,14 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GregorianCalendarHelper {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_maxYear: i32,
     pub m_minYear: i32,
     pub m_Cal: quest_hook::libil2cpp::Gc<crate::System::Globalization::Calendar>,
     pub m_EraInfo: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::System::Globalization::EraInfo>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Globalization::EraInfo>,
     >,
     pub m_eras: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub m_minDate: crate::System::DateTime,
@@ -21,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Globalization+GregorianCalendarHelper")]
 impl std::ops::Deref for crate::System::Globalization::GregorianCalendarHelper {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -210,7 +208,7 @@ impl crate::System::Globalization::GregorianCalendarHelper {
         cal: quest_hook::libil2cpp::Gc<crate::System::Globalization::Calendar>,
         eraInfo: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Globalization::EraInfo>,
+                *mut crate::System::Globalization::EraInfo,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -268,7 +266,7 @@ impl crate::System::Globalization::GregorianCalendarHelper {
         cal: quest_hook::libil2cpp::Gc<crate::System::Globalization::Calendar>,
         eraInfo: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Globalization::EraInfo>,
+                *mut crate::System::Globalization::EraInfo,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

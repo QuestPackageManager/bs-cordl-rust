@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityLogWriter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
+    __cordl_parent: crate::System::IO::TextWriter,
 }
 #[cfg(feature = "UnityEngine+UnityLogWriter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UnityLogWriter")]
 impl std::ops::Deref for crate::UnityEngine::UnityLogWriter {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>;
+    type Target = crate::System::IO::TextWriter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -50,18 +50,7 @@ impl crate::UnityEngine::UnityLogWriter {
             .invoke("WriteStringToUnityLogImpl", (s))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Write_Gc1(
-        &mut self,
-        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Write", (s))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Write_Gc_i32_i32_2(
+    pub fn Write_Il2CppArray_i32_i32_2(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         index: i32,
@@ -72,6 +61,17 @@ impl crate::UnityEngine::UnityLogWriter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Write", (buffer, index, count))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Write_Il2CppString1(
+        &mut self,
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Write", (s))?;
         Ok(__cordl_ret.into())
     }
     pub fn Write__cordl_char0(

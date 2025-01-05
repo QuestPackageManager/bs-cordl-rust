@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UInt16Converter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::ComponentModel::BaseNumberConverter,
-    >,
+    __cordl_parent: crate::System::ComponentModel::BaseNumberConverter,
 }
 #[cfg(feature = "System+ComponentModel+UInt16Converter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+ComponentModel+UInt16Converter")]
 impl std::ops::Deref for crate::System::ComponentModel::UInt16Converter {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::ComponentModel::BaseNumberConverter,
-    >;
+    type Target = crate::System::ComponentModel::BaseNumberConverter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,7 +24,7 @@ impl std::ops::DerefMut for crate::System::ComponentModel::UInt16Converter {
 }
 #[cfg(feature = "System+ComponentModel+UInt16Converter")]
 impl crate::System::ComponentModel::UInt16Converter {
-    pub fn FromString_Gc1(
+    pub fn FromString_NumberFormatInfo1(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         formatInfo: quest_hook::libil2cpp::Gc<

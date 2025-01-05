@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct VisualTreeHierarchyFlagsUpdater {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::BaseVisualTreeUpdater,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::BaseVisualTreeUpdater,
     pub m_Version: u32,
     pub m_LastVersion: u32,
 }
@@ -17,9 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeHierarchyFlagsUpdater")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::VisualTreeHierarchyFlagsUpdater {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::BaseVisualTreeUpdater,
-    >;
+    type Target = crate::UnityEngine::UIElements::BaseVisualTreeUpdater;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

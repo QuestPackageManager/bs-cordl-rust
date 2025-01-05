@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssertionMessageUtil {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+Assertions+AssertionMessageUtil")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Assertions+AssertionMessageUtil")]
 impl std::ops::Deref for crate::UnityEngine::Assertions::AssertionMessageUtil {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -48,7 +48,7 @@ impl crate::UnityEngine::Assertions::AssertionMessageUtil {
             .invoke("GetEqualityMessage", (actual, expected, expectEqual))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetMessage_Gc0(
+    pub fn GetMessage_Il2CppString0(
         failureMessage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -59,7 +59,7 @@ impl crate::UnityEngine::Assertions::AssertionMessageUtil {
             .invoke("GetMessage", (failureMessage))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetMessage_Gc1(
+    pub fn GetMessage_Il2CppString1(
         failureMessage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         expected: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<

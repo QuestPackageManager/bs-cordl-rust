@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct KebabCaseNamingStrategy {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Serialization::NamingStrategy,
-    >,
+    __cordl_parent: crate::Newtonsoft::Json::Serialization::NamingStrategy,
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+KebabCaseNamingStrategy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Newtonsoft+Json+Serialization+KebabCaseNamingStrategy")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::KebabCaseNamingStrategy {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Serialization::NamingStrategy,
-    >;
+    type Target = crate::Newtonsoft::Json::Serialization::NamingStrategy;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

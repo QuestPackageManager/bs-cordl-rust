@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SubContainerCreatorByNewPrefab {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _gameObjectBindInfo: quest_hook::libil2cpp::Gc<
         crate::Zenject::GameObjectCreationParameters,
     >,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+SubContainerCreatorByNewPrefab")]
 impl std::ops::Deref for crate::Zenject::SubContainerCreatorByNewPrefab {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,7 +31,9 @@ impl std::ops::DerefMut for crate::Zenject::SubContainerCreatorByNewPrefab {
 impl crate::Zenject::SubContainerCreatorByNewPrefab {
     pub fn CreateSubContainer(
         &mut self,
-        args: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        args: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
         parentContext: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
@@ -83,20 +85,16 @@ for crate::Zenject::SubContainerCreatorByNewPrefab {
     }
 }
 #[cfg(feature = "Zenject+SubContainerCreatorByNewPrefab")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::ISubContainerCreator>>
+impl AsRef<crate::Zenject::ISubContainerCreator>
 for crate::Zenject::SubContainerCreatorByNewPrefab {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Zenject::ISubContainerCreator> {
+    fn as_ref(&self) -> &crate::Zenject::ISubContainerCreator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+SubContainerCreatorByNewPrefab")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::ISubContainerCreator>>
+impl AsMut<crate::Zenject::ISubContainerCreator>
 for crate::Zenject::SubContainerCreatorByNewPrefab {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::ISubContainerCreator> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::ISubContainerCreator {
         unsafe { std::mem::transmute(self) }
     }
 }

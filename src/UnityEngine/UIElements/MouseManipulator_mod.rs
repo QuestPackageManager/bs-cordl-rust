@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MouseManipulator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::Manipulator,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::Manipulator,
     pub _activators_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::ManipulatorActivationFilter,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::ManipulatorActivationFilter,
+        >,
     >,
     pub m_currentActivator: crate::UnityEngine::UIElements::ManipulatorActivationFilter,
 }
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+MouseManipulator")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::MouseManipulator {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Manipulator>;
+    type Target = crate::UnityEngine::UIElements::Manipulator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -71,21 +71,27 @@ impl crate::UnityEngine::UIElements::MouseManipulator {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::ManipulatorActivationFilter,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::ManipulatorActivationFilter,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::ManipulatorActivationFilter,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::ManipulatorActivationFilter,
+            >,
         > = __cordl_object.invoke("get_activators", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn set_activators(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::ManipulatorActivationFilter,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::ManipulatorActivationFilter,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

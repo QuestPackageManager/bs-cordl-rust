@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AndroidRotationVector {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::AttitudeSensor,
-    >,
+    __cordl_parent: crate::UnityEngine::InputSystem::AttitudeSensor,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Android+AndroidRotationVector")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+InputSystem+Android+AndroidRotationVector")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Android::AndroidRotationVector {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::AttitudeSensor,
-    >;
+    type Target = crate::UnityEngine::InputSystem::AttitudeSensor;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

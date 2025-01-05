@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ContinuousFireEffect {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FireEffect>,
+    __cordl_parent: crate::GlobalNamespace::FireEffect,
     pub _fadeInDuration: f32,
     pub _fadeOutDuration: f32,
     pub _sustainDuration: f32,
@@ -29,7 +29,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ContinuousFireEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::ContinuousFireEffect {
-    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FireEffect>;
+    type Target = crate::GlobalNamespace::FireEffect;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

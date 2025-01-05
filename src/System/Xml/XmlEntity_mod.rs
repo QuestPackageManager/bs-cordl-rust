@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlEntity {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
+    __cordl_parent: crate::System::Xml::XmlNode,
     pub publicId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub systemId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub notationName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlEntity")]
 impl std::ops::Deref for crate::System::Xml::XmlEntity {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>;
+    type Target = crate::System::Xml::XmlNode;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

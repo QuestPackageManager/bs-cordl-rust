@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Pkcs8Generator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     pub algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub iterationCount: i32,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+OpenSsl+Pkcs8Generator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::OpenSsl::Pkcs8Generator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -48,7 +48,7 @@ impl crate::Org::BouncyCastle::OpenSsl::Pkcs8Generator {
         > = __cordl_object.invoke("Generate", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_AsymmetricKeyParameter0(
         privKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         >,
@@ -59,7 +59,7 @@ impl crate::Org::BouncyCastle::OpenSsl::Pkcs8Generator {
             .invoke_void(".ctor", (privKey))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Il2CppString1(
         privKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         >,
@@ -71,7 +71,7 @@ impl crate::Org::BouncyCastle::OpenSsl::Pkcs8Generator {
             .invoke_void(".ctor", (privKey, algorithm))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_AsymmetricKeyParameter0(
         &mut self,
         privKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
@@ -84,7 +84,7 @@ impl crate::Org::BouncyCastle::OpenSsl::Pkcs8Generator {
             .invoke(".ctor", (privKey))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
         privKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
@@ -145,30 +145,20 @@ for crate::Org::BouncyCastle::OpenSsl::Pkcs8Generator {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+OpenSsl+Pkcs8Generator")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Utilities::IO::Pem::PemObjectGenerator,
-    >,
-> for crate::Org::BouncyCastle::OpenSsl::Pkcs8Generator {
+impl AsRef<crate::Org::BouncyCastle::Utilities::IO::Pem::PemObjectGenerator>
+for crate::Org::BouncyCastle::OpenSsl::Pkcs8Generator {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Utilities::IO::Pem::PemObjectGenerator,
-    > {
+    ) -> &crate::Org::BouncyCastle::Utilities::IO::Pem::PemObjectGenerator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+OpenSsl+Pkcs8Generator")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Utilities::IO::Pem::PemObjectGenerator,
-    >,
-> for crate::Org::BouncyCastle::OpenSsl::Pkcs8Generator {
+impl AsMut<crate::Org::BouncyCastle::Utilities::IO::Pem::PemObjectGenerator>
+for crate::Org::BouncyCastle::OpenSsl::Pkcs8Generator {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Utilities::IO::Pem::PemObjectGenerator,
-    > {
+    ) -> &mut crate::Org::BouncyCastle::Utilities::IO::Pem::PemObjectGenerator {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct V128DebugView {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Value: crate::Unity::Burst::Intrinsics::v128,
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+V128DebugView")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Burst+Intrinsics+V128DebugView")]
 impl std::ops::Deref for crate::Unity::Burst::Intrinsics::V128DebugView {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

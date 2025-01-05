@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetscapeRevocationUrl {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::DerIA5String,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::DerIA5String,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Misc+NetscapeRevocationUrl")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -14,9 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+Misc+NetscapeRevocationUrl")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Misc::NetscapeRevocationUrl {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::DerIA5String,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::DerIA5String;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

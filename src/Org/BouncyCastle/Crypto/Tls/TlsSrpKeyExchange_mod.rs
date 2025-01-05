@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TlsSrpKeyExchange {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsKeyExchange,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsKeyExchange,
     pub mTlsSigner: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Tls::TlsSigner,
     >,
@@ -44,9 +42,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsSrpKeyExchange")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::TlsSrpKeyExchange {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsKeyExchange,
-    >;
+    type Target = crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsKeyExchange;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -143,7 +139,43 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsSrpKeyExchange {
             .invoke("InitVerifyer", (tlsSigner, algorithm, securityParameters))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Il2CppArray_Il2CppArray0(
+        keyExchange: i32,
+        supportedSignatureAlgorithms: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IList,
+        >,
+        identity: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (keyExchange, supportedSignatureAlgorithms, identity, password),
+            )?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Il2CppArray_TlsSrpLoginParameters2(
+        keyExchange: i32,
+        supportedSignatureAlgorithms: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IList,
+        >,
+        identity: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        loginParameters: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::TlsSrpLoginParameters,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (keyExchange, supportedSignatureAlgorithms, identity, loginParameters),
+            )?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_TlsSrpGroupVerifier_Il2CppArray_Il2CppArray1(
         keyExchange: i32,
         supportedSignatureAlgorithms: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IList,
@@ -166,42 +198,6 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsSrpKeyExchange {
                     identity,
                     password,
                 ),
-            )?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_i32_Gc_Gc_Gc0(
-        keyExchange: i32,
-        supportedSignatureAlgorithms: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::IList,
-        >,
-        identity: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (keyExchange, supportedSignatureAlgorithms, identity, password),
-            )?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_i32_Gc_Gc_Gc2(
-        keyExchange: i32,
-        supportedSignatureAlgorithms: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::IList,
-        >,
-        identity: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-        loginParameters: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::Tls::TlsSrpLoginParameters,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (keyExchange, supportedSignatureAlgorithms, identity, loginParameters),
             )?;
         Ok(__cordl_object.into())
     }
@@ -289,7 +285,47 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsSrpKeyExchange {
             .invoke("ValidateCertificateRequest", (certificateRequest))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Il2CppArray_Il2CppArray0(
+        &mut self,
+        keyExchange: i32,
+        supportedSignatureAlgorithms: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IList,
+        >,
+        identity: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                ".ctor",
+                (keyExchange, supportedSignatureAlgorithms, identity, password),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppArray_TlsSrpLoginParameters2(
+        &mut self,
+        keyExchange: i32,
+        supportedSignatureAlgorithms: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IList,
+        >,
+        identity: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        loginParameters: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::TlsSrpLoginParameters,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                ".ctor",
+                (keyExchange, supportedSignatureAlgorithms, identity, loginParameters),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_TlsSrpGroupVerifier_Il2CppArray_Il2CppArray1(
         &mut self,
         keyExchange: i32,
         supportedSignatureAlgorithms: quest_hook::libil2cpp::Gc<
@@ -314,46 +350,6 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsSrpKeyExchange {
                     identity,
                     password,
                 ),
-            )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_i32_Gc_Gc_Gc0(
-        &mut self,
-        keyExchange: i32,
-        supportedSignatureAlgorithms: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::IList,
-        >,
-        identity: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
-                (keyExchange, supportedSignatureAlgorithms, identity, password),
-            )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_i32_Gc_Gc_Gc2(
-        &mut self,
-        keyExchange: i32,
-        supportedSignatureAlgorithms: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::IList,
-        >,
-        identity: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-        loginParameters: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::Tls::TlsSrpLoginParameters,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
-                (keyExchange, supportedSignatureAlgorithms, identity, loginParameters),
             )?;
         Ok(__cordl_ret.into())
     }

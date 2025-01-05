@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DeeplinkManagerToDestinationRequestManagerAdapter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _beatmapLevelsModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapLevelsModel,
     >,
@@ -10,7 +10,9 @@ pub struct DeeplinkManagerToDestinationRequestManagerAdapter {
         crate::GlobalNamespace::BeatmapCharacteristicCollection,
     >,
     pub didSendMenuDestinationRequestEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MenuDestination>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MenuDestination>,
+        >,
     >,
     pub _currentMenuDestinationRequest: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MenuDestination,
@@ -25,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "DeeplinkManagerToDestinationRequestManagerAdapter")]
 impl std::ops::Deref
 for crate::GlobalNamespace::DeeplinkManagerToDestinationRequestManagerAdapter {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -93,7 +95,9 @@ impl crate::GlobalNamespace::DeeplinkManagerToDestinationRequestManagerAdapter {
     pub fn add_didSendMenuDestinationRequestEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MenuDestination>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MenuDestination>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -119,7 +123,9 @@ impl crate::GlobalNamespace::DeeplinkManagerToDestinationRequestManagerAdapter {
     pub fn remove_didSendMenuDestinationRequestEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MenuDestination>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MenuDestination>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -152,22 +158,16 @@ for crate::GlobalNamespace::DeeplinkManagerToDestinationRequestManagerAdapter {
     }
 }
 #[cfg(feature = "DeeplinkManagerToDestinationRequestManagerAdapter")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IDestinationRequestManager>>
+impl AsRef<crate::GlobalNamespace::IDestinationRequestManager>
 for crate::GlobalNamespace::DeeplinkManagerToDestinationRequestManagerAdapter {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IDestinationRequestManager> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IDestinationRequestManager {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "DeeplinkManagerToDestinationRequestManagerAdapter")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IDestinationRequestManager>>
+impl AsMut<crate::GlobalNamespace::IDestinationRequestManager>
 for crate::GlobalNamespace::DeeplinkManagerToDestinationRequestManagerAdapter {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IDestinationRequestManager,
-    > {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IDestinationRequestManager {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,14 +2,20 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XRInputSubsystem {
-    __cordl_parent: quest_hook::libil2cpp::Gc<Blacklisted>,
+    __cordl_parent: crate::UnityEngine::IntegratedSubsystem_1<Blacklisted>,
     pub trackingOriginUpdated: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::XRInputSubsystem>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::XRInputSubsystem>,
+        >,
     >,
     pub boundaryChanged: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::XRInputSubsystem>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::XRInputSubsystem>,
+        >,
     >,
-    pub m_DeviceIdsCache: quest_hook::libil2cpp::Gc<u64>,
+    pub m_DeviceIdsCache: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<u64>,
+    >,
 }
 #[cfg(feature = "UnityEngine+XR+XRInputSubsystem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -18,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+XR+XRInputSubsystem")]
 impl std::ops::Deref for crate::UnityEngine::XR::XRInputSubsystem {
-    type Target = quest_hook::libil2cpp::Gc<Blacklisted>;
+    type Target = crate::UnityEngine::IntegratedSubsystem_1<Blacklisted>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -72,7 +78,9 @@ impl crate::UnityEngine::XR::XRInputSubsystem {
     pub fn add_boundaryChanged(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::XRInputSubsystem>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::XRInputSubsystem>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -85,7 +93,9 @@ impl crate::UnityEngine::XR::XRInputSubsystem {
     pub fn add_trackingOriginUpdated(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::XRInputSubsystem>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::XRInputSubsystem>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -98,7 +108,9 @@ impl crate::UnityEngine::XR::XRInputSubsystem {
     pub fn remove_boundaryChanged(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::XRInputSubsystem>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::XRInputSubsystem>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -111,7 +123,9 @@ impl crate::UnityEngine::XR::XRInputSubsystem {
     pub fn remove_trackingOriginUpdated(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::XRInputSubsystem>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::XRInputSubsystem>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

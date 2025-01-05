@@ -25,7 +25,7 @@ for crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxToken {
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+Syntax+StyleSyntaxToken")]
 impl crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxToken {
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
         _cordl_type: crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenType,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

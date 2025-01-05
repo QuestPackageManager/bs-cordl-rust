@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArticulationBody {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Behaviour>,
+    __cordl_parent: crate::UnityEngine::Behaviour,
 }
 #[cfg(feature = "UnityEngine+ArticulationBody")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ArticulationBody")]
 impl std::ops::Deref for crate::UnityEngine::ArticulationBody {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Behaviour>;
+    type Target = crate::UnityEngine::Behaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -318,7 +318,9 @@ impl crate::UnityEngine::ArticulationBody {
     }
     pub fn GetDofStartIndices(
         &mut self,
-        dofStartIndices: quest_hook::libil2cpp::Gc<i32>,
+        dofStartIndices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -329,7 +331,9 @@ impl crate::UnityEngine::ArticulationBody {
     }
     pub fn GetDriveForces(
         &mut self,
-        forces: quest_hook::libil2cpp::Gc<f32>,
+        forces: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -339,7 +343,9 @@ impl crate::UnityEngine::ArticulationBody {
     }
     pub fn GetDriveTargetVelocities(
         &mut self,
-        targetVelocities: quest_hook::libil2cpp::Gc<f32>,
+        targetVelocities: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -350,7 +356,9 @@ impl crate::UnityEngine::ArticulationBody {
     }
     pub fn GetDriveTargets(
         &mut self,
-        targets: quest_hook::libil2cpp::Gc<f32>,
+        targets: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -360,7 +368,9 @@ impl crate::UnityEngine::ArticulationBody {
     }
     pub fn GetJointAccelerations(
         &mut self,
-        accelerations: quest_hook::libil2cpp::Gc<f32>,
+        accelerations: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -371,7 +381,9 @@ impl crate::UnityEngine::ArticulationBody {
     }
     pub fn GetJointCoriolisCentrifugalForces(
         &mut self,
-        forces: quest_hook::libil2cpp::Gc<f32>,
+        forces: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -382,7 +394,9 @@ impl crate::UnityEngine::ArticulationBody {
     }
     pub fn GetJointExternalForces(
         &mut self,
-        forces: quest_hook::libil2cpp::Gc<f32>,
+        forces: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
         step: f32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -394,7 +408,9 @@ impl crate::UnityEngine::ArticulationBody {
     }
     pub fn GetJointForces(
         &mut self,
-        forces: quest_hook::libil2cpp::Gc<f32>,
+        forces: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -431,7 +447,9 @@ impl crate::UnityEngine::ArticulationBody {
     }
     pub fn GetJointGravityForces(
         &mut self,
-        forces: quest_hook::libil2cpp::Gc<f32>,
+        forces: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -441,7 +459,9 @@ impl crate::UnityEngine::ArticulationBody {
     }
     pub fn GetJointPositions(
         &mut self,
-        positions: quest_hook::libil2cpp::Gc<f32>,
+        positions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -451,7 +471,9 @@ impl crate::UnityEngine::ArticulationBody {
     }
     pub fn GetJointVelocities(
         &mut self,
-        velocities: quest_hook::libil2cpp::Gc<f32>,
+        velocities: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -603,7 +625,9 @@ impl crate::UnityEngine::ArticulationBody {
     }
     pub fn SetDriveTargetVelocities(
         &mut self,
-        targetVelocities: quest_hook::libil2cpp::Gc<f32>,
+        targetVelocities: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -626,7 +650,9 @@ impl crate::UnityEngine::ArticulationBody {
     }
     pub fn SetDriveTargets(
         &mut self,
-        targets: quest_hook::libil2cpp::Gc<f32>,
+        targets: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -637,7 +663,9 @@ impl crate::UnityEngine::ArticulationBody {
     }
     pub fn SetJointAccelerations(
         &mut self,
-        accelerations: quest_hook::libil2cpp::Gc<f32>,
+        accelerations: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -648,7 +676,9 @@ impl crate::UnityEngine::ArticulationBody {
     }
     pub fn SetJointForces(
         &mut self,
-        forces: quest_hook::libil2cpp::Gc<f32>,
+        forces: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -659,7 +689,9 @@ impl crate::UnityEngine::ArticulationBody {
     }
     pub fn SetJointPositions(
         &mut self,
-        positions: quest_hook::libil2cpp::Gc<f32>,
+        positions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -670,7 +702,9 @@ impl crate::UnityEngine::ArticulationBody {
     }
     pub fn SetJointVelocities(
         &mut self,
-        velocities: quest_hook::libil2cpp::Gc<f32>,
+        velocities: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SongPreviewPlayer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioPlayerBase>,
+    __cordl_parent: crate::GlobalNamespace::AudioPlayerBase,
     pub _channelsCount: i32,
     pub _audioSourcePrefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
     pub _defaultAudioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
@@ -22,9 +22,7 @@ pub struct SongPreviewPlayer {
     pub _audioManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioManagerSO>,
     pub _audioSourceControllers: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController,
-            >,
+            *mut crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController,
         >,
     >,
     pub _activeChannel: i32,
@@ -35,8 +33,10 @@ pub struct SongPreviewPlayer {
     pub _ambientVolumeScale: f32,
     pub _isActiveChannelPaused: bool,
     pub _channelToFadeOutCallbackDictionary: quest_hook::libil2cpp::Gc<
-        i32,
-        quest_hook::libil2cpp::Gc<crate::System::Action>,
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            quest_hook::libil2cpp::Gc<crate::System::Action>,
+        >,
     >,
 }
 #[cfg(feature = "SongPreviewPlayer")]
@@ -46,7 +46,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SongPreviewPlayer")]
 impl std::ops::Deref for crate::GlobalNamespace::SongPreviewPlayer {
-    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioPlayerBase>;
+    type Target = crate::GlobalNamespace::AudioPlayerBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -110,7 +110,7 @@ impl crate::GlobalNamespace::SongPreviewPlayer {
             .invoke("CrossfadeToNewDefault", (audioClip))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CrossfadeTo_Gc0(
+    pub fn CrossfadeTo_Action0(
         &mut self,
         audioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
         musicVolume: f32,
@@ -128,7 +128,7 @@ impl crate::GlobalNamespace::SongPreviewPlayer {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn CrossfadeTo__cordl_bool_Gc1(
+    pub fn CrossfadeTo__cordl_bool_Action1(
         &mut self,
         audioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
         musicVolume: f32,
@@ -291,7 +291,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SongPreviewPl
 #[repr(C)]
 #[derive(Debug)]
 pub struct SongPreviewPlayer_AudioSourceParams {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _position: crate::UnityEngine::Vector3,
     pub _reverbZoneMix: f32,
     pub _spatialBlend: f32,
@@ -305,7 +305,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SongPreviewPlayer+AudioSourceParams")]
 impl std::ops::Deref for crate::GlobalNamespace::SongPreviewPlayer_AudioSourceParams {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -381,7 +381,7 @@ for crate::GlobalNamespace::SongPreviewPlayer_AudioSourceParams {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SongPreviewPlayer_AudioSourceVolumeController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
     pub _maxVolume_k__BackingField: f32,
     pub _volume: f32,
@@ -395,7 +395,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "SongPreviewPlayer+AudioSourceVolumeController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -480,7 +480,7 @@ for crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SongPreviewPlayer_InitData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ambientVolumeScale: f32,
 }
 #[cfg(feature = "SongPreviewPlayer+InitData")]
@@ -490,7 +490,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SongPreviewPlayer+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::SongPreviewPlayer_InitData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

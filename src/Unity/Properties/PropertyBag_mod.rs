@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PropertyBag {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Unity+Properties+PropertyBag")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Properties+PropertyBag")]
 impl std::ops::Deref for crate::Unity::Properties::PropertyBag {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -25,7 +25,9 @@ impl std::ops::DerefMut for crate::Unity::Properties::PropertyBag {
 #[cfg(feature = "Unity+Properties+PropertyBag")]
 impl crate::Unity::Properties::PropertyBag {
     pub fn Register<TContainer>(
-        propertyBag: quest_hook::libil2cpp::Gc<TContainer>,
+        propertyBag: quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::PropertyBag_1<TContainer>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument

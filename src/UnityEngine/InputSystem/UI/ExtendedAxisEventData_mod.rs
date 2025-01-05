@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExtendedAxisEventData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::AxisEventData,
-    >,
+    __cordl_parent: crate::UnityEngine::EventSystems::AxisEventData,
 }
 #[cfg(feature = "UnityEngine+InputSystem+UI+ExtendedAxisEventData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -14,9 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+UI+ExtendedAxisEventData")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::UI::ExtendedAxisEventData {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::AxisEventData,
-    >;
+    type Target = crate::UnityEngine::EventSystems::AxisEventData;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

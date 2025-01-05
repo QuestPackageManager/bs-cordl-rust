@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PgpV3SignatureGenerator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub keyAlgorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
     pub hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
     pub privKey: quest_hook::libil2cpp::Gc<
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpV3SignatureGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpV3SignatureGenerator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -65,7 +65,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpV3SignatureGenerator {
         > = __cordl_object.invoke("GenerateOnePassVersion", (isNested))?;
         Ok(__cordl_ret.into())
     }
-    pub fn InitSign_Gc1(
+    pub fn InitSign_SecureRandom1(
         &mut self,
         sigType: i32,
         key: quest_hook::libil2cpp::Gc<
@@ -82,7 +82,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpV3SignatureGenerator {
             .invoke("InitSign", (sigType, key, random))?;
         Ok(__cordl_ret.into())
     }
-    pub fn InitSign_i32_Gc0(
+    pub fn InitSign_i32_PgpPrivateKey0(
         &mut self,
         sigType: i32,
         key: quest_hook::libil2cpp::Gc<
@@ -106,7 +106,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpV3SignatureGenerator {
             .invoke_void(".ctor", (keyAlgorithm, hashAlgorithm))?;
         Ok(__cordl_object.into())
     }
-    pub fn Update_Gc1(
+    pub fn Update_Il2CppArray1(
         &mut self,
         b: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -117,7 +117,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpV3SignatureGenerator {
             .invoke("Update", (b))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Update_Gc_i32_i32_2(
+    pub fn Update_Il2CppArray_i32_i32_2(
         &mut self,
         b: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         off: i32,

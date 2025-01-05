@@ -3,9 +3,7 @@
 #[derive(Debug, Clone, Default)]
 pub struct DataKey {
     pub _columns: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
     >,
 }
 #[cfg(feature = "System+Data+DataKey")]
@@ -45,16 +43,12 @@ impl crate::System::Data::DataKey {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn ColumnsEqual_Gc_Gc1(
+    pub fn ColumnsEqual_Il2CppArray_Il2CppArray1(
         column1: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
         >,
         column2: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
@@ -83,7 +77,7 @@ impl crate::System::Data::DataKey {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Gc0(
+    pub fn Equals_Il2CppObject0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -98,15 +92,11 @@ impl crate::System::Data::DataKey {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "GetColumnNames", ())?;
         Ok(__cordl_ret.into())
     }
@@ -135,15 +125,11 @@ impl crate::System::Data::DataKey {
         record: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "GetKeyValues", (record))?;
         Ok(__cordl_ret.into())
     }
@@ -188,24 +174,18 @@ impl crate::System::Data::DataKey {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToArray", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         columns: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
         >,
         copyColumns: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -220,15 +200,11 @@ impl crate::System::Data::DataKey {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_ColumnsReference",

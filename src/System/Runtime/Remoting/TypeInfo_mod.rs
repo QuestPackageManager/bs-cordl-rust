@@ -2,17 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeInfo {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub serverType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub serverHierarchy: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub interfacesImplemented: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "System+Runtime+Remoting+TypeInfo")]
@@ -22,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+Remoting+TypeInfo")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::TypeInfo {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -90,26 +86,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Runtime::Remoting::Typ
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+TypeInfo")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::IRemotingTypeInfo>,
-> for crate::System::Runtime::Remoting::TypeInfo {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Remoting::IRemotingTypeInfo,
-    > {
+impl AsRef<crate::System::Runtime::Remoting::IRemotingTypeInfo>
+for crate::System::Runtime::Remoting::TypeInfo {
+    fn as_ref(&self) -> &crate::System::Runtime::Remoting::IRemotingTypeInfo {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+TypeInfo")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::IRemotingTypeInfo>,
-> for crate::System::Runtime::Remoting::TypeInfo {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Remoting::IRemotingTypeInfo,
-    > {
+impl AsMut<crate::System::Runtime::Remoting::IRemotingTypeInfo>
+for crate::System::Runtime::Remoting::TypeInfo {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Remoting::IRemotingTypeInfo {
         unsafe { std::mem::transmute(self) }
     }
 }

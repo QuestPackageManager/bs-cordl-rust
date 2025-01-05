@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PkixCertPathValidatorUtilities {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+Pkix+PkixCertPathValidatorUtilities")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Pkix+PkixCertPathValidatorUtilities")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -58,9 +58,9 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             .invoke("AddAdditionalStoresFromCrlDistributionPoint", (crldp, pkixParams))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FindCertificates_Gc_Gc0(
+    pub fn FindCertificates_X509AttrCertStoreSelector1(
         certSelect: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::X509::Store::X509CertStoreSelector,
+            crate::Org::BouncyCastle::X509::Store::X509AttrCertStoreSelector,
         >,
         certStores: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     ) -> quest_hook::libil2cpp::Result<
@@ -72,9 +72,9 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             .invoke("FindCertificates", (certSelect, certStores))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FindCertificates_Gc_Gc1(
+    pub fn FindCertificates_X509CertStoreSelector0(
         certSelect: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::X509::Store::X509AttrCertStoreSelector,
+            crate::Org::BouncyCastle::X509::Store::X509CertStoreSelector,
         >,
         certStores: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     ) -> quest_hook::libil2cpp::Result<
@@ -314,9 +314,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
     pub fn PrepareNextCertB1(
         i: i32,
         policyNodes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Collections::IList>,
         >,
         id_p: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         m_idp: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
@@ -329,9 +327,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
     pub fn PrepareNextCertB2(
         i: i32,
         policyNodes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Collections::IList>,
         >,
         id_p: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         validPolicyTree: quest_hook::libil2cpp::Gc<
@@ -349,9 +345,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
     pub fn ProcessCertD1i(
         index: i32,
         policyNodes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Collections::IList>,
         >,
         pOid: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
@@ -367,9 +361,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
     pub fn ProcessCertD1ii(
         index: i32,
         policyNodes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Collections::IList>,
         >,
         _poid: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
@@ -387,9 +379,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             crate::Org::BouncyCastle::Pkix::PkixPolicyNode,
         >,
         policyNodes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Collections::IList>,
         >,
         _node: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Pkix::PkixPolicyNode>,
     ) -> quest_hook::libil2cpp::Result<
@@ -403,9 +393,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
     }
     pub fn RemovePolicyNodeRecurse(
         policyNodes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Collections::IList>,
         >,
         _node: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Pkix::PkixPolicyNode>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

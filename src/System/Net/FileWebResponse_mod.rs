@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileWebResponse {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Net::WebResponse>,
+    __cordl_parent: crate::System::Net::WebResponse,
     pub m_closed: bool,
     pub m_contentLength: i64,
     pub m_fileAccess: crate::System::IO::FileAccess,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+FileWebResponse")]
 impl std::ops::Deref for crate::System::Net::FileWebResponse {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Net::WebResponse>;
+    type Target = crate::System::Net::WebResponse;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -76,7 +76,7 @@ impl crate::System::Net::FileWebResponse {
             .invoke("GetResponseStream", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc_FileAccess__cordl_bool0(
+    pub fn New_FileWebRequest_Uri_FileAccess__cordl_bool0(
         request: quest_hook::libil2cpp::Gc<crate::System::Net::FileWebRequest>,
         uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
         access: crate::System::IO::FileAccess,
@@ -88,7 +88,7 @@ impl crate::System::Net::FileWebResponse {
             .invoke_void(".ctor", (request, uri, access, asyncHint))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_StreamingContext1(
+    pub fn New_SerializationInfo_StreamingContext1(
         serializationInfo: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -128,7 +128,7 @@ impl crate::System::Net::FileWebResponse {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_FileAccess__cordl_bool0(
+    pub fn _ctor_FileWebRequest_Uri_FileAccess__cordl_bool0(
         &mut self,
         request: quest_hook::libil2cpp::Gc<crate::System::Net::FileWebRequest>,
         uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
@@ -142,7 +142,7 @@ impl crate::System::Net::FileWebResponse {
             .invoke(".ctor", (request, uri, access, asyncHint))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_StreamingContext1(
+    pub fn _ctor_SerializationInfo_StreamingContext1(
         &mut self,
         serializationInfo: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -190,42 +190,28 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::FileWebResponse {
     }
 }
 #[cfg(feature = "System+Net+FileWebResponse")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Net::ICloseEx>>
+impl AsRef<crate::System::Net::ICloseEx> for crate::System::Net::FileWebResponse {
+    fn as_ref(&self) -> &crate::System::Net::ICloseEx {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+FileWebResponse")]
+impl AsMut<crate::System::Net::ICloseEx> for crate::System::Net::FileWebResponse {
+    fn as_mut(&mut self) -> &mut crate::System::Net::ICloseEx {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+FileWebResponse")]
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
 for crate::System::Net::FileWebResponse {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Net::ICloseEx> {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Net+FileWebResponse")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Net::ICloseEx>>
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
 for crate::System::Net::FileWebResponse {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Net::ICloseEx> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Net+FileWebResponse")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::Net::FileWebResponse {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Net+FileWebResponse")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::Net::FileWebResponse {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }

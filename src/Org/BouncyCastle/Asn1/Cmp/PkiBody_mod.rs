@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PkiBody {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub tagNo: i32,
     pub body: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
 }
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+PkiBody")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Cmp::PkiBody {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -79,7 +75,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiBody {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_Asn1TaggedObject0(
         tagged: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
         >,
@@ -90,7 +86,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiBody {
             .invoke_void(".ctor", (tagged))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_Gc1(
+    pub fn New_i32_Asn1Encodable1(
         _cordl_type: i32,
         content: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -113,7 +109,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiBody {
         > = __cordl_object.invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Asn1TaggedObject0(
         &mut self,
         tagged: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
@@ -126,7 +122,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiBody {
             .invoke(".ctor", (tagged))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_Gc1(
+    pub fn _ctor_i32_Asn1Encodable1(
         &mut self,
         _cordl_type: i32,
         content: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
@@ -169,20 +165,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Asn1::Cmp::
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+PkiBody")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice>>
+impl AsRef<crate::Org::BouncyCastle::Asn1::IAsn1Choice>
 for crate::Org::BouncyCastle::Asn1::Cmp::PkiBody {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice> {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Asn1::IAsn1Choice {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+PkiBody")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice>>
+impl AsMut<crate::Org::BouncyCastle::Asn1::IAsn1Choice>
 for crate::Org::BouncyCastle::Asn1::Cmp::PkiBody {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice> {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Asn1::IAsn1Choice {
         unsafe { std::mem::transmute(self) }
     }
 }

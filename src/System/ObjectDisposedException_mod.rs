@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObjectDisposedException {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::InvalidOperationException>,
+    __cordl_parent: crate::System::InvalidOperationException,
     pub _objectName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+ObjectDisposedException")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+ObjectDisposedException")]
 impl std::ops::Deref for crate::System::ObjectDisposedException {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::InvalidOperationException>;
+    type Target = crate::System::InvalidOperationException;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -46,7 +46,7 @@ impl crate::System::ObjectDisposedException {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Il2CppString1(
         objectName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -55,7 +55,7 @@ impl crate::System::ObjectDisposedException {
             .invoke_void(".ctor", (objectName))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc2(
+    pub fn New_Il2CppString_Il2CppString2(
         objectName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -65,7 +65,7 @@ impl crate::System::ObjectDisposedException {
             .invoke_void(".ctor", (objectName, message))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_StreamingContext3(
+    pub fn New_SerializationInfo_StreamingContext3(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -87,7 +87,7 @@ impl crate::System::ObjectDisposedException {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
         objectName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -98,7 +98,7 @@ impl crate::System::ObjectDisposedException {
             .invoke(".ctor", (objectName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc2(
+    pub fn _ctor_Il2CppString_Il2CppString2(
         &mut self,
         objectName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -110,7 +110,7 @@ impl crate::System::ObjectDisposedException {
             .invoke(".ctor", (objectName, message))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_StreamingContext3(
+    pub fn _ctor_SerializationInfo_StreamingContext3(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XAttribute {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XObject>,
+    __cordl_parent: crate::System::Xml::Linq::XObject,
     pub next: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XAttribute>,
     pub name: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName>,
     pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Linq+XAttribute")]
 impl std::ops::Deref for crate::System::Xml::Linq::XAttribute {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XObject>;
+    type Target = crate::System::Xml::Linq::XObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -41,7 +41,16 @@ impl crate::System::Xml::Linq::XAttribute {
         > = __cordl_object.invoke("GetPrefixOfNamespace", (ns))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_XAttribute1(
+        other: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XAttribute>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (other))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_XName_Il2CppObject0(
         name: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -49,15 +58,6 @@ impl crate::System::Xml::Linq::XAttribute {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (name, value))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc1(
-        other: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XAttribute>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (other))?;
         Ok(__cordl_object.into())
     }
     pub fn ToString(
@@ -81,7 +81,18 @@ impl crate::System::Xml::Linq::XAttribute {
             .invoke("ValidateAttribute", (name, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_XAttribute1(
+        &mut self,
+        other: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XAttribute>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (other))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_XName_Il2CppObject0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -91,17 +102,6 @@ impl crate::System::Xml::Linq::XAttribute {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (name, value))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc1(
-        &mut self,
-        other: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XAttribute>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (other))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_IsNamespaceDeclaration(&mut self) -> quest_hook::libil2cpp::Result<bool> {

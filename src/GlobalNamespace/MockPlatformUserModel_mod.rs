@@ -2,9 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MockPlatformUserModel {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub platformUserInfoDidChangeEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
+        >,
     >,
 }
 #[cfg(feature = "MockPlatformUserModel")]
@@ -14,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MockPlatformUserModel")]
 impl std::ops::Deref for crate::GlobalNamespace::MockPlatformUserModel {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,14 +33,22 @@ impl crate::GlobalNamespace::MockPlatformUserModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlatformUserAuthTokenData>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PlatformUserAuthTokenData,
+                >,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlatformUserAuthTokenData>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PlatformUserAuthTokenData,
+                >,
+            >,
         > = __cordl_object.invoke("GetUserAuthToken", ())?;
         Ok(__cordl_ret.into())
     }
@@ -47,8 +57,12 @@ impl crate::GlobalNamespace::MockPlatformUserModel {
         cached: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IReadOnlyList_1<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                >,
             >,
         >,
     > {
@@ -56,8 +70,12 @@ impl crate::GlobalNamespace::MockPlatformUserModel {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IReadOnlyList_1<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                >,
             >,
         > = __cordl_object.invoke("GetUserFriendsUserIds", (cached))?;
         Ok(__cordl_ret.into())
@@ -67,26 +85,8 @@ impl crate::GlobalNamespace::MockPlatformUserModel {
         ctx: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
-        > = __cordl_object.invoke("GetUserInfo", (ctx))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetUserNamesForUserIds(
-        &mut self,
-        userIds: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
             >,
         >,
     > {
@@ -94,8 +94,40 @@ impl crate::GlobalNamespace::MockPlatformUserModel {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
+            >,
+        > = __cordl_object.invoke("GetUserInfo", (ctx))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUserNamesForUserIds(
+        &mut self,
+        userIds: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IReadOnlyList_1<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                >,
+            >,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IReadOnlyList_1<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                >,
             >,
         > = __cordl_object.invoke("GetUserNamesForUserIds", (userIds))?;
         Ok(__cordl_ret.into())
@@ -121,13 +153,19 @@ impl crate::GlobalNamespace::MockPlatformUserModel {
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::XPlatformAccessTokenData>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::XPlatformAccessTokenData,
+            >,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::XPlatformAccessTokenData,
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::XPlatformAccessTokenData,
+            >,
         > = __cordl_object.invoke("RequestXPlatformAccessToken", (cancellationToken))?;
         Ok(__cordl_ret.into())
     }
@@ -144,7 +182,9 @@ impl crate::GlobalNamespace::MockPlatformUserModel {
     pub fn add_platformUserInfoDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -167,7 +207,9 @@ impl crate::GlobalNamespace::MockPlatformUserModel {
     pub fn remove_platformUserInfoDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -189,20 +231,16 @@ for crate::GlobalNamespace::MockPlatformUserModel {
     }
 }
 #[cfg(feature = "MockPlatformUserModel")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPlatformUserModel>>
+impl AsRef<crate::GlobalNamespace::IPlatformUserModel>
 for crate::GlobalNamespace::MockPlatformUserModel {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPlatformUserModel> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPlatformUserModel {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MockPlatformUserModel")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPlatformUserModel>>
+impl AsMut<crate::GlobalNamespace::IPlatformUserModel>
 for crate::GlobalNamespace::MockPlatformUserModel {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPlatformUserModel> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPlatformUserModel {
         unsafe { std::mem::transmute(self) }
     }
 }

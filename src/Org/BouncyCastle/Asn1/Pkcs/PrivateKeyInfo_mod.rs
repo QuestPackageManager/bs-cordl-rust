@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PrivateKeyInfo {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub version: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
     pub privateKeyAlgorithm: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
@@ -24,9 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+PrivateKeyInfo")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -39,17 +35,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+PrivateKeyInfo")]
 impl crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo {
-    pub fn GetInstance_Gc1(
-        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetInstance__cordl_bool0(
+    pub fn GetInstance_Asn1TaggedObject__cordl_bool0(
         obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1TaggedObject>,
         explicitly: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -61,6 +47,16 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo {
             .invoke("GetInstance", (obj, explicitly))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetInstance_Il2CppObject1(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetVersionValue(
         version: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -68,7 +64,7 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo {
             .invoke("GetVersionValue", (version))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_AlgorithmIdentifier_Asn1Encodable0(
         privateKeyAlgorithm: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
         >,
@@ -82,16 +78,7 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo {
             .invoke_void(".ctor", (privateKeyAlgorithm, privateKey))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc3(
-        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seq))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_Gc1(
+    pub fn New_AlgorithmIdentifier_Asn1Encodable_Asn1Set1(
         privateKeyAlgorithm: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
         >,
@@ -106,7 +93,7 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo {
             .invoke_void(".ctor", (privateKeyAlgorithm, privateKey, attributes))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc_Gc2(
+    pub fn New_AlgorithmIdentifier_Asn1Encodable_Asn1Set_Il2CppArray2(
         privateKeyAlgorithm: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
         >,
@@ -123,6 +110,15 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo {
                 ".ctor",
                 (privateKeyAlgorithm, privateKey, attributes, publicKey),
             )?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Asn1Sequence3(
+        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (seq))?;
         Ok(__cordl_object.into())
     }
     pub fn ParsePrivateKey(
@@ -164,7 +160,7 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo {
         > = __cordl_object.invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_AlgorithmIdentifier_Asn1Encodable0(
         &mut self,
         privateKeyAlgorithm: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
@@ -180,18 +176,7 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo {
             .invoke(".ctor", (privateKeyAlgorithm, privateKey))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc3(
-        &mut self,
-        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (seq))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_Gc1(
+    pub fn _ctor_AlgorithmIdentifier_Asn1Encodable_Asn1Set1(
         &mut self,
         privateKeyAlgorithm: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
@@ -208,7 +193,7 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo {
             .invoke(".ctor", (privateKeyAlgorithm, privateKey, attributes))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_Gc2(
+    pub fn _ctor_AlgorithmIdentifier_Asn1Encodable_Asn1Set_Il2CppArray2(
         &mut self,
         privateKeyAlgorithm: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
@@ -224,6 +209,17 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (privateKeyAlgorithm, privateKey, attributes, publicKey))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Asn1Sequence3(
+        &mut self,
+        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (seq))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_Attributes(

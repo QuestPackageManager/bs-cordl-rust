@@ -2,9 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PhysicsRaycasterWithCache {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cachedRaycasts: quest_hook::libil2cpp::Gc<
-        crate::VRUIControls::PhysicsRaycasterWithCache_CachedRaycast,
+        crate::System::Collections::Generic::List_1<
+            crate::VRUIControls::PhysicsRaycasterWithCache_CachedRaycast,
+        >,
     >,
     pub _lastFrameCount: i32,
 }
@@ -15,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "VRUIControls+PhysicsRaycasterWithCache")]
 impl std::ops::Deref for crate::VRUIControls::PhysicsRaycasterWithCache {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

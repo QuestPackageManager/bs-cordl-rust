@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultTlsServer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsServer,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsServer,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsServer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsServer")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsServer {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsServer,
-    >;
+    type Target = crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsServer;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -218,7 +214,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsServer {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_TlsCipherFactory1(
         cipherFactory: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsCipherFactory,
         >,
@@ -239,7 +235,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsServer {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_TlsCipherFactory1(
         &mut self,
         cipherFactory: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsCipherFactory,

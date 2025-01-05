@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BindingRestrictions {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Dynamic+BindingRestrictions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Dynamic+BindingRestrictions")]
 impl std::ops::Deref for crate::System::Dynamic::BindingRestrictions {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -63,7 +63,18 @@ impl crate::System::Dynamic::BindingRestrictions {
             .invoke("GetInstanceRestriction", (expression, instance))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetTypeRestriction_Gc0(
+    pub fn GetTypeRestriction_DynamicMetaObject1(
+        obj: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Dynamic::BindingRestrictions,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTypeRestriction", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTypeRestriction_Expression_Type0(
         expression: quest_hook::libil2cpp::Gc<
             crate::System::Linq::Expressions::Expression,
         >,
@@ -75,17 +86,6 @@ impl crate::System::Dynamic::BindingRestrictions {
             crate::System::Dynamic::BindingRestrictions,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetTypeRestriction", (expression, _cordl_type))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetTypeRestriction_Gc1(
-        obj: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Dynamic::BindingRestrictions,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetTypeRestriction", (obj))?;
         Ok(__cordl_ret.into())
     }
     pub fn Merge(
@@ -148,7 +148,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Dynamic::BindingRestri
 #[repr(C)]
 #[derive(Debug)]
 pub struct BindingRestrictions_BindingRestrictionsProxy {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Dynamic+BindingRestrictions+BindingRestrictionsProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -159,7 +159,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Dynamic+BindingRestrictions+BindingRestrictionsProxy")]
 impl std::ops::Deref
 for crate::System::Dynamic::BindingRestrictions_BindingRestrictionsProxy {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -187,12 +187,16 @@ for crate::System::Dynamic::BindingRestrictions_BindingRestrictionsProxy {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BindingRestrictions_TestBuilder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _unique: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>,
+        crate::System::Collections::Generic::HashSet_1<
+            quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>,
+        >,
     >,
     pub _tests: quest_hook::libil2cpp::Gc<
-        crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode,
+        crate::System::Collections::Generic::Stack_1<
+            crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode,
+        >,
     >,
 }
 #[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder")]
@@ -202,7 +206,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder")]
 impl std::ops::Deref for crate::System::Dynamic::BindingRestrictions_TestBuilder {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

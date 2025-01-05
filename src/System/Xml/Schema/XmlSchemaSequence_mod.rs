@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaSequence {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::XmlSchemaGroupBase,
-    >,
+    __cordl_parent: crate::System::Xml::Schema::XmlSchemaGroupBase,
     pub items: quest_hook::libil2cpp::Gc<
         crate::System::Xml::Schema::XmlSchemaObjectCollection,
     >,
@@ -16,9 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlSchemaSequence")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaSequence {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::XmlSchemaGroupBase,
-    >;
+    type Target = crate::System::Xml::Schema::XmlSchemaGroupBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightRotationEventBox {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::EventBox>,
+    __cordl_parent: crate::BeatmapSaveDataVersion3::EventBox,
     pub s: f32,
     pub t: crate::BeatmapSaveDataCommon::DistributionParamType,
     pub a: crate::BeatmapSaveDataCommon::Axis,
@@ -10,7 +10,11 @@ pub struct LightRotationEventBox {
     pub b: i32,
     pub i: crate::BeatmapSaveDataCommon::EaseType,
     pub l: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::LightRotationBaseData>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapSaveDataVersion3::LightRotationBaseData,
+            >,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+LightRotationEventBox")]
@@ -20,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapSaveDataVersion3+LightRotationEventBox")]
 impl std::ops::Deref for crate::BeatmapSaveDataVersion3::LightRotationEventBox {
-    type Target = quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::EventBox>;
+    type Target = crate::BeatmapSaveDataVersion3::EventBox;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -46,8 +50,10 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
         axis: crate::BeatmapSaveDataCommon::Axis,
         flipRotation: bool,
         lightRotationBaseDataList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion3::LightRotationBaseData,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion3::LightRotationBaseData,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -85,8 +91,10 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
         axis: crate::BeatmapSaveDataCommon::Axis,
         flipRotation: bool,
         lightRotationBaseDataList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion3::LightRotationBaseData,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion3::LightRotationBaseData,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -132,8 +140,10 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion3::LightRotationBaseData,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion3::LightRotationBaseData,
+                >,
             >,
         >,
     > {
@@ -141,8 +151,10 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion3::LightRotationBaseData,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion3::LightRotationBaseData,
+                >,
             >,
         > = __cordl_object.invoke("get_lightRotationBaseDataList", ())?;
         Ok(__cordl_ret.into())

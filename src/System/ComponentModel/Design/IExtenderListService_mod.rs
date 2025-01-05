@@ -30,9 +30,7 @@ impl crate::System::ComponentModel::Design::IExtenderListService {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::ComponentModel::IExtenderProvider,
-                >,
+                *mut crate::System::ComponentModel::IExtenderProvider,
             >,
         >,
     > {
@@ -41,9 +39,7 @@ impl crate::System::ComponentModel::Design::IExtenderListService {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::ComponentModel::IExtenderProvider,
-                >,
+                *mut crate::System::ComponentModel::IExtenderProvider,
             >,
         > = __cordl_object.invoke("GetExtenderProviders", ())?;
         Ok(__cordl_ret.into())

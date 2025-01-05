@@ -2,13 +2,19 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NativePagedList_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub k_PoolCapacity: i32,
-    pub m_Pages: quest_hook::libil2cpp::Gc<crate::Unity::Collections::NativeArray_1<T>>,
+    pub m_Pages: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::Unity::Collections::NativeArray_1<T>,
+        >,
+    >,
     pub m_CurrentPage: crate::Unity::Collections::NativeArray_1<T>,
     pub m_CurrentPageCount: i32,
     pub m_Enumerator: quest_hook::libil2cpp::Gc<
-        crate::Unity::Collections::NativeSlice_1<T>,
+        crate::System::Collections::Generic::List_1<
+            crate::Unity::Collections::NativeSlice_1<T>,
+        >,
     >,
     pub _disposed_k__BackingField: bool,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -21,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+UIR+NativePagedList_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::UIR::NativePagedList_1<T> {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -84,7 +90,11 @@ impl<
     pub fn GetPages(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Unity::Collections::NativeSlice_1<T>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::Unity::Collections::NativeSlice_1<T>,
+            >,
+        >,
     >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -94,7 +104,9 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Unity::Collections::NativeSlice_1<T>,
+            crate::System::Collections::Generic::List_1<
+                crate::Unity::Collections::NativeSlice_1<T>,
+            >,
         > = __cordl_object.invoke("GetPages", ())?;
         Ok(__cordl_ret.into())
     }
@@ -176,20 +188,16 @@ for crate::UnityEngine::UIElements::UIR::NativePagedList_1<T> {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+NativePagedList_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
 for crate::UnityEngine::UIElements::UIR::NativePagedList_1<T> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+NativePagedList_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
 for crate::UnityEngine::UIElements::UIR::NativePagedList_1<T> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ManualResetEvent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Threading::EventWaitHandle>,
+    __cordl_parent: crate::System::Threading::EventWaitHandle,
 }
 #[cfg(feature = "System+Threading+ManualResetEvent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+ManualResetEvent")]
 impl std::ops::Deref for crate::System::Threading::ManualResetEvent {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Threading::EventWaitHandle>;
+    type Target = crate::System::Threading::EventWaitHandle;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

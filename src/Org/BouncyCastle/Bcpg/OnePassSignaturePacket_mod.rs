@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OnePassSignaturePacket {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Bcpg::ContainedPacket,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Bcpg::ContainedPacket,
     pub version: i32,
     pub sigType: i32,
     pub hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
@@ -19,9 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OnePassSignaturePacket")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::OnePassSignaturePacket {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Bcpg::ContainedPacket,
-    >;
+    type Target = crate::Org::BouncyCastle::Bcpg::ContainedPacket;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -47,7 +43,7 @@ impl crate::Org::BouncyCastle::Bcpg::OnePassSignaturePacket {
             .invoke("Encode", (bcpgOut))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_BcpgInputStream0(
         bcpgIn: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
         >,
@@ -74,7 +70,7 @@ impl crate::Org::BouncyCastle::Bcpg::OnePassSignaturePacket {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_BcpgInputStream0(
         &mut self,
         bcpgIn: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::BcpgInputStream,

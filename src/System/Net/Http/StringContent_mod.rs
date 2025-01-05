@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StringContent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Net::Http::ByteArrayContent,
-    >,
+    __cordl_parent: crate::System::Net::Http::ByteArrayContent,
 }
 #[cfg(feature = "System+Net+Http+StringContent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Http+StringContent")]
 impl std::ops::Deref for crate::System::Net::Http::StringContent {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Net::Http::ByteArrayContent>;
+    type Target = crate::System::Net::Http::ByteArrayContent;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

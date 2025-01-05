@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AuthenticodeDeformatter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Mono::Security::Authenticode::AuthenticodeBase,
-    >,
+    __cordl_parent: crate::Mono::Security::Authenticode::AuthenticodeBase,
     pub filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub rawdata: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub hash: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -33,9 +31,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Security+Authenticode+AuthenticodeDeformatter")]
 impl std::ops::Deref for crate::Mono::Security::Authenticode::AuthenticodeDeformatter {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Mono::Security::Authenticode::AuthenticodeBase,
-    >;
+    type Target = crate::Mono::Security::Authenticode::AuthenticodeBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -76,7 +72,7 @@ impl crate::Mono::Security::Authenticode::AuthenticodeDeformatter {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Il2CppArray1(
         rawData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -134,7 +130,7 @@ impl crate::Mono::Security::Authenticode::AuthenticodeDeformatter {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Il2CppArray1(
         &mut self,
         rawData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

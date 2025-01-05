@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct KeyboardNavigationManipulator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::Manipulator,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::Manipulator,
     pub m_Action: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::KeyboardNavigationOperation,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+        crate::System::Action_2<
+            crate::UnityEngine::UIElements::KeyboardNavigationOperation,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+KeyboardNavigationManipulator")]
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+KeyboardNavigationManipulator")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Manipulator>;
+    type Target = crate::UnityEngine::UIElements::Manipulator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -46,8 +46,10 @@ impl crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
     }
     pub fn New(
         action: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::KeyboardNavigationOperation,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+            crate::System::Action_2<
+                crate::UnityEngine::UIElements::KeyboardNavigationOperation,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -143,8 +145,10 @@ impl crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
     pub fn _ctor(
         &mut self,
         action: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::KeyboardNavigationOperation,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+            crate::System::Action_2<
+                crate::UnityEngine::UIElements::KeyboardNavigationOperation,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssetReferenceAtlasedSprite {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     >,
 }
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+AddressableAssets+AssetReferenceAtlasedSprite")]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::AssetReferenceAtlasedSprite {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     >;
     fn deref(&self) -> &Self::Target {
@@ -40,17 +40,7 @@ impl crate::UnityEngine::AddressableAssets::AssetReferenceAtlasedSprite {
             .invoke_void(".ctor", (guid))?;
         Ok(__cordl_object.into())
     }
-    pub fn ValidateAsset_Gc0(
-        &mut self,
-        obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("ValidateAsset", (obj))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ValidateAsset_Gc1(
+    pub fn ValidateAsset_Il2CppString1(
         &mut self,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -58,6 +48,16 @@ impl crate::UnityEngine::AddressableAssets::AssetReferenceAtlasedSprite {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("ValidateAsset", (path))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateAsset_Object0(
+        &mut self,
+        obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("ValidateAsset", (obj))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

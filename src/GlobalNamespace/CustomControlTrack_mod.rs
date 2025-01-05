@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomControlTrack {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Timeline::ControlTrack,
-    >,
+    __cordl_parent: crate::UnityEngine::Timeline::ControlTrack,
 }
 #[cfg(feature = "CustomControlTrack")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "CustomControlTrack")]
 impl std::ops::Deref for crate::GlobalNamespace::CustomControlTrack {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::ControlTrack>;
+    type Target = crate::UnityEngine::Timeline::ControlTrack;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

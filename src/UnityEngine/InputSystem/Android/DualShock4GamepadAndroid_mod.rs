@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DualShock4GamepadAndroid {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::DualShock::DualShockGamepad,
-    >,
+    __cordl_parent: crate::UnityEngine::InputSystem::DualShock::DualShockGamepad,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Android+DualShock4GamepadAndroid")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+InputSystem+Android+DualShock4GamepadAndroid")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Android::DualShock4GamepadAndroid {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::DualShock::DualShockGamepad,
-    >;
+    type Target = crate::UnityEngine::InputSystem::DualShock::DualShockGamepad;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

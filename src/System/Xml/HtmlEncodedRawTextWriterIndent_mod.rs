@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HtmlEncodedRawTextWriterIndent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::HtmlEncodedRawTextWriter,
-    >,
+    __cordl_parent: crate::System::Xml::HtmlEncodedRawTextWriter,
     pub indentLevel: i32,
     pub endBlockPos: i32,
     pub indentChars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -17,9 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+HtmlEncodedRawTextWriterIndent")]
 impl std::ops::Deref for crate::System::Xml::HtmlEncodedRawTextWriterIndent {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Xml::HtmlEncodedRawTextWriter,
-    >;
+    type Target = crate::System::Xml::HtmlEncodedRawTextWriter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -53,17 +49,7 @@ impl crate::System::Xml::HtmlEncodedRawTextWriterIndent {
             .invoke("Init", (settings))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc_Gc0(
-        writer: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
-        settings: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriterSettings>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (writer, settings))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_Gc1(
+    pub fn New_Stream1(
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         settings: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriterSettings>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -71,6 +57,16 @@ impl crate::System::Xml::HtmlEncodedRawTextWriterIndent {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (stream, settings))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_TextWriter0(
+        writer: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
+        settings: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriterSettings>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (writer, settings))?;
         Ok(__cordl_object.into())
     }
     pub fn StartElementContent(
@@ -146,19 +142,7 @@ impl crate::System::Xml::HtmlEncodedRawTextWriterIndent {
             .invoke("WriteStartElement", (prefix, localName, ns))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc0(
-        &mut self,
-        writer: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
-        settings: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriterSettings>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (writer, settings))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_Gc1(
+    pub fn _ctor_Stream1(
         &mut self,
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         settings: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriterSettings>,
@@ -168,6 +152,18 @@ impl crate::System::Xml::HtmlEncodedRawTextWriterIndent {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (stream, settings))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_TextWriter0(
+        &mut self,
+        writer: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
+        settings: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriterSettings>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (writer, settings))?;
         Ok(__cordl_ret.into())
     }
 }

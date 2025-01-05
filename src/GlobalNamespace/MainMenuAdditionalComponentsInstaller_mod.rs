@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MainMenuAdditionalComponentsInstaller {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>,
+    __cordl_parent: crate::Zenject::ScriptableObjectInstaller,
 }
 #[cfg(feature = "MainMenuAdditionalComponentsInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MainMenuAdditionalComponentsInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::MainMenuAdditionalComponentsInstaller {
-    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>;
+    type Target = crate::Zenject::ScriptableObjectInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

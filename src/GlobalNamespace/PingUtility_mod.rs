@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PingUtility {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "PingUtility")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PingUtility")]
 impl std::ops::Deref for crate::GlobalNamespace::PingUtility {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -25,9 +25,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PingUtility {
 impl crate::GlobalNamespace::PingUtility {
     pub fn PingAsync(
         url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i64>> {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i64> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PingAsync", (url))?;
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i64>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<i64>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("PingAsync", (url))?;
         Ok(__cordl_ret.into())
     }
 }

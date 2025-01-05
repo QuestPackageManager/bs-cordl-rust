@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct QualifiedAce {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Security::AccessControl::KnownAce,
-    >,
+    __cordl_parent: crate::System::Security::AccessControl::KnownAce,
     pub opaque: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "System+Security+AccessControl+QualifiedAce")]
@@ -14,9 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+AccessControl+QualifiedAce")]
 impl std::ops::Deref for crate::System::Security::AccessControl::QualifiedAce {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Security::AccessControl::KnownAce,
-    >;
+    type Target = crate::System::Security::AccessControl::KnownAce;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -42,7 +38,7 @@ impl crate::System::Security::AccessControl::QualifiedAce {
         > = __cordl_object.invoke("GetOpaque", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_AceType_AceFlags_Gc0(
+    pub fn New_AceType_AceFlags_Il2CppArray0(
         _cordl_type: crate::System::Security::AccessControl::AceType,
         flags: crate::System::Security::AccessControl::AceFlags,
         opaque: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -53,7 +49,7 @@ impl crate::System::Security::AccessControl::QualifiedAce {
             .invoke_void(".ctor", (_cordl_type, flags, opaque))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_i32_1(
+    pub fn New_Il2CppArray_i32_1(
         binaryForm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -74,7 +70,7 @@ impl crate::System::Security::AccessControl::QualifiedAce {
             .invoke("SetOpaque", (opaque))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_AceType_AceFlags_Gc0(
+    pub fn _ctor_AceType_AceFlags_Il2CppArray0(
         &mut self,
         _cordl_type: crate::System::Security::AccessControl::AceType,
         flags: crate::System::Security::AccessControl::AceFlags,
@@ -87,7 +83,7 @@ impl crate::System::Security::AccessControl::QualifiedAce {
             .invoke(".ctor", (_cordl_type, flags, opaque))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_i32_1(
+    pub fn _ctor_Il2CppArray_i32_1(
         &mut self,
         binaryForm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,

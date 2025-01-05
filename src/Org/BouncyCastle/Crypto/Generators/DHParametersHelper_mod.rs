@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DHParametersHelper {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+DHParametersHelper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+DHParametersHelper")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Generators::DHParametersHelper {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,13 +32,13 @@ impl crate::Org::BouncyCastle::Crypto::Generators::DHParametersHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                *mut crate::Org::BouncyCastle::Math::BigInteger,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                *mut crate::Org::BouncyCastle::Math::BigInteger,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ConstructBigPrimeProducts", (primeProducts))?;
@@ -53,13 +53,13 @@ impl crate::Org::BouncyCastle::Crypto::Generators::DHParametersHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                *mut crate::Org::BouncyCastle::Math::BigInteger,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                *mut crate::Org::BouncyCastle::Math::BigInteger,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GenerateSafePrimes", (_cordl_size, certainty, random))?;

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DomainNameHelper {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+DomainNameHelper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+DomainNameHelper")]
 impl std::ops::Deref for crate::System::DomainNameHelper {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,7 +24,7 @@ impl std::ops::DerefMut for crate::System::DomainNameHelper {
 }
 #[cfg(feature = "System+DomainNameHelper")]
 impl crate::System::DomainNameHelper {
-    pub fn IdnEquivalent_Gc_i32_i32_ByRefMut_ByRefMut0(
+    pub fn IdnEquivalent_Il2CppObject_i32_i32_ByRefMut_ByRefMut0(
         hostname: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         start: i32,
         end: i32,
@@ -42,7 +42,7 @@ impl crate::System::DomainNameHelper {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn IdnEquivalent_Gc_i32_i32_ByRefMut_ByRefMut1(
+    pub fn IdnEquivalent_Il2CppObject_i32_i32_ByRefMut_ByRefMut1(
         hostname: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         start: i32,
         end: i32,
@@ -70,16 +70,16 @@ impl crate::System::DomainNameHelper {
             .invoke("IsASCIILetterOrDigit", (character, notCanonical))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsIdnAce_Gc_i32_0(
-        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub fn IsIdnAce_Il2CppObject1(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("IsIdnAce", (input, index))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsIdnAce_Gc_i32_1(
-        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub fn IsIdnAce_Il2CppString0(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
@@ -133,21 +133,7 @@ impl crate::System::DomainNameHelper {
             .invoke("ParseCanonicalName", (str, start, end, loopback))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UnicodeEquivalent_Gc_i32_0(
-        idnHost: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        hostname: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        start: i32,
-        end: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("UnicodeEquivalent", (idnHost, hostname, start, end))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn UnicodeEquivalent_i32_ByRefMut_ByRefMut1(
+    pub fn UnicodeEquivalent_Il2CppObject_i32_ByRefMut_ByRefMut1(
         hostname: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         start: i32,
         end: i32,
@@ -163,6 +149,20 @@ impl crate::System::DomainNameHelper {
                 "UnicodeEquivalent",
                 (hostname, start, end, allAscii, atLeastOneValidIdn),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnicodeEquivalent_Il2CppString_Il2CppObject_i32_0(
+        idnHost: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        hostname: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        start: i32,
+        end: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnicodeEquivalent", (idnHost, hostname, start, end))?;
         Ok(__cordl_ret.into())
     }
 }

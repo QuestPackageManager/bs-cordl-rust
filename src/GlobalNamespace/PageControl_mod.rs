@@ -2,17 +2,21 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PageControl {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _content: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub _spacing: f32,
     pub _elementPrefab: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PageControlElement,
     >,
     pub _activeElements: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PageControlElement>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PageControlElement>,
+        >,
     >,
     pub _inactiveElements: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PageControlElement>,
+        crate::System::Collections::Generic::Queue_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PageControlElement>,
+        >,
     >,
     pub _selectedPage: i32,
     pub _pagesCount: i32,
@@ -23,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PageControl")]
 impl std::ops::Deref for crate::GlobalNamespace::PageControl {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

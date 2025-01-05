@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultControls {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+UI+DefaultControls")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+DefaultControls")]
 impl std::ops::Deref for crate::UnityEngine::UI::DefaultControls {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -136,9 +136,7 @@ impl crate::UnityEngine::UI::DefaultControls {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         _cordl_size: crate::UnityEngine::Vector2,
         components: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -151,9 +149,7 @@ impl crate::UnityEngine::UI::DefaultControls {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         components: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -216,7 +212,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::DefaultContro
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultControls_DefaultRuntimeFactory {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+UI+DefaultControls+DefaultRuntimeFactory")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -226,7 +222,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+DefaultControls+DefaultRuntimeFactory")]
 impl std::ops::Deref for crate::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -244,9 +240,7 @@ impl crate::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory {
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         components: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -287,26 +281,18 @@ for crate::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory {
     }
 }
 #[cfg(feature = "UnityEngine+UI+DefaultControls+DefaultRuntimeFactory")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::DefaultControls_IFactoryControls>,
-> for crate::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UI::DefaultControls_IFactoryControls,
-    > {
+impl AsRef<crate::UnityEngine::UI::DefaultControls_IFactoryControls>
+for crate::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::DefaultControls_IFactoryControls {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+DefaultControls+DefaultRuntimeFactory")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::DefaultControls_IFactoryControls>,
-> for crate::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory {
+impl AsMut<crate::UnityEngine::UI::DefaultControls_IFactoryControls>
+for crate::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UI::DefaultControls_IFactoryControls,
-    > {
+    ) -> &mut crate::UnityEngine::UI::DefaultControls_IFactoryControls {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -341,9 +327,7 @@ impl crate::UnityEngine::UI::DefaultControls_IFactoryControls {
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         components: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,

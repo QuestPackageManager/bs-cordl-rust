@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatLineManager {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _linesYPosition: f32,
     pub _beatmapObjectManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapObjectManager,
@@ -12,10 +12,14 @@ pub struct BeatLineManager {
         crate::GlobalNamespace::AudioTimeSyncController,
     >,
     pub _activeBeatLines: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Vector4,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatLine>,
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::Vector4,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatLine>,
+        >,
     >,
-    pub _removeBeatLineKeyList: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+    pub _removeBeatLineKeyList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+    >,
     pub _isMidRotationValid: bool,
     pub _midRotation: f32,
     pub _rotationRange: f32,
@@ -27,7 +31,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatLineManager")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatLineManager {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

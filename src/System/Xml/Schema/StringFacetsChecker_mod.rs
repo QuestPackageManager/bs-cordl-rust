@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StringFacetsChecker {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::FacetsChecker>,
+    __cordl_parent: crate::System::Xml::Schema::FacetsChecker,
 }
 #[cfg(feature = "System+Xml+Schema+StringFacetsChecker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+StringFacetsChecker")]
 impl std::ops::Deref for crate::System::Xml::Schema::StringFacetsChecker {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::FacetsChecker>;
+    type Target = crate::System::Xml::Schema::FacetsChecker;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -39,7 +39,7 @@ impl crate::System::Xml::Schema::StringFacetsChecker {
             .invoke("CheckBuiltInFacets", (s, typeCode, verifyUri))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CheckValueFacets_Gc_Gc0(
+    pub fn CheckValueFacets_Il2CppObject0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         datatype: quest_hook::libil2cpp::Gc<
@@ -55,7 +55,7 @@ impl crate::System::Xml::Schema::StringFacetsChecker {
             .invoke("CheckValueFacets", (value, datatype))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CheckValueFacets_Gc_Gc1(
+    pub fn CheckValueFacets_Il2CppString1(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         datatype: quest_hook::libil2cpp::Gc<
@@ -71,7 +71,7 @@ impl crate::System::Xml::Schema::StringFacetsChecker {
             .invoke("CheckValueFacets", (value, datatype))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CheckValueFacets__cordl_bool2(
+    pub fn CheckValueFacets_Il2CppString__cordl_bool2(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         datatype: quest_hook::libil2cpp::Gc<
@@ -88,7 +88,7 @@ impl crate::System::Xml::Schema::StringFacetsChecker {
             .invoke("CheckValueFacets", (value, datatype, verifyUri))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MatchEnumeration_Gc_Gc_Gc0(
+    pub fn MatchEnumeration_Il2CppObject0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         enumeration: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
@@ -103,7 +103,7 @@ impl crate::System::Xml::Schema::StringFacetsChecker {
             .invoke("MatchEnumeration", (value, enumeration, datatype))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MatchEnumeration_Gc_Gc_Gc1(
+    pub fn MatchEnumeration_Il2CppString1(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         enumeration: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,

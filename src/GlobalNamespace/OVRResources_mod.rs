@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRResources {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }
 #[cfg(feature = "OVRResources")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRResources")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRResources {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,7 +24,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRResources {
 }
 #[cfg(feature = "OVRResources")]
 impl crate::GlobalNamespace::OVRResources {
-    pub fn Load_Gc0(
+    pub fn Load_Il2CppString0(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
@@ -33,7 +33,7 @@ impl crate::GlobalNamespace::OVRResources {
             .invoke("Load", (path))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Load_Gc1<T>(
+    pub fn Load_Il2CppString1<T>(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<T>
     where

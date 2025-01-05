@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ThreadPoolWorkQueue {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub queueHead: quest_hook::libil2cpp::Gc<
         crate::System::Threading::ThreadPoolWorkQueue_QueueSegment,
     >,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+ThreadPoolWorkQueue")]
 impl std::ops::Deref for crate::System::Threading::ThreadPoolWorkQueue {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -154,10 +154,10 @@ for crate::System::Threading::ThreadPoolWorkQueue {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ThreadPoolWorkQueue_QueueSegment {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub nodes: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem>,
+            *mut crate::System::Threading::IThreadPoolWorkItem,
         >,
     >,
     pub indexes: i32,
@@ -173,7 +173,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+ThreadPoolWorkQueue+QueueSegment")]
 impl std::ops::Deref for crate::System::Threading::ThreadPoolWorkQueue_QueueSegment {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -276,7 +276,7 @@ for crate::System::Threading::ThreadPoolWorkQueue_QueueSegment {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ThreadPoolWorkQueue_SparseArray_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -289,7 +289,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Threading+ThreadPoolWorkQueue+SparseArray_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Threading::ThreadPoolWorkQueue_SparseArray_1<T> {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -391,10 +391,10 @@ for crate::System::Threading::ThreadPoolWorkQueue_SparseArray_1<T> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ThreadPoolWorkQueue_WorkStealingQueue {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_array: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem>,
+            *mut crate::System::Threading::IThreadPoolWorkItem,
         >,
     >,
     pub m_mask: i32,
@@ -411,7 +411,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Threading+ThreadPoolWorkQueue+WorkStealingQueue")]
 impl std::ops::Deref
 for crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ValidationState {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub IsNill: bool,
     pub IsDefault: bool,
     pub NeedValidateChildren: bool,
@@ -20,19 +20,19 @@ pub struct ValidationState {
     pub Namespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Constr: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ConstraintStruct>,
+            *mut crate::System::Xml::Schema::ConstraintStruct,
         >,
     >,
     pub CurrentState: crate::System::Xml::Schema::StateUnion,
     pub HasMatched: bool,
     pub CurPos: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::Schema::BitSet>,
     >,
     pub AllElementsSet: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
     pub RunningPositions: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::RangePositionInfo,
+        crate::System::Collections::Generic::List_1<
+            crate::System::Xml::Schema::RangePositionInfo,
+        >,
     >,
     pub TooComplex: bool,
 }
@@ -43,7 +43,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+ValidationState")]
 impl std::ops::Deref for crate::System::Xml::Schema::ValidationState {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

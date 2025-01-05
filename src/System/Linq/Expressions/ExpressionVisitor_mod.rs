@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExpressionVisitor {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+ExpressionVisitor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Linq+Expressions+ExpressionVisitor")]
 impl std::ops::Deref for crate::System::Linq::Expressions::ExpressionVisitor {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -72,11 +72,17 @@ impl crate::System::Linq::Expressions::ExpressionVisitor {
             .invoke("ValidateUnary", (before, after))?;
         Ok(__cordl_ret.into())
     }
-    pub fn VisitAndConvert_Gc1<T>(
+    pub fn VisitAndConvert_ReadOnlyCollection_1_1<T>(
         &mut self,
-        nodes: quest_hook::libil2cpp::Gc<T>,
+        nodes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
+        >,
         callerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
+        >,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -84,8 +90,9 @@ impl crate::System::Linq::Expressions::ExpressionVisitor {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = __cordl_object
-            .invoke("VisitAndConvert", (nodes, callerName))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
+        > = __cordl_object.invoke("VisitAndConvert", (nodes, callerName))?;
         Ok(__cordl_ret.into())
     }
     pub fn VisitAndConvert_T0<T>(
@@ -112,7 +119,7 @@ impl crate::System::Linq::Expressions::ExpressionVisitor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+                *mut crate::System::Linq::Expressions::Expression,
             >,
         >,
     > {
@@ -121,7 +128,7 @@ impl crate::System::Linq::Expressions::ExpressionVisitor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+                *mut crate::System::Linq::Expressions::Expression,
             >,
         > = __cordl_object.invoke("VisitArguments", (nodes))?;
         Ok(__cordl_ret.into())
@@ -312,7 +319,9 @@ impl crate::System::Linq::Expressions::ExpressionVisitor {
     }
     pub fn VisitLambda<T>(
         &mut self,
-        node: quest_hook::libil2cpp::Gc<T>,
+        node: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
     >
@@ -415,9 +424,7 @@ impl crate::System::Linq::Expressions::ExpressionVisitor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Linq::Expressions::ParameterExpression,
-                >,
+                *mut crate::System::Linq::Expressions::ParameterExpression,
             >,
         >,
     > {
@@ -426,9 +433,7 @@ impl crate::System::Linq::Expressions::ExpressionVisitor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Linq::Expressions::ParameterExpression,
-                >,
+                *mut crate::System::Linq::Expressions::ParameterExpression,
             >,
         > = __cordl_object.invoke("VisitParameters", (nodes, callerName))?;
         Ok(__cordl_ret.into())
@@ -479,7 +484,7 @@ impl crate::System::Linq::Expressions::ExpressionVisitor {
         > = __cordl_object.invoke("VisitUnary", (node))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Visit_Gc0(
+    pub fn Visit_Expression0(
         &mut self,
         node: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
     ) -> quest_hook::libil2cpp::Result<
@@ -493,33 +498,47 @@ impl crate::System::Linq::Expressions::ExpressionVisitor {
         > = __cordl_object.invoke("Visit", (node))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Visit_Gc1(
+    pub fn Visit_ReadOnlyCollection_1_1(
         &mut self,
         nodes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+            >,
         > = __cordl_object.invoke("Visit", (nodes))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Visit_Gc2<T>(
-        nodes: quest_hook::libil2cpp::Gc<T>,
-        elementVisitor: quest_hook::libil2cpp::Gc<T, T>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    pub fn Visit_ReadOnlyCollection_1_Func_2_2<T>(
+        nodes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
+        >,
+        elementVisitor: quest_hook::libil2cpp::Gc<crate::System::Func_2<T, T>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
+        >,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = <Self as quest_hook::libil2cpp::Type>::class()
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Visit", (nodes, elementVisitor))?;
         Ok(__cordl_ret.into())
     }

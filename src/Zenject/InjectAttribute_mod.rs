@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InjectAttribute {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::InjectAttributeBase>,
+    __cordl_parent: crate::Zenject::InjectAttributeBase,
 }
 #[cfg(feature = "Zenject+InjectAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+InjectAttribute")]
 impl std::ops::Deref for crate::Zenject::InjectAttribute {
-    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::InjectAttributeBase>;
+    type Target = crate::Zenject::InjectAttributeBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ContinuationTaskFromTask {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    __cordl_parent: crate::System::Threading::Tasks::Task,
     pub m_antecedent: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
 }
 #[cfg(feature = "System+Threading+Tasks+ContinuationTaskFromTask")]
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+Tasks+ContinuationTaskFromTask")]
 impl std::ops::Deref for crate::System::Threading::Tasks::ContinuationTaskFromTask {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>;
+    type Target = crate::System::Threading::Tasks::Task;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

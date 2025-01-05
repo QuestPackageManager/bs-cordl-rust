@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassRenderDataSO {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PersistentScriptableObject,
-    >,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub data: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BloomPrePassRenderDataSO_Data,
     >,
@@ -16,9 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BloomPrePassRenderDataSO")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassRenderDataSO {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PersistentScriptableObject,
-    >;
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -65,7 +61,7 @@ for crate::GlobalNamespace::BloomPrePassRenderDataSO {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassRenderDataSO_Data {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub bloomPrePassRenderTexture: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::RenderTexture,
     >,
@@ -82,7 +78,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BloomPrePassRenderDataSO+Data")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassRenderDataSO_Data {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

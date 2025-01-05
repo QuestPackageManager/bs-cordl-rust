@@ -2,16 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentOverrideSettingsPanelController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _overrideEnvironmentsToggle: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UI::Toggle,
     >,
     pub _elementsGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _elements: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController_Elements,
-            >,
+            *mut crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController_Elements,
         >,
     >,
     pub _presentPanelAnimation: quest_hook::libil2cpp::Gc<crate::HMUI::PanelAnimationSO>,
@@ -36,7 +34,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "EnvironmentOverrideSettingsPanelController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -149,20 +147,16 @@ for crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
     }
 }
 #[cfg(feature = "EnvironmentOverrideSettingsPanelController")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRefreshable>>
+impl AsRef<crate::GlobalNamespace::IRefreshable>
 for crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRefreshable> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IRefreshable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "EnvironmentOverrideSettingsPanelController")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRefreshable>>
+impl AsMut<crate::GlobalNamespace::IRefreshable>
 for crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRefreshable> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IRefreshable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -170,13 +164,15 @@ for crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentOverrideSettingsPanelController_Elements {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub label: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub simpleTextDropdown: quest_hook::libil2cpp::Gc<crate::HMUI::SimpleTextDropdown>,
     pub environmentType: crate::GlobalNamespace::EnvironmentType,
     pub localizationKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _environmentInfos_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
+        >,
     >,
 }
 #[cfg(feature = "EnvironmentOverrideSettingsPanelController+Elements")]
@@ -188,7 +184,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "EnvironmentOverrideSettingsPanelController+Elements")]
 impl std::ops::Deref
 for crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController_Elements {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -223,21 +219,27 @@ impl crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController_Elements
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
+            >,
         > = __cordl_object.invoke("get_environmentInfos", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn set_environmentInfos(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct VirtualMouseInput {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_CursorMode: crate::UnityEngine::InputSystem::UI::VirtualMouseInput_CursorMode,
     pub m_CursorGraphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
     pub m_CursorTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -22,7 +22,9 @@ pub struct VirtualMouseInput {
     pub m_SystemMouse: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Mouse>,
     pub m_AfterInputUpdateDelegate: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub m_ButtonActionTriggeredDelegate: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+        crate::System::Action_1<
+            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+        >,
     >,
     pub m_LastTime: f64,
     pub m_LastStickValue: crate::UnityEngine::Vector2,
@@ -34,7 +36,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+UI+VirtualMouseInput")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -110,7 +112,9 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
     pub fn SetActionCallback(
         field: crate::UnityEngine::InputSystem::InputActionProperty,
         callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            >,
         >,
         install: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

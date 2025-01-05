@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Datatype_unsignedShort {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::Datatype_unsignedInt,
-    >,
+    __cordl_parent: crate::System::Xml::Schema::Datatype_unsignedInt,
 }
 #[cfg(feature = "System+Xml+Schema+Datatype_unsignedShort")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+Datatype_unsignedShort")]
 impl std::ops::Deref for crate::System::Xml::Schema::Datatype_unsignedShort {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::Datatype_unsignedInt,
-    >;
+    type Target = crate::System::Xml::Schema::Datatype_unsignedInt;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,10 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PartyMessageHandler {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _serializer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PartyMessageHandler_MessageType,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+        crate::GlobalNamespace::NetworkPacketSerializer_2<
+            crate::GlobalNamespace::PartyMessageHandler_MessageType,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+        >,
     >,
     pub _connectedPlayerManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::ConnectedPlayerManager,
@@ -21,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PartyMessageHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::PartyMessageHandler {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -137,16 +139,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PartyMessageH
     }
 }
 #[cfg(feature = "PartyMessageHandler")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::GlobalNamespace::PartyMessageHandler {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsRef<crate::System::IDisposable> for crate::GlobalNamespace::PartyMessageHandler {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "PartyMessageHandler")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::GlobalNamespace::PartyMessageHandler {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::PartyMessageHandler {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -154,7 +154,7 @@ for crate::GlobalNamespace::PartyMessageHandler {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PartyMessageHandler_ConnectToMasterServerDelegate {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "PartyMessageHandler+ConnectToMasterServerDelegate")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -165,7 +165,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "PartyMessageHandler+ConnectToMasterServerDelegate")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerDelegate {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -253,7 +253,7 @@ for crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerDelegate {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PartyMessageHandler_ConnectToMasterServerMessage {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub secret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "PartyMessageHandler+ConnectToMasterServerMessage")]
@@ -265,7 +265,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "PartyMessageHandler+ConnectToMasterServerMessage")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -346,14 +346,18 @@ impl crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage {
     }
     pub fn get_pool() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage,
+            crate::GlobalNamespace::PacketPool_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage,
+                >,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage,
+            crate::GlobalNamespace::PacketPool_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage,
+                >,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_pool", ())?;
         Ok(__cordl_ret.into())
@@ -370,38 +374,30 @@ for crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage {
     }
 }
 #[cfg(feature = "PartyMessageHandler+ConnectToMasterServerMessage")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPoolablePacket>>
+impl AsRef<crate::GlobalNamespace::IPoolablePacket>
 for crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPoolablePacket> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPoolablePacket {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "PartyMessageHandler+ConnectToMasterServerMessage")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPoolablePacket>>
+impl AsMut<crate::GlobalNamespace::IPoolablePacket>
 for crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPoolablePacket> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPoolablePacket {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "PartyMessageHandler+ConnectToMasterServerMessage")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable>>
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
 for crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable> {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "PartyMessageHandler+ConnectToMasterServerMessage")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable>>
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
 for crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable> {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -421,7 +417,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct PartyMessageHandler_ServerStatusUpdatedDelegate {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "PartyMessageHandler+ServerStatusUpdatedDelegate")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -432,7 +428,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "PartyMessageHandler+ServerStatusUpdatedDelegate")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PartyMessageHandler_ServerStatusUpdatedDelegate {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputField {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
+    __cordl_parent: crate::UnityEngine::UI::Selectable,
     pub m_Keyboard: quest_hook::libil2cpp::Gc<crate::UnityEngine::TouchScreenKeyboard>,
     pub m_TextComponent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
     pub m_Placeholder: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
@@ -73,7 +73,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+InputField")]
 impl std::ops::Deref for crate::UnityEngine::UI::InputField {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>;
+    type Target = crate::UnityEngine::UI::Selectable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -129,7 +129,7 @@ impl crate::UnityEngine::UI::InputField {
             .invoke("ActivateInputFieldInternal", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Append_Gc0(
+    pub fn Append_Il2CppString0(
         &mut self,
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1842,192 +1842,130 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::InputField {
     }
 }
 #[cfg(feature = "UnityEngine+UI+InputField")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IBeginDragHandler>,
-> for crate::UnityEngine::UI::InputField {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IBeginDragHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UI+InputField")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IBeginDragHandler>,
-> for crate::UnityEngine::UI::InputField {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IBeginDragHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UI+InputField")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDragHandler>>
+impl AsRef<crate::UnityEngine::EventSystems::IBeginDragHandler>
 for crate::UnityEngine::UI::InputField {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDragHandler> {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IBeginDragHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+InputField")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDragHandler>>
+impl AsMut<crate::UnityEngine::EventSystems::IBeginDragHandler>
 for crate::UnityEngine::UI::InputField {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDragHandler> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IBeginDragHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+InputField")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEndDragHandler>>
+impl AsRef<crate::UnityEngine::EventSystems::IDragHandler>
 for crate::UnityEngine::UI::InputField {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEndDragHandler> {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IDragHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+InputField")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEndDragHandler>>
+impl AsMut<crate::UnityEngine::EventSystems::IDragHandler>
 for crate::UnityEngine::UI::InputField {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IEndDragHandler,
-    > {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IDragHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+InputField")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
-> for crate::UnityEngine::UI::InputField {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IEventSystemHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UI+InputField")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
-> for crate::UnityEngine::UI::InputField {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IEventSystemHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UI+InputField")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerClickHandler>,
-> for crate::UnityEngine::UI::InputField {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerClickHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UI+InputField")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerClickHandler>,
-> for crate::UnityEngine::UI::InputField {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerClickHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UI+InputField")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISubmitHandler>>
+impl AsRef<crate::UnityEngine::EventSystems::IEndDragHandler>
 for crate::UnityEngine::UI::InputField {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISubmitHandler> {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEndDragHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+InputField")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISubmitHandler>>
+impl AsMut<crate::UnityEngine::EventSystems::IEndDragHandler>
+for crate::UnityEngine::UI::InputField {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEndDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+InputField")]
+impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::UnityEngine::UI::InputField {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+InputField")]
+impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::UnityEngine::UI::InputField {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+InputField")]
+impl AsRef<crate::UnityEngine::EventSystems::IPointerClickHandler>
+for crate::UnityEngine::UI::InputField {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerClickHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+InputField")]
+impl AsMut<crate::UnityEngine::EventSystems::IPointerClickHandler>
+for crate::UnityEngine::UI::InputField {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerClickHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+InputField")]
+impl AsRef<crate::UnityEngine::EventSystems::ISubmitHandler>
+for crate::UnityEngine::UI::InputField {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::ISubmitHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+InputField")]
+impl AsMut<crate::UnityEngine::EventSystems::ISubmitHandler>
+for crate::UnityEngine::UI::InputField {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::ISubmitHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+InputField")]
+impl AsRef<crate::UnityEngine::EventSystems::IUpdateSelectedHandler>
+for crate::UnityEngine::UI::InputField {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IUpdateSelectedHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+InputField")]
+impl AsMut<crate::UnityEngine::EventSystems::IUpdateSelectedHandler>
 for crate::UnityEngine::UI::InputField {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::ISubmitHandler,
-    > {
+    ) -> &mut crate::UnityEngine::EventSystems::IUpdateSelectedHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+InputField")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IUpdateSelectedHandler>,
-> for crate::UnityEngine::UI::InputField {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IUpdateSelectedHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UI+InputField")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IUpdateSelectedHandler>,
-> for crate::UnityEngine::UI::InputField {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IUpdateSelectedHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UI+InputField")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>>
+impl AsRef<crate::UnityEngine::UI::ICanvasElement>
 for crate::UnityEngine::UI::InputField {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement> {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::ICanvasElement {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+InputField")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>>
+impl AsMut<crate::UnityEngine::UI::ICanvasElement>
 for crate::UnityEngine::UI::InputField {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ICanvasElement {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+InputField")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement>>
+impl AsRef<crate::UnityEngine::UI::ILayoutElement>
 for crate::UnityEngine::UI::InputField {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement> {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::ILayoutElement {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+InputField")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement>>
+impl AsMut<crate::UnityEngine::UI::ILayoutElement>
 for crate::UnityEngine::UI::InputField {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ILayoutElement {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -2086,7 +2024,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputField_EndEditEvent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
@@ -2097,7 +2035,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+InputField+EndEditEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::InputField_EndEditEvent {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
     fn deref(&self) -> &Self::Target {
@@ -2172,7 +2110,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputField_OnChangeEvent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
@@ -2183,7 +2121,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+InputField+OnChangeEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::InputField_OnChangeEvent {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
     fn deref(&self) -> &Self::Target {
@@ -2230,7 +2168,7 @@ for crate::UnityEngine::UI::InputField_OnChangeEvent {
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputField_OnValidateInput {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "UnityEngine+UI+InputField+OnValidateInput")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2239,7 +2177,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+InputField+OnValidateInput")]
 impl std::ops::Deref for crate::UnityEngine::UI::InputField_OnValidateInput {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2329,7 +2267,7 @@ for crate::UnityEngine::UI::InputField_OnValidateInput {
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputField_SubmitEvent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
@@ -2340,7 +2278,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+InputField+SubmitEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::InputField_SubmitEvent {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
     fn deref(&self) -> &Self::Target {

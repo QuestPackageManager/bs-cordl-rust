@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Interop {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Interop")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Interop")]
 impl std::ops::Deref for crate::GlobalNamespace::Interop {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,8 +34,10 @@ impl crate::GlobalNamespace::Interop {
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isDirectory: bool,
         errorRewriter: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::Interop_ErrorInfo,
-            crate::GlobalNamespace::Interop_ErrorInfo,
+            crate::System::Func_2<
+                crate::GlobalNamespace::Interop_ErrorInfo,
+                crate::GlobalNamespace::Interop_ErrorInfo,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -47,8 +49,10 @@ impl crate::GlobalNamespace::Interop {
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isDirectory: bool,
         errorRewriter: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::Interop_ErrorInfo,
-            crate::GlobalNamespace::Interop_ErrorInfo,
+            crate::System::Func_2<
+                crate::GlobalNamespace::Interop_ErrorInfo,
+                crate::GlobalNamespace::Interop_ErrorInfo,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -88,8 +92,10 @@ impl crate::GlobalNamespace::Interop {
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isDirectory: bool,
         errorRewriter: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::Interop_ErrorInfo,
-            crate::GlobalNamespace::Interop_ErrorInfo,
+            crate::System::Func_2<
+                crate::GlobalNamespace::Interop_ErrorInfo,
+                crate::GlobalNamespace::Interop_ErrorInfo,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -289,7 +295,7 @@ impl crate::GlobalNamespace::Interop_ErrorInfo {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Interop_Sys {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Interop+Sys")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -297,7 +303,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Interop+Sys")]
 impl std::ops::Deref for crate::GlobalNamespace::Interop_Sys {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -406,7 +412,7 @@ impl crate::GlobalNamespace::Interop_Sys {
             .invoke("LStat", (path, output))?;
         Ok(__cordl_ret.into())
     }
-    pub fn LStat_Gc0(
+    pub fn LStat_Il2CppString0(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         output: quest_hook::libil2cpp::ByRefMut<
             crate::GlobalNamespace::Sys_Interop_FileStatus,
@@ -461,7 +467,16 @@ impl crate::GlobalNamespace::Interop_Sys {
             .invoke("ReadDirR", (dir, buffer, bufferSize, outputEntry))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadLink_Gc1(
+    pub fn ReadLink_Il2CppArray_i32_0(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        bufferSize: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadLink", (path, buffer, bufferSize))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadLink_Il2CppString1(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -469,15 +484,6 @@ impl crate::GlobalNamespace::Interop_Sys {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ReadLink", (path))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ReadLink_Gc_i32_0(
-        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-        bufferSize: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReadLink", (path, buffer, bufferSize))?;
         Ok(__cordl_ret.into())
     }
     pub fn Rename(
@@ -505,7 +511,7 @@ impl crate::GlobalNamespace::Interop_Sys {
             .invoke("Stat", (path, output))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Stat_Gc0(
+    pub fn Stat_Il2CppString0(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         output: quest_hook::libil2cpp::ByRefMut<
             crate::GlobalNamespace::Sys_Interop_FileStatus,

@@ -64,34 +64,34 @@ impl crate::UnityEngine::RefreshRate {
     }
 }
 #[cfg(feature = "UnityEngine+RefreshRate")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::RefreshRate>>
+impl AsRef<crate::System::IComparable_1<crate::UnityEngine::RefreshRate>>
 for crate::UnityEngine::RefreshRate {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::RefreshRate> {
+    fn as_ref(&self) -> &crate::System::IComparable_1<crate::UnityEngine::RefreshRate> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+RefreshRate")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::RefreshRate>>
+impl AsMut<crate::System::IComparable_1<crate::UnityEngine::RefreshRate>>
 for crate::UnityEngine::RefreshRate {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::RefreshRate> {
+    ) -> &mut crate::System::IComparable_1<crate::UnityEngine::RefreshRate> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+RefreshRate")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::RefreshRate>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::RefreshRate>>
 for crate::UnityEngine::RefreshRate {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::RefreshRate> {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::RefreshRate> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+RefreshRate")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::RefreshRate>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::RefreshRate>>
 for crate::UnityEngine::RefreshRate {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::RefreshRate> {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::RefreshRate> {
         todo!()
     }
 }

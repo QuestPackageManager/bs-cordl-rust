@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColliderEventEffect {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::FloatFxGroupEffectTarget,
-    >,
+    __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
     pub _effectCollider: quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
     pub _value: f32,
     pub _environmentCollisionRepository: quest_hook::libil2cpp::Gc<
@@ -18,9 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ColliderEventEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::ColliderEventEffect {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::FloatFxGroupEffectTarget,
-    >;
+    type Target = crate::GlobalNamespace::FloatFxGroupEffectTarget;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

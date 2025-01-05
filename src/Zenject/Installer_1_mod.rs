@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Installer_1<TDerived: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::InstallerBase>,
+    __cordl_parent: crate::Zenject::InstallerBase,
     __cordl_phantom_TDerived: std::marker::PhantomData<TDerived>,
 }
 #[cfg(feature = "Zenject+Installer_1")]
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Zenject+Installer_1")]
 impl<TDerived: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::Installer_1<TDerived> {
-    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::InstallerBase>;
+    type Target = crate::Zenject::InstallerBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

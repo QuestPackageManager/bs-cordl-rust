@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SearchFilterParamsViewController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+    __cordl_parent: crate::HMUI::ViewController,
     pub _filterByOwnedToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
     pub _filterByNotOwnedToggle: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UI::Toggle,
@@ -48,10 +48,12 @@ pub struct SearchFilterParamsViewController {
     >,
     pub _currentSearchFilter: crate::GlobalNamespace::LevelFilter,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::SearchFilterParamsViewController,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SearchFilterParamsViewController,
+            >,
+            crate::GlobalNamespace::LevelFilter,
         >,
-        crate::GlobalNamespace::LevelFilter,
     >,
 }
 #[cfg(feature = "SearchFilterParamsViewController")]
@@ -62,7 +64,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SearchFilterParamsViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::SearchFilterParamsViewController {
-    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>;
+    type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -205,10 +207,12 @@ impl crate::GlobalNamespace::SearchFilterParamsViewController {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::SearchFilterParamsViewController,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::SearchFilterParamsViewController,
+                >,
+                crate::GlobalNamespace::LevelFilter,
             >,
-            crate::GlobalNamespace::LevelFilter,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -221,10 +225,12 @@ impl crate::GlobalNamespace::SearchFilterParamsViewController {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::SearchFilterParamsViewController,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::SearchFilterParamsViewController,
+                >,
+                crate::GlobalNamespace::LevelFilter,
             >,
-            crate::GlobalNamespace::LevelFilter,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

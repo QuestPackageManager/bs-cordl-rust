@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetRes {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Net+NetRes")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+NetRes")]
 impl std::ops::Deref for crate::System::Net::NetRes {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,7 +35,7 @@ impl crate::System::Net::NetRes {
             .invoke("GetWebStatusCodeString", (statusCode, statusDescription))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetWebStatusString_Gc_WebExceptionStatus0(
+    pub fn GetWebStatusString_Il2CppString_WebExceptionStatus0(
         Res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         Status: crate::System::Net::WebExceptionStatus,
     ) -> quest_hook::libil2cpp::Result<

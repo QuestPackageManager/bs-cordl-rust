@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_BakedEventData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::HoudiniEngineUnity::HEU_AssetEventData,
-    >,
+    __cordl_parent: crate::HoudiniEngineUnity::HEU_AssetEventData,
     pub IsNewBake: bool,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_BakedEventData")]
@@ -14,9 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_BakedEventData")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_BakedEventData {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::HoudiniEngineUnity::HEU_AssetEventData,
-    >;
+    type Target = crate::HoudiniEngineUnity::HEU_AssetEventData;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -33,7 +29,9 @@ impl crate::HoudiniEngineUnity::HEU_BakedEventData {
         asset: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
         successful: bool,
         outputObjects: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         >,
         isNewBake: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -48,7 +46,9 @@ impl crate::HoudiniEngineUnity::HEU_BakedEventData {
         asset: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
         successful: bool,
         outputObjects: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         >,
         isNewBake: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

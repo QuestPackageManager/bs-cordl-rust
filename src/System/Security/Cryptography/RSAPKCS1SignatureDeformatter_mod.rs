@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RSAPKCS1SignatureDeformatter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Security::Cryptography::AsymmetricSignatureDeformatter,
-    >,
+    __cordl_parent: crate::System::Security::Cryptography::AsymmetricSignatureDeformatter,
     pub rsa: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
     pub hashName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
@@ -17,9 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Security+Cryptography+RSAPKCS1SignatureDeformatter")]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::RSAPKCS1SignatureDeformatter {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Security::Cryptography::AsymmetricSignatureDeformatter,
-    >;
+    type Target = crate::System::Security::Cryptography::AsymmetricSignatureDeformatter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,7 +36,7 @@ impl crate::System::Security::Cryptography::RSAPKCS1SignatureDeformatter {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_AsymmetricAlgorithm1(
         key: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::AsymmetricAlgorithm,
         >,
@@ -97,7 +93,7 @@ impl crate::System::Security::Cryptography::RSAPKCS1SignatureDeformatter {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_AsymmetricAlgorithm1(
         &mut self,
         key: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::AsymmetricAlgorithm,

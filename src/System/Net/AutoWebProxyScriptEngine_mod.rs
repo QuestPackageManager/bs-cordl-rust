@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AutoWebProxyScriptEngine {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Net+AutoWebProxyScriptEngine")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+AutoWebProxyScriptEngine")]
 impl std::ops::Deref for crate::System::Net::AutoWebProxyScriptEngine {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,7 +29,9 @@ impl crate::System::Net::AutoWebProxyScriptEngine {
         destination: quest_hook::libil2cpp::Gc<crate::System::Uri>,
         proxyList: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                crate::System::Collections::Generic::IList_1<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                >,
             >,
         >,
         syncStatus: quest_hook::libil2cpp::ByRefMut<i32>,
@@ -41,12 +43,14 @@ impl crate::System::Net::AutoWebProxyScriptEngine {
             .invoke("GetProxies", (destination, proxyList, syncStatus))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetProxies_Gc_ByRefMut0(
+    pub fn GetProxies_Uri_ByRefMut0(
         &mut self,
         destination: quest_hook::libil2cpp::Gc<crate::System::Uri>,
         proxyList: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                crate::System::Collections::Generic::IList_1<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {

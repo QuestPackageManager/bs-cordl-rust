@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AudioClip {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    __cordl_parent: crate::UnityEngine::Object,
     pub m_PCMReaderCallback: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::AudioClip_PCMReaderCallback,
     >,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+AudioClip")]
 impl std::ops::Deref for crate::UnityEngine::AudioClip {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>;
+    type Target = crate::UnityEngine::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -59,7 +59,7 @@ impl crate::UnityEngine::AudioClip {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Create_Gc4(
+    pub fn Create_AudioClip_PCMReaderCallback4(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         lengthSamples: i32,
         channels: i32,
@@ -78,7 +78,7 @@ impl crate::UnityEngine::AudioClip {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Create_Gc_Gc5(
+    pub fn Create_AudioClip_PCMReaderCallback_AudioClip_PCMSetPositionCallback5(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         lengthSamples: i32,
         channels: i32,
@@ -108,7 +108,7 @@ impl crate::UnityEngine::AudioClip {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Create_Gc_i32_i32_i32__cordl_bool3(
+    pub fn Create_Il2CppString_i32_i32_i32__cordl_bool3(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         lengthSamples: i32,
         channels: i32,
@@ -135,7 +135,7 @@ impl crate::UnityEngine::AudioClip {
             .invoke("Create", (name, lengthSamples, channels, frequency, _3D, stream))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Create__cordl_bool_Gc1(
+    pub fn Create__cordl_bool_AudioClip_PCMReaderCallback1(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         lengthSamples: i32,
         channels: i32,
@@ -163,7 +163,7 @@ impl crate::UnityEngine::AudioClip {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Create__cordl_bool_Gc_Gc2(
+    pub fn Create__cordl_bool_AudioClip_PCMReaderCallback_AudioClip_PCMSetPositionCallback2(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         lengthSamples: i32,
         channels: i32,
@@ -195,7 +195,7 @@ impl crate::UnityEngine::AudioClip {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetData_ByRefMut_i32_i32_0(
+    pub fn GetData_AudioClip_ByRefMut_i32_i32_0(
         clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
         data: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
@@ -207,7 +207,7 @@ impl crate::UnityEngine::AudioClip {
             .invoke("GetData", (clip, data, numSamples, samplesOffset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetData_i32_1(
+    pub fn GetData_Il2CppArray_i32_1(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         offsetSamples: i32,
@@ -267,7 +267,7 @@ impl crate::UnityEngine::AudioClip {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn SetData_Gc_i32_i32_0(
+    pub fn SetData_AudioClip_Il2CppArray_i32_i32_0(
         clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         numsamples: i32,
@@ -277,7 +277,7 @@ impl crate::UnityEngine::AudioClip {
             .invoke("SetData", (clip, data, numsamples, samplesOffset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetData_i32_1(
+    pub fn SetData_Il2CppArray_i32_1(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         offsetSamples: i32,
@@ -443,7 +443,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::AudioClip {
 #[repr(C)]
 #[derive(Debug)]
 pub struct AudioClip_PCMReaderCallback {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "UnityEngine+AudioClip+PCMReaderCallback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -452,7 +452,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+AudioClip+PCMReaderCallback")]
 impl std::ops::Deref for crate::UnityEngine::AudioClip_PCMReaderCallback {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -513,7 +513,7 @@ for crate::UnityEngine::AudioClip_PCMReaderCallback {
 #[repr(C)]
 #[derive(Debug)]
 pub struct AudioClip_PCMSetPositionCallback {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "UnityEngine+AudioClip+PCMSetPositionCallback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -522,7 +522,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+AudioClip+PCMSetPositionCallback")]
 impl std::ops::Deref for crate::UnityEngine::AudioClip_PCMSetPositionCallback {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

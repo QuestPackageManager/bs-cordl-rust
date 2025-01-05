@@ -2,11 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Interactable {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _interactable: bool,
     pub interactableChangeEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HMUI::Interactable>,
-        bool,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<crate::HMUI::Interactable>,
+            bool,
+        >,
     >,
 }
 #[cfg(feature = "HMUI+Interactable")]
@@ -15,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+Interactable")]
 impl std::ops::Deref for crate::HMUI::Interactable {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -48,8 +50,10 @@ impl crate::HMUI::Interactable {
     pub fn add_interactableChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::Interactable>,
-            bool,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::HMUI::Interactable>,
+                bool,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -69,8 +73,10 @@ impl crate::HMUI::Interactable {
     pub fn remove_interactableChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::Interactable>,
-            bool,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::HMUI::Interactable>,
+                bool,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

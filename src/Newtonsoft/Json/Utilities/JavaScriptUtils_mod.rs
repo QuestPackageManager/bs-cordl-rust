@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JavaScriptUtils {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+JavaScriptUtils")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Utilities+JavaScriptUtils")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -153,7 +153,9 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
             quest_hook::libil2cpp::Il2CppArray<bool>,
         >,
         stringEscapeHandling: crate::Newtonsoft::Json::StringEscapeHandling,
-        bufferPool: quest_hook::libil2cpp::Gc<char>,
+        bufferPool: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::IArrayPool_1<char>,
+        >,
         writeBuffer: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         >,
@@ -208,7 +210,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteEscapedJavaScriptStringWithDelimitersAsync_Gc__cordl_char_Gc_StringEscapeHandling_Gc_CancellationToken1(
+    pub fn WriteEscapedJavaScriptStringWithDelimitersAsync_Task_TextWriter_Il2CppString__cordl_char_Il2CppArray_StringEscapeHandling_JsonTextWriter_Il2CppArray_CancellationToken1(
         task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
         writer: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -242,7 +244,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteEscapedJavaScriptStringWithDelimitersAsync__cordl_char_Gc_StringEscapeHandling_Gc_CancellationToken0(
+    pub fn WriteEscapedJavaScriptStringWithDelimitersAsync_TextWriter_Il2CppString__cordl_char_Il2CppArray_StringEscapeHandling_JsonTextWriter_Il2CppArray_CancellationToken0(
         writer: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         delimiter: char,

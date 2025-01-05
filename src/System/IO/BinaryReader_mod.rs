@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BinaryReader {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub m_buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub m_decoder: quest_hook::libil2cpp::Gc<crate::System::Text::Decoder>,
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+IO+BinaryReader")]
 impl std::ops::Deref for crate::System::IO::BinaryReader {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -100,16 +100,7 @@ impl crate::System::IO::BinaryReader {
         let __cordl_ret: i32 = __cordl_object.invoke("InternalReadOneChar", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
-        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (input))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc1(
+    pub fn New_Encoding1(
         input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -119,7 +110,7 @@ impl crate::System::IO::BinaryReader {
             .invoke_void(".ctor", (input, encoding))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc__cordl_bool2(
+    pub fn New_Encoding__cordl_bool2(
         input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
         leaveOpen: bool,
@@ -128,6 +119,15 @@ impl crate::System::IO::BinaryReader {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (input, encoding, leaveOpen))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Stream0(
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (input))?;
         Ok(__cordl_object.into())
     }
     pub fn Read7BitEncodedInt(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -279,7 +279,7 @@ impl crate::System::IO::BinaryReader {
         let __cordl_ret: i32 = __cordl_object.invoke("Read", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Read_Gc_i32_i32_1(
+    pub fn Read_Il2CppArray_i32_i32_1(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         index: i32,
@@ -291,18 +291,7 @@ impl crate::System::IO::BinaryReader {
         let __cordl_ret: i32 = __cordl_object.invoke("Read", (buffer, index, count))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
-        &mut self,
-        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (input))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Encoding1(
         &mut self,
         input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
@@ -314,7 +303,7 @@ impl crate::System::IO::BinaryReader {
             .invoke(".ctor", (input, encoding))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc__cordl_bool2(
+    pub fn _ctor_Encoding__cordl_bool2(
         &mut self,
         input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
@@ -325,6 +314,17 @@ impl crate::System::IO::BinaryReader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (input, encoding, leaveOpen))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Stream0(
+        &mut self,
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (input))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_BaseStream(
@@ -350,16 +350,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::IO::BinaryReader {
     }
 }
 #[cfg(feature = "System+IO+BinaryReader")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::System::IO::BinaryReader {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsRef<crate::System::IDisposable> for crate::System::IO::BinaryReader {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+IO+BinaryReader")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::System::IO::BinaryReader {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsMut<crate::System::IDisposable> for crate::System::IO::BinaryReader {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }

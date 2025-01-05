@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GradientImageViewStateTransition {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::GlobalNamespace::BaseStateTransition_1<
         quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
     >,
     pub _transition: quest_hook::libil2cpp::Gc<
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "GradientImageViewStateTransition")]
 impl std::ops::Deref for crate::GlobalNamespace::GradientImageViewStateTransition {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::GlobalNamespace::BaseStateTransition_1<
         quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
     >;
     fn deref(&self) -> &Self::Target {
@@ -117,7 +117,9 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
         &mut self,
         startColor: crate::UnityEngine::Color,
         endColor: crate::UnityEngine::Color,
-        tweenAction: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
+        tweenAction: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::UnityEngine::Color>,
+        >,
         onCompleteAction: quest_hook::libil2cpp::Gc<crate::System::Action>,
         transitionTiming: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::TransitionTimingSO,

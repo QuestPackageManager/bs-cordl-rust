@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TestAnalyticsModel {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "TestAnalyticsModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TestAnalyticsModel")]
 impl std::ops::Deref for crate::GlobalNamespace::TestAnalyticsModel {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,8 +28,10 @@ impl crate::GlobalNamespace::TestAnalyticsModel {
         &mut self,
         clickType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         clickData: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -43,8 +45,10 @@ impl crate::GlobalNamespace::TestAnalyticsModel {
         &mut self,
         eventType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         avatarEventData: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -58,8 +62,10 @@ impl crate::GlobalNamespace::TestAnalyticsModel {
         &mut self,
         eventType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         eventData: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -73,8 +79,10 @@ impl crate::GlobalNamespace::TestAnalyticsModel {
         &mut self,
         exposureType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         exposureData: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -88,8 +96,10 @@ impl crate::GlobalNamespace::TestAnalyticsModel {
         &mut self,
         impressionType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         impressionData: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -159,20 +169,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TestAnalytics
     }
 }
 #[cfg(feature = "TestAnalyticsModel")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IAnalyticsModel>>
+impl AsRef<crate::GlobalNamespace::IAnalyticsModel>
 for crate::GlobalNamespace::TestAnalyticsModel {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IAnalyticsModel> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IAnalyticsModel {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "TestAnalyticsModel")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IAnalyticsModel>>
+impl AsMut<crate::GlobalNamespace::IAnalyticsModel>
 for crate::GlobalNamespace::TestAnalyticsModel {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IAnalyticsModel> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IAnalyticsModel {
         unsafe { std::mem::transmute(self) }
     }
 }

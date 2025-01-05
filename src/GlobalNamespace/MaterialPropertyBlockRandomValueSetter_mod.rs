@@ -2,18 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MaterialPropertyBlockRandomValueSetter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _renderers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Renderer>,
     >,
     pub _propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _minValue: f32,
     pub _maxValue: f32,
     pub _materialPropertyBlocks: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
+            *mut crate::UnityEngine::MaterialPropertyBlock,
         >,
     >,
     pub _propertyId: i32,
@@ -26,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MaterialPropertyBlockRandomValueSetter")]
 impl std::ops::Deref for crate::GlobalNamespace::MaterialPropertyBlockRandomValueSetter {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

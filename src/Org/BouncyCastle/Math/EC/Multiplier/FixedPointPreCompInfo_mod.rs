@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FixedPointPreCompInfo {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_offset: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
     pub m_lookupTable: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Math::EC::ECLookupTable,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+FixedPointPreCompInfo")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointPreCompInfo {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -129,30 +129,18 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointPreCompInfo {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+FixedPointPreCompInfo")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
-    >,
-> for crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointPreCompInfo {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
-    > {
+impl AsRef<crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo>
+for crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointPreCompInfo {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+FixedPointPreCompInfo")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
-    >,
-> for crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointPreCompInfo {
+impl AsMut<crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo>
+for crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointPreCompInfo {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
-    > {
+    ) -> &mut crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo {
         unsafe { std::mem::transmute(self) }
     }
 }

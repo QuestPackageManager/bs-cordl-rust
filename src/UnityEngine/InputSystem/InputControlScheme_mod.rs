@@ -49,7 +49,7 @@ impl crate::UnityEngine::InputSystem::InputControlScheme {
     pub type MatchResult = crate::UnityEngine::InputSystem::InputControlScheme_MatchResult;
     #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+SchemeJson")]
     pub type SchemeJson = crate::UnityEngine::InputSystem::InputControlScheme_SchemeJson;
-    pub fn Equals_Gc1(
+    pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -87,7 +87,7 @@ impl crate::UnityEngine::InputSystem::InputControlScheme {
             .invoke("FindControlSchemeForDevice", (device, schemes))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FindControlSchemeForDevices_ByRefMut_ByRefMut_Gc__cordl_bool1<
+    pub fn FindControlSchemeForDevices_ByRefMut_ByRefMut_InputDevice__cordl_bool1<
         TDevices,
         TSchemes,
     >(
@@ -124,7 +124,7 @@ impl crate::UnityEngine::InputSystem::InputControlScheme {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn FindControlSchemeForDevices_Gc__cordl_bool0<TDevices, TSchemes>(
+    pub fn FindControlSchemeForDevices_InputDevice__cordl_bool0<TDevices, TSchemes>(
         devices: TDevices,
         schemes: TSchemes,
         mustIncludeDevice: quest_hook::libil2cpp::Gc<
@@ -214,7 +214,9 @@ impl crate::UnityEngine::InputSystem::InputControlScheme {
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         devices: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement,
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement,
+            >,
         >,
         bindingGroup: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -291,11 +293,11 @@ impl crate::UnityEngine::InputSystem::InputControlScheme {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControlScheme>,
+    crate::System::IEquatable_1<crate::UnityEngine::InputSystem::InputControlScheme>,
 > for crate::UnityEngine::InputSystem::InputControlScheme {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         crate::UnityEngine::InputSystem::InputControlScheme,
     > {
         todo!()
@@ -303,11 +305,11 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControlScheme>,
+    crate::System::IEquatable_1<crate::UnityEngine::InputSystem::InputControlScheme>,
 > for crate::UnityEngine::InputSystem::InputControlScheme {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         crate::UnityEngine::InputSystem::InputControlScheme,
     > {
         todo!()
@@ -343,7 +345,7 @@ impl crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement {
         feature = "UnityEngine+InputSystem+InputControlScheme+DeviceRequirement+Flags"
     )]
     pub type Flags = crate::UnityEngine::InputSystem::DeviceRequirement_InputControlScheme_Flags;
-    pub fn Equals_Gc1(
+    pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -480,13 +482,13 @@ impl crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+DeviceRequirement")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement,
     >,
 > for crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement,
     > {
         todo!()
@@ -494,13 +496,13 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+DeviceRequirement")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement,
     >,
 > for crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement,
     > {
         todo!()
@@ -563,11 +565,15 @@ impl crate::UnityEngine::InputSystem::InputControlScheme_MatchResult {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Match,
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Match,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Match,
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Match,
+            >,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "GetEnumerator", ())?;
         Ok(__cordl_ret.into())
     }
@@ -648,46 +654,14 @@ impl crate::UnityEngine::InputSystem::InputControlScheme_MatchResult {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
-for crate::UnityEngine::InputSystem::InputControlScheme_MatchResult {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
-for crate::UnityEngine::InputSystem::InputControlScheme_MatchResult {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::UnityEngine::InputSystem::InputControlScheme_MatchResult {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::UnityEngine::InputSystem::InputControlScheme_MatchResult {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IEnumerable_1<
         crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Match,
     >,
 > for crate::UnityEngine::InputSystem::InputControlScheme_MatchResult {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
         crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Match,
     > {
         todo!()
@@ -695,15 +669,43 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IEnumerable_1<
         crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Match,
     >,
 > for crate::UnityEngine::InputSystem::InputControlScheme_MatchResult {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
         crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Match,
     > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult")]
+impl AsRef<crate::System::Collections::IEnumerable>
+for crate::UnityEngine::InputSystem::InputControlScheme_MatchResult {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult")]
+impl AsMut<crate::System::Collections::IEnumerable>
+for crate::UnityEngine::InputSystem::InputControlScheme_MatchResult {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult")]
+impl AsRef<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::InputControlScheme_MatchResult {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult")]
+impl AsMut<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::InputControlScheme_MatchResult {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         todo!()
     }
 }
@@ -740,7 +742,7 @@ for crate::UnityEngine::InputSystem::InputControlScheme_SchemeJson {
 impl crate::UnityEngine::InputSystem::InputControlScheme_SchemeJson {
     #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+SchemeJson+DeviceJson")]
     pub type DeviceJson = crate::UnityEngine::InputSystem::SchemeJson_InputControlScheme_DeviceJson;
-    pub fn ToJson_Gc1(
+    pub fn ToJson_Il2CppArray1(
         schemes: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 crate::UnityEngine::InputSystem::InputControlScheme,
@@ -892,46 +894,14 @@ impl crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Enumerator 
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult+Enumerator")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
-for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Enumerator {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult+Enumerator")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
-for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Enumerator {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult+Enumerator")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Enumerator {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult+Enumerator")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Enumerator {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult+Enumerator")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IEnumerator_1<
         crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Match,
     >,
 > for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Enumerator {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::Collections::Generic::IEnumerator_1<
         crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Match,
     > {
         todo!()
@@ -939,15 +909,43 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult+Enumerator")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IEnumerator_1<
         crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Match,
     >,
 > for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Enumerator {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<
         crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Match,
     > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult+Enumerator")]
+impl AsRef<crate::System::Collections::IEnumerator>
+for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Enumerator {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult+Enumerator")]
+impl AsMut<crate::System::Collections::IEnumerator>
+for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Enumerator {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult+Enumerator")]
+impl AsRef<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Enumerator {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult+Enumerator")]
+impl AsMut<crate::System::IDisposable>
+for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Enumerator {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         todo!()
     }
 }

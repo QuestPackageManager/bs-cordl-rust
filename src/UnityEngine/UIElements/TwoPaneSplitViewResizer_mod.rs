@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TwoPaneSplitViewResizer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::PointerManipulator,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::PointerManipulator,
     pub m_Start: crate::UnityEngine::Vector3,
     pub m_Active: bool,
     pub m_SplitView: quest_hook::libil2cpp::Gc<
@@ -19,9 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+TwoPaneSplitViewResizer")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TwoPaneSplitViewResizer {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::PointerManipulator,
-    >;
+    type Target = crate::UnityEngine::UIElements::PointerManipulator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

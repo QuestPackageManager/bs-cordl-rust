@@ -2,19 +2,15 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ControllerProfilesSettingsViewController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+    __cordl_parent: crate::HMUI::ViewController,
     pub _profilesDropdown: quest_hook::libil2cpp::Gc<crate::HMUI::SimpleTextDropdown>,
     pub _handlingToggle: quest_hook::libil2cpp::Gc<crate::HMUI::ToggleWithCallbacks>,
     pub _interactableCanvasGroups: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::CanvasGroup>,
     >,
     pub _transformSettingsViewControllers: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatSaber::GameSettings::ControllersTransformSettings,
-            >,
+            *mut crate::BeatSaber::GameSettings::ControllersTransformSettings,
         >,
     >,
     pub _buttonsContainer: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -28,11 +24,13 @@ pub struct ControllerProfilesSettingsViewController {
     >,
     pub _toggleBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ToggleBinder>,
     pub onRequestSelectProfileToCopyFrom: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                crate::System::ValueTuple_2<
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    i32,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::System::ValueTuple_2<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                    >,
                 >,
             >,
         >,
@@ -47,7 +45,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatSaber+GameSettings+ControllerProfilesSettingsViewController")]
 impl std::ops::Deref
 for crate::BeatSaber::GameSettings::ControllerProfilesSettingsViewController {
-    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>;
+    type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -221,11 +219,15 @@ impl crate::BeatSaber::GameSettings::ControllerProfilesSettingsViewController {
     pub fn add_onRequestSelectProfileToCopyFrom(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Il2CppArray<
-                    crate::System::ValueTuple_2<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                        i32,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        crate::System::ValueTuple_2<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            i32,
+                        >,
                     >,
                 >,
             >,
@@ -241,11 +243,15 @@ impl crate::BeatSaber::GameSettings::ControllerProfilesSettingsViewController {
     pub fn remove_onRequestSelectProfileToCopyFrom(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Il2CppArray<
-                    crate::System::ValueTuple_2<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                        i32,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        crate::System::ValueTuple_2<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            i32,
+                        >,
                     >,
                 >,
             >,

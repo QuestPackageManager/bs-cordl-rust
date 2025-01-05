@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextMeshPro {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
+    __cordl_parent: crate::TMPro::TMP_Text,
     pub _SortingLayer: i32,
     pub _SortingLayerID: i32,
     pub _SortingOrder: i32,
     pub OnPreRenderText: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
+        crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>>,
     >,
     pub m_currentAutoSizeMode: bool,
     pub m_hasFontAssetChanged: bool,
@@ -18,9 +18,7 @@ pub struct TextMeshPro {
     pub m_max_characters: i32,
     pub m_max_numberOfLines: i32,
     pub m_subTextObjects: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SubMesh>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::TMPro::TMP_SubMesh>,
     >,
     pub m_maskType: crate::TMPro::MaskingTypes,
     pub m_EnvMapMatrix: crate::UnityEngine::Matrix4x4,
@@ -35,7 +33,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+TextMeshPro")]
 impl std::ops::Deref for crate::TMPro::TextMeshPro {
-    type Target = quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>;
+    type Target = crate::TMPro::TMP_Text;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -187,24 +185,18 @@ impl crate::TMPro::TextMeshPro {
     pub fn GetMaterials(
         &mut self,
         mats: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
         > = __cordl_object.invoke("GetMaterials", (mats))?;
         Ok(__cordl_ret.into())
     }
@@ -212,18 +204,14 @@ impl crate::TMPro::TextMeshPro {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
         > = __cordl_object.invoke("GetSharedMaterials", ())?;
         Ok(__cordl_ret.into())
     }
@@ -576,9 +564,7 @@ impl crate::TMPro::TextMeshPro {
     pub fn SetSharedMaterials(
         &mut self,
         materials: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -727,7 +713,9 @@ impl crate::TMPro::TextMeshPro {
     pub fn add_OnPreRenderText(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -831,7 +819,9 @@ impl crate::TMPro::TextMeshPro {
     pub fn remove_OnPreRenderText(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -896,20 +886,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TextMeshPro {
     }
 }
 #[cfg(feature = "TMPro+TextMeshPro")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement>>
-for crate::TMPro::TextMeshPro {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement> {
+impl AsRef<crate::UnityEngine::UI::ILayoutElement> for crate::TMPro::TextMeshPro {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::ILayoutElement {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "TMPro+TextMeshPro")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement>>
-for crate::TMPro::TextMeshPro {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement> {
+impl AsMut<crate::UnityEngine::UI::ILayoutElement> for crate::TMPro::TextMeshPro {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ILayoutElement {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,21 +2,29 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct KeyboardBinder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _enabled_k__BackingField: bool,
     pub _shouldClearBindings: bool,
     pub _newBindings: quest_hook::libil2cpp::Gc<
-        crate::System::ValueTuple_3<
-            crate::UnityEngine::KeyCode,
-            crate::HMUI::KeyboardBinder_KeyBindingType,
-            quest_hook::libil2cpp::Gc<bool>,
+        crate::System::Collections::Generic::List_1<
+            crate::System::ValueTuple_3<
+                crate::UnityEngine::KeyCode,
+                crate::HMUI::KeyboardBinder_KeyBindingType,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::Events::UnityAction_1<bool>,
+                >,
+            >,
         >,
     >,
     pub _bindings: quest_hook::libil2cpp::Gc<
-        crate::System::ValueTuple_3<
-            crate::UnityEngine::KeyCode,
-            crate::HMUI::KeyboardBinder_KeyBindingType,
-            quest_hook::libil2cpp::Gc<bool>,
+        crate::System::Collections::Generic::List_1<
+            crate::System::ValueTuple_3<
+                crate::UnityEngine::KeyCode,
+                crate::HMUI::KeyboardBinder_KeyBindingType,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::Events::UnityAction_1<bool>,
+                >,
+            >,
         >,
     >,
 }
@@ -26,7 +34,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+KeyboardBinder")]
 impl std::ops::Deref for crate::HMUI::KeyboardBinder {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -45,7 +53,7 @@ impl crate::HMUI::KeyboardBinder {
         &mut self,
         keyCode: crate::UnityEngine::KeyCode,
         keyBindingType: crate::HMUI::KeyboardBinder_KeyBindingType,
-        action: quest_hook::libil2cpp::Gc<bool>,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -57,10 +65,14 @@ impl crate::HMUI::KeyboardBinder {
     pub fn AddBindings(
         &mut self,
         bindingData: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::KeyCode,
-                crate::HMUI::KeyboardBinder_KeyBindingType,
-                quest_hook::libil2cpp::Gc<bool>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Tuple_3<
+                        crate::UnityEngine::KeyCode,
+                        crate::HMUI::KeyboardBinder_KeyBindingType,
+                        quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+                    >,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -108,12 +120,27 @@ impl crate::HMUI::KeyboardBinder {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc2(
+    pub fn New_KeyCode_KeyboardBinder_KeyBindingType_Action_1_1(
+        keycode: crate::UnityEngine::KeyCode,
+        keyBindingType: crate::HMUI::KeyboardBinder_KeyBindingType,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (keycode, keyBindingType, action))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_List_1_2(
         bindingData: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::KeyCode,
-                crate::HMUI::KeyboardBinder_KeyBindingType,
-                quest_hook::libil2cpp::Gc<bool>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Tuple_3<
+                        crate::UnityEngine::KeyCode,
+                        crate::HMUI::KeyboardBinder_KeyBindingType,
+                        quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+                    >,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -121,17 +148,6 @@ impl crate::HMUI::KeyboardBinder {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (bindingData))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_KeyCode_KeyboardBinder_KeyBindingType_Gc1(
-        keycode: crate::UnityEngine::KeyCode,
-        keyBindingType: crate::HMUI::KeyboardBinder_KeyBindingType,
-        action: quest_hook::libil2cpp::Gc<bool>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (keycode, keyBindingType, action))?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor_0(
@@ -144,13 +160,30 @@ impl crate::HMUI::KeyboardBinder {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_KeyCode_KeyboardBinder_KeyBindingType_Action_1_1(
+        &mut self,
+        keycode: crate::UnityEngine::KeyCode,
+        keyBindingType: crate::HMUI::KeyboardBinder_KeyBindingType,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (keycode, keyBindingType, action))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_List_1_2(
         &mut self,
         bindingData: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::KeyCode,
-                crate::HMUI::KeyboardBinder_KeyBindingType,
-                quest_hook::libil2cpp::Gc<bool>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Tuple_3<
+                        crate::UnityEngine::KeyCode,
+                        crate::HMUI::KeyboardBinder_KeyBindingType,
+                        quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+                    >,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -159,19 +192,6 @@ impl crate::HMUI::KeyboardBinder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (bindingData))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_KeyCode_KeyboardBinder_KeyBindingType_Gc1(
-        &mut self,
-        keycode: crate::UnityEngine::KeyCode,
-        keyBindingType: crate::HMUI::KeyboardBinder_KeyBindingType,
-        action: quest_hook::libil2cpp::Gc<bool>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (keycode, keyBindingType, action))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_enabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {

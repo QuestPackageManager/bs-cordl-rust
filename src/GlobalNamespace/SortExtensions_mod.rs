@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SortExtensions {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "SortExtensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SortExtensions")]
 impl std::ops::Deref for crate::GlobalNamespace::SortExtensions {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -25,9 +25,9 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SortExtensions {
 #[cfg(feature = "SortExtensions")]
 impl crate::GlobalNamespace::SortExtensions {
     pub fn InsertSorted<T>(
-        list: quest_hook::libil2cpp::Gc<T>,
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
         item: T,
-        getSortIndex: quest_hook::libil2cpp::Gc<T, i32>,
+        getSortIndex: quest_hook::libil2cpp::Gc<crate::System::Func_2<T, i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -38,8 +38,8 @@ impl crate::GlobalNamespace::SortExtensions {
         Ok(__cordl_ret.into())
     }
     pub fn Sort<T>(
-        list: quest_hook::libil2cpp::Gc<T>,
-        getSortIndex: quest_hook::libil2cpp::Gc<T, i32>,
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+        getSortIndex: quest_hook::libil2cpp::Gc<crate::System::Func_2<T, i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument

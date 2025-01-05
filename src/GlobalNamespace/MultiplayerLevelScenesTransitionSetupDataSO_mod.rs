@@ -2,27 +2,31 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLevelScenesTransitionSetupDataSO {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LevelScenesTransitionSetupDataSO,
-    >,
+    __cordl_parent: crate::GlobalNamespace::LevelScenesTransitionSetupDataSO,
     pub _multiplayerLevelSceneInfo: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SceneInfo,
     >,
     pub _gameCoreSceneInfo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneInfo>,
     pub _multiplayerEnvironmentInfo: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
+        crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
+        >,
     >,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerResultsData>,
         >,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerResultsData>,
     >,
     pub didDisconnectEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+            >,
+            crate::GlobalNamespace::DisconnectedReason,
         >,
-        crate::GlobalNamespace::DisconnectedReason,
     >,
     pub _gameMode_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
@@ -51,9 +55,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MultiplayerLevelScenesTransitionSetupDataSO")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LevelScenesTransitionSetupDataSO,
-    >;
+    type Target = crate::GlobalNamespace::LevelScenesTransitionSetupDataSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -201,10 +203,12 @@ impl crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
     pub fn add_didDisconnectEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+                >,
+                crate::GlobalNamespace::DisconnectedReason,
             >,
-            crate::GlobalNamespace::DisconnectedReason,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -217,10 +221,12 @@ impl crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerResultsData>,
             >,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerResultsData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -305,10 +311,12 @@ impl crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
     pub fn remove_didDisconnectEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+                >,
+                crate::GlobalNamespace::DisconnectedReason,
             >,
-            crate::GlobalNamespace::DisconnectedReason,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -321,10 +329,12 @@ impl crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerResultsData>,
             >,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerResultsData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

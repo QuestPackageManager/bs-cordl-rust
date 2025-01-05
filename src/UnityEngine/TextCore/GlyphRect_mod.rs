@@ -25,17 +25,6 @@ for crate::UnityEngine::TextCore::GlyphRect {
 }
 #[cfg(feature = "UnityEngine+TextCore+GlyphRect")]
 impl crate::UnityEngine::TextCore::GlyphRect {
-    pub fn Equals_Gc0(
-        &mut self,
-        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
-        )?;
-        Ok(__cordl_ret.into())
-    }
     pub fn Equals_GlyphRect1(
         &mut self,
         other: crate::UnityEngine::TextCore::GlyphRect,
@@ -44,6 +33,17 @@ impl crate::UnityEngine::TextCore::GlyphRect {
             self,
             "Equals",
             (other),
+        )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Equals_Il2CppObject0(
+        &mut self,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
         )?;
         Ok(__cordl_ret.into())
     }
@@ -110,20 +110,20 @@ impl crate::UnityEngine::TextCore::GlyphRect {
     }
 }
 #[cfg(feature = "UnityEngine+TextCore+GlyphRect")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::GlyphRect>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::TextCore::GlyphRect>>
 for crate::UnityEngine::TextCore::GlyphRect {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::GlyphRect> {
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::TextCore::GlyphRect> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+TextCore+GlyphRect")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::GlyphRect>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::TextCore::GlyphRect>>
 for crate::UnityEngine::TextCore::GlyphRect {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::GlyphRect> {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::TextCore::GlyphRect> {
         todo!()
     }
 }

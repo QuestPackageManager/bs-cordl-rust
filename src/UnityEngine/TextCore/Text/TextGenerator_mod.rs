@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextGenerator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_TextBackingArray: crate::UnityEngine::TextCore::Text::TextBackingContainer,
     pub m_TextProcessingArray: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
@@ -164,7 +164,9 @@ pub struct TextGenerator {
     pub m_AttributeParameterValues: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<f32>,
     >,
-    pub m_MaterialReferenceIndexLookup: quest_hook::libil2cpp::Gc<i32, i32>,
+    pub m_MaterialReferenceIndexLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+    >,
     pub m_IsCalculatingPreferredValues: bool,
     pub m_DefaultSpriteAsset: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::TextCore::Text::SpriteAsset,
@@ -185,7 +187,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator")]
 impl std::ops::Deref for crate::UnityEngine::TextCore::Text::TextGenerator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -512,7 +514,7 @@ impl crate::UnityEngine::TextCore::Text::TextGenerator {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn PopulateTextBackingArray_Gc0(
+    pub fn PopulateTextBackingArray_Il2CppString0(
         &mut self,
         sourceText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -707,7 +709,7 @@ for crate::UnityEngine::TextCore::Text::TextGenerator {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextGenerator_MissingCharacterEventCallback {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+MissingCharacterEventCallback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -718,7 +720,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+MissingCharacterEventCallback")]
 impl std::ops::Deref
 for crate::UnityEngine::TextCore::Text::TextGenerator_MissingCharacterEventCallback {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

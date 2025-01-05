@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Unsafe {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Unity+Burst+Unsafe")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Burst+Unsafe")]
 impl std::ops::Deref for crate::Unity::Burst::Unsafe {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -59,7 +59,7 @@ impl crate::Unity::Burst::Unsafe {
             .invoke("Add", (source, elementOffset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Add_Gc_i32_1<T>(
+    pub fn Add_Il2CppObject_i32_1<T>(
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         elementOffset: i32,
     ) -> quest_hook::libil2cpp::Result<
@@ -112,7 +112,7 @@ impl crate::Unity::Burst::Unsafe {
             .invoke("AsRef", (source))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AsRef_Gc0<T>(
+    pub fn AsRef_Il2CppObject0<T>(
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::ByRefMut<T>>
     where
@@ -136,7 +136,7 @@ impl crate::Unity::Burst::Unsafe {
             .invoke("As", (source))?;
         Ok(__cordl_ret.into())
     }
-    pub fn As_Gc0<T>(
+    pub fn As_Il2CppObject0<T>(
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -168,7 +168,7 @@ impl crate::Unity::Burst::Unsafe {
             .invoke("CopyBlockUnaligned", (destination, source, byteCount))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CopyBlockUnaligned_Gc_Gc0(
+    pub fn CopyBlockUnaligned_Il2CppObject_Il2CppObject0(
         destination: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         byteCount: u32,
@@ -186,7 +186,7 @@ impl crate::Unity::Burst::Unsafe {
             .invoke("CopyBlock", (destination, source, byteCount))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CopyBlock_Gc_Gc0(
+    pub fn CopyBlock_Il2CppObject_Il2CppObject0(
         destination: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         byteCount: u32,
@@ -195,7 +195,7 @@ impl crate::Unity::Burst::Unsafe {
             .invoke("CopyBlock", (destination, source, byteCount))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Copy_ByRefMut_Gc1<T>(
+    pub fn Copy_ByRefMut_Il2CppObject1<T>(
         destination: quest_hook::libil2cpp::ByRefMut<T>,
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -207,7 +207,7 @@ impl crate::Unity::Burst::Unsafe {
             .invoke("Copy", (destination, source))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Copy_Gc_ByRefMut0<T>(
+    pub fn Copy_Il2CppObject_ByRefMut0<T>(
         destination: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         source: quest_hook::libil2cpp::ByRefMut<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -228,7 +228,7 @@ impl crate::Unity::Burst::Unsafe {
             .invoke("InitBlockUnaligned", (startAddress, value, byteCount))?;
         Ok(__cordl_ret.into())
     }
-    pub fn InitBlockUnaligned_Gc0(
+    pub fn InitBlockUnaligned_Il2CppObject0(
         startAddress: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         value: u8,
         byteCount: u32,
@@ -246,7 +246,7 @@ impl crate::Unity::Burst::Unsafe {
             .invoke("InitBlock", (startAddress, value, byteCount))?;
         Ok(__cordl_ret.into())
     }
-    pub fn InitBlock_Gc0(
+    pub fn InitBlock_Il2CppObject0(
         startAddress: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         value: u8,
         byteCount: u32,
@@ -301,7 +301,7 @@ impl crate::Unity::Burst::Unsafe {
             .invoke("ReadUnaligned", (source))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadUnaligned_Gc0<T>(
+    pub fn ReadUnaligned_Il2CppObject0<T>(
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -357,7 +357,7 @@ impl crate::Unity::Burst::Unsafe {
             .invoke("Subtract", (source, elementOffset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Subtract_Gc_i32_1<T>(
+    pub fn Subtract_Il2CppObject_i32_1<T>(
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         elementOffset: i32,
     ) -> quest_hook::libil2cpp::Result<
@@ -408,7 +408,7 @@ impl crate::Unity::Burst::Unsafe {
             .invoke("WriteUnaligned", (destination, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteUnaligned_Gc0<T>(
+    pub fn WriteUnaligned_Il2CppObject0<T>(
         destination: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         value: T,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_DetailProperties {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _detailDistance: f32,
     pub _detailDensity: f32,
     pub _detailResolution: i32,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_DetailProperties")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_DetailProperties {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -68,13 +68,13 @@ for crate::HoudiniEngineUnity::HEU_DetailProperties {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_DetailProperties")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_DetailProperties>,
     >,
 > for crate::HoudiniEngineUnity::HEU_DetailProperties {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_DetailProperties>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -82,13 +82,13 @@ impl AsRef<
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_DetailProperties")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_DetailProperties>,
     >,
 > for crate::HoudiniEngineUnity::HEU_DetailProperties {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_DetailProperties>,
     > {
         unsafe { std::mem::transmute(self) }

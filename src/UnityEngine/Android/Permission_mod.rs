@@ -48,9 +48,7 @@ impl crate::UnityEngine::Android::Permission {
     }
     pub fn RequestUserPermissions(
         permissions: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
         callbacks: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Android::PermissionCallbacks,

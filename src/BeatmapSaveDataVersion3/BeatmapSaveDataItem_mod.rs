@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapSaveDataItem {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub b: f32,
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+BeatmapSaveDataItem")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapSaveDataVersion3+BeatmapSaveDataItem")]
 impl std::ops::Deref for crate::BeatmapSaveDataVersion3::BeatmapSaveDataItem {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -64,30 +64,28 @@ for crate::BeatmapSaveDataVersion3::BeatmapSaveDataItem {
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+BeatmapSaveDataItem")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataCommon::IBeat>>
+impl AsRef<crate::BeatmapSaveDataCommon::IBeat>
 for crate::BeatmapSaveDataVersion3::BeatmapSaveDataItem {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataCommon::IBeat> {
+    fn as_ref(&self) -> &crate::BeatmapSaveDataCommon::IBeat {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+BeatmapSaveDataItem")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataCommon::IBeat>>
+impl AsMut<crate::BeatmapSaveDataCommon::IBeat>
 for crate::BeatmapSaveDataVersion3::BeatmapSaveDataItem {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataCommon::IBeat> {
+    fn as_mut(&mut self) -> &mut crate::BeatmapSaveDataCommon::IBeat {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+BeatmapSaveDataItem")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IComparable_1<
         quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataCommon::IBeat>,
     >,
 > for crate::BeatmapSaveDataVersion3::BeatmapSaveDataItem {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IComparable_1<
         quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataCommon::IBeat>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -95,13 +93,13 @@ impl AsRef<
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+BeatmapSaveDataItem")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IComparable_1<
         quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataCommon::IBeat>,
     >,
 > for crate::BeatmapSaveDataVersion3::BeatmapSaveDataItem {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IComparable_1<
         quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataCommon::IBeat>,
     > {
         unsafe { std::mem::transmute(self) }

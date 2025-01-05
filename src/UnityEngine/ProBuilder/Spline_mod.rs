@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Spline {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Spline")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+Spline")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::Spline {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,8 +24,10 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Spline {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Spline")]
 impl crate::UnityEngine::ProBuilder::Spline {
-    pub fn Extrude__cordl_bool_ByRefMut_Gc2(
-        points: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+    pub fn Extrude__cordl_bool_ByRefMut_IList_1_2(
+        points: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector3>,
+        >,
         radius: f32,
         radiusRows: i32,
         closeLoop: bool,
@@ -33,7 +35,9 @@ impl crate::UnityEngine::ProBuilder::Spline {
         target: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         >,
-        pointRotations: quest_hook::libil2cpp::Gc<crate::UnityEngine::Quaternion>,
+        pointRotations: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Quaternion>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
@@ -43,7 +47,11 @@ impl crate::UnityEngine::ProBuilder::Spline {
         Ok(__cordl_ret.into())
     }
     pub fn Extrude_i32__cordl_bool0(
-        points: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::BezierPoint>,
+        points: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                crate::UnityEngine::ProBuilder::BezierPoint,
+            >,
+        >,
         radius: f32,
         columns: i32,
         rows: i32,
@@ -60,7 +68,9 @@ impl crate::UnityEngine::ProBuilder::Spline {
     }
     pub fn Extrude_i32__cordl_bool_ByRefMut1(
         bezierPoints: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::BezierPoint,
+            crate::System::Collections::Generic::IList_1<
+                crate::UnityEngine::ProBuilder::BezierPoint,
+            >,
         >,
         radius: f32,
         columns: i32,
@@ -80,15 +90,23 @@ impl crate::UnityEngine::ProBuilder::Spline {
     }
     pub fn GetControlPoints(
         bezierPoints: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::BezierPoint,
+            crate::System::Collections::Generic::IList_1<
+                crate::UnityEngine::ProBuilder::BezierPoint,
+            >,
         >,
         subdivisionsPerSegment: i32,
         closeLoop: bool,
-        rotations: quest_hook::libil2cpp::Gc<crate::UnityEngine::Quaternion>,
+        rotations: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Quaternion>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+        >,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3> = <Self as quest_hook::libil2cpp::Type>::class()
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
                 "GetControlPoints",
                 (bezierPoints, subdivisionsPerSegment, closeLoop, rotations),
@@ -96,7 +114,9 @@ impl crate::UnityEngine::ProBuilder::Spline {
         Ok(__cordl_ret.into())
     }
     pub fn GetRingRotation(
-        points: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+        points: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector3>,
+        >,
         i: i32,
         closeLoop: bool,
         secant: quest_hook::libil2cpp::ByRefMut<f32>,

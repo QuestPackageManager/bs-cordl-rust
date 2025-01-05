@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaMaxInclusiveFacet {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::XmlSchemaFacet,
-    >,
+    __cordl_parent: crate::System::Xml::Schema::XmlSchemaFacet,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaMaxInclusiveFacet")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlSchemaMaxInclusiveFacet")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaMaxInclusiveFacet {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaFacet>;
+    type Target = crate::System::Xml::Schema::XmlSchemaFacet;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

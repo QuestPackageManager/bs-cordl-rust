@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CertReqMsg {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub certReq: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::Crmf::CertRequest,
     >,
@@ -20,9 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+Crmf+CertReqMsg")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Crmf::CertReqMsg {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,17 +31,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Crmf::CertReqMsg {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Crmf+CertReqMsg")]
 impl crate::Org::BouncyCastle::Asn1::Crmf::CertReqMsg {
-    pub fn GetInstance_Gc0(
-        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Crmf::CertReqMsg>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Crmf::CertReqMsg,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetInstance__cordl_bool1(
+    pub fn GetInstance_Asn1TaggedObject__cordl_bool1(
         obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1TaggedObject>,
         isExplicit: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -57,14 +43,22 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::CertReqMsg {
             .invoke("GetInstance", (obj, isExplicit))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetInstance_Il2CppObject0(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Crmf::CertReqMsg>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Crmf::CertReqMsg,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetRegInfo(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Asn1::Crmf::AttributeTypeAndValue,
-                >,
+                *mut crate::Org::BouncyCastle::Asn1::Crmf::AttributeTypeAndValue,
             >,
         >,
     > {
@@ -73,14 +67,12 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::CertReqMsg {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Asn1::Crmf::AttributeTypeAndValue,
-                >,
+                *mut crate::Org::BouncyCastle::Asn1::Crmf::AttributeTypeAndValue,
             >,
         > = __cordl_object.invoke("GetRegInfo", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_Asn1Sequence0(
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -89,7 +81,7 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::CertReqMsg {
             .invoke_void(".ctor", (seq))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc1(
+    pub fn New_CertRequest_ProofOfPossession_Il2CppArray1(
         certReq: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Crmf::CertRequest,
         >,
@@ -98,9 +90,7 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::CertReqMsg {
         >,
         regInfo: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Asn1::Crmf::AttributeTypeAndValue,
-                >,
+                *mut crate::Org::BouncyCastle::Asn1::Crmf::AttributeTypeAndValue,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -123,7 +113,7 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::CertReqMsg {
         > = __cordl_object.invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Asn1Sequence0(
         &mut self,
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -134,7 +124,7 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::CertReqMsg {
             .invoke(".ctor", (seq))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc1(
+    pub fn _ctor_CertRequest_ProofOfPossession_Il2CppArray1(
         &mut self,
         certReq: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Crmf::CertRequest,
@@ -144,9 +134,7 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::CertReqMsg {
         >,
         regInfo: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Asn1::Crmf::AttributeTypeAndValue,
-                >,
+                *mut crate::Org::BouncyCastle::Asn1::Crmf::AttributeTypeAndValue,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

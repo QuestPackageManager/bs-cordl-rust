@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AddOvfInstruction_AddOvfInt32 {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::AddOvfInstruction,
-    >,
+    __cordl_parent: crate::System::Linq::Expressions::Interpreter::AddOvfInstruction,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+AddOvfInstruction+AddOvfInt32")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Linq+Expressions+Interpreter+AddOvfInstruction+AddOvfInt32")]
 impl std::ops::Deref for crate::GlobalNamespace::AddOvfInstruction_AddOvfInt32 {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::AddOvfInstruction,
-    >;
+    type Target = crate::System::Linq::Expressions::Interpreter::AddOvfInstruction;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

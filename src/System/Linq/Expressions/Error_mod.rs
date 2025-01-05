@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Error {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Error")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Linq+Expressions+Error")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Error {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,7 +24,7 @@ impl std::ops::DerefMut for crate::System::Linq::Expressions::Error {
 }
 #[cfg(feature = "System+Linq+Expressions+Error")]
 impl crate::System::Linq::Expressions::Error {
-    pub fn AccessorsCannotHaveByRefArgs_Gc0(
+    pub fn AccessorsCannotHaveByRefArgs_Il2CppString0(
         paramName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
@@ -106,7 +106,7 @@ impl crate::System::Linq::Expressions::Error {
             .invoke("ArgumentMustBeBoolean", (paramName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ArgumentMustBeInteger_Gc0(
+    pub fn ArgumentMustBeInteger_Il2CppString0(
         paramName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
@@ -288,7 +288,7 @@ impl crate::System::Linq::Expressions::Error {
             .invoke("ConversionIsNotSupportedForArithmeticTypes", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn DuplicateVariable_Gc_Gc0(
+    pub fn DuplicateVariable_Il2CppObject_Il2CppString0(
         p0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         paramName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -349,7 +349,7 @@ impl crate::System::Linq::Expressions::Error {
             .invoke("EnumerationIsDone", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ExpressionMustBeReadable_Gc0(
+    pub fn ExpressionMustBeReadable_Il2CppString0(
         paramName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
@@ -397,7 +397,7 @@ impl crate::System::Linq::Expressions::Error {
             .invoke("ExpressionTypeDoesNotMatchAssignment", (p0, p1))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ExpressionTypeDoesNotMatchConstructorParameter_Gc_Gc_Gc0(
+    pub fn ExpressionTypeDoesNotMatchConstructorParameter_Il2CppObject_Il2CppObject_Il2CppString0(
         p0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         p1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         paramName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -436,7 +436,7 @@ impl crate::System::Linq::Expressions::Error {
             .invoke("ExpressionTypeDoesNotMatchLabel", (p0, p1))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ExpressionTypeDoesNotMatchMethodParameter_Gc_Gc_Gc_Gc0(
+    pub fn ExpressionTypeDoesNotMatchMethodParameter_Il2CppObject_Il2CppObject_Il2CppObject_Il2CppString0(
         p0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         p1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         p2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -467,7 +467,7 @@ impl crate::System::Linq::Expressions::Error {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn ExpressionTypeDoesNotMatchParameter_Gc_Gc_Gc0(
+    pub fn ExpressionTypeDoesNotMatchParameter_Il2CppObject_Il2CppObject_Il2CppString0(
         p0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         p1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         paramName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1107,7 +1107,7 @@ impl crate::System::Linq::Expressions::Error {
             .invoke("TryMustHaveCatchFinallyOrFault", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn TypeContainsGenericParameters_Gc_Gc0(
+    pub fn TypeContainsGenericParameters_Il2CppObject_Il2CppString0(
         p0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         paramName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -1128,7 +1128,7 @@ impl crate::System::Linq::Expressions::Error {
             .invoke("TypeContainsGenericParameters", (p0, paramName, index))?;
         Ok(__cordl_ret.into())
     }
-    pub fn TypeIsGeneric_Gc_Gc0(
+    pub fn TypeIsGeneric_Il2CppObject_Il2CppString0(
         p0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         paramName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -1253,7 +1253,7 @@ impl crate::System::Linq::Expressions::Error {
             .invoke("UserDefinedOperatorMustNotBeVoid", (p0, paramName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn VariableMustNotBeByRef_Gc_Gc_Gc0(
+    pub fn VariableMustNotBeByRef_Il2CppObject_Il2CppObject_Il2CppString0(
         p0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         p1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         paramName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

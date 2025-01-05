@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XDocumentType {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XNode>,
+    __cordl_parent: crate::System::Xml::Linq::XNode,
     pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _publicId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _systemId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Linq+XDocumentType")]
 impl std::ops::Deref for crate::System::Xml::Linq::XDocumentType {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XNode>;
+    type Target = crate::System::Xml::Linq::XNode;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,16 +40,7 @@ impl crate::System::Xml::Linq::XDocumentType {
             .invoke("CloneNode", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc1(
-        other: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XDocumentType>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (other))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_Gc_Gc0(
+    pub fn New_Il2CppString_Il2CppString_Il2CppString_Il2CppString0(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         publicId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         systemId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -59,6 +50,15 @@ impl crate::System::Xml::Linq::XDocumentType {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (name, publicId, systemId, internalSubset))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_XDocumentType1(
+        other: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XDocumentType>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (other))?;
         Ok(__cordl_object.into())
     }
     pub fn WriteTo(
@@ -72,18 +72,7 @@ impl crate::System::Xml::Linq::XDocumentType {
             .invoke("WriteTo", (writer))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
-        &mut self,
-        other: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XDocumentType>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (other))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_Gc_Gc0(
+    pub fn _ctor_Il2CppString_Il2CppString_Il2CppString_Il2CppString0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         publicId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -95,6 +84,17 @@ impl crate::System::Xml::Linq::XDocumentType {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (name, publicId, systemId, internalSubset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_XDocumentType1(
+        &mut self,
+        other: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XDocumentType>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (other))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_InternalSubset(

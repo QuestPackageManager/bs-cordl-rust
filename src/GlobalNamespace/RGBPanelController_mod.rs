@@ -2,13 +2,15 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RGBPanelController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _redSlider: quest_hook::libil2cpp::Gc<crate::HMUI::ColorGradientSlider>,
     pub _greenSlider: quest_hook::libil2cpp::Gc<crate::HMUI::ColorGradientSlider>,
     pub _blueSlider: quest_hook::libil2cpp::Gc<crate::HMUI::ColorGradientSlider>,
     pub colorDidChangeEvent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Color,
-        crate::GlobalNamespace::ColorChangeUIEventType,
+        crate::System::Action_2<
+            crate::UnityEngine::Color,
+            crate::GlobalNamespace::ColorChangeUIEventType,
+        >,
     >,
     pub _color: crate::UnityEngine::Color,
 }
@@ -19,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "RGBPanelController")]
 impl std::ops::Deref for crate::GlobalNamespace::RGBPanelController {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -108,8 +110,10 @@ impl crate::GlobalNamespace::RGBPanelController {
     pub fn add_colorDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Color,
-            crate::GlobalNamespace::ColorChangeUIEventType,
+            crate::System::Action_2<
+                crate::UnityEngine::Color,
+                crate::GlobalNamespace::ColorChangeUIEventType,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -132,8 +136,10 @@ impl crate::GlobalNamespace::RGBPanelController {
     pub fn remove_colorDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Color,
-            crate::GlobalNamespace::ColorChangeUIEventType,
+            crate::System::Action_2<
+                crate::UnityEngine::Color,
+                crate::GlobalNamespace::ColorChangeUIEventType,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

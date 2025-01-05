@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameServersFilterText {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _text: quest_hook::libil2cpp::Gc<crate::HMUI::CurvedTextMeshPro>,
     pub _songPackMasksModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SongPackMasksModel,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "GameServersFilterText")]
 impl std::ops::Deref for crate::GlobalNamespace::GameServersFilterText {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -49,7 +49,7 @@ impl crate::GlobalNamespace::GameServersFilterText {
             .invoke("Setup", (beatmapDifficultyMask, songPackMask, visible))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Setup_Gc__cordl_bool0(
+    pub fn Setup_GameServersFilter__cordl_bool0(
         &mut self,
         filter: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameServersFilter>,
         visible: bool,

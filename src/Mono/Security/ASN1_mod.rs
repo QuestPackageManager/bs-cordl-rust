@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ASN1 {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_nTag: u8,
     pub m_aValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub elist: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Security+ASN1")]
 impl std::ops::Deref for crate::Mono::Security::ASN1 {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,6 +37,27 @@ impl crate::Mono::Security::ASN1 {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1> = __cordl_object
             .invoke("Add", (asn1))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CompareArray(
+        &mut self,
+        array1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        array2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("CompareArray", (array1, array2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CompareValue(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("CompareValue", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn Decode(
@@ -69,6 +90,20 @@ impl crate::Mono::Security::ASN1 {
             .invoke("DecodeTLV", (asn1, pos, tag, length, content))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Element(
+        &mut self,
+        index: i32,
+        anTag: u8,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1> = __cordl_object
+            .invoke("Element", (index, anTag))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetBytes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -82,7 +117,7 @@ impl crate::Mono::Security::ASN1 {
         > = __cordl_object.invoke("GetBytes", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc2(
+    pub fn New_Il2CppArray2(
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -100,7 +135,7 @@ impl crate::Mono::Security::ASN1 {
             .invoke_void(".ctor", (tag))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_u8_Gc1(
+    pub fn New_u8_Il2CppArray1(
         tag: u8,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -123,7 +158,7 @@ impl crate::Mono::Security::ASN1 {
         > = __cordl_object.invoke("ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_Il2CppArray2(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -145,7 +180,7 @@ impl crate::Mono::Security::ASN1 {
             .invoke(".ctor", (tag))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_u8_Gc1(
+    pub fn _ctor_u8_Il2CppArray1(
         &mut self,
         tag: u8,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -164,6 +199,33 @@ impl crate::Mono::Security::ASN1 {
         let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_Item(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1> = __cordl_object
+            .invoke("get_Item", (index))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Length", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Tag(&mut self) -> quest_hook::libil2cpp::Result<u8> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: u8 = __cordl_object.invoke("get_Tag", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_Value(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -175,6 +237,17 @@ impl crate::Mono::Security::ASN1 {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
         > = __cordl_object.invoke("get_Value", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_Value(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Value", (value))?;
         Ok(__cordl_ret.into())
     }
 }

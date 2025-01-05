@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FeatureAsyncPreloader {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::BGLib::AppFlow::Initialization::AsyncPreloader,
-    >,
+    __cordl_parent: crate::BGLib::AppFlow::Initialization::AsyncPreloader,
 }
 #[cfg(feature = "BGLib+AppFlow+Initialization+FeatureAsyncPreloader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -14,9 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BGLib+AppFlow+Initialization+FeatureAsyncPreloader")]
 impl std::ops::Deref for crate::BGLib::AppFlow::Initialization::FeatureAsyncPreloader {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::BGLib::AppFlow::Initialization::AsyncPreloader,
-    >;
+    type Target = crate::BGLib::AppFlow::Initialization::AsyncPreloader;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MemoryPoolInitialSizeMaxSizeBinder_1<TContract: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TContract>,
+    __cordl_parent: crate::Zenject::MemoryPoolMaxSizeBinder_1<TContract>,
     __cordl_phantom_TContract: std::marker::PhantomData<TContract>,
 }
 #[cfg(feature = "Zenject+MemoryPoolInitialSizeMaxSizeBinder_1")]
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Zenject+MemoryPoolInitialSizeMaxSizeBinder_1")]
 impl<TContract: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::MemoryPoolInitialSizeMaxSizeBinder_1<TContract> {
-    type Target = quest_hook::libil2cpp::Gc<TContract>;
+    type Target = crate::Zenject::MemoryPoolMaxSizeBinder_1<TContract>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -51,7 +51,11 @@ impl<
     pub fn WithFixedSize(
         &mut self,
         _cordl_size: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TContract>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryArgumentsToChoiceBinder_1<TContract>,
+        >,
+    >
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -59,14 +63,17 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TContract> = __cordl_object
-            .invoke("WithFixedSize", (_cordl_size))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryArgumentsToChoiceBinder_1<TContract>,
+        > = __cordl_object.invoke("WithFixedSize", (_cordl_size))?;
         Ok(__cordl_ret.into())
     }
     pub fn WithInitialSize(
         &mut self,
         _cordl_size: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TContract>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::MemoryPoolMaxSizeBinder_1<TContract>>,
+    >
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -74,8 +81,9 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TContract> = __cordl_object
-            .invoke("WithInitialSize", (_cordl_size))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::MemoryPoolMaxSizeBinder_1<TContract>,
+        > = __cordl_object.invoke("WithInitialSize", (_cordl_size))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

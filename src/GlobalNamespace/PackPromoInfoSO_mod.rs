@@ -2,17 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PackPromoInfoSO {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PersistentScriptableObject,
-    >,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _promoBannerInfo: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PromoBannerInfoSO,
     >,
     pub _levelsPromoInfo: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::PackPromoInfoSO_LevelPromoInfo,
-            >,
+            *mut crate::GlobalNamespace::PackPromoInfoSO_LevelPromoInfo,
         >,
     >,
 }
@@ -23,9 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PackPromoInfoSO")]
 impl std::ops::Deref for crate::GlobalNamespace::PackPromoInfoSO {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PersistentScriptableObject,
-    >;
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -62,9 +56,7 @@ impl crate::GlobalNamespace::PackPromoInfoSO {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::PackPromoInfoSO_LevelPromoInfo,
-                >,
+                *mut crate::GlobalNamespace::PackPromoInfoSO_LevelPromoInfo,
             >,
         >,
     > {
@@ -73,9 +65,7 @@ impl crate::GlobalNamespace::PackPromoInfoSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::PackPromoInfoSO_LevelPromoInfo,
-                >,
+                *mut crate::GlobalNamespace::PackPromoInfoSO_LevelPromoInfo,
             >,
         > = __cordl_object.invoke("get_levelPromoInfos", ())?;
         Ok(__cordl_ret.into())
@@ -107,7 +97,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PackPromoInfo
 #[repr(C)]
 #[derive(Debug)]
 pub struct PackPromoInfoSO_LevelPromoInfo {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _levelID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _promoBannerInfo: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PromoBannerInfoSO,
@@ -120,7 +110,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PackPromoInfoSO+LevelPromoInfo")]
 impl std::ops::Deref for crate::GlobalNamespace::PackPromoInfoSO_LevelPromoInfo {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

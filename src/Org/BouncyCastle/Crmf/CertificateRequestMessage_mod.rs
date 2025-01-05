@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CertificateRequestMessage {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub certReqMsg: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::Crmf::CertReqMsg,
     >,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crmf+CertificateRequestMessage")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crmf::CertificateRequestMessage {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -116,16 +116,7 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessage {
             .invoke("IsValidSigningKeyPop", (verifierProvider))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
-        encoded: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (encoded))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc1(
+    pub fn New_CertReqMsg1(
         certReqMsg: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Crmf::CertReqMsg,
         >,
@@ -134,6 +125,15 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessage {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (certReqMsg))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Il2CppArray0(
+        encoded: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (encoded))?;
         Ok(__cordl_object.into())
     }
     pub fn ParseBytes(
@@ -160,18 +160,7 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessage {
         > = __cordl_object.invoke("ToAsn1Structure", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
-        &mut self,
-        encoded: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (encoded))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_CertReqMsg1(
         &mut self,
         certReqMsg: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Crmf::CertReqMsg,
@@ -182,6 +171,17 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessage {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (certReqMsg))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppArray0(
+        &mut self,
+        encoded: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (encoded))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_HasControls(&mut self) -> quest_hook::libil2cpp::Result<bool> {

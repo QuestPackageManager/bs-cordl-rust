@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DisconnectedPlayer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _userId_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "DisconnectedPlayer")]
 impl std::ops::Deref for crate::GlobalNamespace::DisconnectedPlayer {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -208,20 +208,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DisconnectedP
     }
 }
 #[cfg(feature = "DisconnectedPlayer")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>>
+impl AsRef<crate::GlobalNamespace::IConnectedPlayer>
 for crate::GlobalNamespace::DisconnectedPlayer {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IConnectedPlayer {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "DisconnectedPlayer")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>>
+impl AsMut<crate::GlobalNamespace::IConnectedPlayer>
 for crate::GlobalNamespace::DisconnectedPlayer {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IConnectedPlayer {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RsaOaepWrapperProvider {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub digestOid: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
     >,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+RsaOaepWrapperProvider")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapperProvider {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -87,30 +87,18 @@ for crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapperProvider {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+RsaOaepWrapperProvider")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Operators::WrapperProvider,
-    >,
-> for crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapperProvider {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Operators::WrapperProvider,
-    > {
+impl AsRef<crate::Org::BouncyCastle::Crypto::Operators::WrapperProvider>
+for crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapperProvider {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Operators::WrapperProvider {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+RsaOaepWrapperProvider")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Operators::WrapperProvider,
-    >,
-> for crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapperProvider {
+impl AsMut<crate::Org::BouncyCastle::Crypto::Operators::WrapperProvider>
+for crate::Org::BouncyCastle::Crypto::Operators::RsaOaepWrapperProvider {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Operators::WrapperProvider,
-    > {
+    ) -> &mut crate::Org::BouncyCastle::Crypto::Operators::WrapperProvider {
         unsafe { std::mem::transmute(self) }
     }
 }

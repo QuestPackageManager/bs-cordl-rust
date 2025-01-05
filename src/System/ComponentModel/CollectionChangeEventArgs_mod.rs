@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CollectionChangeEventArgs {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::EventArgs>,
+    __cordl_parent: crate::System::EventArgs,
     pub _Action_k__BackingField: crate::System::ComponentModel::CollectionChangeAction,
     pub _Element_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppObject,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+ComponentModel+CollectionChangeEventArgs")]
 impl std::ops::Deref for crate::System::ComponentModel::CollectionChangeEventArgs {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::EventArgs>;
+    type Target = crate::System::EventArgs;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

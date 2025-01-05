@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StringHelpers {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+StringHelpers")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+StringHelpers")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Utilities::StringHelpers {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,7 +37,7 @@ impl crate::UnityEngine::InputSystem::Utilities::StringHelpers {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Contains_Gc_StringComparison1(
+    pub fn Contains_Il2CppString_StringComparison1(
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         comparison: crate::System::StringComparison,
@@ -78,8 +78,10 @@ impl crate::UnityEngine::InputSystem::Utilities::StringHelpers {
     pub fn ExpandTemplateString(
         _cordl_template: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         mapFunc: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -122,7 +124,25 @@ impl crate::UnityEngine::InputSystem::Utilities::StringHelpers {
             .invoke("IsPrintable", (ch))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Join_Gc_Gc0<TValue>(
+    pub fn Join_IEnumerable_1_Il2CppString1<TValue>(
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TValue>,
+        >,
+        separator: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Join", (values, separator))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Join_Il2CppString_Il2CppArray0<TValue>(
         separator: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>,
     ) -> quest_hook::libil2cpp::Result<
@@ -138,28 +158,16 @@ impl crate::UnityEngine::InputSystem::Utilities::StringHelpers {
             .invoke("Join", (separator, values))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Join_Gc_Gc1<TValue>(
-        values: quest_hook::libil2cpp::Gc<TValue>,
-        separator: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    >
-    where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Join", (values, separator))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn MakeUniqueName<TExisting>(
         baseName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        existingSet: quest_hook::libil2cpp::Gc<TExisting>,
+        existingSet: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TExisting>,
+        >,
         getNameFunc: quest_hook::libil2cpp::Gc<
-            TExisting,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Func_2<
+                TExisting,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -220,14 +228,18 @@ impl crate::UnityEngine::InputSystem::Utilities::StringHelpers {
     }
     pub fn Split(
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        predicate: quest_hook::libil2cpp::Gc<char, bool>,
+        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<char, bool>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Split", (str, predicate))?;
         Ok(__cordl_ret.into())
@@ -235,10 +247,16 @@ impl crate::UnityEngine::InputSystem::Utilities::StringHelpers {
     pub fn Tokenize(
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Utilities::Substring>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::InputSystem::Utilities::Substring,
+            >,
+        >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Utilities::Substring,
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::InputSystem::Utilities::Substring,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Tokenize", (str))?;
         Ok(__cordl_ret.into())
     }
@@ -279,7 +297,7 @@ impl crate::UnityEngine::InputSystem::Utilities::StringHelpers {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteStringToBuffer_Gc_IntPtr_i32_0(
+    pub fn WriteStringToBuffer_Il2CppString_IntPtr_i32_0(
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         buffer: crate::System::IntPtr,
         bufferSizeInCharacters: i32,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsymmetricKeyParameter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub privateKey: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+AsymmetricKeyParameter")]
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+AsymmetricKeyParameter")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -26,17 +26,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::AsymmetricKeyParam
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+AsymmetricKeyParameter")]
 impl crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter {
-    pub fn Equals_Gc0(
-        &mut self,
-        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Equals_Gc1(
+    pub fn Equals_AsymmetricKeyParameter1(
         &mut self,
         other: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
@@ -46,6 +36,16 @@ impl crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Equals_Il2CppObject0(
+        &mut self,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -94,26 +94,16 @@ for crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+AsymmetricKeyParameter")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
-> for crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::ICipherParameters,
-    > {
+impl AsRef<crate::Org::BouncyCastle::Crypto::ICipherParameters>
+for crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::ICipherParameters {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+AsymmetricKeyParameter")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
-> for crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::ICipherParameters,
-    > {
+impl AsMut<crate::Org::BouncyCastle::Crypto::ICipherParameters>
+for crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::ICipherParameters {
         unsafe { std::mem::transmute(self) }
     }
 }

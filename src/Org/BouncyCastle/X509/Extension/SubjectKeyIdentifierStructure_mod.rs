@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SubjectKeyIdentifierStructure {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X509::SubjectKeyIdentifier,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::X509::SubjectKeyIdentifier,
 }
 #[cfg(feature = "Org+BouncyCastle+X509+Extension+SubjectKeyIdentifierStructure")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+X509+Extension+SubjectKeyIdentifierStructure")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::X509::Extension::SubjectKeyIdentifierStructure {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::X509::SubjectKeyIdentifier,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::X509::SubjectKeyIdentifier;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,7 +40,7 @@ impl crate::Org::BouncyCastle::X509::Extension::SubjectKeyIdentifierStructure {
             .invoke("FromPublicKey", (pubKey))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_Asn1OctetString0(
         encodedValue: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1OctetString,
         >,
@@ -55,7 +51,7 @@ impl crate::Org::BouncyCastle::X509::Extension::SubjectKeyIdentifierStructure {
             .invoke_void(".ctor", (encodedValue))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_AsymmetricKeyParameter1(
         pubKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         >,
@@ -66,7 +62,7 @@ impl crate::Org::BouncyCastle::X509::Extension::SubjectKeyIdentifierStructure {
             .invoke_void(".ctor", (pubKey))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Asn1OctetString0(
         &mut self,
         encodedValue: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1OctetString,
@@ -79,7 +75,7 @@ impl crate::Org::BouncyCastle::X509::Extension::SubjectKeyIdentifierStructure {
             .invoke(".ctor", (encodedValue))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_AsymmetricKeyParameter1(
         &mut self,
         pubKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,

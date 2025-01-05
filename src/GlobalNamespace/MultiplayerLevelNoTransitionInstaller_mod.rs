@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLevelNoTransitionInstaller {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::NoTransitionInstaller>,
+    __cordl_parent: crate::Zenject::NoTransitionInstaller,
 }
 #[cfg(feature = "MultiplayerLevelNoTransitionInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplayerLevelNoTransitionInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLevelNoTransitionInstaller {
-    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::NoTransitionInstaller>;
+    type Target = crate::Zenject::NoTransitionInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

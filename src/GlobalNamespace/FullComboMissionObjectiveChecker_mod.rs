@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FullComboMissionObjectiveChecker {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MissionObjectiveChecker,
-    >,
+    __cordl_parent: crate::GlobalNamespace::MissionObjectiveChecker,
     pub _comboController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::ComboController,
     >,
@@ -17,9 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "FullComboMissionObjectiveChecker")]
 impl std::ops::Deref for crate::GlobalNamespace::FullComboMissionObjectiveChecker {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MissionObjectiveChecker,
-    >;
+    type Target = crate::GlobalNamespace::MissionObjectiveChecker;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

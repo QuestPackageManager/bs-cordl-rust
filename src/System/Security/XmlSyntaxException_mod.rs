@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSyntaxException {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::SystemException>,
+    __cordl_parent: crate::System::SystemException,
 }
 #[cfg(feature = "System+Security+XmlSyntaxException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+XmlSyntaxException")]
 impl std::ops::Deref for crate::System::Security::XmlSyntaxException {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::SystemException>;
+    type Target = crate::System::SystemException;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,7 +31,7 @@ impl crate::System::Security::XmlSyntaxException {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_StreamingContext3(
+    pub fn New_SerializationInfo_StreamingContext3(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -52,7 +52,7 @@ impl crate::System::Security::XmlSyntaxException {
             .invoke_void(".ctor", (lineNumber))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_Gc2(
+    pub fn New_i32_Il2CppString2(
         lineNumber: i32,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -72,7 +72,7 @@ impl crate::System::Security::XmlSyntaxException {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_StreamingContext3(
+    pub fn _ctor_SerializationInfo_StreamingContext3(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -97,7 +97,7 @@ impl crate::System::Security::XmlSyntaxException {
             .invoke(".ctor", (lineNumber))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_Gc2(
+    pub fn _ctor_i32_Il2CppString2(
         &mut self,
         lineNumber: i32,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

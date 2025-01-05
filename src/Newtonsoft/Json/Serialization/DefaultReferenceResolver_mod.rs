@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultReferenceResolver {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _referenceCount: i32,
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+DefaultReferenceResolver")]
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Newtonsoft+Json+Serialization+DefaultReferenceResolver")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::DefaultReferenceResolver {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -46,16 +46,20 @@ impl crate::Newtonsoft::Json::Serialization::DefaultReferenceResolver {
         context: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::Newtonsoft::Json::Utilities::BidirectionalDictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::Newtonsoft::Json::Utilities::BidirectionalDictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         > = __cordl_object.invoke("GetMappings", (context))?;
         Ok(__cordl_ret.into())
     }
@@ -129,26 +133,18 @@ for crate::Newtonsoft::Json::Serialization::DefaultReferenceResolver {
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+DefaultReferenceResolver")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Serialization::IReferenceResolver>,
-> for crate::Newtonsoft::Json::Serialization::DefaultReferenceResolver {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Serialization::IReferenceResolver,
-    > {
+impl AsRef<crate::Newtonsoft::Json::Serialization::IReferenceResolver>
+for crate::Newtonsoft::Json::Serialization::DefaultReferenceResolver {
+    fn as_ref(&self) -> &crate::Newtonsoft::Json::Serialization::IReferenceResolver {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+DefaultReferenceResolver")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Serialization::IReferenceResolver>,
-> for crate::Newtonsoft::Json::Serialization::DefaultReferenceResolver {
+impl AsMut<crate::Newtonsoft::Json::Serialization::IReferenceResolver>
+for crate::Newtonsoft::Json::Serialization::DefaultReferenceResolver {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Serialization::IReferenceResolver,
-    > {
+    ) -> &mut crate::Newtonsoft::Json::Serialization::IReferenceResolver {
         unsafe { std::mem::transmute(self) }
     }
 }

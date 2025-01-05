@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConstantExpression {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Expression,
-    >,
+    __cordl_parent: crate::System::Linq::Expressions::Expression,
     pub _Value_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppObject,
     >,
@@ -16,9 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Linq+Expressions+ConstantExpression")]
 impl std::ops::Deref for crate::System::Linq::Expressions::ConstantExpression {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Expression,
-    >;
+    type Target = crate::System::Linq::Expressions::Expression;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

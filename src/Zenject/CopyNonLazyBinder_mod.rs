@@ -2,9 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CopyNonLazyBinder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::NonLazyBinder>,
+    __cordl_parent: crate::Zenject::NonLazyBinder,
     pub _secondaryBindInfos: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
+        >,
     >,
 }
 #[cfg(feature = "Zenject+CopyNonLazyBinder")]
@@ -14,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+CopyNonLazyBinder")]
 impl std::ops::Deref for crate::Zenject::CopyNonLazyBinder {
-    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::NonLazyBinder>;
+    type Target = crate::Zenject::NonLazyBinder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

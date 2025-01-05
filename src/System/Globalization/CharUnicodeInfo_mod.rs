@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CharUnicodeInfo {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Globalization+CharUnicodeInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Globalization+CharUnicodeInfo")]
 impl std::ops::Deref for crate::System::Globalization::CharUnicodeInfo {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,7 +29,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
             .invoke("GetNumericValue", (ch))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetUnicodeCategory_Gc_i32_1(
+    pub fn GetUnicodeCategory_Il2CppString_i32_1(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::Globalization::UnicodeCategory> {
@@ -60,7 +60,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
             .invoke("InternalConvertToUtf32", (s, index, charLength))?;
         Ok(__cordl_ret.into())
     }
-    pub fn InternalConvertToUtf32_Gc_i32_0(
+    pub fn InternalConvertToUtf32_Il2CppString_i32_0(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -90,7 +90,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
             .invoke("InternalGetUnicodeCategory", (str, index, charLength))?;
         Ok(__cordl_ret.into())
     }
-    pub fn InternalGetUnicodeCategory_Gc_i32_0(
+    pub fn InternalGetUnicodeCategory_Il2CppString_i32_0(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::Globalization::UnicodeCategory> {
@@ -98,7 +98,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
             .invoke("InternalGetUnicodeCategory", (value, index))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsWhiteSpace_Gc_i32_0(
+    pub fn IsWhiteSpace_Il2CppString_i32_0(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {

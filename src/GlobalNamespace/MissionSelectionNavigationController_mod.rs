@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionSelectionNavigationController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::NavigationController>,
+    __cordl_parent: crate::HMUI::NavigationController,
     pub _missionSelectionMapViewController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MissionSelectionMapViewController,
     >,
@@ -10,8 +10,10 @@ pub struct MissionSelectionNavigationController {
         crate::GlobalNamespace::MissionLevelDetailViewController,
     >,
     pub didPressPlayButtonEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MissionSelectionNavigationController,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MissionSelectionNavigationController,
+            >,
         >,
     >,
 }
@@ -23,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MissionSelectionNavigationController")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionSelectionNavigationController {
-    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::NavigationController>;
+    type Target = crate::HMUI::NavigationController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -107,7 +109,7 @@ impl crate::GlobalNamespace::MissionSelectionNavigationController {
     }
     pub fn PresentMissionClearedIfNeeded(
         &mut self,
-        finishedCallback: quest_hook::libil2cpp::Gc<bool>,
+        finishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -129,8 +131,10 @@ impl crate::GlobalNamespace::MissionSelectionNavigationController {
     pub fn add_didPressPlayButtonEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MissionSelectionNavigationController,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MissionSelectionNavigationController,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -157,8 +161,10 @@ impl crate::GlobalNamespace::MissionSelectionNavigationController {
     pub fn remove_didPressPlayButtonEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MissionSelectionNavigationController,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MissionSelectionNavigationController,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

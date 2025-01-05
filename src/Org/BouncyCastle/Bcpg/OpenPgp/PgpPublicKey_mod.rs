@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PgpPublicKey {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub keyId: i64,
     pub fingerprint: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub keyStrength: i32,
@@ -23,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpPublicKey")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -53,7 +53,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey {
             .invoke("AddCert", (key, id, certification))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddCertification_Gc0(
+    pub fn AddCertification_Il2CppString_PgpSignature0(
         key: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
         >,
@@ -70,7 +70,23 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey {
             .invoke("AddCertification", (key, id, certification))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddCertification_Gc1(
+    pub fn AddCertification_PgpSignature2(
+        key: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        >,
+        certification: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddCertification", (key, certification))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddCertification_PgpUserAttributeSubpacketVector_PgpSignature1(
         key: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
         >,
@@ -87,22 +103,6 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey {
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("AddCertification", (key, userAttributes, certification))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn AddCertification_Gc_Gc2(
-        key: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
-        >,
-        certification: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AddCertification", (key, certification))?;
         Ok(__cordl_ret.into())
     }
     pub fn CalculateFingerprint(
@@ -331,18 +331,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey {
         let __cordl_ret: bool = __cordl_object.invoke("IsRevoked", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc1(
-        publicPk: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Bcpg::PublicKeyPacket,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (publicPk))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc4(
+    pub fn New_PgpPublicKey4(
         pubKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
         >,
@@ -353,20 +342,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey {
             .invoke_void(".ctor", (pubKey))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc_Gc2(
-        publicPk: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Bcpg::PublicKeyPacket,
-        >,
-        trustPk: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::TrustPacket>,
-        sigs: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (publicPk, trustPk, sigs))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_Gc_Gc3(
+    pub fn New_PgpPublicKey_TrustPacket_IList3(
         key: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
         >,
@@ -379,7 +355,31 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey {
             .invoke_void(".ctor", (key, trust, subSigs))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc_Gc6(
+    pub fn New_PublicKeyAlgorithmTag_AsymmetricKeyParameter_DateTime0(
+        algorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
+        pubKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
+        _cordl_time: crate::System::DateTime,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (algorithm, pubKey, _cordl_time))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_PublicKeyPacket1(
+        publicPk: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::PublicKeyPacket,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (publicPk))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_PublicKeyPacket_IList_IList6(
         publicPk: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::PublicKeyPacket,
         >,
@@ -392,7 +392,20 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey {
             .invoke_void(".ctor", (publicPk, ids, idSigs))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc_Gc_Gc_Gc_Gc5(
+    pub fn New_PublicKeyPacket_TrustPacket_IList2(
+        publicPk: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::PublicKeyPacket,
+        >,
+        trustPk: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::TrustPacket>,
+        sigs: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (publicPk, trustPk, sigs))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_PublicKeyPacket_TrustPacket_IList_IList_IList_IList5(
         publicPk: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::PublicKeyPacket,
         >,
@@ -408,20 +421,21 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey {
             .invoke_void(".ctor", (publicPk, trustPk, keySigs, ids, idTrusts, idSigs))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_PublicKeyAlgorithmTag_Gc_DateTime0(
-        algorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
-        pubKey: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+    pub fn RemoveCert_PgpPublicKey_Il2CppObject0(
+        key: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
         >,
-        _cordl_time: crate::System::DateTime,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (algorithm, pubKey, _cordl_time))?;
-        Ok(__cordl_object.into())
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveCert", (key, id))?;
+        Ok(__cordl_ret.into())
     }
-    pub fn RemoveCert_Gc1(
+    pub fn RemoveCert_PgpSignature1(
         key: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
         >,
@@ -438,21 +452,21 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey {
             .invoke("RemoveCert", (key, id, certification))?;
         Ok(__cordl_ret.into())
     }
-    pub fn RemoveCert_Gc_Gc0(
+    pub fn RemoveCertification_Il2CppString1(
         key: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
         >,
-        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey>,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
         > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RemoveCert", (key, id))?;
+            .invoke("RemoveCertification", (key, id))?;
         Ok(__cordl_ret.into())
     }
-    pub fn RemoveCertification_Gc2(
+    pub fn RemoveCertification_Il2CppString_PgpSignature2(
         key: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
         >,
@@ -469,7 +483,39 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey {
             .invoke("RemoveCertification", (key, id, certification))?;
         Ok(__cordl_ret.into())
     }
-    pub fn RemoveCertification_Gc3(
+    pub fn RemoveCertification_PgpSignature4(
+        key: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        >,
+        certification: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveCertification", (key, certification))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveCertification_PgpUserAttributeSubpacketVector0(
+        key: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        >,
+        userAttributes: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpUserAttributeSubpacketVector,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveCertification", (key, userAttributes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveCertification_PgpUserAttributeSubpacketVector_PgpSignature3(
         key: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
         >,
@@ -488,52 +534,6 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey {
             .invoke("RemoveCertification", (key, userAttributes, certification))?;
         Ok(__cordl_ret.into())
     }
-    pub fn RemoveCertification_Gc_Gc0(
-        key: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
-        >,
-        userAttributes: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpUserAttributeSubpacketVector,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RemoveCertification", (key, userAttributes))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn RemoveCertification_Gc_Gc1(
-        key: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
-        >,
-        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RemoveCertification", (key, id))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn RemoveCertification_Gc_Gc4(
-        key: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
-        >,
-        certification: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RemoveCertification", (key, certification))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn UpdateDigest(
         d: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
         b: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -542,20 +542,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey {
             .invoke("UpdateDigest", (d, b))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
-        &mut self,
-        publicPk: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Bcpg::PublicKeyPacket,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (publicPk))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc4(
+    pub fn _ctor_PgpPublicKey4(
         &mut self,
         pubKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
@@ -568,22 +555,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey {
             .invoke(".ctor", (pubKey))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_Gc2(
-        &mut self,
-        publicPk: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Bcpg::PublicKeyPacket,
-        >,
-        trustPk: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::TrustPacket>,
-        sigs: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (publicPk, trustPk, sigs))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_Gc_Gc3(
+    pub fn _ctor_PgpPublicKey_TrustPacket_IList3(
         &mut self,
         key: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
@@ -598,7 +570,35 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey {
             .invoke(".ctor", (key, trust, subSigs))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_Gc6(
+    pub fn _ctor_PublicKeyAlgorithmTag_AsymmetricKeyParameter_DateTime0(
+        &mut self,
+        algorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
+        pubKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
+        _cordl_time: crate::System::DateTime,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (algorithm, pubKey, _cordl_time))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_PublicKeyPacket1(
+        &mut self,
+        publicPk: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::PublicKeyPacket,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (publicPk))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_PublicKeyPacket_IList_IList6(
         &mut self,
         publicPk: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::PublicKeyPacket,
@@ -613,7 +613,22 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey {
             .invoke(".ctor", (publicPk, ids, idSigs))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_Gc_Gc_Gc_Gc5(
+    pub fn _ctor_PublicKeyPacket_TrustPacket_IList2(
+        &mut self,
+        publicPk: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::PublicKeyPacket,
+        >,
+        trustPk: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::TrustPacket>,
+        sigs: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (publicPk, trustPk, sigs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_PublicKeyPacket_TrustPacket_IList_IList_IList_IList5(
         &mut self,
         publicPk: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::PublicKeyPacket,
@@ -629,21 +644,6 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (publicPk, trustPk, keySigs, ids, idTrusts, idSigs))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_PublicKeyAlgorithmTag_Gc_DateTime0(
-        &mut self,
-        algorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
-        pubKey: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        >,
-        _cordl_time: crate::System::DateTime,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (algorithm, pubKey, _cordl_time))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_Algorithm(

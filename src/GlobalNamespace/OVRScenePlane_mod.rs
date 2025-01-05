@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRScenePlane {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _Width_k__BackingField: f32,
     pub _Height_k__BackingField: f32,
     pub _Offset_k__BackingField: crate::UnityEngine::Vector2,
@@ -18,7 +18,9 @@ pub struct OVRScenePlane {
     >,
     pub _boundaryRequested: bool,
     pub _sceneAnchor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSceneAnchor>,
-    pub _boundary: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
+    pub _boundary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector2>,
+    >,
 }
 #[cfg(feature = "OVRScenePlane")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -27,7 +29,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRScenePlane")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRScenePlane {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -164,13 +166,20 @@ impl crate::GlobalNamespace::OVRScenePlane {
     pub fn get_Boundary(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                crate::UnityEngine::Vector2,
+            >,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2> = __cordl_object
-            .invoke("get_Boundary", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                crate::UnityEngine::Vector2,
+            >,
+        > = __cordl_object.invoke("get_Boundary", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_Dimensions(
@@ -287,20 +296,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRScenePlane
     }
 }
 #[cfg(feature = "OVRScenePlane")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IOVRSceneComponent>>
+impl AsRef<crate::GlobalNamespace::IOVRSceneComponent>
 for crate::GlobalNamespace::OVRScenePlane {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IOVRSceneComponent> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IOVRSceneComponent {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OVRScenePlane")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IOVRSceneComponent>>
+impl AsMut<crate::GlobalNamespace::IOVRSceneComponent>
 for crate::GlobalNamespace::OVRScenePlane {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IOVRSceneComponent> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IOVRSceneComponent {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -359,16 +364,16 @@ impl crate::GlobalNamespace::OVRScenePlane_GetBoundaryJob {
     }
 }
 #[cfg(feature = "OVRScenePlane+GetBoundaryJob")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob>>
+impl AsRef<crate::Unity::Jobs::IJob>
 for crate::GlobalNamespace::OVRScenePlane_GetBoundaryJob {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob> {
+    fn as_ref(&self) -> &crate::Unity::Jobs::IJob {
         todo!()
     }
 }
 #[cfg(feature = "OVRScenePlane+GetBoundaryJob")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob>>
+impl AsMut<crate::Unity::Jobs::IJob>
 for crate::GlobalNamespace::OVRScenePlane_GetBoundaryJob {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob> {
+    fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJob {
         todo!()
     }
 }
@@ -410,16 +415,16 @@ impl crate::GlobalNamespace::OVRScenePlane_GetBoundaryLengthJob {
     }
 }
 #[cfg(feature = "OVRScenePlane+GetBoundaryLengthJob")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob>>
+impl AsRef<crate::Unity::Jobs::IJob>
 for crate::GlobalNamespace::OVRScenePlane_GetBoundaryLengthJob {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob> {
+    fn as_ref(&self) -> &crate::Unity::Jobs::IJob {
         todo!()
     }
 }
 #[cfg(feature = "OVRScenePlane+GetBoundaryLengthJob")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob>>
+impl AsMut<crate::Unity::Jobs::IJob>
 for crate::GlobalNamespace::OVRScenePlane_GetBoundaryLengthJob {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJob> {
+    fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJob {
         todo!()
     }
 }

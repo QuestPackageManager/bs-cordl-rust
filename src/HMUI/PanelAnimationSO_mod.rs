@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PanelAnimationSO {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+    __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _duration: f32,
     pub _scaleXAnimationCurve: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::AnimationCurve,
@@ -24,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+PanelAnimationSO")]
 impl std::ops::Deref for crate::HMUI::PanelAnimationSO {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>;
+    type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,18 +37,7 @@ impl std::ops::DerefMut for crate::HMUI::PanelAnimationSO {
 }
 #[cfg(feature = "HMUI+PanelAnimationSO")]
 impl crate::HMUI::PanelAnimationSO {
-    pub fn ExecuteAnimation_Gc0(
-        &mut self,
-        go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ExecuteAnimation", (go))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ExecuteAnimation_Gc1(
+    pub fn ExecuteAnimation_Action1(
         &mut self,
         go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         finishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -60,7 +49,7 @@ impl crate::HMUI::PanelAnimationSO {
             .invoke("ExecuteAnimation", (go, finishedCallback))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ExecuteAnimation_Gc_Gc2(
+    pub fn ExecuteAnimation_CanvasGroup_Action2(
         &mut self,
         go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         parentCanvasGroup: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
@@ -73,7 +62,7 @@ impl crate::HMUI::PanelAnimationSO {
             .invoke("ExecuteAnimation", (go, parentCanvasGroup, finishedCallback))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ExecuteAnimation_Gc__cordl_bool_Gc3(
+    pub fn ExecuteAnimation_CanvasGroup__cordl_bool_Action3(
         &mut self,
         go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         parentCanvasGroup: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
@@ -88,6 +77,17 @@ impl crate::HMUI::PanelAnimationSO {
                 "ExecuteAnimation",
                 (go, parentCanvasGroup, instant, finishedCallback),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ExecuteAnimation_GameObject0(
+        &mut self,
+        go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ExecuteAnimation", (go))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

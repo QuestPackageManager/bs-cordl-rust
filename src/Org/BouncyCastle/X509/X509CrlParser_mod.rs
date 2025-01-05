@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509CrlParser {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub lazyAsn1: bool,
     pub sCrlData: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Set>,
     pub sCrlDataObjectCount: i32,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+X509+X509CrlParser")]
 impl std::ops::Deref for crate::Org::BouncyCastle::X509::X509CrlParser {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -73,7 +73,7 @@ impl crate::Org::BouncyCastle::X509::X509CrlParser {
             .invoke_void(".ctor", (lazyAsn1))?;
         Ok(__cordl_object.into())
     }
-    pub fn ReadCrl_Gc0(
+    pub fn ReadCrl_Il2CppArray0(
         &mut self,
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
@@ -87,7 +87,7 @@ impl crate::Org::BouncyCastle::X509::X509CrlParser {
         > = __cordl_object.invoke("ReadCrl", (input))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadCrl_Gc1(
+    pub fn ReadCrl_Stream1(
         &mut self,
         inStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<
@@ -101,7 +101,7 @@ impl crate::Org::BouncyCastle::X509::X509CrlParser {
         > = __cordl_object.invoke("ReadCrl", (inStream))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadCrls_Gc0(
+    pub fn ReadCrls_Il2CppArray0(
         &mut self,
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
@@ -115,7 +115,7 @@ impl crate::Org::BouncyCastle::X509::X509CrlParser {
         > = __cordl_object.invoke("ReadCrls", (input))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadCrls_Gc1(
+    pub fn ReadCrls_Stream1(
         &mut self,
         inStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<

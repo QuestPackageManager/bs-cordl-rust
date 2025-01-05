@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TrueReadOnlyCollection_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<T>,
+    __cordl_parent: crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "System+Runtime+CompilerServices+TrueReadOnlyCollection_1")]
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+CompilerServices+TrueReadOnlyCollection_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Runtime::CompilerServices::TrueReadOnlyCollection_1<T> {
-    type Target = quest_hook::libil2cpp::Gc<T>;
+    type Target = crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

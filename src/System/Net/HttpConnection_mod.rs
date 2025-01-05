@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HttpConnection {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub sock: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
     pub stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub epl: quest_hook::libil2cpp::Gc<crate::System::Net::EndPointListener>,
@@ -42,7 +42,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+HttpConnection")]
 impl std::ops::Deref for crate::System::Net::HttpConnection {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -216,7 +216,7 @@ impl crate::System::Net::HttpConnection {
             .invoke("SendError", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn SendError_Gc_i32_0(
+    pub fn SendError_Il2CppString_i32_0(
         &mut self,
         msg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         status: i32,

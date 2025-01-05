@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CmsTypedStream {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _in: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsTypedStream")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::CmsTypedStream {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -39,16 +39,7 @@ impl crate::Org::BouncyCastle::Cms::CmsTypedStream {
             .invoke("Drain", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
-        inStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (inStream))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc1(
+    pub fn New_Il2CppString_Stream1(
         oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         inStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -58,7 +49,7 @@ impl crate::Org::BouncyCastle::Cms::CmsTypedStream {
             .invoke_void(".ctor", (oid, inStream))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_i32_2(
+    pub fn New_Il2CppString_Stream_i32_2(
         oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         inStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         bufSize: i32,
@@ -69,18 +60,16 @@ impl crate::Org::BouncyCastle::Cms::CmsTypedStream {
             .invoke_void(".ctor", (oid, inStream, bufSize))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc0(
-        &mut self,
+    pub fn New_Stream0(
         inStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (inStream))?;
-        Ok(__cordl_ret.into())
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (inStream))?;
+        Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Il2CppString_Stream1(
         &mut self,
         oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         inStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -92,7 +81,7 @@ impl crate::Org::BouncyCastle::Cms::CmsTypedStream {
             .invoke(".ctor", (oid, inStream))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_i32_2(
+    pub fn _ctor_Il2CppString_Stream_i32_2(
         &mut self,
         oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         inStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -103,6 +92,17 @@ impl crate::Org::BouncyCastle::Cms::CmsTypedStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (oid, inStream, bufSize))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Stream0(
+        &mut self,
+        inStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (inStream))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_ContentStream(
@@ -145,9 +145,7 @@ for crate::Org::BouncyCastle::Cms::CmsTypedStream {
 #[repr(C)]
 #[derive(Debug)]
 pub struct CmsTypedStream_FullReaderStream {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Utilities::IO::FilterStream,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::FilterStream,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsTypedStream+FullReaderStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -157,9 +155,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsTypedStream+FullReaderStream")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::CmsTypedStream_FullReaderStream {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Utilities::IO::FilterStream,
-    >;
+    type Target = crate::Org::BouncyCastle::Utilities::IO::FilterStream;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PS4PublisherSKUSettingsSO {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::SonyPublisherSKUSettingsSO,
-    >,
+    __cordl_parent: crate::GlobalNamespace::SonyPublisherSKUSettingsSO,
     pub _buildVersion: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion,
     >,
@@ -25,9 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PS4PublisherSKUSettingsSO")]
 impl std::ops::Deref for crate::GlobalNamespace::PS4PublisherSKUSettingsSO {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::SonyPublisherSKUSettingsSO,
-    >;
+    type Target = crate::GlobalNamespace::SonyPublisherSKUSettingsSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -141,7 +137,7 @@ for crate::GlobalNamespace::PS4PublisherSKUSettingsSO {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PS4PublisherSKUSettingsSO_PS4BuildVersion {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _masterVersion: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SonyVersion>,
     pub _applicationVersion: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SonyVersion,
@@ -156,7 +152,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "PS4PublisherSKUSettingsSO+PS4BuildVersion")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

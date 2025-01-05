@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OperatingSystem {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _version: quest_hook::libil2cpp::Gc<crate::System::Version>,
     pub _platform: crate::System::PlatformID,
     pub _servicePack: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+OperatingSystem")]
 impl std::ops::Deref for crate::System::OperatingSystem {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -55,7 +55,7 @@ impl crate::System::OperatingSystem {
             .invoke("GetObjectData", (info, context))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Il2CppString1(
         platform: crate::System::PlatformID,
         version: quest_hook::libil2cpp::Gc<crate::System::Version>,
         servicePack: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -66,7 +66,7 @@ impl crate::System::OperatingSystem {
             .invoke_void(".ctor", (platform, version, servicePack))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_PlatformID_Gc0(
+    pub fn New_PlatformID_Version0(
         platform: crate::System::PlatformID,
         version: quest_hook::libil2cpp::Gc<crate::System::Version>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -89,7 +89,7 @@ impl crate::System::OperatingSystem {
         > = __cordl_object.invoke("ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
         platform: crate::System::PlatformID,
         version: quest_hook::libil2cpp::Gc<crate::System::Version>,
@@ -102,7 +102,7 @@ impl crate::System::OperatingSystem {
             .invoke(".ctor", (platform, version, servicePack))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_PlatformID_Gc0(
+    pub fn _ctor_PlatformID_Version0(
         &mut self,
         platform: crate::System::PlatformID,
         version: quest_hook::libil2cpp::Gc<crate::System::Version>,
@@ -148,40 +148,28 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::OperatingSystem {
     }
 }
 #[cfg(feature = "System+OperatingSystem")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
+impl AsRef<crate::System::ICloneable> for crate::System::OperatingSystem {
+    fn as_ref(&self) -> &crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+OperatingSystem")]
+impl AsMut<crate::System::ICloneable> for crate::System::OperatingSystem {
+    fn as_mut(&mut self) -> &mut crate::System::ICloneable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+OperatingSystem")]
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
 for crate::System::OperatingSystem {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+OperatingSystem")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ICloneable>>
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
 for crate::System::OperatingSystem {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::ICloneable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+OperatingSystem")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::OperatingSystem {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+OperatingSystem")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::OperatingSystem {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }

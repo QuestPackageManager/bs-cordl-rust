@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlConvert {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Xml+XmlConvert")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlConvert")]
 impl std::ops::Deref for crate::System::Xml::XmlConvert {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -43,12 +43,10 @@ impl crate::System::Xml::XmlConvert {
             .invoke("CreateException", (res, exceptionType, lineNo, linePos))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateException_Gc_ExceptionType2(
+    pub fn CreateException_Il2CppArray_ExceptionType2(
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
         exceptionType: crate::System::Xml::ExceptionType,
     ) -> quest_hook::libil2cpp::Result<
@@ -58,7 +56,22 @@ impl crate::System::Xml::XmlConvert {
             .invoke("CreateException", (res, args, exceptionType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateException_Gc_ExceptionType_i32_i32_1(
+    pub fn CreateException_Il2CppArray_ExceptionType_i32_i32_3(
+        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+        exceptionType: crate::System::Xml::ExceptionType,
+        lineNo: i32,
+        linePos: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateException", (res, args, exceptionType, lineNo, linePos))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateException_Il2CppString_ExceptionType_i32_i32_1(
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         exceptionType: crate::System::Xml::ExceptionType,
@@ -71,24 +84,7 @@ impl crate::System::Xml::XmlConvert {
             .invoke("CreateException", (res, arg, exceptionType, lineNo, linePos))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateException_Gc_ExceptionType_i32_i32_3(
-        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
-        >,
-        exceptionType: crate::System::Xml::ExceptionType,
-        lineNo: i32,
-        linePos: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Exception>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateException", (res, args, exceptionType, lineNo, linePos))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn CreateInvalidCharException_Gc_i32_ExceptionType0(
+    pub fn CreateInvalidCharException_Il2CppString_i32_ExceptionType0(
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         invCharPos: i32,
         exceptionType: crate::System::Xml::ExceptionType,
@@ -238,7 +234,7 @@ impl crate::System::Xml::XmlConvert {
             .invoke("EncodeLocalName", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn EncodeName_Gc0(
+    pub fn EncodeName_Il2CppString0(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -261,7 +257,7 @@ impl crate::System::Xml::XmlConvert {
             .invoke("EncodeName", (name, first, local))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FromBinHexString_Gc0(
+    pub fn FromBinHexString_Il2CppString0(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -298,15 +294,11 @@ impl crate::System::Xml::XmlConvert {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("SplitString", (value))?;
         Ok(__cordl_ret.into())
@@ -374,23 +366,21 @@ impl crate::System::Xml::XmlConvert {
             .invoke("ToDateTimeOffset", (s))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToDateTime_Gc0(
-        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        let __cordl_ret: crate::System::DateTime = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToDateTime", (s))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ToDateTime_Gc1(
+    pub fn ToDateTime_Il2CppArray1(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         formats: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
         let __cordl_ret: crate::System::DateTime = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ToDateTime", (s, formats))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToDateTime_Il2CppString0(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_ret: crate::System::DateTime = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToDateTime", (s))?;
         Ok(__cordl_ret.into())
     }
     pub fn ToDateTime_XmlDateTimeSerializationMode2(
@@ -474,7 +464,7 @@ impl crate::System::Xml::XmlConvert {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ToString", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_DateTime_Gc14(
+    pub fn ToString_DateTime_Il2CppString14(
         value: crate::System::DateTime,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -964,7 +954,7 @@ impl crate::System::Xml::XmlConvert {
             .invoke("VerifyNCName", (name, exceptionType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn VerifyNCName_Gc0(
+    pub fn VerifyNCName_Il2CppString0(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1010,15 +1000,11 @@ impl crate::System::Xml::XmlConvert {
     }
     pub fn get_AllDateTimeFormats() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("get_AllDateTimeFormats", ())?;
         Ok(__cordl_ret.into())

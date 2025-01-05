@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameEnergyUIPanel {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _energyBar: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
     pub _playableDirector: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Playables::PlayableDirector,
@@ -16,7 +16,9 @@ pub struct GameEnergyUIPanel {
         crate::GlobalNamespace::IGameEnergyCounter,
     >,
     pub _batteryLifeSegments: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+        >,
     >,
     pub _activeBatteryLifeSegmentsCount: i32,
     pub _energyBarRectTransform: quest_hook::libil2cpp::Gc<
@@ -30,7 +32,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "GameEnergyUIPanel")]
 impl std::ops::Deref for crate::GlobalNamespace::GameEnergyUIPanel {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

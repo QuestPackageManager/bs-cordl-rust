@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StyleValueExtensions {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleValueExtensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+StyleValueExtensions")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::StyleValueExtensions {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -25,8 +25,8 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::StyleValueExtensions
 #[cfg(feature = "UnityEngine+UIElements+StyleValueExtensions")]
 impl crate::UnityEngine::UIElements::StyleValueExtensions {
     pub fn CopyFrom<T>(
-        list: quest_hook::libil2cpp::Gc<T>,
-        other: quest_hook::libil2cpp::Gc<T>,
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+        other: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -37,7 +37,9 @@ impl crate::UnityEngine::UIElements::StyleValueExtensions {
         Ok(__cordl_ret.into())
     }
     pub fn DebugString<T>(
-        styleValue: quest_hook::libil2cpp::Gc<T>,
+        styleValue: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IStyleValue_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >

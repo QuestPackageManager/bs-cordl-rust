@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TlsEccUtilities {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsEccUtilities")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsEccUtilities")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -432,7 +432,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             .invoke("WriteECExponent", (k, output))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteECFieldElement_Gc0(
+    pub fn WriteECFieldElement_ECFieldElement_Stream0(
         x: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECFieldElement>,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -440,7 +440,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             .invoke("WriteECFieldElement", (x, output))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteECFieldElement_i32_Gc1(
+    pub fn WriteECFieldElement_i32_BigInteger_Stream1(
         fieldSize: i32,
         x: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,

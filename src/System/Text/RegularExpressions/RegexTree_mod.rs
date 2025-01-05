@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RegexTree {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Root: quest_hook::libil2cpp::Gc<
         crate::System::Text::RegularExpressions::RegexNode,
     >,
@@ -11,9 +11,7 @@ pub struct RegexTree {
     pub CapTop: i32,
     pub CapNames: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub CapsList: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub Options: crate::System::Text::RegularExpressions::RegexOptions,
 }
@@ -24,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Text+RegularExpressions+RegexTree")]
 impl std::ops::Deref for crate::System::Text::RegularExpressions::RegexTree {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -46,9 +44,7 @@ impl crate::System::Text::RegularExpressions::RegexTree {
         capTop: i32,
         capNames: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
         capsList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
         options: crate::System::Text::RegularExpressions::RegexOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -71,9 +67,7 @@ impl crate::System::Text::RegularExpressions::RegexTree {
         capTop: i32,
         capNames: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
         capsList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
         options: crate::System::Text::RegularExpressions::RegexOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

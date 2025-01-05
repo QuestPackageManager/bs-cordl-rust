@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LocalizedText {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::BGLib::Polyglot::LocalizedTextComponent_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
     >,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BGLib+Polyglot+LocalizedText")]
 impl std::ops::Deref for crate::BGLib::Polyglot::LocalizedText {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::BGLib::Polyglot::LocalizedTextComponent_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
     >;
     fn deref(&self) -> &Self::Target {

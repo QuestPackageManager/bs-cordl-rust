@@ -35,7 +35,7 @@ impl crate::UnityEngine::InputSystem::DeltaStateEventBuffer_InputSystem__data_e_
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputSystem {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputSystem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -44,7 +44,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputSystem")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputSystem {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -63,7 +63,7 @@ impl crate::UnityEngine::InputSystem::InputSystem {
     pub type DeltaStateEventBuffer = crate::UnityEngine::InputSystem::InputSystem_DeltaStateEventBuffer;
     #[cfg(feature = "UnityEngine+InputSystem+InputSystem+StateEventBuffer")]
     pub type StateEventBuffer = crate::UnityEngine::InputSystem::InputSystem_StateEventBuffer;
-    pub fn AddDeviceUsage_Gc0(
+    pub fn AddDeviceUsage_Il2CppString0(
         device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
         usage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -79,7 +79,7 @@ impl crate::UnityEngine::InputSystem::InputSystem {
             .invoke("AddDeviceUsage", (device, usage))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddDevice_Gc1<TDevice>(
+    pub fn AddDevice_Il2CppString1<TDevice>(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<TDevice>
     where
@@ -90,14 +90,7 @@ impl crate::UnityEngine::InputSystem::InputSystem {
             .invoke("AddDevice", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddDevice_Gc3(
-        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AddDevice", (device))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn AddDevice_Gc_Gc_Gc0(
+    pub fn AddDevice_Il2CppString_Il2CppString_Il2CppString0(
         layout: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         variants: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -108,6 +101,13 @@ impl crate::UnityEngine::InputSystem::InputSystem {
             crate::UnityEngine::InputSystem::InputDevice,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("AddDevice", (layout, name, variants))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddDevice_InputDevice3(
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddDevice", (device))?;
         Ok(__cordl_ret.into())
     }
     pub fn AddDevice_InputDeviceDescription2(
@@ -175,7 +175,7 @@ impl crate::UnityEngine::InputSystem::InputSystem {
             .invoke("FindControls", (path, controls))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FindControls_Gc0(
+    pub fn FindControls_Il2CppString0(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputControlList_1<
@@ -188,7 +188,7 @@ impl crate::UnityEngine::InputSystem::InputSystem {
             .invoke("FindControls", (path))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FindControls_Gc1<TControl>(
+    pub fn FindControls_Il2CppString1<TControl>(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputControlList_1<TControl>,
@@ -228,7 +228,7 @@ impl crate::UnityEngine::InputSystem::InputSystem {
             .invoke("GetDevice", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetDevice_Gc0(
+    pub fn GetDevice_Il2CppString0(
         nameOrLayout: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
@@ -239,18 +239,7 @@ impl crate::UnityEngine::InputSystem::InputSystem {
             .invoke("GetDevice", (nameOrLayout))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetDevice_Gc2(
-        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputDevice,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetDevice", (_cordl_type))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetDevice_Gc4<TDevice>(
+    pub fn GetDevice_Il2CppString4<TDevice>(
         usage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<TDevice>
     where
@@ -272,6 +261,17 @@ impl crate::UnityEngine::InputSystem::InputSystem {
             .invoke("GetDevice", (usage))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetDevice_Type2(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputDevice,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDevice", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetNameOfBaseLayout(
         layoutName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -285,18 +285,24 @@ impl crate::UnityEngine::InputSystem::InputSystem {
     }
     pub fn GetUnsupportedDevices_0() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetUnsupportedDevices", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetUnsupportedDevices_Gc1(
+    pub fn GetUnsupportedDevices_List_1_1(
         descriptions: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -325,18 +331,24 @@ impl crate::UnityEngine::InputSystem::InputSystem {
     }
     pub fn ListEnabledActions_0() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ListEnabledActions", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ListEnabledActions_Gc1(
+    pub fn ListEnabledActions_List_1_1(
         actions: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -345,22 +357,30 @@ impl crate::UnityEngine::InputSystem::InputSystem {
     }
     pub fn ListInteractions() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ListInteractions", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn ListLayouts() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ListLayouts", ())?;
         Ok(__cordl_ret.into())
     }
@@ -368,22 +388,30 @@ impl crate::UnityEngine::InputSystem::InputSystem {
         baseLayout: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ListLayoutsBasedOn", (baseLayout))?;
         Ok(__cordl_ret.into())
     }
     pub fn ListProcessors() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ListProcessors", ())?;
         Ok(__cordl_ret.into())
     }
@@ -401,7 +429,7 @@ impl crate::UnityEngine::InputSystem::InputSystem {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("LoadLayout", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn LoadLayout_Gc0(
+    pub fn LoadLayout_Il2CppString0(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -488,15 +516,7 @@ impl crate::UnityEngine::InputSystem::InputSystem {
             .invoke("QueueTextEvent", (device, character, _cordl_time))?;
         Ok(__cordl_ret.into())
     }
-    pub fn RegisterBindingComposite_Gc0(
-        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RegisterBindingComposite", (_cordl_type, name))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn RegisterBindingComposite_Gc1<T>(
+    pub fn RegisterBindingComposite_Il2CppString1<T>(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -507,15 +527,15 @@ impl crate::UnityEngine::InputSystem::InputSystem {
             .invoke("RegisterBindingComposite", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn RegisterInteraction_Gc0(
+    pub fn RegisterBindingComposite_Type_Il2CppString0(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RegisterInteraction", (_cordl_type, name))?;
+            .invoke("RegisterBindingComposite", (_cordl_type, name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn RegisterInteraction_Gc1<T>(
+    pub fn RegisterInteraction_Il2CppString1<T>(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -526,10 +546,20 @@ impl crate::UnityEngine::InputSystem::InputSystem {
             .invoke("RegisterInteraction", (name))?;
         Ok(__cordl_ret.into())
     }
+    pub fn RegisterInteraction_Type_Il2CppString0(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RegisterInteraction", (_cordl_type, name))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn RegisterLayoutBuilder(
         buildMethod: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
+            crate::System::Func_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
+                >,
             >,
         >,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -542,7 +572,7 @@ impl crate::UnityEngine::InputSystem::InputSystem {
             .invoke("RegisterLayoutBuilder", (buildMethod, name, baseLayout, matches))?;
         Ok(__cordl_ret.into())
     }
-    pub fn RegisterLayoutMatcher_Gc_InputDeviceMatcher0(
+    pub fn RegisterLayoutMatcher_Il2CppString_InputDeviceMatcher0(
         layoutName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         matcher: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -569,18 +599,7 @@ impl crate::UnityEngine::InputSystem::InputSystem {
             .invoke("RegisterLayoutOverride", (json, name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn RegisterLayout_Gc_Nullable_1_0(
-        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        matches: crate::System::Nullable_1<
-            crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RegisterLayout", (_cordl_type, name, matches))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn RegisterLayout_Gc_Nullable_1_2(
+    pub fn RegisterLayout_Il2CppString_Il2CppString_Nullable_1_2(
         json: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         matches: crate::System::Nullable_1<
@@ -591,7 +610,7 @@ impl crate::UnityEngine::InputSystem::InputSystem {
             .invoke("RegisterLayout", (json, name, matches))?;
         Ok(__cordl_ret.into())
     }
-    pub fn RegisterLayout_Nullable_1_1<T>(
+    pub fn RegisterLayout_Il2CppString_Nullable_1_1<T>(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         matches: crate::System::Nullable_1<
             crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
@@ -605,6 +624,17 @@ impl crate::UnityEngine::InputSystem::InputSystem {
             .invoke("RegisterLayout", (name, matches))?;
         Ok(__cordl_ret.into())
     }
+    pub fn RegisterLayout_Type_Il2CppString_Nullable_1_0(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        matches: crate::System::Nullable_1<
+            crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RegisterLayout", (_cordl_type, name, matches))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn RegisterPrecompiledLayout<TDevice>(
         metadata: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -616,15 +646,7 @@ impl crate::UnityEngine::InputSystem::InputSystem {
             .invoke("RegisterPrecompiledLayout", (metadata))?;
         Ok(__cordl_ret.into())
     }
-    pub fn RegisterProcessor_Gc0(
-        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RegisterProcessor", (_cordl_type, name))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn RegisterProcessor_Gc1<T>(
+    pub fn RegisterProcessor_Il2CppString1<T>(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -635,6 +657,14 @@ impl crate::UnityEngine::InputSystem::InputSystem {
             .invoke("RegisterProcessor", (name))?;
         Ok(__cordl_ret.into())
     }
+    pub fn RegisterProcessor_Type_Il2CppString0(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RegisterProcessor", (_cordl_type, name))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn RemoveDevice(
         device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -642,7 +672,7 @@ impl crate::UnityEngine::InputSystem::InputSystem {
             .invoke("RemoveDevice", (device))?;
         Ok(__cordl_ret.into())
     }
-    pub fn RemoveDeviceUsage_Gc0(
+    pub fn RemoveDeviceUsage_Il2CppString0(
         device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
         usage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -699,7 +729,7 @@ impl crate::UnityEngine::InputSystem::InputSystem {
             .invoke("RunInitializeInPlayer", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetDeviceUsage_Gc0(
+    pub fn SetDeviceUsage_Il2CppString0(
         device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
         usage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -775,8 +805,10 @@ impl crate::UnityEngine::InputSystem::InputSystem {
     }
     pub fn add_onActionChange(
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            crate::UnityEngine::InputSystem::InputActionChange,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                crate::UnityEngine::InputSystem::InputActionChange,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -799,8 +831,10 @@ impl crate::UnityEngine::InputSystem::InputSystem {
     }
     pub fn add_onDeviceChange(
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
-            crate::UnityEngine::InputSystem::InputDeviceChange,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+                crate::UnityEngine::InputSystem::InputDeviceChange,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -827,8 +861,10 @@ impl crate::UnityEngine::InputSystem::InputSystem {
     }
     pub fn add_onLayoutChange(
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            crate::UnityEngine::InputSystem::InputControlLayoutChange,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                crate::UnityEngine::InputSystem::InputControlLayoutChange,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -877,11 +913,15 @@ impl crate::UnityEngine::InputSystem::InputSystem {
     }
     pub fn get_onAnyButtonPress() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+            crate::System::IObservable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+            crate::System::IObservable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("get_onAnyButtonPress", ())?;
         Ok(__cordl_ret.into())
@@ -928,8 +968,10 @@ impl crate::UnityEngine::InputSystem::InputSystem {
     }
     pub fn remove_onActionChange(
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            crate::UnityEngine::InputSystem::InputActionChange,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                crate::UnityEngine::InputSystem::InputActionChange,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -952,8 +994,10 @@ impl crate::UnityEngine::InputSystem::InputSystem {
     }
     pub fn remove_onDeviceChange(
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
-            crate::UnityEngine::InputSystem::InputDeviceChange,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+                crate::UnityEngine::InputSystem::InputDeviceChange,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -980,8 +1024,10 @@ impl crate::UnityEngine::InputSystem::InputSystem {
     }
     pub fn remove_onLayoutChange(
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            crate::UnityEngine::InputSystem::InputControlLayoutChange,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                crate::UnityEngine::InputSystem::InputControlLayoutChange,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()

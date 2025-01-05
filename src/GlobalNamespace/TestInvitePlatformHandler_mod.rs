@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TestInvitePlatformHandler {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "TestInvitePlatformHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TestInvitePlatformHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::TestInvitePlatformHandler {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -70,20 +70,16 @@ for crate::GlobalNamespace::TestInvitePlatformHandler {
     }
 }
 #[cfg(feature = "TestInvitePlatformHandler")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IInvitePlatformHandler>>
+impl AsRef<crate::GlobalNamespace::IInvitePlatformHandler>
 for crate::GlobalNamespace::TestInvitePlatformHandler {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IInvitePlatformHandler> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IInvitePlatformHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "TestInvitePlatformHandler")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IInvitePlatformHandler>>
+impl AsMut<crate::GlobalNamespace::IInvitePlatformHandler>
 for crate::GlobalNamespace::TestInvitePlatformHandler {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IInvitePlatformHandler> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IInvitePlatformHandler {
         unsafe { std::mem::transmute(self) }
     }
 }

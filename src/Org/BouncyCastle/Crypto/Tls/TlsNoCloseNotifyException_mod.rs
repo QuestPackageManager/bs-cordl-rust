@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TlsNoCloseNotifyException {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::IO::EndOfStreamException>,
+    __cordl_parent: crate::System::IO::EndOfStreamException,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsNoCloseNotifyException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsNoCloseNotifyException")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Tls::TlsNoCloseNotifyException {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::IO::EndOfStreamException>;
+    type Target = crate::System::IO::EndOfStreamException;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

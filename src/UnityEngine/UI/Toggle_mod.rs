@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Toggle {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
+    __cordl_parent: crate::UnityEngine::UI::Selectable,
     pub toggleTransition: crate::UnityEngine::UI::Toggle_ToggleTransition,
     pub graphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
     pub m_Group: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ToggleGroup>,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+Toggle")]
 impl std::ops::Deref for crate::UnityEngine::UI::Toggle {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>;
+    type Target = crate::UnityEngine::UI::Selectable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -280,88 +280,56 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Toggle {
     }
 }
 #[cfg(feature = "UnityEngine+UI+Toggle")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
-> for crate::UnityEngine::UI::Toggle {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IEventSystemHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UI+Toggle")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
-> for crate::UnityEngine::UI::Toggle {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IEventSystemHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UI+Toggle")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerClickHandler>,
-> for crate::UnityEngine::UI::Toggle {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerClickHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UI+Toggle")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerClickHandler>,
-> for crate::UnityEngine::UI::Toggle {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerClickHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UI+Toggle")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISubmitHandler>>
+impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
 for crate::UnityEngine::UI::Toggle {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISubmitHandler> {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Toggle")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISubmitHandler>>
+impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
 for crate::UnityEngine::UI::Toggle {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::ISubmitHandler,
-    > {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Toggle")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>>
+impl AsRef<crate::UnityEngine::EventSystems::IPointerClickHandler>
 for crate::UnityEngine::UI::Toggle {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement> {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerClickHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Toggle")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>>
+impl AsMut<crate::UnityEngine::EventSystems::IPointerClickHandler>
 for crate::UnityEngine::UI::Toggle {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerClickHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Toggle")]
+impl AsRef<crate::UnityEngine::EventSystems::ISubmitHandler>
+for crate::UnityEngine::UI::Toggle {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::ISubmitHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Toggle")]
+impl AsMut<crate::UnityEngine::EventSystems::ISubmitHandler>
+for crate::UnityEngine::UI::Toggle {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::ISubmitHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Toggle")]
+impl AsRef<crate::UnityEngine::UI::ICanvasElement> for crate::UnityEngine::UI::Toggle {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::ICanvasElement {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Toggle")]
+impl AsMut<crate::UnityEngine::UI::ICanvasElement> for crate::UnityEngine::UI::Toggle {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ICanvasElement {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -369,7 +337,7 @@ for crate::UnityEngine::UI::Toggle {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Toggle_ToggleEvent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<bool>,
+    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<bool>,
 }
 #[cfg(feature = "UnityEngine+UI+Toggle+ToggleEvent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -378,7 +346,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+Toggle+ToggleEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::Toggle_ToggleEvent {
-    type Target = quest_hook::libil2cpp::Gc<bool>;
+    type Target = crate::UnityEngine::Events::UnityEvent_1<bool>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

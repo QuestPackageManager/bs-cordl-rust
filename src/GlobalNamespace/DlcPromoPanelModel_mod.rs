@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DlcPromoPanelModel {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _additionalContentModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IAdditionalContentModel,
     >,
@@ -24,23 +24,23 @@ pub struct DlcPromoPanelModel {
     >,
     pub _notOwnedMusicPackPromoInfos: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
-            >,
+            *mut crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
         >,
     >,
     pub _ownedMusicPackPromoInfos: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
-            >,
+            *mut crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
         >,
     >,
     pub _updatingNotOwnedPacks: bool,
     pub _initialized: bool,
     pub _random: quest_hook::libil2cpp::Gc<crate::System::Random>,
     pub _promoInfos: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+            >,
+        >,
     >,
     pub _defaultPromoInfo: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
@@ -49,19 +49,23 @@ pub struct DlcPromoPanelModel {
         crate::System::Threading::Tasks::Task,
     >,
     pub _cacheNextPackDataTask: quest_hook::libil2cpp::Gc<
-        crate::System::ValueTuple_2<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+        crate::System::Threading::Tasks::Task_1<
+            crate::System::ValueTuple_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+                >,
+                bool,
             >,
-            bool,
         >,
     >,
     pub _loadDlcPromoPanelDataHandle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DlcPromoPanelDataSO>,
     >,
     pub _loadPackPromoInfoHandles: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackPromoInfoSO>,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackPromoInfoSO>,
+            >,
         >,
     >,
     pub hotReloadDidStart: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -74,7 +78,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "DlcPromoPanelModel")]
 impl std::ops::Deref for crate::GlobalNamespace::DlcPromoPanelModel {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -147,13 +151,17 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         customText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetExperimentEventData", (itemId, page, customText))?;
         Ok(__cordl_ret.into())
@@ -162,11 +170,13 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::ValueTuple_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+            crate::System::Threading::Tasks::Task_1<
+                crate::System::ValueTuple_2<
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+                    >,
+                    bool,
                 >,
-                bool,
             >,
         >,
     > {
@@ -174,11 +184,13 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::ValueTuple_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+            crate::System::Threading::Tasks::Task_1<
+                crate::System::ValueTuple_2<
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+                    >,
+                    bool,
                 >,
-                bool,
             >,
         > = __cordl_object.invoke("GetPackDataForMainMenuPromoBanner", ())?;
         Ok(__cordl_ret.into())
@@ -187,11 +199,13 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::ValueTuple_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+            crate::System::Threading::Tasks::Task_1<
+                crate::System::ValueTuple_2<
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+                    >,
+                    bool,
                 >,
-                bool,
             >,
         >,
     > {
@@ -199,11 +213,13 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::ValueTuple_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+            crate::System::Threading::Tasks::Task_1<
+                crate::System::ValueTuple_2<
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+                    >,
+                    bool,
                 >,
-                bool,
             >,
         > = __cordl_object.invoke("GetPackDataForMainMenuPromoBannerInternal", ())?;
         Ok(__cordl_ret.into())
@@ -269,14 +285,18 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         pack: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackDefinitionSO>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackPromoInfoSO>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackPromoInfoSO>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackPromoInfoSO>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackPromoInfoSO>,
+            >,
         > = __cordl_object.invoke("LoadPackPromoInfoAsync", (pack))?;
         Ok(__cordl_ret.into())
     }
@@ -489,18 +509,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DlcPromoPanel
     }
 }
 #[cfg(feature = "DlcPromoPanelModel")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>>
+impl AsRef<crate::Zenject::IInitializable>
 for crate::GlobalNamespace::DlcPromoPanelModel {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable> {
+    fn as_ref(&self) -> &crate::Zenject::IInitializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "DlcPromoPanelModel")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>>
+impl AsMut<crate::Zenject::IInitializable>
 for crate::GlobalNamespace::DlcPromoPanelModel {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IInitializable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -508,7 +526,7 @@ for crate::GlobalNamespace::DlcPromoPanelModel {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DlcPromoPanelModel_PromoInfo {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub promoType: crate::GlobalNamespace::PromoInfo_DlcPromoPanelModel_PromoType,
     pub id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
@@ -523,7 +541,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "DlcPromoPanelModel+PromoInfo")]
 impl std::ops::Deref for crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -538,7 +556,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo
 impl crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
     #[cfg(feature = "DlcPromoPanelModel+PromoInfo+PromoType")]
     pub type PromoType = crate::GlobalNamespace::PromoInfo_DlcPromoPanelModel_PromoType;
-    pub fn New_Gc_PlayerSensitivityFlag1(
+    pub fn New_PackPromoInfoSO_LevelPromoInfo_PlayerSensitivityFlag1(
         levelPromoInfo: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PackPromoInfoSO_LevelPromoInfo,
         >,
@@ -550,7 +568,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
             .invoke_void(".ctor", (levelPromoInfo, contentRating))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_PromoInfo_DlcPromoPanelModel_PromoType_Gc_Gc_PlayerSensitivityFlag0(
+    pub fn New_PromoInfo_DlcPromoPanelModel_PromoType_Il2CppString_PromoBannerInfoSO_PlayerSensitivityFlag0(
         promoType: crate::GlobalNamespace::PromoInfo_DlcPromoPanelModel_PromoType,
         id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         promoBannerInfo: quest_hook::libil2cpp::Gc<
@@ -564,7 +582,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
             .invoke_void(".ctor", (promoType, id, promoBannerInfo, contentRating))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc_PlayerSensitivityFlag1(
+    pub fn _ctor_PackPromoInfoSO_LevelPromoInfo_PlayerSensitivityFlag1(
         &mut self,
         levelPromoInfo: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PackPromoInfoSO_LevelPromoInfo,
@@ -578,7 +596,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
             .invoke(".ctor", (levelPromoInfo, contentRating))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_PromoInfo_DlcPromoPanelModel_PromoType_Gc_Gc_PlayerSensitivityFlag0(
+    pub fn _ctor_PromoInfo_DlcPromoPanelModel_PromoType_Il2CppString_PromoBannerInfoSO_PlayerSensitivityFlag0(
         &mut self,
         promoType: crate::GlobalNamespace::PromoInfo_DlcPromoPanelModel_PromoType,
         id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

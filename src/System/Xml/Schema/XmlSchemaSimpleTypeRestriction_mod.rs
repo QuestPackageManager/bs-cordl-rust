@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaSimpleTypeRestriction {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::XmlSchemaSimpleTypeContent,
-    >,
+    __cordl_parent: crate::System::Xml::Schema::XmlSchemaSimpleTypeContent,
     pub baseTypeName: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub baseType: quest_hook::libil2cpp::Gc<
         crate::System::Xml::Schema::XmlSchemaSimpleType,
@@ -21,9 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlSchemaSimpleTypeRestriction")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaSimpleTypeRestriction {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::XmlSchemaSimpleTypeContent,
-    >;
+    type Target = crate::System::Xml::Schema::XmlSchemaSimpleTypeContent;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

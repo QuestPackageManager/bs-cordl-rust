@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BoxCuttableBySaber {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CuttableBySaber>,
+    __cordl_parent: crate::GlobalNamespace::CuttableBySaber,
     pub _collider: quest_hook::libil2cpp::Gc<crate::UnityEngine::BoxCollider>,
     pub _canBeCut: bool,
     pub _radius: f32,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BoxCuttableBySaber")]
 impl std::ops::Deref for crate::GlobalNamespace::BoxCuttableBySaber {
-    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CuttableBySaber>;
+    type Target = crate::GlobalNamespace::CuttableBySaber;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

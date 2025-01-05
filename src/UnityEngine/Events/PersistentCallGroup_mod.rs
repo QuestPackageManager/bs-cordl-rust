@@ -2,9 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PersistentCallGroup {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Calls: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::PersistentCall>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::PersistentCall>,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+Events+PersistentCallGroup")]
@@ -14,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Events+PersistentCallGroup")]
 impl std::ops::Deref for crate::UnityEngine::Events::PersistentCallGroup {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

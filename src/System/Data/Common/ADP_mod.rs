@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ADP {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Data+Common+ADP")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+Common+ADP")]
 impl std::ops::Deref for crate::System::Data::Common::ADP {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -33,7 +33,7 @@ impl crate::System::Data::Common::ADP {
             .invoke("Argument", (error))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ArgumentOutOfRange_Gc0(
+    pub fn ArgumentOutOfRange_Il2CppString0(
         parameterName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::ArgumentOutOfRangeException>,
@@ -44,7 +44,7 @@ impl crate::System::Data::Common::ADP {
             .invoke("ArgumentOutOfRange", (parameterName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ArgumentOutOfRange_Gc1(
+    pub fn ArgumentOutOfRange_Il2CppString1(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         parameterName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<

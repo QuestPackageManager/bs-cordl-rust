@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GetMemberBinder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Dynamic::DynamicMetaObjectBinder,
-    >,
+    __cordl_parent: crate::System::Dynamic::DynamicMetaObjectBinder,
     pub _Name_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
@@ -17,9 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Dynamic+GetMemberBinder")]
 impl std::ops::Deref for crate::System::Dynamic::GetMemberBinder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Dynamic::DynamicMetaObjectBinder,
-    >;
+    type Target = crate::System::Dynamic::DynamicMetaObjectBinder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,7 +33,7 @@ impl crate::System::Dynamic::GetMemberBinder {
         target: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
         args: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+                *mut crate::System::Dynamic::DynamicMetaObject,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -51,7 +47,7 @@ impl crate::System::Dynamic::GetMemberBinder {
         > = __cordl_object.invoke("Bind", (target, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FallbackGetMember_Gc0(
+    pub fn FallbackGetMember_DynamicMetaObject0(
         &mut self,
         target: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     ) -> quest_hook::libil2cpp::Result<
@@ -65,7 +61,7 @@ impl crate::System::Dynamic::GetMemberBinder {
         > = __cordl_object.invoke("FallbackGetMember", (target))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FallbackGetMember_Gc1(
+    pub fn FallbackGetMember_DynamicMetaObject1(
         &mut self,
         target: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
         errorSuggestion: quest_hook::libil2cpp::Gc<

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextureIntSwitchEventEffect {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _materialPropertyBlockController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MaterialPropertyBlockController,
     >,
@@ -24,8 +24,10 @@ pub struct TextureIntSwitchEventEffect {
     >,
     pub _texturePropertyId: i32,
     pub _valueToTextureMap: quest_hook::libil2cpp::Gc<
-        i32,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+        >,
     >,
 }
 #[cfg(feature = "TextureIntSwitchEventEffect")]
@@ -35,7 +37,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TextureIntSwitchEventEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::TextureIntSwitchEventEffect {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

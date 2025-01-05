@@ -2,15 +2,19 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapLevelsEntitlementModel {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _additionalContentEntitlementModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IAdditionalContentEntitlementModel,
     >,
     pub _alwaysOwnedBeatmapLevelIds: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::HashSet_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _alwaysOwnedPacksIds: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::HashSet_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapLevelsEntitlementModel")]
@@ -20,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapLevelsEntitlementModel")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelsEntitlementModel {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -49,13 +53,19 @@ impl crate::GlobalNamespace::BeatmapLevelsEntitlementModel {
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelDataVersion>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::BeatmapLevelDataVersion,
+            >,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapLevelDataVersion,
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::BeatmapLevelDataVersion,
+            >,
         > = __cordl_object.invoke("GetLevelDataVersionAsync", (levelId, token))?;
         Ok(__cordl_ret.into())
     }
@@ -64,13 +74,19 @@ impl crate::GlobalNamespace::BeatmapLevelsEntitlementModel {
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EntitlementStatus>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::EntitlementStatus,
+            >,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::EntitlementStatus,
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::EntitlementStatus,
+            >,
         > = __cordl_object.invoke("GetLevelEntitlementStatusAsync", (levelId, token))?;
         Ok(__cordl_ret.into())
     }
@@ -79,13 +95,19 @@ impl crate::GlobalNamespace::BeatmapLevelsEntitlementModel {
         levelPackId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EntitlementStatus>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::EntitlementStatus,
+            >,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::EntitlementStatus,
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::EntitlementStatus,
+            >,
         > = __cordl_object
             .invoke("GetPackEntitlementStatusAsync", (levelPackId, token))?;
         Ok(__cordl_ret.into())
@@ -126,20 +148,16 @@ for crate::GlobalNamespace::BeatmapLevelsEntitlementModel {
     }
 }
 #[cfg(feature = "BeatmapLevelsEntitlementModel")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEntitlementModel>>
+impl AsRef<crate::GlobalNamespace::IEntitlementModel>
 for crate::GlobalNamespace::BeatmapLevelsEntitlementModel {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEntitlementModel> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IEntitlementModel {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BeatmapLevelsEntitlementModel")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEntitlementModel>>
+impl AsMut<crate::GlobalNamespace::IEntitlementModel>
 for crate::GlobalNamespace::BeatmapLevelsEntitlementModel {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEntitlementModel> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IEntitlementModel {
         unsafe { std::mem::transmute(self) }
     }
 }

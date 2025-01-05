@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaSubstitutionGroupV1Compat {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::XmlSchemaSubstitutionGroup,
-    >,
+    __cordl_parent: crate::System::Xml::Schema::XmlSchemaSubstitutionGroup,
     pub choice: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaChoice>,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaSubstitutionGroupV1Compat")]
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlSchemaSubstitutionGroupV1Compat")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaSubstitutionGroupV1Compat {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::XmlSchemaSubstitutionGroup,
-    >;
+    type Target = crate::System::Xml::Schema::XmlSchemaSubstitutionGroup;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

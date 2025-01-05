@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Cubemap {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+    __cordl_parent: crate::UnityEngine::Texture,
 }
 #[cfg(feature = "UnityEngine+Cubemap")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Cubemap")]
 impl std::ops::Deref for crate::UnityEngine::Cubemap {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>;
+    type Target = crate::UnityEngine::Texture;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -397,7 +397,7 @@ impl crate::UnityEngine::Cubemap {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetPixelData_Gc0<T>(
+    pub fn SetPixelData_Il2CppArray0<T>(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         mipLevel: i32,
@@ -492,7 +492,7 @@ impl crate::UnityEngine::Cubemap {
             .invoke("SetPixel", (face, x, y, color, mip))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetPixels_Gc_CubemapFace1(
+    pub fn SetPixels_Il2CppArray_CubemapFace1(
         &mut self,
         colors: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,

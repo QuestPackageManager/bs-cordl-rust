@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Datatype_ENUMERATION {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::Datatype_NMTOKEN,
-    >,
+    __cordl_parent: crate::System::Xml::Schema::Datatype_NMTOKEN,
 }
 #[cfg(feature = "System+Xml+Schema+Datatype_ENUMERATION")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+Datatype_ENUMERATION")]
 impl std::ops::Deref for crate::System::Xml::Schema::Datatype_ENUMERATION {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::Datatype_NMTOKEN,
-    >;
+    type Target = crate::System::Xml::Schema::Datatype_NMTOKEN;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,13 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultJsonNameTable {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonNameTable>,
+    __cordl_parent: crate::Newtonsoft::Json::JsonNameTable,
     pub _count: i32,
     pub _entries: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::Newtonsoft::Json::DefaultJsonNameTable_Entry,
-            >,
+            *mut crate::Newtonsoft::Json::DefaultJsonNameTable_Entry,
         >,
     >,
     pub _mask: i32,
@@ -20,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+DefaultJsonNameTable")]
 impl std::ops::Deref for crate::Newtonsoft::Json::DefaultJsonNameTable {
-    type Target = quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonNameTable>;
+    type Target = crate::Newtonsoft::Json::JsonNameTable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -132,7 +130,7 @@ for crate::Newtonsoft::Json::DefaultJsonNameTable {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultJsonNameTable_Entry {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub HashCode: i32,
     pub Next: quest_hook::libil2cpp::Gc<
@@ -146,7 +144,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+DefaultJsonNameTable+Entry")]
 impl std::ops::Deref for crate::Newtonsoft::Json::DefaultJsonNameTable_Entry {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

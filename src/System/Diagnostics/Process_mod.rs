@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Process {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::ComponentModel::Component>,
+    __cordl_parent: crate::System::ComponentModel::Component,
     pub haveProcessId: bool,
     pub processId: i32,
     pub haveProcessHandle: bool,
@@ -56,7 +56,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Diagnostics+Process")]
 impl std::ops::Deref for crate::System::Diagnostics::Process {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::ComponentModel::Component>;
+    type Target = crate::System::ComponentModel::Component;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -177,7 +177,7 @@ impl crate::System::Diagnostics::Process {
             .invoke("GetCurrentProcess", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetProcessById_Gc1(
+    pub fn GetProcessById_Il2CppString1(
         processId: i32,
         machineName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -267,7 +267,7 @@ impl crate::System::Diagnostics::Process {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc__cordl_bool_i32_Gc1(
+    pub fn New_Il2CppString__cordl_bool_i32_ProcessInfo1(
         machineName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isRemoteMachine: bool,
         processId: i32,
@@ -282,7 +282,7 @@ impl crate::System::Diagnostics::Process {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_i32_2(
+    pub fn New_SafeProcessHandle_i32_2(
         handle: quest_hook::libil2cpp::Gc<
             crate::Microsoft::Win32::SafeHandles::SafeProcessHandle,
         >,
@@ -479,7 +479,7 @@ impl crate::System::Diagnostics::Process {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc__cordl_bool_i32_Gc1(
+    pub fn _ctor_Il2CppString__cordl_bool_i32_ProcessInfo1(
         &mut self,
         machineName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isRemoteMachine: bool,
@@ -493,7 +493,7 @@ impl crate::System::Diagnostics::Process {
             .invoke(".ctor", (machineName, isRemoteMachine, processId, processInfo))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_i32_2(
+    pub fn _ctor_SafeProcessHandle_i32_2(
         &mut self,
         handle: quest_hook::libil2cpp::Gc<
             crate::Microsoft::Win32::SafeHandles::SafeProcessHandle,
@@ -651,9 +651,7 @@ pub struct Process_ProcInfo {
     pub process_handle: crate::System::IntPtr,
     pub pid: i32,
     pub envVariables: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub UserName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Domain: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

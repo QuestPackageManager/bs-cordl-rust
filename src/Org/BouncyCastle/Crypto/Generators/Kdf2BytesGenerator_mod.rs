@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Kdf2BytesGenerator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Generators::BaseKdfBytesGenerator,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Crypto::Generators::BaseKdfBytesGenerator,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+Kdf2BytesGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+Kdf2BytesGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Generators::Kdf2BytesGenerator {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Generators::BaseKdfBytesGenerator,
-    >;
+    type Target = crate::Org::BouncyCastle::Crypto::Generators::BaseKdfBytesGenerator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

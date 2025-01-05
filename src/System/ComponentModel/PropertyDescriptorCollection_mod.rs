@@ -2,20 +2,18 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PropertyDescriptorCollection {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cachedFoundProperties: quest_hook::libil2cpp::Gc<
         crate::System::Collections::IDictionary,
     >,
     pub _cachedIgnoreCase: bool,
     pub _properties: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::System::ComponentModel::PropertyDescriptor>,
+            *mut crate::System::ComponentModel::PropertyDescriptor,
         >,
     >,
     pub _namedSort: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
     pub _propsOwned: bool,
@@ -34,7 +32,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+ComponentModel+PropertyDescriptorCollection")]
 impl std::ops::Deref for crate::System::ComponentModel::PropertyDescriptorCollection {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -172,22 +170,7 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection {
             .invoke("Insert", (index, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn InternalSort_Gc0(
-        &mut self,
-        names: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InternalSort", (names))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn InternalSort_Gc1(
+    pub fn InternalSort_IComparer1(
         &mut self,
         sorter: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -198,12 +181,23 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection {
             .invoke("InternalSort", (sorter))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn InternalSort_Il2CppArray0(
+        &mut self,
+        names: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InternalSort", (names))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn New_Il2CppArray0(
         properties: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::ComponentModel::PropertyDescriptor,
-                >,
+                *mut crate::System::ComponentModel::PropertyDescriptor,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -216,9 +210,7 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection {
     pub fn New__cordl_bool1(
         properties: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::ComponentModel::PropertyDescriptor,
-                >,
+                *mut crate::System::ComponentModel::PropertyDescriptor,
             >,
         >,
         readOnly: bool,
@@ -229,19 +221,15 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection {
             .invoke_void(".ctor", (properties, readOnly))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_Gc_Gc2(
+    pub fn New_i32_Il2CppArray_IComparer2(
         properties: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::ComponentModel::PropertyDescriptor,
-                >,
+                *mut crate::System::ComponentModel::PropertyDescriptor,
             >,
         >,
         propCount: i32,
         namedSort: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
         comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -278,9 +266,7 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection {
     pub fn Sort(
         &mut self,
         names: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -593,13 +579,11 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection {
             .invoke("System.Collections.IList.set_Item", (index, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Il2CppArray0(
         &mut self,
         properties: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::ComponentModel::PropertyDescriptor,
-                >,
+                *mut crate::System::ComponentModel::PropertyDescriptor,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -614,9 +598,7 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection {
         &mut self,
         properties: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::ComponentModel::PropertyDescriptor,
-                >,
+                *mut crate::System::ComponentModel::PropertyDescriptor,
             >,
         >,
         readOnly: bool,
@@ -628,20 +610,16 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection {
             .invoke(".ctor", (properties, readOnly))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_Gc_Gc2(
+    pub fn _ctor_i32_Il2CppArray_IComparer2(
         &mut self,
         properties: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::ComponentModel::PropertyDescriptor,
-                >,
+                *mut crate::System::ComponentModel::PropertyDescriptor,
             >,
         >,
         propCount: i32,
         namedSort: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
         comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -659,7 +637,7 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection {
         let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn get_Item_Gc1(
+    pub fn get_Item_Il2CppString1(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -710,72 +688,58 @@ for crate::System::ComponentModel::PropertyDescriptorCollection {
     }
 }
 #[cfg(feature = "System+ComponentModel+PropertyDescriptorCollection")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
+impl AsRef<crate::System::Collections::ICollection>
 for crate::System::ComponentModel::PropertyDescriptorCollection {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
+    fn as_ref(&self) -> &crate::System::Collections::ICollection {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+ComponentModel+PropertyDescriptorCollection")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>>
+impl AsMut<crate::System::Collections::ICollection>
 for crate::System::ComponentModel::PropertyDescriptorCollection {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::ICollection {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+ComponentModel+PropertyDescriptorCollection")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>>
+impl AsRef<crate::System::Collections::IDictionary>
 for crate::System::ComponentModel::PropertyDescriptorCollection {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary> {
+    fn as_ref(&self) -> &crate::System::Collections::IDictionary {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+ComponentModel+PropertyDescriptorCollection")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>>
+impl AsMut<crate::System::Collections::IDictionary>
 for crate::System::ComponentModel::PropertyDescriptorCollection {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IDictionary {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+ComponentModel+PropertyDescriptorCollection")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+impl AsRef<crate::System::Collections::IEnumerable>
 for crate::System::ComponentModel::PropertyDescriptorCollection {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+ComponentModel+PropertyDescriptorCollection")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+impl AsMut<crate::System::Collections::IEnumerable>
 for crate::System::ComponentModel::PropertyDescriptorCollection {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+ComponentModel+PropertyDescriptorCollection")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IList>>
+impl AsRef<crate::System::Collections::IList>
 for crate::System::ComponentModel::PropertyDescriptorCollection {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IList> {
+    fn as_ref(&self) -> &crate::System::Collections::IList {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+ComponentModel+PropertyDescriptorCollection")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IList>>
+impl AsMut<crate::System::Collections::IList>
 for crate::System::ComponentModel::PropertyDescriptorCollection {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IList> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IList {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -785,7 +749,7 @@ for crate::System::ComponentModel::PropertyDescriptorCollection {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PropertyDescriptorCollection_PropertyDescriptorEnumerator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _owner: quest_hook::libil2cpp::Gc<
         crate::System::ComponentModel::PropertyDescriptorCollection,
     >,
@@ -805,7 +769,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::System::ComponentModel::PropertyDescriptorCollection_PropertyDescriptorEnumerator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -929,46 +893,36 @@ for crate::System::ComponentModel::PropertyDescriptorCollection_PropertyDescript
 #[cfg(
     feature = "System+ComponentModel+PropertyDescriptorCollection+PropertyDescriptorEnumerator"
 )]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionaryEnumerator>>
+impl AsRef<crate::System::Collections::IDictionaryEnumerator>
 for crate::System::ComponentModel::PropertyDescriptorCollection_PropertyDescriptorEnumerator {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionaryEnumerator> {
+    fn as_ref(&self) -> &crate::System::Collections::IDictionaryEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(
     feature = "System+ComponentModel+PropertyDescriptorCollection+PropertyDescriptorEnumerator"
 )]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionaryEnumerator>>
+impl AsMut<crate::System::Collections::IDictionaryEnumerator>
 for crate::System::ComponentModel::PropertyDescriptorCollection_PropertyDescriptorEnumerator {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Collections::IDictionaryEnumerator,
-    > {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IDictionaryEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(
     feature = "System+ComponentModel+PropertyDescriptorCollection+PropertyDescriptorEnumerator"
 )]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
+impl AsRef<crate::System::Collections::IEnumerator>
 for crate::System::ComponentModel::PropertyDescriptorCollection_PropertyDescriptorEnumerator {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(
     feature = "System+ComponentModel+PropertyDescriptorCollection+PropertyDescriptorEnumerator"
 )]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
+impl AsMut<crate::System::Collections::IEnumerator>
 for crate::System::ComponentModel::PropertyDescriptorCollection_PropertyDescriptorEnumerator {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }

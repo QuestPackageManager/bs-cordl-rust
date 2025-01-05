@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ActivatedClientTypeEntry {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Remoting::TypeEntry,
-    >,
+    __cordl_parent: crate::System::Runtime::Remoting::TypeEntry,
     pub applicationUrl: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub obj_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
@@ -16,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+Remoting+ActivatedClientTypeEntry")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::ActivatedClientTypeEntry {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::TypeEntry>;
+    type Target = crate::System::Runtime::Remoting::TypeEntry;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -84,9 +82,7 @@ impl crate::System::Runtime::Remoting::ActivatedClientTypeEntry {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Runtime::Remoting::Contexts::IContextAttribute,
-                >,
+                *mut crate::System::Runtime::Remoting::Contexts::IContextAttribute,
             >,
         >,
     > {
@@ -95,9 +91,7 @@ impl crate::System::Runtime::Remoting::ActivatedClientTypeEntry {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Runtime::Remoting::Contexts::IContextAttribute,
-                >,
+                *mut crate::System::Runtime::Remoting::Contexts::IContextAttribute,
             >,
         > = __cordl_object.invoke("get_ContextAttributes", ())?;
         Ok(__cordl_ret.into())

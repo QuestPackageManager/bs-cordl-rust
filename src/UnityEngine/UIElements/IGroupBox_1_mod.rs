@@ -44,24 +44,16 @@ for crate::UnityEngine::UIElements::IGroupBox_1<T> {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IGroupBox_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGroupBox>>
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::UnityEngine::UIElements::IGroupBox>
 for crate::UnityEngine::UIElements::IGroupBox_1<T> {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGroupBox> {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IGroupBox {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IGroupBox_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGroupBox>>
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::UnityEngine::UIElements::IGroupBox>
 for crate::UnityEngine::UIElements::IGroupBox_1<T> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGroupBox> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IGroupBox {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PkiFailureInfo {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::DerBitString,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::DerBitString,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+PkiFailureInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+PkiFailureInfo")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Cmp::PkiFailureInfo {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::DerBitString,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::DerBitString;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -55,7 +51,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiFailureInfo {
     pub const UnsupportedVersion: i32 = 131072i32;
     pub const WrongAuthority: i32 = 2i32;
     pub const WrongIntegrity: i32 = 2048i32;
-    pub fn New_Gc1(
+    pub fn New_DerBitString1(
         info: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerBitString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -86,7 +82,7 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiFailureInfo {
         > = __cordl_object.invoke("ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_DerBitString1(
         &mut self,
         info: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerBitString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

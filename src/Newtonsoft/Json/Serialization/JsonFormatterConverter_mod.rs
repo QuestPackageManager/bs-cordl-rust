@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonFormatterConverter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _reader: quest_hook::libil2cpp::Gc<
         crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader,
     >,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonFormatterConverter")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Serialization::JsonFormatterConverter {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,7 +35,7 @@ for crate::Newtonsoft::Json::Serialization::JsonFormatterConverter {
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonFormatterConverter")]
 impl crate::Newtonsoft::Json::Serialization::JsonFormatterConverter {
-    pub fn Convert_Gc0(
+    pub fn Convert_Type0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -283,26 +283,18 @@ for crate::Newtonsoft::Json::Serialization::JsonFormatterConverter {
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonFormatterConverter")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::IFormatterConverter>,
-> for crate::Newtonsoft::Json::Serialization::JsonFormatterConverter {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IFormatterConverter,
-    > {
+impl AsRef<crate::System::Runtime::Serialization::IFormatterConverter>
+for crate::Newtonsoft::Json::Serialization::JsonFormatterConverter {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::IFormatterConverter {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonFormatterConverter")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::IFormatterConverter>,
-> for crate::Newtonsoft::Json::Serialization::JsonFormatterConverter {
+impl AsMut<crate::System::Runtime::Serialization::IFormatterConverter>
+for crate::Newtonsoft::Json::Serialization::JsonFormatterConverter {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IFormatterConverter,
-    > {
+    ) -> &mut crate::System::Runtime::Serialization::IFormatterConverter {
         unsafe { std::mem::transmute(self) }
     }
 }

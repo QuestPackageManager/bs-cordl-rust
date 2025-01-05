@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointerInputModule {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::BaseInputModule,
-    >,
+    __cordl_parent: crate::UnityEngine::EventSystems::BaseInputModule,
     pub m_PointerData: quest_hook::libil2cpp::Gc<
-        i32,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
+        >,
     >,
     pub m_MouseState: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::EventSystems::PointerInputModule_MouseState,
@@ -20,9 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+EventSystems+PointerInputModule")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::PointerInputModule {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::BaseInputModule,
-    >;
+    type Target = crate::UnityEngine::EventSystems::BaseInputModule;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -281,7 +279,7 @@ for crate::UnityEngine::EventSystems::PointerInputModule {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointerInputModule_ButtonState {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Button: crate::UnityEngine::EventSystems::PointerEventData_InputButton,
     pub m_EventData: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::EventSystems::PointerInputModule_MouseButtonEventData,
@@ -296,7 +294,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+ButtonState")]
 impl std::ops::Deref
 for crate::UnityEngine::EventSystems::PointerInputModule_ButtonState {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -393,7 +391,7 @@ for crate::UnityEngine::EventSystems::PointerInputModule_ButtonState {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointerInputModule_MouseButtonEventData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub buttonState: crate::UnityEngine::EventSystems::PointerEventData_FramePressState,
     pub buttonData: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::EventSystems::PointerEventData,
@@ -408,7 +406,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+MouseButtonEventData")]
 impl std::ops::Deref
 for crate::UnityEngine::EventSystems::PointerInputModule_MouseButtonEventData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -468,10 +466,12 @@ for crate::UnityEngine::EventSystems::PointerInputModule_MouseButtonEventData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointerInputModule_MouseState {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_TrackedButtons: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::PointerInputModule_ButtonState,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::EventSystems::PointerInputModule_ButtonState,
+            >,
         >,
     >,
 }
@@ -484,7 +484,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+MouseState")]
 impl std::ops::Deref
 for crate::UnityEngine::EventSystems::PointerInputModule_MouseState {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

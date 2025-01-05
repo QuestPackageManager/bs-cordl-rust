@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Marker {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+    __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub m_Time: f64,
     pub _parent_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Timeline::TrackAsset,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Timeline+Marker")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::Marker {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>;
+    type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -120,20 +120,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Timeline::Marker 
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+Marker")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IMarker>>
+impl AsRef<crate::UnityEngine::Timeline::IMarker>
 for crate::UnityEngine::Timeline::Marker {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IMarker> {
+    fn as_ref(&self) -> &crate::UnityEngine::Timeline::IMarker {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+Marker")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IMarker>>
+impl AsMut<crate::UnityEngine::Timeline::IMarker>
 for crate::UnityEngine::Timeline::Marker {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IMarker> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Timeline::IMarker {
         unsafe { std::mem::transmute(self) }
     }
 }

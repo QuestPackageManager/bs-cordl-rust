@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Terrain {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Behaviour>,
+    __cordl_parent: crate::UnityEngine::Behaviour,
 }
 #[cfg(feature = "UnityEngine+Terrain")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Terrain")]
 impl std::ops::Deref for crate::UnityEngine::Terrain {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Behaviour>;
+    type Target = crate::UnityEngine::Behaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -66,15 +66,11 @@ impl crate::UnityEngine::Terrain {
     }
     pub fn get_activeTerrains() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Terrain>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Terrain>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("get_activeTerrains", ())?;
         Ok(__cordl_ret.into())

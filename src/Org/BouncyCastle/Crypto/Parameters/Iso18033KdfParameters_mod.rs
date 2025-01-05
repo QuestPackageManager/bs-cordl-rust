@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Iso18033KdfParameters {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub seed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+Iso18033KdfParameters")]
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+Iso18033KdfParameters")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Parameters::Iso18033KdfParameters {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -73,26 +73,18 @@ for crate::Org::BouncyCastle::Crypto::Parameters::Iso18033KdfParameters {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+Iso18033KdfParameters")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDerivationParameters>,
-> for crate::Org::BouncyCastle::Crypto::Parameters::Iso18033KdfParameters {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::IDerivationParameters,
-    > {
+impl AsRef<crate::Org::BouncyCastle::Crypto::IDerivationParameters>
+for crate::Org::BouncyCastle::Crypto::Parameters::Iso18033KdfParameters {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IDerivationParameters {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+Iso18033KdfParameters")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDerivationParameters>,
-> for crate::Org::BouncyCastle::Crypto::Parameters::Iso18033KdfParameters {
+impl AsMut<crate::Org::BouncyCastle::Crypto::IDerivationParameters>
+for crate::Org::BouncyCastle::Crypto::Parameters::Iso18033KdfParameters {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::IDerivationParameters,
-    > {
+    ) -> &mut crate::Org::BouncyCastle::Crypto::IDerivationParameters {
         unsafe { std::mem::transmute(self) }
     }
 }

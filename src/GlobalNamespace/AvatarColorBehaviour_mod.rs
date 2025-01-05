@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AvatarColorBehaviour {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Playables::PlayableBehaviour,
-    >,
+    __cordl_parent: crate::UnityEngine::Playables::PlayableBehaviour,
     pub _startColor: crate::UnityEngine::Color,
     pub _endColor: crate::UnityEngine::Color,
     pub _easeType: crate::GlobalNamespace::EaseType,
@@ -20,9 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "AvatarColorBehaviour")]
 impl std::ops::Deref for crate::GlobalNamespace::AvatarColorBehaviour {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Playables::PlayableBehaviour,
-    >;
+    type Target = crate::UnityEngine::Playables::PlayableBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

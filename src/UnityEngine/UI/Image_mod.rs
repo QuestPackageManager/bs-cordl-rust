@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Image {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::MaskableGraphic>,
+    __cordl_parent: crate::UnityEngine::UI::MaskableGraphic,
     pub m_Sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     pub m_OverrideSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     pub m_Type: crate::UnityEngine::UI::Image_Type,
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+Image")]
 impl std::ops::Deref for crate::UnityEngine::UI::Image {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::MaskableGraphic>;
+    type Target = crate::UnityEngine::UI::MaskableGraphic;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -52,7 +52,7 @@ impl crate::UnityEngine::UI::Image {
     pub type OriginVertical = crate::UnityEngine::UI::Image_OriginVertical;
     #[cfg(feature = "UnityEngine+UI+Image+Type")]
     pub type Type = crate::UnityEngine::UI::Image_Type;
-    pub fn AddQuad_Gc_Color32_Gc0(
+    pub fn AddQuad_Il2CppArray_Color32_Il2CppArray0(
         vertexHelper: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
         quadPositions: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
@@ -303,7 +303,7 @@ impl crate::UnityEngine::UI::Image {
             .invoke("PreserveSpriteAspectRatio", (rect, spriteSize))?;
         Ok(__cordl_ret.into())
     }
-    pub fn RadialCut_Gc0(
+    pub fn RadialCut_Il2CppArray0(
         xy: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
         >,
@@ -800,58 +800,40 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Image {
     }
 }
 #[cfg(feature = "UnityEngine+UI+Image")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::ICanvasRaycastFilter>>
-for crate::UnityEngine::UI::Image {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::ICanvasRaycastFilter> {
+impl AsRef<crate::UnityEngine::ICanvasRaycastFilter> for crate::UnityEngine::UI::Image {
+    fn as_ref(&self) -> &crate::UnityEngine::ICanvasRaycastFilter {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Image")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::ICanvasRaycastFilter>>
-for crate::UnityEngine::UI::Image {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::ICanvasRaycastFilter> {
+impl AsMut<crate::UnityEngine::ICanvasRaycastFilter> for crate::UnityEngine::UI::Image {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ICanvasRaycastFilter {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Image")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver>>
+impl AsRef<crate::UnityEngine::ISerializationCallbackReceiver>
 for crate::UnityEngine::UI::Image {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver> {
+    fn as_ref(&self) -> &crate::UnityEngine::ISerializationCallbackReceiver {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Image")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver>>
+impl AsMut<crate::UnityEngine::ISerializationCallbackReceiver>
 for crate::UnityEngine::UI::Image {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ISerializationCallbackReceiver,
-    > {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ISerializationCallbackReceiver {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Image")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement>>
-for crate::UnityEngine::UI::Image {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement> {
+impl AsRef<crate::UnityEngine::UI::ILayoutElement> for crate::UnityEngine::UI::Image {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::ILayoutElement {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Image")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement>>
-for crate::UnityEngine::UI::Image {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement> {
+impl AsMut<crate::UnityEngine::UI::ILayoutElement> for crate::UnityEngine::UI::Image {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ILayoutElement {
         unsafe { std::mem::transmute(self) }
     }
 }

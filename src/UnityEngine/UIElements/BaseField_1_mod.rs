@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseField_1<TValueType: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::BindableElement,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::BindableElement,
     pub m_LabelWidthRatio: f32,
     pub m_LabelExtraPadding: f32,
     pub m_LabelBaseMinWidth: f32,
@@ -13,7 +11,9 @@ pub struct BaseField_1<TValueType: quest_hook::libil2cpp::Type> {
         crate::UnityEngine::UIElements::VisualElement,
     >,
     pub m_Value: TValueType,
-    pub onValidateValue: quest_hook::libil2cpp::Gc<TValueType, TValueType>,
+    pub onValidateValue: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<TValueType, TValueType>,
+    >,
     pub _labelElement_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::Label,
     >,
@@ -44,9 +44,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+BaseField_1")]
 impl<TValueType: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::BaseField_1<TValueType> {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::BindableElement,
-    >;
+    type Target = crate::UnityEngine::UIElements::BindableElement;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -123,7 +121,7 @@ impl<
             .invoke("GetTooltipRect", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_Il2CppString0(
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
@@ -136,7 +134,7 @@ impl<
             .invoke_void(".ctor", (label))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_VisualElement1(
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         visualInput: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::VisualElement,
@@ -346,7 +344,7 @@ impl<
         let __cordl_ret: TValueType = __cordl_object.invoke("ValidatedValue", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Il2CppString0(
         &mut self,
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -361,7 +359,7 @@ impl<
             .invoke(".ctor", (label))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_VisualElement1(
         &mut self,
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         visualInput: quest_hook::libil2cpp::Gc<
@@ -381,7 +379,7 @@ impl<
     }
     pub fn add_onValidateValue(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<TValueType, TValueType>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Func_2<TValueType, TValueType>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -497,7 +495,7 @@ impl<
     }
     pub fn remove_onValidateValue(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<TValueType, TValueType>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Func_2<TValueType, TValueType>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -614,42 +612,40 @@ for crate::UnityEngine::UIElements::BaseField_1<TValueType> {
 #[cfg(feature = "UnityEngine+UIElements+BaseField_1")]
 impl<
     TValueType: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<TValueType>>
+> AsRef<crate::UnityEngine::UIElements::IEditableElement>
 for crate::UnityEngine::UIElements::BaseField_1<TValueType> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TValueType> {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IEditableElement {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseField_1")]
 impl<
     TValueType: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<TValueType>>
+> AsMut<crate::UnityEngine::UIElements::IEditableElement>
 for crate::UnityEngine::UIElements::BaseField_1<TValueType> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TValueType> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IEditableElement {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseField_1")]
 impl<
     TValueType: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IEditableElement>>
+> AsRef<crate::UnityEngine::UIElements::INotifyValueChanged_1<TValueType>>
 for crate::UnityEngine::UIElements::BaseField_1<TValueType> {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IEditableElement> {
+    ) -> &crate::UnityEngine::UIElements::INotifyValueChanged_1<TValueType> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseField_1")]
 impl<
     TValueType: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IEditableElement>>
+> AsMut<crate::UnityEngine::UIElements::INotifyValueChanged_1<TValueType>>
 for crate::UnityEngine::UIElements::BaseField_1<TValueType> {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::IEditableElement,
-    > {
+    ) -> &mut crate::UnityEngine::UIElements::INotifyValueChanged_1<TValueType> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -657,9 +653,7 @@ for crate::UnityEngine::UIElements::BaseField_1<TValueType> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseField_1_UxmlTraits<TValueType: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
     pub m_Label: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
     >,
@@ -673,9 +667,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+BaseField_1+UxmlTraits")]
 impl<TValueType: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<TValueType> {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
-    >;
+    type Target = crate::UnityEngine::UIElements::BindableElement_UxmlTraits;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -723,7 +715,9 @@ impl<
         choicesFromBag: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     >
     where
@@ -731,7 +725,9 @@ impl<
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ParseChoiceList", (choicesFromBag))?;
         Ok(__cordl_ret.into())

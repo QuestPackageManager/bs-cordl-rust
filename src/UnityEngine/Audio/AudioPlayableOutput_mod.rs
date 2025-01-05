@@ -159,20 +159,16 @@ impl crate::UnityEngine::Audio::AudioPlayableOutput {
     }
 }
 #[cfg(feature = "UnityEngine+Audio+AudioPlayableOutput")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::IPlayableOutput>>
+impl AsRef<crate::UnityEngine::Playables::IPlayableOutput>
 for crate::UnityEngine::Audio::AudioPlayableOutput {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::IPlayableOutput> {
+    fn as_ref(&self) -> &crate::UnityEngine::Playables::IPlayableOutput {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Audio+AudioPlayableOutput")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::IPlayableOutput>>
+impl AsMut<crate::UnityEngine::Playables::IPlayableOutput>
 for crate::UnityEngine::Audio::AudioPlayableOutput {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::IPlayableOutput> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::IPlayableOutput {
         todo!()
     }
 }

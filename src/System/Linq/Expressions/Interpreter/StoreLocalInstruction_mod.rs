@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StoreLocalInstruction {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::LocalAccessInstruction,
-    >,
+    __cordl_parent: crate::System::Linq::Expressions::Interpreter::LocalAccessInstruction,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+StoreLocalInstruction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Interpreter+StoreLocalInstruction")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::StoreLocalInstruction {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::LocalAccessInstruction,
-    >;
+    type Target = crate::System::Linq::Expressions::Interpreter::LocalAccessInstruction;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -111,30 +107,20 @@ for crate::System::Linq::Expressions::Interpreter::StoreLocalInstruction {
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+StoreLocalInstruction")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::IBoxableInstruction,
-    >,
-> for crate::System::Linq::Expressions::Interpreter::StoreLocalInstruction {
+impl AsRef<crate::System::Linq::Expressions::Interpreter::IBoxableInstruction>
+for crate::System::Linq::Expressions::Interpreter::StoreLocalInstruction {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::IBoxableInstruction,
-    > {
+    ) -> &crate::System::Linq::Expressions::Interpreter::IBoxableInstruction {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+StoreLocalInstruction")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::IBoxableInstruction,
-    >,
-> for crate::System::Linq::Expressions::Interpreter::StoreLocalInstruction {
+impl AsMut<crate::System::Linq::Expressions::Interpreter::IBoxableInstruction>
+for crate::System::Linq::Expressions::Interpreter::StoreLocalInstruction {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::IBoxableInstruction,
-    > {
+    ) -> &mut crate::System::Linq::Expressions::Interpreter::IBoxableInstruction {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FlowCoordinator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _baseInputModule: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::EventSystems::BaseInputModule,
     >,
@@ -10,7 +10,9 @@ pub struct FlowCoordinator {
     pub _parentFlowCoordinator: quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
     pub _childFlowCoordinator: quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
     pub _mainScreenViewControllers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+        >,
     >,
     pub _leftScreenViewController: quest_hook::libil2cpp::Gc<
         crate::HMUI::ViewController,
@@ -55,7 +57,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+FlowCoordinator")]
 impl std::ops::Deref for crate::HMUI::FlowCoordinator {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -414,7 +416,24 @@ impl crate::HMUI::FlowCoordinator {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReplaceTopViewController_Gc_Gc_ViewController_AnimationType_ViewController_AnimationDirection1(
+    pub fn ReplaceTopViewController_Action_ViewController_AnimationType_ViewController_AnimationDirection0(
+        &mut self,
+        viewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+        finishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
+        animationType: crate::HMUI::ViewController_AnimationType,
+        animationDirection: crate::HMUI::ViewController_AnimationDirection,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "ReplaceTopViewController",
+                (viewController, finishedCallback, animationType, animationDirection),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReplaceTopViewController_FlowCoordinator_FlowCoordinator_Action_ViewController_AnimationType_ViewController_AnimationDirection1(
         &mut self,
         viewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
         originalOwnerFlowCoordinator: quest_hook::libil2cpp::Gc<
@@ -439,23 +458,6 @@ impl crate::HMUI::FlowCoordinator {
                     animationType,
                     animationDirection,
                 ),
-            )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ReplaceTopViewController_ViewController_AnimationType_ViewController_AnimationDirection0(
-        &mut self,
-        viewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
-        finishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
-        animationType: crate::HMUI::ViewController_AnimationType,
-        animationDirection: crate::HMUI::ViewController_AnimationDirection,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "ReplaceTopViewController",
-                (viewController, finishedCallback, animationType, animationDirection),
             )?;
         Ok(__cordl_ret.into())
     }
@@ -553,9 +555,7 @@ impl crate::HMUI::FlowCoordinator {
             crate::HMUI::NavigationController,
         >,
         viewControllers: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::HMUI::ViewController>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

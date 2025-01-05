@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultValueTypeConverter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::ComponentModel::StringConverter,
-    >,
+    __cordl_parent: crate::System::ComponentModel::StringConverter,
 }
 #[cfg(feature = "System+Data+DefaultValueTypeConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+DefaultValueTypeConverter")]
 impl std::ops::Deref for crate::System::Data::DefaultValueTypeConverter {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::ComponentModel::StringConverter,
-    >;
+    type Target = crate::System::ComponentModel::StringConverter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -36,7 +36,7 @@ impl crate::Unity::Profiling::ProfilerMarker {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Il2CppString0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -47,7 +47,7 @@ impl crate::Unity::Profiling::ProfilerMarker {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_ProfilerCategory_Gc1(
+    pub fn _ctor_ProfilerCategory_Il2CppString1(
         &mut self,
         category: crate::Unity::Profiling::ProfilerCategory,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -107,16 +107,16 @@ impl crate::Unity::Profiling::ProfilerMarker_AutoScope {
     }
 }
 #[cfg(feature = "Unity+Profiling+ProfilerMarker+AutoScope")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsRef<crate::System::IDisposable>
 for crate::Unity::Profiling::ProfilerMarker_AutoScope {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         todo!()
     }
 }
 #[cfg(feature = "Unity+Profiling+ProfilerMarker+AutoScope")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsMut<crate::System::IDisposable>
 for crate::Unity::Profiling::ProfilerMarker_AutoScope {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         todo!()
     }
 }

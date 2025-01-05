@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ListViewController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::BaseListViewController,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::BaseListViewController,
 }
 #[cfg(feature = "UnityEngine+UIElements+ListViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+ListViewController")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ListViewController {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::BaseListViewController,
-    >;
+    type Target = crate::UnityEngine::UIElements::BaseListViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLevelSceneSetupData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneSetupData>,
+    __cordl_parent: crate::GlobalNamespace::SceneSetupData,
     pub beatmapKey: crate::GlobalNamespace::BeatmapKey,
     pub hasSong: bool,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplayerLevelSceneSetupData")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLevelSceneSetupData {
-    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneSetupData>;
+    type Target = crate::GlobalNamespace::SceneSetupData;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

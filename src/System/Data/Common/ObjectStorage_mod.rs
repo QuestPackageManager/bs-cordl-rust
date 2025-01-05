@@ -2,11 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObjectStorage {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Data::Common::DataStorage>,
+    __cordl_parent: crate::System::Data::Common::DataStorage,
     pub _values: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
     pub _implementsIXmlSerializable: bool,
 }
@@ -17,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+Common+ObjectStorage")]
 impl std::ops::Deref for crate::System::Data::Common::ObjectStorage {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Data::Common::DataStorage>;
+    type Target = crate::System::Data::Common::DataStorage;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -95,7 +93,7 @@ impl crate::System::Data::Common::ObjectStorage {
             .invoke("CompareWithFamilies", (valueNo1, valueNo2))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ConvertObjectToXml_Gc0(
+    pub fn ConvertObjectToXml_Il2CppObject0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
@@ -109,7 +107,7 @@ impl crate::System::Data::Common::ObjectStorage {
         > = __cordl_object.invoke("ConvertObjectToXml", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ConvertObjectToXml_Gc_Gc1(
+    pub fn ConvertObjectToXml_XmlWriter_XmlRootAttribute1(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         xmlWriter: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
@@ -124,7 +122,7 @@ impl crate::System::Data::Common::ObjectStorage {
             .invoke("ConvertObjectToXml", (value, xmlWriter, xmlAttrib))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ConvertXmlToObject_Gc0(
+    pub fn ConvertXmlToObject_Il2CppString0(
         &mut self,
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -138,7 +136,7 @@ impl crate::System::Data::Common::ObjectStorage {
         > = __cordl_object.invoke("ConvertXmlToObject", (s))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ConvertXmlToObject_Gc1(
+    pub fn ConvertXmlToObject_XmlReader_XmlRootAttribute1(
         &mut self,
         xmlReader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
         xmlAttrib: quest_hook::libil2cpp::Gc<
@@ -222,7 +220,7 @@ impl crate::System::Data::Common::ObjectStorage {
             .invoke("GetFamily", (dataType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetXmlSerializer_Gc0(
+    pub fn GetXmlSerializer_Type0(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::XmlSerializer>,
@@ -233,7 +231,7 @@ impl crate::System::Data::Common::ObjectStorage {
             .invoke("GetXmlSerializer", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetXmlSerializer_Gc1(
+    pub fn GetXmlSerializer_XmlRootAttribute1(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         attribute: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Serialization::XmlRootAttribute,
@@ -348,7 +346,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObjectStorage_TempAssemblyComparer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Data+Common+ObjectStorage+TempAssemblyComparer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -359,7 +357,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Data+Common+ObjectStorage+TempAssemblyComparer")]
 impl std::ops::Deref
 for crate::System::Data::Common::ObjectStorage_TempAssemblyComparer {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -439,7 +437,7 @@ for crate::System::Data::Common::ObjectStorage_TempAssemblyComparer {
 }
 #[cfg(feature = "System+Data+Common+ObjectStorage+TempAssemblyComparer")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IEqualityComparer_1<
         crate::System::Collections::Generic::KeyValuePair_2<
             quest_hook::libil2cpp::Gc<crate::System::Type>,
             quest_hook::libil2cpp::Gc<
@@ -450,7 +448,7 @@ impl AsRef<
 > for crate::System::Data::Common::ObjectStorage_TempAssemblyComparer {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::Collections::Generic::IEqualityComparer_1<
         crate::System::Collections::Generic::KeyValuePair_2<
             quest_hook::libil2cpp::Gc<crate::System::Type>,
             quest_hook::libil2cpp::Gc<
@@ -463,7 +461,7 @@ impl AsRef<
 }
 #[cfg(feature = "System+Data+Common+ObjectStorage+TempAssemblyComparer")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IEqualityComparer_1<
         crate::System::Collections::Generic::KeyValuePair_2<
             quest_hook::libil2cpp::Gc<crate::System::Type>,
             quest_hook::libil2cpp::Gc<
@@ -474,7 +472,7 @@ impl AsMut<
 > for crate::System::Data::Common::ObjectStorage_TempAssemblyComparer {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::Collections::Generic::IEqualityComparer_1<
         crate::System::Collections::Generic::KeyValuePair_2<
             quest_hook::libil2cpp::Gc<crate::System::Type>,
             quest_hook::libil2cpp::Gc<

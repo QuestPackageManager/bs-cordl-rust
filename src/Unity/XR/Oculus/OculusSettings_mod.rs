@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusSettings {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+    __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub m_StereoRenderingModeDesktop: crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeDesktop,
     pub m_StereoRenderingModeAndroid: crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeAndroid,
     pub SharedDepthBuffer: bool,
@@ -30,7 +30,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+XR+Oculus+OculusSettings")]
 impl std::ops::Deref for crate::Unity::XR::Oculus::OculusSettings {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>;
+    type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

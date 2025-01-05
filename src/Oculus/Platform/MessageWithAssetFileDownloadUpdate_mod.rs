@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithAssetFileDownloadUpdate {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Oculus::Platform::Message_1<
         quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Models::AssetFileDownloadUpdate,
         >,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+MessageWithAssetFileDownloadUpdate")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithAssetFileDownloadUpdate {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Oculus::Platform::Message_1<
         quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Models::AssetFileDownloadUpdate,
         >,

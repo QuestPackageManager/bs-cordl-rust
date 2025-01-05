@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AndroidJNI {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+AndroidJNI")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+AndroidJNI")]
 impl std::ops::Deref for crate::UnityEngine::AndroidJNI {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -45,7 +45,7 @@ impl crate::UnityEngine::AndroidJNI {
             .invoke("CallBooleanMethodUnsafe", (obj, methodID, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CallBooleanMethod_Gc0(
+    pub fn CallBooleanMethod_Il2CppArray0(
         obj: crate::System::IntPtr,
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
@@ -85,7 +85,7 @@ impl crate::UnityEngine::AndroidJNI {
             .invoke("CallCharMethodUnsafe", (obj, methodID, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CallCharMethod_Gc0(
+    pub fn CallCharMethod_Il2CppArray0(
         obj: crate::System::IntPtr,
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
@@ -114,7 +114,7 @@ impl crate::UnityEngine::AndroidJNI {
             .invoke("CallDoubleMethodUnsafe", (obj, methodID, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CallDoubleMethod_Gc0(
+    pub fn CallDoubleMethod_Il2CppArray0(
         obj: crate::System::IntPtr,
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
@@ -143,7 +143,7 @@ impl crate::UnityEngine::AndroidJNI {
             .invoke("CallFloatMethodUnsafe", (obj, methodID, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CallFloatMethod_Gc0(
+    pub fn CallFloatMethod_Il2CppArray0(
         obj: crate::System::IntPtr,
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
@@ -172,7 +172,7 @@ impl crate::UnityEngine::AndroidJNI {
             .invoke("CallIntMethodUnsafe", (obj, methodID, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CallIntMethod_Gc0(
+    pub fn CallIntMethod_Il2CppArray0(
         obj: crate::System::IntPtr,
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
@@ -201,7 +201,7 @@ impl crate::UnityEngine::AndroidJNI {
             .invoke("CallLongMethodUnsafe", (obj, methodID, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CallLongMethod_Gc0(
+    pub fn CallLongMethod_Il2CppArray0(
         obj: crate::System::IntPtr,
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
@@ -230,7 +230,7 @@ impl crate::UnityEngine::AndroidJNI {
             .invoke("CallObjectMethodUnsafe", (obj, methodID, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CallObjectMethod_Gc0(
+    pub fn CallObjectMethod_Il2CppArray0(
         obj: crate::System::IntPtr,
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
@@ -259,7 +259,7 @@ impl crate::UnityEngine::AndroidJNI {
             .invoke("CallSByteMethodUnsafe", (obj, methodID, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CallSByteMethod_Gc0(
+    pub fn CallSByteMethod_Il2CppArray0(
         obj: crate::System::IntPtr,
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
@@ -288,7 +288,7 @@ impl crate::UnityEngine::AndroidJNI {
             .invoke("CallShortMethodUnsafe", (obj, methodID, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CallShortMethod_Gc0(
+    pub fn CallShortMethod_Il2CppArray0(
         obj: crate::System::IntPtr,
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
@@ -317,7 +317,7 @@ impl crate::UnityEngine::AndroidJNI {
             .invoke("CallStaticBooleanMethodUnsafe", (clazz, methodID, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CallStaticBooleanMethod_Gc0(
+    pub fn CallStaticBooleanMethod_Il2CppArray0(
         clazz: crate::System::IntPtr,
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
@@ -357,7 +357,7 @@ impl crate::UnityEngine::AndroidJNI {
             .invoke("CallStaticCharMethodUnsafe", (clazz, methodID, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CallStaticCharMethod_Gc0(
+    pub fn CallStaticCharMethod_Il2CppArray0(
         clazz: crate::System::IntPtr,
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
@@ -386,7 +386,7 @@ impl crate::UnityEngine::AndroidJNI {
             .invoke("CallStaticDoubleMethodUnsafe", (clazz, methodID, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CallStaticDoubleMethod_Gc0(
+    pub fn CallStaticDoubleMethod_Il2CppArray0(
         clazz: crate::System::IntPtr,
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
@@ -415,7 +415,7 @@ impl crate::UnityEngine::AndroidJNI {
             .invoke("CallStaticFloatMethodUnsafe", (clazz, methodID, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CallStaticFloatMethod_Gc0(
+    pub fn CallStaticFloatMethod_Il2CppArray0(
         clazz: crate::System::IntPtr,
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
@@ -444,7 +444,7 @@ impl crate::UnityEngine::AndroidJNI {
             .invoke("CallStaticIntMethodUnsafe", (clazz, methodID, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CallStaticIntMethod_Gc0(
+    pub fn CallStaticIntMethod_Il2CppArray0(
         clazz: crate::System::IntPtr,
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
@@ -473,7 +473,7 @@ impl crate::UnityEngine::AndroidJNI {
             .invoke("CallStaticLongMethodUnsafe", (clazz, methodID, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CallStaticLongMethod_Gc0(
+    pub fn CallStaticLongMethod_Il2CppArray0(
         clazz: crate::System::IntPtr,
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
@@ -502,7 +502,7 @@ impl crate::UnityEngine::AndroidJNI {
             .invoke("CallStaticObjectMethodUnsafe", (clazz, methodID, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CallStaticObjectMethod_Gc0(
+    pub fn CallStaticObjectMethod_Il2CppArray0(
         clazz: crate::System::IntPtr,
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
@@ -531,7 +531,7 @@ impl crate::UnityEngine::AndroidJNI {
             .invoke("CallStaticSByteMethodUnsafe", (clazz, methodID, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CallStaticSByteMethod_Gc0(
+    pub fn CallStaticSByteMethod_Il2CppArray0(
         clazz: crate::System::IntPtr,
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
@@ -560,7 +560,7 @@ impl crate::UnityEngine::AndroidJNI {
             .invoke("CallStaticShortMethodUnsafe", (clazz, methodID, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CallStaticShortMethod_Gc0(
+    pub fn CallStaticShortMethod_Il2CppArray0(
         clazz: crate::System::IntPtr,
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
@@ -593,7 +593,7 @@ impl crate::UnityEngine::AndroidJNI {
             .invoke("CallStaticStringMethodUnsafe", (clazz, methodID, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CallStaticStringMethod_Gc0(
+    pub fn CallStaticStringMethod_Il2CppArray0(
         clazz: crate::System::IntPtr,
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
@@ -630,7 +630,7 @@ impl crate::UnityEngine::AndroidJNI {
             .invoke("CallStaticVoidMethodUnsafe", (clazz, methodID, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CallStaticVoidMethod_Gc0(
+    pub fn CallStaticVoidMethod_Il2CppArray0(
         clazz: crate::System::IntPtr,
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
@@ -663,7 +663,7 @@ impl crate::UnityEngine::AndroidJNI {
             .invoke("CallStringMethodUnsafe", (obj, methodID, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CallStringMethod_Gc0(
+    pub fn CallStringMethod_Il2CppArray0(
         obj: crate::System::IntPtr,
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
@@ -700,7 +700,7 @@ impl crate::UnityEngine::AndroidJNI {
             .invoke("CallVoidMethodUnsafe", (obj, methodID, args))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CallVoidMethod_Gc0(
+    pub fn CallVoidMethod_Il2CppArray0(
         obj: crate::System::IntPtr,
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
@@ -1381,7 +1381,7 @@ impl crate::UnityEngine::AndroidJNI {
             .invoke("NewDirectByteBufferFromNativeArray", (buffer))?;
         Ok(__cordl_ret.into())
     }
-    pub fn NewDirectByteBuffer_Gc_i64_0(
+    pub fn NewDirectByteBuffer_Il2CppObject_i64_0(
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         capacity: i64,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
@@ -1463,7 +1463,7 @@ impl crate::UnityEngine::AndroidJNI {
             .invoke("NewObjectArray", (_cordl_size, clazz, obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn NewObject_Gc0(
+    pub fn NewObject_Il2CppArray0(
         clazz: crate::System::IntPtr,
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<
@@ -1511,15 +1511,15 @@ impl crate::UnityEngine::AndroidJNI {
             .invoke("NewStringUTF", (bytes))?;
         Ok(__cordl_ret.into())
     }
-    pub fn NewString_Gc0(
-        chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub fn NewString_Il2CppArray1(
+        chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("NewString", (chars))?;
         Ok(__cordl_ret.into())
     }
-    pub fn NewString_Gc1(
-        chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+    pub fn NewString_Il2CppString0(
+        chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("NewString", (chars))?;
@@ -1912,14 +1912,14 @@ impl crate::UnityEngine::AndroidJNI {
             .invoke("ToByteArray", (array))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToCharArray_Gc0(
+    pub fn ToCharArray_Il2CppArray0(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ToCharArray", (array))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToCharArray_i32_1(
+    pub fn ToCharArray_Il2CppObject_i32_1(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
@@ -1927,14 +1927,14 @@ impl crate::UnityEngine::AndroidJNI {
             .invoke("ToCharArray", (array, length))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToDoubleArray_Gc0(
+    pub fn ToDoubleArray_Il2CppArray0(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f64>>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ToDoubleArray", (array))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToDoubleArray_i32_1(
+    pub fn ToDoubleArray_Il2CppObject_i32_1(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
@@ -1942,14 +1942,14 @@ impl crate::UnityEngine::AndroidJNI {
             .invoke("ToDoubleArray", (array, length))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToFloatArray_Gc0(
+    pub fn ToFloatArray_Il2CppArray0(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ToFloatArray", (array))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToFloatArray_i32_1(
+    pub fn ToFloatArray_Il2CppObject_i32_1(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
@@ -1957,14 +1957,14 @@ impl crate::UnityEngine::AndroidJNI {
             .invoke("ToFloatArray", (array, length))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToIntArray_Gc0(
+    pub fn ToIntArray_Il2CppArray0(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ToIntArray", (array))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToIntArray_i32_1(
+    pub fn ToIntArray_Il2CppObject_i32_1(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
@@ -1972,14 +1972,14 @@ impl crate::UnityEngine::AndroidJNI {
             .invoke("ToIntArray", (array, length))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToLongArray_Gc0(
+    pub fn ToLongArray_Il2CppArray0(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ToLongArray", (array))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToLongArray_i32_1(
+    pub fn ToLongArray_Il2CppObject_i32_1(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
@@ -1987,7 +1987,7 @@ impl crate::UnityEngine::AndroidJNI {
             .invoke("ToLongArray", (array, length))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToObjectArray_Gc2(
+    pub fn ToObjectArray_Il2CppArray2(
         array: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::System::IntPtr>,
         >,
@@ -1996,7 +1996,7 @@ impl crate::UnityEngine::AndroidJNI {
             .invoke("ToObjectArray", (array))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToObjectArray_IntPtr1(
+    pub fn ToObjectArray_Il2CppArray_IntPtr1(
         array: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::System::IntPtr>,
         >,
@@ -2006,7 +2006,7 @@ impl crate::UnityEngine::AndroidJNI {
             .invoke("ToObjectArray", (array, arrayClass))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToObjectArray_i32_IntPtr0(
+    pub fn ToObjectArray_Il2CppObject_i32_IntPtr0(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         length: i32,
         arrayClass: crate::System::IntPtr,
@@ -2033,14 +2033,14 @@ impl crate::UnityEngine::AndroidJNI {
             .invoke("ToReflectedMethod", (clazz, methodID, isStatic))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToSByteArray_Gc0(
+    pub fn ToSByteArray_Il2CppArray0(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i8>>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ToSByteArray", (array))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToSByteArray_i32_1(
+    pub fn ToSByteArray_Il2CppObject_i32_1(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
@@ -2048,14 +2048,14 @@ impl crate::UnityEngine::AndroidJNI {
             .invoke("ToSByteArray", (array, length))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToShortArray_Gc0(
+    pub fn ToShortArray_Il2CppArray0(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i16>>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ToShortArray", (array))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToShortArray_i32_1(
+    pub fn ToShortArray_Il2CppObject_i32_1(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {

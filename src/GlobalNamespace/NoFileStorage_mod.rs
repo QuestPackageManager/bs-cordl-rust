@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoFileStorage {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "NoFileStorage")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "NoFileStorage")]
 impl std::ops::Deref for crate::GlobalNamespace::NoFileStorage {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -43,12 +43,15 @@ impl crate::GlobalNamespace::NoFileStorage {
         &mut self,
         fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         storageLocation: crate::GlobalNamespace::StoragePreference,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = __cordl_object
-            .invoke("FileExistsAsync", (fileName, storageLocation))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<bool>,
+        > = __cordl_object.invoke("FileExistsAsync", (fileName, storageLocation))?;
         Ok(__cordl_ret.into())
     }
     pub fn LoadFileAsync(
@@ -57,14 +60,18 @@ impl crate::GlobalNamespace::NoFileStorage {
         storageLocation: crate::GlobalNamespace::StoragePreference,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = __cordl_object.invoke("LoadFileAsync", (fileName, storageLocation))?;
         Ok(__cordl_ret.into())
     }
@@ -112,20 +119,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoFileStorage
     }
 }
 #[cfg(feature = "NoFileStorage")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>>
+impl AsRef<crate::GlobalNamespace::IFileStorage>
 for crate::GlobalNamespace::NoFileStorage {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IFileStorage {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "NoFileStorage")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>>
+impl AsMut<crate::GlobalNamespace::IFileStorage>
 for crate::GlobalNamespace::NoFileStorage {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IFileStorage {
         unsafe { std::mem::transmute(self) }
     }
 }

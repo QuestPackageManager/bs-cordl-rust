@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ModalView {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ModalViewBase>,
+    __cordl_parent: crate::HMUI::ModalViewBase,
     pub _presentPanelAnimations: quest_hook::libil2cpp::Gc<
         crate::HMUI::PanelAnimationSO,
     >,
@@ -24,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+ModalView")]
 impl std::ops::Deref for crate::HMUI::ModalView {
-    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ModalViewBase>;
+    type Target = crate::HMUI::ModalViewBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

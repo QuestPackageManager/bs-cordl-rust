@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MetaRemoteAssetsInstaller {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>,
+    __cordl_parent: crate::Zenject::ScriptableObjectInstaller,
     pub _appInitSetupData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::AppInitSetupData,
     >,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BGLib+MetaRemoteAssets+Installers+MetaRemoteAssetsInstaller")]
 impl std::ops::Deref
 for crate::BGLib::MetaRemoteAssets::Installers::MetaRemoteAssetsInstaller {
-    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>;
+    type Target = crate::Zenject::ScriptableObjectInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TableView {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _scrollView: quest_hook::libil2cpp::Gc<crate::HMUI::ScrollView>,
     pub _scrollToTopOnEnable: bool,
     pub _alignToCenter: bool,
@@ -13,29 +13,25 @@ pub struct TableView {
     pub _canSelectSelectedCell: bool,
     pub _spawnCellsThatAreNotVisible: bool,
     pub _preallocatedCells: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::HMUI::TableView_CellsGroup>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::HMUI::TableView_CellsGroup>,
     >,
     pub didSelectCellWithIdxEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
-        i32,
+        crate::System::Action_2<quest_hook::libil2cpp::Gc<crate::HMUI::TableView>, i32>,
     >,
     pub didDeselectCellWithIdxEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
-        i32,
+        crate::System::Action_2<quest_hook::libil2cpp::Gc<crate::HMUI::TableView>, i32>,
     >,
     pub didReloadDataEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+        crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::HMUI::TableView>>,
     >,
     pub didInsertCellsEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+        crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::HMUI::TableView>>,
     >,
     pub didDeleteCellsEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+        crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::HMUI::TableView>>,
     >,
     pub didChangeRectSizeEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+        crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::HMUI::TableView>>,
     >,
     pub _contentTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub _viewportTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -43,13 +39,23 @@ pub struct TableView {
     pub _numberOfCells: i32,
     pub _cellSize: f32,
     pub _visibleCells: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
+        >,
     >,
     pub _reusableCells: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::List_1<
+                    quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
+                >,
+            >,
+        >,
     >,
-    pub _selectedCellIdxs: quest_hook::libil2cpp::Gc<i32>,
+    pub _selectedCellIdxs: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<i32>,
+    >,
     pub _prevMinIdx: i32,
     pub _prevMaxIdx: i32,
     pub _isInitialized: bool,
@@ -61,7 +67,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+TableView")]
 impl std::ops::Deref for crate::HMUI::TableView {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -215,11 +221,13 @@ impl crate::HMUI::TableView {
     }
     pub fn GetVisibleCellsIdRange(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32, i32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Tuple_2<i32, i32>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32, i32> = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Tuple_2<i32, i32>> = __cordl_object
             .invoke("GetVisibleCellsIdRange", ())?;
         Ok(__cordl_ret.into())
     }
@@ -456,7 +464,7 @@ impl crate::HMUI::TableView {
     pub fn add_didChangeRectSizeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+            crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::HMUI::TableView>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -469,7 +477,7 @@ impl crate::HMUI::TableView {
     pub fn add_didDeleteCellsEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+            crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::HMUI::TableView>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -482,8 +490,10 @@ impl crate::HMUI::TableView {
     pub fn add_didDeselectCellWithIdxEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
-            i32,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+                i32,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -496,7 +506,7 @@ impl crate::HMUI::TableView {
     pub fn add_didInsertCellsEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+            crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::HMUI::TableView>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -509,7 +519,7 @@ impl crate::HMUI::TableView {
     pub fn add_didReloadDataEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+            crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::HMUI::TableView>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -522,8 +532,10 @@ impl crate::HMUI::TableView {
     pub fn add_didSelectCellWithIdxEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
-            i32,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+                i32,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -660,20 +672,26 @@ impl crate::HMUI::TableView {
     pub fn get_visibleCells(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
+            >,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
+            >,
         > = __cordl_object.invoke("get_visibleCells", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn remove_didChangeRectSizeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+            crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::HMUI::TableView>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -686,7 +704,7 @@ impl crate::HMUI::TableView {
     pub fn remove_didDeleteCellsEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+            crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::HMUI::TableView>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -699,8 +717,10 @@ impl crate::HMUI::TableView {
     pub fn remove_didDeselectCellWithIdxEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
-            i32,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+                i32,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -713,7 +733,7 @@ impl crate::HMUI::TableView {
     pub fn remove_didInsertCellsEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+            crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::HMUI::TableView>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -726,7 +746,7 @@ impl crate::HMUI::TableView {
     pub fn remove_didReloadDataEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+            crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::HMUI::TableView>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -739,8 +759,10 @@ impl crate::HMUI::TableView {
     pub fn remove_didSelectCellWithIdxEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
-            i32,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+                i32,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -772,18 +794,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::TableView {
     }
 }
 #[cfg(feature = "HMUI+TableView")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::HMUI::ITableCellOwner>>
-for crate::HMUI::TableView {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::HMUI::ITableCellOwner> {
+impl AsRef<crate::HMUI::ITableCellOwner> for crate::HMUI::TableView {
+    fn as_ref(&self) -> &crate::HMUI::ITableCellOwner {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HMUI+TableView")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::HMUI::ITableCellOwner>>
-for crate::HMUI::TableView {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::HMUI::ITableCellOwner> {
+impl AsMut<crate::HMUI::ITableCellOwner> for crate::HMUI::TableView {
+    fn as_mut(&mut self) -> &mut crate::HMUI::ITableCellOwner {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -791,10 +809,12 @@ for crate::HMUI::TableView {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TableView_CellsGroup {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _reuseIdentifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _cells: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
+        >,
     >,
 }
 #[cfg(feature = "HMUI+TableView+CellsGroup")]
@@ -804,7 +824,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+TableView+CellsGroup")]
 impl std::ops::Deref for crate::HMUI::TableView_CellsGroup {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -837,13 +857,19 @@ impl crate::HMUI::TableView_CellsGroup {
     pub fn get_cells(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
+            >,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
+            >,
         > = __cordl_object.invoke("get_cells", ())?;
         Ok(__cordl_ret.into())
     }

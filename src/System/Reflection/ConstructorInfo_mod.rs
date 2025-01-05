@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConstructorInfo {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
+    __cordl_parent: crate::System::Reflection::MethodBase,
 }
 #[cfg(feature = "System+Reflection+ConstructorInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Reflection+ConstructorInfo")]
 impl std::ops::Deref for crate::System::Reflection::ConstructorInfo {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>;
+    type Target = crate::System::Reflection::MethodBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -41,14 +41,12 @@ impl crate::System::Reflection::ConstructorInfo {
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Invoke_BindingFlags_Gc_Gc_Gc1(
+    pub fn Invoke_BindingFlags_Binder_Il2CppArray_CultureInfo1(
         &mut self,
         invokeAttr: crate::System::Reflection::BindingFlags,
         binder: quest_hook::libil2cpp::Gc<crate::System::Reflection::Binder>,
         parameters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
     ) -> quest_hook::libil2cpp::Result<
@@ -62,12 +60,10 @@ impl crate::System::Reflection::ConstructorInfo {
         > = __cordl_object.invoke("Invoke", (invokeAttr, binder, parameters, culture))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Invoke_Gc0(
+    pub fn Invoke_Il2CppArray0(
         &mut self,
         parameters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

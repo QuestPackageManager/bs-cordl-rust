@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObjectSecurity {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub descriptor: quest_hook::libil2cpp::Gc<
         crate::System::Security::AccessControl::CommonSecurityDescriptor,
     >,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+AccessControl+ObjectSecurity")]
 impl std::ops::Deref for crate::System::Security::AccessControl::ObjectSecurity {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -102,7 +102,7 @@ impl crate::System::Security::AccessControl::ObjectSecurity {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_CommonSecurityDescriptor0(
         securityDescriptor: quest_hook::libil2cpp::Gc<
             crate::System::Security::AccessControl::CommonSecurityDescriptor,
         >,
@@ -173,7 +173,7 @@ impl crate::System::Security::AccessControl::ObjectSecurity {
             .invoke("Writing", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_CommonSecurityDescriptor0(
         &mut self,
         securityDescriptor: quest_hook::libil2cpp::Gc<
             crate::System::Security::AccessControl::CommonSecurityDescriptor,

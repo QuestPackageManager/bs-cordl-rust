@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MonoInstallerBase {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _Container_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::Zenject::DiContainer,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+MonoInstallerBase")]
 impl std::ops::Deref for crate::Zenject::MonoInstallerBase {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -120,16 +120,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::MonoInstallerBase {
     }
 }
 #[cfg(feature = "Zenject+MonoInstallerBase")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::IInstaller>>
-for crate::Zenject::MonoInstallerBase {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Zenject::IInstaller> {
+impl AsRef<crate::Zenject::IInstaller> for crate::Zenject::MonoInstallerBase {
+    fn as_ref(&self) -> &crate::Zenject::IInstaller {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+MonoInstallerBase")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::IInstaller>>
-for crate::Zenject::MonoInstallerBase {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::IInstaller> {
+impl AsMut<crate::Zenject::IInstaller> for crate::Zenject::MonoInstallerBase {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IInstaller {
         unsafe { std::mem::transmute(self) }
     }
 }

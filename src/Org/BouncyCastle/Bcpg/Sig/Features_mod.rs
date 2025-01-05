@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Features {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+Sig+Features")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Bcpg+Sig+Features")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::Sig::Features {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
-    >;
+    type Target = crate::Org::BouncyCastle::Bcpg::SignatureSubpacket;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -39,7 +35,7 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::Features {
             .invoke("FeatureToByteArray", (feature))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New__cordl_bool_Gc0(
+    pub fn New__cordl_bool_Il2CppArray0(
         critical: bool,
         isLongLength: bool,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -82,7 +78,7 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::Features {
         let __cordl_ret: bool = __cordl_object.invoke("SupportsFeature", (feature))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor__cordl_bool_Gc0(
+    pub fn _ctor__cordl_bool_Il2CppArray0(
         &mut self,
         critical: bool,
         isLongLength: bool,

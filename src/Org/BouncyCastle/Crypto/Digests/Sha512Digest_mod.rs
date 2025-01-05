@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Sha512Digest {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Digests::LongDigest,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Crypto::Digests::LongDigest,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+Sha512Digest")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+Sha512Digest")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Digests::Sha512Digest {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Digests::LongDigest,
-    >;
+    type Target = crate::Org::BouncyCastle::Crypto::Digests::LongDigest;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -67,7 +63,7 @@ impl crate::Org::BouncyCastle::Crypto::Digests::Sha512Digest {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Sha512Digest1(
         t: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Digests::Sha512Digest,
         >,
@@ -88,7 +84,7 @@ impl crate::Org::BouncyCastle::Crypto::Digests::Sha512Digest {
             .invoke("Reset", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Reset_Gc1(
+    pub fn Reset_IMemoable1(
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::IMemoable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -109,7 +105,7 @@ impl crate::Org::BouncyCastle::Crypto::Digests::Sha512Digest {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Sha512Digest1(
         &mut self,
         t: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Digests::Sha512Digest,

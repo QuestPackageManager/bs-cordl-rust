@@ -2,16 +2,20 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SectionTableView {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+    __cordl_parent: crate::HMUI::TableView,
     pub _unfoldSectionsByDefault: bool,
     pub didSelectRowInSectionEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HMUI::SectionTableView>,
-        i32,
-        i32,
+        crate::System::Action_3<
+            quest_hook::libil2cpp::Gc<crate::HMUI::SectionTableView>,
+            i32,
+            i32,
+        >,
     >,
     pub didSelectHeaderEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HMUI::SectionTableView>,
-        i32,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<crate::HMUI::SectionTableView>,
+            i32,
+        >,
     >,
     pub _dataSource: quest_hook::libil2cpp::Gc<
         crate::HMUI::SectionTableView_IDataSource,
@@ -27,7 +31,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+SectionTableView")]
 impl std::ops::Deref for crate::HMUI::SectionTableView {
-    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::TableView>;
+    type Target = crate::HMUI::TableView;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -207,8 +211,10 @@ impl crate::HMUI::SectionTableView {
     pub fn add_didSelectHeaderEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::SectionTableView>,
-            i32,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::HMUI::SectionTableView>,
+                i32,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -221,9 +227,11 @@ impl crate::HMUI::SectionTableView {
     pub fn add_didSelectRowInSectionEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::SectionTableView>,
-            i32,
-            i32,
+            crate::System::Action_3<
+                quest_hook::libil2cpp::Gc<crate::HMUI::SectionTableView>,
+                i32,
+                i32,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -249,8 +257,10 @@ impl crate::HMUI::SectionTableView {
     pub fn remove_didSelectHeaderEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::SectionTableView>,
-            i32,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::HMUI::SectionTableView>,
+                i32,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -263,9 +273,11 @@ impl crate::HMUI::SectionTableView {
     pub fn remove_didSelectRowInSectionEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::SectionTableView>,
-            i32,
-            i32,
+            crate::System::Action_3<
+                quest_hook::libil2cpp::Gc<crate::HMUI::SectionTableView>,
+                i32,
+                i32,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -297,18 +309,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::SectionTableView {
     }
 }
 #[cfg(feature = "HMUI+SectionTableView")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::HMUI::TableView_IDataSource>>
-for crate::HMUI::SectionTableView {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::HMUI::TableView_IDataSource> {
+impl AsRef<crate::HMUI::TableView_IDataSource> for crate::HMUI::SectionTableView {
+    fn as_ref(&self) -> &crate::HMUI::TableView_IDataSource {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "HMUI+SectionTableView")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::HMUI::TableView_IDataSource>>
-for crate::HMUI::SectionTableView {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::HMUI::TableView_IDataSource> {
+impl AsMut<crate::HMUI::TableView_IDataSource> for crate::HMUI::SectionTableView {
+    fn as_mut(&mut self) -> &mut crate::HMUI::TableView_IDataSource {
         unsafe { std::mem::transmute(self) }
     }
 }

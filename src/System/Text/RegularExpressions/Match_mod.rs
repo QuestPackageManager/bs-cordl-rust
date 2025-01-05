@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Match {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Text::RegularExpressions::Group,
-    >,
+    __cordl_parent: crate::System::Text::RegularExpressions::Group,
     pub _groupcoll: quest_hook::libil2cpp::Gc<
         crate::System::Text::RegularExpressions::GroupCollection,
     >,
@@ -16,9 +14,7 @@ pub struct Match {
     pub _textend: i32,
     pub _textstart: i32,
     pub _matches: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppArray<i32>>,
     >,
     pub _matchcount: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub _balancing: bool,
@@ -30,9 +26,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Text+RegularExpressions+Match")]
 impl std::ops::Deref for crate::System::Text::RegularExpressions::Match {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Text::RegularExpressions::Group,
-    >;
+    type Target = crate::System::Text::RegularExpressions::Group;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -118,7 +112,7 @@ impl crate::System::Text::RegularExpressions::Match {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_i32_Gc_i32_i32_i32_0(
+    pub fn New_Regex_i32_Il2CppString_i32_i32_i32_0(
         regex: quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Regex>,
         capcount: i32,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -192,7 +186,7 @@ impl crate::System::Text::RegularExpressions::Match {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_i32_Gc_i32_i32_i32_0(
+    pub fn _ctor_Regex_i32_Il2CppString_i32_i32_i32_0(
         &mut self,
         regex: quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Regex>,
         capcount: i32,

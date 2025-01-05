@@ -197,7 +197,7 @@ impl crate::UnityEngine::Mathf {
             .invoke("Log", (f))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Max_Gc1(
+    pub fn Max_Il2CppArray1(
         values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -214,7 +214,7 @@ impl crate::UnityEngine::Mathf {
             .invoke("Max", (a, b))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Min_Gc1(
+    pub fn Min_Il2CppArray1(
         values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()

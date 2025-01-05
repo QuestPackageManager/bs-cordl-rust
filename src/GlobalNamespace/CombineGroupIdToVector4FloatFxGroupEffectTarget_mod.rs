@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CombineGroupIdToVector4FloatFxGroupEffectTarget {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::FloatFxGroupEffectTarget,
-    >,
+    __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
     pub _propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _materialPropertyBlockController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MaterialPropertyBlockController,
@@ -19,7 +17,9 @@ pub struct CombineGroupIdToVector4FloatFxGroupEffectTarget {
         crate::GlobalNamespace::BeatmapCallbacksController,
     >,
     pub _didReceiveEventThisFrame: bool,
-    pub _groupIdToIndex: quest_hook::libil2cpp::Gc<i32, i32>,
+    pub _groupIdToIndex: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+    >,
     pub _propertyId: i32,
     pub _data: crate::UnityEngine::Vector4,
 }
@@ -32,9 +32,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "CombineGroupIdToVector4FloatFxGroupEffectTarget")]
 impl std::ops::Deref
 for crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::FloatFxGroupEffectTarget,
-    >;
+    type Target = crate::GlobalNamespace::FloatFxGroupEffectTarget;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

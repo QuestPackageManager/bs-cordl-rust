@@ -2,9 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BitMaskSparse {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _bitCount_k__BackingField: i32,
-    pub _sparseSet: quest_hook::libil2cpp::Gc<u32>,
+    pub _sparseSet: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::SortedSet_1<u32>,
+    >,
 }
 #[cfg(feature = "BitMaskSparse")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BitMaskSparse")]
 impl std::ops::Deref for crate::GlobalNamespace::BitMaskSparse {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -135,32 +137,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BitMaskSparse
     }
 }
 #[cfg(feature = "BitMaskSparse")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable>>
-for crate::GlobalNamespace::BitMaskSparse {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "BitMaskSparse")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable>>
-for crate::GlobalNamespace::BitMaskSparse {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "BitMaskSparse")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::GlobalNamespace::IBitMask_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskSparse>,
     >,
 > for crate::GlobalNamespace::BitMaskSparse {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::GlobalNamespace::IBitMask_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskSparse>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -168,27 +152,41 @@ impl AsRef<
 }
 #[cfg(feature = "BitMaskSparse")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::GlobalNamespace::IBitMask_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskSparse>,
     >,
 > for crate::GlobalNamespace::BitMaskSparse {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::GlobalNamespace::IBitMask_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskSparse>,
     > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BitMaskSparse")]
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::BitMaskSparse {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BitMaskSparse")]
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::BitMaskSparse {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BitMaskSparse")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskSparse>,
     >,
 > for crate::GlobalNamespace::BitMaskSparse {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskSparse>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -196,13 +194,13 @@ impl AsRef<
 }
 #[cfg(feature = "BitMaskSparse")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskSparse>,
     >,
 > for crate::GlobalNamespace::BitMaskSparse {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskSparse>,
     > {
         unsafe { std::mem::transmute(self) }

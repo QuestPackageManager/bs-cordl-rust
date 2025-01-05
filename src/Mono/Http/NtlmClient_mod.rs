@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NtlmClient {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Mono+Http+NtlmClient")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Http+NtlmClient")]
 impl std::ops::Deref for crate::Mono::Http::NtlmClient {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -94,20 +94,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Http::NtlmClient {
     }
 }
 #[cfg(feature = "Mono+Http+NtlmClient")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Net::IAuthenticationModule>>
-for crate::Mono::Http::NtlmClient {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Net::IAuthenticationModule> {
+impl AsRef<crate::System::Net::IAuthenticationModule> for crate::Mono::Http::NtlmClient {
+    fn as_ref(&self) -> &crate::System::Net::IAuthenticationModule {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Mono+Http+NtlmClient")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Net::IAuthenticationModule>>
-for crate::Mono::Http::NtlmClient {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Net::IAuthenticationModule> {
+impl AsMut<crate::System::Net::IAuthenticationModule> for crate::Mono::Http::NtlmClient {
+    fn as_mut(&mut self) -> &mut crate::System::Net::IAuthenticationModule {
         unsafe { std::mem::transmute(self) }
     }
 }

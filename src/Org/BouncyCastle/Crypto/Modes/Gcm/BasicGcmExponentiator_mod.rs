@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BasicGcmExponentiator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Modes+Gcm+BasicGcmExponentiator")]
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Modes+Gcm+BasicGcmExponentiator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Modes::Gcm::BasicGcmExponentiator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -80,30 +80,20 @@ for crate::Org::BouncyCastle::Crypto::Modes::Gcm::BasicGcmExponentiator {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Modes+Gcm+BasicGcmExponentiator")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Modes::Gcm::IGcmExponentiator,
-    >,
-> for crate::Org::BouncyCastle::Crypto::Modes::Gcm::BasicGcmExponentiator {
+impl AsRef<crate::Org::BouncyCastle::Crypto::Modes::Gcm::IGcmExponentiator>
+for crate::Org::BouncyCastle::Crypto::Modes::Gcm::BasicGcmExponentiator {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Modes::Gcm::IGcmExponentiator,
-    > {
+    ) -> &crate::Org::BouncyCastle::Crypto::Modes::Gcm::IGcmExponentiator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Modes+Gcm+BasicGcmExponentiator")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Modes::Gcm::IGcmExponentiator,
-    >,
-> for crate::Org::BouncyCastle::Crypto::Modes::Gcm::BasicGcmExponentiator {
+impl AsMut<crate::Org::BouncyCastle::Crypto::Modes::Gcm::IGcmExponentiator>
+for crate::Org::BouncyCastle::Crypto::Modes::Gcm::BasicGcmExponentiator {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Modes::Gcm::IGcmExponentiator,
-    > {
+    ) -> &mut crate::Org::BouncyCastle::Crypto::Modes::Gcm::IGcmExponentiator {
         unsafe { std::mem::transmute(self) }
     }
 }

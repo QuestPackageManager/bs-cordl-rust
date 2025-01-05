@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextWriter_SyncTextWriter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
+    __cordl_parent: crate::System::IO::TextWriter,
     pub _out: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
 }
 #[cfg(feature = "System+IO+TextWriter+SyncTextWriter")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+IO+TextWriter+SyncTextWriter")]
 impl std::ops::Deref for crate::GlobalNamespace::TextWriter_SyncTextWriter {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>;
+    type Target = crate::System::IO::TextWriter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -78,21 +78,7 @@ impl crate::GlobalNamespace::TextWriter_SyncTextWriter {
             .invoke_void(".ctor", (t))?;
         Ok(__cordl_object.into())
     }
-    pub fn WriteAsync_Gc1(
-        &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task,
-        > = __cordl_object.invoke("WriteAsync", (value))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn WriteAsync_Gc_i32_i32_2(
+    pub fn WriteAsync_Il2CppArray_i32_i32_2(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         index: i32,
@@ -106,6 +92,20 @@ impl crate::GlobalNamespace::TextWriter_SyncTextWriter {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
         > = __cordl_object.invoke("WriteAsync", (buffer, index, count))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteAsync_Il2CppString1(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = __cordl_object.invoke("WriteAsync", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn WriteAsync__cordl_char0(
@@ -132,7 +132,20 @@ impl crate::GlobalNamespace::TextWriter_SyncTextWriter {
             .invoke("WriteLine", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteLine_Gc2(
+    pub fn WriteLine_Il2CppArray_i32_i32_1(
+        &mut self,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        index: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteLine", (buffer, index, count))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteLine_Il2CppString2(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -143,7 +156,7 @@ impl crate::GlobalNamespace::TextWriter_SyncTextWriter {
             .invoke("WriteLine", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteLine_Gc_Gc_Gc_Gc3(
+    pub fn WriteLine_Il2CppString_Il2CppObject_Il2CppObject_Il2CppObject3(
         &mut self,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -157,20 +170,7 @@ impl crate::GlobalNamespace::TextWriter_SyncTextWriter {
             .invoke("WriteLine", (format, arg0, arg1, arg2))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteLine_Gc_i32_i32_1(
-        &mut self,
-        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
-        index: i32,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteLine", (buffer, index, count))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Write_Gc1(
+    pub fn Write_Il2CppArray1(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -181,7 +181,20 @@ impl crate::GlobalNamespace::TextWriter_SyncTextWriter {
             .invoke("Write", (buffer))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Write_Gc3(
+    pub fn Write_Il2CppArray_i32_i32_2(
+        &mut self,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        index: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Write", (buffer, index, count))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Write_Il2CppString3(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -192,7 +205,7 @@ impl crate::GlobalNamespace::TextWriter_SyncTextWriter {
             .invoke("Write", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Write_Gc_Gc_Gc_Gc4(
+    pub fn Write_Il2CppString_Il2CppObject_Il2CppObject_Il2CppObject4(
         &mut self,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -204,19 +217,6 @@ impl crate::GlobalNamespace::TextWriter_SyncTextWriter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Write", (format, arg0, arg1, arg2))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Write_Gc_i32_i32_2(
-        &mut self,
-        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
-        index: i32,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Write", (buffer, index, count))?;
         Ok(__cordl_ret.into())
     }
     pub fn Write__cordl_char0(
@@ -301,16 +301,16 @@ for crate::GlobalNamespace::TextWriter_SyncTextWriter {
     }
 }
 #[cfg(feature = "System+IO+TextWriter+SyncTextWriter")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsRef<crate::System::IDisposable>
 for crate::GlobalNamespace::TextWriter_SyncTextWriter {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+IO+TextWriter+SyncTextWriter")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsMut<crate::System::IDisposable>
 for crate::GlobalNamespace::TextWriter_SyncTextWriter {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }

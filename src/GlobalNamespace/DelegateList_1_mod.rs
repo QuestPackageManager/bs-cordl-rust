@@ -2,15 +2,31 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DelegateList_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_acquireFunc: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<T>,
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>,
+        crate::System::Func_2<
+            quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::LinkedListNode_1<
+                    quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+                >,
+            >,
+        >,
     >,
     pub m_releaseFunc: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::LinkedListNode_1<
+                    quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+                >,
+            >,
+        >,
     >,
-    pub m_callbacks: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>,
+    pub m_callbacks: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::LinkedList_1<
+            quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+        >,
+    >,
     pub m_invoking: bool,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -22,7 +38,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "DelegateList_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::DelegateList_1<T> {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -38,7 +54,7 @@ for crate::GlobalNamespace::DelegateList_1<T> {
 impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::DelegateList_1<T> {
     pub fn Add(
         &mut self,
-        action: quest_hook::libil2cpp::Gc<T>,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -64,13 +80,15 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::DelegateList_1<T> {
         Ok(__cordl_ret.into())
     }
     pub fn CreateWithGlobalCache() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<T>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DelegateList_1<T>>,
     >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = <Self as quest_hook::libil2cpp::Type>::class()
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DelegateList_1<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("CreateWithGlobalCache", ())?;
         Ok(__cordl_ret.into())
     }
@@ -91,11 +109,23 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::DelegateList_1<T> {
     }
     pub fn New(
         acquireFunc: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<T>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::LinkedListNode_1<
+                        quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+                    >,
+                >,
+            >,
         >,
         releaseFunc: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::LinkedListNode_1<
+                        quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+                    >,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
@@ -110,7 +140,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::DelegateList_1<T> {
     }
     pub fn Remove(
         &mut self,
-        action: quest_hook::libil2cpp::Gc<T>,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -126,11 +156,23 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::DelegateList_1<T> {
     pub fn _ctor(
         &mut self,
         acquireFunc: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<T>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::LinkedListNode_1<
+                        quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+                    >,
+                >,
+            >,
         >,
         releaseFunc: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::LinkedListNode_1<
+                        quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+                    >,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where

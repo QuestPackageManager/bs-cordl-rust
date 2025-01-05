@@ -22,7 +22,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Drawing::Poin
 }
 #[cfg(feature = "System+Drawing+PointF")]
 impl crate::System::Drawing::PointF {
-    pub fn Equals_Gc0(
+    pub fn Equals_Il2CppObject0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -88,18 +88,18 @@ impl crate::System::Drawing::PointF {
     }
 }
 #[cfg(feature = "System+Drawing+PointF")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Drawing::PointF>>
+impl AsRef<crate::System::IEquatable_1<crate::System::Drawing::PointF>>
 for crate::System::Drawing::PointF {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Drawing::PointF> {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::System::Drawing::PointF> {
         todo!()
     }
 }
 #[cfg(feature = "System+Drawing+PointF")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Drawing::PointF>>
+impl AsMut<crate::System::IEquatable_1<crate::System::Drawing::PointF>>
 for crate::System::Drawing::PointF {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Drawing::PointF> {
+    ) -> &mut crate::System::IEquatable_1<crate::System::Drawing::PointF> {
         todo!()
     }
 }

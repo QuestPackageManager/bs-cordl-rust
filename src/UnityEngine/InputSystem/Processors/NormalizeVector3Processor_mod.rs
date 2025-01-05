@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NormalizeVector3Processor {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+    __cordl_parent: crate::UnityEngine::InputSystem::InputProcessor_1<
+        crate::UnityEngine::Vector3,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Processors+NormalizeVector3Processor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+InputSystem+Processors+NormalizeVector3Processor")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Processors::NormalizeVector3Processor {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>;
+    type Target = crate::UnityEngine::InputSystem::InputProcessor_1<
+        crate::UnityEngine::Vector3,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

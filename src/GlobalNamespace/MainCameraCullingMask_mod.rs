@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MainCameraCullingMask {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     pub _initData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MainCameraCullingMask_InitData,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MainCameraCullingMask")]
 impl std::ops::Deref for crate::GlobalNamespace::MainCameraCullingMask {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -72,7 +72,7 @@ for crate::GlobalNamespace::MainCameraCullingMask {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MainCameraCullingMask_InitData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub showDebris: bool,
 }
 #[cfg(feature = "MainCameraCullingMask+InitData")]
@@ -82,7 +82,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MainCameraCullingMask+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::MainCameraCullingMask_InitData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

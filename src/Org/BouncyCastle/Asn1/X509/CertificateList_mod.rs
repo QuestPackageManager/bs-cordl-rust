@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CertificateList {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub tbsCertList: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::X509::TbsCertificateList,
     >,
@@ -20,9 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+CertificateList")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::X509::CertificateList {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,17 +31,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::X509::CertificateLis
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+CertificateList")]
 impl crate::Org::BouncyCastle::Asn1::X509::CertificateList {
-    pub fn GetInstance_Gc1(
-        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::CertificateList>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::CertificateList,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetInstance__cordl_bool0(
+    pub fn GetInstance_Asn1TaggedObject__cordl_bool0(
         obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1TaggedObject>,
         explicitly: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -55,6 +41,16 @@ impl crate::Org::BouncyCastle::Asn1::X509::CertificateList {
             crate::Org::BouncyCastle::Asn1::X509::CertificateList,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetInstance", (obj, explicitly))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInstance_Il2CppObject1(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::CertificateList>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::CertificateList,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetRevokedCertificateEnumeration(
@@ -75,7 +71,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::CertificateList {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::CrlEntry>,
+                *mut crate::Org::BouncyCastle::Asn1::X509::CrlEntry,
             >,
         >,
     > {
@@ -84,7 +80,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::CertificateList {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::CrlEntry>,
+                *mut crate::Org::BouncyCastle::Asn1::X509::CrlEntry,
             >,
         > = __cordl_object.invoke("GetRevokedCertificates", ())?;
         Ok(__cordl_ret.into())

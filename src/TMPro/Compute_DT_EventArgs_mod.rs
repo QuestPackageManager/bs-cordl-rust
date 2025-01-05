@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Compute_DT_EventArgs {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub EventType: crate::TMPro::Compute_DistanceTransform_EventTypes,
     pub ProgressPercentage: f32,
     pub Colors: quest_hook::libil2cpp::Gc<
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+Compute_DT_EventArgs")]
 impl std::ops::Deref for crate::TMPro::Compute_DT_EventArgs {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,7 +29,7 @@ impl std::ops::DerefMut for crate::TMPro::Compute_DT_EventArgs {
 }
 #[cfg(feature = "TMPro+Compute_DT_EventArgs")]
 impl crate::TMPro::Compute_DT_EventArgs {
-    pub fn New_Gc1(
+    pub fn New_Il2CppArray1(
         _cordl_type: crate::TMPro::Compute_DistanceTransform_EventTypes,
         colors: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
@@ -51,7 +51,7 @@ impl crate::TMPro::Compute_DT_EventArgs {
             .invoke_void(".ctor", (_cordl_type, progress))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Il2CppArray1(
         &mut self,
         _cordl_type: crate::TMPro::Compute_DistanceTransform_EventTypes,
         colors: quest_hook::libil2cpp::Gc<

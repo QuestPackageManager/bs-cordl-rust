@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct JSONNode {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRSimpleJSON+JSONNode")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRSimpleJSON+JSONNode")]
 impl std::ops::Deref for crate::OVRSimpleJSON::JSONNode {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -46,7 +46,7 @@ impl crate::OVRSimpleJSON::JSONNode {
     pub type LinqEnumerator = crate::OVRSimpleJSON::JSONNode_LinqEnumerator;
     #[cfg(feature = "OVRSimpleJSON+JSONNode+ValueEnumerator")]
     pub type ValueEnumerator = crate::OVRSimpleJSON::JSONNode_ValueEnumerator;
-    pub fn Add_Gc0(
+    pub fn Add_Il2CppString_JSONNode0(
         &mut self,
         aKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         aItem: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
@@ -58,7 +58,7 @@ impl crate::OVRSimpleJSON::JSONNode {
             .invoke("Add", (aKey, aItem))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Add_Gc1(
+    pub fn Add_JSONNode1(
         &mut self,
         aItem: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -184,7 +184,7 @@ impl crate::OVRSimpleJSON::JSONNode {
             .invoke("ReadRectOffset", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadRectOffset_Gc0(
+    pub fn ReadRectOffset_RectOffset0(
         &mut self,
         aDefault: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectOffset>,
     ) -> quest_hook::libil2cpp::Result<
@@ -228,7 +228,7 @@ impl crate::OVRSimpleJSON::JSONNode {
             .invoke("ReadVector2", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadVector2_Gc_Gc1(
+    pub fn ReadVector2_Il2CppString_Il2CppString1(
         &mut self,
         aXName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         aYName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -261,7 +261,7 @@ impl crate::OVRSimpleJSON::JSONNode {
             .invoke("ReadVector3", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadVector3_Gc_Gc_Gc1(
+    pub fn ReadVector3_Il2CppString_Il2CppString_Il2CppString1(
         &mut self,
         aXName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         aYName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -306,7 +306,7 @@ impl crate::OVRSimpleJSON::JSONNode {
             .invoke("ReadVector4", (aDefault))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Remove_Gc0(
+    pub fn Remove_Il2CppString0(
         &mut self,
         aKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -319,7 +319,7 @@ impl crate::OVRSimpleJSON::JSONNode {
             .invoke("Remove", (aKey))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Remove_Gc2(
+    pub fn Remove_JSONNode2(
         &mut self,
         aNode: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
     ) -> quest_hook::libil2cpp::Result<
@@ -555,14 +555,18 @@ impl crate::OVRSimpleJSON::JSONNode {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+            >,
         > = __cordl_object.invoke("get_Children", ())?;
         Ok(__cordl_ret.into())
     }
@@ -577,14 +581,18 @@ impl crate::OVRSimpleJSON::JSONNode {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+            >,
         > = __cordl_object.invoke("get_DeepChildren", ())?;
         Ok(__cordl_ret.into())
     }
@@ -644,7 +652,7 @@ impl crate::OVRSimpleJSON::JSONNode {
         let __cordl_ret: bool = __cordl_object.invoke("get_IsString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn get_Item_Gc1(
+    pub fn get_Item_Il2CppString1(
         &mut self,
         aKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -684,9 +692,11 @@ impl crate::OVRSimpleJSON::JSONNode {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::KeyValuePair_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::System::Collections::Generic::KeyValuePair_2<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+                >,
             >,
         >,
     > {
@@ -694,9 +704,11 @@ impl crate::OVRSimpleJSON::JSONNode {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::KeyValuePair_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::System::Collections::Generic::KeyValuePair_2<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+                >,
             >,
         > = __cordl_object.invoke("get_Linq", ())?;
         Ok(__cordl_ret.into())
@@ -742,7 +754,7 @@ impl crate::OVRSimpleJSON::JSONNode {
             .invoke("op_Equality", (a, b))?;
         Ok(__cordl_ret.into())
     }
-    pub fn op_Implicit_Gc0(
+    pub fn op_Implicit_Il2CppString0(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
@@ -751,7 +763,7 @@ impl crate::OVRSimpleJSON::JSONNode {
             .invoke("op_Implicit", (s))?;
         Ok(__cordl_ret.into())
     }
-    pub fn op_Implicit_Gc1(
+    pub fn op_Implicit_JSONNode1(
         d: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -761,58 +773,49 @@ impl crate::OVRSimpleJSON::JSONNode {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("op_Implicit", (d))?;
         Ok(__cordl_ret.into())
     }
-    pub fn op_Implicit_Gc11(
+    pub fn op_Implicit_JSONNode11(
         d: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("op_Implicit", (d))?;
         Ok(__cordl_ret.into())
     }
-    pub fn op_Implicit_Gc18(
-        aRect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectOffset>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
-    > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("op_Implicit", (aRect))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn op_Implicit_Gc19(
+    pub fn op_Implicit_JSONNode19(
         aNode: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("op_Implicit", (aNode))?;
         Ok(__cordl_ret.into())
     }
-    pub fn op_Implicit_Gc20(
+    pub fn op_Implicit_JSONNode20(
         aNode: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
         let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("op_Implicit", (aNode))?;
         Ok(__cordl_ret.into())
     }
-    pub fn op_Implicit_Gc21(
+    pub fn op_Implicit_JSONNode21(
         aNode: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
         let __cordl_ret: crate::UnityEngine::Vector4 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("op_Implicit", (aNode))?;
         Ok(__cordl_ret.into())
     }
-    pub fn op_Implicit_Gc22(
+    pub fn op_Implicit_JSONNode22(
         aNode: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
         let __cordl_ret: crate::UnityEngine::Quaternion = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("op_Implicit", (aNode))?;
         Ok(__cordl_ret.into())
     }
-    pub fn op_Implicit_Gc23(
+    pub fn op_Implicit_JSONNode23(
         aNode: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
         let __cordl_ret: crate::UnityEngine::Rect = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("op_Implicit", (aNode))?;
         Ok(__cordl_ret.into())
     }
-    pub fn op_Implicit_Gc24(
+    pub fn op_Implicit_JSONNode24(
         aNode: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::RectOffset>,
@@ -821,28 +824,28 @@ impl crate::OVRSimpleJSON::JSONNode {
             .invoke("op_Implicit", (aNode))?;
         Ok(__cordl_ret.into())
     }
-    pub fn op_Implicit_Gc3(
+    pub fn op_Implicit_JSONNode3(
         d: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
     ) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("op_Implicit", (d))?;
         Ok(__cordl_ret.into())
     }
-    pub fn op_Implicit_Gc5(
+    pub fn op_Implicit_JSONNode5(
         d: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("op_Implicit", (d))?;
         Ok(__cordl_ret.into())
     }
-    pub fn op_Implicit_Gc7(
+    pub fn op_Implicit_JSONNode7(
         d: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("op_Implicit", (d))?;
         Ok(__cordl_ret.into())
     }
-    pub fn op_Implicit_Gc9(
+    pub fn op_Implicit_JSONNode9(
         d: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
     ) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
@@ -872,6 +875,15 @@ impl crate::OVRSimpleJSON::JSONNode {
     }
     pub fn op_Implicit_Rect17(
         aRect: crate::UnityEngine::Rect,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (aRect))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_RectOffset18(
+        aRect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectOffset>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
     > {
@@ -1025,7 +1037,7 @@ impl crate::OVRSimpleJSON::JSONNode {
             .invoke("set_Inline", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn set_Item_Gc1(
+    pub fn set_Item_Il2CppString1(
         &mut self,
         aKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
@@ -1256,7 +1268,7 @@ impl crate::OVRSimpleJSON::JSONNode_KeyEnumerator {
 #[repr(C)]
 #[derive(Debug)]
 pub struct JSONNode_LinqEnumerator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Node: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
     pub m_Enumerator: crate::OVRSimpleJSON::JSONNode_Enumerator,
 }
@@ -1267,7 +1279,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRSimpleJSON+JSONNode+LinqEnumerator")]
 impl std::ops::Deref for crate::OVRSimpleJSON::JSONNode_LinqEnumerator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1294,9 +1306,11 @@ impl crate::OVRSimpleJSON::JSONNode_LinqEnumerator {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::KeyValuePair_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::System::Collections::Generic::KeyValuePair_2<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+                >,
             >,
         >,
     > {
@@ -1304,9 +1318,11 @@ impl crate::OVRSimpleJSON::JSONNode_LinqEnumerator {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::KeyValuePair_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::System::Collections::Generic::KeyValuePair_2<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+                >,
             >,
         > = __cordl_object.invoke("GetEnumerator", ())?;
         Ok(__cordl_ret.into())
@@ -1404,7 +1420,7 @@ for crate::OVRSimpleJSON::JSONNode_LinqEnumerator {
 }
 #[cfg(feature = "OVRSimpleJSON+JSONNode+LinqEnumerator")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IEnumerable_1<
         crate::System::Collections::Generic::KeyValuePair_2<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
@@ -1413,7 +1429,7 @@ impl AsRef<
 > for crate::OVRSimpleJSON::JSONNode_LinqEnumerator {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
         crate::System::Collections::Generic::KeyValuePair_2<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
@@ -1424,7 +1440,7 @@ impl AsRef<
 }
 #[cfg(feature = "OVRSimpleJSON+JSONNode+LinqEnumerator")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IEnumerable_1<
         crate::System::Collections::Generic::KeyValuePair_2<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
@@ -1433,7 +1449,7 @@ impl AsMut<
 > for crate::OVRSimpleJSON::JSONNode_LinqEnumerator {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
         crate::System::Collections::Generic::KeyValuePair_2<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
@@ -1444,7 +1460,7 @@ impl AsMut<
 }
 #[cfg(feature = "OVRSimpleJSON+JSONNode+LinqEnumerator")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IEnumerator_1<
         crate::System::Collections::Generic::KeyValuePair_2<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
@@ -1453,7 +1469,7 @@ impl AsRef<
 > for crate::OVRSimpleJSON::JSONNode_LinqEnumerator {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::Collections::Generic::IEnumerator_1<
         crate::System::Collections::Generic::KeyValuePair_2<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
@@ -1464,7 +1480,7 @@ impl AsRef<
 }
 #[cfg(feature = "OVRSimpleJSON+JSONNode+LinqEnumerator")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IEnumerator_1<
         crate::System::Collections::Generic::KeyValuePair_2<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
@@ -1473,7 +1489,7 @@ impl AsMut<
 > for crate::OVRSimpleJSON::JSONNode_LinqEnumerator {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<
         crate::System::Collections::Generic::KeyValuePair_2<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
@@ -1483,52 +1499,44 @@ impl AsMut<
     }
 }
 #[cfg(feature = "OVRSimpleJSON+JSONNode+LinqEnumerator")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+impl AsRef<crate::System::Collections::IEnumerable>
 for crate::OVRSimpleJSON::JSONNode_LinqEnumerator {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OVRSimpleJSON+JSONNode+LinqEnumerator")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>>
+impl AsMut<crate::System::Collections::IEnumerable>
 for crate::OVRSimpleJSON::JSONNode_LinqEnumerator {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OVRSimpleJSON+JSONNode+LinqEnumerator")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
+impl AsRef<crate::System::Collections::IEnumerator>
 for crate::OVRSimpleJSON::JSONNode_LinqEnumerator {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
+    fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OVRSimpleJSON+JSONNode+LinqEnumerator")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>>
+impl AsMut<crate::System::Collections::IEnumerator>
 for crate::OVRSimpleJSON::JSONNode_LinqEnumerator {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OVRSimpleJSON+JSONNode+LinqEnumerator")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsRef<crate::System::IDisposable>
 for crate::OVRSimpleJSON::JSONNode_LinqEnumerator {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "OVRSimpleJSON+JSONNode+LinqEnumerator")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsMut<crate::System::IDisposable>
 for crate::OVRSimpleJSON::JSONNode_LinqEnumerator {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }

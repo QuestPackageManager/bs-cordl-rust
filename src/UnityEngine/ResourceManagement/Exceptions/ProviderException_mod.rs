@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProviderException {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ResourceManagement::Exceptions::OperationException,
-    >,
+    __cordl_parent: crate::UnityEngine::ResourceManagement::Exceptions::OperationException,
     pub _Location_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
     >,
@@ -18,9 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+ResourceManagement+Exceptions+ProviderException")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::Exceptions::ProviderException {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ResourceManagement::Exceptions::OperationException,
-    >;
+    type Target = crate::UnityEngine::ResourceManagement::Exceptions::OperationException;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RecordingToolSettingsFlowCoordinator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
+    __cordl_parent: crate::HMUI::FlowCoordinator,
     pub _recordingToolConfigViewController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::RecordingToolConfigViewController,
     >,
@@ -27,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "RecordingToolSettingsFlowCoordinator")]
 impl std::ops::Deref for crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator {
-    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>;
+    type Target = crate::HMUI::FlowCoordinator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -133,7 +133,7 @@ for crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator {
 #[repr(C)]
 #[derive(Debug)]
 pub struct RecordingToolSettingsFlowCoordinator_InitData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub nextScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::ScenesTransitionSetupDataSO,
     >,
@@ -147,7 +147,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "RecordingToolSettingsFlowCoordinator+InitData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator_InitData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

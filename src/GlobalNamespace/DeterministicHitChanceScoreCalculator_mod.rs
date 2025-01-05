@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DeterministicHitChanceScoreCalculator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _hitChance: f32,
     pub _chanceAggregated: f32,
 }
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "DeterministicHitChanceScoreCalculator")]
 impl std::ops::Deref for crate::GlobalNamespace::DeterministicHitChanceScoreCalculator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -71,22 +71,16 @@ for crate::GlobalNamespace::DeterministicHitChanceScoreCalculator {
     }
 }
 #[cfg(feature = "DeterministicHitChanceScoreCalculator")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMockPlayerScoreCalculator>>
+impl AsRef<crate::GlobalNamespace::IMockPlayerScoreCalculator>
 for crate::GlobalNamespace::DeterministicHitChanceScoreCalculator {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMockPlayerScoreCalculator> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IMockPlayerScoreCalculator {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "DeterministicHitChanceScoreCalculator")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMockPlayerScoreCalculator>>
+impl AsMut<crate::GlobalNamespace::IMockPlayerScoreCalculator>
 for crate::GlobalNamespace::DeterministicHitChanceScoreCalculator {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IMockPlayerScoreCalculator,
-    > {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IMockPlayerScoreCalculator {
         unsafe { std::mem::transmute(self) }
     }
 }

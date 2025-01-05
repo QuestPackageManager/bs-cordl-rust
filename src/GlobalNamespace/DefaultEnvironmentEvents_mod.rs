@@ -2,19 +2,15 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultEnvironmentEvents {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _basicBeatmapEvents: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent,
-            >,
+            *mut crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent,
         >,
     >,
     pub _lightGroupEvents: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent,
-            >,
+            *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent,
         >,
     >,
 }
@@ -25,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "DefaultEnvironmentEvents")]
 impl std::ops::Deref for crate::GlobalNamespace::DefaultEnvironmentEvents {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -68,9 +64,7 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent,
-                >,
+                *mut crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent,
             >,
         >,
     > {
@@ -79,9 +73,7 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent,
-                >,
+                *mut crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent,
             >,
         > = __cordl_object.invoke("get_basicBeatmapEvents", ())?;
         Ok(__cordl_ret.into())
@@ -98,9 +90,7 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent,
-                >,
+                *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent,
             >,
         >,
     > {
@@ -109,9 +99,7 @@ impl crate::GlobalNamespace::DefaultEnvironmentEvents {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent,
-                >,
+                *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent,
             >,
         > = __cordl_object.invoke("get_lightGroupEvents", ())?;
         Ok(__cordl_ret.into())
@@ -131,7 +119,7 @@ for crate::GlobalNamespace::DefaultEnvironmentEvents {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultEnvironmentEvents_BasicBeatmapEvent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _eventType: crate::GlobalNamespace::BasicBeatmapEventType,
     pub _value: i32,
     pub _floatValue: f32,
@@ -145,7 +133,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "DefaultEnvironmentEvents+BasicBeatmapEvent")]
 impl std::ops::Deref
 for crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -215,7 +203,7 @@ for crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultEnvironmentEvents_LightGroupDistribution {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _useDistribution: bool,
     pub _distributionParam: f32,
     pub _distributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
@@ -229,7 +217,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "DefaultEnvironmentEvents+LightGroupDistribution")]
 impl std::ops::Deref
 for crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -301,7 +289,7 @@ for crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultEnvironmentEvents_LightGroupEvent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _lightGroup: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
     pub _environmentColorType: crate::GlobalNamespace::EnvironmentColorType,
     pub _brightness: f32,
@@ -358,7 +346,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "DefaultEnvironmentEvents+LightGroupEvent")]
 impl std::ops::Deref
 for crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -663,7 +651,7 @@ for crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultEnvironmentEvents_LightGroupFiltering {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _useFiltering: bool,
     pub _randomType: crate::GlobalNamespace::IndexFilter_IndexFilterRandomType,
     pub _limit: f32,
@@ -680,7 +668,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "DefaultEnvironmentEvents+LightGroupFiltering")]
 impl std::ops::Deref
 for crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

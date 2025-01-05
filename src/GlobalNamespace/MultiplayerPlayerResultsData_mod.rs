@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerPlayerResultsData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub connectedPlayer: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IConnectedPlayer,
     >,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplayerPlayerResultsData")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerPlayerResultsData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -85,16 +85,16 @@ for crate::GlobalNamespace::MultiplayerPlayerResultsData {
     }
 }
 #[cfg(feature = "MultiplayerPlayerResultsData")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
+impl AsRef<crate::System::IComparable>
 for crate::GlobalNamespace::MultiplayerPlayerResultsData {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IComparable> {
+    fn as_ref(&self) -> &crate::System::IComparable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MultiplayerPlayerResultsData")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IComparable>>
+impl AsMut<crate::System::IComparable>
 for crate::GlobalNamespace::MultiplayerPlayerResultsData {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IComparable> {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable {
         unsafe { std::mem::transmute(self) }
     }
 }

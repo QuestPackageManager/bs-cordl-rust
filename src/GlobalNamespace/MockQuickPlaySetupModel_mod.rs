@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MockQuickPlaySetupModel {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _quickPlaySetupData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::QuickPlaySetupData,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MockQuickPlaySetupModel")]
 impl std::ops::Deref for crate::GlobalNamespace::MockQuickPlaySetupModel {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,14 +32,18 @@ impl crate::GlobalNamespace::MockQuickPlaySetupModel {
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::QuickPlaySetupData>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::QuickPlaySetupData>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::QuickPlaySetupData>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::QuickPlaySetupData>,
+            >,
         > = __cordl_object.invoke("GetQuickPlaySetupAsync", (cancellationToken))?;
         Ok(__cordl_ret.into())
     }
@@ -72,20 +76,16 @@ for crate::GlobalNamespace::MockQuickPlaySetupModel {
     }
 }
 #[cfg(feature = "MockQuickPlaySetupModel")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IQuickPlaySetupModel>>
+impl AsRef<crate::GlobalNamespace::IQuickPlaySetupModel>
 for crate::GlobalNamespace::MockQuickPlaySetupModel {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IQuickPlaySetupModel> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IQuickPlaySetupModel {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MockQuickPlaySetupModel")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IQuickPlaySetupModel>>
+impl AsMut<crate::GlobalNamespace::IQuickPlaySetupModel>
 for crate::GlobalNamespace::MockQuickPlaySetupModel {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IQuickPlaySetupModel> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IQuickPlaySetupModel {
         unsafe { std::mem::transmute(self) }
     }
 }

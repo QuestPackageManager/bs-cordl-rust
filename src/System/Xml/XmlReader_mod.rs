@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlReader {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Xml+XmlReader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlReader")]
 impl std::ops::Deref for crate::System::Xml::XmlReader {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -65,7 +65,7 @@ impl crate::System::Xml::XmlReader {
             .invoke("CreateWriterForInnerOuterXml", (sw))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Create_Gc_Gc_Gc0(
+    pub fn Create_Stream0(
         input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         settings: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReaderSettings>,
         baseUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -76,7 +76,7 @@ impl crate::System::Xml::XmlReader {
             .invoke("Create", (input, settings, baseUri))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Create_Gc_Gc_Gc1(
+    pub fn Create_TextReader1(
         input: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
         settings: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReaderSettings>,
         baseUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -108,7 +108,7 @@ impl crate::System::Xml::XmlReader {
             .invoke("Dispose", (disposing))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAttribute_Gc0(
+    pub fn GetAttribute_Il2CppString0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -122,7 +122,7 @@ impl crate::System::Xml::XmlReader {
         > = __cordl_object.invoke("GetAttribute", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAttribute_Gc_Gc1(
+    pub fn GetAttribute_Il2CppString_Il2CppString1(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         namespaceURI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -191,7 +191,7 @@ impl crate::System::Xml::XmlReader {
         > = __cordl_object.invoke("LookupNamespace", (prefix))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MoveToAttribute_Gc0(
+    pub fn MoveToAttribute_Il2CppString0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -682,16 +682,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlReader {
     }
 }
 #[cfg(feature = "System+Xml+XmlReader")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::System::Xml::XmlReader {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsRef<crate::System::IDisposable> for crate::System::Xml::XmlReader {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+XmlReader")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::System::Xml::XmlReader {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsMut<crate::System::IDisposable> for crate::System::Xml::XmlReader {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }

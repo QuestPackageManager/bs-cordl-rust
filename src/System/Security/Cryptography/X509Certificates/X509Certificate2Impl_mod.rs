@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509Certificate2Impl {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
-    >,
+    __cordl_parent: crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509Certificate2Impl")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509Certificate2Impl")]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X509Certificate2Impl {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
-    >;
+    type Target = crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -106,8 +102,10 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate2Im
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Security::Cryptography::X509Certificates::X509Extension,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Security::Cryptography::X509Certificates::X509Extension,
+                >,
             >,
         >,
     > {
@@ -115,8 +113,10 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate2Im
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Security::Cryptography::X509Certificates::X509Extension,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Security::Cryptography::X509Certificates::X509Extension,
+                >,
             >,
         > = __cordl_object.invoke("get_Extensions", ())?;
         Ok(__cordl_ret.into())

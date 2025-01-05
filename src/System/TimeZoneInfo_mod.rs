@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimeZoneInfo {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _displayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _standardDisplayName: quest_hook::libil2cpp::Gc<
@@ -15,7 +15,7 @@ pub struct TimeZoneInfo {
     pub _supportsDaylightSavingTime: bool,
     pub _adjustmentRules: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
+            *mut crate::System::TimeZoneInfo_AdjustmentRule,
         >,
     >,
 }
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+TimeZoneInfo")]
 impl std::ops::Deref for crate::System::TimeZoneInfo {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -114,7 +114,7 @@ impl crate::System::TimeZoneInfo {
             .invoke("ConvertTimeToUtc", (dateTime, flags))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ConvertTime_DateTime_Gc_Gc_TimeZoneInfoOptions0(
+    pub fn ConvertTime_DateTime_TimeZoneInfo_TimeZoneInfo_TimeZoneInfoOptions0(
         dateTime: crate::System::DateTime,
         sourceTimeZone: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
         destinationTimeZone: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
@@ -127,7 +127,7 @@ impl crate::System::TimeZoneInfo {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn ConvertTime_Gc1(
+    pub fn ConvertTime_TimeZoneInfo_CachedData1(
         dateTime: crate::System::DateTime,
         sourceTimeZone: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
         destinationTimeZone: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
@@ -191,22 +191,26 @@ impl crate::System::TimeZoneInfo {
         names: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    *mut quest_hook::libil2cpp::Il2CppString,
                 >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("CreateAdjustmentRule", (year, data, names))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateCustomTimeZone_Gc_Gc__cordl_bool1(
+    pub fn CreateCustomTimeZone_Il2CppString_Il2CppArray__cordl_bool1(
         id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         baseUtcOffset: crate::System::TimeSpan,
         displayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -218,7 +222,7 @@ impl crate::System::TimeZoneInfo {
         >,
         adjustmentRules: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
+                *mut crate::System::TimeZoneInfo_AdjustmentRule,
             >,
         >,
         disableDaylightSavingTime: bool,
@@ -240,7 +244,7 @@ impl crate::System::TimeZoneInfo {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateCustomTimeZone_Gc_TimeSpan_Gc_Gc0(
+    pub fn CreateCustomTimeZone_Il2CppString_TimeSpan_Il2CppString_Il2CppString0(
         id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         baseUtcOffset: crate::System::TimeSpan,
         displayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -267,24 +271,16 @@ impl crate::System::TimeZoneInfo {
     pub fn EnumerateFilesRecursively(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         condition: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Predicate_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("EnumerateFilesRecursively", (path, condition))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Gc0(
-        &mut self,
-        other: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Equals_Gc1(
+    pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -292,6 +288,16 @@ impl crate::System::TimeZoneInfo {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Equals_TimeZoneInfo0(
+        &mut self,
+        other: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
         Ok(__cordl_ret.into())
     }
     pub fn FindTimeZoneId(
@@ -353,7 +359,7 @@ impl crate::System::TimeZoneInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
+                *mut crate::System::TimeZoneInfo_AdjustmentRule,
             >,
         >,
     > {
@@ -362,7 +368,7 @@ impl crate::System::TimeZoneInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
+                *mut crate::System::TimeZoneInfo_AdjustmentRule,
             >,
         > = __cordl_object.invoke("GetAdjustmentRules", ())?;
         Ok(__cordl_ret.into())
@@ -584,7 +590,7 @@ impl crate::System::TimeZoneInfo {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetUtcOffsetFromUtc_DateTime_Gc0(
+    pub fn GetUtcOffsetFromUtc_DateTime_TimeZoneInfo0(
         _cordl_time: crate::System::DateTime,
         zone: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
@@ -603,15 +609,6 @@ impl crate::System::TimeZoneInfo {
             .invoke("GetUtcOffset", (dateTime))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetUtcOffset_DateTime_Gc_TimeZoneInfoOptions3(
-        _cordl_time: crate::System::DateTime,
-        zone: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
-        flags: crate::System::TimeZoneInfoOptions,
-    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        let __cordl_ret: crate::System::TimeSpan = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetUtcOffset", (_cordl_time, zone, flags))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn GetUtcOffset_DateTime_TimeZoneInfoOptions1(
         &mut self,
         dateTime: crate::System::DateTime,
@@ -624,7 +621,7 @@ impl crate::System::TimeZoneInfo {
             .invoke("GetUtcOffset", (dateTime, flags))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetUtcOffset_DateTime_TimeZoneInfoOptions_Gc2(
+    pub fn GetUtcOffset_DateTime_TimeZoneInfoOptions_TimeZoneInfo_CachedData2(
         &mut self,
         dateTime: crate::System::DateTime,
         flags: crate::System::TimeZoneInfoOptions,
@@ -637,7 +634,16 @@ impl crate::System::TimeZoneInfo {
             .invoke("GetUtcOffset", (dateTime, flags, cachedData))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetUtcOffset_TimeSpan_Gc4(
+    pub fn GetUtcOffset_DateTime_TimeZoneInfo_TimeZoneInfoOptions3(
+        _cordl_time: crate::System::DateTime,
+        zone: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
+        flags: crate::System::TimeZoneInfoOptions,
+    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
+        let __cordl_ret: crate::System::TimeSpan = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetUtcOffset", (_cordl_time, zone, flags))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUtcOffset_TimeSpan_TimeZoneInfo_AdjustmentRule4(
         baseUtcOffset: crate::System::TimeSpan,
         adjustmentRule: quest_hook::libil2cpp::Gc<
             crate::System::TimeZoneInfo_AdjustmentRule,
@@ -674,7 +680,7 @@ impl crate::System::TimeZoneInfo {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc__cordl_bool0(
+    pub fn New_Il2CppArray_Il2CppString__cordl_bool0(
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         dstDisabled: bool,
@@ -685,19 +691,7 @@ impl crate::System::TimeZoneInfo {
             .invoke_void(".ctor", (data, id, dstDisabled))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_StreamingContext2(
-        info: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::Serialization::SerializationInfo,
-        >,
-        context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (info, context))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_TimeSpan_Gc_Gc_Gc_Gc__cordl_bool1(
+    pub fn New_Il2CppString_TimeSpan_Il2CppString_Il2CppString_Il2CppString_Il2CppArray__cordl_bool1(
         id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         baseUtcOffset: crate::System::TimeSpan,
         displayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -709,7 +703,7 @@ impl crate::System::TimeZoneInfo {
         >,
         adjustmentRules: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
+                *mut crate::System::TimeZoneInfo_AdjustmentRule,
             >,
         >,
         disableDaylightSavingTime: bool,
@@ -729,6 +723,18 @@ impl crate::System::TimeZoneInfo {
                     disableDaylightSavingTime,
                 ),
             )?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_SerializationInfo_StreamingContext2(
+        info: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
+        context: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (info, context))?;
         Ok(__cordl_object.into())
     }
     pub fn NormalizeAdjustmentRuleOffset(
@@ -818,7 +824,9 @@ impl crate::System::TimeZoneInfo {
         index: quest_hook::libil2cpp::ByRefMut<i32>,
         timeZoneBaseUtcOffset: crate::System::TimeSpan,
         rulesList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
+            >,
         >,
         dts: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::System::DateTime>,
@@ -858,7 +866,7 @@ impl crate::System::TimeZoneInfo {
         rules: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
+                    *mut crate::System::TimeZoneInfo_AdjustmentRule,
                 >,
             >,
         >,
@@ -1044,7 +1052,7 @@ impl crate::System::TimeZoneInfo {
     pub fn TZif_ParsePosixString(
         posixFormat: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         index: quest_hook::libil2cpp::ByRefMut<i32>,
-        breakCondition: quest_hook::libil2cpp::Gc<char, bool>,
+        breakCondition: quest_hook::libil2cpp::Gc<crate::System::Func_2<char, bool>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
@@ -1202,7 +1210,7 @@ impl crate::System::TimeZoneInfo {
         baseUtcOffset: crate::System::TimeSpan,
         adjustmentRules: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
+                *mut crate::System::TimeZoneInfo_AdjustmentRule,
             >,
         >,
         adjustmentRulesSupportDst: quest_hook::libil2cpp::ByRefMut<bool>,
@@ -1224,7 +1232,7 @@ impl crate::System::TimeZoneInfo {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc__cordl_bool0(
+    pub fn _ctor_Il2CppArray_Il2CppString__cordl_bool0(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1237,21 +1245,7 @@ impl crate::System::TimeZoneInfo {
             .invoke(".ctor", (data, id, dstDisabled))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_StreamingContext2(
-        &mut self,
-        info: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::Serialization::SerializationInfo,
-        >,
-        context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (info, context))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_TimeSpan_Gc_Gc_Gc_Gc__cordl_bool1(
+    pub fn _ctor_Il2CppString_TimeSpan_Il2CppString_Il2CppString_Il2CppString_Il2CppArray__cordl_bool1(
         &mut self,
         id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         baseUtcOffset: crate::System::TimeSpan,
@@ -1264,7 +1258,7 @@ impl crate::System::TimeZoneInfo {
         >,
         adjustmentRules: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
+                *mut crate::System::TimeZoneInfo_AdjustmentRule,
             >,
         >,
         disableDaylightSavingTime: bool,
@@ -1285,6 +1279,20 @@ impl crate::System::TimeZoneInfo {
                     disableDaylightSavingTime,
                 ),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_SerializationInfo_StreamingContext2(
+        &mut self,
+        info: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
+        context: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (info, context))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_BaseUtcOffset(
@@ -1372,63 +1380,11 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::TimeZoneInfo {
 }
 #[cfg(feature = "System+TimeZoneInfo")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IDeserializationCallback,
-    >,
+    crate::System::IEquatable_1<quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>>,
 > for crate::System::TimeZoneInfo {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IDeserializationCallback,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+TimeZoneInfo")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IDeserializationCallback,
-    >,
-> for crate::System::TimeZoneInfo {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IDeserializationCallback,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+TimeZoneInfo")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::TimeZoneInfo {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+TimeZoneInfo")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::TimeZoneInfo {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+TimeZoneInfo")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>>,
-> for crate::System::TimeZoneInfo {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -1436,13 +1392,45 @@ impl AsRef<
 }
 #[cfg(feature = "System+TimeZoneInfo")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>>,
+    crate::System::IEquatable_1<quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>>,
 > for crate::System::TimeZoneInfo {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
     > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+TimeZoneInfo")]
+impl AsRef<crate::System::Runtime::Serialization::IDeserializationCallback>
+for crate::System::TimeZoneInfo {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Runtime::Serialization::IDeserializationCallback {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+TimeZoneInfo")]
+impl AsMut<crate::System::Runtime::Serialization::IDeserializationCallback>
+for crate::System::TimeZoneInfo {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::Serialization::IDeserializationCallback {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+TimeZoneInfo")]
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::TimeZoneInfo {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+TimeZoneInfo")]
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::TimeZoneInfo {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -1450,7 +1438,7 @@ impl AsMut<
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimeZoneInfo_AdjustmentRule {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _dateStart: crate::System::DateTime,
     pub _dateEnd: crate::System::DateTime,
     pub _daylightDelta: crate::System::TimeSpan,
@@ -1466,7 +1454,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+TimeZoneInfo+AdjustmentRule")]
 impl std::ops::Deref for crate::System::TimeZoneInfo_AdjustmentRule {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1601,7 +1589,7 @@ impl crate::System::TimeZoneInfo_AdjustmentRule {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_StreamingContext1(
+    pub fn New_SerializationInfo_StreamingContext1(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -1704,7 +1692,7 @@ impl crate::System::TimeZoneInfo_AdjustmentRule {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_StreamingContext1(
+    pub fn _ctor_SerializationInfo_StreamingContext1(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -1804,65 +1792,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::TimeZoneInfo_Adjustmen
 }
 #[cfg(feature = "System+TimeZoneInfo+AdjustmentRule")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IDeserializationCallback,
-    >,
-> for crate::System::TimeZoneInfo_AdjustmentRule {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IDeserializationCallback,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+TimeZoneInfo+AdjustmentRule")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IDeserializationCallback,
-    >,
-> for crate::System::TimeZoneInfo_AdjustmentRule {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IDeserializationCallback,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+TimeZoneInfo+AdjustmentRule")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::TimeZoneInfo_AdjustmentRule {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+TimeZoneInfo+AdjustmentRule")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::TimeZoneInfo_AdjustmentRule {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+TimeZoneInfo+AdjustmentRule")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
     >,
 > for crate::System::TimeZoneInfo_AdjustmentRule {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -1870,15 +1806,47 @@ impl AsRef<
 }
 #[cfg(feature = "System+TimeZoneInfo+AdjustmentRule")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
     >,
 > for crate::System::TimeZoneInfo_AdjustmentRule {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_AdjustmentRule>,
     > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+TimeZoneInfo+AdjustmentRule")]
+impl AsRef<crate::System::Runtime::Serialization::IDeserializationCallback>
+for crate::System::TimeZoneInfo_AdjustmentRule {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Runtime::Serialization::IDeserializationCallback {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+TimeZoneInfo+AdjustmentRule")]
+impl AsMut<crate::System::Runtime::Serialization::IDeserializationCallback>
+for crate::System::TimeZoneInfo_AdjustmentRule {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::Serialization::IDeserializationCallback {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+TimeZoneInfo+AdjustmentRule")]
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::TimeZoneInfo_AdjustmentRule {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+TimeZoneInfo+AdjustmentRule")]
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::TimeZoneInfo_AdjustmentRule {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -1886,7 +1854,7 @@ impl AsMut<
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimeZoneInfo_CachedData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _localTimeZone: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
 }
 #[cfg(feature = "System+TimeZoneInfo+CachedData")]
@@ -1896,7 +1864,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+TimeZoneInfo+CachedData")]
 impl std::ops::Deref for crate::System::TimeZoneInfo_CachedData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2116,7 +2084,7 @@ impl crate::System::TimeZoneInfo_TransitionTime {
             .invoke("CreateFloatingDateRule", (timeOfDay, month, week, dayOfWeek))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Gc0(
+    pub fn Equals_Il2CppObject0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -2198,7 +2166,7 @@ impl crate::System::TimeZoneInfo_TransitionTime {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_StreamingContext1(
+    pub fn _ctor_SerializationInfo_StreamingContext1(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -2274,72 +2242,52 @@ impl crate::System::TimeZoneInfo_TransitionTime {
     }
 }
 #[cfg(feature = "System+TimeZoneInfo+TransitionTime")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IDeserializationCallback,
-    >,
-> for crate::System::TimeZoneInfo_TransitionTime {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IDeserializationCallback,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "System+TimeZoneInfo+TransitionTime")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IDeserializationCallback,
-    >,
-> for crate::System::TimeZoneInfo_TransitionTime {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IDeserializationCallback,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "System+TimeZoneInfo+TransitionTime")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::TimeZoneInfo_TransitionTime {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "System+TimeZoneInfo+TransitionTime")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::TimeZoneInfo_TransitionTime {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "System+TimeZoneInfo+TransitionTime")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_TransitionTime>>
+impl AsRef<crate::System::IEquatable_1<crate::System::TimeZoneInfo_TransitionTime>>
 for crate::System::TimeZoneInfo_TransitionTime {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_TransitionTime> {
+    ) -> &crate::System::IEquatable_1<crate::System::TimeZoneInfo_TransitionTime> {
         todo!()
     }
 }
 #[cfg(feature = "System+TimeZoneInfo+TransitionTime")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_TransitionTime>>
+impl AsMut<crate::System::IEquatable_1<crate::System::TimeZoneInfo_TransitionTime>>
 for crate::System::TimeZoneInfo_TransitionTime {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo_TransitionTime> {
+    ) -> &mut crate::System::IEquatable_1<crate::System::TimeZoneInfo_TransitionTime> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+TimeZoneInfo+TransitionTime")]
+impl AsRef<crate::System::Runtime::Serialization::IDeserializationCallback>
+for crate::System::TimeZoneInfo_TransitionTime {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Runtime::Serialization::IDeserializationCallback {
+        todo!()
+    }
+}
+#[cfg(feature = "System+TimeZoneInfo+TransitionTime")]
+impl AsMut<crate::System::Runtime::Serialization::IDeserializationCallback>
+for crate::System::TimeZoneInfo_TransitionTime {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Runtime::Serialization::IDeserializationCallback {
+        todo!()
+    }
+}
+#[cfg(feature = "System+TimeZoneInfo+TransitionTime")]
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::TimeZoneInfo_TransitionTime {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+TimeZoneInfo+TransitionTime")]
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::TimeZoneInfo_TransitionTime {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
         todo!()
     }
 }

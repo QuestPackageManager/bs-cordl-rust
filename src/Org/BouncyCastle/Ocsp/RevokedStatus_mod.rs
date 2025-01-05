@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RevokedStatus {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Ocsp::CertificateStatus,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Ocsp::CertificateStatus,
     pub info: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::Ocsp::RevokedInfo,
     >,
@@ -16,9 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Ocsp+RevokedStatus")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Ocsp::RevokedStatus {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Ocsp::CertificateStatus,
-    >;
+    type Target = crate::Org::BouncyCastle::Ocsp::CertificateStatus;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -41,7 +37,7 @@ impl crate::Org::BouncyCastle::Ocsp::RevokedStatus {
             .invoke_void(".ctor", (revocationDate, reason))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc0(
+    pub fn New_RevokedInfo0(
         info: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Ocsp::RevokedInfo,
         >,
@@ -64,7 +60,7 @@ impl crate::Org::BouncyCastle::Ocsp::RevokedStatus {
             .invoke(".ctor", (revocationDate, reason))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_RevokedInfo0(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Ocsp::RevokedInfo,

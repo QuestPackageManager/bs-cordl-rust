@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DlcPromoPanelDataSO {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+    __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _cutOffTest: i32,
     pub _minNumberOfNotOwnedPacks: i32,
     pub _defaultPromoInfoId: quest_hook::libil2cpp::Gc<
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "DlcPromoPanelDataSO")]
 impl std::ops::Deref for crate::GlobalNamespace::DlcPromoPanelDataSO {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>;
+    type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

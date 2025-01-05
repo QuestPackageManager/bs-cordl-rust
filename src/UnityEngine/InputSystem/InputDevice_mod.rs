@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputDevice {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::InputControl,
-    >,
+    __cordl_parent: crate::UnityEngine::InputSystem::InputControl,
     pub m_DeviceFlags: crate::UnityEngine::InputSystem::InputDevice_DeviceFlags,
     pub m_DeviceId: i32,
     pub m_ParticipantId: i32,
@@ -24,12 +22,12 @@ pub struct InputDevice {
     >,
     pub m_UsageToControl: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+            *mut crate::UnityEngine::InputSystem::InputControl,
         >,
     >,
     pub m_ChildrenForEachControl: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+            *mut crate::UnityEngine::InputSystem::InputControl,
         >,
     >,
     pub m_StateOffsetToControlMap: quest_hook::libil2cpp::Gc<
@@ -51,9 +49,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputDevice")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputDevice {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::InputControl,
-    >;
+    type Target = crate::UnityEngine::InputSystem::InputControl;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -146,7 +142,9 @@ impl crate::UnityEngine::InputSystem::InputDevice {
         startOffset: u32,
         sizeInBits: u32,
         output: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -172,12 +170,14 @@ impl crate::UnityEngine::InputSystem::InputDevice {
         > = __cordl_object.invoke("DumpControlTree", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn DumpControlTree_InputDevice_ControlBitRangeNode_u32_Gc0(
+    pub fn DumpControlTree_InputDevice_ControlBitRangeNode_u32_List_1_0(
         &mut self,
         parentNode: crate::UnityEngine::InputSystem::InputDevice_ControlBitRangeNode,
         startOffset: u32,
         output: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -213,7 +213,7 @@ impl crate::UnityEngine::InputSystem::InputDevice {
         let __cordl_ret: i64 = __cordl_object.invoke("ExecuteCommand", (command))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ExecuteCommand_Gc1(
+    pub fn ExecuteCommand_Il2CppObject1(
         &mut self,
         commandPtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i64> {

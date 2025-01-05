@@ -2,12 +2,22 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseListViewController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::CollectionViewController,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::CollectionViewController,
     pub itemsSourceSizeChanged: quest_hook::libil2cpp::Gc<crate::System::Action>,
-    pub itemsAdded: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<i32>>,
-    pub itemsRemoved: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<i32>>,
+    pub itemsAdded: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::IEnumerable_1<i32>,
+            >,
+        >,
+    >,
+    pub itemsRemoved: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::IEnumerable_1<i32>,
+            >,
+        >,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseListViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -16,9 +26,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+BaseListViewController")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::BaseListViewController {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::CollectionViewController,
-    >;
+    type Target = crate::UnityEngine::UIElements::CollectionViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -141,7 +149,9 @@ impl crate::UnityEngine::UIElements::BaseListViewController {
     }
     pub fn RaiseItemsAdded(
         &mut self,
-        indices: quest_hook::libil2cpp::Gc<i32>,
+        indices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -152,7 +162,9 @@ impl crate::UnityEngine::UIElements::BaseListViewController {
     }
     pub fn RaiseItemsRemoved(
         &mut self,
-        indices: quest_hook::libil2cpp::Gc<i32>,
+        indices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -173,7 +185,9 @@ impl crate::UnityEngine::UIElements::BaseListViewController {
     }
     pub fn RemoveFromArray(
         source: quest_hook::libil2cpp::Gc<crate::System::Array>,
-        indicesToRemove: quest_hook::libil2cpp::Gc<i32>,
+        indicesToRemove: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Array>> {
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Array> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("RemoveFromArray", (source, indicesToRemove))?;
@@ -190,9 +204,11 @@ impl crate::UnityEngine::UIElements::BaseListViewController {
             .invoke("RemoveItem", (index))?;
         Ok(__cordl_ret.into())
     }
-    pub fn RemoveItems_Gc0(
+    pub fn RemoveItems_List_1_0(
         &mut self,
-        indices: quest_hook::libil2cpp::Gc<i32>,
+        indices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -243,7 +259,13 @@ impl crate::UnityEngine::UIElements::BaseListViewController {
     }
     pub fn add_itemsAdded(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<i32>>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<i32>,
+                >,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -254,7 +276,13 @@ impl crate::UnityEngine::UIElements::BaseListViewController {
     }
     pub fn add_itemsRemoved(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<i32>>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<i32>,
+                >,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -289,7 +317,13 @@ impl crate::UnityEngine::UIElements::BaseListViewController {
     }
     pub fn remove_itemsAdded(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<i32>>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<i32>,
+                >,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -300,7 +334,13 @@ impl crate::UnityEngine::UIElements::BaseListViewController {
     }
     pub fn remove_itemsRemoved(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<i32>>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<i32>,
+                >,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

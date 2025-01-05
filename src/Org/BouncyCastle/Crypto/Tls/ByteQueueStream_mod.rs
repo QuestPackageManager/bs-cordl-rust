@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ByteQueueStream {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    __cordl_parent: crate::System::IO::Stream,
     pub buffer: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Tls::ByteQueue,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+ByteQueueStream")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::ByteQueueStream {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::IO::Stream>;
+    type Target = crate::System::IO::Stream;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -61,7 +61,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::ByteQueueStream {
         let __cordl_ret: i32 = __cordl_object.invoke("ReadByte", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Read_Gc0(
+    pub fn Read_Il2CppArray0(
         &mut self,
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -123,7 +123,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::ByteQueueStream {
             .invoke("WriteByte", (b))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Write_Gc0(
+    pub fn Write_Il2CppArray0(
         &mut self,
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

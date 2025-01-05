@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextGenerationSettings {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub screenRect: crate::UnityEngine::Rect,
     pub margins: crate::UnityEngine::Vector4,
@@ -75,7 +75,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+TextCore+Text+TextGenerationSettings")]
 impl std::ops::Deref for crate::UnityEngine::TextCore::Text::TextGenerationSettings {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -88,7 +88,17 @@ impl std::ops::DerefMut for crate::UnityEngine::TextCore::Text::TextGenerationSe
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextGenerationSettings")]
 impl crate::UnityEngine::TextCore::Text::TextGenerationSettings {
-    pub fn Equals_Gc0(
+    pub fn Equals_Il2CppObject1(
+        &mut self,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Equals_TextGenerationSettings0(
         &mut self,
         other: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::TextCore::Text::TextGenerationSettings,
@@ -98,16 +108,6 @@ impl crate::UnityEngine::TextCore::Text::TextGenerationSettings {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Equals_Gc1(
-        &mut self,
-        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -172,7 +172,7 @@ for crate::UnityEngine::TextCore::Text::TextGenerationSettings {
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextGenerationSettings")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::TextCore::Text::TextGenerationSettings,
         >,
@@ -180,7 +180,7 @@ impl AsRef<
 > for crate::UnityEngine::TextCore::Text::TextGenerationSettings {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::TextCore::Text::TextGenerationSettings,
         >,
@@ -190,7 +190,7 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextGenerationSettings")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::TextCore::Text::TextGenerationSettings,
         >,
@@ -198,7 +198,7 @@ impl AsMut<
 > for crate::UnityEngine::TextCore::Text::TextGenerationSettings {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::TextCore::Text::TextGenerationSettings,
         >,

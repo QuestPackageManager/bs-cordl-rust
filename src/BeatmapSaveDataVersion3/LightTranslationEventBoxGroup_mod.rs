@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightTranslationEventBoxGroup {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::BeatmapSaveDataVersion3::EventBoxGroup_1<
         quest_hook::libil2cpp::Gc<
             crate::BeatmapSaveDataVersion3::LightTranslationEventBox,
         >,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapSaveDataVersion3+LightTranslationEventBoxGroup")]
 impl std::ops::Deref for crate::BeatmapSaveDataVersion3::LightTranslationEventBoxGroup {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::BeatmapSaveDataVersion3::EventBoxGroup_1<
         quest_hook::libil2cpp::Gc<
             crate::BeatmapSaveDataVersion3::LightTranslationEventBox,
         >,
@@ -55,8 +55,10 @@ impl crate::BeatmapSaveDataVersion3::LightTranslationEventBoxGroup {
         beat: f32,
         groupId: i32,
         eventBoxes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion3::LightTranslationEventBox,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion3::LightTranslationEventBox,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -71,8 +73,10 @@ impl crate::BeatmapSaveDataVersion3::LightTranslationEventBoxGroup {
         beat: f32,
         groupId: i32,
         eventBoxes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion3::LightTranslationEventBox,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion3::LightTranslationEventBox,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

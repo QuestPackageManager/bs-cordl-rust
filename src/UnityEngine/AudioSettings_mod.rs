@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AudioSettings {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+AudioSettings")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+AudioSettings")]
 impl std::ops::Deref for crate::UnityEngine::AudioSettings {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -129,7 +129,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::AudioSettings {
 #[repr(C)]
 #[derive(Debug)]
 pub struct AudioSettings_AudioConfigurationChangeHandler {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "UnityEngine+AudioSettings+AudioConfigurationChangeHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -140,7 +140,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+AudioSettings+AudioConfigurationChangeHandler")]
 impl std::ops::Deref
 for crate::UnityEngine::AudioSettings_AudioConfigurationChangeHandler {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -202,7 +202,7 @@ for crate::UnityEngine::AudioSettings_AudioConfigurationChangeHandler {
 #[repr(C)]
 #[derive(Debug)]
 pub struct AudioSettings_Mobile {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+AudioSettings+Mobile")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -211,7 +211,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+AudioSettings+Mobile")]
 impl std::ops::Deref for crate::UnityEngine::AudioSettings_Mobile {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

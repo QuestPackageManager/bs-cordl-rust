@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Normalization {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Text+Normalization")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Text+Normalization")]
 impl std::ops::Deref for crate::System::Text::Normalization {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -38,7 +38,7 @@ impl crate::System::Text::Normalization {
             .invoke("CombineHangul", (sb, s, current))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Combine_Gc_i32_i32_0(
+    pub fn Combine_Il2CppString0(
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         start: i32,
         checkType: i32,
@@ -49,7 +49,7 @@ impl crate::System::Text::Normalization {
             .invoke("Combine", (source, start, checkType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Combine_Gc_i32_i32_1(
+    pub fn Combine_StringBuilder1(
         sb: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         i: i32,
         checkType: i32,

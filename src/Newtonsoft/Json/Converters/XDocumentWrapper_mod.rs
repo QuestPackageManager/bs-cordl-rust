@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XDocumentWrapper {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Converters::XContainerWrapper,
-    >,
+    __cordl_parent: crate::Newtonsoft::Json::Converters::XContainerWrapper,
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+XDocumentWrapper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Converters+XDocumentWrapper")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Converters::XDocumentWrapper {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Converters::XContainerWrapper,
-    >;
+    type Target = crate::Newtonsoft::Json::Converters::XContainerWrapper;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,7 +40,7 @@ impl crate::Newtonsoft::Json::Converters::XDocumentWrapper {
         > = __cordl_object.invoke("AppendChild", (newChild))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateAttribute_Gc1(
+    pub fn CreateAttribute_Il2CppString1(
         &mut self,
         qualifiedName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         namespaceUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -61,7 +57,7 @@ impl crate::Newtonsoft::Json::Converters::XDocumentWrapper {
             .invoke("CreateAttribute", (qualifiedName, namespaceUri, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateAttribute_Gc_Gc0(
+    pub fn CreateAttribute_Il2CppString_Il2CppString0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -104,7 +100,7 @@ impl crate::Newtonsoft::Json::Converters::XDocumentWrapper {
         > = __cordl_object.invoke("CreateComment", (text))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateElement_Gc0(
+    pub fn CreateElement_Il2CppString0(
         &mut self,
         elementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -118,7 +114,7 @@ impl crate::Newtonsoft::Json::Converters::XDocumentWrapper {
         > = __cordl_object.invoke("CreateElement", (elementName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateElement_Gc1(
+    pub fn CreateElement_Il2CppString1(
         &mut self,
         qualifiedName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         namespaceUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -252,14 +248,18 @@ impl crate::Newtonsoft::Json::Converters::XDocumentWrapper {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
+            >,
         > = __cordl_object.invoke("get_ChildNodes", ())?;
         Ok(__cordl_ret.into())
     }
@@ -308,40 +308,30 @@ for crate::Newtonsoft::Json::Converters::XDocumentWrapper {
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+XDocumentWrapper")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlDocument>>
+impl AsRef<crate::Newtonsoft::Json::Converters::IXmlDocument>
 for crate::Newtonsoft::Json::Converters::XDocumentWrapper {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlDocument> {
+    fn as_ref(&self) -> &crate::Newtonsoft::Json::Converters::IXmlDocument {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+XDocumentWrapper")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlDocument>>
+impl AsMut<crate::Newtonsoft::Json::Converters::IXmlDocument>
 for crate::Newtonsoft::Json::Converters::XDocumentWrapper {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Converters::IXmlDocument,
-    > {
+    fn as_mut(&mut self) -> &mut crate::Newtonsoft::Json::Converters::IXmlDocument {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+XDocumentWrapper")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>>
+impl AsRef<crate::Newtonsoft::Json::Converters::IXmlNode>
 for crate::Newtonsoft::Json::Converters::XDocumentWrapper {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode> {
+    fn as_ref(&self) -> &crate::Newtonsoft::Json::Converters::IXmlNode {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+XDocumentWrapper")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>>
+impl AsMut<crate::Newtonsoft::Json::Converters::IXmlNode>
 for crate::Newtonsoft::Json::Converters::XDocumentWrapper {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode> {
+    fn as_mut(&mut self) -> &mut crate::Newtonsoft::Json::Converters::IXmlNode {
         unsafe { std::mem::transmute(self) }
     }
 }

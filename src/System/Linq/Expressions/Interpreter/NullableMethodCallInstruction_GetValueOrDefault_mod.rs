@@ -4,9 +4,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NullableMethodCallInstruction_GetValueOrDefault {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::NullableMethodCallInstruction,
-    >,
+    __cordl_parent: crate::System::Linq::Expressions::Interpreter::NullableMethodCallInstruction,
     pub _defaultValueType: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(
@@ -23,9 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::NullableMethodCallInstruction_GetValueOrDefault {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::NullableMethodCallInstruction,
-    >;
+    type Target = crate::System::Linq::Expressions::Interpreter::NullableMethodCallInstruction;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

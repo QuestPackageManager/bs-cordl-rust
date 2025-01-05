@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MockMultiplayerStatusModel {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _multiplayerStatusData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MultiplayerStatusData,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MockMultiplayerStatusModel")]
 impl std::ops::Deref for crate::GlobalNamespace::MockMultiplayerStatusModel {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,14 +32,18 @@ impl crate::GlobalNamespace::MockMultiplayerStatusModel {
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerStatusData>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerStatusData>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerStatusData>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerStatusData>,
+            >,
         > = __cordl_object.invoke("GetMultiplayerStatusAsync", (cancellationToken))?;
         Ok(__cordl_ret.into())
     }
@@ -72,22 +76,16 @@ for crate::GlobalNamespace::MockMultiplayerStatusModel {
     }
 }
 #[cfg(feature = "MockMultiplayerStatusModel")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerStatusModel>>
+impl AsRef<crate::GlobalNamespace::IMultiplayerStatusModel>
 for crate::GlobalNamespace::MockMultiplayerStatusModel {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerStatusModel> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IMultiplayerStatusModel {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MockMultiplayerStatusModel")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerStatusModel>>
+impl AsMut<crate::GlobalNamespace::IMultiplayerStatusModel>
 for crate::GlobalNamespace::MockMultiplayerStatusModel {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IMultiplayerStatusModel,
-    > {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IMultiplayerStatusModel {
         unsafe { std::mem::transmute(self) }
     }
 }

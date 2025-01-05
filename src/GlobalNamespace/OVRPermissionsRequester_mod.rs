@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPermissionsRequester {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPermissionsRequester")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPermissionsRequester")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPermissionsRequester {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -66,7 +66,9 @@ impl crate::GlobalNamespace::OVRPermissionsRequester {
     }
     pub fn Request(
         permissions: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::OVRPermissionsRequester_Permission,
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::GlobalNamespace::OVRPermissionsRequester_Permission,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -75,7 +77,9 @@ impl crate::GlobalNamespace::OVRPermissionsRequester {
     }
     pub fn RequestPermissions(
         permissions: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::OVRPermissionsRequester_Permission,
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::GlobalNamespace::OVRPermissionsRequester_Permission,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -91,7 +95,9 @@ impl crate::GlobalNamespace::OVRPermissionsRequester {
     }
     pub fn add_PermissionGranted(
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -100,7 +106,9 @@ impl crate::GlobalNamespace::OVRPermissionsRequester {
     }
     pub fn remove_PermissionGranted(
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()

@@ -2,11 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BsonReader {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+    __cordl_parent: crate::Newtonsoft::Json::JsonReader,
     pub _reader: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
     pub _stack: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Bson::BsonReader_ContainerContext,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Bson::BsonReader_ContainerContext,
+            >,
         >,
     >,
     pub _byteBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -27,7 +29,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Bson+BsonReader")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Bson::BsonReader {
-    type Target = quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>;
+    type Target = crate::Newtonsoft::Json::JsonReader;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -107,16 +109,7 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
             .invoke("MovePosition", (count))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
-        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (stream))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc1(
+    pub fn New_BinaryReader1(
         reader: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -125,18 +118,7 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
             .invoke_void(".ctor", (reader))?;
         Ok(__cordl_object.into())
     }
-    pub fn New__cordl_bool_DateTimeKind2(
-        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-        readRootValueAsArray: bool,
-        dateTimeKindHandling: crate::System::DateTimeKind,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (stream, readRootValueAsArray, dateTimeKindHandling))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New__cordl_bool_DateTimeKind3(
+    pub fn New_BinaryReader__cordl_bool_DateTimeKind3(
         reader: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
         readRootValueAsArray: bool,
         dateTimeKindHandling: crate::System::DateTimeKind,
@@ -145,6 +127,26 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (reader, readRootValueAsArray, dateTimeKindHandling))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Stream0(
+        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (stream))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Stream__cordl_bool_DateTimeKind2(
+        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        readRootValueAsArray: bool,
+        dateTimeKindHandling: crate::System::DateTimeKind,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (stream, readRootValueAsArray, dateTimeKindHandling))?;
         Ok(__cordl_object.into())
     }
     pub fn PopContext(
@@ -316,18 +318,7 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
             .invoke("ReadType", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
-        &mut self,
-        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (stream))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_BinaryReader1(
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -338,20 +329,7 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
             .invoke(".ctor", (reader))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor__cordl_bool_DateTimeKind2(
-        &mut self,
-        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-        readRootValueAsArray: bool,
-        dateTimeKindHandling: crate::System::DateTimeKind,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (stream, readRootValueAsArray, dateTimeKindHandling))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor__cordl_bool_DateTimeKind3(
+    pub fn _ctor_BinaryReader__cordl_bool_DateTimeKind3(
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
         readRootValueAsArray: bool,
@@ -362,6 +340,30 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (reader, readRootValueAsArray, dateTimeKindHandling))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Stream0(
+        &mut self,
+        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (stream))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Stream__cordl_bool_DateTimeKind2(
+        &mut self,
+        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        readRootValueAsArray: bool,
+        dateTimeKindHandling: crate::System::DateTimeKind,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (stream, readRootValueAsArray, dateTimeKindHandling))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_DateTimeKindHandling(
@@ -459,7 +461,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct BsonReader_ContainerContext {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Type: crate::Newtonsoft::Json::Bson::BsonType,
     pub Length: i32,
     pub Position: i32,
@@ -472,7 +474,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Bson+BsonReader+ContainerContext")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Bson::BsonReader_ContainerContext {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

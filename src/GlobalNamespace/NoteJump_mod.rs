@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteJump {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _rotatedObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _yAvoidanceUp: f32,
     pub _yAvoidanceDown: f32,
@@ -25,10 +25,14 @@ pub struct NoteJump {
         crate::System::Action,
     >,
     pub noteJumpDidPassThreeQuartersEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteJump>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteJump>,
+        >,
     >,
     pub noteJumpDidPassHalfEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
-    pub noteJumpDidUpdateProgressEvent: quest_hook::libil2cpp::Gc<f32>,
+    pub noteJumpDidUpdateProgressEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<f32>,
+    >,
     pub _randomRotations: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
     >,
@@ -61,7 +65,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "NoteJump")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteJump {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -170,7 +174,9 @@ impl crate::GlobalNamespace::NoteJump {
     pub fn add_noteJumpDidPassThreeQuartersEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteJump>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteJump>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -193,7 +199,7 @@ impl crate::GlobalNamespace::NoteJump {
     }
     pub fn add_noteJumpDidUpdateProgressEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<f32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -282,7 +288,9 @@ impl crate::GlobalNamespace::NoteJump {
     pub fn remove_noteJumpDidPassThreeQuartersEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteJump>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteJump>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -305,7 +313,7 @@ impl crate::GlobalNamespace::NoteJump {
     }
     pub fn remove_noteJumpDidUpdateProgressEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<f32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

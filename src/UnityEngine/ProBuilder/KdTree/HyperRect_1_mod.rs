@@ -45,7 +45,9 @@ impl<
     pub fn GetClosestPoint(
         &mut self,
         toPoint: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
-        math: quest_hook::libil2cpp::Gc<T>,
+        math: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     >
@@ -64,7 +66,9 @@ impl<
     }
     pub fn Infinite(
         dimensions: i32,
-        math: quest_hook::libil2cpp::Gc<T>,
+        math: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ProBuilder::KdTree::HyperRect_1<T>,
     >

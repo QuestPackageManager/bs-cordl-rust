@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct WebRequestModulesSection {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Configuration::ConfigurationSection,
-    >,
+    __cordl_parent: crate::System::Configuration::ConfigurationSection,
 }
 #[cfg(feature = "System+Net+Configuration+WebRequestModulesSection")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -14,9 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Configuration+WebRequestModulesSection")]
 impl std::ops::Deref for crate::System::Net::Configuration::WebRequestModulesSection {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Configuration::ConfigurationSection,
-    >;
+    type Target = crate::System::Configuration::ConfigurationSection;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

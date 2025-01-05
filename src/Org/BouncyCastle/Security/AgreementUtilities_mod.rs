@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AgreementUtilities {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+Security+AgreementUtilities")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Security+AgreementUtilities")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Security::AgreementUtilities {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,7 +37,7 @@ impl crate::Org::BouncyCastle::Security::AgreementUtilities {
             .invoke("GetAlgorithmName", (oid))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetBasicAgreementWithKdf_Gc_Gc0(
+    pub fn GetBasicAgreementWithKdf_DerObjectIdentifier0(
         oid: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
@@ -51,7 +51,7 @@ impl crate::Org::BouncyCastle::Security::AgreementUtilities {
             .invoke("GetBasicAgreementWithKdf", (oid, wrapAlgorithm))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetBasicAgreementWithKdf_Gc_Gc1(
+    pub fn GetBasicAgreementWithKdf_Il2CppString1(
         agreeAlgorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         wrapAlgorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -63,7 +63,7 @@ impl crate::Org::BouncyCastle::Security::AgreementUtilities {
             .invoke("GetBasicAgreementWithKdf", (agreeAlgorithm, wrapAlgorithm))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetBasicAgreement_Gc0(
+    pub fn GetBasicAgreement_DerObjectIdentifier0(
         oid: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
@@ -76,7 +76,7 @@ impl crate::Org::BouncyCastle::Security::AgreementUtilities {
             .invoke("GetBasicAgreement", (oid))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetBasicAgreement_Gc1(
+    pub fn GetBasicAgreement_Il2CppString1(
         algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBasicAgreement>,
@@ -98,7 +98,7 @@ impl crate::Org::BouncyCastle::Security::AgreementUtilities {
             .invoke("GetMechanism", (algorithm))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetRawAgreement_Gc0(
+    pub fn GetRawAgreement_DerObjectIdentifier0(
         oid: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
@@ -111,7 +111,7 @@ impl crate::Org::BouncyCastle::Security::AgreementUtilities {
             .invoke("GetRawAgreement", (oid))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetRawAgreement_Gc1(
+    pub fn GetRawAgreement_Il2CppString1(
         algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IRawAgreement>,

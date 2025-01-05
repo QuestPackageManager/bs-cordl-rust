@@ -23,7 +23,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Vector3I
 }
 #[cfg(feature = "UnityEngine+Vector3Int")]
 impl crate::UnityEngine::Vector3Int {
-    pub fn Equals_Gc0(
+    pub fn Equals_Il2CppObject0(
         &mut self,
         other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -79,7 +79,7 @@ impl crate::UnityEngine::Vector3Int {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Gc_Gc1(
+    pub fn ToString_Il2CppString_IFormatProvider1(
         &mut self,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
@@ -203,32 +203,30 @@ impl crate::UnityEngine::Vector3Int {
     }
 }
 #[cfg(feature = "UnityEngine+Vector3Int")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Vector3Int>>
 for crate::UnityEngine::Vector3Int {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::Vector3Int> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Vector3Int")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
-for crate::UnityEngine::Vector3Int {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+Vector3Int")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3Int>>
-for crate::UnityEngine::Vector3Int {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3Int> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+Vector3Int")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3Int>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Vector3Int>>
 for crate::UnityEngine::Vector3Int {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3Int> {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::Vector3Int> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Vector3Int")]
+impl AsRef<crate::System::IFormattable> for crate::UnityEngine::Vector3Int {
+    fn as_ref(&self) -> &crate::System::IFormattable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Vector3Int")]
+impl AsMut<crate::System::IFormattable> for crate::UnityEngine::Vector3Int {
+    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
         todo!()
     }
 }

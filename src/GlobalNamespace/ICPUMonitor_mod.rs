@@ -46,18 +46,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ICPUMonitor {
     }
 }
 #[cfg(feature = "ICPUMonitor")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPollable>>
-for crate::GlobalNamespace::ICPUMonitor {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPollable> {
+impl AsRef<crate::GlobalNamespace::IPollable> for crate::GlobalNamespace::ICPUMonitor {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IPollable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "ICPUMonitor")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPollable>>
-for crate::GlobalNamespace::ICPUMonitor {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPollable> {
+impl AsMut<crate::GlobalNamespace::IPollable> for crate::GlobalNamespace::ICPUMonitor {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPollable {
         unsafe { std::mem::transmute(self) }
     }
 }

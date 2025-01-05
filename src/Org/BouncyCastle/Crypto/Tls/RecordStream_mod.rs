@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RecordStream {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mHandler: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Tls::TlsProtocol,
     >,
@@ -57,7 +57,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+RecordStream")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::RecordStream {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -404,9 +404,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::RecordStream {
 #[repr(C)]
 #[derive(Debug)]
 pub struct RecordStream_HandshakeHashUpdateStream {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
     pub mOuter: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Tls::RecordStream,
     >,
@@ -420,9 +418,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+RecordStream+HandshakeHashUpdateStream")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Tls::RecordStream_HandshakeHashUpdateStream {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
-    >;
+    type Target = crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -488,7 +484,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::RecordStream_HandshakeHashUpdateStrea
 #[repr(C)]
 #[derive(Debug)]
 pub struct RecordStream_SequenceNumber {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub value: i64,
     pub exhausted: bool,
 }
@@ -501,7 +497,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+RecordStream+SequenceNumber")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Tls::RecordStream_SequenceNumber {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

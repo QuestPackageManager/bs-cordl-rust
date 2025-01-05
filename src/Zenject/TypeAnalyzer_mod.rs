@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeAnalyzer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Zenject+TypeAnalyzer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+TypeAnalyzer")]
 impl std::ops::Deref for crate::Zenject::TypeAnalyzer {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -58,7 +58,7 @@ impl crate::Zenject::TypeAnalyzer {
             .invoke("GetInfo", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetInfo_Gc1(
+    pub fn GetInfo_Type1(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo>,
@@ -76,7 +76,7 @@ impl crate::Zenject::TypeAnalyzer {
             .invoke("HasInfo", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn HasInfo_Gc1(
+    pub fn HasInfo_Type1(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
@@ -106,7 +106,7 @@ impl crate::Zenject::TypeAnalyzer {
             .invoke("ShouldAllowDuringValidation", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ShouldAllowDuringValidation_Gc1(
+    pub fn ShouldAllowDuringValidation_Type1(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
@@ -131,7 +131,7 @@ impl crate::Zenject::TypeAnalyzer {
             .invoke("TryGetInfo", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn TryGetInfo_Gc1(
+    pub fn TryGetInfo_Type1(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo>,

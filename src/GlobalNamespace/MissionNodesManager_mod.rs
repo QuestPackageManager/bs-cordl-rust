@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionNodesManager {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _rootMissionNode: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
     pub _finalMissionNode: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MissionNode,
@@ -21,13 +21,11 @@ pub struct MissionNodesManager {
     >,
     pub _allMissionNodeConnections: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNodeConnection>,
+            *mut crate::GlobalNamespace::MissionNodeConnection,
         >,
     >,
     pub _allMissionNodes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MissionNode>,
     >,
     pub _isInitialized: bool,
 }
@@ -38,7 +36,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MissionNodesManager")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionNodesManager {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -81,22 +79,28 @@ impl crate::GlobalNamespace::MissionNodesManager {
             .invoke("GetAllMissionNodes", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAllMissionNodes_Gc_Gc1(
+    pub fn GetAllMissionNodes_MissionNode_HashSet_1_1(
         &mut self,
         node: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
         visited: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
+            crate::System::Collections::Generic::HashSet_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
+            crate::System::Collections::Generic::HashSet_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
+            crate::System::Collections::Generic::HashSet_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
+            >,
         > = __cordl_object.invoke("GetAllMissionNodes", (node, visited))?;
         Ok(__cordl_ret.into())
     }
@@ -119,7 +123,7 @@ impl crate::GlobalNamespace::MissionNodesManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNodeConnection>,
+                *mut crate::GlobalNamespace::MissionNodeConnection,
             >,
         >,
     > {
@@ -128,7 +132,7 @@ impl crate::GlobalNamespace::MissionNodesManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNodeConnection>,
+                *mut crate::GlobalNamespace::MissionNodeConnection,
             >,
         > = __cordl_object.invoke("GetNewEnabledConnection", ())?;
         Ok(__cordl_ret.into())
@@ -150,14 +154,18 @@ impl crate::GlobalNamespace::MissionNodesManager {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMissionNode>,
+            crate::System::Collections::Generic::IReadOnlyCollection_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMissionNode>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMissionNode>,
+            crate::System::Collections::Generic::IReadOnlyCollection_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMissionNode>,
+            >,
         > = __cordl_object.invoke("IMissionNodesManager.get_allMissionNodes", ())?;
         Ok(__cordl_ret.into())
     }
@@ -301,18 +309,14 @@ impl crate::GlobalNamespace::MissionNodesManager {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MissionNode>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MissionNode>,
         > = __cordl_object.invoke("get_allMissionNodes", ())?;
         Ok(__cordl_ret.into())
     }
@@ -379,20 +383,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MissionNodesM
     }
 }
 #[cfg(feature = "MissionNodesManager")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMissionNodesManager>>
+impl AsRef<crate::GlobalNamespace::IMissionNodesManager>
 for crate::GlobalNamespace::MissionNodesManager {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMissionNodesManager> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IMissionNodesManager {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MissionNodesManager")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMissionNodesManager>>
+impl AsMut<crate::GlobalNamespace::IMissionNodesManager>
 for crate::GlobalNamespace::MissionNodesManager {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMissionNodesManager> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IMissionNodesManager {
         unsafe { std::mem::transmute(self) }
     }
 }

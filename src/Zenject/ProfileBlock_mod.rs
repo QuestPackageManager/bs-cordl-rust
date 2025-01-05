@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProfileBlock {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Zenject+ProfileBlock")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+ProfileBlock")]
 impl std::ops::Deref for crate::Zenject::ProfileBlock {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,7 +34,7 @@ impl crate::Zenject::ProfileBlock {
             .invoke("Dispose", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Il2CppString1(
         sampleName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -60,7 +60,7 @@ impl crate::Zenject::ProfileBlock {
             .invoke("Start", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Start_Gc3(
+    pub fn Start_Il2CppString3(
         sampleName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ProfileBlock>,
@@ -69,7 +69,7 @@ impl crate::Zenject::ProfileBlock {
             .invoke("Start", (sampleName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Start_Gc_Gc2(
+    pub fn Start_Il2CppString_Il2CppObject2(
         sampleNameFormat: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
@@ -79,7 +79,7 @@ impl crate::Zenject::ProfileBlock {
             .invoke("Start", (sampleNameFormat, obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Start_Gc_Gc_Gc1(
+    pub fn Start_Il2CppString_Il2CppObject_Il2CppObject1(
         sampleNameFormat: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         obj1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         obj2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -90,7 +90,7 @@ impl crate::Zenject::ProfileBlock {
             .invoke("Start", (sampleNameFormat, obj1, obj2))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
         sampleName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -140,16 +140,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::ProfileBlock {
     }
 }
 #[cfg(feature = "Zenject+ProfileBlock")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::Zenject::ProfileBlock {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsRef<crate::System::IDisposable> for crate::Zenject::ProfileBlock {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+ProfileBlock")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::Zenject::ProfileBlock {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsMut<crate::System::IDisposable> for crate::Zenject::ProfileBlock {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }

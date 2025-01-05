@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SetApplicationVersionText {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _versionText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshPro>,
     pub _labelText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshPro>,
     pub _buildIdText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshPro>,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SetApplicationVersionText")]
 impl std::ops::Deref for crate::GlobalNamespace::SetApplicationVersionText {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

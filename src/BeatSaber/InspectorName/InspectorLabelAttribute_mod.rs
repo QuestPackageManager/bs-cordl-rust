@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InspectorLabelAttribute {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::PropertyAttribute>,
+    __cordl_parent: crate::UnityEngine::PropertyAttribute,
     pub CustomLabel: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "BeatSaber+InspectorName+InspectorLabelAttribute")]
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+InspectorName+InspectorLabelAttribute")]
 impl std::ops::Deref for crate::BeatSaber::InspectorName::InspectorLabelAttribute {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::PropertyAttribute>;
+    type Target = crate::UnityEngine::PropertyAttribute;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

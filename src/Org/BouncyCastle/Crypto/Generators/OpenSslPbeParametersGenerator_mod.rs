@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OpenSslPbeParametersGenerator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::PbeParametersGenerator,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Crypto::PbeParametersGenerator,
     pub digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+OpenSslPbeParametersGenerator")]
@@ -16,9 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+OpenSslPbeParametersGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Generators::OpenSslPbeParametersGenerator {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::PbeParametersGenerator,
-    >;
+    type Target = crate::Org::BouncyCastle::Crypto::PbeParametersGenerator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -60,7 +56,7 @@ impl crate::Org::BouncyCastle::Crypto::Generators::OpenSslPbeParametersGenerator
         > = __cordl_object.invoke("GenerateDerivedMacParameters", (keySize))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GenerateDerivedParameters_Gc_i32_1(
+    pub fn GenerateDerivedParameters_Il2CppString_i32_1(
         &mut self,
         algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         keySize: i32,
@@ -75,7 +71,7 @@ impl crate::Org::BouncyCastle::Crypto::Generators::OpenSslPbeParametersGenerator
         > = __cordl_object.invoke("GenerateDerivedParameters", (algorithm, keySize))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GenerateDerivedParameters_Gc_i32_i32_3(
+    pub fn GenerateDerivedParameters_Il2CppString_i32_i32_3(
         &mut self,
         algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         keySize: i32,
@@ -121,7 +117,7 @@ impl crate::Org::BouncyCastle::Crypto::Generators::OpenSslPbeParametersGenerator
         > = __cordl_object.invoke("GenerateDerivedParameters", (keySize, ivSize))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Init_Gc_Gc1(
+    pub fn Init_Il2CppArray_Il2CppArray1(
         &mut self,
         password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

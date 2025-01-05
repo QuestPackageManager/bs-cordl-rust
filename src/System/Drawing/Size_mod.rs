@@ -21,7 +21,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Drawing::Size
 }
 #[cfg(feature = "System+Drawing+Size")]
 impl crate::System::Drawing::Size {
-    pub fn Equals_Gc0(
+    pub fn Equals_Il2CppObject0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -87,18 +87,18 @@ impl crate::System::Drawing::Size {
     }
 }
 #[cfg(feature = "System+Drawing+Size")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Drawing::Size>>
+impl AsRef<crate::System::IEquatable_1<crate::System::Drawing::Size>>
 for crate::System::Drawing::Size {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Drawing::Size> {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::System::Drawing::Size> {
         todo!()
     }
 }
 #[cfg(feature = "System+Drawing+Size")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Drawing::Size>>
+impl AsMut<crate::System::IEquatable_1<crate::System::Drawing::Size>>
 for crate::System::Drawing::Size {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Drawing::Size> {
+    ) -> &mut crate::System::IEquatable_1<crate::System::Drawing::Size> {
         todo!()
     }
 }

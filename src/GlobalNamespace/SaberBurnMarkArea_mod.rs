@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SaberBurnMarkArea {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _saberBurnMarkLinePrefab: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::LineRenderer,
     >,
@@ -20,9 +20,7 @@ pub struct SaberBurnMarkArea {
     pub _renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
     pub _fadeOutStrengthShaderPropertyID: i32,
     pub _sabers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::Saber>,
     >,
     pub _plane: crate::UnityEngine::Plane,
     pub _prevBurnMarkPos: quest_hook::libil2cpp::Gc<
@@ -32,18 +30,14 @@ pub struct SaberBurnMarkArea {
         quest_hook::libil2cpp::Il2CppArray<bool>,
     >,
     pub _lineRenderers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::LineRenderer>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::LineRenderer>,
     >,
     pub _camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     pub _linePoints: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
     >,
     pub _renderTextures: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::RenderTexture>,
     >,
     pub _emitParams: crate::UnityEngine::ParticleSystem_EmitParams,
     pub _fadeOutMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -56,7 +50,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SaberBurnMarkArea")]
 impl std::ops::Deref for crate::GlobalNamespace::SaberBurnMarkArea {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

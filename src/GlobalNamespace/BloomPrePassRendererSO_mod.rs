@@ -2,21 +2,19 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassRendererSO {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PersistentScriptableObject,
-    >,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _bloomFog: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomFogSO>,
     pub _preallocationData: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::BloomPrePassRendererSO_PreallocationData,
-            >,
+            *mut crate::GlobalNamespace::BloomPrePassRendererSO_PreallocationData,
         >,
     >,
     pub _lightsRenderingData: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassLightTypeSO>,
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BloomPrePassRendererSO_LightsRenderingData,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassLightTypeSO>,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BloomPrePassRendererSO_LightsRenderingData,
+            >,
         >,
     >,
     pub _commandBuffer: quest_hook::libil2cpp::Gc<
@@ -35,9 +33,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BloomPrePassRendererSO")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassRendererSO {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PersistentScriptableObject,
-    >;
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -298,7 +294,7 @@ for crate::GlobalNamespace::BloomPrePassRendererSO {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassRendererSO_LightsRenderingData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     pub lightQuads: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
@@ -316,7 +312,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BloomPrePassRendererSO+LightsRenderingData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BloomPrePassRendererSO_LightsRenderingData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -362,7 +358,7 @@ for crate::GlobalNamespace::BloomPrePassRendererSO_LightsRenderingData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassRendererSO_PreallocationData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub lightType: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BloomPrePassLightTypeSO,
     >,
@@ -377,7 +373,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BloomPrePassRendererSO+PreallocationData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BloomPrePassRendererSO_PreallocationData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DSASignatureDescription {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Security::Cryptography::SignatureDescription,
-    >,
+    __cordl_parent: crate::System::Security::Cryptography::SignatureDescription,
 }
 #[cfg(feature = "System+Security+Cryptography+DSASignatureDescription")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -14,9 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+Cryptography+DSASignatureDescription")]
 impl std::ops::Deref for crate::System::Security::Cryptography::DSASignatureDescription {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Security::Cryptography::SignatureDescription,
-    >;
+    type Target = crate::System::Security::Cryptography::SignatureDescription;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

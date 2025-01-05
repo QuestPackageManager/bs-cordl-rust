@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimelinePauseMarker {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::Marker>,
+    __cordl_parent: crate::UnityEngine::Timeline::Marker,
     pub _id_k__BackingField: crate::UnityEngine::PropertyName,
 }
 #[cfg(feature = "TimelinePauseMarker")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TimelinePauseMarker")]
 impl std::ops::Deref for crate::GlobalNamespace::TimelinePauseMarker {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::Marker>;
+    type Target = crate::UnityEngine::Timeline::Marker;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -63,20 +63,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TimelinePause
     }
 }
 #[cfg(feature = "TimelinePauseMarker")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::INotification>>
+impl AsRef<crate::UnityEngine::Playables::INotification>
 for crate::GlobalNamespace::TimelinePauseMarker {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::INotification> {
+    fn as_ref(&self) -> &crate::UnityEngine::Playables::INotification {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "TimelinePauseMarker")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::INotification>>
+impl AsMut<crate::UnityEngine::Playables::INotification>
 for crate::GlobalNamespace::TimelinePauseMarker {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::INotification> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::INotification {
         unsafe { std::mem::transmute(self) }
     }
 }

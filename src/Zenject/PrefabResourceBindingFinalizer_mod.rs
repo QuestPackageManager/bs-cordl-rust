@@ -2,15 +2,17 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PrefabResourceBindingFinalizer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::ProviderBindingFinalizer>,
+    __cordl_parent: crate::Zenject::ProviderBindingFinalizer,
     pub _gameObjectBindInfo: quest_hook::libil2cpp::Gc<
         crate::Zenject::GameObjectCreationParameters,
     >,
     pub _resourcePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _providerFactory: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Type>,
-        quest_hook::libil2cpp::Gc<crate::Zenject::IPrefabInstantiator>,
-        quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+        crate::System::Func_3<
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            quest_hook::libil2cpp::Gc<crate::Zenject::IPrefabInstantiator>,
+            quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+        >,
     >,
 }
 #[cfg(feature = "Zenject+PrefabResourceBindingFinalizer")]
@@ -20,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+PrefabResourceBindingFinalizer")]
 impl std::ops::Deref for crate::Zenject::PrefabResourceBindingFinalizer {
-    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::ProviderBindingFinalizer>;
+    type Target = crate::Zenject::ProviderBindingFinalizer;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,7 +39,9 @@ impl crate::Zenject::PrefabResourceBindingFinalizer {
         &mut self,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         concreteTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -65,9 +69,11 @@ impl crate::Zenject::PrefabResourceBindingFinalizer {
         >,
         resourcePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         providerFactory: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
-            quest_hook::libil2cpp::Gc<crate::Zenject::IPrefabInstantiator>,
-            quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+            crate::System::Func_3<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                quest_hook::libil2cpp::Gc<crate::Zenject::IPrefabInstantiator>,
+                quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -98,9 +104,11 @@ impl crate::Zenject::PrefabResourceBindingFinalizer {
         >,
         resourcePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         providerFactory: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
-            quest_hook::libil2cpp::Gc<crate::Zenject::IPrefabInstantiator>,
-            quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+            crate::System::Func_3<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                quest_hook::libil2cpp::Gc<crate::Zenject::IPrefabInstantiator>,
+                quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

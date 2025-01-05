@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ISO9797Alg3Mac {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mac: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub bufOff: i32,
@@ -27,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Macs+ISO9797Alg3Mac")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Macs::ISO9797Alg3Mac {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -84,7 +84,7 @@ impl crate::Org::BouncyCastle::Crypto::Macs::ISO9797Alg3Mac {
             .invoke("Init", (parameters))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_IBlockCipher0(
         cipher: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockCipher>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -93,7 +93,7 @@ impl crate::Org::BouncyCastle::Crypto::Macs::ISO9797Alg3Mac {
             .invoke_void(".ctor", (cipher))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_IBlockCipherPadding1(
         cipher: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IBlockCipher,
         >,
@@ -119,7 +119,7 @@ impl crate::Org::BouncyCastle::Crypto::Macs::ISO9797Alg3Mac {
             .invoke_void(".ctor", (cipher, macSizeInBits))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_Gc3(
+    pub fn New_i32_IBlockCipherPadding3(
         cipher: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IBlockCipher,
         >,
@@ -155,7 +155,7 @@ impl crate::Org::BouncyCastle::Crypto::Macs::ISO9797Alg3Mac {
             .invoke("Update", (input))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_IBlockCipher0(
         &mut self,
         cipher: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockCipher>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -166,7 +166,7 @@ impl crate::Org::BouncyCastle::Crypto::Macs::ISO9797Alg3Mac {
             .invoke(".ctor", (cipher))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_IBlockCipherPadding1(
         &mut self,
         cipher: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IBlockCipher,
@@ -196,7 +196,7 @@ impl crate::Org::BouncyCastle::Crypto::Macs::ISO9797Alg3Mac {
             .invoke(".ctor", (cipher, macSizeInBits))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_Gc3(
+    pub fn _ctor_i32_IBlockCipherPadding3(
         &mut self,
         cipher: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IBlockCipher,
@@ -238,20 +238,16 @@ for crate::Org::BouncyCastle::Crypto::Macs::ISO9797Alg3Mac {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Macs+ISO9797Alg3Mac")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>>
+impl AsRef<crate::Org::BouncyCastle::Crypto::IMac>
 for crate::Org::BouncyCastle::Crypto::Macs::ISO9797Alg3Mac {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac> {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IMac {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Macs+ISO9797Alg3Mac")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>>
+impl AsMut<crate::Org::BouncyCastle::Crypto::IMac>
 for crate::Org::BouncyCastle::Crypto::Macs::ISO9797Alg3Mac {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac> {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IMac {
         unsafe { std::mem::transmute(self) }
     }
 }

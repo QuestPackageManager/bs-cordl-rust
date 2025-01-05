@@ -4,9 +4,7 @@
 pub struct ChangeUsageMsg_InputRemoting_Data {
     pub deviceId: i32,
     pub usages: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg+Data")]
@@ -32,16 +30,14 @@ impl crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data {}
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputRemoting {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Flags: crate::UnityEngine::InputSystem::InputRemoting_Flags,
     pub m_LocalManager: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::InputManager,
     >,
     pub m_Subscribers: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::InputSystem::InputRemoting_Subscriber,
-            >,
+            *mut crate::UnityEngine::InputSystem::InputRemoting_Subscriber,
         >,
     >,
     pub m_Senders: quest_hook::libil2cpp::Gc<
@@ -57,7 +53,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -303,7 +299,9 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
     pub fn Subscribe(
         &mut self,
         observer: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputRemoting_Message,
+            crate::System::IObserver_1<
+                crate::UnityEngine::InputSystem::InputRemoting_Message,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
@@ -430,11 +428,11 @@ for crate::UnityEngine::InputSystem::InputRemoting {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputRemoting_Message>,
+    crate::System::IObservable_1<crate::UnityEngine::InputSystem::InputRemoting_Message>,
 > for crate::UnityEngine::InputSystem::InputRemoting {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IObservable_1<
         crate::UnityEngine::InputSystem::InputRemoting_Message,
     > {
         unsafe { std::mem::transmute(self) }
@@ -442,11 +440,11 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputRemoting_Message>,
+    crate::System::IObservable_1<crate::UnityEngine::InputSystem::InputRemoting_Message>,
 > for crate::UnityEngine::InputSystem::InputRemoting {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IObservable_1<
         crate::UnityEngine::InputSystem::InputRemoting_Message,
     > {
         unsafe { std::mem::transmute(self) }
@@ -454,11 +452,11 @@ impl AsMut<
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputRemoting_Message>,
+    crate::System::IObserver_1<crate::UnityEngine::InputSystem::InputRemoting_Message>,
 > for crate::UnityEngine::InputSystem::InputRemoting {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IObserver_1<
         crate::UnityEngine::InputSystem::InputRemoting_Message,
     > {
         unsafe { std::mem::transmute(self) }
@@ -466,11 +464,11 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputRemoting_Message>,
+    crate::System::IObserver_1<crate::UnityEngine::InputSystem::InputRemoting_Message>,
 > for crate::UnityEngine::InputSystem::InputRemoting {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IObserver_1<
         crate::UnityEngine::InputSystem::InputRemoting_Message,
     > {
         unsafe { std::mem::transmute(self) }
@@ -480,7 +478,7 @@ impl AsMut<
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputRemoting_ChangeUsageMsg {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -490,7 +488,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -540,7 +538,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg {
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputRemoting_ConnectMsg {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ConnectMsg")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -550,7 +548,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ConnectMsg")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting_ConnectMsg {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -587,7 +585,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_ConnectMsg {
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputRemoting_DisconnectMsg {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+DisconnectMsg")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -597,7 +595,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+DisconnectMsg")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting_DisconnectMsg {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -697,7 +695,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputRemoting_NewDeviceMsg {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -707,7 +705,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting_NewDeviceMsg {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -756,7 +754,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_NewDeviceMsg {
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputRemoting_NewEventsMsg {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewEventsMsg")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -766,7 +764,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewEventsMsg")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting_NewEventsMsg {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -833,7 +831,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_NewEventsMsg {
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputRemoting_NewLayoutMsg {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewLayoutMsg")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -843,7 +841,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewLayoutMsg")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting_NewLayoutMsg {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -959,7 +957,7 @@ impl crate::UnityEngine::InputSystem::InputRemoting_RemoteSender {}
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputRemoting_RemoveDeviceMsg {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoveDeviceMsg")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -969,7 +967,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoveDeviceMsg")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1017,7 +1015,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg {
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputRemoting_StartSendingMsg {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+StartSendingMsg")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1027,7 +1025,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+StartSendingMsg")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting_StartSendingMsg {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1065,7 +1063,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_StartSendingMsg {
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputRemoting_StopSendingMsg {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+StopSendingMsg")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1075,7 +1073,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+StopSendingMsg")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting_StopSendingMsg {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1113,10 +1111,12 @@ for crate::UnityEngine::InputSystem::InputRemoting_StopSendingMsg {
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputRemoting_Subscriber {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputRemoting>,
     pub observer: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::InputRemoting_Message,
+        crate::System::IObserver_1<
+            crate::UnityEngine::InputSystem::InputRemoting_Message,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Subscriber")]
@@ -1127,7 +1127,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Subscriber")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting_Subscriber {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1179,16 +1179,16 @@ for crate::UnityEngine::InputSystem::InputRemoting_Subscriber {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Subscriber")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsRef<crate::System::IDisposable>
 for crate::UnityEngine::InputSystem::InputRemoting_Subscriber {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Subscriber")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsMut<crate::System::IDisposable>
 for crate::UnityEngine::InputSystem::InputRemoting_Subscriber {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -1200,9 +1200,7 @@ pub struct NewDeviceMsg_InputRemoting_Data {
     pub layout: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub deviceId: i32,
     pub usages: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub description: crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
 }

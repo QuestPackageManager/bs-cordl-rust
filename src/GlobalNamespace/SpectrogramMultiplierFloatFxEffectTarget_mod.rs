@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SpectrogramMultiplierFloatFxEffectTarget {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::FloatFxGroupEffectTarget,
-    >,
+    __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
     pub _spectrogram: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SpectrogramRowPropertyAnimator,
     >,
@@ -18,9 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "SpectrogramMultiplierFloatFxEffectTarget")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SpectrogramMultiplierFloatFxEffectTarget {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::FloatFxGroupEffectTarget,
-    >;
+    type Target = crate::GlobalNamespace::FloatFxGroupEffectTarget;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

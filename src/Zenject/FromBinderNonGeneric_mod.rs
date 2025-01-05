@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FromBinderNonGeneric {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::FromBinder>,
+    __cordl_parent: crate::Zenject::FromBinder,
 }
 #[cfg(feature = "Zenject+FromBinderNonGeneric")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+FromBinderNonGeneric")]
 impl std::ops::Deref for crate::Zenject::FromBinderNonGeneric {
-    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::FromBinder>;
+    type Target = crate::Zenject::FromBinder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,11 +24,13 @@ impl std::ops::DerefMut for crate::Zenject::FromBinderNonGeneric {
 }
 #[cfg(feature = "Zenject+FromBinderNonGeneric")]
 impl crate::Zenject::FromBinderNonGeneric {
-    pub fn FromComponentsInChildren_Gc__cordl_bool0(
+    pub fn FromComponentsInChildren_Func_2__cordl_bool0(
         &mut self,
         predicate: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
-            bool,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+                bool,
+            >,
         >,
         includeInactive: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -45,12 +47,14 @@ impl crate::Zenject::FromBinderNonGeneric {
             .invoke("FromComponentsInChildren", (predicate, includeInactive))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FromComponentsInChildren__cordl_bool_Gc__cordl_bool1(
+    pub fn FromComponentsInChildren__cordl_bool_Func_2__cordl_bool1(
         &mut self,
         excludeSelf: bool,
         predicate: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
-            bool,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+                bool,
+            >,
         >,
         includeInactive: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -73,8 +77,10 @@ impl crate::Zenject::FromBinderNonGeneric {
     pub fn FromComponentsInHierarchy(
         &mut self,
         predicate: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
-            bool,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+                bool,
+            >,
         >,
         includeInactive: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -115,7 +121,13 @@ impl crate::Zenject::FromBinderNonGeneric {
     pub fn FromIFactory<TContract>(
         &mut self,
         factoryBindGenerator: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TContract>>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::ConcreteBinderGeneric_1<
+                        quest_hook::libil2cpp::Gc<crate::Zenject::IFactory_1<TContract>>,
+                    >,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -153,8 +165,10 @@ impl crate::Zenject::FromBinderNonGeneric {
     pub fn FromMethod<TConcrete>(
         &mut self,
         method: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-            TConcrete,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                TConcrete,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -176,8 +190,12 @@ impl crate::Zenject::FromBinderNonGeneric {
     pub fn FromMethodMultiple<TConcrete>(
         &mut self,
         method: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-            quest_hook::libil2cpp::Gc<TConcrete>,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<TConcrete>,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -196,9 +214,9 @@ impl crate::Zenject::FromBinderNonGeneric {
         > = __cordl_object.invoke("FromMethodMultiple", (method))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FromResolveAllGetter_Gc0<TObj, TContract>(
+    pub fn FromResolveAllGetter_Func_2_0<TObj, TContract>(
         &mut self,
-        method: quest_hook::libil2cpp::Gc<TObj, TContract>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Func_2<TObj, TContract>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
@@ -218,10 +236,10 @@ impl crate::Zenject::FromBinderNonGeneric {
         > = __cordl_object.invoke("FromResolveAllGetter", (method))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FromResolveAllGetter_Gc1<TObj, TContract>(
+    pub fn FromResolveAllGetter_Il2CppObject_Func_2_1<TObj, TContract>(
         &mut self,
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        method: quest_hook::libil2cpp::Gc<TObj, TContract>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Func_2<TObj, TContract>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
@@ -241,10 +259,10 @@ impl crate::Zenject::FromBinderNonGeneric {
         > = __cordl_object.invoke("FromResolveAllGetter", (identifier, method))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FromResolveAllGetter_Gc_InjectSources2<TObj, TContract>(
+    pub fn FromResolveAllGetter_Il2CppObject_Func_2_InjectSources2<TObj, TContract>(
         &mut self,
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        method: quest_hook::libil2cpp::Gc<TObj, TContract>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Func_2<TObj, TContract>>,
         source: crate::Zenject::InjectSources,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -265,9 +283,9 @@ impl crate::Zenject::FromBinderNonGeneric {
         > = __cordl_object.invoke("FromResolveAllGetter", (identifier, method, source))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FromResolveGetter_Gc0<TObj, TContract>(
+    pub fn FromResolveGetter_Func_2_0<TObj, TContract>(
         &mut self,
-        method: quest_hook::libil2cpp::Gc<TObj, TContract>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Func_2<TObj, TContract>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
@@ -287,10 +305,10 @@ impl crate::Zenject::FromBinderNonGeneric {
         > = __cordl_object.invoke("FromResolveGetter", (method))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FromResolveGetter_Gc1<TObj, TContract>(
+    pub fn FromResolveGetter_Il2CppObject_Func_2_1<TObj, TContract>(
         &mut self,
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        method: quest_hook::libil2cpp::Gc<TObj, TContract>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Func_2<TObj, TContract>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
@@ -310,10 +328,10 @@ impl crate::Zenject::FromBinderNonGeneric {
         > = __cordl_object.invoke("FromResolveGetter", (identifier, method))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FromResolveGetter_Gc_InjectSources2<TObj, TContract>(
+    pub fn FromResolveGetter_Il2CppObject_Func_2_InjectSources2<TObj, TContract>(
         &mut self,
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        method: quest_hook::libil2cpp::Gc<TObj, TContract>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Func_2<TObj, TContract>>,
         source: crate::Zenject::InjectSources,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<

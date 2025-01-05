@@ -6,9 +6,15 @@ pub struct RemoteMultiplayerSyncState_3<
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TStateTable, TType, TState>,
+    __cordl_parent: crate::GlobalNamespace::MultiplayerSyncState_3<
+        TStateTable,
+        TType,
+        TState,
+    >,
     pub _player: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-    pub _stateBuffer: quest_hook::libil2cpp::Gc<TStateTable, TType, TState>,
+    pub _stateBuffer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RemoteStateBuffer_3<TStateTable, TType, TState>,
+    >,
     __cordl_phantom_TStateTable: std::marker::PhantomData<TStateTable>,
     __cordl_phantom_TType: std::marker::PhantomData<TType>,
     __cordl_phantom_TState: std::marker::PhantomData<TState>,
@@ -26,7 +32,11 @@ impl<
     TState: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::GlobalNamespace::RemoteMultiplayerSyncState_3<TStateTable, TType, TState> {
-    type Target = quest_hook::libil2cpp::Gc<TStateTable, TType, TState>;
+    type Target = crate::GlobalNamespace::MultiplayerSyncState_3<
+        TStateTable,
+        TType,
+        TState,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -51,8 +61,20 @@ impl<
     pub fn New(
         player: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
         _cordl_size: i32,
-        interpolator: quest_hook::libil2cpp::Gc<TStateTable, TType, TState>,
-        smoother: quest_hook::libil2cpp::Gc<TStateTable, TType, TState>,
+        interpolator: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::StateBuffer_3_InterpolationDelegate<
+                TStateTable,
+                TType,
+                TState,
+            >,
+        >,
+        smoother: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<
+                TStateTable,
+                TType,
+                TState,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -114,8 +136,20 @@ impl<
         &mut self,
         player: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
         _cordl_size: i32,
-        interpolator: quest_hook::libil2cpp::Gc<TStateTable, TType, TState>,
-        smoother: quest_hook::libil2cpp::Gc<TStateTable, TType, TState>,
+        interpolator: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::StateBuffer_3_InterpolationDelegate<
+                TStateTable,
+                TType,
+                TState,
+            >,
+        >,
+        smoother: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<
+                TStateTable,
+                TType,
+                TState,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -156,7 +190,9 @@ impl<
     pub fn get_stateBuffer(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<TStateTable, TType, TState>,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::StateBuffer_3<TStateTable, TType, TState>,
+        >,
     >
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -169,8 +205,9 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TStateTable, TType, TState> = __cordl_object
-            .invoke("get_stateBuffer", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::StateBuffer_3<TStateTable, TType, TState>,
+        > = __cordl_object.invoke("get_stateBuffer", ())?;
         Ok(__cordl_ret.into())
     }
 }

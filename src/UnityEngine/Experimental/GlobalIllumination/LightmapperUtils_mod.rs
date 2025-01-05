@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightmapperUtils {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+LightmapperUtils")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+LightmapperUtils")]
 impl std::ops::Deref
 for crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -60,7 +60,7 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils {
             .invoke("ExtractInnerCone", (l))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Extract_Gc_ByRefMut1(
+    pub fn Extract_Light_ByRefMut1(
         l: quest_hook::libil2cpp::Gc<crate::UnityEngine::Light>,
         dir: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::Experimental::GlobalIllumination::DirectionalLight,
@@ -70,7 +70,7 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils {
             .invoke("Extract", (l, dir))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Extract_Gc_ByRefMut2(
+    pub fn Extract_Light_ByRefMut2(
         l: quest_hook::libil2cpp::Gc<crate::UnityEngine::Light>,
         point: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::Experimental::GlobalIllumination::PointLight,
@@ -80,7 +80,7 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils {
             .invoke("Extract", (l, point))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Extract_Gc_ByRefMut3(
+    pub fn Extract_Light_ByRefMut3(
         l: quest_hook::libil2cpp::Gc<crate::UnityEngine::Light>,
         spot: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::Experimental::GlobalIllumination::SpotLight,
@@ -90,7 +90,7 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils {
             .invoke("Extract", (l, spot))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Extract_Gc_ByRefMut4(
+    pub fn Extract_Light_ByRefMut4(
         l: quest_hook::libil2cpp::Gc<crate::UnityEngine::Light>,
         rect: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::Experimental::GlobalIllumination::RectangleLight,
@@ -100,7 +100,7 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils {
             .invoke("Extract", (l, rect))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Extract_Gc_ByRefMut5(
+    pub fn Extract_Light_ByRefMut5(
         l: quest_hook::libil2cpp::Gc<crate::UnityEngine::Light>,
         disc: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::Experimental::GlobalIllumination::DiscLight,
@@ -110,7 +110,7 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils {
             .invoke("Extract", (l, disc))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Extract_Gc_ByRefMut6(
+    pub fn Extract_Light_ByRefMut6(
         l: quest_hook::libil2cpp::Gc<crate::UnityEngine::Light>,
         cookie: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::Experimental::GlobalIllumination::Cookie,

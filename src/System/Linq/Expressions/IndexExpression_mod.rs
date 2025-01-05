@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct IndexExpression {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Expression,
-    >,
+    __cordl_parent: crate::System::Linq::Expressions::Expression,
     pub _arguments: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        >,
     >,
     pub _Object_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::System::Linq::Expressions::Expression,
@@ -22,9 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Linq+Expressions+IndexExpression")]
 impl std::ops::Deref for crate::System::Linq::Expressions::IndexExpression {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Expression,
-    >;
+    type Target = crate::System::Linq::Expressions::Expression;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -73,7 +71,9 @@ impl crate::System::Linq::Expressions::IndexExpression {
         >,
         indexer: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
         arguments: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -89,7 +89,7 @@ impl crate::System::Linq::Expressions::IndexExpression {
         >,
         arguments: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+                *mut crate::System::Linq::Expressions::Expression,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -110,7 +110,9 @@ impl crate::System::Linq::Expressions::IndexExpression {
         >,
         indexer: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
         arguments: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -187,26 +189,16 @@ for crate::System::Linq::Expressions::IndexExpression {
     }
 }
 #[cfg(feature = "System+Linq+Expressions+IndexExpression")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::IArgumentProvider>,
-> for crate::System::Linq::Expressions::IndexExpression {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::IArgumentProvider,
-    > {
+impl AsRef<crate::System::Linq::Expressions::IArgumentProvider>
+for crate::System::Linq::Expressions::IndexExpression {
+    fn as_ref(&self) -> &crate::System::Linq::Expressions::IArgumentProvider {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Linq+Expressions+IndexExpression")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::IArgumentProvider>,
-> for crate::System::Linq::Expressions::IndexExpression {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::IArgumentProvider,
-    > {
+impl AsMut<crate::System::Linq::Expressions::IArgumentProvider>
+for crate::System::Linq::Expressions::IndexExpression {
+    fn as_mut(&mut self) -> &mut crate::System::Linq::Expressions::IArgumentProvider {
         unsafe { std::mem::transmute(self) }
     }
 }

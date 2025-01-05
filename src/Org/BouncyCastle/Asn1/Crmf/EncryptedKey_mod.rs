@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EncryptedKey {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub envelopedData: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::Cms::EnvelopedData,
     >,
@@ -19,9 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+Crmf+EncryptedKey")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Crmf::EncryptedKey {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,18 +40,7 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::EncryptedKey {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (o))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
-        envelopedData: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Cms::EnvelopedData,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (envelopedData))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc1(
+    pub fn New_EncryptedValue1(
         encryptedValue: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Crmf::EncryptedValue,
         >,
@@ -64,6 +49,17 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::EncryptedKey {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (encryptedValue))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_EnvelopedData0(
+        envelopedData: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::EnvelopedData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (envelopedData))?;
         Ok(__cordl_object.into())
     }
     pub fn ToAsn1Object(
@@ -79,20 +75,7 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::EncryptedKey {
         > = __cordl_object.invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
-        &mut self,
-        envelopedData: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::Cms::EnvelopedData,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (envelopedData))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_EncryptedValue1(
         &mut self,
         encryptedValue: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Crmf::EncryptedValue,
@@ -103,6 +86,19 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::EncryptedKey {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (encryptedValue))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_EnvelopedData0(
+        &mut self,
+        envelopedData: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::EnvelopedData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (envelopedData))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_IsEncryptedValue(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -137,20 +133,16 @@ for crate::Org::BouncyCastle::Asn1::Crmf::EncryptedKey {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Crmf+EncryptedKey")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice>>
+impl AsRef<crate::Org::BouncyCastle::Asn1::IAsn1Choice>
 for crate::Org::BouncyCastle::Asn1::Crmf::EncryptedKey {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice> {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Asn1::IAsn1Choice {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Crmf+EncryptedKey")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice>>
+impl AsMut<crate::Org::BouncyCastle::Asn1::IAsn1Choice>
 for crate::Org::BouncyCastle::Asn1::Crmf::EncryptedKey {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice> {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Asn1::IAsn1Choice {
         unsafe { std::mem::transmute(self) }
     }
 }

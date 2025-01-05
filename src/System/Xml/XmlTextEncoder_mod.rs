@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlTextEncoder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub textWriter: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
     pub inAttribute: bool,
     pub quoteChar: char,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlTextEncoder")]
 impl std::ops::Deref for crate::System::Xml::XmlTextEncoder {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -71,7 +71,7 @@ impl crate::System::Xml::XmlTextEncoder {
             .invoke("WriteCharEntity", (ch))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteCharEntityImpl_Gc1(
+    pub fn WriteCharEntityImpl_Il2CppString1(
         &mut self,
         strVal: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -177,18 +177,7 @@ impl crate::System::Xml::XmlTextEncoder {
             .invoke("WriteSurrogateCharEntity", (lowChar, highChar))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Write_Gc1(
-        &mut self,
-        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Write", (text))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Write_i32_i32_0(
+    pub fn Write_Il2CppArray_i32_i32_0(
         &mut self,
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         offset: i32,
@@ -199,6 +188,17 @@ impl crate::System::Xml::XmlTextEncoder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Write", (array, offset, count))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Write_Il2CppString1(
+        &mut self,
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Write", (text))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

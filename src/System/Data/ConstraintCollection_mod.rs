@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConstraintCollection {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Data::InternalDataCollectionBase,
-    >,
+    __cordl_parent: crate::System::Data::InternalDataCollectionBase,
     pub _table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     pub _list: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     pub _defaultNameIndex: i32,
@@ -12,9 +10,7 @@ pub struct ConstraintCollection {
         crate::System::ComponentModel::CollectionChangeEventHandler,
     >,
     pub _delayLoadingConstraints: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::System::Data::Constraint>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::Constraint>,
     >,
     pub _fLoadForeignKeyConstraintsOnly: bool,
 }
@@ -25,9 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+ConstraintCollection")]
 impl std::ops::Deref for crate::System::Data::ConstraintCollection {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Data::InternalDataCollectionBase,
-    >;
+    type Target = crate::System::Data::InternalDataCollectionBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -62,7 +56,7 @@ impl crate::System::Data::ConstraintCollection {
             .invoke("AddUniqueConstraint", (constraint))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Add_Gc0(
+    pub fn Add_Constraint0(
         &mut self,
         constraint: quest_hook::libil2cpp::Gc<crate::System::Data::Constraint>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -73,13 +67,23 @@ impl crate::System::Data::ConstraintCollection {
             .invoke("Add", (constraint))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Add_Gc__cordl_bool2(
+    pub fn Add_Constraint__cordl_bool1(
+        &mut self,
+        constraint: quest_hook::libil2cpp::Gc<crate::System::Data::Constraint>,
+        addUniqueWhenAddingForeign: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Add", (constraint, addUniqueWhenAddingForeign))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Add_Il2CppString_Il2CppArray__cordl_bool2(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         columns: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
         >,
         primaryKey: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -90,18 +94,6 @@ impl crate::System::Data::ConstraintCollection {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Data::Constraint> = __cordl_object
             .invoke("Add", (name, columns, primaryKey))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Add__cordl_bool1(
-        &mut self,
-        constraint: quest_hook::libil2cpp::Gc<crate::System::Data::Constraint>,
-        addUniqueWhenAddingForeign: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Add", (constraint, addUniqueWhenAddingForeign))?;
         Ok(__cordl_ret.into())
     }
     pub fn ArrayAdd(
@@ -163,15 +155,11 @@ impl crate::System::Data::ConstraintCollection {
     pub fn BaseGroupSwitch(
         &mut self,
         oldArray: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Data::Constraint>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::Constraint>,
         >,
         oldLength: i32,
         newArray: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Data::Constraint>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::Constraint>,
         >,
         newLength: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -217,21 +205,17 @@ impl crate::System::Data::ConstraintCollection {
     }
     pub fn CompareArrays(
         a1: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
         >,
         a2: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("CompareArrays", (a1, a2))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Contains_Gc0(
+    pub fn Contains_Il2CppString0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -269,14 +253,10 @@ impl crate::System::Data::ConstraintCollection {
     pub fn FindForeignKeyConstraint(
         &mut self,
         parentColumns: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
         >,
         childColumns: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Data::ForeignKeyConstraint>,
@@ -290,25 +270,7 @@ impl crate::System::Data::ConstraintCollection {
             .invoke("FindForeignKeyConstraint", (parentColumns, childColumns))?;
         Ok(__cordl_ret.into())
     }
-    pub fn FindKeyConstraint_Gc0(
-        &mut self,
-        columns: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Data::UniqueConstraint>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Data::UniqueConstraint,
-        > = __cordl_object.invoke("FindKeyConstraint", (columns))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn FindKeyConstraint_Gc1(
+    pub fn FindKeyConstraint_DataColumn1(
         &mut self,
         column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
     ) -> quest_hook::libil2cpp::Result<
@@ -320,6 +282,22 @@ impl crate::System::Data::ConstraintCollection {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Data::UniqueConstraint,
         > = __cordl_object.invoke("FindKeyConstraint", (column))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindKeyConstraint_Il2CppArray0(
+        &mut self,
+        columns: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Data::UniqueConstraint>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Data::UniqueConstraint,
+        > = __cordl_object.invoke("FindKeyConstraint", (columns))?;
         Ok(__cordl_ret.into())
     }
     pub fn InternalIndexOf(
@@ -413,7 +391,7 @@ impl crate::System::Data::ConstraintCollection {
             .invoke(".ctor", (table))?;
         Ok(__cordl_ret.into())
     }
-    pub fn get_Item_Gc1(
+    pub fn get_Item_Il2CppString1(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<

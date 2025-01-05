@@ -2,23 +2,41 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TweeningManager {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _activeTweens: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Tweening::Tween>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::Tweening::Tween>,
+        >,
     >,
     pub _activeTweensSet: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Tweening::Tween>,
+        crate::System::Collections::Generic::HashSet_1<
+            quest_hook::libil2cpp::Gc<crate::Tweening::Tween>,
+        >,
     >,
     pub _tweensByOwner: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::Tweening::Tween>>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::HashSet_1<
+                    quest_hook::libil2cpp::Gc<crate::Tweening::Tween>,
+                >,
+            >,
+        >,
     >,
     pub _ownerByTween: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Tweening::Tween>,
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::Tweening::Tween>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub _reusableTweenHashSets: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::Tweening::Tween>>,
+        crate::System::Collections::Generic::Queue_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::HashSet_1<
+                    quest_hook::libil2cpp::Gc<crate::Tweening::Tween>,
+                >,
+            >,
+        >,
     >,
     pub _parityOfNextNewTween: crate::Tweening::FrameParity,
 }
@@ -29,7 +47,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Tweening+TweeningManager")]
 impl std::ops::Deref for crate::Tweening::TweeningManager {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

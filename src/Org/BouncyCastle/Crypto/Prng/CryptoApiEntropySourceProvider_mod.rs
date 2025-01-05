@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CryptoApiEntropySourceProvider {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mRng: quest_hook::libil2cpp::Gc<
         crate::System::Security::Cryptography::RandomNumberGenerator,
     >,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+CryptoApiEntropySourceProvider")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -56,7 +56,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc__cordl_bool1(
+    pub fn New_RandomNumberGenerator__cordl_bool1(
         rng: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::RandomNumberGenerator,
         >,
@@ -78,7 +78,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc__cordl_bool1(
+    pub fn _ctor_RandomNumberGenerator__cordl_bool1(
         &mut self,
         rng: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::RandomNumberGenerator,
@@ -104,26 +104,18 @@ for crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+CryptoApiEntropySourceProvider")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IEntropySourceProvider>,
-> for crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::IEntropySourceProvider,
-    > {
+impl AsRef<crate::Org::BouncyCastle::Crypto::IEntropySourceProvider>
+for crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IEntropySourceProvider {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+CryptoApiEntropySourceProvider")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IEntropySourceProvider>,
-> for crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider {
+impl AsMut<crate::Org::BouncyCastle::Crypto::IEntropySourceProvider>
+for crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::IEntropySourceProvider,
-    > {
+    ) -> &mut crate::Org::BouncyCastle::Crypto::IEntropySourceProvider {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -133,7 +125,7 @@ impl AsMut<
 #[repr(C)]
 #[derive(Debug)]
 pub struct CryptoApiEntropySourceProvider_CryptoApiEntropySource {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mRng: quest_hook::libil2cpp::Gc<
         crate::System::Security::Cryptography::RandomNumberGenerator,
     >,
@@ -154,7 +146,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider_CryptoApiEntropySource {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -253,24 +245,18 @@ for crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider_Crypt
 #[cfg(
     feature = "Org+BouncyCastle+Crypto+Prng+CryptoApiEntropySourceProvider+CryptoApiEntropySource"
 )]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IEntropySource>>
+impl AsRef<crate::Org::BouncyCastle::Crypto::IEntropySource>
 for crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider_CryptoApiEntropySource {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IEntropySource> {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IEntropySource {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(
     feature = "Org+BouncyCastle+Crypto+Prng+CryptoApiEntropySourceProvider+CryptoApiEntropySource"
 )]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IEntropySource>>
+impl AsMut<crate::Org::BouncyCastle::Crypto::IEntropySource>
 for crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider_CryptoApiEntropySource {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::IEntropySource,
-    > {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IEntropySource {
         unsafe { std::mem::transmute(self) }
     }
 }

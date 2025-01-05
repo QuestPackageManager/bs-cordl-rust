@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DeferredHash {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mContext: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
     >,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DeferredHash")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::DeferredHash {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -139,7 +139,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DeferredHash {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_u8_Gc1(
+    pub fn New_u8_IDigest1(
         prfHashAlgorithm: u8,
         prfHash: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -231,7 +231,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DeferredHash {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_u8_Gc1(
+    pub fn _ctor_u8_IDigest1(
         &mut self,
         prfHashAlgorithm: u8,
         prfHash: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
@@ -268,44 +268,32 @@ for crate::Org::BouncyCastle::Crypto::Tls::DeferredHash {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DeferredHash")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>>
+impl AsRef<crate::Org::BouncyCastle::Crypto::IDigest>
 for crate::Org::BouncyCastle::Crypto::Tls::DeferredHash {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest> {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IDigest {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DeferredHash")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>>
+impl AsMut<crate::Org::BouncyCastle::Crypto::IDigest>
+for crate::Org::BouncyCastle::Crypto::Tls::DeferredHash {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IDigest {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DeferredHash")]
+impl AsRef<crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash>
+for crate::Org::BouncyCastle::Crypto::Tls::DeferredHash {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DeferredHash")]
+impl AsMut<crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash>
 for crate::Org::BouncyCastle::Crypto::Tls::DeferredHash {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DeferredHash")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash>,
-> for crate::Org::BouncyCastle::Crypto::Tls::DeferredHash {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DeferredHash")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash>,
-> for crate::Org::BouncyCastle::Crypto::Tls::DeferredHash {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash,
-    > {
+    ) -> &mut crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash {
         unsafe { std::mem::transmute(self) }
     }
 }

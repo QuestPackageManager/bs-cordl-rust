@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConfigHandler {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub typeEntries: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     pub channelInstances: quest_hook::libil2cpp::Gc<
         crate::System::Collections::ArrayList,
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+Remoting+ConfigHandler")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::ConfigHandler {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -312,9 +312,7 @@ impl crate::System::Runtime::Remoting::ConfigHandler {
         &mut self,
         element: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         paths: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -347,22 +345,16 @@ for crate::System::Runtime::Remoting::ConfigHandler {
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+ConfigHandler")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Mono::Xml::SmallXmlParser_IContentHandler>>
+impl AsRef<crate::Mono::Xml::SmallXmlParser_IContentHandler>
 for crate::System::Runtime::Remoting::ConfigHandler {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Mono::Xml::SmallXmlParser_IContentHandler> {
+    fn as_ref(&self) -> &crate::Mono::Xml::SmallXmlParser_IContentHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+ConfigHandler")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Mono::Xml::SmallXmlParser_IContentHandler>>
+impl AsMut<crate::Mono::Xml::SmallXmlParser_IContentHandler>
 for crate::System::Runtime::Remoting::ConfigHandler {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Mono::Xml::SmallXmlParser_IContentHandler,
-    > {
+    fn as_mut(&mut self) -> &mut crate::Mono::Xml::SmallXmlParser_IContentHandler {
         unsafe { std::mem::transmute(self) }
     }
 }

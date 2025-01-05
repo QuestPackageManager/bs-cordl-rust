@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RevocationReason {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+RevocationReason")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Bcpg+RevocationReason")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::RevocationReason {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
-    >;
+    type Target = crate::Org::BouncyCastle::Bcpg::SignatureSubpacket;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -65,7 +61,7 @@ impl crate::Org::BouncyCastle::Bcpg::RevocationReason {
             .invoke("GetRevocationReason", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_RevocationReasonTag1(
+    pub fn New_RevocationReasonTag_Il2CppString1(
         isCritical: bool,
         reason: crate::Org::BouncyCastle::Bcpg::RevocationReasonTag,
         description: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -76,7 +72,7 @@ impl crate::Org::BouncyCastle::Bcpg::RevocationReason {
             .invoke_void(".ctor", (isCritical, reason, description))?;
         Ok(__cordl_object.into())
     }
-    pub fn New__cordl_bool0(
+    pub fn New__cordl_bool_Il2CppArray0(
         isCritical: bool,
         isLongLength: bool,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -87,7 +83,7 @@ impl crate::Org::BouncyCastle::Bcpg::RevocationReason {
             .invoke_void(".ctor", (isCritical, isLongLength, data))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_RevocationReasonTag1(
+    pub fn _ctor_RevocationReasonTag_Il2CppString1(
         &mut self,
         isCritical: bool,
         reason: crate::Org::BouncyCastle::Bcpg::RevocationReasonTag,
@@ -100,7 +96,7 @@ impl crate::Org::BouncyCastle::Bcpg::RevocationReason {
             .invoke(".ctor", (isCritical, reason, description))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor__cordl_bool0(
+    pub fn _ctor__cordl_bool_Il2CppArray0(
         &mut self,
         isCritical: bool,
         isLongLength: bool,

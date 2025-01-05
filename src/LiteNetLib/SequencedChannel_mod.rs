@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SequencedChannel {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::LiteNetLib::BaseChannel>,
+    __cordl_parent: crate::LiteNetLib::BaseChannel,
     pub _localSequence: i32,
     pub _remoteSequence: u16,
     pub _reliable: bool,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LiteNetLib+SequencedChannel")]
 impl std::ops::Deref for crate::LiteNetLib::SequencedChannel {
-    type Target = quest_hook::libil2cpp::Gc<crate::LiteNetLib::BaseChannel>;
+    type Target = crate::LiteNetLib::BaseChannel;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

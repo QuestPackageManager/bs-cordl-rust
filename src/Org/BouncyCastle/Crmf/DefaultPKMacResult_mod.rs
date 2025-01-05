@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultPKMacResult {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mac: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+DefaultPKMacResult")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crmf+DefaultPKMacResult")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crmf::DefaultPKMacResult {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -38,7 +38,7 @@ impl crate::Org::BouncyCastle::Crmf::DefaultPKMacResult {
         > = __cordl_object.invoke("Collect", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Collect_Gc_i32_1(
+    pub fn Collect_Il2CppArray_i32_1(
         &mut self,
         sig: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         sigOff: i32,
@@ -81,20 +81,16 @@ for crate::Org::BouncyCastle::Crmf::DefaultPKMacResult {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+DefaultPKMacResult")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockResult>>
+impl AsRef<crate::Org::BouncyCastle::Crypto::IBlockResult>
 for crate::Org::BouncyCastle::Crmf::DefaultPKMacResult {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockResult> {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IBlockResult {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+DefaultPKMacResult")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockResult>>
+impl AsMut<crate::Org::BouncyCastle::Crypto::IBlockResult>
 for crate::Org::BouncyCastle::Crmf::DefaultPKMacResult {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockResult> {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IBlockResult {
         unsafe { std::mem::transmute(self) }
     }
 }

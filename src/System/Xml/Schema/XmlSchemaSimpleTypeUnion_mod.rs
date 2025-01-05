@@ -2,20 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaSimpleTypeUnion {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::XmlSchemaSimpleTypeContent,
-    >,
+    __cordl_parent: crate::System::Xml::Schema::XmlSchemaSimpleTypeContent,
     pub baseTypes: quest_hook::libil2cpp::Gc<
         crate::System::Xml::Schema::XmlSchemaObjectCollection,
     >,
     pub memberTypes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::XmlQualifiedName>,
     >,
     pub baseMemberTypes: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSimpleType>,
+            *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
         >,
     >,
 }
@@ -26,9 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlSchemaSimpleTypeUnion")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaSimpleTypeUnion {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::XmlSchemaSimpleTypeContent,
-    >;
+    type Target = crate::System::Xml::Schema::XmlSchemaSimpleTypeContent;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -65,9 +59,7 @@ impl crate::System::Xml::Schema::XmlSchemaSimpleTypeUnion {
         &mut self,
         baseMemberTypes: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Xml::Schema::XmlSchemaSimpleType,
-                >,
+                *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -93,9 +85,7 @@ impl crate::System::Xml::Schema::XmlSchemaSimpleTypeUnion {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Xml::Schema::XmlSchemaSimpleType,
-                >,
+                *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
             >,
         >,
     > {
@@ -104,9 +94,7 @@ impl crate::System::Xml::Schema::XmlSchemaSimpleTypeUnion {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Xml::Schema::XmlSchemaSimpleType,
-                >,
+                *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
             >,
         > = __cordl_object.invoke("get_BaseMemberTypes", ())?;
         Ok(__cordl_ret.into())
@@ -128,27 +116,21 @@ impl crate::System::Xml::Schema::XmlSchemaSimpleTypeUnion {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::XmlQualifiedName>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::XmlQualifiedName>,
         > = __cordl_object.invoke("get_MemberTypes", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn set_MemberTypes(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::XmlQualifiedName>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

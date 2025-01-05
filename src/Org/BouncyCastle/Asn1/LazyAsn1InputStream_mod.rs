@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LazyAsn1InputStream {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1InputStream,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1InputStream,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+LazyAsn1InputStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+LazyAsn1InputStream")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::LazyAsn1InputStream {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1InputStream,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::Asn1InputStream;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -60,7 +56,7 @@ impl crate::Org::BouncyCastle::Asn1::LazyAsn1InputStream {
         > = __cordl_object.invoke("CreateDerSet", (dIn))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_Il2CppArray0(
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -69,7 +65,7 @@ impl crate::Org::BouncyCastle::Asn1::LazyAsn1InputStream {
             .invoke_void(".ctor", (input))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Stream1(
         inputStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -78,7 +74,7 @@ impl crate::Org::BouncyCastle::Asn1::LazyAsn1InputStream {
             .invoke_void(".ctor", (inputStream))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Il2CppArray0(
         &mut self,
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -89,7 +85,7 @@ impl crate::Org::BouncyCastle::Asn1::LazyAsn1InputStream {
             .invoke(".ctor", (input))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Stream1(
         &mut self,
         inputStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

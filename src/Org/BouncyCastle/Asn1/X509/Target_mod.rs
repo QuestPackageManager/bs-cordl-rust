@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Target {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub targetName: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::X509::GeneralName,
     >,
@@ -19,9 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+Target")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::X509::Target {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -46,7 +42,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::Target {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_Asn1TaggedObject0(
         tagObj: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
         >,
@@ -57,7 +53,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::Target {
             .invoke_void(".ctor", (tagObj))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Target_Choice_Gc1(
+    pub fn New_Target_Choice_GeneralName1(
         _cordl_type: crate::Org::BouncyCastle::Asn1::X509::Target_Choice,
         name: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::GeneralName,
@@ -82,7 +78,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::Target {
         > = __cordl_object.invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Asn1TaggedObject0(
         &mut self,
         tagObj: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
@@ -95,7 +91,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::Target {
             .invoke(".ctor", (tagObj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Target_Choice_Gc1(
+    pub fn _ctor_Target_Choice_GeneralName1(
         &mut self,
         _cordl_type: crate::Org::BouncyCastle::Asn1::X509::Target_Choice,
         name: quest_hook::libil2cpp::Gc<
@@ -146,20 +142,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Asn1::X509:
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+Target")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice>>
+impl AsRef<crate::Org::BouncyCastle::Asn1::IAsn1Choice>
 for crate::Org::BouncyCastle::Asn1::X509::Target {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice> {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Asn1::IAsn1Choice {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+Target")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice>>
+impl AsMut<crate::Org::BouncyCastle::Asn1::IAsn1Choice>
 for crate::Org::BouncyCastle::Asn1::X509::Target {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1Choice> {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Asn1::IAsn1Choice {
         unsafe { std::mem::transmute(self) }
     }
 }

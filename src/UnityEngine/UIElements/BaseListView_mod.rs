@@ -2,14 +2,24 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseListView {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::BaseVerticalCollectionView,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::BaseVerticalCollectionView,
     pub m_ShowBoundCollectionSize: bool,
     pub m_ShowFoldoutHeader: bool,
     pub m_HeaderTitle: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    pub itemsAdded: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<i32>>,
-    pub itemsRemoved: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<i32>>,
+    pub itemsAdded: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::IEnumerable_1<i32>,
+            >,
+        >,
+    >,
+    pub itemsRemoved: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::IEnumerable_1<i32>,
+            >,
+        >,
+    >,
     pub itemsSourceSizeChanged: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub m_ListViewLabel: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::Label,
@@ -26,8 +36,20 @@ pub struct BaseListView {
     pub m_RemoveButton: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::Button,
     >,
-    pub m_ItemAddedCallback: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<i32>>,
-    pub m_ItemRemovedCallback: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<i32>>,
+    pub m_ItemAddedCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::IEnumerable_1<i32>,
+            >,
+        >,
+    >,
+    pub m_ItemRemovedCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::IEnumerable_1<i32>,
+            >,
+        >,
+    >,
     pub m_ItemsSourceSizeChangedCallback: quest_hook::libil2cpp::Gc<
         crate::System::Action,
     >,
@@ -44,9 +66,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+BaseListView")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::BaseListView {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::BaseVerticalCollectionView,
-    >;
+    type Target = crate::UnityEngine::UIElements::BaseVerticalCollectionView;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -153,7 +173,9 @@ impl crate::UnityEngine::UIElements::BaseListView {
     pub fn OnArraySizeFieldChanged(
         &mut self,
         evt: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::UnityEngine::UIElements::ChangeEvent_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -165,7 +187,9 @@ impl crate::UnityEngine::UIElements::BaseListView {
     }
     pub fn OnItemAdded(
         &mut self,
-        indices: quest_hook::libil2cpp::Gc<i32>,
+        indices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -176,7 +200,9 @@ impl crate::UnityEngine::UIElements::BaseListView {
     }
     pub fn OnItemsRemoved(
         &mut self,
-        indices: quest_hook::libil2cpp::Gc<i32>,
+        indices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -431,9 +457,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::BaseL
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseListView_UxmlTraits {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::BaseVerticalCollectionView_UxmlTraits,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::BaseVerticalCollectionView_UxmlTraits,
     pub m_ShowFoldoutHeader: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
     >,
@@ -444,7 +468,9 @@ pub struct BaseListView_UxmlTraits {
         crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
     >,
     pub m_ReorderMode: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::ListViewReorderMode,
+        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
+            crate::UnityEngine::UIElements::ListViewReorderMode,
+        >,
     >,
     pub m_ShowBoundCollectionSize: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
@@ -457,9 +483,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+BaseListView+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::BaseListView_UxmlTraits {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::BaseVerticalCollectionView_UxmlTraits,
-    >;
+    type Target = crate::UnityEngine::UIElements::BaseVerticalCollectionView_UxmlTraits;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

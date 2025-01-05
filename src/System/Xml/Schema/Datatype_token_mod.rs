@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Datatype_token {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::Datatype_normalizedString,
-    >,
+    __cordl_parent: crate::System::Xml::Schema::Datatype_normalizedString,
 }
 #[cfg(feature = "System+Xml+Schema+Datatype_token")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+Datatype_token")]
 impl std::ops::Deref for crate::System::Xml::Schema::Datatype_token {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::Datatype_normalizedString,
-    >;
+    type Target = crate::System::Xml::Schema::Datatype_normalizedString;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

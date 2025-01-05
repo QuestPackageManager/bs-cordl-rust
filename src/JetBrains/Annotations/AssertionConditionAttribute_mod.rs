@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssertionConditionAttribute {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+    __cordl_parent: crate::System::Attribute,
     pub _ConditionType_k__BackingField: crate::JetBrains::Annotations::AssertionConditionType,
 }
 #[cfg(feature = "JetBrains+Annotations+AssertionConditionAttribute")]
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "JetBrains+Annotations+AssertionConditionAttribute")]
 impl std::ops::Deref for crate::JetBrains::Annotations::AssertionConditionAttribute {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Attribute>;
+    type Target = crate::System::Attribute;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InjectContext {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _bindingId: crate::Zenject::BindingId,
     pub _objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _parentContext: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
@@ -23,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+InjectContext")]
 impl std::ops::Deref for crate::Zenject::InjectContext {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -48,20 +48,7 @@ impl crate::Zenject::InjectContext {
             .invoke("Clone", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateSubContext_Gc0(
-        &mut self,
-        memberType: quest_hook::libil2cpp::Gc<crate::System::Type>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext> = __cordl_object
-            .invoke("CreateSubContext", (memberType))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn CreateSubContext_Gc1(
+    pub fn CreateSubContext_Il2CppObject1(
         &mut self,
         memberType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -73,6 +60,19 @@ impl crate::Zenject::InjectContext {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext> = __cordl_object
             .invoke("CreateSubContext", (memberType, identifier))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateSubContext_Type0(
+        &mut self,
+        memberType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext> = __cordl_object
+            .invoke("CreateSubContext", (memberType))?;
         Ok(__cordl_ret.into())
     }
     pub fn Dispose(
@@ -105,7 +105,7 @@ impl crate::Zenject::InjectContext {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc1(
+    pub fn New_DiContainer_Type1(
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         memberType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -115,7 +115,7 @@ impl crate::Zenject::InjectContext {
             .invoke_void(".ctor", (container, memberType))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc_Gc2(
+    pub fn New_DiContainer_Type_Il2CppObject2(
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         memberType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -126,7 +126,7 @@ impl crate::Zenject::InjectContext {
             .invoke_void(".ctor", (container, memberType, identifier))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc_Gc__cordl_bool3(
+    pub fn New_DiContainer_Type_Il2CppObject__cordl_bool3(
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         memberType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -158,7 +158,7 @@ impl crate::Zenject::InjectContext {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc1(
+    pub fn _ctor_DiContainer_Type1(
         &mut self,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         memberType: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -170,7 +170,7 @@ impl crate::Zenject::InjectContext {
             .invoke(".ctor", (container, memberType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_Gc2(
+    pub fn _ctor_DiContainer_Type_Il2CppObject2(
         &mut self,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         memberType: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -183,7 +183,7 @@ impl crate::Zenject::InjectContext {
             .invoke(".ctor", (container, memberType, identifier))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_Gc__cordl_bool3(
+    pub fn _ctor_DiContainer_Type_Il2CppObject__cordl_bool3(
         &mut self,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         memberType: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -200,13 +200,19 @@ impl crate::Zenject::InjectContext {
     pub fn get_AllObjectTypes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         > = __cordl_object.invoke("get_AllObjectTypes", ())?;
         Ok(__cordl_ret.into())
     }
@@ -340,14 +346,18 @@ impl crate::Zenject::InjectContext {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+            >,
         > = __cordl_object.invoke("get_ParentContexts", ())?;
         Ok(__cordl_ret.into())
     }
@@ -355,14 +365,18 @@ impl crate::Zenject::InjectContext {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+            >,
         > = __cordl_object.invoke("get_ParentContextsAndSelf", ())?;
         Ok(__cordl_ret.into())
     }
@@ -508,16 +522,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::InjectContext {
     }
 }
 #[cfg(feature = "Zenject+InjectContext")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::Zenject::InjectContext {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsRef<crate::System::IDisposable> for crate::Zenject::InjectContext {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+InjectContext")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
-for crate::Zenject::InjectContext {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+impl AsMut<crate::System::IDisposable> for crate::Zenject::InjectContext {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }

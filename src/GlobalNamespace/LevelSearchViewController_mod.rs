@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LevelSearchViewController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+    __cordl_parent: crate::HMUI::ViewController,
     pub _searchButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _clearFiltersButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _filterParamsText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
@@ -26,15 +26,21 @@ pub struct LevelSearchViewController {
         crate::GlobalNamespace::UIKeyboardManager,
     >,
     pub didPressSearchButtonEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelSearchViewController>,
-        crate::GlobalNamespace::LevelFilter,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelSearchViewController>,
+            crate::GlobalNamespace::LevelFilter,
+        >,
     >,
     pub didFilterBeatmapLevelCollectionEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
-        crate::GlobalNamespace::LevelSelectionOptions,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
+            crate::GlobalNamespace::LevelSelectionOptions,
+        >,
     >,
     pub didStartLoadingEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelSearchViewController>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelSearchViewController>,
+        >,
     >,
     pub _beatmapLevelPack: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapLevelPack,
@@ -50,9 +56,7 @@ pub struct LevelSearchViewController {
         crate::System::Threading::CancellationTokenSource,
     >,
     pub _beatmapLevelPacks: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::BeatmapLevelPack>,
     >,
 }
 #[cfg(feature = "LevelSearchViewController")]
@@ -62,7 +66,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LevelSearchViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::LevelSearchViewController {
-    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>;
+    type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -116,7 +120,11 @@ impl crate::GlobalNamespace::LevelSearchViewController {
             crate::GlobalNamespace::SongPackMasksModel,
         >,
         characteristics: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapCharacteristicSO,
+                >,
+            >,
         >,
         isPlayerSensitivityForced: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -228,7 +236,7 @@ impl crate::GlobalNamespace::LevelSearchViewController {
         &mut self,
         beatmapLevelPacks: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
+                *mut crate::GlobalNamespace::BeatmapLevelPack,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -283,8 +291,10 @@ impl crate::GlobalNamespace::LevelSearchViewController {
     pub fn add_didFilterBeatmapLevelCollectionEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
-            crate::GlobalNamespace::LevelSelectionOptions,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
+                crate::GlobalNamespace::LevelSelectionOptions,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -297,8 +307,12 @@ impl crate::GlobalNamespace::LevelSearchViewController {
     pub fn add_didPressSearchButtonEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelSearchViewController>,
-            crate::GlobalNamespace::LevelFilter,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LevelSearchViewController,
+                >,
+                crate::GlobalNamespace::LevelFilter,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -311,7 +325,11 @@ impl crate::GlobalNamespace::LevelSearchViewController {
     pub fn add_didStartLoadingEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelSearchViewController>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LevelSearchViewController,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -324,8 +342,10 @@ impl crate::GlobalNamespace::LevelSearchViewController {
     pub fn remove_didFilterBeatmapLevelCollectionEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
-            crate::GlobalNamespace::LevelSelectionOptions,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
+                crate::GlobalNamespace::LevelSelectionOptions,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -338,8 +358,12 @@ impl crate::GlobalNamespace::LevelSearchViewController {
     pub fn remove_didPressSearchButtonEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelSearchViewController>,
-            crate::GlobalNamespace::LevelFilter,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LevelSearchViewController,
+                >,
+                crate::GlobalNamespace::LevelFilter,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -352,7 +376,11 @@ impl crate::GlobalNamespace::LevelSearchViewController {
     pub fn remove_didStartLoadingEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelSearchViewController>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LevelSearchViewController,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

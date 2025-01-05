@@ -2,17 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaAnnotation {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Xml::Schema::XmlSchemaObject,
-    >,
+    __cordl_parent: crate::System::Xml::Schema::XmlSchemaObject,
     pub id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub items: quest_hook::libil2cpp::Gc<
         crate::System::Xml::Schema::XmlSchemaObjectCollection,
     >,
     pub moreAttributes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAttribute>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::XmlAttribute>,
     >,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaAnnotation")]
@@ -22,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlSchemaAnnotation")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaAnnotation {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>;
+    type Target = crate::System::Xml::Schema::XmlSchemaObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -45,9 +41,7 @@ impl crate::System::Xml::Schema::XmlSchemaAnnotation {
     pub fn SetUnhandledAttributes(
         &mut self,
         moreAttributes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAttribute>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::XmlAttribute>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

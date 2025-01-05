@@ -2,12 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Interpreter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _instructions: crate::System::Linq::Expressions::Interpreter::InstructionArray,
     pub _objects: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
     pub _labels: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
@@ -16,9 +14,7 @@ pub struct Interpreter {
     >,
     pub _debugInfos: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::Interpreter::DebugInfo,
-            >,
+            *mut crate::System::Linq::Expressions::Interpreter::DebugInfo,
         >,
     >,
     pub _Name_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -26,9 +22,13 @@ pub struct Interpreter {
     >,
     pub _LocalCount_k__BackingField: i32,
     pub _ClosureVariables_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::ParameterExpression>,
-        quest_hook::libil2cpp::Gc<
-            crate::System::Linq::Expressions::Interpreter::LocalVariable,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::ParameterExpression,
+            >,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::Interpreter::LocalVariable,
+            >,
         >,
     >,
 }
@@ -40,7 +40,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Linq+Expressions+Interpreter+Interpreter")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Interpreter::Interpreter {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -61,9 +61,7 @@ impl crate::System::Linq::Expressions::Interpreter::Interpreter {
         instructions: crate::System::Linq::Expressions::Interpreter::InstructionArray,
         debugInfos: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Linq::Expressions::Interpreter::DebugInfo,
-                >,
+                *mut crate::System::Linq::Expressions::Interpreter::DebugInfo,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -95,9 +93,7 @@ impl crate::System::Linq::Expressions::Interpreter::Interpreter {
         instructions: crate::System::Linq::Expressions::Interpreter::InstructionArray,
         debugInfos: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Linq::Expressions::Interpreter::DebugInfo,
-                >,
+                *mut crate::System::Linq::Expressions::Interpreter::DebugInfo,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -119,11 +115,13 @@ impl crate::System::Linq::Expressions::Interpreter::Interpreter {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::ParameterExpression,
-            >,
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::Interpreter::LocalVariable,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::ParameterExpression,
+                >,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::Interpreter::LocalVariable,
+                >,
             >,
         >,
     > {
@@ -131,11 +129,13 @@ impl crate::System::Linq::Expressions::Interpreter::Interpreter {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::ParameterExpression,
-            >,
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::Interpreter::LocalVariable,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::ParameterExpression,
+                >,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::Interpreter::LocalVariable,
+                >,
             >,
         > = __cordl_object.invoke("get_ClosureVariables", ())?;
         Ok(__cordl_ret.into())

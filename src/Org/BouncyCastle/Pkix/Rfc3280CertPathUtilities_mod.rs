@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Rfc3280CertPathUtilities {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+Pkix+Rfc3280CertPathUtilities")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Pkix+Rfc3280CertPathUtilities")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Pkix::Rfc3280CertPathUtilities {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -97,9 +97,7 @@ impl crate::Org::BouncyCastle::Pkix::Rfc3280CertPathUtilities {
         >,
         index: i32,
         policyNodes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Collections::IList>,
         >,
         validPolicyTree: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Pkix::PkixPolicyNode,
@@ -313,9 +311,7 @@ impl crate::Org::BouncyCastle::Pkix::Rfc3280CertPathUtilities {
             crate::Org::BouncyCastle::Pkix::PkixPolicyNode,
         >,
         policyNodes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Collections::IList>,
         >,
         inhibitAnyPolicy: i32,
     ) -> quest_hook::libil2cpp::Result<
@@ -394,17 +390,13 @@ impl crate::Org::BouncyCastle::Pkix::Rfc3280CertPathUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Utilities::Collections::ISet,
-                >,
+                *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::Org::BouncyCastle::Utilities::Collections::ISet,
-                >,
+                *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ProcessCrlA1ii", (currentDate, paramsPKIX, cert, crl))?;
@@ -591,9 +583,7 @@ impl crate::Org::BouncyCastle::Pkix::Rfc3280CertPathUtilities {
         >,
         index: i32,
         policyNodes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Collections::IList>,
         >,
         validPolicyTree: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Pkix::PkixPolicyNode,

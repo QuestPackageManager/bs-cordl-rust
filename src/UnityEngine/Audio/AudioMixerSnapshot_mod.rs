@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AudioMixerSnapshot {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    __cordl_parent: crate::UnityEngine::Object,
 }
 #[cfg(feature = "UnityEngine+Audio+AudioMixerSnapshot")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Audio+AudioMixerSnapshot")]
 impl std::ops::Deref for crate::UnityEngine::Audio::AudioMixerSnapshot {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>;
+    type Target = crate::UnityEngine::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -77,26 +77,16 @@ for crate::UnityEngine::Audio::AudioMixerSnapshot {
     }
 }
 #[cfg(feature = "UnityEngine+Audio+AudioMixerSnapshot")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::Internal::ISubAssetNotDuplicatable>,
-> for crate::UnityEngine::Audio::AudioMixerSnapshot {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Internal::ISubAssetNotDuplicatable,
-    > {
+impl AsRef<crate::UnityEngine::Internal::ISubAssetNotDuplicatable>
+for crate::UnityEngine::Audio::AudioMixerSnapshot {
+    fn as_ref(&self) -> &crate::UnityEngine::Internal::ISubAssetNotDuplicatable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Audio+AudioMixerSnapshot")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::Internal::ISubAssetNotDuplicatable>,
-> for crate::UnityEngine::Audio::AudioMixerSnapshot {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Internal::ISubAssetNotDuplicatable,
-    > {
+impl AsMut<crate::UnityEngine::Internal::ISubAssetNotDuplicatable>
+for crate::UnityEngine::Audio::AudioMixerSnapshot {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Internal::ISubAssetNotDuplicatable {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -3,9 +3,7 @@
 #[derive(Debug, Clone, Default)]
 pub struct TileAnimationData {
     pub m_AnimatedSprites: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Sprite>,
     >,
     pub m_AnimationSpeed: f32,
     pub m_AnimationStartTime: f32,

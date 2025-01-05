@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Focusable {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::CallbackEventHandler,
-    >,
+    __cordl_parent: crate::UnityEngine::UIElements::CallbackEventHandler,
     pub _focusable_k__BackingField: bool,
     pub _tabIndex_k__BackingField: i32,
     pub m_DelegatesFocus: bool,
@@ -17,9 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+Focusable")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Focusable {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::CallbackEventHandler,
-    >;
+    type Target = crate::UnityEngine::UIElements::CallbackEventHandler;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

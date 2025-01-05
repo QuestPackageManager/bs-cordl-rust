@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X25519Field {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc7748+X25519Field")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc7748+X25519Field")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::Rfc7748::X25519Field {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -38,7 +38,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc7748::X25519Field {
             .invoke("Add", (x, y, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddOne_Gc0(
+    pub fn AddOne_Il2CppArray0(
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -203,7 +203,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc7748::X25519Field {
             .invoke("IsZeroVar", (x))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Mul_Gc1(
+    pub fn Mul_Il2CppArray1(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -267,7 +267,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc7748::X25519Field {
             .invoke("Reduce", (z, x))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Sqr_Gc0(
+    pub fn Sqr_Il2CppArray0(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -275,7 +275,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc7748::X25519Field {
             .invoke("Sqr", (x, z))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Sqr_i32_Gc1(
+    pub fn Sqr_i32_Il2CppArray1(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         n: i32,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,

@@ -69,14 +69,18 @@ impl crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_In
 #[repr(C)]
 #[derive(Debug)]
 pub struct InstructionList {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _instructions: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Linq::Expressions::Interpreter::Instruction,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::Interpreter::Instruction,
+            >,
         >,
     >,
     pub _objects: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub _currentStackDepth: i32,
     pub _maxStackDepth: i32,
@@ -84,14 +88,18 @@ pub struct InstructionList {
     pub _maxContinuationDepth: i32,
     pub _runtimeLabelCount: i32,
     pub _labels: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Linq::Expressions::Interpreter::BranchLabel,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::Interpreter::BranchLabel,
+            >,
         >,
     >,
     pub _debugCookies: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::KeyValuePair_2<
-            i32,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        crate::System::Collections::Generic::List_1<
+            crate::System::Collections::Generic::KeyValuePair_2<
+                i32,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     >,
 }
@@ -103,7 +111,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionList")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Interpreter::InstructionList {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -256,7 +264,35 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionList {
             .invoke("EmitBranchTrue", (elseLabel))?;
         Ok(__cordl_ret.into())
     }
-    pub fn EmitBranch_Gc0(
+    pub fn EmitBranch_BranchLabel1(
+        &mut self,
+        label: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::BranchLabel,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EmitBranch", (label))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EmitBranch_BranchLabel__cordl_bool__cordl_bool2(
+        &mut self,
+        label: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::BranchLabel,
+        >,
+        hasResult: bool,
+        hasValue: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EmitBranch", (label, hasResult, hasValue))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EmitBranch_OffsetInstruction_BranchLabel0(
         &mut self,
         instruction: quest_hook::libil2cpp::Gc<
             crate::System::Linq::Expressions::Interpreter::OffsetInstruction,
@@ -272,47 +308,17 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionList {
             .invoke("EmitBranch", (instruction, label))?;
         Ok(__cordl_ret.into())
     }
-    pub fn EmitBranch_Gc1(
-        &mut self,
-        label: quest_hook::libil2cpp::Gc<
-            crate::System::Linq::Expressions::Interpreter::BranchLabel,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EmitBranch", (label))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn EmitBranch__cordl_bool__cordl_bool2(
-        &mut self,
-        label: quest_hook::libil2cpp::Gc<
-            crate::System::Linq::Expressions::Interpreter::BranchLabel,
-        >,
-        hasResult: bool,
-        hasValue: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EmitBranch", (label, hasResult, hasValue))?;
-        Ok(__cordl_ret.into())
-    }
     pub fn EmitByRefCall(
         &mut self,
         method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
         parameters: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
+                *mut crate::System::Reflection::ParameterInfo,
             >,
         >,
         byrefArgs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Linq::Expressions::Interpreter::ByRefUpdater,
-                >,
+                *mut crate::System::Linq::Expressions::Interpreter::ByRefUpdater,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -330,14 +336,12 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionList {
         >,
         parameters: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
+                *mut crate::System::Reflection::ParameterInfo,
             >,
         >,
         updaters: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Linq::Expressions::Interpreter::ByRefUpdater,
-                >,
+                *mut crate::System::Linq::Expressions::Interpreter::ByRefUpdater,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -348,23 +352,12 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionList {
             .invoke("EmitByRefNew", (constructorInfo, parameters, updaters))?;
         Ok(__cordl_ret.into())
     }
-    pub fn EmitCall_Gc0(
-        &mut self,
-        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EmitCall", (method))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn EmitCall_Gc1(
+    pub fn EmitCall_Il2CppArray1(
         &mut self,
         method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
         parameters: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
+                *mut crate::System::Reflection::ParameterInfo,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -373,6 +366,17 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionList {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("EmitCall", (method, parameters))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EmitCall_MethodInfo0(
+        &mut self,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EmitCall", (method))?;
         Ok(__cordl_ret.into())
     }
     pub fn EmitCast(
@@ -695,7 +699,9 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionList {
     }
     pub fn EmitIntSwitch<T>(
         &mut self,
-        cases: quest_hook::libil2cpp::Gc<T, i32>,
+        cases: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<T, i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -842,7 +848,7 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionList {
             .invoke("EmitLoadLocalFromClosureBoxed", (index))?;
         Ok(__cordl_ret.into())
     }
-    pub fn EmitLoad_Gc0(
+    pub fn EmitLoad_Il2CppObject0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -853,7 +859,7 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionList {
             .invoke("EmitLoad", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn EmitLoad_Gc_Gc2(
+    pub fn EmitLoad_Il2CppObject_Type2(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -928,7 +934,7 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionList {
         >,
         parameters: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
+                *mut crate::System::Reflection::ParameterInfo,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1013,7 +1019,7 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionList {
         method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
         parameters: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
+                *mut crate::System::Reflection::ParameterInfo,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1159,10 +1165,14 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionList {
     pub fn EmitStringSwitch(
         &mut self,
         cases: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            i32,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                i32,
+            >,
         >,
-        nullCase: quest_hook::libil2cpp::Gc<i32>,
+        nullCase: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::StrongBox_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1506,7 +1516,7 @@ for crate::System::Linq::Expressions::Interpreter::InstructionList {
 #[repr(C)]
 #[derive(Debug)]
 pub struct InstructionList_DebugView {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionList+DebugView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1517,7 +1527,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionList+DebugView")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::InstructionList_DebugView {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1537,18 +1547,24 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionList_DebugView {
     pub type InstructionView = crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_InstructionView;
     pub fn GetInstructionViews(
         instructions: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::Interpreter::Instruction,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::Interpreter::Instruction,
+                >,
             >,
         >,
         objects: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
-        labelIndexer: quest_hook::libil2cpp::Gc<i32, i32>,
-        debugCookies: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::KeyValuePair_2<
-                i32,
+            crate::System::Collections::Generic::IReadOnlyList_1<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
+        >,
+        labelIndexer: quest_hook::libil2cpp::Gc<crate::System::Func_2<i32, i32>>,
+        debugCookies: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                crate::System::Collections::Generic::KeyValuePair_2<
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<

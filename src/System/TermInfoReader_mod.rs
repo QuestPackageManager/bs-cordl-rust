@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TermInfoReader {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub boolSize: i32,
     pub numSize: i32,
     pub strOffsets: i32,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+TermInfoReader")]
 impl std::ops::Deref for crate::System::TermInfoReader {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -67,7 +67,7 @@ impl crate::System::TermInfoReader {
         > = __cordl_object.invoke("GetString", (buffer, offset))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetStringBytes_Gc_i32_1(
+    pub fn GetStringBytes_Il2CppArray_i32_1(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
@@ -120,17 +120,7 @@ impl crate::System::TermInfoReader {
         > = __cordl_object.invoke("Get", (tstr))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc_Gc0(
-        term: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (term, filename))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_Gc1(
+    pub fn New_Il2CppArray1(
         term: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -138,6 +128,16 @@ impl crate::System::TermInfoReader {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (term, buffer))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Il2CppString0(
+        term: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (term, filename))?;
         Ok(__cordl_object.into())
     }
     pub fn ReadHeader(
@@ -164,19 +164,7 @@ impl crate::System::TermInfoReader {
             .invoke("ReadNames", (buffer, position))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc0(
-        &mut self,
-        term: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (term, filename))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_Gc1(
+    pub fn _ctor_Il2CppArray1(
         &mut self,
         term: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -186,6 +174,18 @@ impl crate::System::TermInfoReader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (term, buffer))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppString0(
+        &mut self,
+        term: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (term, filename))?;
         Ok(__cordl_ret.into())
     }
 }

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ECNamedDomainParameters {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters,
     pub name: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
     >,
@@ -18,9 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+ECNamedDomainParameters")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Parameters::ECNamedDomainParameters {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters,
-    >;
+    type Target = crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,33 +30,7 @@ for crate::Org::BouncyCastle::Crypto::Parameters::ECNamedDomainParameters {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+ECNamedDomainParameters")]
 impl crate::Org::BouncyCastle::Crypto::Parameters::ECNamedDomainParameters {
-    pub fn New_Gc_Gc0(
-        name: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-        >,
-        dp: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (name, dp))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_Gc1(
-        name: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-        >,
-        x9: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (name, x9))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_Gc2(
+    pub fn New_ECCurve_ECPoint_BigInteger2(
         name: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
@@ -74,7 +44,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::ECNamedDomainParameters {
             .invoke_void(".ctor", (name, curve, g, n))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc_Gc3(
+    pub fn New_ECCurve_ECPoint_BigInteger_BigInteger3(
         name: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
@@ -89,7 +59,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::ECNamedDomainParameters {
             .invoke_void(".ctor", (name, curve, g, n, h))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc_Gc_Gc4(
+    pub fn New_ECCurve_ECPoint_BigInteger_BigInteger_Il2CppArray4(
         name: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
@@ -105,37 +75,33 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::ECNamedDomainParameters {
             .invoke_void(".ctor", (name, curve, g, n, h, seed))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc_Gc0(
-        &mut self,
+    pub fn New_ECDomainParameters0(
         name: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
         dp: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters,
         >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (name, dp))?;
-        Ok(__cordl_ret.into())
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (name, dp))?;
+        Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc_Gc1(
-        &mut self,
+    pub fn New_X9ECParameters1(
         name: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
         x9: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (name, x9))?;
-        Ok(__cordl_ret.into())
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (name, x9))?;
+        Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc_Gc2(
+    pub fn _ctor_ECCurve_ECPoint_BigInteger2(
         &mut self,
         name: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
@@ -151,7 +117,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::ECNamedDomainParameters {
             .invoke(".ctor", (name, curve, g, n))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_Gc3(
+    pub fn _ctor_ECCurve_ECPoint_BigInteger_BigInteger3(
         &mut self,
         name: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
@@ -168,7 +134,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::ECNamedDomainParameters {
             .invoke(".ctor", (name, curve, g, n, h))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_Gc_Gc4(
+    pub fn _ctor_ECCurve_ECPoint_BigInteger_BigInteger_Il2CppArray4(
         &mut self,
         name: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
@@ -184,6 +150,36 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::ECNamedDomainParameters {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (name, curve, g, n, h, seed))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_ECDomainParameters0(
+        &mut self,
+        name: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+        dp: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (name, dp))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_X9ECParameters1(
+        &mut self,
+        name: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+        x9: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (name, x9))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_Name(

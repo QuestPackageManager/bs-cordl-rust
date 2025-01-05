@@ -2,22 +2,26 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RectMask2D {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::UIBehaviour,
-    >,
+    __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
     pub m_VertexClipper: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UI::RectangularVertexClipper,
     >,
     pub m_RectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub m_MaskableTargets: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::MaskableGraphic>,
+        crate::System::Collections::Generic::HashSet_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::MaskableGraphic>,
+        >,
     >,
     pub m_ClipTargets: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IClippable>,
+        crate::System::Collections::Generic::HashSet_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IClippable>,
+        >,
     >,
     pub m_ShouldRecalculateClipRects: bool,
     pub m_Clippers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::RectMask2D>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::RectMask2D>,
+        >,
     >,
     pub m_LastClipRectCanvasSpace: crate::UnityEngine::Rect,
     pub m_ForceClip: bool,
@@ -35,9 +39,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+RectMask2D")]
 impl std::ops::Deref for crate::UnityEngine::UI::RectMask2D {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::UIBehaviour,
-    >;
+    type Target = crate::UnityEngine::EventSystems::UIBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -268,36 +270,28 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::RectMask2D {
     }
 }
 #[cfg(feature = "UnityEngine+UI+RectMask2D")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::ICanvasRaycastFilter>>
+impl AsRef<crate::UnityEngine::ICanvasRaycastFilter>
 for crate::UnityEngine::UI::RectMask2D {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::ICanvasRaycastFilter> {
+    fn as_ref(&self) -> &crate::UnityEngine::ICanvasRaycastFilter {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+RectMask2D")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::ICanvasRaycastFilter>>
+impl AsMut<crate::UnityEngine::ICanvasRaycastFilter>
 for crate::UnityEngine::UI::RectMask2D {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::ICanvasRaycastFilter> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ICanvasRaycastFilter {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+RectMask2D")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IClipper>>
-for crate::UnityEngine::UI::RectMask2D {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IClipper> {
+impl AsRef<crate::UnityEngine::UI::IClipper> for crate::UnityEngine::UI::RectMask2D {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::IClipper {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+RectMask2D")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IClipper>>
-for crate::UnityEngine::UI::RectMask2D {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IClipper> {
+impl AsMut<crate::UnityEngine::UI::IClipper> for crate::UnityEngine::UI::RectMask2D {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::IClipper {
         unsafe { std::mem::transmute(self) }
     }
 }

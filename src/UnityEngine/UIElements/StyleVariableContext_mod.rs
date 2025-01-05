@@ -2,13 +2,19 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StyleVariableContext {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_VariableHash: i32,
     pub m_Variables: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::StyleVariable,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::StyleVariable,
+        >,
     >,
-    pub m_SortedHash: quest_hook::libil2cpp::Gc<i32>,
-    pub m_UnsortedHash: quest_hook::libil2cpp::Gc<i32>,
+    pub m_SortedHash: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
+    >,
+    pub m_UnsortedHash: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleVariableContext")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -17,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+StyleVariableContext")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::StyleVariableContext {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -78,7 +84,7 @@ impl crate::UnityEngine::UIElements::StyleVariableContext {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_StyleVariableContext1(
         other: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::StyleVariableContext,
         >,
@@ -123,7 +129,7 @@ impl crate::UnityEngine::UIElements::StyleVariableContext {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_StyleVariableContext1(
         &mut self,
         other: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::StyleVariableContext,

@@ -2,9 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsyncLocal_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_valueChangedHandler: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::AsyncLocalValueChangedArgs_1<T>,
+        crate::System::Action_1<
+            crate::System::Threading::AsyncLocalValueChangedArgs_1<T>,
+        >,
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -16,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Threading+AsyncLocal_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Threading::AsyncLocal_1<T> {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,7 +34,9 @@ for crate::System::Threading::AsyncLocal_1<T> {
 impl<T: quest_hook::libil2cpp::Type> crate::System::Threading::AsyncLocal_1<T> {
     pub fn New(
         valueChangedHandler: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::AsyncLocalValueChangedArgs_1<T>,
+            crate::System::Action_1<
+                crate::System::Threading::AsyncLocalValueChangedArgs_1<T>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
@@ -68,7 +72,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Threading::AsyncLocal_1<T> {
     pub fn _ctor(
         &mut self,
         valueChangedHandler: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::AsyncLocalValueChangedArgs_1<T>,
+            crate::System::Action_1<
+                crate::System::Threading::AsyncLocalValueChangedArgs_1<T>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -109,24 +115,16 @@ for crate::System::Threading::AsyncLocal_1<T> {
     }
 }
 #[cfg(feature = "System+Threading+AsyncLocal_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::System::Threading::IAsyncLocal>>
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Threading::IAsyncLocal>
 for crate::System::Threading::AsyncLocal_1<T> {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Threading::IAsyncLocal> {
+    fn as_ref(&self) -> &crate::System::Threading::IAsyncLocal {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Threading+AsyncLocal_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::System::Threading::IAsyncLocal>>
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::Threading::IAsyncLocal>
 for crate::System::Threading::AsyncLocal_1<T> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Threading::IAsyncLocal> {
+    fn as_mut(&mut self) -> &mut crate::System::Threading::IAsyncLocal {
         unsafe { std::mem::transmute(self) }
     }
 }

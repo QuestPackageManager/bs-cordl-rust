@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RealProxy {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub class_to_proxy: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _targetContext: quest_hook::libil2cpp::Gc<
         crate::System::Runtime::Remoting::Contexts::Context,
@@ -23,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+Remoting+Proxies+RealProxy")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Proxies::RealProxy {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -141,7 +141,7 @@ impl crate::System::Runtime::Remoting::Proxies::RealProxy {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Type1(
         classToProxy: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -150,7 +150,7 @@ impl crate::System::Runtime::Remoting::Proxies::RealProxy {
             .invoke_void(".ctor", (classToProxy))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc2(
+    pub fn New_Type_ClientIdentity2(
         classToProxy: quest_hook::libil2cpp::Gc<crate::System::Type>,
         identity: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::ClientIdentity,
@@ -162,7 +162,7 @@ impl crate::System::Runtime::Remoting::Proxies::RealProxy {
             .invoke_void(".ctor", (classToProxy, identity))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_IntPtr_Gc3(
+    pub fn New_Type_IntPtr_Il2CppObject3(
         classToProxy: quest_hook::libil2cpp::Gc<crate::System::Type>,
         stub: crate::System::IntPtr,
         stubData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -186,7 +186,7 @@ impl crate::System::Runtime::Remoting::Proxies::RealProxy {
         out_args: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    *mut quest_hook::libil2cpp::Il2CppObject,
                 >,
             >,
         >,
@@ -208,15 +208,11 @@ impl crate::System::Runtime::Remoting::Proxies::RealProxy {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ProcessResponse", (mrm, call))?;
         Ok(__cordl_ret.into())
@@ -242,7 +238,7 @@ impl crate::System::Runtime::Remoting::Proxies::RealProxy {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Type1(
         &mut self,
         classToProxy: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -253,7 +249,7 @@ impl crate::System::Runtime::Remoting::Proxies::RealProxy {
             .invoke(".ctor", (classToProxy))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc2(
+    pub fn _ctor_Type_ClientIdentity2(
         &mut self,
         classToProxy: quest_hook::libil2cpp::Gc<crate::System::Type>,
         identity: quest_hook::libil2cpp::Gc<
@@ -267,7 +263,7 @@ impl crate::System::Runtime::Remoting::Proxies::RealProxy {
             .invoke(".ctor", (classToProxy, identity))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_IntPtr_Gc3(
+    pub fn _ctor_Type_IntPtr_Il2CppObject3(
         &mut self,
         classToProxy: quest_hook::libil2cpp::Gc<crate::System::Type>,
         stub: crate::System::IntPtr,

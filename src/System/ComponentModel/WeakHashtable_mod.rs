@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct WeakHashtable {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    __cordl_parent: crate::System::Collections::Hashtable,
 }
 #[cfg(feature = "System+ComponentModel+WeakHashtable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+ComponentModel+WeakHashtable")]
 impl std::ops::Deref for crate::System::ComponentModel::WeakHashtable {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>;
+    type Target = crate::System::Collections::Hashtable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -78,7 +78,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::ComponentModel::WeakHa
 #[repr(C)]
 #[derive(Debug)]
 pub struct WeakHashtable_WeakKeyComparer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+ComponentModel+WeakHashtable+WeakKeyComparer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -88,7 +88,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+ComponentModel+WeakHashtable+WeakKeyComparer")]
 impl std::ops::Deref for crate::System::ComponentModel::WeakHashtable_WeakKeyComparer {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -154,20 +154,16 @@ for crate::System::ComponentModel::WeakHashtable_WeakKeyComparer {
     }
 }
 #[cfg(feature = "System+ComponentModel+WeakHashtable+WeakKeyComparer")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEqualityComparer>>
+impl AsRef<crate::System::Collections::IEqualityComparer>
 for crate::System::ComponentModel::WeakHashtable_WeakKeyComparer {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEqualityComparer> {
+    fn as_ref(&self) -> &crate::System::Collections::IEqualityComparer {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+ComponentModel+WeakHashtable+WeakKeyComparer")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEqualityComparer>>
+impl AsMut<crate::System::Collections::IEqualityComparer>
 for crate::System::ComponentModel::WeakHashtable_WeakKeyComparer {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEqualityComparer> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEqualityComparer {
         unsafe { std::mem::transmute(self) }
     }
 }

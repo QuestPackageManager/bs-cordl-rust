@@ -2,15 +2,15 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultSerializationBinder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::SerializationBinder,
-    >,
+    __cordl_parent: crate::System::Runtime::Serialization::SerializationBinder,
     pub _typeCache: quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Utilities::StructMultiKey_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::Newtonsoft::Json::Utilities::ThreadSafeStore_2<
+            crate::Newtonsoft::Json::Utilities::StructMultiKey_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
         >,
-        quest_hook::libil2cpp::Gc<crate::System::Type>,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+DefaultSerializationBinder")]
@@ -22,9 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Newtonsoft+Json+Serialization+DefaultSerializationBinder")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::DefaultSerializationBinder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::SerializationBinder,
-    >;
+    type Target = crate::System::Runtime::Serialization::SerializationBinder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -136,30 +134,18 @@ for crate::Newtonsoft::Json::Serialization::DefaultSerializationBinder {
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+DefaultSerializationBinder")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Serialization::ISerializationBinder,
-    >,
-> for crate::Newtonsoft::Json::Serialization::DefaultSerializationBinder {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Serialization::ISerializationBinder,
-    > {
+impl AsRef<crate::Newtonsoft::Json::Serialization::ISerializationBinder>
+for crate::Newtonsoft::Json::Serialization::DefaultSerializationBinder {
+    fn as_ref(&self) -> &crate::Newtonsoft::Json::Serialization::ISerializationBinder {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+DefaultSerializationBinder")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Serialization::ISerializationBinder,
-    >,
-> for crate::Newtonsoft::Json::Serialization::DefaultSerializationBinder {
+impl AsMut<crate::Newtonsoft::Json::Serialization::ISerializationBinder>
+for crate::Newtonsoft::Json::Serialization::DefaultSerializationBinder {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Serialization::ISerializationBinder,
-    > {
+    ) -> &mut crate::Newtonsoft::Json::Serialization::ISerializationBinder {
         unsafe { std::mem::transmute(self) }
     }
 }

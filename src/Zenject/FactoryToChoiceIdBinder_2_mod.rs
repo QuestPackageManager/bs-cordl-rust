@@ -5,7 +5,7 @@ pub struct FactoryToChoiceIdBinder_2<
     TParam1: quest_hook::libil2cpp::Type,
     TContract: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TParam1, TContract>,
+    __cordl_parent: crate::Zenject::FactoryArgumentsToChoiceBinder_2<TParam1, TContract>,
     __cordl_phantom_TParam1: std::marker::PhantomData<TParam1>,
     __cordl_phantom_TContract: std::marker::PhantomData<TContract>,
 }
@@ -19,7 +19,7 @@ impl<
     TParam1: quest_hook::libil2cpp::Type,
     TContract: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::Zenject::FactoryToChoiceIdBinder_2<TParam1, TContract> {
-    type Target = quest_hook::libil2cpp::Gc<TParam1, TContract>;
+    type Target = crate::Zenject::FactoryArgumentsToChoiceBinder_2<TParam1, TContract>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -58,7 +58,11 @@ impl<
     pub fn WithId(
         &mut self,
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TParam1, TContract>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryArgumentsToChoiceBinder_2<TParam1, TContract>,
+        >,
+    >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -68,8 +72,9 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TParam1, TContract> = __cordl_object
-            .invoke("WithId", (identifier))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryArgumentsToChoiceBinder_2<TParam1, TContract>,
+        > = __cordl_object.invoke("WithId", (identifier))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

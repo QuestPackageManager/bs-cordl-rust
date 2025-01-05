@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509V2AttributeCertificateGenerator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub extGenerator: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::X509::X509ExtensionsGenerator,
     >,
@@ -28,7 +28,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+X509+X509V2AttributeCertificateGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::X509::X509V2AttributeCertificateGenerator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -55,7 +55,7 @@ impl crate::Org::BouncyCastle::X509::X509V2AttributeCertificateGenerator {
             .invoke("AddAttribute", (attribute))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddExtension_Gc__cordl_bool_Gc0(
+    pub fn AddExtension_Asn1Encodable0(
         &mut self,
         oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         critical: bool,
@@ -70,7 +70,7 @@ impl crate::Org::BouncyCastle::X509::X509V2AttributeCertificateGenerator {
             .invoke("AddExtension", (oid, critical, extensionValue))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddExtension_Gc__cordl_bool_Gc1(
+    pub fn AddExtension_Il2CppArray1(
         &mut self,
         oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         critical: bool,
@@ -83,7 +83,7 @@ impl crate::Org::BouncyCastle::X509::X509V2AttributeCertificateGenerator {
             .invoke("AddExtension", (oid, critical, extensionValue))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Generate_Gc0(
+    pub fn Generate_AsymmetricKeyParameter0(
         &mut self,
         privateKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
@@ -101,7 +101,7 @@ impl crate::Org::BouncyCastle::X509::X509V2AttributeCertificateGenerator {
         > = __cordl_object.invoke("Generate", (privateKey))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Generate_Gc1(
+    pub fn Generate_AsymmetricKeyParameter_SecureRandom1(
         &mut self,
         privateKey: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
@@ -122,7 +122,7 @@ impl crate::Org::BouncyCastle::X509::X509V2AttributeCertificateGenerator {
         > = __cordl_object.invoke("Generate", (privateKey, random))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Generate_Gc2(
+    pub fn Generate_ISignatureFactory2(
         &mut self,
         signatureCalculatorFactory: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::ISignatureFactory,

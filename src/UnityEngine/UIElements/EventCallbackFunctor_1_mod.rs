@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventCallbackFunctor_1<TEventType: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::EventCallbackFunctorBase,
+    __cordl_parent: crate::UnityEngine::UIElements::EventCallbackFunctorBase,
+    pub m_Callback: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::EventCallback_1<TEventType>,
     >,
-    pub m_Callback: quest_hook::libil2cpp::Gc<TEventType>,
     pub m_EventTypeId: i64,
     __cordl_phantom_TEventType: std::marker::PhantomData<TEventType>,
 }
@@ -17,9 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+EventCallbackFunctor_1")]
 impl<TEventType: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::EventCallbackFunctor_1<TEventType> {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::EventCallbackFunctorBase,
-    >;
+    type Target = crate::UnityEngine::UIElements::EventCallbackFunctorBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -69,7 +67,9 @@ impl<
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        callback: quest_hook::libil2cpp::Gc<TEventType>,
+        callback: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::EventCallback_1<TEventType>,
+        >,
         phase: crate::UnityEngine::UIElements::CallbackPhase,
         invokePolicy: crate::UnityEngine::UIElements::InvokePolicy,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
@@ -85,7 +85,9 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<TEventType>,
+        callback: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::EventCallback_1<TEventType>,
+        >,
         phase: crate::UnityEngine::UIElements::CallbackPhase,
         invokePolicy: crate::UnityEngine::UIElements::InvokePolicy,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RipeMD320Digest {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Digests::GeneralDigest,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Crypto::Digests::GeneralDigest,
     pub H0: i32,
     pub H1: i32,
     pub H2: i32,
@@ -26,9 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+RipeMD320Digest")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Digests::RipeMD320Digest {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Digests::GeneralDigest,
-    >;
+    type Target = crate::Org::BouncyCastle::Crypto::Digests::GeneralDigest;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -128,7 +124,7 @@ impl crate::Org::BouncyCastle::Crypto::Digests::RipeMD320Digest {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_RipeMD320Digest1(
         t: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Digests::RipeMD320Digest,
         >,
@@ -189,7 +185,7 @@ impl crate::Org::BouncyCastle::Crypto::Digests::RipeMD320Digest {
             .invoke("Reset", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Reset_Gc1(
+    pub fn Reset_IMemoable1(
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::IMemoable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -223,7 +219,7 @@ impl crate::Org::BouncyCastle::Crypto::Digests::RipeMD320Digest {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_RipeMD320Digest1(
         &mut self,
         t: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Digests::RipeMD320Digest,

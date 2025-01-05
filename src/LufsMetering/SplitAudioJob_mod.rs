@@ -47,18 +47,14 @@ impl crate::LufsMetering::SplitAudioJob {
     }
 }
 #[cfg(feature = "LufsMetering+SplitAudioJob")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJobParallelFor>>
-for crate::LufsMetering::SplitAudioJob {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJobParallelFor> {
+impl AsRef<crate::Unity::Jobs::IJobParallelFor> for crate::LufsMetering::SplitAudioJob {
+    fn as_ref(&self) -> &crate::Unity::Jobs::IJobParallelFor {
         todo!()
     }
 }
 #[cfg(feature = "LufsMetering+SplitAudioJob")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJobParallelFor>>
-for crate::LufsMetering::SplitAudioJob {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Unity::Jobs::IJobParallelFor> {
+impl AsMut<crate::Unity::Jobs::IJobParallelFor> for crate::LufsMetering::SplitAudioJob {
+    fn as_mut(&mut self) -> &mut crate::Unity::Jobs::IJobParallelFor {
         todo!()
     }
 }

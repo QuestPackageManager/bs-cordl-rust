@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ServicePoint {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
     pub lastDnsResolve: crate::System::DateTime,
     pub protocolVersion: quest_hook::libil2cpp::Gc<crate::System::Version>,
@@ -41,7 +41,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+ServicePoint")]
 impl std::ops::Deref for crate::System::Net::ServicePoint {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

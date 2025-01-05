@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlatformAuthenticationTokenProvider {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _platformUserModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IPlatformUserModel,
     >,
@@ -12,7 +12,9 @@ pub struct PlatformAuthenticationTokenProvider {
     pub _platform: crate::GlobalNamespace::AuthenticationToken_Platform,
     pub _cachedXPlatformAccessToken: crate::GlobalNamespace::XPlatformAccessTokenData,
     pub _xPlatformAccessTokenTask: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::XPlatformAccessTokenData,
+        crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::XPlatformAccessTokenData,
+        >,
     >,
     pub _xPlatformTokenRetryDelayExpiration: f32,
 }
@@ -24,7 +26,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PlatformAuthenticationTokenProvider")]
 impl std::ops::Deref for crate::GlobalNamespace::PlatformAuthenticationTokenProvider {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -41,13 +43,19 @@ impl crate::GlobalNamespace::PlatformAuthenticationTokenProvider {
     pub fn GetAuthenticationToken(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AuthenticationToken>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::AuthenticationToken,
+            >,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::AuthenticationToken,
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::AuthenticationToken,
+            >,
         > = __cordl_object.invoke("GetAuthenticationToken", ())?;
         Ok(__cordl_ret.into())
     }
@@ -69,13 +77,19 @@ impl crate::GlobalNamespace::PlatformAuthenticationTokenProvider {
         cancellationToken: crate::System::Threading::CancellationToken,
         skipCacheRead: bool,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::XPlatformAccessTokenData>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::XPlatformAccessTokenData,
+            >,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::XPlatformAccessTokenData,
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::XPlatformAccessTokenData,
+            >,
         > = __cordl_object
             .invoke("GetXPlatformAccessToken", (cancellationToken, skipCacheRead))?;
         Ok(__cordl_ret.into())
@@ -96,13 +110,19 @@ impl crate::GlobalNamespace::PlatformAuthenticationTokenProvider {
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::XPlatformAccessTokenData>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::XPlatformAccessTokenData,
+            >,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::XPlatformAccessTokenData,
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::XPlatformAccessTokenData,
+            >,
         > = __cordl_object.invoke("RequestXPlatformAccessToken", (cancellationToken))?;
         Ok(__cordl_ret.into())
     }
@@ -170,46 +190,30 @@ for crate::GlobalNamespace::PlatformAuthenticationTokenProvider {
     }
 }
 #[cfg(feature = "PlatformAuthenticationTokenProvider")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::BGNet::Core::IPlatformAccessTokenFetcher>>
+impl AsRef<crate::BGNet::Core::IPlatformAccessTokenFetcher>
 for crate::GlobalNamespace::PlatformAuthenticationTokenProvider {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::BGNet::Core::IPlatformAccessTokenFetcher> {
+    fn as_ref(&self) -> &crate::BGNet::Core::IPlatformAccessTokenFetcher {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "PlatformAuthenticationTokenProvider")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::BGNet::Core::IPlatformAccessTokenFetcher>>
+impl AsMut<crate::BGNet::Core::IPlatformAccessTokenFetcher>
 for crate::GlobalNamespace::PlatformAuthenticationTokenProvider {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::BGNet::Core::IPlatformAccessTokenFetcher,
-    > {
+    fn as_mut(&mut self) -> &mut crate::BGNet::Core::IPlatformAccessTokenFetcher {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "PlatformAuthenticationTokenProvider")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IAuthenticationTokenProvider>,
-> for crate::GlobalNamespace::PlatformAuthenticationTokenProvider {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IAuthenticationTokenProvider,
-    > {
+impl AsRef<crate::GlobalNamespace::IAuthenticationTokenProvider>
+for crate::GlobalNamespace::PlatformAuthenticationTokenProvider {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IAuthenticationTokenProvider {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "PlatformAuthenticationTokenProvider")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IAuthenticationTokenProvider>,
-> for crate::GlobalNamespace::PlatformAuthenticationTokenProvider {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IAuthenticationTokenProvider,
-    > {
+impl AsMut<crate::GlobalNamespace::IAuthenticationTokenProvider>
+for crate::GlobalNamespace::PlatformAuthenticationTokenProvider {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IAuthenticationTokenProvider {
         unsafe { std::mem::transmute(self) }
     }
 }

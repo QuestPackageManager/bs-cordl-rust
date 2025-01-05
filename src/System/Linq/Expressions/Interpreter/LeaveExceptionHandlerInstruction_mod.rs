@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LeaveExceptionHandlerInstruction {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::IndexedBranchInstruction,
-    >,
+    __cordl_parent: crate::System::Linq::Expressions::Interpreter::IndexedBranchInstruction,
     pub _hasValue: bool,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LeaveExceptionHandlerInstruction")]
@@ -16,9 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LeaveExceptionHandlerInstruction")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::LeaveExceptionHandlerInstruction {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::IndexedBranchInstruction,
-    >;
+    type Target = crate::System::Linq::Expressions::Interpreter::IndexedBranchInstruction;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

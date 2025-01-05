@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TooltipAttribute {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::PropertyAttribute>,
+    __cordl_parent: crate::UnityEngine::PropertyAttribute,
     pub tooltip: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnityEngine+TooltipAttribute")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+TooltipAttribute")]
 impl std::ops::Deref for crate::UnityEngine::TooltipAttribute {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::PropertyAttribute>;
+    type Target = crate::UnityEngine::PropertyAttribute;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

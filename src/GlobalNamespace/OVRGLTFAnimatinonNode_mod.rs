@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRGLTFAnimatinonNode {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_intputNodeType: crate::GlobalNamespace::OVRGLTFInputNode,
     pub m_jsonData: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
     pub m_binaryChunk: crate::GlobalNamespace::OVRBinaryChunk,
@@ -11,10 +11,18 @@ pub struct OVRGLTFAnimatinonNode {
     pub m_morphTargetHandler: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler,
     >,
-    pub m_translations: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
-    pub m_rotations: quest_hook::libil2cpp::Gc<crate::UnityEngine::Quaternion>,
-    pub m_scales: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
-    pub m_weights: quest_hook::libil2cpp::Gc<f32>,
+    pub m_translations: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+    >,
+    pub m_rotations: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Quaternion>,
+    >,
+    pub m_scales: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+    >,
+    pub m_weights: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<f32>,
+    >,
     pub m_additiveWeightIndex: i32,
 }
 #[cfg(feature = "OVRGLTFAnimatinonNode")]
@@ -24,7 +32,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRGLTFAnimatinonNode")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRGLTFAnimatinonNode {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -81,7 +89,9 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
     }
     pub fn CopyData<T>(
         &mut self,
-        dest: quest_hook::libil2cpp::ByRefMut<quest_hook::libil2cpp::Gc<T>>,
+        dest: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+        >,
         src: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -100,16 +110,20 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
         joystick: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
-            crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+            crate::System::Tuple_2<
+                crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+                crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
-            crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+            crate::System::Tuple_2<
+                crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+                crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+            >,
         > = __cordl_object.invoke("GetCardinalThumbsticks", (joystick))?;
         Ok(__cordl_ret.into())
     }
@@ -117,8 +131,10 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
         &mut self,
         joystick: crate::UnityEngine::Vector2,
         cardinals: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
-            crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+            crate::System::Tuple_2<
+                crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+                crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FxEventBox {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::EventBox>,
-    pub l: quest_hook::libil2cpp::Gc<i32>,
+    __cordl_parent: crate::BeatmapSaveDataVersion3::EventBox,
+    pub l: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
     pub s: f32,
     pub t: crate::BeatmapSaveDataCommon::DistributionParamType,
     pub i: crate::BeatmapSaveDataCommon::EaseType,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapSaveDataVersion3+FxEventBox")]
 impl std::ops::Deref for crate::BeatmapSaveDataVersion3::FxEventBox {
-    type Target = quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::EventBox>;
+    type Target = crate::BeatmapSaveDataVersion3::EventBox;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -39,7 +39,9 @@ impl crate::BeatmapSaveDataVersion3::FxEventBox {
         vfxDistributionParamType: crate::BeatmapSaveDataCommon::DistributionParamType,
         vfxDistributionEaseType: crate::BeatmapSaveDataCommon::EaseType,
         vfxDistributionShouldAffectFirstBaseEvent: bool,
-        effectsBaseDataList: quest_hook::libil2cpp::Gc<i32>,
+        effectsBaseDataList: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -70,7 +72,9 @@ impl crate::BeatmapSaveDataVersion3::FxEventBox {
         vfxDistributionParamType: crate::BeatmapSaveDataCommon::DistributionParamType,
         vfxDistributionEaseType: crate::BeatmapSaveDataCommon::EaseType,
         vfxDistributionShouldAffectFirstBaseEvent: bool,
-        effectsBaseDataList: quest_hook::libil2cpp::Gc<i32>,
+        effectsBaseDataList: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -93,12 +97,17 @@ impl crate::BeatmapSaveDataVersion3::FxEventBox {
     }
     pub fn get_vfxBaseDataList(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<i32>,
+        >,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = __cordl_object
-            .invoke("get_vfxBaseDataList", ())?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<i32>,
+        > = __cordl_object.invoke("get_vfxBaseDataList", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_vfxDistributionEaseType(

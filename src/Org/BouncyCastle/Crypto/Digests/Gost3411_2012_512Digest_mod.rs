@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Gost3411_2012_512Digest {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Digests::Gost3411_2012Digest,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Crypto::Digests::Gost3411_2012Digest,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+Gost3411_2012_512Digest")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+Gost3411_2012_512Digest")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Digests::Gost3411_2012_512Digest {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Digests::Gost3411_2012Digest,
-    >;
+    type Target = crate::Org::BouncyCastle::Crypto::Digests::Gost3411_2012Digest;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -58,7 +54,7 @@ impl crate::Org::BouncyCastle::Crypto::Digests::Gost3411_2012_512Digest {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_Gost3411_2012_512Digest1(
         other: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Digests::Gost3411_2012_512Digest,
         >,
@@ -79,7 +75,7 @@ impl crate::Org::BouncyCastle::Crypto::Digests::Gost3411_2012_512Digest {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Gost3411_2012_512Digest1(
         &mut self,
         other: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Digests::Gost3411_2012_512Digest,

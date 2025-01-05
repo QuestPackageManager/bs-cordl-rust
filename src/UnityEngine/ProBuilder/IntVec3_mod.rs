@@ -22,7 +22,7 @@ for crate::UnityEngine::ProBuilder::IntVec3 {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+IntVec3")]
 impl crate::UnityEngine::ProBuilder::IntVec3 {
-    pub fn Equals_Gc2(
+    pub fn Equals_Il2CppObject2(
         &mut self,
         b: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -145,20 +145,20 @@ impl crate::UnityEngine::ProBuilder::IntVec3 {
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+IntVec3")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::IntVec3>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::IntVec3>>
 for crate::UnityEngine::ProBuilder::IntVec3 {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::IntVec3> {
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::IntVec3> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+IntVec3")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::IntVec3>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::IntVec3>>
 for crate::UnityEngine::ProBuilder::IntVec3 {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::IntVec3> {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::IntVec3> {
         todo!()
     }
 }

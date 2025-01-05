@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DirectoryInfo {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::IO::FileSystemInfo>,
+    __cordl_parent: crate::System::IO::FileSystemInfo,
 }
 #[cfg(feature = "System+IO+DirectoryInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+IO+DirectoryInfo")]
 impl std::ops::Deref for crate::System::IO::DirectoryInfo {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::IO::FileSystemInfo>;
+    type Target = crate::System::IO::FileSystemInfo;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -38,22 +38,18 @@ impl crate::System::IO::DirectoryInfo {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::IO::DirectoryInfo>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::IO::DirectoryInfo>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::IO::DirectoryInfo>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::IO::DirectoryInfo>,
         > = __cordl_object.invoke("GetDirectories", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetDirectories_Gc_Gc1(
+    pub fn GetDirectories_Il2CppString_EnumerationOptions1(
         &mut self,
         searchPattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         enumerationOptions: quest_hook::libil2cpp::Gc<
@@ -61,18 +57,14 @@ impl crate::System::IO::DirectoryInfo {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::IO::DirectoryInfo>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::IO::DirectoryInfo>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::System::IO::DirectoryInfo>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::IO::DirectoryInfo>,
         > = __cordl_object
             .invoke("GetDirectories", (searchPattern, enumerationOptions))?;
         Ok(__cordl_ret.into())
@@ -98,11 +90,15 @@ impl crate::System::IO::DirectoryInfo {
         options: quest_hook::libil2cpp::Gc<crate::System::IO::EnumerationOptions>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::IO::FileSystemInfo>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::IO::FileSystemInfo>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::IO::FileSystemInfo>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::IO::FileSystemInfo>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
                 "InternalEnumerateInfos",
@@ -110,7 +106,7 @@ impl crate::System::IO::DirectoryInfo {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_Il2CppString0(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -119,7 +115,7 @@ impl crate::System::IO::DirectoryInfo {
             .invoke_void(".ctor", (path))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc__cordl_bool1(
+    pub fn New_Il2CppString_Il2CppString_Il2CppString__cordl_bool1(
         originalPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         fullPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -131,7 +127,7 @@ impl crate::System::IO::DirectoryInfo {
             .invoke_void(".ctor", (originalPath, fullPath, fileName, isNormalized))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_StreamingContext2(
+    pub fn New_SerializationInfo_StreamingContext2(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -143,7 +139,7 @@ impl crate::System::IO::DirectoryInfo {
             .invoke_void(".ctor", (info, context))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Il2CppString0(
         &mut self,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -154,7 +150,7 @@ impl crate::System::IO::DirectoryInfo {
             .invoke(".ctor", (path))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc__cordl_bool1(
+    pub fn _ctor_Il2CppString_Il2CppString_Il2CppString__cordl_bool1(
         &mut self,
         originalPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         fullPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -168,7 +164,7 @@ impl crate::System::IO::DirectoryInfo {
             .invoke(".ctor", (originalPath, fullPath, fileName, isNormalized))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_StreamingContext2(
+    pub fn _ctor_SerializationInfo_StreamingContext2(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,

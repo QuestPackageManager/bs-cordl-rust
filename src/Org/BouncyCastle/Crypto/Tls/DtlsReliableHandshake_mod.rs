@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DtlsReliableHandshake {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mRecordLayer: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Tls::DtlsRecordLayer,
     >,
@@ -34,7 +34,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReliableHandshake")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::DtlsReliableHandshake {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -339,7 +339,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::DtlsReliableHandshake {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DtlsReliableHandshake_Message {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mMessageSeq: i32,
     pub mMsgType: u8,
     pub mBody: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -353,7 +353,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReliableHandshake+Message")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Tls::DtlsReliableHandshake_Message {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -433,7 +433,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::DtlsReliableHandshake_Message {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DtlsReliableHandshake_RecordLayerBuffer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>,
+    __cordl_parent: crate::System::IO::MemoryStream,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReliableHandshake+RecordLayerBuffer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -444,7 +444,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReliableHandshake+RecordLayerBuffer")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Tls::DtlsReliableHandshake_RecordLayerBuffer {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>;
+    type Target = crate::System::IO::MemoryStream;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -506,7 +506,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::DtlsReliableHandshake_RecordLayerBuff
 #[repr(C)]
 #[derive(Debug)]
 pub struct DtlsReliableHandshake_Retransmit {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mOuter: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Tls::DtlsReliableHandshake,
     >,
@@ -520,7 +520,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReliableHandshake+Retransmit")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Tls::DtlsReliableHandshake_Retransmit {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -584,30 +584,18 @@ for crate::Org::BouncyCastle::Crypto::Tls::DtlsReliableHandshake_Retransmit {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReliableHandshake+Retransmit")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::DtlsHandshakeRetransmit,
-    >,
-> for crate::Org::BouncyCastle::Crypto::Tls::DtlsReliableHandshake_Retransmit {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::DtlsHandshakeRetransmit,
-    > {
+impl AsRef<crate::Org::BouncyCastle::Crypto::Tls::DtlsHandshakeRetransmit>
+for crate::Org::BouncyCastle::Crypto::Tls::DtlsReliableHandshake_Retransmit {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::Tls::DtlsHandshakeRetransmit {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReliableHandshake+Retransmit")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::DtlsHandshakeRetransmit,
-    >,
-> for crate::Org::BouncyCastle::Crypto::Tls::DtlsReliableHandshake_Retransmit {
+impl AsMut<crate::Org::BouncyCastle::Crypto::Tls::DtlsHandshakeRetransmit>
+for crate::Org::BouncyCastle::Crypto::Tls::DtlsReliableHandshake_Retransmit {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Tls::DtlsHandshakeRetransmit,
-    > {
+    ) -> &mut crate::Org::BouncyCastle::Crypto::Tls::DtlsHandshakeRetransmit {
         unsafe { std::mem::transmute(self) }
     }
 }

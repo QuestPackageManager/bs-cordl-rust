@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ActionInstaller {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Zenject::Installer_1<
         quest_hook::libil2cpp::Gc<crate::Zenject::ActionInstaller>,
     >,
     pub _installMethod: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+        crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>>,
     >,
 }
 #[cfg(feature = "Zenject+ActionInstaller")]
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+ActionInstaller")]
 impl std::ops::Deref for crate::Zenject::ActionInstaller {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Zenject::Installer_1<
         quest_hook::libil2cpp::Gc<crate::Zenject::ActionInstaller>,
     >;
     fn deref(&self) -> &Self::Target {
@@ -43,7 +43,9 @@ impl crate::Zenject::ActionInstaller {
     }
     pub fn New(
         installMethod: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -54,9 +56,7 @@ impl crate::Zenject::ActionInstaller {
     }
     pub fn __zenCreate(
         P_0: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -76,7 +76,9 @@ impl crate::Zenject::ActionInstaller {
     pub fn _ctor(
         &mut self,
         installMethod: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

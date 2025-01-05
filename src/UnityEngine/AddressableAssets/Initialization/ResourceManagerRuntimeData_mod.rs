@@ -4,18 +4,22 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResourceManagerRuntimeData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_buildTarget: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_SettingsHash: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_CatalogLocations: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationData,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationData,
+            >,
         >,
     >,
     pub m_ProfileEvents: bool,
     pub m_LogResourceManagerExceptions: bool,
     pub m_ExtraInitializationData: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ResourceManagement::Util::ObjectInitializationData,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::ResourceManagement::Util::ObjectInitializationData,
+        >,
     >,
     pub m_DisableCatalogUpdateOnStart: bool,
     pub m_IsLocalCatalogInBundle: bool,
@@ -39,7 +43,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -105,8 +109,10 @@ impl crate::UnityEngine::AddressableAssets::Initialization::ResourceManagerRunti
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationData,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationData,
+                >,
             >,
         >,
     > {
@@ -114,8 +120,10 @@ impl crate::UnityEngine::AddressableAssets::Initialization::ResourceManagerRunti
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationData,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationData,
+                >,
             >,
         > = __cordl_object.invoke("get_CatalogLocations", ())?;
         Ok(__cordl_ret.into())
@@ -151,14 +159,18 @@ impl crate::UnityEngine::AddressableAssets::Initialization::ResourceManagerRunti
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ResourceManagement::Util::ObjectInitializationData,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::ResourceManagement::Util::ObjectInitializationData,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ResourceManagement::Util::ObjectInitializationData,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::ResourceManagement::Util::ObjectInitializationData,
+            >,
         > = __cordl_object.invoke("get_InitializationObjects", ())?;
         Ok(__cordl_ret.into())
     }

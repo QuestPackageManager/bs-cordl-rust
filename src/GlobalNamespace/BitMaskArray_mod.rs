@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BitMaskArray {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _bitCount_k__BackingField: i32,
     pub _data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BitMaskArray")]
 impl std::ops::Deref for crate::GlobalNamespace::BitMaskArray {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -135,32 +135,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BitMaskArray 
     }
 }
 #[cfg(feature = "BitMaskArray")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable>>
-for crate::GlobalNamespace::BitMaskArray {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "BitMaskArray")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable>>
-for crate::GlobalNamespace::BitMaskArray {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "BitMaskArray")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::GlobalNamespace::IBitMask_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskArray>,
     >,
 > for crate::GlobalNamespace::BitMaskArray {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::GlobalNamespace::IBitMask_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskArray>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -168,27 +150,41 @@ impl AsRef<
 }
 #[cfg(feature = "BitMaskArray")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::GlobalNamespace::IBitMask_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskArray>,
     >,
 > for crate::GlobalNamespace::BitMaskArray {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::GlobalNamespace::IBitMask_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskArray>,
     > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BitMaskArray")]
+impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::BitMaskArray {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BitMaskArray")]
+impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
+for crate::GlobalNamespace::BitMaskArray {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BitMaskArray")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskArray>,
     >,
 > for crate::GlobalNamespace::BitMaskArray {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskArray>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -196,13 +192,13 @@ impl AsRef<
 }
 #[cfg(feature = "BitMaskArray")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskArray>,
     >,
 > for crate::GlobalNamespace::BitMaskArray {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskArray>,
     > {
         unsafe { std::mem::transmute(self) }

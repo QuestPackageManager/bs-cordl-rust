@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NotInstruction_NotBoolean {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::NotInstruction,
-    >,
+    __cordl_parent: crate::System::Linq::Expressions::Interpreter::NotInstruction,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+NotInstruction+NotBoolean")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Linq+Expressions+Interpreter+NotInstruction+NotBoolean")]
 impl std::ops::Deref for crate::GlobalNamespace::NotInstruction_NotBoolean {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::NotInstruction,
-    >;
+    type Target = crate::System::Linq::Expressions::Interpreter::NotInstruction;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

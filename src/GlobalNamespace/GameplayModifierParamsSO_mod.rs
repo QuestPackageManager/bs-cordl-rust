@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameplayModifierParamsSO {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PersistentScriptableObject,
-    >,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _modifierNameLocalizationKey: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
@@ -14,17 +12,17 @@ pub struct GameplayModifierParamsSO {
     pub _icon: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     pub _mutuallyExclusives: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
+            *mut crate::GlobalNamespace::GameplayModifierParamsSO,
         >,
     >,
     pub _requires: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
+            *mut crate::GlobalNamespace::GameplayModifierParamsSO,
         >,
     >,
     pub _requiredBy: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
+            *mut crate::GlobalNamespace::GameplayModifierParamsSO,
         >,
     >,
     pub _multiplier: f32,
@@ -38,9 +36,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "GameplayModifierParamsSO")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplayModifierParamsSO {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PersistentScriptableObject,
-    >;
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -137,9 +133,7 @@ impl crate::GlobalNamespace::GameplayModifierParamsSO {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::GameplayModifierParamsSO,
-                >,
+                *mut crate::GlobalNamespace::GameplayModifierParamsSO,
             >,
         >,
     > {
@@ -148,9 +142,7 @@ impl crate::GlobalNamespace::GameplayModifierParamsSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::GameplayModifierParamsSO,
-                >,
+                *mut crate::GlobalNamespace::GameplayModifierParamsSO,
             >,
         > = __cordl_object.invoke("get_mutuallyExclusives", ())?;
         Ok(__cordl_ret.into())
@@ -160,9 +152,7 @@ impl crate::GlobalNamespace::GameplayModifierParamsSO {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::GameplayModifierParamsSO,
-                >,
+                *mut crate::GlobalNamespace::GameplayModifierParamsSO,
             >,
         >,
     > {
@@ -171,9 +161,7 @@ impl crate::GlobalNamespace::GameplayModifierParamsSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::GameplayModifierParamsSO,
-                >,
+                *mut crate::GlobalNamespace::GameplayModifierParamsSO,
             >,
         > = __cordl_object.invoke("get_requiredBy", ())?;
         Ok(__cordl_ret.into())
@@ -183,9 +171,7 @@ impl crate::GlobalNamespace::GameplayModifierParamsSO {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::GameplayModifierParamsSO,
-                >,
+                *mut crate::GlobalNamespace::GameplayModifierParamsSO,
             >,
         >,
     > {
@@ -194,9 +180,7 @@ impl crate::GlobalNamespace::GameplayModifierParamsSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::GameplayModifierParamsSO,
-                >,
+                *mut crate::GlobalNamespace::GameplayModifierParamsSO,
             >,
         > = __cordl_object.invoke("get_requires", ())?;
         Ok(__cordl_ret.into())

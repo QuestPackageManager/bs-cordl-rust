@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomFormatRangeValuesSlider {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::RangeValuesTextSlider>,
+    __cordl_parent: crate::HMUI::RangeValuesTextSlider,
     pub _formatString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "HMUI+CustomFormatRangeValuesSlider")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+CustomFormatRangeValuesSlider")]
 impl std::ops::Deref for crate::HMUI::CustomFormatRangeValuesSlider {
-    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::RangeValuesTextSlider>;
+    type Target = crate::HMUI::RangeValuesTextSlider;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

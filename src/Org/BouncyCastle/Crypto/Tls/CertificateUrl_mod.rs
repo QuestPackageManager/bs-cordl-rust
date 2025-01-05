@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CertificateUrl {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mType: u8,
     pub mUrlAndHashList: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+CertificateUrl")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::CertificateUrl {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -109,7 +109,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::CertificateUrl {
 #[repr(C)]
 #[derive(Debug)]
 pub struct CertificateUrl_ListBuffer16 {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>,
+    __cordl_parent: crate::System::IO::MemoryStream,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+CertificateUrl+ListBuffer16")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -120,7 +120,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+CertificateUrl+ListBuffer16")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Tls::CertificateUrl_ListBuffer16 {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>;
+    type Target = crate::System::IO::MemoryStream;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

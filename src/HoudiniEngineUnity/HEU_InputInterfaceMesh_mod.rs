@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_InputInterfaceMesh {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::HoudiniEngineUnity::HEU_InputInterface,
-    >,
+    __cordl_parent: crate::HoudiniEngineUnity::HEU_InputInterface,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceMesh")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceMesh")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_InputInterfaceMesh {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::HoudiniEngineUnity::HEU_InputInterface,
-    >;
+    type Target = crate::HoudiniEngineUnity::HEU_InputInterface;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -92,7 +88,9 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceMesh {
         srcUVs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
-        destUVs: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+        destUVs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+        >,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -155,12 +153,10 @@ for crate::HoudiniEngineUnity::HEU_InputInterfaceMesh {
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_InputInterfaceMesh_HEU_InputDataMesh {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     pub _materials: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
     >,
     pub _meshPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _meshName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -180,7 +176,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceMesh+HEU_InputDataMesh")]
 impl std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_InputInterfaceMesh_HEU_InputDataMesh {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -226,10 +222,12 @@ for crate::HoudiniEngineUnity::HEU_InputInterfaceMesh_HEU_InputDataMesh {
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_InputInterfaceMesh_HEU_InputDataMeshes {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputData>,
+    __cordl_parent: crate::HoudiniEngineUnity::HEU_InputData,
     pub _inputMeshes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::HoudiniEngineUnity::HEU_InputInterfaceMesh_HEU_InputDataMesh,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::HoudiniEngineUnity::HEU_InputInterfaceMesh_HEU_InputDataMesh,
+            >,
         >,
     >,
     pub _hasLOD: bool,
@@ -243,7 +241,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceMesh+HEU_InputDataMeshes")]
 impl std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_InputInterfaceMesh_HEU_InputDataMeshes {
-    type Target = quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputData>;
+    type Target = crate::HoudiniEngineUnity::HEU_InputData;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExtendedPointerEventData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::PointerEventData,
-    >,
+    __cordl_parent: crate::UnityEngine::EventSystems::PointerEventData,
     pub _control_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::InputControl,
     >,
@@ -25,9 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+UI+ExtendedPointerEventData")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::PointerEventData,
-    >;
+    type Target = crate::UnityEngine::EventSystems::PointerEventData;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapObjectExecutionRatingsRecorder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _scoreController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IScoreController,
     >,
@@ -16,10 +16,16 @@ pub struct BeatmapObjectExecutionRatingsRecorder {
         crate::GlobalNamespace::AudioTimeSyncController,
     >,
     pub _beatmapObjectExecutionRatings: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapObjectExecutionRating>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BeatmapObjectExecutionRating,
+            >,
+        >,
     >,
     pub _hitObstacles: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+        crate::System::Collections::Generic::HashSet_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapObjectExecutionRatingsRecorder")]
@@ -30,7 +36,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapObjectExecutionRatingsRecorder")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapObjectExecutionRatingsRecorder {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -122,8 +128,10 @@ impl crate::GlobalNamespace::BeatmapObjectExecutionRatingsRecorder {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::BeatmapObjectExecutionRating,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapObjectExecutionRating,
+                >,
             >,
         >,
     > {
@@ -131,8 +139,10 @@ impl crate::GlobalNamespace::BeatmapObjectExecutionRatingsRecorder {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::BeatmapObjectExecutionRating,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapObjectExecutionRating,
+                >,
             >,
         > = __cordl_object.invoke("get_beatmapObjectExecutionRatings", ())?;
         Ok(__cordl_ret.into())

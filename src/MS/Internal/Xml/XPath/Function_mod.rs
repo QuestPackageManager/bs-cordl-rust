@@ -2,10 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Function {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
+    __cordl_parent: crate::MS::Internal::Xml::XPath::AstNode,
     pub _functionType: crate::MS::Internal::Xml::XPath::Function_FunctionType,
     pub _argumentList: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
+        >,
     >,
     pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -17,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MS+Internal+Xml+XPath+Function")]
 impl std::ops::Deref for crate::MS::Internal::Xml::XPath::Function {
-    type Target = quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>;
+    type Target = crate::MS::Internal::Xml::XPath::AstNode;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,19 +34,7 @@ impl std::ops::DerefMut for crate::MS::Internal::Xml::XPath::Function {
 impl crate::MS::Internal::Xml::XPath::Function {
     #[cfg(feature = "MS+Internal+Xml+XPath+Function+FunctionType")]
     pub type FunctionType = crate::MS::Internal::Xml::XPath::Function_FunctionType;
-    pub fn New_Function_FunctionType0(
-        ftype: crate::MS::Internal::Xml::XPath::Function_FunctionType,
-        argumentList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (ftype, argumentList))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Function_FunctionType2(
+    pub fn New_Function_FunctionType_AstNode2(
         ftype: crate::MS::Internal::Xml::XPath::Function_FunctionType,
         arg: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -54,11 +44,27 @@ impl crate::MS::Internal::Xml::XPath::Function {
             .invoke_void(".ctor", (ftype, arg))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc1(
+    pub fn New_Function_FunctionType_List_1_0(
+        ftype: crate::MS::Internal::Xml::XPath::Function_FunctionType,
+        argumentList: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (ftype, argumentList))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Il2CppString_Il2CppString_List_1_1(
         prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         argumentList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -67,21 +73,7 @@ impl crate::MS::Internal::Xml::XPath::Function {
             .invoke_void(".ctor", (prefix, name, argumentList))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Function_FunctionType0(
-        &mut self,
-        ftype: crate::MS::Internal::Xml::XPath::Function_FunctionType,
-        argumentList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (ftype, argumentList))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Function_FunctionType2(
+    pub fn _ctor_Function_FunctionType_AstNode2(
         &mut self,
         ftype: crate::MS::Internal::Xml::XPath::Function_FunctionType,
         arg: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
@@ -93,12 +85,30 @@ impl crate::MS::Internal::Xml::XPath::Function {
             .invoke(".ctor", (ftype, arg))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc1(
+    pub fn _ctor_Function_FunctionType_List_1_0(
+        &mut self,
+        ftype: crate::MS::Internal::Xml::XPath::Function_FunctionType,
+        argumentList: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (ftype, argumentList))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppString_Il2CppString_List_1_1(
         &mut self,
         prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         argumentList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

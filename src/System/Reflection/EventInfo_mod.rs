@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventInfo {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+    __cordl_parent: crate::System::Reflection::MemberInfo,
     pub cached_add_event: quest_hook::libil2cpp::Gc<
         crate::System::Reflection::EventInfo_AddEventAdapter,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Reflection+EventInfo")]
 impl std::ops::Deref for crate::System::Reflection::EventInfo {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>;
+    type Target = crate::System::Reflection::MemberInfo;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -205,7 +205,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Reflection::EventInfo 
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventInfo_AddEventAdapter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "System+Reflection+EventInfo+AddEventAdapter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -214,7 +214,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Reflection+EventInfo+AddEventAdapter")]
 impl std::ops::Deref for crate::System::Reflection::EventInfo_AddEventAdapter {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

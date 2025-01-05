@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MockServerSettings {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MockPlayerSettings,
-    >,
+    __cordl_parent: crate::GlobalNamespace::MockPlayerSettings,
 }
 #[cfg(feature = "MockServerSettings")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MockServerSettings")]
 impl std::ops::Deref for crate::GlobalNamespace::MockServerSettings {
-    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockPlayerSettings>;
+    type Target = crate::GlobalNamespace::MockPlayerSettings;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointerEventBase_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<T>,
+    __cordl_parent: crate::UnityEngine::UIElements::EventBase_1<T>,
     pub m_AltitudeNeedsConversion: bool,
     pub m_AzimuthNeedsConversion: bool,
     pub m_AltitudeAngle: f32,
@@ -40,7 +40,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+PointerEventBase_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::PointerEventBase_1<T> {
-    type Target = quest_hook::libil2cpp::Gc<T>;
+    type Target = crate::UnityEngine::UIElements::EventBase_1<T>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -68,6 +68,17 @@ impl<
             .invoke("AzimuthAndAlitutudeToTilt", (altitude, azimuth))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetPooled_Event0(
+        systemEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPooled", (systemEvent))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetPooled_EventType_Vector3_Vector2_i32_i32_EventModifiers1(
         eventType: crate::UnityEngine::EventType,
         mousePosition: crate::UnityEngine::Vector3,
@@ -87,18 +98,7 @@ impl<
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetPooled_Gc0(
-        systemEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
-    ) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetPooled", (systemEvent))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetPooled_Gc5(
+    pub fn GetPooled_IPointerEvent5(
         triggerEvent: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::IPointerEvent,
         >,
@@ -111,7 +111,7 @@ impl<
             .invoke("GetPooled", (triggerEvent))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetPooled_Gc_Vector2_i32_4(
+    pub fn GetPooled_IPointerEvent_Vector2_i32_4(
         triggerEvent: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::IPointerEvent,
         >,
@@ -992,50 +992,34 @@ for crate::UnityEngine::UIElements::PointerEventBase_1<T> {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+PointerEventBase_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPointerEvent>>
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::UnityEngine::UIElements::IPointerEvent>
 for crate::UnityEngine::UIElements::PointerEventBase_1<T> {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPointerEvent> {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IPointerEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+PointerEventBase_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::UnityEngine::UIElements::IPointerEvent>
+for crate::UnityEngine::UIElements::PointerEventBase_1<T> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IPointerEvent {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+PointerEventBase_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPointerEvent>>
+> AsRef<crate::UnityEngine::UIElements::IPointerEventInternal>
 for crate::UnityEngine::UIElements::PointerEventBase_1<T> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPointerEvent> {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IPointerEventInternal {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+PointerEventBase_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPointerEventInternal>>
+> AsMut<crate::UnityEngine::UIElements::IPointerEventInternal>
 for crate::UnityEngine::UIElements::PointerEventBase_1<T> {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::IPointerEventInternal,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+PointerEventBase_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPointerEventInternal>>
-for crate::UnityEngine::UIElements::PointerEventBase_1<T> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::IPointerEventInternal,
-    > {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IPointerEventInternal {
         unsafe { std::mem::transmute(self) }
     }
 }

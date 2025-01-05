@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnwrapPromise_1<TResult: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TResult>,
+    __cordl_parent: crate::System::Threading::Tasks::Task_1<TResult>,
     pub _state: u8,
     pub _lookForOce: bool,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Threading+Tasks+UnwrapPromise_1")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Threading::Tasks::UnwrapPromise_1<TResult> {
-    type Target = quest_hook::libil2cpp::Gc<TResult>;
+    type Target = crate::System::Threading::Tasks::Task_1<TResult>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -180,28 +180,18 @@ for crate::System::Threading::Tasks::UnwrapPromise_1<TResult> {
 #[cfg(feature = "System+Threading+Tasks+UnwrapPromise_1")]
 impl<
     TResult: quest_hook::libil2cpp::Type,
-> AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::ITaskCompletionAction>,
-> for crate::System::Threading::Tasks::UnwrapPromise_1<TResult> {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Threading::Tasks::ITaskCompletionAction,
-    > {
+> AsRef<crate::System::Threading::Tasks::ITaskCompletionAction>
+for crate::System::Threading::Tasks::UnwrapPromise_1<TResult> {
+    fn as_ref(&self) -> &crate::System::Threading::Tasks::ITaskCompletionAction {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Threading+Tasks+UnwrapPromise_1")]
 impl<
     TResult: quest_hook::libil2cpp::Type,
-> AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::ITaskCompletionAction>,
-> for crate::System::Threading::Tasks::UnwrapPromise_1<TResult> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Threading::Tasks::ITaskCompletionAction,
-    > {
+> AsMut<crate::System::Threading::Tasks::ITaskCompletionAction>
+for crate::System::Threading::Tasks::UnwrapPromise_1<TResult> {
+    fn as_mut(&mut self) -> &mut crate::System::Threading::Tasks::ITaskCompletionAction {
         unsafe { std::mem::transmute(self) }
     }
 }

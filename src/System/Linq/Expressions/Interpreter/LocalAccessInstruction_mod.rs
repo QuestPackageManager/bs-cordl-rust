@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LocalAccessInstruction {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::Instruction,
-    >,
+    __cordl_parent: crate::System::Linq::Expressions::Interpreter::Instruction,
     pub _index: i32,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LocalAccessInstruction")]
@@ -16,9 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LocalAccessInstruction")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::LocalAccessInstruction {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::Instruction,
-    >;
+    type Target = crate::System::Linq::Expressions::Interpreter::Instruction;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -45,9 +41,11 @@ impl crate::System::Linq::Expressions::Interpreter::LocalAccessInstruction {
         &mut self,
         instructionIndex: i32,
         cookie: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        labelIndexer: quest_hook::libil2cpp::Gc<i32, i32>,
+        labelIndexer: quest_hook::libil2cpp::Gc<crate::System::Func_2<i32, i32>>,
         objects: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

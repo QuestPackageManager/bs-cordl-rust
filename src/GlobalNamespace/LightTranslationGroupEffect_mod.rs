@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightTranslationGroupEffect {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _tweeningManager: quest_hook::libil2cpp::Gc<
         crate::Tweening::SongTimeTweeningManager,
     >,
@@ -10,9 +10,11 @@ pub struct LightTranslationGroupEffect {
         crate::GlobalNamespace::BeatmapCallbacksController,
     >,
     pub _transformMask: quest_hook::libil2cpp::Gc<
-        crate::System::ValueTuple_2<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-            crate::UnityEngine::Vector3,
+        crate::System::Collections::Generic::List_1<
+            crate::System::ValueTuple_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                crate::UnityEngine::Vector3,
+            >,
         >,
     >,
     pub _xTranslationTween: quest_hook::libil2cpp::Gc<crate::Tweening::FloatTween>,
@@ -35,7 +37,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LightTranslationGroupEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::LightTranslationGroupEffect {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -88,8 +90,10 @@ impl crate::GlobalNamespace::LightTranslationGroupEffect {
         mirrored: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LightTranslationBeatmapEventData,
+            crate::GlobalNamespace::BeatmapDataCallback_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LightTranslationBeatmapEventData,
+                >,
             >,
         >,
     > {
@@ -97,8 +101,10 @@ impl crate::GlobalNamespace::LightTranslationGroupEffect {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LightTranslationBeatmapEventData,
+            crate::GlobalNamespace::BeatmapDataCallback_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LightTranslationBeatmapEventData,
+                >,
             >,
         > = __cordl_object
             .invoke(
@@ -184,7 +190,7 @@ for crate::GlobalNamespace::LightTranslationGroupEffect {
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightTranslationGroupEffect_InitData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub groupId: i32,
     pub elementId: i32,
     pub xMirrored: bool,
@@ -208,7 +214,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LightTranslationGroupEffect+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::LightTranslationGroupEffect_InitData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

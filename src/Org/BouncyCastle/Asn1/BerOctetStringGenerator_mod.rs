@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BerOctetStringGenerator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::BerGenerator,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::BerGenerator,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetStringGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetStringGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::BerOctetStringGenerator {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::BerGenerator,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::BerGenerator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,7 +40,7 @@ impl crate::Org::BouncyCastle::Asn1::BerOctetStringGenerator {
             .invoke("GetOctetOutputStream", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetOctetOutputStream_Gc2(
+    pub fn GetOctetOutputStream_Il2CppArray2(
         &mut self,
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
@@ -70,7 +66,7 @@ impl crate::Org::BouncyCastle::Asn1::BerOctetStringGenerator {
             .invoke("GetOctetOutputStream", (bufSize))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_Stream0(
         outStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -90,7 +86,7 @@ impl crate::Org::BouncyCastle::Asn1::BerOctetStringGenerator {
             .invoke_void(".ctor", (outStream, tagNo, isExplicit))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Stream0(
         &mut self,
         outStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -129,9 +125,7 @@ for crate::Org::BouncyCastle::Asn1::BerOctetStringGenerator {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BerOctetStringGenerator_BufferedBerOctetStream {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
     pub _buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _off: i32,
     pub _gen: quest_hook::libil2cpp::Gc<
@@ -150,9 +144,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetStringGenerator+BufferedBerOctetStream")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::BerOctetStringGenerator_BufferedBerOctetStream {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
-    >;
+    type Target = crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

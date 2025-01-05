@@ -180,18 +180,20 @@ impl crate::UnityEngine::UI::Navigation {
     }
 }
 #[cfg(feature = "UnityEngine+UI+Navigation")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Navigation>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UI::Navigation>>
 for crate::UnityEngine::UI::Navigation {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Navigation> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UI::Navigation> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UI+Navigation")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Navigation>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UI::Navigation>>
 for crate::UnityEngine::UI::Navigation {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Navigation> {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UI::Navigation> {
         todo!()
     }
 }

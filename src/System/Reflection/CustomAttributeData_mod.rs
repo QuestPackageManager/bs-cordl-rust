@@ -2,13 +2,17 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomAttributeData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ctorInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::ConstructorInfo>,
     pub ctorArgs: quest_hook::libil2cpp::Gc<
-        crate::System::Reflection::CustomAttributeTypedArgument,
+        crate::System::Collections::Generic::IList_1<
+            crate::System::Reflection::CustomAttributeTypedArgument,
+        >,
     >,
     pub namedArgs: quest_hook::libil2cpp::Gc<
-        crate::System::Reflection::CustomAttributeNamedArgument,
+        crate::System::Collections::Generic::IList_1<
+            crate::System::Reflection::CustomAttributeNamedArgument,
+        >,
     >,
     pub lazyData: quest_hook::libil2cpp::Gc<
         crate::System::Reflection::CustomAttributeData_LazyCAttrData,
@@ -21,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Reflection+CustomAttributeData")]
 impl std::ops::Deref for crate::System::Reflection::CustomAttributeData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -50,63 +54,83 @@ impl crate::System::Reflection::CustomAttributeData {
         target: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetCustomAttributesInternal", (target))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetCustomAttributes_Gc0(
+    pub fn GetCustomAttributes_Assembly0(
         target: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetCustomAttributes", (target))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetCustomAttributes_Gc1(
+    pub fn GetCustomAttributes_MemberInfo1(
         target: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetCustomAttributes", (target))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetCustomAttributes_Gc2(
+    pub fn GetCustomAttributes_Module2(
         target: quest_hook::libil2cpp::Gc<crate::System::Reflection::Module>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetCustomAttributes", (target))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetCustomAttributes_Gc3(
+    pub fn GetCustomAttributes_ParameterInfo3(
         target: quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetCustomAttributes", (target))?;
         Ok(__cordl_ret.into())
@@ -125,7 +149,7 @@ impl crate::System::Reflection::CustomAttributeData {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc2(
+    pub fn New_ConstructorInfo2(
         ctorInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::ConstructorInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -134,22 +158,7 @@ impl crate::System::Reflection::CustomAttributeData {
             .invoke_void(".ctor", (ctorInfo))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc_Gc3(
-        ctorInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::ConstructorInfo>,
-        ctorArgs: quest_hook::libil2cpp::Gc<
-            crate::System::Reflection::CustomAttributeTypedArgument,
-        >,
-        namedArgs: quest_hook::libil2cpp::Gc<
-            crate::System::Reflection::CustomAttributeNamedArgument,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (ctorInfo, ctorArgs, namedArgs))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_Gc_IntPtr_u32_1(
+    pub fn New_ConstructorInfo_Assembly_IntPtr_u32_1(
         ctorInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::ConstructorInfo>,
         assembly: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
         data: crate::System::IntPtr,
@@ -159,6 +168,25 @@ impl crate::System::Reflection::CustomAttributeData {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (ctorInfo, assembly, data, data_length))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_ConstructorInfo_IList_1_IList_1_3(
+        ctorInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::ConstructorInfo>,
+        ctorArgs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                crate::System::Reflection::CustomAttributeTypedArgument,
+            >,
+        >,
+        namedArgs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                crate::System::Reflection::CustomAttributeNamedArgument,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (ctorInfo, ctorArgs, namedArgs))?;
         Ok(__cordl_object.into())
     }
     pub fn ResolveArguments(
@@ -179,14 +207,14 @@ impl crate::System::Reflection::CustomAttributeData {
         ctorArgs: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    *mut quest_hook::libil2cpp::Il2CppObject,
                 >,
             >,
         >,
         namedArgs: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Il2CppArray<
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    *mut quest_hook::libil2cpp::Il2CppObject,
                 >,
             >,
         >,
@@ -213,9 +241,7 @@ impl crate::System::Reflection::CustomAttributeData {
     }
     pub fn UnboxValues<T>(
         values: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
@@ -240,7 +266,7 @@ impl crate::System::Reflection::CustomAttributeData {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_ConstructorInfo2(
         &mut self,
         ctorInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::ConstructorInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -251,24 +277,7 @@ impl crate::System::Reflection::CustomAttributeData {
             .invoke(".ctor", (ctorInfo))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_Gc3(
-        &mut self,
-        ctorInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::ConstructorInfo>,
-        ctorArgs: quest_hook::libil2cpp::Gc<
-            crate::System::Reflection::CustomAttributeTypedArgument,
-        >,
-        namedArgs: quest_hook::libil2cpp::Gc<
-            crate::System::Reflection::CustomAttributeNamedArgument,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (ctorInfo, ctorArgs, namedArgs))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_Gc_IntPtr_u32_1(
+    pub fn _ctor_ConstructorInfo_Assembly_IntPtr_u32_1(
         &mut self,
         ctorInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::ConstructorInfo>,
         assembly: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
@@ -280,6 +289,27 @@ impl crate::System::Reflection::CustomAttributeData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (ctorInfo, assembly, data, data_length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_ConstructorInfo_IList_1_IList_1_3(
+        &mut self,
+        ctorInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::ConstructorInfo>,
+        ctorArgs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                crate::System::Reflection::CustomAttributeTypedArgument,
+            >,
+        >,
+        namedArgs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                crate::System::Reflection::CustomAttributeNamedArgument,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (ctorInfo, ctorArgs, namedArgs))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_AttributeType(
@@ -309,14 +339,18 @@ impl crate::System::Reflection::CustomAttributeData {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Reflection::CustomAttributeTypedArgument,
+            crate::System::Collections::Generic::IList_1<
+                crate::System::Reflection::CustomAttributeTypedArgument,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Reflection::CustomAttributeTypedArgument,
+            crate::System::Collections::Generic::IList_1<
+                crate::System::Reflection::CustomAttributeTypedArgument,
+            >,
         > = __cordl_object.invoke("get_ConstructorArguments", ())?;
         Ok(__cordl_ret.into())
     }
@@ -324,14 +358,18 @@ impl crate::System::Reflection::CustomAttributeData {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Reflection::CustomAttributeNamedArgument,
+            crate::System::Collections::Generic::IList_1<
+                crate::System::Reflection::CustomAttributeNamedArgument,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Reflection::CustomAttributeNamedArgument,
+            crate::System::Collections::Generic::IList_1<
+                crate::System::Reflection::CustomAttributeNamedArgument,
+            >,
         > = __cordl_object.invoke("get_NamedArguments", ())?;
         Ok(__cordl_ret.into())
     }
@@ -350,7 +388,7 @@ for crate::System::Reflection::CustomAttributeData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomAttributeData_LazyCAttrData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub assembly: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
     pub data: crate::System::IntPtr,
     pub data_length: u32,
@@ -363,7 +401,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Reflection+CustomAttributeData+LazyCAttrData")]
 impl std::ops::Deref for crate::System::Reflection::CustomAttributeData_LazyCAttrData {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

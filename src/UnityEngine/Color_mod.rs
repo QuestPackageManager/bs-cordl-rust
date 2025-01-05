@@ -34,7 +34,7 @@ impl crate::UnityEngine::Color {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Gc0(
+    pub fn Equals_Il2CppObject0(
         &mut self,
         other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -137,7 +137,7 @@ impl crate::UnityEngine::Color {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Gc1(
+    pub fn ToString_Il2CppString1(
         &mut self,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -148,7 +148,7 @@ impl crate::UnityEngine::Color {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", (format))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Gc_Gc2(
+    pub fn ToString_Il2CppString_IFormatProvider2(
         &mut self,
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
@@ -367,30 +367,28 @@ impl crate::UnityEngine::Color {
     }
 }
 #[cfg(feature = "UnityEngine+Color")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Color>>
 for crate::UnityEngine::Color {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::Color> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Color")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IFormattable>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Color>>
 for crate::UnityEngine::Color {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IFormattable> {
+    fn as_mut(&mut self) -> &mut crate::System::IEquatable_1<crate::UnityEngine::Color> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Color")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>>
-for crate::UnityEngine::Color {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Color> {
+impl AsRef<crate::System::IFormattable> for crate::UnityEngine::Color {
+    fn as_ref(&self) -> &crate::System::IFormattable {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Color")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>>
-for crate::UnityEngine::Color {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Color> {
+impl AsMut<crate::System::IFormattable> for crate::UnityEngine::Color {
+    fn as_mut(&mut self) -> &mut crate::System::IFormattable {
         todo!()
     }
 }

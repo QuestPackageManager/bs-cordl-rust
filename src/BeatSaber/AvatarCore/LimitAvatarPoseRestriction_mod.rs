@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LimitAvatarPoseRestriction {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _parameters: quest_hook::libil2cpp::Gc<
         crate::BeatSaber::AvatarCore::LimitAvatarPoseRestriction_Parameters,
     >,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+AvatarCore+LimitAvatarPoseRestriction")]
 impl std::ops::Deref for crate::BeatSaber::AvatarCore::LimitAvatarPoseRestriction {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -103,26 +103,16 @@ for crate::BeatSaber::AvatarCore::LimitAvatarPoseRestriction {
     }
 }
 #[cfg(feature = "BeatSaber+AvatarCore+LimitAvatarPoseRestriction")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarPoseRestriction>,
-> for crate::BeatSaber::AvatarCore::LimitAvatarPoseRestriction {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::BeatSaber::AvatarCore::IAvatarPoseRestriction,
-    > {
+impl AsRef<crate::BeatSaber::AvatarCore::IAvatarPoseRestriction>
+for crate::BeatSaber::AvatarCore::LimitAvatarPoseRestriction {
+    fn as_ref(&self) -> &crate::BeatSaber::AvatarCore::IAvatarPoseRestriction {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BeatSaber+AvatarCore+LimitAvatarPoseRestriction")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarPoseRestriction>,
-> for crate::BeatSaber::AvatarCore::LimitAvatarPoseRestriction {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::BeatSaber::AvatarCore::IAvatarPoseRestriction,
-    > {
+impl AsMut<crate::BeatSaber::AvatarCore::IAvatarPoseRestriction>
+for crate::BeatSaber::AvatarCore::LimitAvatarPoseRestriction {
+    fn as_mut(&mut self) -> &mut crate::BeatSaber::AvatarCore::IAvatarPoseRestriction {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -130,7 +120,7 @@ impl AsMut<
 #[repr(C)]
 #[derive(Debug)]
 pub struct LimitAvatarPoseRestriction_Parameters {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub maxHeadSquareDistanceFromCenter: f32,
     pub minHeadYPos: f32,
     pub maxHeadYPos: f32,
@@ -150,7 +140,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatSaber+AvatarCore+LimitAvatarPoseRestriction+Parameters")]
 impl std::ops::Deref
 for crate::BeatSaber::AvatarCore::LimitAvatarPoseRestriction_Parameters {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

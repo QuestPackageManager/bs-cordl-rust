@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509CertPairParser {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub currentStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
 }
 #[cfg(feature = "Org+BouncyCastle+X509+X509CertPairParser")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+X509+X509CertPairParser")]
 impl std::ops::Deref for crate::Org::BouncyCastle::X509::X509CertPairParser {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,7 +32,7 @@ impl crate::Org::BouncyCastle::X509::X509CertPairParser {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn ReadCertPair_Gc0(
+    pub fn ReadCertPair_Il2CppArray0(
         &mut self,
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
@@ -46,7 +46,7 @@ impl crate::Org::BouncyCastle::X509::X509CertPairParser {
         > = __cordl_object.invoke("ReadCertPair", (input))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadCertPair_Gc1(
+    pub fn ReadCertPair_Stream1(
         &mut self,
         inStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<
@@ -60,7 +60,7 @@ impl crate::Org::BouncyCastle::X509::X509CertPairParser {
         > = __cordl_object.invoke("ReadCertPair", (inStream))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadCertPairs_Gc0(
+    pub fn ReadCertPairs_Il2CppArray0(
         &mut self,
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<
@@ -74,7 +74,7 @@ impl crate::Org::BouncyCastle::X509::X509CertPairParser {
         > = __cordl_object.invoke("ReadCertPairs", (input))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadCertPairs_Gc1(
+    pub fn ReadCertPairs_Stream1(
         &mut self,
         inStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<

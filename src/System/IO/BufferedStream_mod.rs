@@ -2,14 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BufferedStream {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    __cordl_parent: crate::System::IO::Stream,
     pub _stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub _buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _bufferSize: i32,
     pub _readPos: i32,
     pub _readLen: i32,
     pub _writePos: i32,
-    pub _lastSyncCompletedReadTask: quest_hook::libil2cpp::Gc<i32>,
+    pub _lastSyncCompletedReadTask: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task_1<i32>,
+    >,
     pub _asyncActiveSemaphore: quest_hook::libil2cpp::Gc<
         crate::System::Threading::SemaphoreSlim,
     >,
@@ -21,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+IO+BufferedStream")]
 impl std::ops::Deref for crate::System::IO::BufferedStream {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::IO::Stream>;
+    type Target = crate::System::IO::Stream;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -301,12 +303,15 @@ impl crate::System::IO::BufferedStream {
     pub fn LastSyncCompletedReadTask(
         &mut self,
         val: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = __cordl_object
-            .invoke("LastSyncCompletedReadTask", (val))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<i32>,
+        > = __cordl_object.invoke("LastSyncCompletedReadTask", (val))?;
         Ok(__cordl_ret.into())
     }
     pub fn LazyEnsureAsyncActiveSemaphoreInitialized(
@@ -322,7 +327,7 @@ impl crate::System::IO::BufferedStream {
         > = __cordl_object.invoke("LazyEnsureAsyncActiveSemaphoreInitialized", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_Stream0(
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -341,17 +346,21 @@ impl crate::System::IO::BufferedStream {
             .invoke_void(".ctor", (stream, bufferSize))?;
         Ok(__cordl_object.into())
     }
-    pub fn ReadAsync_Gc_i32_i32_CancellationToken0(
+    pub fn ReadAsync_Il2CppArray_i32_i32_CancellationToken0(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
         count: i32,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = __cordl_object
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<i32>,
+        > = __cordl_object
             .invoke("ReadAsync", (buffer, offset, count, cancellationToken))?;
         Ok(__cordl_ret.into())
     }
@@ -383,7 +392,7 @@ impl crate::System::IO::BufferedStream {
         let __cordl_ret: i32 = __cordl_object.invoke("ReadByteSlow", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadFromBuffer_Gc_i32_i32_0(
+    pub fn ReadFromBuffer_Il2CppArray_i32_i32_0(
         &mut self,
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
@@ -396,7 +405,7 @@ impl crate::System::IO::BufferedStream {
             .invoke("ReadFromBuffer", (array, offset, count))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadFromBuffer_Gc_i32_i32_ByRefMut2(
+    pub fn ReadFromBuffer_Il2CppArray_i32_i32_ByRefMut2(
         &mut self,
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
@@ -443,7 +452,7 @@ impl crate::System::IO::BufferedStream {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Read_Gc_i32_i32_0(
+    pub fn Read_Il2CppArray_i32_i32_0(
         &mut self,
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
@@ -487,7 +496,7 @@ impl crate::System::IO::BufferedStream {
             .invoke("SetLength", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteAsync_Gc_i32_i32_CancellationToken0(
+    pub fn WriteAsync_Il2CppArray_i32_i32_CancellationToken0(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
@@ -528,7 +537,7 @@ impl crate::System::IO::BufferedStream {
             .invoke("WriteByte", (value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteToBuffer_Gc_ByRefMut_ByRefMut0(
+    pub fn WriteToBuffer_Il2CppArray_ByRefMut_ByRefMut0(
         &mut self,
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: quest_hook::libil2cpp::ByRefMut<i32>,
@@ -573,7 +582,7 @@ impl crate::System::IO::BufferedStream {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Write_Gc_i32_i32_0(
+    pub fn Write_Il2CppArray_i32_i32_0(
         &mut self,
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
@@ -597,7 +606,7 @@ impl crate::System::IO::BufferedStream {
             .invoke("Write", (buffer))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Stream0(
         &mut self,
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

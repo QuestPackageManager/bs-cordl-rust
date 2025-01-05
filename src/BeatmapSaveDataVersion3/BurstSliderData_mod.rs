@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BurstSliderData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::BeatmapSaveDataVersion3::BaseSliderData,
-    >,
+    __cordl_parent: crate::BeatmapSaveDataVersion3::BaseSliderData,
     pub sc: i32,
     pub s: f32,
 }
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapSaveDataVersion3+BurstSliderData")]
 impl std::ops::Deref for crate::BeatmapSaveDataVersion3::BurstSliderData {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::BeatmapSaveDataVersion3::BaseSliderData,
-    >;
+    type Target = crate::BeatmapSaveDataVersion3::BaseSliderData;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

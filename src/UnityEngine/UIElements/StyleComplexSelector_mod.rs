@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StyleComplexSelector {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ancestorHashes: crate::UnityEngine::UIElements::Hashes,
     pub m_Specificity: i32,
     pub _rule_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -11,7 +11,7 @@ pub struct StyleComplexSelector {
     pub m_isSimple: bool,
     pub m_Selectors: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSelector>,
+            *mut crate::UnityEngine::UIElements::StyleSelector,
         >,
     >,
     pub ruleIndex: i32,
@@ -27,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+StyleComplexSelector")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::StyleComplexSelector {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -145,7 +145,7 @@ impl crate::UnityEngine::UIElements::StyleComplexSelector {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSelector>,
+                *mut crate::UnityEngine::UIElements::StyleSelector,
             >,
         >,
     > {
@@ -154,7 +154,7 @@ impl crate::UnityEngine::UIElements::StyleComplexSelector {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSelector>,
+                *mut crate::UnityEngine::UIElements::StyleSelector,
             >,
         > = __cordl_object.invoke("get_selectors", ())?;
         Ok(__cordl_ret.into())
@@ -181,7 +181,7 @@ impl crate::UnityEngine::UIElements::StyleComplexSelector {
         &mut self,
         value: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSelector>,
+                *mut crate::UnityEngine::UIElements::StyleSelector,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -204,22 +204,16 @@ for crate::UnityEngine::UIElements::StyleComplexSelector {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleComplexSelector")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver>>
+impl AsRef<crate::UnityEngine::ISerializationCallbackReceiver>
 for crate::UnityEngine::UIElements::StyleComplexSelector {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver> {
+    fn as_ref(&self) -> &crate::UnityEngine::ISerializationCallbackReceiver {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleComplexSelector")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::ISerializationCallbackReceiver>>
+impl AsMut<crate::UnityEngine::ISerializationCallbackReceiver>
 for crate::UnityEngine::UIElements::StyleComplexSelector {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ISerializationCallbackReceiver,
-    > {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ISerializationCallbackReceiver {
         unsafe { std::mem::transmute(self) }
     }
 }

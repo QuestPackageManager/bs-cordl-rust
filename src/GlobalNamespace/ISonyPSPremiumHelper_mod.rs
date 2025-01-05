@@ -33,14 +33,18 @@ impl crate::GlobalNamespace::ISonyPSPremiumHelper {
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult,
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult,
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult,
+            >,
         > = __cordl_object.invoke("DisplayJoinPremiumDialogAsync", (token))?;
         Ok(__cordl_ret.into())
     }
@@ -49,14 +53,18 @@ impl crate::GlobalNamespace::ISonyPSPremiumHelper {
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ISonyPSPremiumHelper_GetPremiumStatusResult,
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::ISonyPSPremiumHelper_GetPremiumStatusResult,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ISonyPSPremiumHelper_GetPremiumStatusResult,
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::ISonyPSPremiumHelper_GetPremiumStatusResult,
+            >,
         > = __cordl_object.invoke("GetPremiumStatusAsync", (token))?;
         Ok(__cordl_ret.into())
     }

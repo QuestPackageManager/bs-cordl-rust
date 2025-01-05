@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PopoSigningKeyInput {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub sender: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::X509::GeneralName,
     >,
@@ -23,9 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+Crmf+PopoSigningKeyInput")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Crmf::PopoSigningKeyInput {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    >;
+    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -50,7 +46,7 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::PopoSigningKeyInput {
         > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_Asn1Sequence0(
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -59,7 +55,7 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::PopoSigningKeyInput {
             .invoke_void(".ctor", (seq))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_GeneralName_SubjectPublicKeyInfo1(
         sender: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::GeneralName,
         >,
@@ -73,7 +69,7 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::PopoSigningKeyInput {
             .invoke_void(".ctor", (sender, spki))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc2(
+    pub fn New_PKMacValue_SubjectPublicKeyInfo2(
         pkmac: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Crmf::PKMacValue,
         >,
@@ -100,7 +96,7 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::PopoSigningKeyInput {
         > = __cordl_object.invoke("ToAsn1Object", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_Asn1Sequence0(
         &mut self,
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -111,7 +107,7 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::PopoSigningKeyInput {
             .invoke(".ctor", (seq))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_GeneralName_SubjectPublicKeyInfo1(
         &mut self,
         sender: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::GeneralName,
@@ -127,7 +123,7 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::PopoSigningKeyInput {
             .invoke(".ctor", (sender, spki))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_PKMacValue_SubjectPublicKeyInfo2(
         &mut self,
         pkmac: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Crmf::PKMacValue,

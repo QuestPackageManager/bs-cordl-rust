@@ -2,24 +2,51 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TickableManager {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _tickables: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Zenject::ITickable>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::Zenject::ITickable>,
+        >,
     >,
     pub _fixedTickables: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Zenject::IFixedTickable>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::Zenject::IFixedTickable>,
+        >,
     >,
     pub _lateTickables: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Zenject::ILateTickable>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::Zenject::ILateTickable>,
+        >,
     >,
     pub _priorities: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>, i32>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::ModestTree::Util::ValuePair_2<
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    i32,
+                >,
+            >,
+        >,
     >,
     pub _fixedPriorities: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>, i32>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::ModestTree::Util::ValuePair_2<
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    i32,
+                >,
+            >,
+        >,
     >,
     pub _latePriorities: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>, i32>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::ModestTree::Util::ValuePair_2<
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    i32,
+                >,
+            >,
+        >,
     >,
     pub _updater: quest_hook::libil2cpp::Gc<crate::Zenject::TickablesTaskUpdater>,
     pub _fixedUpdater: quest_hook::libil2cpp::Gc<
@@ -37,7 +64,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+TickableManager")]
 impl std::ops::Deref for crate::Zenject::TickableManager {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -50,7 +77,7 @@ impl std::ops::DerefMut for crate::Zenject::TickableManager {
 }
 #[cfg(feature = "Zenject+TickableManager")]
 impl crate::Zenject::TickableManager {
-    pub fn AddFixed_Gc1(
+    pub fn AddFixed_IFixedTickable1(
         &mut self,
         tickable: quest_hook::libil2cpp::Gc<crate::Zenject::IFixedTickable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -73,7 +100,7 @@ impl crate::Zenject::TickableManager {
             .invoke("AddFixed", (tickable, priority))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddLate_Gc1(
+    pub fn AddLate_ILateTickable1(
         &mut self,
         tickable: quest_hook::libil2cpp::Gc<crate::Zenject::ILateTickable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -96,7 +123,7 @@ impl crate::Zenject::TickableManager {
             .invoke("AddLate", (tickable, priority))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Add_Gc1(
+    pub fn Add_ITickable1(
         &mut self,
         tickable: quest_hook::libil2cpp::Gc<crate::Zenject::ITickable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -231,9 +258,7 @@ impl crate::Zenject::TickableManager {
     }
     pub fn __zenCreate(
         P_0: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -301,9 +326,7 @@ impl crate::Zenject::TickableManager {
     pub fn __zenInjectMethod0(
         P_0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         P_1: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -330,13 +353,19 @@ impl crate::Zenject::TickableManager {
     pub fn get_Tickables(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::Zenject::ITickable>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::ITickable>,
+            >,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::ITickable>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::ITickable>,
+            >,
         > = __cordl_object.invoke("get_Tickables", ())?;
         Ok(__cordl_ret.into())
     }

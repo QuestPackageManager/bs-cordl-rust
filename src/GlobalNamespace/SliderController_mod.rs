@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Pool_SliderController_Long {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
     >,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SliderController+Pool+Long")]
 impl std::ops::Deref for crate::GlobalNamespace::Pool_SliderController_Long {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
     >;
     fn deref(&self) -> &Self::Target {
@@ -60,7 +60,7 @@ for crate::GlobalNamespace::Pool_SliderController_Long {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Pool_SliderController_Medium {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
     >,
 }
@@ -71,7 +71,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SliderController+Pool+Medium")]
 impl std::ops::Deref for crate::GlobalNamespace::Pool_SliderController_Medium {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
     >;
     fn deref(&self) -> &Self::Target {
@@ -118,7 +118,7 @@ for crate::GlobalNamespace::Pool_SliderController_Medium {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Pool_SliderController_Short {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
     >,
 }
@@ -129,7 +129,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SliderController+Pool+Short")]
 impl std::ops::Deref for crate::GlobalNamespace::Pool_SliderController_Short {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
     >;
     fn deref(&self) -> &Self::Target {
@@ -176,9 +176,7 @@ for crate::GlobalNamespace::Pool_SliderController_Short {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SliderController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::SliderControllerBase,
-    >,
+    __cordl_parent: crate::GlobalNamespace::SliderControllerBase,
     pub _sliderIntensityEffect: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SliderIntensityEffect,
     >,
@@ -201,22 +199,34 @@ pub struct SliderController {
         crate::GlobalNamespace::IJumpOffsetYProvider,
     >,
     pub _sliderDidFinishMovement: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ISliderDidFinishJumpEvent>,
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ISliderDidFinishJumpEvent>,
+        >,
     >,
     pub _sliderDidStartDissolving: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ISliderDidStartDissolvingEvent>,
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::ISliderDidStartDissolvingEvent,
+            >,
+        >,
     >,
     pub _sliderDidDissolve: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ISliderDidDissolveEvent>,
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ISliderDidDissolveEvent>,
+        >,
     >,
     pub _sliderHeadDidMovePastCutMark: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ISliderHeadDidMovePastCutMarkEvent,
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::ISliderHeadDidMovePastCutMarkEvent,
+            >,
         >,
     >,
     pub _sliderTailDidMovePastCutMark: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ISliderTailDidMovePastCutMarkEvent,
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::ISliderTailDidMovePastCutMarkEvent,
+            >,
         >,
     >,
     pub _lengthType: crate::GlobalNamespace::SliderController_LengthType,
@@ -240,9 +250,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SliderController")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderController {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::SliderControllerBase,
-    >;
+    type Target = crate::GlobalNamespace::SliderControllerBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -581,38 +589,10 @@ impl crate::GlobalNamespace::SliderController {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ISliderDidDissolveEvent>,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ISliderDidDissolveEvent>,
-        > = __cordl_object.invoke("get_sliderDidDissolveEvent", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_sliderDidFinishJumpEvent(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ISliderDidFinishJumpEvent>,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ISliderDidFinishJumpEvent>,
-        > = __cordl_object.invoke("get_sliderDidFinishJumpEvent", ())?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_sliderDidStartDissolvingEvent(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::ISliderDidStartDissolvingEvent,
+            crate::GlobalNamespace::ILazyCopyHashSet_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::ISliderDidDissolveEvent,
+                >,
             >,
         >,
     > {
@@ -620,8 +600,56 @@ impl crate::GlobalNamespace::SliderController {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::ISliderDidStartDissolvingEvent,
+            crate::GlobalNamespace::ILazyCopyHashSet_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::ISliderDidDissolveEvent,
+                >,
+            >,
+        > = __cordl_object.invoke("get_sliderDidDissolveEvent", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_sliderDidFinishJumpEvent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ILazyCopyHashSet_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::ISliderDidFinishJumpEvent,
+                >,
+            >,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ILazyCopyHashSet_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::ISliderDidFinishJumpEvent,
+                >,
+            >,
+        > = __cordl_object.invoke("get_sliderDidFinishJumpEvent", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_sliderDidStartDissolvingEvent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ILazyCopyHashSet_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::ISliderDidStartDissolvingEvent,
+                >,
+            >,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ILazyCopyHashSet_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::ISliderDidStartDissolvingEvent,
+                >,
             >,
         > = __cordl_object.invoke("get_sliderDidStartDissolvingEvent", ())?;
         Ok(__cordl_ret.into())
@@ -637,8 +665,10 @@ impl crate::GlobalNamespace::SliderController {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::ISliderHeadDidMovePastCutMarkEvent,
+            crate::GlobalNamespace::ILazyCopyHashSet_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::ISliderHeadDidMovePastCutMarkEvent,
+                >,
             >,
         >,
     > {
@@ -646,8 +676,10 @@ impl crate::GlobalNamespace::SliderController {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::ISliderHeadDidMovePastCutMarkEvent,
+            crate::GlobalNamespace::ILazyCopyHashSet_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::ISliderHeadDidMovePastCutMarkEvent,
+                >,
             >,
         > = __cordl_object.invoke("get_sliderHeadDidMovePastCutMark", ())?;
         Ok(__cordl_ret.into())
@@ -705,8 +737,10 @@ impl crate::GlobalNamespace::SliderController {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::ISliderTailDidMovePastCutMarkEvent,
+            crate::GlobalNamespace::ILazyCopyHashSet_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::ISliderTailDidMovePastCutMarkEvent,
+                >,
             >,
         >,
     > {
@@ -714,8 +748,10 @@ impl crate::GlobalNamespace::SliderController {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::ISliderTailDidMovePastCutMarkEvent,
+            crate::GlobalNamespace::ILazyCopyHashSet_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::ISliderTailDidMovePastCutMarkEvent,
+                >,
             >,
         > = __cordl_object.invoke("get_sliderTailDidMovePastCutMark", ())?;
         Ok(__cordl_ret.into())
@@ -738,22 +774,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SliderControl
     }
 }
 #[cfg(feature = "SliderController")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapObjectController>>
+impl AsRef<crate::GlobalNamespace::IBeatmapObjectController>
 for crate::GlobalNamespace::SliderController {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapObjectController> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IBeatmapObjectController {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "SliderController")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapObjectController>>
+impl AsMut<crate::GlobalNamespace::IBeatmapObjectController>
 for crate::GlobalNamespace::SliderController {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IBeatmapObjectController,
-    > {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IBeatmapObjectController {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -775,7 +805,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct SliderController_Pool {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _variableMovementDataProvider: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::VariableMovementDataProvider,
     >,
@@ -796,7 +826,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SliderController+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderController_Pool {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -836,14 +866,18 @@ impl crate::GlobalNamespace::SliderController_Pool {
         lengthType: crate::GlobalNamespace::SliderController_LengthType,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
+            crate::Zenject::MonoMemoryPool_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
+            crate::Zenject::MonoMemoryPool_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
+            >,
         > = __cordl_object.invoke("GetPool", (lengthType))?;
         Ok(__cordl_ret.into())
     }

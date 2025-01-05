@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Claim {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_issuer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_originalIssuer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -12,8 +12,10 @@ pub struct Claim {
         quest_hook::libil2cpp::Il2CppArray<u8>,
     >,
     pub m_properties: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub m_propertyLock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_subject: quest_hook::libil2cpp::Gc<
@@ -27,7 +29,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+Claims+Claim")]
 impl std::ops::Deref for crate::System::Security::Claims::Claim {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -56,7 +58,7 @@ impl crate::System::Security::Claims::Claim {
         > = __cordl_object.invoke("Clone", (identity))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc_Gc2(
+    pub fn New_Claim_ClaimsIdentity2(
         other: quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>,
         subject: quest_hook::libil2cpp::Gc<
             crate::System::Security::Claims::ClaimsIdentity,
@@ -68,7 +70,7 @@ impl crate::System::Security::Claims::Claim {
             .invoke_void(".ctor", (other, subject))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc_Gc_Gc0(
+    pub fn New_Il2CppString_Il2CppString_Il2CppString_Il2CppString_Il2CppString_ClaimsIdentity0(
         _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         valueType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -87,7 +89,7 @@ impl crate::System::Security::Claims::Claim {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc_Gc_Gc_Gc_Gc1(
+    pub fn New_Il2CppString_Il2CppString_Il2CppString_Il2CppString_Il2CppString_ClaimsIdentity_Il2CppString_Il2CppString1(
         _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         valueType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -141,7 +143,7 @@ impl crate::System::Security::Claims::Claim {
         > = __cordl_object.invoke("ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc2(
+    pub fn _ctor_Claim_ClaimsIdentity2(
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>,
         subject: quest_hook::libil2cpp::Gc<
@@ -155,7 +157,7 @@ impl crate::System::Security::Claims::Claim {
             .invoke(".ctor", (other, subject))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_Gc_Gc0(
+    pub fn _ctor_Il2CppString_Il2CppString_Il2CppString_Il2CppString_Il2CppString_ClaimsIdentity0(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -176,7 +178,7 @@ impl crate::System::Security::Claims::Claim {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_Gc_Gc_Gc_Gc1(
+    pub fn _ctor_Il2CppString_Il2CppString_Il2CppString_Il2CppString_Il2CppString_ClaimsIdentity_Il2CppString_Il2CppString1(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -212,16 +214,20 @@ impl crate::System::Security::Claims::Claim {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IDictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IDictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = __cordl_object.invoke("get_Properties", ())?;
         Ok(__cordl_ret.into())
     }

@@ -2,9 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseVisualElementPanel {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub panelDisposed: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BaseVisualElementPanel>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::BaseVisualElementPanel,
+            >,
+        >,
     >,
     pub m_UIElementsBridge: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UIElementsBridge,
@@ -34,13 +38,15 @@ pub struct BaseVisualElementPanel {
     >,
     pub atlasChanged: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub updateMaterial: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>>,
     >,
     pub hierarchyChanged: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::HierarchyEvent,
     >,
     pub beforeUpdate: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseVisualElementPanel")]
@@ -50,7 +56,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+BaseVisualElementPanel")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::BaseVisualElementPanel {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -226,7 +232,9 @@ impl crate::UnityEngine::UIElements::BaseVisualElementPanel {
         &mut self,
         point: crate::UnityEngine::Vector2,
         picked: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
@@ -405,8 +413,10 @@ impl crate::UnityEngine::UIElements::BaseVisualElementPanel {
     pub fn add_panelDisposed(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::BaseVisualElementPanel,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::BaseVisualElementPanel,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -763,8 +773,10 @@ impl crate::UnityEngine::UIElements::BaseVisualElementPanel {
     pub fn remove_panelDisposed(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::BaseVisualElementPanel,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::BaseVisualElementPanel,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1000,52 +1012,44 @@ for crate::UnityEngine::UIElements::BaseVisualElementPanel {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseVisualElementPanel")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsRef<crate::System::IDisposable>
 for crate::UnityEngine::UIElements::BaseVisualElementPanel {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseVisualElementPanel")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsMut<crate::System::IDisposable>
 for crate::UnityEngine::UIElements::BaseVisualElementPanel {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseVisualElementPanel")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGroupBox>>
+impl AsRef<crate::UnityEngine::UIElements::IGroupBox>
 for crate::UnityEngine::UIElements::BaseVisualElementPanel {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGroupBox> {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IGroupBox {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseVisualElementPanel")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGroupBox>>
+impl AsMut<crate::UnityEngine::UIElements::IGroupBox>
 for crate::UnityEngine::UIElements::BaseVisualElementPanel {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGroupBox> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IGroupBox {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseVisualElementPanel")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>>
+impl AsRef<crate::UnityEngine::UIElements::IPanel>
 for crate::UnityEngine::UIElements::BaseVisualElementPanel {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel> {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IPanel {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseVisualElementPanel")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>>
+impl AsMut<crate::UnityEngine::UIElements::IPanel>
 for crate::UnityEngine::UIElements::BaseVisualElementPanel {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IPanel {
         unsafe { std::mem::transmute(self) }
     }
 }

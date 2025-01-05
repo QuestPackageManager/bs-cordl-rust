@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRInputModule {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::PointerInputModule,
-    >,
+    __cordl_parent: crate::UnityEngine::EventSystems::PointerInputModule,
     pub rayTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub m_Cursor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRCursor>,
     pub joyPadClickButton: crate::GlobalNamespace::OVRInput_Button,
@@ -31,8 +29,12 @@ pub struct OVRInputModule {
     pub m_InputActionsPerSecond: f32,
     pub m_AllowActivationOnMobileDevice: bool,
     pub m_VRRayPointerData: quest_hook::libil2cpp::Gc<
-        i32,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::OVRPointerEventData>,
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::EventSystems::OVRPointerEventData,
+            >,
+        >,
     >,
     pub m_MouseState: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::EventSystems::PointerInputModule_MouseState,
@@ -45,9 +47,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+EventSystems+OVRInputModule")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::OVRInputModule {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::PointerInputModule,
-    >;
+    type Target = crate::UnityEngine::EventSystems::PointerInputModule;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -93,7 +93,7 @@ impl crate::UnityEngine::EventSystems::OVRInputModule {
             .invoke("ClearSelection", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn CopyFromTo_Gc_Gc0(
+    pub fn CopyFromTo_OVRPointerEventData_OVRPointerEventData0(
         &mut self,
         from: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::EventSystems::OVRPointerEventData,
@@ -109,7 +109,7 @@ impl crate::UnityEngine::EventSystems::OVRInputModule {
             .invoke("CopyFromTo", (from, to))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CopyFromTo_Gc_Gc1(
+    pub fn CopyFromTo_PointerEventData_PointerEventData1(
         &mut self,
         from: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::EventSystems::PointerEventData,

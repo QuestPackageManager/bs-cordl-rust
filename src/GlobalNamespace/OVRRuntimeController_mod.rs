@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRRuntimeController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_controller: crate::GlobalNamespace::OVRInput_Controller,
     pub m_controllerModelShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     pub m_supportAnimation: bool,
@@ -15,8 +15,10 @@ pub struct OVRRuntimeController {
     pub m_hasInputFocusPrev: bool,
     pub m_controllerConnectedPrev: bool,
     pub m_animationNodes: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRGLTFInputNode,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRGLTFAnimatinonNode>,
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::GlobalNamespace::OVRGLTFInputNode,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRGLTFAnimatinonNode>,
+        >,
     >,
 }
 #[cfg(feature = "OVRRuntimeController")]
@@ -26,7 +28,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRRuntimeController")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRRuntimeController {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

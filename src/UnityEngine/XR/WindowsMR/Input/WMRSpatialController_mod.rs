@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct WMRSpatialController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::XR::XRControllerWithRumble,
-    >,
+    __cordl_parent: crate::UnityEngine::InputSystem::XR::XRControllerWithRumble,
     pub _joystick_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Controls::Vector2Control,
     >,
@@ -65,9 +63,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+XR+WindowsMR+Input+WMRSpatialController")]
 impl std::ops::Deref for crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::XR::XRControllerWithRumble,
-    >;
+    type Target = crate::UnityEngine::InputSystem::XR::XRControllerWithRumble;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

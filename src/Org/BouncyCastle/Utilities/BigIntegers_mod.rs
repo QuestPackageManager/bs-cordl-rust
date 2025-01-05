@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BigIntegers {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+BigIntegers")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Utilities+BigIntegers")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Utilities::BigIntegers {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -25,7 +25,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Utilities::BigIntegers {
 #[cfg(feature = "Org+BouncyCastle+Utilities+BigIntegers")]
 impl crate::Org::BouncyCastle::Utilities::BigIntegers {
     pub const MaxIterations: i32 = 1000i32;
-    pub fn AsUnsignedByteArray_Gc0(
+    pub fn AsUnsignedByteArray_BigInteger0(
         n: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -36,7 +36,7 @@ impl crate::Org::BouncyCastle::Utilities::BigIntegers {
             .invoke("AsUnsignedByteArray", (n))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AsUnsignedByteArray_Gc_Gc_i32_i32_2(
+    pub fn AsUnsignedByteArray_BigInteger_Il2CppArray_i32_i32_2(
         value: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         off: i32,
@@ -46,7 +46,7 @@ impl crate::Org::BouncyCastle::Utilities::BigIntegers {
             .invoke("AsUnsignedByteArray", (value, buf, off, len))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AsUnsignedByteArray_i32_Gc1(
+    pub fn AsUnsignedByteArray_i32_BigInteger1(
         length: i32,
         n: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<

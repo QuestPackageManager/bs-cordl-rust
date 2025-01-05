@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlElement {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlLinkedNode>,
+    __cordl_parent: crate::System::Xml::XmlLinkedNode,
     pub name: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlName>,
     pub attributes: quest_hook::libil2cpp::Gc<
         crate::System::Xml::XmlAttributeCollection,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlElement")]
 impl std::ops::Deref for crate::System::Xml::XmlElement {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::XmlLinkedNode>;
+    type Target = crate::System::Xml::XmlLinkedNode;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -56,7 +56,7 @@ impl crate::System::Xml::XmlElement {
             .invoke("CloneNode", (deep))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAttributeNode_Gc0(
+    pub fn GetAttributeNode_Il2CppString0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -69,7 +69,7 @@ impl crate::System::Xml::XmlElement {
             .invoke("GetAttributeNode", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAttributeNode_Gc1(
+    pub fn GetAttributeNode_Il2CppString1(
         &mut self,
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         namespaceURI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -83,7 +83,7 @@ impl crate::System::Xml::XmlElement {
             .invoke("GetAttributeNode", (localName, namespaceURI))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAttribute_Gc0(
+    pub fn GetAttribute_Il2CppString0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -97,7 +97,7 @@ impl crate::System::Xml::XmlElement {
         > = __cordl_object.invoke("GetAttribute", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAttribute_Gc1(
+    pub fn GetAttribute_Il2CppString1(
         &mut self,
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         namespaceURI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -133,7 +133,7 @@ impl crate::System::Xml::XmlElement {
             .invoke("IsValidChildType", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc_Gc1(
+    pub fn New_Il2CppString_Il2CppString_Il2CppString_XmlDocument1(
         prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         namespaceURI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -145,7 +145,7 @@ impl crate::System::Xml::XmlElement {
             .invoke_void(".ctor", (prefix, localName, namespaceURI, doc))?;
         Ok(__cordl_object.into())
     }
-    pub fn New__cordl_bool0(
+    pub fn New_XmlName__cordl_bool_XmlDocument0(
         name: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlName>,
         empty: bool,
         doc: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDocument>,
@@ -186,20 +186,7 @@ impl crate::System::Xml::XmlElement {
             .invoke("RemoveAllChildren", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetAttributeNode_Gc0(
-        &mut self,
-        newAttr: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAttribute>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAttribute>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAttribute> = __cordl_object
-            .invoke("SetAttributeNode", (newAttr))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetAttributeNode_Gc1(
+    pub fn SetAttributeNode_Il2CppString_Il2CppString1(
         &mut self,
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         namespaceURI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -213,7 +200,20 @@ impl crate::System::Xml::XmlElement {
             .invoke("SetAttributeNode", (localName, namespaceURI))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetAttribute_Gc1(
+    pub fn SetAttributeNode_XmlAttribute0(
+        &mut self,
+        newAttr: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAttribute>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAttribute>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAttribute> = __cordl_object
+            .invoke("SetAttributeNode", (newAttr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetAttribute_Il2CppString1(
         &mut self,
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         namespaceURI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -229,7 +229,7 @@ impl crate::System::Xml::XmlElement {
         > = __cordl_object.invoke("SetAttribute", (localName, namespaceURI, value))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetAttribute_Gc_Gc0(
+    pub fn SetAttribute_Il2CppString_Il2CppString0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -293,7 +293,7 @@ impl crate::System::Xml::XmlElement {
             .invoke("WriteTo", (w))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc1(
+    pub fn _ctor_Il2CppString_Il2CppString_Il2CppString_XmlDocument1(
         &mut self,
         prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -307,7 +307,7 @@ impl crate::System::Xml::XmlElement {
             .invoke(".ctor", (prefix, localName, namespaceURI, doc))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor__cordl_bool0(
+    pub fn _ctor_XmlName__cordl_bool_XmlDocument0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlName>,
         empty: bool,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MainMenuViewController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+    __cordl_parent: crate::HMUI::ViewController,
     pub _soloButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _partyButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _campaignButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
@@ -22,11 +22,17 @@ pub struct MainMenuViewController {
         crate::GlobalNamespace::IAnalyticsModel,
     >,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MainMenuViewController>,
-        crate::GlobalNamespace::MainMenuViewController_MenuButton,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MainMenuViewController>,
+            crate::GlobalNamespace::MainMenuViewController_MenuButton,
+        >,
     >,
     pub promoButtonWasPressedEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+            >,
+        >,
     >,
     pub _isLoadingPackPromoData: bool,
 }
@@ -37,7 +43,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MainMenuViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::MainMenuViewController {
-    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>;
+    type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -199,8 +205,12 @@ impl crate::GlobalNamespace::MainMenuViewController {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MainMenuViewController>,
-            crate::GlobalNamespace::MainMenuViewController_MenuButton,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MainMenuViewController,
+                >,
+                crate::GlobalNamespace::MainMenuViewController_MenuButton,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -213,8 +223,10 @@ impl crate::GlobalNamespace::MainMenuViewController {
     pub fn add_promoButtonWasPressedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -228,8 +240,12 @@ impl crate::GlobalNamespace::MainMenuViewController {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MainMenuViewController>,
-            crate::GlobalNamespace::MainMenuViewController_MenuButton,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MainMenuViewController,
+                >,
+                crate::GlobalNamespace::MainMenuViewController_MenuButton,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -242,8 +258,10 @@ impl crate::GlobalNamespace::MainMenuViewController {
     pub fn remove_promoButtonWasPressedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

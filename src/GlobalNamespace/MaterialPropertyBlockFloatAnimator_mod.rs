@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MaterialPropertyBlockFloatAnimator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MaterialPropertyBlockAnimator,
-    >,
+    __cordl_parent: crate::GlobalNamespace::MaterialPropertyBlockAnimator,
     pub _value: f32,
 }
 #[cfg(feature = "MaterialPropertyBlockFloatAnimator")]
@@ -15,9 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MaterialPropertyBlockFloatAnimator")]
 impl std::ops::Deref for crate::GlobalNamespace::MaterialPropertyBlockFloatAnimator {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MaterialPropertyBlockAnimator,
-    >;
+    type Target = crate::GlobalNamespace::MaterialPropertyBlockAnimator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

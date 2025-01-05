@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ControlPlayableAsset {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Playables::PlayableAsset,
-    >,
+    __cordl_parent: crate::UnityEngine::Playables::PlayableAsset,
     pub sourceGameObject: crate::UnityEngine::ExposedReference_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     >,
@@ -31,9 +29,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Timeline+ControlPlayableAsset")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::ControlPlayableAsset {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Playables::PlayableAsset,
-    >;
+    type Target = crate::UnityEngine::Playables::PlayableAsset;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -50,7 +46,9 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
     pub fn CacheSubEmitters(
         ps: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
         subEmitters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+            crate::System::Collections::Generic::HashSet_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -69,7 +67,11 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
     }
     pub fn ConnectPlayablesToMixer(
         graph: crate::UnityEngine::Playables::PlayableGraph,
-        playables: quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::Playable>,
+        playables: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::Playables::Playable,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
         let __cordl_ret: crate::UnityEngine::Playables::Playable = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("ConnectPlayablesToMixer", (graph, playables))?;
@@ -79,7 +81,11 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
         &mut self,
         root: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         graph: crate::UnityEngine::Playables::PlayableGraph,
-        outplayables: quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::Playable>,
+        outplayables: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::Playables::Playable,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -119,7 +125,9 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
     pub fn GetComponent<T>(
         &mut self,
         gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -127,46 +135,59 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = __cordl_object
-            .invoke("GetComponent", (gameObject))?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<T>,
+        > = __cordl_object.invoke("GetComponent", (gameObject))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetControlableScripts(
         root: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetControlableScripts", (root))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetControllableParticleSystems_Gc0(
+    pub fn GetControllableParticleSystems_GameObject0(
         &mut self,
         go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+            >,
         > = __cordl_object.invoke("GetControllableParticleSystems", (go))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetControllableParticleSystems_Gc_Gc1(
+    pub fn GetControllableParticleSystems_Transform_ICollection_1_HashSet_1_1(
         t: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         roots: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+            crate::System::Collections::Generic::ICollection_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+            >,
         >,
         subEmitters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+            crate::System::Collections::Generic::HashSet_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -195,7 +216,9 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
             crate::UnityEngine::Timeline::IPropertyCollector,
         >,
         objects: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -207,7 +230,11 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
             crate::UnityEngine::Timeline::IPropertyCollector,
         >,
         directors: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableDirector>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::Playables::PlayableDirector,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -219,7 +246,9 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
             crate::UnityEngine::Timeline::IPropertyCollector,
         >,
         particles: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -234,7 +263,9 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
             crate::UnityEngine::Playables::PlayableDirector,
         >,
         scripts: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
@@ -243,10 +274,16 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
     }
     pub fn SearchHierarchyAndConnectControlableScripts(
         controlableScripts: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+            >,
         >,
         graph: crate::UnityEngine::Playables::PlayableGraph,
-        outplayables: quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::Playable>,
+        outplayables: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::Playables::Playable,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
@@ -258,10 +295,18 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
     pub fn SearchHierarchyAndConnectDirector(
         &mut self,
         directors: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableDirector>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::Playables::PlayableDirector,
+                >,
+            >,
         >,
         graph: crate::UnityEngine::Playables::PlayableGraph,
-        outplayables: quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::Playable>,
+        outplayables: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::Playables::Playable,
+            >,
+        >,
         disableSelfReferences: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -277,10 +322,16 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
     pub fn SearchHierarchyAndConnectParticleSystem(
         &mut self,
         particleSystems: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+            >,
         >,
         graph: crate::UnityEngine::Playables::PlayableGraph,
-        outplayables: quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::Playable>,
+        outplayables: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::Playables::Playable,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -295,10 +346,16 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
     pub fn UpdateDurationAndLoopFlag(
         &mut self,
         directors: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableDirector>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::Playables::PlayableDirector,
+                >,
+            >,
         >,
         particleSystems: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -383,40 +440,30 @@ for crate::UnityEngine::Timeline::ControlPlayableAsset {
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+ControlPlayableAsset")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IPropertyPreview>>
+impl AsRef<crate::UnityEngine::Timeline::IPropertyPreview>
 for crate::UnityEngine::Timeline::ControlPlayableAsset {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IPropertyPreview> {
+    fn as_ref(&self) -> &crate::UnityEngine::Timeline::IPropertyPreview {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+ControlPlayableAsset")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IPropertyPreview>>
+impl AsMut<crate::UnityEngine::Timeline::IPropertyPreview>
 for crate::UnityEngine::Timeline::ControlPlayableAsset {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IPropertyPreview> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Timeline::IPropertyPreview {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+ControlPlayableAsset")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::ITimelineClipAsset>>
+impl AsRef<crate::UnityEngine::Timeline::ITimelineClipAsset>
 for crate::UnityEngine::Timeline::ControlPlayableAsset {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::ITimelineClipAsset> {
+    fn as_ref(&self) -> &crate::UnityEngine::Timeline::ITimelineClipAsset {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+ControlPlayableAsset")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::ITimelineClipAsset>>
+impl AsMut<crate::UnityEngine::Timeline::ITimelineClipAsset>
 for crate::UnityEngine::Timeline::ControlPlayableAsset {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Timeline::ITimelineClipAsset,
-    > {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Timeline::ITimelineClipAsset {
         unsafe { std::mem::transmute(self) }
     }
 }

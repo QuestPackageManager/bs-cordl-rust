@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PgpPublicKeyEncryptedData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedData,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedData,
     pub keyData: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Bcpg::PublicKeyEncSessionPacket,
     >,
@@ -18,9 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpPublicKeyEncryptedData")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyEncryptedData {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedData,
-    >;
+    type Target = crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedData;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

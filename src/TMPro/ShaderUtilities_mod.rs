@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ShaderUtilities {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "TMPro+ShaderUtilities")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+ShaderUtilities")]
 impl std::ops::Deref for crate::TMPro::ShaderUtilities {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,26 +31,24 @@ impl crate::TMPro::ShaderUtilities {
             .invoke("GetFontExtent", (material))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetPadding_Gc__cordl_bool__cordl_bool0(
-        material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-        enableExtraPadding: bool,
-        isBold: bool,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetPadding", (material, enableExtraPadding, isBold))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetPadding_Gc__cordl_bool__cordl_bool1(
+    pub fn GetPadding_Il2CppArray1(
         materials: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
         >,
         enableExtraPadding: bool,
         isBold: bool,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetPadding", (materials, enableExtraPadding, isBold))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPadding_Material0(
+        material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        enableExtraPadding: bool,
+        isBold: bool,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPadding", (material, enableExtraPadding, isBold))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetShaderPropertyIDs() -> quest_hook::libil2cpp::Result<

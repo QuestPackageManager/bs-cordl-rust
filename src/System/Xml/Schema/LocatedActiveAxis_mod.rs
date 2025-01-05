@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LocatedActiveAxis {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ActiveAxis>,
+    __cordl_parent: crate::System::Xml::Schema::ActiveAxis,
     pub column: i32,
     pub isMatched: bool,
     pub Ks: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::KeySequence>,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+LocatedActiveAxis")]
 impl std::ops::Deref for crate::System::Xml::Schema::LocatedActiveAxis {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ActiveAxis>;
+    type Target = crate::System::Xml::Schema::ActiveAxis;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

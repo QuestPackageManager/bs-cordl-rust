@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X923Padding {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub random: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Security::SecureRandom,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Paddings+X923Padding")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Paddings::X923Padding {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -103,30 +103,20 @@ for crate::Org::BouncyCastle::Crypto::Paddings::X923Padding {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Paddings+X923Padding")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Paddings::IBlockCipherPadding,
-    >,
-> for crate::Org::BouncyCastle::Crypto::Paddings::X923Padding {
+impl AsRef<crate::Org::BouncyCastle::Crypto::Paddings::IBlockCipherPadding>
+for crate::Org::BouncyCastle::Crypto::Paddings::X923Padding {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Paddings::IBlockCipherPadding,
-    > {
+    ) -> &crate::Org::BouncyCastle::Crypto::Paddings::IBlockCipherPadding {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Paddings+X923Padding")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Paddings::IBlockCipherPadding,
-    >,
-> for crate::Org::BouncyCastle::Crypto::Paddings::X923Padding {
+impl AsMut<crate::Org::BouncyCastle::Crypto::Paddings::IBlockCipherPadding>
+for crate::Org::BouncyCastle::Crypto::Paddings::X923Padding {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::Paddings::IBlockCipherPadding,
-    > {
+    ) -> &mut crate::Org::BouncyCastle::Crypto::Paddings::IBlockCipherPadding {
         unsafe { std::mem::transmute(self) }
     }
 }

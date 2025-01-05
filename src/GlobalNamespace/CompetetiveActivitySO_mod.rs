@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CompetetiveActivitySO {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PS5ActivityDataSO>,
+    __cordl_parent: crate::GlobalNamespace::PS5ActivityDataSO,
 }
 #[cfg(feature = "CompetetiveActivitySO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "CompetetiveActivitySO")]
 impl std::ops::Deref for crate::GlobalNamespace::CompetetiveActivitySO {
-    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PS5ActivityDataSO>;
+    type Target = crate::GlobalNamespace::PS5ActivityDataSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,12 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LocalizedTextComponent_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub localizedComponent: T,
     pub maintainTextAlignment: bool,
     pub key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub parameters: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -19,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BGLib+Polyglot+LocalizedTextComponent_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::BGLib::Polyglot::LocalizedTextComponent_1<T> {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -165,7 +167,9 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     >
     where
@@ -176,7 +180,9 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         > = __cordl_object.invoke("get_Parameters", ())?;
         Ok(__cordl_ret.into())
     }
@@ -207,22 +213,16 @@ for crate::BGLib::Polyglot::LocalizedTextComponent_1<T> {
     }
 }
 #[cfg(feature = "BGLib+Polyglot+LocalizedTextComponent_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::ILocalize>>
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::BGLib::Polyglot::ILocalize>
 for crate::BGLib::Polyglot::LocalizedTextComponent_1<T> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::ILocalize> {
+    fn as_ref(&self) -> &crate::BGLib::Polyglot::ILocalize {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BGLib+Polyglot+LocalizedTextComponent_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::ILocalize>>
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::BGLib::Polyglot::ILocalize>
 for crate::BGLib::Polyglot::LocalizedTextComponent_1<T> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::ILocalize> {
+    fn as_mut(&mut self) -> &mut crate::BGLib::Polyglot::ILocalize {
         unsafe { std::mem::transmute(self) }
     }
 }

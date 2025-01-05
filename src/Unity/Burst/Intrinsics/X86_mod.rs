@@ -171,7 +171,7 @@ impl crate::Unity::Burst::Intrinsics::StrBoolArray_Sse4_2_X86__Bits_e__FixedBuff
 #[repr(C)]
 #[derive(Debug)]
 pub struct X86 {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+X86")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -180,7 +180,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Burst+Intrinsics+X86")]
 impl std::ops::Deref for crate::Unity::Burst::Intrinsics::X86 {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -334,7 +334,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::X86 
 #[repr(C)]
 #[derive(Debug)]
 pub struct X86_Avx {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Avx")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -343,7 +343,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Avx")]
 impl std::ops::Deref for crate::Unity::Burst::Intrinsics::X86_Avx {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2102,7 +2102,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::X86_
 #[repr(C)]
 #[derive(Debug)]
 pub struct X86_Avx2 {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Avx2")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2111,7 +2111,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Avx2")]
 impl std::ops::Deref for crate::Unity::Burst::Intrinsics::X86_Avx2 {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2124,7 +2124,10 @@ impl std::ops::DerefMut for crate::Unity::Burst::Intrinsics::X86_Avx2 {
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Avx2")]
 impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
-    pub fn EmulatedGather_Gc_Gc_Gc_i32_i32_Gc0<T, U>(
+    pub fn EmulatedGather_Il2CppObject_Il2CppObject_Il2CppObject_i32_i32_Il2CppObject0<
+        T,
+        U,
+    >(
         dptr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         base_addr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         indexPtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -2142,7 +2145,10 @@ impl crate::Unity::Burst::Intrinsics::X86_Avx2 {
             .invoke("EmulatedGather", (dptr, base_addr, indexPtr, scale, n, mask))?;
         Ok(__cordl_ret.into())
     }
-    pub fn EmulatedGather_Gc_Gc_Gc_i32_i32_Gc1<T, U>(
+    pub fn EmulatedGather_Il2CppObject_Il2CppObject_Il2CppObject_i32_i32_Il2CppObject1<
+        T,
+        U,
+    >(
         dptr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         base_addr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         indexPtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -3794,7 +3800,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::X86_
 #[repr(C)]
 #[derive(Debug)]
 pub struct X86_Bmi1 {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Bmi1")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3803,7 +3809,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Bmi1")]
 impl std::ops::Deref for crate::Unity::Burst::Intrinsics::X86_Bmi1 {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3913,7 +3919,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::X86_
 #[repr(C)]
 #[derive(Debug)]
 pub struct X86_Bmi2 {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Bmi2")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3922,7 +3928,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Bmi2")]
 impl std::ops::Deref for crate::Unity::Burst::Intrinsics::X86_Bmi2 {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4002,7 +4008,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::X86_
 #[repr(C)]
 #[derive(Debug)]
 pub struct X86_F16C {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+F16C")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4011,7 +4017,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+F16C")]
 impl std::ops::Deref for crate::Unity::Burst::Intrinsics::X86_F16C {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4083,7 +4089,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::X86_
 #[repr(C)]
 #[derive(Debug)]
 pub struct X86_Fma {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Fma")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4092,7 +4098,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Fma")]
 impl std::ops::Deref for crate::Unity::Burst::Intrinsics::X86_Fma {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4455,7 +4461,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct X86_Popcnt {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Popcnt")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4464,7 +4470,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Popcnt")]
 impl std::ops::Deref for crate::Unity::Burst::Intrinsics::X86_Popcnt {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4570,16 +4576,16 @@ impl crate::Unity::Burst::Intrinsics::X86_RoundingScope {
     }
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+RoundingScope")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsRef<crate::System::IDisposable>
 for crate::Unity::Burst::Intrinsics::X86_RoundingScope {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         todo!()
     }
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+RoundingScope")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsMut<crate::System::IDisposable>
 for crate::Unity::Burst::Intrinsics::X86_RoundingScope {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         todo!()
     }
 }
@@ -4587,7 +4593,7 @@ for crate::Unity::Burst::Intrinsics::X86_RoundingScope {
 #[repr(C)]
 #[derive(Debug)]
 pub struct X86_Sse {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4596,7 +4602,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse")]
 impl std::ops::Deref for crate::Unity::Burst::Intrinsics::X86_Sse {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5343,7 +5349,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::X86_
 #[repr(C)]
 #[derive(Debug)]
 pub struct X86_Sse2 {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse2")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5352,7 +5358,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse2")]
 impl std::ops::Deref for crate::Unity::Burst::Intrinsics::X86_Sse2 {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -6974,7 +6980,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::X86_
 #[repr(C)]
 #[derive(Debug)]
 pub struct X86_Sse3 {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse3")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -6983,7 +6989,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse3")]
 impl std::ops::Deref for crate::Unity::Burst::Intrinsics::X86_Sse3 {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -7084,7 +7090,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::X86_
 #[repr(C)]
 #[derive(Debug)]
 pub struct X86_Sse4_1 {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_1")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -7093,7 +7099,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_1")]
 impl std::ops::Deref for crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -7631,7 +7637,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::X86_
 #[repr(C)]
 #[derive(Debug)]
 pub struct X86_Sse4_2 {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -7640,7 +7646,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2")]
 impl std::ops::Deref for crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -7975,7 +7981,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::X86_
 #[repr(C)]
 #[derive(Debug)]
 pub struct X86_Ssse3 {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Ssse3")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -7984,7 +7990,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Ssse3")]
 impl std::ops::Deref for crate::Unity::Burst::Intrinsics::X86_Ssse3 {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

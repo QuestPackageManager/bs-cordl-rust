@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlatformLeaderboardViewController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LeaderboardViewController,
-    >,
+    __cordl_parent: crate::GlobalNamespace::LeaderboardViewController,
     pub _leaderboardTableView: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::LeaderboardTableView,
     >,
@@ -32,7 +30,11 @@ pub struct PlatformLeaderboardViewController {
         crate::GlobalNamespace::HMAsyncRequest,
     >,
     pub _scores: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LeaderboardTableView_ScoreData>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LeaderboardTableView_ScoreData,
+            >,
+        >,
     >,
     pub _playerScorePos: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<i32>,
@@ -54,9 +56,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PlatformLeaderboardViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::PlatformLeaderboardViewController {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LeaderboardViewController,
-    >;
+    type Target = crate::GlobalNamespace::LeaderboardViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -123,9 +123,7 @@ impl crate::GlobalNamespace::PlatformLeaderboardViewController {
         result: crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresResult,
         scores: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
-                >,
+                *mut crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
             >,
         >,
         playerScoreIndex: i32,

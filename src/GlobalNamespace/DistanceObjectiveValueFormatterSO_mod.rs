@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DistanceObjectiveValueFormatterSO {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::ObjectiveValueFormatterSO,
-    >,
+    __cordl_parent: crate::GlobalNamespace::ObjectiveValueFormatterSO,
 }
 #[cfg(feature = "DistanceObjectiveValueFormatterSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -14,9 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "DistanceObjectiveValueFormatterSO")]
 impl std::ops::Deref for crate::GlobalNamespace::DistanceObjectiveValueFormatterSO {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::ObjectiveValueFormatterSO,
-    >;
+    type Target = crate::GlobalNamespace::ObjectiveValueFormatterSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SecureRandom {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Random>,
+    __cordl_parent: crate::System::Random,
     pub generator: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Prng::IRandomGenerator,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Security+SecureRandom")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Security::SecureRandom {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Random>;
+    type Target = crate::System::Random;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -55,7 +55,7 @@ impl crate::Org::BouncyCastle::Security::SecureRandom {
         > = __cordl_object.invoke("GenerateSeed", (length))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetInstance_Gc0(
+    pub fn GetInstance_Il2CppString0(
         algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Security::SecureRandom>,
@@ -109,16 +109,7 @@ impl crate::Org::BouncyCastle::Security::SecureRandom {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
-        seed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (seed))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc2(
+    pub fn New_IRandomGenerator2(
         generator: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Prng::IRandomGenerator,
         >,
@@ -129,7 +120,16 @@ impl crate::Org::BouncyCastle::Security::SecureRandom {
             .invoke_void(".ctor", (generator))?;
         Ok(__cordl_object.into())
     }
-    pub fn NextBytes_Gc0(
+    pub fn New_Il2CppArray1(
+        seed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (seed))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn NextBytes_Il2CppArray0(
         &mut self,
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -204,7 +204,7 @@ impl crate::Org::BouncyCastle::Security::SecureRandom {
         let __cordl_ret: i32 = __cordl_object.invoke("Next", (minValue, maxValue))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetSeed_Gc0(
+    pub fn SetSeed_Il2CppArray0(
         &mut self,
         seed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -236,18 +236,7 @@ impl crate::Org::BouncyCastle::Security::SecureRandom {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
-        &mut self,
-        seed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (seed))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_IRandomGenerator2(
         &mut self,
         generator: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Prng::IRandomGenerator,
@@ -258,6 +247,17 @@ impl crate::Org::BouncyCastle::Security::SecureRandom {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (generator))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppArray1(
+        &mut self,
+        seed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (seed))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_Master() -> quest_hook::libil2cpp::Result<

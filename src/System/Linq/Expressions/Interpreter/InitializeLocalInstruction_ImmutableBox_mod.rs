@@ -4,9 +4,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InitializeLocalInstruction_ImmutableBox {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::InitializeLocalInstruction,
-    >,
+    __cordl_parent: crate::System::Linq::Expressions::Interpreter::InitializeLocalInstruction,
     pub _defaultValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(
@@ -22,9 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::InitializeLocalInstruction_ImmutableBox {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::InitializeLocalInstruction,
-    >;
+    type Target = crate::System::Linq::Expressions::Interpreter::InitializeLocalInstruction;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

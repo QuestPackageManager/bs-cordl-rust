@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SettingsIO {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "SettingsIO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SettingsIO")]
 impl std::ops::Deref for crate::GlobalNamespace::SettingsIO {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -57,10 +57,12 @@ impl crate::GlobalNamespace::SettingsIO {
         fileStorage: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
         platform: crate::GlobalNamespace::HardwareCategory,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::BeatSaber::Settings::Settings>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<crate::BeatSaber::Settings::Settings>,
+        >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::Settings::Settings,
+            crate::System::Threading::Tasks::Task_1<crate::BeatSaber::Settings::Settings>,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("LoadAsync", (fileStorage, platform))?;
         Ok(__cordl_ret.into())

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SinglePlayerLevelSelectionFlowCoordinator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LevelSelectionFlowCoordinator,
-    >,
+    __cordl_parent: crate::GlobalNamespace::LevelSelectionFlowCoordinator,
     pub _degree360BeatmapCharacteristic: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapCharacteristicSO,
     >,
@@ -33,8 +31,10 @@ pub struct SinglePlayerLevelSelectionFlowCoordinator {
         crate::GlobalNamespace::EnvironmentsListModel,
     >,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator,
+            >,
         >,
     >,
 }
@@ -47,9 +47,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "SinglePlayerLevelSelectionFlowCoordinator")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LevelSelectionFlowCoordinator,
-    >;
+    type Target = crate::GlobalNamespace::LevelSelectionFlowCoordinator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -334,8 +332,10 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -446,8 +446,10 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

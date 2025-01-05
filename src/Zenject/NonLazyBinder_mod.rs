@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NonLazyBinder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Zenject::IfNotBoundBinder>,
+    __cordl_parent: crate::Zenject::IfNotBoundBinder,
 }
 #[cfg(feature = "Zenject+NonLazyBinder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+NonLazyBinder")]
 impl std::ops::Deref for crate::Zenject::NonLazyBinder {
-    type Target = quest_hook::libil2cpp::Gc<crate::Zenject::IfNotBoundBinder>;
+    type Target = crate::Zenject::IfNotBoundBinder;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

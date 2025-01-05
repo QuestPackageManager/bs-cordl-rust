@@ -30,7 +30,9 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventListener {
     pub fn Subscribe(
         &mut self,
         observer: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            crate::System::IObserver_1<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
@@ -45,8 +47,10 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventListener {
     pub fn op_Addition(
         _cordl__: crate::UnityEngine::InputSystem::LowLevel::InputEventListener,
         callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+            crate::System::Action_2<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::LowLevel::InputEventListener,
@@ -58,8 +62,10 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventListener {
     pub fn op_Subtraction(
         _cordl__: crate::UnityEngine::InputSystem::LowLevel::InputEventListener,
         callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+            crate::System::Action_2<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::LowLevel::InputEventListener,
@@ -71,11 +77,13 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventListener {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::LowLevel::InputEventPtr>,
+    crate::System::IObservable_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    >,
 > for crate::UnityEngine::InputSystem::LowLevel::InputEventListener {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IObservable_1<
         crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
     > {
         todo!()
@@ -83,11 +91,13 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::LowLevel::InputEventPtr>,
+    crate::System::IObservable_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    >,
 > for crate::UnityEngine::InputSystem::LowLevel::InputEventListener {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IObservable_1<
         crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
     > {
         todo!()
@@ -99,9 +109,11 @@ impl AsMut<
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputEventListener_DisposableObserver {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub observer: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        crate::System::IObserver_1<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        >,
     >,
 }
 #[cfg(
@@ -117,7 +129,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::LowLevel::InputEventListener_DisposableObserver {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -178,18 +190,18 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventListener_DisposableObse
 #[cfg(
     feature = "UnityEngine+InputSystem+LowLevel+InputEventListener+DisposableObserver"
 )]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsRef<crate::System::IDisposable>
 for crate::UnityEngine::InputSystem::LowLevel::InputEventListener_DisposableObserver {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(
     feature = "UnityEngine+InputSystem+LowLevel+InputEventListener+DisposableObserver"
 )]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsMut<crate::System::IDisposable>
 for crate::UnityEngine::InputSystem::LowLevel::InputEventListener_DisposableObserver {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -197,15 +209,19 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventListener_DisposableObse
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputEventListener_ObserverState {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub observers: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            crate::System::IObserver_1<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            >,
         >,
     >,
     pub onEventDelegate: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+        crate::System::Action_2<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener+ObserverState")]
@@ -217,7 +233,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener+ObserverState")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::LowLevel::InputEventListener_ObserverState {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -34,16 +34,16 @@ impl<
     >;
     pub fn AsTask(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TResult>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TResult>>,
+    >
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TResult> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "AsTask",
-            (),
-        )?;
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<TResult>,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "AsTask", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn ConfigureAwait(
@@ -65,7 +65,7 @@ impl<
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Gc0(
+    pub fn Equals_Il2CppObject0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool>
@@ -123,13 +123,19 @@ impl<
     }
     pub fn GetTaskForValueTaskSource(
         &mut self,
-        t: quest_hook::libil2cpp::Gc<TResult>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TResult>>
+        t: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Sources::IValueTaskSource_1<TResult>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TResult>>,
+    >
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TResult> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<TResult>,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetTaskForValueTaskSource",
             (t),
@@ -150,9 +156,12 @@ impl<
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_IValueTaskSource_1_i16_2(
         &mut self,
-        task: quest_hook::libil2cpp::Gc<TResult>,
+        source: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Sources::IValueTaskSource_1<TResult>,
+        >,
+        token: i16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -161,11 +170,11 @@ impl<
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             ".ctor",
-            (task),
+            (source, token),
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_TResult_i16__cordl_bool3(
+    pub fn _ctor_Il2CppObject_TResult_i16__cordl_bool3(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         result: TResult,
@@ -183,22 +192,6 @@ impl<
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_i16_2(
-        &mut self,
-        source: quest_hook::libil2cpp::Gc<TResult>,
-        token: i16,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (source, token),
-        )?;
-        Ok(__cordl_ret.into())
-    }
     pub fn _ctor_TResult0(
         &mut self,
         result: TResult,
@@ -211,6 +204,21 @@ impl<
             self,
             ".ctor",
             (result),
+        )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Task_1_1(
+        &mut self,
+        task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TResult>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (task),
         )?;
         Ok(__cordl_ret.into())
     }
@@ -254,11 +262,12 @@ impl<
 #[cfg(feature = "System+Threading+Tasks+ValueTask_1")]
 impl<
     TResult: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::ValueTask_1<TResult>>>
-for crate::System::Threading::Tasks::ValueTask_1<TResult> {
+> AsRef<
+    crate::System::IEquatable_1<crate::System::Threading::Tasks::ValueTask_1<TResult>>,
+> for crate::System::Threading::Tasks::ValueTask_1<TResult> {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         crate::System::Threading::Tasks::ValueTask_1<TResult>,
     > {
         todo!()
@@ -267,11 +276,12 @@ for crate::System::Threading::Tasks::ValueTask_1<TResult> {
 #[cfg(feature = "System+Threading+Tasks+ValueTask_1")]
 impl<
     TResult: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::ValueTask_1<TResult>>>
-for crate::System::Threading::Tasks::ValueTask_1<TResult> {
+> AsMut<
+    crate::System::IEquatable_1<crate::System::Threading::Tasks::ValueTask_1<TResult>>,
+> for crate::System::Threading::Tasks::ValueTask_1<TResult> {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         crate::System::Threading::Tasks::ValueTask_1<TResult>,
     > {
         todo!()
@@ -281,8 +291,10 @@ for crate::System::Threading::Tasks::ValueTask_1<TResult> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ValueTask_1_ValueTaskSourceAsTask<TResult: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TResult>,
-    pub _source: quest_hook::libil2cpp::Gc<TResult>,
+    __cordl_parent: crate::System::Threading::Tasks::Task_1<TResult>,
+    pub _source: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Sources::IValueTaskSource_1<TResult>,
+    >,
     pub _token: i16,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
@@ -295,7 +307,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Threading+Tasks+ValueTask_1+ValueTaskSourceAsTask")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Threading::Tasks::ValueTask_1_ValueTaskSourceAsTask<TResult> {
-    type Target = quest_hook::libil2cpp::Gc<TResult>;
+    type Target = crate::System::Threading::Tasks::Task_1<TResult>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -312,7 +324,9 @@ impl<
     TResult: quest_hook::libil2cpp::Type,
 > crate::System::Threading::Tasks::ValueTask_1_ValueTaskSourceAsTask<TResult> {
     pub fn New(
-        source: quest_hook::libil2cpp::Gc<TResult>,
+        source: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Sources::IValueTaskSource_1<TResult>,
+        >,
         token: i16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
@@ -327,7 +341,9 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        source: quest_hook::libil2cpp::Gc<TResult>,
+        source: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Sources::IValueTaskSource_1<TResult>,
+        >,
         token: i16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where

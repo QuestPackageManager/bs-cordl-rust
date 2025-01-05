@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XName {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _ns: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XNamespace>,
     pub _localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _hashCode: i32,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Linq+XName")]
 impl std::ops::Deref for crate::System::Xml::Linq::XName {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,7 +44,7 @@ impl crate::System::Xml::Linq::XName {
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Get_Gc0(
+    pub fn Get_Il2CppString0(
         expandedName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName>,
@@ -53,7 +53,7 @@ impl crate::System::Xml::Linq::XName {
             .invoke("Get", (expandedName))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Get_Gc1(
+    pub fn Get_Il2CppString1(
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         namespaceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -70,7 +70,7 @@ impl crate::System::Xml::Linq::XName {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc0(
+    pub fn New_XNamespace_Il2CppString0(
         ns: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XNamespace>,
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -131,7 +131,7 @@ impl crate::System::Xml::Linq::XName {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc0(
+    pub fn _ctor_XNamespace_Il2CppString0(
         &mut self,
         ns: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XNamespace>,
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -211,35 +211,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Linq::XName {
 }
 #[cfg(feature = "System+Xml+Linq+XName")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
+    crate::System::IEquatable_1<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName>,
+    >,
 > for crate::System::Xml::Linq::XName {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Xml+Linq+XName")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::Xml::Linq::XName {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Xml+Linq+XName")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName>>,
-> for crate::System::Xml::Linq::XName {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -247,13 +225,29 @@ impl AsRef<
 }
 #[cfg(feature = "System+Xml+Linq+XName")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName>>,
+    crate::System::IEquatable_1<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName>,
+    >,
 > for crate::System::Xml::Linq::XName {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName>,
     > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+Linq+XName")]
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Xml::Linq::XName {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+Linq+XName")]
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Xml::Linq::XName {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }

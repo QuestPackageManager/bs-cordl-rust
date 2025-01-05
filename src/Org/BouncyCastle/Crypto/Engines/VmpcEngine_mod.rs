@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct VmpcEngine {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub n: u8,
     pub P: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub s: u8,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+VmpcEngine")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Engines::VmpcEngine {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -129,22 +129,16 @@ for crate::Org::BouncyCastle::Crypto::Engines::VmpcEngine {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+VmpcEngine")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IStreamCipher>>
+impl AsRef<crate::Org::BouncyCastle::Crypto::IStreamCipher>
 for crate::Org::BouncyCastle::Crypto::Engines::VmpcEngine {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IStreamCipher> {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IStreamCipher {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+VmpcEngine")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IStreamCipher>>
+impl AsMut<crate::Org::BouncyCastle::Crypto::IStreamCipher>
 for crate::Org::BouncyCastle::Crypto::Engines::VmpcEngine {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::IStreamCipher,
-    > {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IStreamCipher {
         unsafe { std::mem::transmute(self) }
     }
 }

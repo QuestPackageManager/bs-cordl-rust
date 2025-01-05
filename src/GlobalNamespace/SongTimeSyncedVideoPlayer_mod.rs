@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SongTimeSyncedVideoPlayer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LightWithIdMonoBehaviour,
-    >,
+    __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
     pub _videoPlayer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Video::VideoPlayer>,
     pub _materialPropertyBlockController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MaterialPropertyBlockController,
@@ -26,9 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SongTimeSyncedVideoPlayer")]
 impl std::ops::Deref for crate::GlobalNamespace::SongTimeSyncedVideoPlayer {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LightWithIdMonoBehaviour,
-    >;
+    type Target = crate::GlobalNamespace::LightWithIdMonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

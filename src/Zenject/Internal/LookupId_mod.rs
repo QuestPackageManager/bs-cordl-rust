@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LookupId {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Provider: quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
     pub BindingId: crate::Zenject::BindingId,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+Internal+LookupId")]
 impl std::ops::Deref for crate::Zenject::Internal::LookupId {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,7 +40,7 @@ impl crate::Zenject::Internal::LookupId {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_BindingId1(
+    pub fn New_IProvider_BindingId1(
         provider: quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
         bindingId: crate::Zenject::BindingId,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -60,7 +60,7 @@ impl crate::Zenject::Internal::LookupId {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_BindingId1(
+    pub fn _ctor_IProvider_BindingId1(
         &mut self,
         provider: quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
         bindingId: crate::Zenject::BindingId,

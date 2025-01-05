@@ -2,9 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InitializableManager {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _initializables: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Zenject::InitializableManager_InitializableInfo>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::Zenject::InitializableManager_InitializableInfo,
+            >,
+        >,
     >,
     pub _hasInitialized: bool,
 }
@@ -15,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+InitializableManager")]
 impl std::ops::Deref for crate::Zenject::InitializableManager {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,7 +34,7 @@ impl std::ops::DerefMut for crate::Zenject::InitializableManager {
 impl crate::Zenject::InitializableManager {
     #[cfg(feature = "Zenject+InitializableManager+InitializableInfo")]
     pub type InitializableInfo = crate::Zenject::InitializableManager_InitializableInfo;
-    pub fn Add_Gc0(
+    pub fn Add_IInitializable0(
         &mut self,
         initializable: quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -65,12 +69,18 @@ impl crate::Zenject::InitializableManager {
     }
     pub fn New(
         initializables: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>,
+            >,
         >,
         priorities: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-                i32,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::ModestTree::Util::ValuePair_2<
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        i32,
+                    >,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -82,9 +92,7 @@ impl crate::Zenject::InitializableManager {
     }
     pub fn __zenCreate(
         P_0: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -104,12 +112,18 @@ impl crate::Zenject::InitializableManager {
     pub fn _ctor(
         &mut self,
         initializables: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>,
+            >,
         >,
         priorities: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-                i32,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::ModestTree::Util::ValuePair_2<
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        i32,
+                    >,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -134,7 +148,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::InitializableManager 
 #[repr(C)]
 #[derive(Debug)]
 pub struct InitializableManager_InitializableInfo {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Initializable: quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>,
     pub Priority: i32,
 }
@@ -145,7 +159,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+InitializableManager+InitializableInfo")]
 impl std::ops::Deref for crate::Zenject::InitializableManager_InitializableInfo {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -170,9 +184,7 @@ impl crate::Zenject::InitializableManager_InitializableInfo {
     }
     pub fn __zenCreate(
         P_0: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DtdParser {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub readerAdapter: quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdParserAdapter>,
     pub readerAdapterWithValidation: quest_hook::libil2cpp::Gc<
         crate::System::Xml::IDtdParserAdapterWithValidation,
@@ -41,8 +41,10 @@ pub struct DtdParser {
         quest_hook::libil2cpp::Il2CppString,
     >,
     pub undeclaredNotations: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<crate::System::Xml::DtdParser_UndeclaredNotation>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::DtdParser_UndeclaredNotation>,
+        >,
     >,
     pub condSectionEntityIds: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<i32>,
@@ -55,7 +57,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+DtdParser")]
 impl std::ops::Deref for crate::System::Xml::DtdParser {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -197,7 +199,7 @@ impl crate::System::Xml::DtdParser {
         let __cordl_ret: bool = __cordl_object.invoke("HandleEntityEnd", (inLiteral))?;
         Ok(__cordl_ret.into())
     }
-    pub fn HandleEntityReference_Gc__cordl_bool1(
+    pub fn HandleEntityReference_XmlQualifiedName__cordl_bool1(
         &mut self,
         entityName: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
         paramEntity: bool,
@@ -936,19 +938,7 @@ impl crate::System::Xml::DtdParser {
             .invoke("ScanSystemId", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn SendValidationEvent_XmlSeverityType_Gc2(
-        &mut self,
-        severity: crate::System::Xml::Schema::XmlSeverityType,
-        e: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaException>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendValidationEvent", (severity, e))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn SendValidationEvent_XmlSeverityType_Gc_Gc1(
+    pub fn SendValidationEvent_XmlSeverityType_Il2CppString_Il2CppString1(
         &mut self,
         severity: crate::System::Xml::Schema::XmlSeverityType,
         code: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -961,7 +951,19 @@ impl crate::System::Xml::DtdParser {
             .invoke("SendValidationEvent", (severity, code, arg))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SendValidationEvent_i32_XmlSeverityType_Gc_Gc0(
+    pub fn SendValidationEvent_XmlSeverityType_XmlSchemaException2(
+        &mut self,
+        severity: crate::System::Xml::Schema::XmlSeverityType,
+        e: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaException>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SendValidationEvent", (severity, e))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SendValidationEvent_i32_XmlSeverityType_Il2CppString_Il2CppString0(
         &mut self,
         pos: i32,
         severity: crate::System::Xml::Schema::XmlSeverityType,
@@ -1024,7 +1026,7 @@ impl crate::System::Xml::DtdParser {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn ThrowInvalidChar_Gc_i32_1(
+    pub fn ThrowInvalidChar_Il2CppArray_i32_1(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         length: i32,
@@ -1037,7 +1039,7 @@ impl crate::System::Xml::DtdParser {
             .invoke("ThrowInvalidChar", (data, length, invCharPos))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ThrowInvalidChar_i32_Gc0(
+    pub fn ThrowInvalidChar_i32_Il2CppString0(
         &mut self,
         pos: i32,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1050,7 +1052,7 @@ impl crate::System::Xml::DtdParser {
             .invoke("ThrowInvalidChar", (pos, data, invCharPos))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ThrowUnexpectedToken_Gc1(
+    pub fn ThrowUnexpectedToken_Il2CppString1(
         &mut self,
         pos: i32,
         expectedToken1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1063,7 +1065,7 @@ impl crate::System::Xml::DtdParser {
             .invoke("ThrowUnexpectedToken", (pos, expectedToken1, expectedToken2))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ThrowUnexpectedToken_i32_Gc0(
+    pub fn ThrowUnexpectedToken_i32_Il2CppString0(
         &mut self,
         pos: i32,
         expectedToken: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1075,7 +1077,7 @@ impl crate::System::Xml::DtdParser {
             .invoke("ThrowUnexpectedToken", (pos, expectedToken))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Throw_Gc_i32_i32_3(
+    pub fn Throw_Il2CppString_i32_i32_3(
         &mut self,
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1101,7 +1103,22 @@ impl crate::System::Xml::DtdParser {
             .invoke("Throw", (curPos, res))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Throw_i32_Gc1(
+    pub fn Throw_i32_Il2CppArray2(
+        &mut self,
+        curPos: i32,
+        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Throw", (curPos, res, args))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Throw_i32_Il2CppString1(
         &mut self,
         curPos: i32,
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1112,23 +1129,6 @@ impl crate::System::Xml::DtdParser {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Throw", (curPos, res, arg))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn Throw_i32_Gc2(
-        &mut self,
-        curPos: i32,
-        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Throw", (curPos, res, args))?;
         Ok(__cordl_ret.into())
     }
     pub fn VerifyEntityReference(
@@ -1245,18 +1245,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::DtdParser {
     }
 }
 #[cfg(feature = "System+Xml+DtdParser")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdParser>>
-for crate::System::Xml::DtdParser {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdParser> {
+impl AsRef<crate::System::Xml::IDtdParser> for crate::System::Xml::DtdParser {
+    fn as_ref(&self) -> &crate::System::Xml::IDtdParser {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+DtdParser")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdParser>>
-for crate::System::Xml::DtdParser {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdParser> {
+impl AsMut<crate::System::Xml::IDtdParser> for crate::System::Xml::DtdParser {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IDtdParser {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -1278,7 +1274,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct DtdParser_ParseElementOnlyContent_LocalFrame {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub startParenEntityId: i32,
     pub parsingSchema: crate::System::Xml::DtdParser_Token,
 }
@@ -1291,7 +1287,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Xml+DtdParser+ParseElementOnlyContent_LocalFrame")]
 impl std::ops::Deref
 for crate::System::Xml::DtdParser_ParseElementOnlyContent_LocalFrame {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1444,7 +1440,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct DtdParser_UndeclaredNotation {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub lineNo: i32,
     pub linePos: i32,
@@ -1459,7 +1455,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+DtdParser+UndeclaredNotation")]
 impl std::ops::Deref for crate::System::Xml::DtdParser_UndeclaredNotation {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct WaypointData {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapObjectData>,
+    __cordl_parent: crate::GlobalNamespace::BeatmapObjectData,
     pub _offsetDirection_k__BackingField: crate::GlobalNamespace::OffsetDirection,
     pub _lineIndex_k__BackingField: i32,
     pub _lineLayer_k__BackingField: crate::GlobalNamespace::NoteLineLayer,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "WaypointData")]
 impl std::ops::Deref for crate::GlobalNamespace::WaypointData {
-    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapObjectData>;
+    type Target = crate::GlobalNamespace::BeatmapObjectData;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

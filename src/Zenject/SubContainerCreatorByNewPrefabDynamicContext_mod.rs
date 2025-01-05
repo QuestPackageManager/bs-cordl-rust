@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SubContainerCreatorByNewPrefabDynamicContext {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Zenject::SubContainerCreatorDynamicContext,
-    >,
+    __cordl_parent: crate::Zenject::SubContainerCreatorDynamicContext,
     pub _prefabProvider: quest_hook::libil2cpp::Gc<crate::Zenject::IPrefabProvider>,
     pub _gameObjectBindInfo: quest_hook::libil2cpp::Gc<
         crate::Zenject::GameObjectCreationParameters,
@@ -18,9 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabDynamicContext")]
 impl std::ops::Deref for crate::Zenject::SubContainerCreatorByNewPrefabDynamicContext {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Zenject::SubContainerCreatorDynamicContext,
-    >;
+    type Target = crate::Zenject::SubContainerCreatorDynamicContext;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

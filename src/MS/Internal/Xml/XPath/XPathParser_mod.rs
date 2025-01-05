@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XPathParser {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _scanner: quest_hook::libil2cpp::Gc<
         crate::MS::Internal::Xml::XPath::XPathScanner,
     >,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MS+Internal+Xml+XPath+XPathParser")]
 impl std::ops::Deref for crate::MS::Internal::Xml::XPath::XPathParser {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -54,29 +54,37 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
     }
     pub fn CreateAxesTable() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            crate::MS::Internal::Xml::XPath::Axis_AxisType,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                crate::MS::Internal::Xml::XPath::Axis_AxisType,
+            >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            crate::MS::Internal::Xml::XPath::Axis_AxisType,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                crate::MS::Internal::Xml::XPath::Axis_AxisType,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("CreateAxesTable", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn CreateFunctionTable() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<
-                crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<
+                    crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo,
+                >,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<
-                crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<
+                    crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo,
+                >,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("CreateFunctionTable", ())?;
@@ -443,7 +451,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::MS::Internal::Xml::XPath::XPat
 #[repr(C)]
 #[derive(Debug)]
 pub struct XPathParser_ParamInfo {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _ftype: crate::MS::Internal::Xml::XPath::Function_FunctionType,
     pub _minargs: i32,
     pub _maxargs: i32,
@@ -458,7 +466,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MS+Internal+Xml+XPath+XPathParser+ParamInfo")]
 impl std::ops::Deref for crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

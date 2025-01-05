@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventCallbackFunctorBase {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _phase_k__BackingField: crate::UnityEngine::UIElements::CallbackPhase,
     pub _invokePolicy_k__BackingField: crate::UnityEngine::UIElements::InvokePolicy,
 }
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+EventCallbackFunctorBase")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::EventCallbackFunctorBase {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Scrollbar {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
+    __cordl_parent: crate::UnityEngine::UI::Selectable,
     pub m_HandleRect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub m_Direction: crate::UnityEngine::UI::Scrollbar_Direction,
     pub m_Value: f32,
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+Scrollbar")]
 impl std::ops::Deref for crate::UnityEngine::UI::Scrollbar {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>;
+    type Target = crate::UnityEngine::UI::Selectable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,7 +44,7 @@ impl crate::UnityEngine::UI::Scrollbar {
     pub type Direction = crate::UnityEngine::UI::Scrollbar_Direction;
     #[cfg(feature = "UnityEngine+UI+Scrollbar+ScrollEvent")]
     pub type ScrollEvent = crate::UnityEngine::UI::Scrollbar_ScrollEvent;
-    pub fn ClickRepeat_Gc0(
+    pub fn ClickRepeat_PointerEventData0(
         &mut self,
         eventData: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::EventSystems::PointerEventData,
@@ -60,7 +60,7 @@ impl crate::UnityEngine::UI::Scrollbar {
         > = __cordl_object.invoke("ClickRepeat", (eventData))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ClickRepeat_Vector2_Gc1(
+    pub fn ClickRepeat_Vector2_Camera1(
         &mut self,
         screenPosition: crate::UnityEngine::Vector2,
         camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -550,114 +550,76 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Scrollbar {
     }
 }
 #[cfg(feature = "UnityEngine+UI+Scrollbar")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IBeginDragHandler>,
-> for crate::UnityEngine::UI::Scrollbar {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IBeginDragHandler,
-    > {
+impl AsRef<crate::UnityEngine::EventSystems::IBeginDragHandler>
+for crate::UnityEngine::UI::Scrollbar {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IBeginDragHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Scrollbar")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IBeginDragHandler>,
-> for crate::UnityEngine::UI::Scrollbar {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IBeginDragHandler,
-    > {
+impl AsMut<crate::UnityEngine::EventSystems::IBeginDragHandler>
+for crate::UnityEngine::UI::Scrollbar {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IBeginDragHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Scrollbar")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDragHandler>>
+impl AsRef<crate::UnityEngine::EventSystems::IDragHandler>
+for crate::UnityEngine::UI::Scrollbar {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Scrollbar")]
+impl AsMut<crate::UnityEngine::EventSystems::IDragHandler>
+for crate::UnityEngine::UI::Scrollbar {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Scrollbar")]
+impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::UnityEngine::UI::Scrollbar {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Scrollbar")]
+impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
+for crate::UnityEngine::UI::Scrollbar {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Scrollbar")]
+impl AsRef<crate::UnityEngine::EventSystems::IInitializePotentialDragHandler>
 for crate::UnityEngine::UI::Scrollbar {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDragHandler> {
+    ) -> &crate::UnityEngine::EventSystems::IInitializePotentialDragHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Scrollbar")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDragHandler>>
+impl AsMut<crate::UnityEngine::EventSystems::IInitializePotentialDragHandler>
 for crate::UnityEngine::UI::Scrollbar {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDragHandler> {
+    ) -> &mut crate::UnityEngine::EventSystems::IInitializePotentialDragHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Scrollbar")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
-> for crate::UnityEngine::UI::Scrollbar {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IEventSystemHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UI+Scrollbar")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
-> for crate::UnityEngine::UI::Scrollbar {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IEventSystemHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UI+Scrollbar")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IInitializePotentialDragHandler,
-    >,
-> for crate::UnityEngine::UI::Scrollbar {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IInitializePotentialDragHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UI+Scrollbar")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IInitializePotentialDragHandler,
-    >,
-> for crate::UnityEngine::UI::Scrollbar {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IInitializePotentialDragHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UI+Scrollbar")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>>
+impl AsRef<crate::UnityEngine::UI::ICanvasElement>
 for crate::UnityEngine::UI::Scrollbar {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement> {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::ICanvasElement {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Scrollbar")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>>
+impl AsMut<crate::UnityEngine::UI::ICanvasElement>
 for crate::UnityEngine::UI::Scrollbar {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ICanvasElement {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -693,7 +655,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct Scrollbar_ScrollEvent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<f32>,
+    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<f32>,
 }
 #[cfg(feature = "UnityEngine+UI+Scrollbar+ScrollEvent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -702,7 +664,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+Scrollbar+ScrollEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::Scrollbar_ScrollEvent {
-    type Target = quest_hook::libil2cpp::Gc<f32>;
+    type Target = crate::UnityEngine::Events::UnityEvent_1<f32>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

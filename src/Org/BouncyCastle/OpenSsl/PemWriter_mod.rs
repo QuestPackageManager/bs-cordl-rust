@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PemWriter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Utilities::IO::Pem::PemWriter,
-    >,
+    __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::Pem::PemWriter,
 }
 #[cfg(feature = "Org+BouncyCastle+OpenSsl+PemWriter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,9 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+OpenSsl+PemWriter")]
 impl std::ops::Deref for crate::Org::BouncyCastle::OpenSsl::PemWriter {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Utilities::IO::Pem::PemWriter,
-    >;
+    type Target = crate::Org::BouncyCastle::Utilities::IO::Pem::PemWriter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,7 +33,7 @@ impl crate::Org::BouncyCastle::OpenSsl::PemWriter {
             .invoke_void(".ctor", (writer))?;
         Ok(__cordl_object.into())
     }
-    pub fn WriteObject_Gc0(
+    pub fn WriteObject_Il2CppObject0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -48,7 +44,7 @@ impl crate::Org::BouncyCastle::OpenSsl::PemWriter {
             .invoke("WriteObject", (obj))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteObject_Gc_Gc_Gc1(
+    pub fn WriteObject_Il2CppString_Il2CppArray_SecureRandom1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CrossFadeAudioSource {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _duration: f32,
     pub _audioSource1: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
     pub _audioSource2: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
@@ -17,8 +17,8 @@ pub struct CrossFadeAudioSource {
     >,
     pub _activeAudioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
     pub _inactiveAudioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
-    pub _volumeDownTween: quest_hook::libil2cpp::Gc<f32>,
-    pub _volumeUpTween: quest_hook::libil2cpp::Gc<f32>,
+    pub _volumeDownTween: quest_hook::libil2cpp::Gc<crate::Tweening::Tween_1<f32>>,
+    pub _volumeUpTween: quest_hook::libil2cpp::Gc<crate::Tweening::Tween_1<f32>>,
     pub _activePitchGainEffect: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::AudioPitchGainEffect,
     >,
@@ -33,7 +33,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "CrossFadeAudioSource")]
 impl std::ops::Deref for crate::GlobalNamespace::CrossFadeAudioSource {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>;
+    type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

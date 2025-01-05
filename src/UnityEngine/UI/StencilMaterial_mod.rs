@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StencilMaterial {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+UI+StencilMaterial")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+StencilMaterial")]
 impl std::ops::Deref for crate::UnityEngine::UI::StencilMaterial {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::StencilMaterial {
 impl crate::UnityEngine::UI::StencilMaterial {
     #[cfg(feature = "UnityEngine+UI+StencilMaterial+MatEntry")]
     pub type MatEntry = crate::UnityEngine::UI::StencilMaterial_MatEntry;
-    pub fn Add_Gc_i32_0(
+    pub fn Add_Material_i32_0(
         baseMat: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         stencilID: i32,
     ) -> quest_hook::libil2cpp::Result<
@@ -112,7 +112,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::StencilMateri
 #[repr(C)]
 #[derive(Debug)]
 pub struct StencilMaterial_MatEntry {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub baseMat: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub customMat: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub count: i32,
@@ -131,7 +131,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+StencilMaterial+MatEntry")]
 impl std::ops::Deref for crate::UnityEngine::UI::StencilMaterial_MatEntry {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

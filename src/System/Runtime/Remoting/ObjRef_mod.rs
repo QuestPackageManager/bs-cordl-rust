@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObjRef {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub channel_info: quest_hook::libil2cpp::Gc<
         crate::System::Runtime::Remoting::IChannelInfo,
     >,
@@ -23,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+Remoting+ObjRef")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::ObjRef {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -86,7 +86,7 @@ impl crate::System::Runtime::Remoting::ObjRef {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc1(
+    pub fn New_Il2CppString_IChannelInfo1(
         uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         cinfo: quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::IChannelInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -96,18 +96,7 @@ impl crate::System::Runtime::Remoting::ObjRef {
             .invoke_void(".ctor", (uri, cinfo))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc_Gc2(
-        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        remoteChannelData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (_cordl_type, url, remoteChannelData))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_StreamingContext3(
+    pub fn New_SerializationInfo_StreamingContext3(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
         >,
@@ -117,6 +106,17 @@ impl crate::System::Runtime::Remoting::ObjRef {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (info, context))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Type_Il2CppString_Il2CppObject2(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        remoteChannelData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (_cordl_type, url, remoteChannelData))?;
         Ok(__cordl_object.into())
     }
     pub fn SerializeType(
@@ -152,7 +152,7 @@ impl crate::System::Runtime::Remoting::ObjRef {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc1(
+    pub fn _ctor_Il2CppString_IChannelInfo1(
         &mut self,
         uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         cinfo: quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::IChannelInfo>,
@@ -164,20 +164,7 @@ impl crate::System::Runtime::Remoting::ObjRef {
             .invoke(".ctor", (uri, cinfo))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc_Gc2(
-        &mut self,
-        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        remoteChannelData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (_cordl_type, url, remoteChannelData))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_StreamingContext3(
+    pub fn _ctor_SerializationInfo_StreamingContext3(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,
@@ -189,6 +176,19 @@ impl crate::System::Runtime::Remoting::ObjRef {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (info, context))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Type_Il2CppString_Il2CppObject2(
+        &mut self,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        remoteChannelData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (_cordl_type, url, remoteChannelData))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_ChannelInfo(
@@ -306,50 +306,32 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Runtime::Remoting::Obj
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+ObjRef")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::IObjectReference>,
-> for crate::System::Runtime::Remoting::ObjRef {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IObjectReference,
-    > {
+impl AsRef<crate::System::Runtime::Serialization::IObjectReference>
+for crate::System::Runtime::Remoting::ObjRef {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::IObjectReference {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+ObjRef")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::IObjectReference>,
-> for crate::System::Runtime::Remoting::ObjRef {
+impl AsMut<crate::System::Runtime::Serialization::IObjectReference>
+for crate::System::Runtime::Remoting::ObjRef {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::IObjectReference,
-    > {
+    ) -> &mut crate::System::Runtime::Serialization::IObjectReference {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+ObjRef")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::Runtime::Remoting::ObjRef {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
+impl AsRef<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Runtime::Remoting::ObjRef {
+    fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+ObjRef")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::ISerializable>,
-> for crate::System::Runtime::Remoting::ObjRef {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Runtime::Serialization::ISerializable,
-    > {
+impl AsMut<crate::System::Runtime::Serialization::ISerializable>
+for crate::System::Runtime::Remoting::ObjRef {
+    fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
         unsafe { std::mem::transmute(self) }
     }
 }

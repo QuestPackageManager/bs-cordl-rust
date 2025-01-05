@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CompatibleComparer {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
     pub _hcp: quest_hook::libil2cpp::Gc<crate::System::Collections::IHashCodeProvider>,
 }
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+Specialized+CompatibleComparer")]
 impl std::ops::Deref for crate::System::Collections::Specialized::CompatibleComparer {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -130,20 +130,16 @@ for crate::System::Collections::Specialized::CompatibleComparer {
     }
 }
 #[cfg(feature = "System+Collections+Specialized+CompatibleComparer")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Collections::IEqualityComparer>>
+impl AsRef<crate::System::Collections::IEqualityComparer>
 for crate::System::Collections::Specialized::CompatibleComparer {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Collections::IEqualityComparer> {
+    fn as_ref(&self) -> &crate::System::Collections::IEqualityComparer {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+Specialized+CompatibleComparer")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Collections::IEqualityComparer>>
+impl AsMut<crate::System::Collections::IEqualityComparer>
 for crate::System::Collections::Specialized::CompatibleComparer {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Collections::IEqualityComparer> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::IEqualityComparer {
         unsafe { std::mem::transmute(self) }
     }
 }

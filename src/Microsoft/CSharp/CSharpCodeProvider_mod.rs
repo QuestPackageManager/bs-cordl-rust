@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CSharpCodeProvider {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Microsoft::CSharp::CodeDomProvider>,
+    __cordl_parent: crate::Microsoft::CSharp::CodeDomProvider,
 }
 #[cfg(feature = "Microsoft+CSharp+CSharpCodeProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Microsoft+CSharp+CSharpCodeProvider")]
 impl std::ops::Deref for crate::Microsoft::CSharp::CSharpCodeProvider {
-    type Target = quest_hook::libil2cpp::Gc<crate::Microsoft::CSharp::CodeDomProvider>;
+    type Target = crate::Microsoft::CSharp::CodeDomProvider;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

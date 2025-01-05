@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectionMethodsCache {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub raycast3D: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UI::ReflectionMethodsCache_Raycast3DCallback,
     >,
@@ -29,7 +29,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache")]
 impl std::ops::Deref for crate::UnityEngine::UI::ReflectionMethodsCache {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -98,7 +98,7 @@ for crate::UnityEngine::UI::ReflectionMethodsCache {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectionMethodsCache_GetRayIntersectionAllCallback {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllCallback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -109,7 +109,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllCallback")]
 impl std::ops::Deref
 for crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllCallback {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -213,7 +213,7 @@ for crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllCallback
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectionMethodsCache_GetRayIntersectionAllNonAllocCallback {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(
     feature = "UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllNonAllocCallback"
@@ -228,7 +228,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllNonAllocCallback {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -330,7 +330,7 @@ for crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllNonAlloc
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectionMethodsCache_GetRaycastNonAllocCallback {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+GetRaycastNonAllocCallback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -341,7 +341,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+GetRaycastNonAllocCallback")]
 impl std::ops::Deref
 for crate::UnityEngine::UI::ReflectionMethodsCache_GetRaycastNonAllocCallback {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -437,7 +437,7 @@ for crate::UnityEngine::UI::ReflectionMethodsCache_GetRaycastNonAllocCallback {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectionMethodsCache_Raycast2DCallback {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+Raycast2DCallback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -448,7 +448,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+Raycast2DCallback")]
 impl std::ops::Deref
 for crate::UnityEngine::UI::ReflectionMethodsCache_Raycast2DCallback {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -542,7 +542,7 @@ for crate::UnityEngine::UI::ReflectionMethodsCache_Raycast2DCallback {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectionMethodsCache_Raycast3DCallback {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+Raycast3DCallback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -553,7 +553,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+Raycast3DCallback")]
 impl std::ops::Deref
 for crate::UnityEngine::UI::ReflectionMethodsCache_Raycast3DCallback {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -646,7 +646,7 @@ for crate::UnityEngine::UI::ReflectionMethodsCache_Raycast3DCallback {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectionMethodsCache_RaycastAllCallback {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+RaycastAllCallback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -657,7 +657,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+RaycastAllCallback")]
 impl std::ops::Deref
 for crate::UnityEngine::UI::ReflectionMethodsCache_RaycastAllCallback {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

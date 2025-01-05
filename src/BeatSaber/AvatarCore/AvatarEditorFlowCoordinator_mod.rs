@@ -2,16 +2,22 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AvatarEditorFlowCoordinator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
+    __cordl_parent: crate::HMUI::FlowCoordinator,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
+        crate::System::Action_3<
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
+            >,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+            >,
+            crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction,
         >,
-        quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystemMetadata>,
-        crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction,
     >,
     pub didSetupEvent: quest_hook::libil2cpp::Gc<
-        crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode,
+        crate::System::Action_1<
+            crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode,
+        >,
     >,
     pub randomizeAllButtonWasPressedEvent: quest_hook::libil2cpp::Gc<
         crate::System::Action,
@@ -29,7 +35,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+AvatarCore+AvatarEditorFlowCoordinator")]
 impl std::ops::Deref for crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator {
-    type Target = quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>;
+    type Target = crate::HMUI::FlowCoordinator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -121,13 +127,15 @@ impl crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
+            crate::System::Action_3<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
+                >,
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+                >,
+                crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction,
             >,
-            quest_hook::libil2cpp::Gc<
-                crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-            >,
-            crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -140,7 +148,9 @@ impl crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator {
     pub fn add_didSetupEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode,
+            crate::System::Action_1<
+                crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -164,13 +174,15 @@ impl crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
+            crate::System::Action_3<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
+                >,
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+                >,
+                crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction,
             >,
-            quest_hook::libil2cpp::Gc<
-                crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-            >,
-            crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -183,7 +195,9 @@ impl crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator {
     pub fn remove_didSetupEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode,
+            crate::System::Action_1<
+                crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

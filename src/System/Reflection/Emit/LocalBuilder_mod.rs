@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LocalBuilder {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::System::Reflection::LocalVariableInfo,
-    >,
+    __cordl_parent: crate::System::Reflection::LocalVariableInfo,
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub ilgen: quest_hook::libil2cpp::Gc<crate::System::Reflection::Emit::ILGenerator>,
     pub startOffset: i32,
@@ -17,9 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Reflection+Emit+LocalBuilder")]
 impl std::ops::Deref for crate::System::Reflection::Emit::LocalBuilder {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::System::Reflection::LocalVariableInfo,
-    >;
+    type Target = crate::System::Reflection::LocalVariableInfo;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

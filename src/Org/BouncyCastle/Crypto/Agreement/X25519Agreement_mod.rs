@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X25519Agreement {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub privateKey: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Crypto::Parameters::X25519PrivateKeyParameters,
     >,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+X25519Agreement")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Agreement::X25519Agreement {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -93,22 +93,16 @@ for crate::Org::BouncyCastle::Crypto::Agreement::X25519Agreement {
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+X25519Agreement")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IRawAgreement>>
+impl AsRef<crate::Org::BouncyCastle::Crypto::IRawAgreement>
 for crate::Org::BouncyCastle::Crypto::Agreement::X25519Agreement {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IRawAgreement> {
+    fn as_ref(&self) -> &crate::Org::BouncyCastle::Crypto::IRawAgreement {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+X25519Agreement")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IRawAgreement>>
+impl AsMut<crate::Org::BouncyCastle::Crypto::IRawAgreement>
 for crate::Org::BouncyCastle::Crypto::Agreement::X25519Agreement {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::Org::BouncyCastle::Crypto::IRawAgreement,
-    > {
+    fn as_mut(&mut self) -> &mut crate::Org::BouncyCastle::Crypto::IRawAgreement {
         unsafe { std::mem::transmute(self) }
     }
 }

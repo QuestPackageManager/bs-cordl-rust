@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Pkcs5Scheme2Utf8PbeKey {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsPbeKey>,
+    __cordl_parent: crate::Org::BouncyCastle::Cms::CmsPbeKey,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+Pkcs5Scheme2Utf8PbeKey")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Cms+Pkcs5Scheme2Utf8PbeKey")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::Pkcs5Scheme2Utf8PbeKey {
-    type Target = quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsPbeKey>;
+    type Target = crate::Org::BouncyCastle::Cms::CmsPbeKey;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,19 +40,7 @@ impl crate::Org::BouncyCastle::Cms::Pkcs5Scheme2Utf8PbeKey {
         > = __cordl_object.invoke("GetEncoded", (algorithmOid))?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc_Gc1(
-        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        keyDerivationAlgorithm: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (password, keyDerivationAlgorithm))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_Gc3(
+    pub fn New_Il2CppArray_AlgorithmIdentifier3(
         password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         keyDerivationAlgorithm: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
@@ -64,18 +52,7 @@ impl crate::Org::BouncyCastle::Cms::Pkcs5Scheme2Utf8PbeKey {
             .invoke_void(".ctor", (password, keyDerivationAlgorithm))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_0(
-        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-        iterationCount: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (password, salt, iterationCount))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_i32_2(
+    pub fn New_Il2CppArray_Il2CppArray_i32_2(
         password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         iterationCount: i32,
@@ -86,21 +63,30 @@ impl crate::Org::BouncyCastle::Cms::Pkcs5Scheme2Utf8PbeKey {
             .invoke_void(".ctor", (password, salt, iterationCount))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc_Gc1(
-        &mut self,
+    pub fn New_Il2CppString_AlgorithmIdentifier1(
         password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         keyDerivationAlgorithm: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
         >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (password, keyDerivationAlgorithm))?;
-        Ok(__cordl_ret.into())
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (password, keyDerivationAlgorithm))?;
+        Ok(__cordl_object.into())
     }
-    pub fn _ctor_Gc_Gc3(
+    pub fn New_Il2CppString_Il2CppArray_i32_0(
+        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        iterationCount: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (password, salt, iterationCount))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn _ctor_Il2CppArray_AlgorithmIdentifier3(
         &mut self,
         password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         keyDerivationAlgorithm: quest_hook::libil2cpp::Gc<
@@ -114,9 +100,9 @@ impl crate::Org::BouncyCastle::Cms::Pkcs5Scheme2Utf8PbeKey {
             .invoke(".ctor", (password, keyDerivationAlgorithm))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_0(
+    pub fn _ctor_Il2CppArray_Il2CppArray_i32_2(
         &mut self,
-        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         iterationCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -127,9 +113,23 @@ impl crate::Org::BouncyCastle::Cms::Pkcs5Scheme2Utf8PbeKey {
             .invoke(".ctor", (password, salt, iterationCount))?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_2(
+    pub fn _ctor_Il2CppString_AlgorithmIdentifier1(
         &mut self,
-        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        keyDerivationAlgorithm: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (password, keyDerivationAlgorithm))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppString_Il2CppArray_i32_0(
+        &mut self,
+        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         iterationCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

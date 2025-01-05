@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PanelEventHandler {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::UIBehaviour,
-    >,
+    __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
     pub m_Panel: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::BaseRuntimePanel,
     >,
@@ -22,9 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::PanelEventHandler {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::UIBehaviour,
-    >;
+    type Target = crate::UnityEngine::EventSystems::UIBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -328,7 +324,7 @@ impl crate::UnityEngine::UIElements::PanelEventHandler {
             .invoke("RegisterCallbacks", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn SendEvent_Gc_Gc0(
+    pub fn SendEvent_BaseEventData0(
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
         sourceEventData: quest_hook::libil2cpp::Gc<
@@ -342,7 +338,7 @@ impl crate::UnityEngine::UIElements::PanelEventHandler {
             .invoke("SendEvent", (e, sourceEventData))?;
         Ok(__cordl_ret.into())
     }
-    pub fn SendEvent_Gc_Gc1(
+    pub fn SendEvent_Event1(
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
         sourceEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
@@ -502,312 +498,198 @@ for crate::UnityEngine::UIElements::PanelEventHandler {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ICancelHandler>>
+impl AsRef<crate::UnityEngine::EventSystems::ICancelHandler>
 for crate::UnityEngine::UIElements::PanelEventHandler {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ICancelHandler> {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::ICancelHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ICancelHandler>>
+impl AsMut<crate::UnityEngine::EventSystems::ICancelHandler>
 for crate::UnityEngine::UIElements::PanelEventHandler {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::ICancelHandler,
-    > {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::ICancelHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDeselectHandler>>
+impl AsRef<crate::UnityEngine::EventSystems::IDeselectHandler>
 for crate::UnityEngine::UIElements::PanelEventHandler {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDeselectHandler> {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IDeselectHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDeselectHandler>>
+impl AsMut<crate::UnityEngine::EventSystems::IDeselectHandler>
 for crate::UnityEngine::UIElements::PanelEventHandler {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IDeselectHandler,
-    > {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IDeselectHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
-> for crate::UnityEngine::UIElements::PanelEventHandler {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IEventSystemHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEventSystemHandler>,
-> for crate::UnityEngine::UIElements::PanelEventHandler {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IEventSystemHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IMoveHandler>>
+impl AsRef<crate::UnityEngine::EventSystems::IEventSystemHandler>
 for crate::UnityEngine::UIElements::PanelEventHandler {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IMoveHandler> {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IEventSystemHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IMoveHandler>>
+impl AsMut<crate::UnityEngine::EventSystems::IEventSystemHandler>
 for crate::UnityEngine::UIElements::PanelEventHandler {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IMoveHandler> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IEventSystemHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerClickHandler>,
-> for crate::UnityEngine::UIElements::PanelEventHandler {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerClickHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerClickHandler>,
-> for crate::UnityEngine::UIElements::PanelEventHandler {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerClickHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerDownHandler>,
-> for crate::UnityEngine::UIElements::PanelEventHandler {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerDownHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerDownHandler>,
-> for crate::UnityEngine::UIElements::PanelEventHandler {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerDownHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerEnterHandler>,
-> for crate::UnityEngine::UIElements::PanelEventHandler {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerEnterHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerEnterHandler>,
-> for crate::UnityEngine::UIElements::PanelEventHandler {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerEnterHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerExitHandler>,
-> for crate::UnityEngine::UIElements::PanelEventHandler {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerExitHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerExitHandler>,
-> for crate::UnityEngine::UIElements::PanelEventHandler {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerExitHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerMoveHandler>,
-> for crate::UnityEngine::UIElements::PanelEventHandler {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerMoveHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerMoveHandler>,
-> for crate::UnityEngine::UIElements::PanelEventHandler {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerMoveHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerUpHandler>,
-> for crate::UnityEngine::UIElements::PanelEventHandler {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerUpHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IPointerUpHandler>,
-> for crate::UnityEngine::UIElements::PanelEventHandler {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IPointerUpHandler,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IScrollHandler>>
+impl AsRef<crate::UnityEngine::EventSystems::IMoveHandler>
 for crate::UnityEngine::UIElements::PanelEventHandler {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IScrollHandler> {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IMoveHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IScrollHandler>>
+impl AsMut<crate::UnityEngine::EventSystems::IMoveHandler>
 for crate::UnityEngine::UIElements::PanelEventHandler {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::IScrollHandler,
-    > {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IMoveHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISelectHandler>>
+impl AsRef<crate::UnityEngine::EventSystems::IPointerClickHandler>
 for crate::UnityEngine::UIElements::PanelEventHandler {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISelectHandler> {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerClickHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISelectHandler>>
+impl AsMut<crate::UnityEngine::EventSystems::IPointerClickHandler>
 for crate::UnityEngine::UIElements::PanelEventHandler {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::ISelectHandler,
-    > {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerClickHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISubmitHandler>>
+impl AsRef<crate::UnityEngine::EventSystems::IPointerDownHandler>
 for crate::UnityEngine::UIElements::PanelEventHandler {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISubmitHandler> {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerDownHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISubmitHandler>>
+impl AsMut<crate::UnityEngine::EventSystems::IPointerDownHandler>
 for crate::UnityEngine::UIElements::PanelEventHandler {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::ISubmitHandler,
-    > {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerDownHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IRuntimePanelComponent>,
-> for crate::UnityEngine::UIElements::PanelEventHandler {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::IRuntimePanelComponent,
-    > {
+impl AsRef<crate::UnityEngine::EventSystems::IPointerEnterHandler>
+for crate::UnityEngine::UIElements::PanelEventHandler {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerEnterHandler {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IRuntimePanelComponent>,
-> for crate::UnityEngine::UIElements::PanelEventHandler {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::IRuntimePanelComponent,
-    > {
+impl AsMut<crate::UnityEngine::EventSystems::IPointerEnterHandler>
+for crate::UnityEngine::UIElements::PanelEventHandler {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerEnterHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
+impl AsRef<crate::UnityEngine::EventSystems::IPointerExitHandler>
+for crate::UnityEngine::UIElements::PanelEventHandler {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerExitHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
+impl AsMut<crate::UnityEngine::EventSystems::IPointerExitHandler>
+for crate::UnityEngine::UIElements::PanelEventHandler {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerExitHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
+impl AsRef<crate::UnityEngine::EventSystems::IPointerMoveHandler>
+for crate::UnityEngine::UIElements::PanelEventHandler {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerMoveHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
+impl AsMut<crate::UnityEngine::EventSystems::IPointerMoveHandler>
+for crate::UnityEngine::UIElements::PanelEventHandler {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerMoveHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
+impl AsRef<crate::UnityEngine::EventSystems::IPointerUpHandler>
+for crate::UnityEngine::UIElements::PanelEventHandler {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IPointerUpHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
+impl AsMut<crate::UnityEngine::EventSystems::IPointerUpHandler>
+for crate::UnityEngine::UIElements::PanelEventHandler {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IPointerUpHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
+impl AsRef<crate::UnityEngine::EventSystems::IScrollHandler>
+for crate::UnityEngine::UIElements::PanelEventHandler {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::IScrollHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
+impl AsMut<crate::UnityEngine::EventSystems::IScrollHandler>
+for crate::UnityEngine::UIElements::PanelEventHandler {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IScrollHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
+impl AsRef<crate::UnityEngine::EventSystems::ISelectHandler>
+for crate::UnityEngine::UIElements::PanelEventHandler {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::ISelectHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
+impl AsMut<crate::UnityEngine::EventSystems::ISelectHandler>
+for crate::UnityEngine::UIElements::PanelEventHandler {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::ISelectHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
+impl AsRef<crate::UnityEngine::EventSystems::ISubmitHandler>
+for crate::UnityEngine::UIElements::PanelEventHandler {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::ISubmitHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
+impl AsMut<crate::UnityEngine::EventSystems::ISubmitHandler>
+for crate::UnityEngine::UIElements::PanelEventHandler {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::ISubmitHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
+impl AsRef<crate::UnityEngine::UIElements::IRuntimePanelComponent>
+for crate::UnityEngine::UIElements::PanelEventHandler {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IRuntimePanelComponent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
+impl AsMut<crate::UnityEngine::UIElements::IRuntimePanelComponent>
+for crate::UnityEngine::UIElements::PanelEventHandler {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IRuntimePanelComponent {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -815,7 +697,7 @@ impl AsMut<
 #[repr(C)]
 #[derive(Debug)]
 pub struct PanelEventHandler_PointerEvent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _pointerId_k__BackingField: i32,
     pub _pointerType_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
@@ -847,7 +729,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+PanelEventHandler+PointerEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::PanelEventHandler_PointerEvent {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1353,20 +1235,16 @@ for crate::UnityEngine::UIElements::PanelEventHandler_PointerEvent {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+PanelEventHandler+PointerEvent")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPointerEvent>>
+impl AsRef<crate::UnityEngine::UIElements::IPointerEvent>
 for crate::UnityEngine::UIElements::PanelEventHandler_PointerEvent {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPointerEvent> {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IPointerEvent {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+PanelEventHandler+PointerEvent")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPointerEvent>>
+impl AsMut<crate::UnityEngine::UIElements::IPointerEvent>
 for crate::UnityEngine::UIElements::PanelEventHandler_PointerEvent {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPointerEvent> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IPointerEvent {
         unsafe { std::mem::transmute(self) }
     }
 }

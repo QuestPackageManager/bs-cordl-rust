@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XsdValidatingReader {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
+    __cordl_parent: crate::System::Xml::XmlReader,
     pub coreReader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
     pub coreReaderNSResolver: quest_hook::libil2cpp::Gc<
         crate::System::Xml::IXmlNamespaceResolver,
@@ -33,9 +33,7 @@ pub struct XsdValidatingReader {
     pub coreReaderAttributeCount: i32,
     pub currentAttrIndex: i32,
     pub attributePSVINodes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::AttributePSVIInfo>,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::AttributePSVIInfo>,
     >,
     pub defaultAttributes: quest_hook::libil2cpp::Gc<
         crate::System::Collections::ArrayList,
@@ -81,7 +79,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XsdValidatingReader")]
 impl std::ops::Deref for crate::System::Xml::XsdValidatingReader {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>;
+    type Target = crate::System::Xml::XmlReader;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -156,7 +154,7 @@ impl crate::System::Xml::XsdValidatingReader {
         > = __cordl_object.invoke("CreateDummyTextNode", (attributeValue, depth))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAttributePSVI_Gc0(
+    pub fn GetAttributePSVI_Il2CppString0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -170,7 +168,7 @@ impl crate::System::Xml::XsdValidatingReader {
         > = __cordl_object.invoke("GetAttributePSVI", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAttributePSVI_Gc1(
+    pub fn GetAttributePSVI_Il2CppString1(
         &mut self,
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -185,7 +183,7 @@ impl crate::System::Xml::XsdValidatingReader {
         > = __cordl_object.invoke("GetAttributePSVI", (localName, ns))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAttribute_Gc0(
+    pub fn GetAttribute_Il2CppString0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -199,7 +197,7 @@ impl crate::System::Xml::XsdValidatingReader {
         > = __cordl_object.invoke("GetAttribute", (name))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetAttribute_Gc_Gc1(
+    pub fn GetAttribute_Il2CppString_Il2CppString1(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         namespaceURI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -241,7 +239,7 @@ impl crate::System::Xml::XsdValidatingReader {
         > = __cordl_object.invoke("GetCachingReader", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetDefaultAttribute_Gc__cordl_bool1(
+    pub fn GetDefaultAttribute_Il2CppString__cordl_bool1(
         &mut self,
         attrLocalName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -361,7 +359,7 @@ impl crate::System::Xml::XsdValidatingReader {
         > = __cordl_object.invoke("LookupNamespace", (prefix))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MoveToAttribute_Gc0(
+    pub fn MoveToAttribute_Il2CppString0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -403,7 +401,18 @@ impl crate::System::Xml::XsdValidatingReader {
         let __cordl_ret: bool = __cordl_object.invoke("MoveToNextAttribute", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_XmlReader_XmlResolver_XmlReaderSettings1(
+        reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
+        xmlResolver: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>,
+        readerSettings: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReaderSettings>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (reader, xmlResolver, readerSettings))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_XmlSchemaObject0(
         reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
         xmlResolver: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>,
         readerSettings: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReaderSettings>,
@@ -418,17 +427,6 @@ impl crate::System::Xml::XsdValidatingReader {
                 ".ctor",
                 (reader, xmlResolver, readerSettings, partialValidationType),
             )?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_Gc_Gc1(
-        reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
-        xmlResolver: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>,
-        readerSettings: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReaderSettings>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (reader, xmlResolver, readerSettings))?;
         Ok(__cordl_object.into())
     }
     pub fn ProcessElementEvent(
@@ -535,16 +533,20 @@ impl crate::System::Xml::XsdValidatingReader {
         scope: crate::System::Xml::XmlNamespaceScope,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IDictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IDictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = __cordl_object
             .invoke("System.Xml.IXmlNamespaceResolver.GetNamespacesInScope", (scope))?;
         Ok(__cordl_ret.into())
@@ -675,7 +677,20 @@ impl crate::System::Xml::XsdValidatingReader {
             .invoke("ValidateAttributes", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_XmlReader_XmlResolver_XmlReaderSettings1(
+        &mut self,
+        reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
+        xmlResolver: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>,
+        readerSettings: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReaderSettings>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (reader, xmlResolver, readerSettings))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_XmlSchemaObject0(
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
         xmlResolver: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>,
@@ -692,19 +707,6 @@ impl crate::System::Xml::XsdValidatingReader {
                 ".ctor",
                 (reader, xmlResolver, readerSettings, partialValidationType),
             )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_Gc_Gc1(
-        &mut self,
-        reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
-        xmlResolver: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>,
-        readerSettings: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReaderSettings>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (reader, xmlResolver, readerSettings))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_AttributeCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -956,54 +958,44 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XsdValidatingRead
     }
 }
 #[cfg(feature = "System+Xml+XsdValidatingReader")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlLineInfo>>
+impl AsRef<crate::System::Xml::IXmlLineInfo>
 for crate::System::Xml::XsdValidatingReader {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlLineInfo> {
+    fn as_ref(&self) -> &crate::System::Xml::IXmlLineInfo {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+XsdValidatingReader")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlLineInfo>>
+impl AsMut<crate::System::Xml::IXmlLineInfo>
 for crate::System::Xml::XsdValidatingReader {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlLineInfo> {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IXmlLineInfo {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+XsdValidatingReader")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver>>
+impl AsRef<crate::System::Xml::IXmlNamespaceResolver>
 for crate::System::Xml::XsdValidatingReader {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver> {
+    fn as_ref(&self) -> &crate::System::Xml::IXmlNamespaceResolver {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+XsdValidatingReader")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver>>
+impl AsMut<crate::System::Xml::IXmlNamespaceResolver>
 for crate::System::Xml::XsdValidatingReader {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver> {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IXmlNamespaceResolver {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+XsdValidatingReader")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::IXmlSchemaInfo>>
+impl AsRef<crate::System::Xml::Schema::IXmlSchemaInfo>
 for crate::System::Xml::XsdValidatingReader {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::IXmlSchemaInfo> {
+    fn as_ref(&self) -> &crate::System::Xml::Schema::IXmlSchemaInfo {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Xml+XsdValidatingReader")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::IXmlSchemaInfo>>
+impl AsMut<crate::System::Xml::Schema::IXmlSchemaInfo>
 for crate::System::Xml::XsdValidatingReader {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::IXmlSchemaInfo> {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::Schema::IXmlSchemaInfo {
         unsafe { std::mem::transmute(self) }
     }
 }

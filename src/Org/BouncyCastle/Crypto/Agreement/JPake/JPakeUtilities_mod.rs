@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JPakeUtilities {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+JPake+JPakeUtilities")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+JPake+JPakeUtilities")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -188,13 +188,13 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                *mut crate::Org::BouncyCastle::Math::BigInteger,
             >,
         >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                *mut crate::Org::BouncyCastle::Math::BigInteger,
             >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke(
@@ -249,7 +249,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn UpdateDigestIncludingSize_Gc_Gc0(
+    pub fn UpdateDigestIncludingSize_BigInteger0(
         digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
         bigInteger: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -257,15 +257,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
             .invoke("UpdateDigestIncludingSize", (digest, bigInteger))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UpdateDigestIncludingSize_Gc_Gc1(
-        digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
-        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("UpdateDigestIncludingSize", (digest, str))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn UpdateDigestIncludingSize_Gc_Gc2(
+    pub fn UpdateDigestIncludingSize_Il2CppArray2(
         digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -273,7 +265,15 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
             .invoke("UpdateDigestIncludingSize", (digest, bytes))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UpdateDigest_Gc_Gc0(
+    pub fn UpdateDigestIncludingSize_Il2CppString1(
+        digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UpdateDigestIncludingSize", (digest, str))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdateDigest_BigInteger0(
         digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
         bigInteger: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -281,15 +281,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
             .invoke("UpdateDigest", (digest, bigInteger))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UpdateDigest_Gc_Gc1(
-        digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
-        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("UpdateDigest", (digest, str))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn UpdateDigest_Gc_Gc2(
+    pub fn UpdateDigest_Il2CppArray2(
         digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -297,7 +289,15 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
             .invoke("UpdateDigest", (digest, bytes))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UpdateMac_Gc_Gc0(
+    pub fn UpdateDigest_Il2CppString1(
+        digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UpdateDigest", (digest, str))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdateMac_BigInteger0(
         mac: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
         bigInteger: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -305,20 +305,20 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
             .invoke("UpdateMac", (mac, bigInteger))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UpdateMac_Gc_Gc1(
-        mac: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
-        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("UpdateMac", (mac, str))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn UpdateMac_Gc_Gc2(
+    pub fn UpdateMac_Il2CppArray2(
         mac: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("UpdateMac", (mac, bytes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdateMac_Il2CppString1(
+        mac: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UpdateMac", (mac, str))?;
         Ok(__cordl_ret.into())
     }
     pub fn ValidateGa(
@@ -407,7 +407,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeUtilities {
         gx: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         zeroKnowledgeProof: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                *mut crate::Org::BouncyCastle::Math::BigInteger,
             >,
         >,
         participantId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

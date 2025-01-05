@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityWebRequestExtensions {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "BGLib+UnityExtension+UnityWebRequestExtensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BGLib+UnityExtension+UnityWebRequestExtensions")]
 impl std::ops::Deref for crate::BGLib::UnityExtension::UnityWebRequestExtensions {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -45,10 +45,16 @@ impl crate::BGLib::UnityExtension::UnityWebRequestExtensions {
         >,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest_Result>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::UnityEngine::Networking::UnityWebRequest_Result,
+            >,
+        >,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Networking::UnityWebRequest_Result,
+            crate::System::Threading::Tasks::Task_1<
+                crate::UnityEngine::Networking::UnityWebRequest_Result,
+            >,
         > = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("SendWebRequestAsync", (request, cancellationToken))?;
         Ok(__cordl_ret.into())

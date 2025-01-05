@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventBasedNatPunchListener {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub NatIntroductionRequest: quest_hook::libil2cpp::Gc<
         crate::LiteNetLib::EventBasedNatPunchListener_OnNatIntroductionRequest,
     >,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LiteNetLib+EventBasedNatPunchListener")]
 impl std::ops::Deref for crate::LiteNetLib::EventBasedNatPunchListener {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -147,20 +147,16 @@ for crate::LiteNetLib::EventBasedNatPunchListener {
     }
 }
 #[cfg(feature = "LiteNetLib+EventBasedNatPunchListener")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::LiteNetLib::INatPunchListener>>
+impl AsRef<crate::LiteNetLib::INatPunchListener>
 for crate::LiteNetLib::EventBasedNatPunchListener {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::LiteNetLib::INatPunchListener> {
+    fn as_ref(&self) -> &crate::LiteNetLib::INatPunchListener {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LiteNetLib+EventBasedNatPunchListener")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::LiteNetLib::INatPunchListener>>
+impl AsMut<crate::LiteNetLib::INatPunchListener>
 for crate::LiteNetLib::EventBasedNatPunchListener {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::LiteNetLib::INatPunchListener> {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::INatPunchListener {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -168,7 +164,7 @@ for crate::LiteNetLib::EventBasedNatPunchListener {
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventBasedNatPunchListener_OnNatIntroductionRequest {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "LiteNetLib+EventBasedNatPunchListener+OnNatIntroductionRequest")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -179,7 +175,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "LiteNetLib+EventBasedNatPunchListener+OnNatIntroductionRequest")]
 impl std::ops::Deref
 for crate::LiteNetLib::EventBasedNatPunchListener_OnNatIntroductionRequest {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -274,7 +270,7 @@ for crate::LiteNetLib::EventBasedNatPunchListener_OnNatIntroductionRequest {
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventBasedNatPunchListener_OnNatIntroductionSuccess {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    __cordl_parent: crate::System::MulticastDelegate,
 }
 #[cfg(feature = "LiteNetLib+EventBasedNatPunchListener+OnNatIntroductionSuccess")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -285,7 +281,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "LiteNetLib+EventBasedNatPunchListener+OnNatIntroductionSuccess")]
 impl std::ops::Deref
 for crate::LiteNetLib::EventBasedNatPunchListener_OnNatIntroductionSuccess {
-    type Target = quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>;
+    type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Text {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::MaskableGraphic>,
+    __cordl_parent: crate::UnityEngine::UI::MaskableGraphic,
     pub m_FontData: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::FontData>,
     pub m_Text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_TextCache: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextGenerator>,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+Text")]
 impl std::ops::Deref for crate::UnityEngine::UI::Text {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::MaskableGraphic>;
+    type Target = crate::UnityEngine::UI::MaskableGraphic;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -519,20 +519,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Text {
     }
 }
 #[cfg(feature = "UnityEngine+UI+Text")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement>>
-for crate::UnityEngine::UI::Text {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement> {
+impl AsRef<crate::UnityEngine::UI::ILayoutElement> for crate::UnityEngine::UI::Text {
+    fn as_ref(&self) -> &crate::UnityEngine::UI::ILayoutElement {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Text")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement>>
-for crate::UnityEngine::UI::Text {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement> {
+impl AsMut<crate::UnityEngine::UI::ILayoutElement> for crate::UnityEngine::UI::Text {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UI::ILayoutElement {
         unsafe { std::mem::transmute(self) }
     }
 }

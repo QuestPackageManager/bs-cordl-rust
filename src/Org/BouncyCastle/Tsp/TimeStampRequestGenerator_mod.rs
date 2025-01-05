@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimeStampRequestGenerator {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub reqPolicy: quest_hook::libil2cpp::Gc<
         crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
     >,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampRequestGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Tsp::TimeStampRequestGenerator {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,33 +31,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Tsp::TimeStampRequestGener
 }
 #[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampRequestGenerator")]
 impl crate::Org::BouncyCastle::Tsp::TimeStampRequestGenerator {
-    pub fn AddExtension_Gc__cordl_bool_Gc0(
-        &mut self,
-        oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        critical: bool,
-        value: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddExtension", (oid, critical, value))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn AddExtension_Gc__cordl_bool_Gc1(
-        &mut self,
-        oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        critical: bool,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddExtension", (oid, critical, value))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn AddExtension_Gc__cordl_bool_Gc2(
+    pub fn AddExtension_DerObjectIdentifier_Asn1Encodable2(
         &mut self,
         oid: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
@@ -74,7 +48,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequestGenerator {
             .invoke("AddExtension", (oid, critical, extValue))?;
         Ok(__cordl_ret.into())
     }
-    pub fn AddExtension_Gc__cordl_bool_Gc3(
+    pub fn AddExtension_DerObjectIdentifier_Il2CppArray3(
         &mut self,
         oid: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
@@ -89,13 +63,38 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequestGenerator {
             .invoke("AddExtension", (oid, critical, extValue))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Generate_Gc1(
+    pub fn AddExtension_Il2CppString_Asn1Encodable0(
         &mut self,
-        digestAlgorithmOid: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
+        oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        critical: bool,
+        value: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddExtension", (oid, critical, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddExtension_Il2CppString_Il2CppArray1(
+        &mut self,
+        oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        critical: bool,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddExtension", (oid, critical, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Generate_DerObjectIdentifier2(
+        &mut self,
+        digestAlgorithm: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
         digest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-        nonce: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Tsp::TimeStampRequest>,
     > {
@@ -104,10 +103,10 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequestGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Tsp::TimeStampRequest,
-        > = __cordl_object.invoke("Generate", (digestAlgorithmOid, digest, nonce))?;
+        > = __cordl_object.invoke("Generate", (digestAlgorithm, digest))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Generate_Gc3(
+    pub fn Generate_DerObjectIdentifier_BigInteger3(
         &mut self,
         digestAlgorithm: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
@@ -125,7 +124,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequestGenerator {
         > = __cordl_object.invoke("Generate", (digestAlgorithm, digest, nonce))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Generate_Gc_Gc0(
+    pub fn Generate_Il2CppString0(
         &mut self,
         digestAlgorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         digest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -140,12 +139,13 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequestGenerator {
         > = __cordl_object.invoke("Generate", (digestAlgorithm, digest))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Generate_Gc_Gc2(
+    pub fn Generate_Il2CppString_BigInteger1(
         &mut self,
-        digestAlgorithm: quest_hook::libil2cpp::Gc<
-            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        digestAlgorithmOid: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
         >,
         digest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        nonce: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Tsp::TimeStampRequest>,
     > {
@@ -154,7 +154,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampRequestGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Tsp::TimeStampRequest,
-        > = __cordl_object.invoke("Generate", (digestAlgorithm, digest))?;
+        > = __cordl_object.invoke("Generate", (digestAlgorithmOid, digest, nonce))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

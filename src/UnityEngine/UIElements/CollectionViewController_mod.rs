@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CollectionViewController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_View: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::BaseVerticalCollectionView,
     >,
     pub m_ItemsSource: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     pub itemsSourceChanged: quest_hook::libil2cpp::Gc<crate::System::Action>,
-    pub itemIndexChanged: quest_hook::libil2cpp::Gc<i32, i32>,
+    pub itemIndexChanged: quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, i32>>,
 }
 #[cfg(feature = "UnityEngine+UIElements+CollectionViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+CollectionViewController")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::CollectionViewController {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -264,7 +264,7 @@ impl crate::UnityEngine::UIElements::CollectionViewController {
     }
     pub fn add_itemIndexChanged(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<i32, i32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -313,7 +313,7 @@ impl crate::UnityEngine::UIElements::CollectionViewController {
     }
     pub fn remove_itemIndexChanged(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<i32, i32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -356,16 +356,16 @@ for crate::UnityEngine::UIElements::CollectionViewController {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+CollectionViewController")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsRef<crate::System::IDisposable>
 for crate::UnityEngine::UIElements::CollectionViewController {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_ref(&self) -> &crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+CollectionViewController")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::IDisposable>>
+impl AsMut<crate::System::IDisposable>
 for crate::UnityEngine::UIElements::CollectionViewController {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::IDisposable> {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }

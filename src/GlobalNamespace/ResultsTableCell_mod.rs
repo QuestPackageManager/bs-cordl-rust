@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResultsTableCell {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::TableCellWithSeparator,
-    >,
+    __cordl_parent: crate::GlobalNamespace::TableCellWithSeparator,
     pub _border: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _orderText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _nameText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
@@ -18,9 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ResultsTableCell")]
 impl std::ops::Deref for crate::GlobalNamespace::ResultsTableCell {
-    type Target = quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::TableCellWithSeparator,
-    >;
+    type Target = crate::GlobalNamespace::TableCellWithSeparator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

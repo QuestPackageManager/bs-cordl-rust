@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaInference {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub rootSchema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
     pub schemaSet: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
     pub xtr: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlSchemaInference")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaInference {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -366,21 +366,7 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
             .invoke("MakeExistingAttributesOptional", (ct, attributesInInstance))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MoveAttributes_Gc_Gc0(
-        &mut self,
-        scExtension: quest_hook::libil2cpp::Gc<
-            crate::System::Xml::Schema::XmlSchemaSimpleContentExtension,
-        >,
-        ct: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MoveAttributes", (scExtension, ct))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn MoveAttributes__cordl_bool1(
+    pub fn MoveAttributes_XmlSchemaComplexType_XmlSchemaSimpleContentExtension__cordl_bool1(
         &mut self,
         ct: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
         simpleContentExtension: quest_hook::libil2cpp::Gc<
@@ -393,6 +379,20 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MoveAttributes", (ct, simpleContentExtension, bCreatingNewType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MoveAttributes_XmlSchemaSimpleContentExtension_XmlSchemaComplexType0(
+        &mut self,
+        scExtension: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaSimpleContentExtension,
+        >,
+        ct: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("MoveAttributes", (scExtension, ct))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
