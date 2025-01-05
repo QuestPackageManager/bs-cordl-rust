@@ -1,16 +1,16 @@
-#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_1621")]
+#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_300")]
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
-pub struct _PrivateImplementationDetails____StaticArrayInitTypeSize_1621 {}
-#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_1621")]
+pub struct _PrivateImplementationDetails____StaticArrayInitTypeSize_300 {}
+#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_300")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
     in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_1621 =>
-    ""."<PrivateImplementationDetails>/__StaticArrayInitTypeSize=1621"
+    ::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_300 => ""
+    ."<PrivateImplementationDetails>/__StaticArrayInitTypeSize=300"
 );
-#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_1621")]
+#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_300")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_1621 {
+for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_300 {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -19,21 +19,21 @@ for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitType
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_1621")]
-impl crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_1621 {}
-#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_564")]
+#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_300")]
+impl crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_300 {}
+#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_317")]
 #[repr(C)]
 #[derive(Debug, Clone, Default)]
-pub struct _PrivateImplementationDetails____StaticArrayInitTypeSize_564 {}
-#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_564")]
+pub struct _PrivateImplementationDetails____StaticArrayInitTypeSize_317 {}
+#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_317")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
     in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_564 => ""
-    ."<PrivateImplementationDetails>/__StaticArrayInitTypeSize=564"
+    ::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_317 => ""
+    ."<PrivateImplementationDetails>/__StaticArrayInitTypeSize=317"
 );
-#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_564")]
+#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_317")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_564 {
+for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_317 {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -42,5 +42,5 @@ for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitType
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_564")]
-impl crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_564 {}
+#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_317")]
+impl crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_317 {}
